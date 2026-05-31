@@ -295,12 +295,22 @@ document.addEventListener('DOMContentLoaded', () => {
     function updateCountdown() {
       const now = new Date();
       const target = getNextWebinarDate(now);
-      const diffMs = target - now;
-      const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
-      const el = document.getElementById('countdown-days');
-      if (el) el.textContent = diffDays > 0 ? diffDays : 0;
+      const diffMs = Math.max(0, target - now);
+      const totalSeconds = Math.floor(diffMs / 1000);
+      const days = Math.floor(totalSeconds / (60 * 60 * 24));
+      const hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
+      const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
+      const seconds = totalSeconds % 60;
+      const elDays = document.getElementById('countdown-days');
+      const elHours = document.getElementById('countdown-hours');
+      const elMinutes = document.getElementById('countdown-minutes');
+      const elSeconds = document.getElementById('countdown-seconds');
+      if (elDays) elDays.textContent = days;
+      if (elHours) elHours.textContent = String(hours).padStart(2, '0');
+      if (elMinutes) elMinutes.textContent = String(minutes).padStart(2, '0');
+      if (elSeconds) elSeconds.textContent = String(seconds).padStart(2, '0');
     }
     updateCountdown();
-    setInterval(updateCountdown, 24 * 60 * 60 * 1000);
+    setInterval(updateCountdown, 1000);
   }
 });
