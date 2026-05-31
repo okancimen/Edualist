@@ -252,5 +252,55 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
-
+  // ==========================================
+  // OPPORTUNITY POPUP LOGIC
+  // ==========================================
+  const oppDialog = document.getElementById('opp-dialog');
+  const dialogClose = document.getElementById('dialog-close');
+  const dialogCTA = document.getElementById('dialog-cta');
+  if (oppDialog) {
+    // Auto-show the opportunity dialog after 5 seconds
+    // DISABLED — uncomment to re-enable the popup
+    // setTimeout(() => oppDialog.showModal(), 5000);
+    // Close button handler
+    if (dialogClose) { dialogClose.addEventListener('click', () => oppDialog.close()); }
+    // CTA button: scroll to webinar registration section
+    if (dialogCTA) {
+      dialogCTA.addEventListener('click', () => {
+        const webinarSection = document.getElementById('webinar');
+        if (webinarSection) {
+          webinarSection.scrollIntoView({ behavior: 'smooth' });
+        }
+        oppDialog.close();
+      });
+    }
+    // Countdown calculation
+    function getLastWednesday(year, month) {
+      const lastDay = new Date(year, month + 1, 0);
+      const day = lastDay.getDay();
+      const offset = (day >= 3) ? day - 3 : 7 - (3 - day);
+      return new Date(year, month, lastDay.getDate() - offset);
+    }
+    function getNextWebinarDate(now) {
+      const curYear = now.getFullYear();
+      const curMonth = now.getMonth();
+      let target = getLastWednesday(curYear, curMonth);
+      if (now > target) {
+        const nextMonth = new Date(curYear, curMonth + 1, 1);
+        target = getLastWednesday(nextMonth.getFullYear(), nextMonth.getMonth());
+      }
+      target.setHours(20, 0, 0, 0);
+      return target;
+    }
+    function updateCountdown() {
+      const now = new Date();
+      const target = getNextWebinarDate(now);
+      const diffMs = target - now;
+      const diffDays = Math.ceil(diffMs / (1000 * 60 * 60 * 24));
+      const el = document.getElementById('countdown-days');
+      if (el) el.textContent = diffDays > 0 ? diffDays : 0;
+    }
+    updateCountdown();
+    setInterval(updateCountdown, 24 * 60 * 60 * 1000);
+  }
 });
