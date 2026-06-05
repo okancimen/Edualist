@@ -748,41 +748,44 @@ html[lang="en"] .tr-only {
 }
 
 .service-card {
-  padding: 3rem 2.5rem;
+  padding: 2.5rem 2rem;
   border-radius: var(--radius-lg);
   border: 1px solid var(--border-card);
-  background-color: var(--bg-card);
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   transition: var(--transition-smooth);
   display: flex;
   flex-direction: column;
   height: 100%;
+  box-shadow: var(--shadow-sm);
 }
 
 .service-card:hover {
   transform: translateY(-8px);
-  background-color: #ffffff;
+  background: rgba(255, 255, 255, 0.9);
   border-color: transparent;
   box-shadow: var(--shadow-lg);
 }
 
 .service-icon-wrap {
-  width: 56px;
-  height: 56px;
+  width: 64px;
+  height: 64px;
   border-radius: var(--radius-md);
-  background-color: var(--primary);
-  color: var(--accent);
+  background: linear-gradient(135deg, var(--primary), var(--accent));
+  color: var(--text-light);
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
   box-shadow: var(--shadow-sm);
   transition: var(--transition-smooth);
 }
 
 .service-card:hover .service-icon-wrap {
   transform: scale(1.1);
-  background-color: var(--accent);
+  background: var(--accent);
   color: var(--primary);
 }
 
