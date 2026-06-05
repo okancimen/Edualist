@@ -10,8 +10,19 @@ document.addEventListener('DOMContentLoaded', () => {
   // MULTILINGUAL TRANSLATION ENGINE
   // ==========================================
   const langSwitcher = document.getElementById('lang-switcher');
-  const langBtns = langSwitcher.querySelectorAll('.lang-btn');
+  const langBtns = langSwitcher ? langSwitcher.querySelectorAll('.lang-btn') : [];
   const htmlRoot = document.documentElement;
+
+  // Detect current language from the URL path
+  const currentPath = window.location.pathname;
+  let pageLang = 'tr';
+  if (currentPath.includes('/en/') || currentPath.endsWith('/en')) {
+    pageLang = 'en';
+  } else if (currentPath.includes('/tr/') || currentPath.endsWith('/tr')) {
+    pageLang = 'tr';
+  } else {
+    pageLang = htmlRoot.getAttribute('lang') || localStorage.getItem('edualist_lang') || 'tr';
+  }
 
   // Placeholder translation mapping
   const placeholders = {
@@ -31,10 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 1. Set HTML attribute
     htmlRoot.setAttribute('lang', lang);
     
-    // 2. Persist in storage
-    localStorage.setItem('edualist_lang', lang);
-    
-    // 3. Update switcher buttons
+    // 2. Update switcher buttons
     langBtns.forEach(btn => {
       if (btn.getAttribute('data-lang') === lang) {
         btn.classList.add('active');
@@ -43,31 +51,44 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // 4. Update Form Placeholders dynamically
+    // 3. Update Form Placeholders dynamically
     const nameInput = document.getElementById('form-name');
     const phoneInput = document.getElementById('form-phone');
     const detailsInput = document.getElementById('form-details');
     const webNameInput = document.getElementById('webinar-name');
     const webPhoneInput = document.getElementById('webinar-phone');
 
-    if (nameInput) nameInput.placeholder = placeholders[lang].name;
-    if (phoneInput) phoneInput.placeholder = placeholders[lang].phone;
-    if (detailsInput) detailsInput.placeholder = placeholders[lang].details;
-    if (webNameInput) webNameInput.placeholder = placeholders[lang].name;
-    if (webPhoneInput) webPhoneInput.placeholder = placeholders[lang].phone;
+    if (placeholders[lang]) {
+      if (nameInput) nameInput.placeholder = placeholders[lang].name;
+      if (phoneInput) phoneInput.placeholder = placeholders[lang].phone;
+      if (detailsInput) detailsInput.placeholder = placeholders[lang].details;
+      if (webNameInput) webNameInput.placeholder = placeholders[lang].name;
+      if (webPhoneInput) webPhoneInput.placeholder = placeholders[lang].phone;
+    }
   }
 
   // Event listener for lang switcher buttons
   langBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const selectedLang = btn.getAttribute('data-lang');
-      setLanguage(selectedLang);
+      localStorage.setItem('edualist_lang', selectedLang);
+      
+      // Navigate to the correct subfolder if it is different from the current page language
+      if (selectedLang !== pageLang) {
+        const hash = window.location.hash || '';
+        if (selectedLang === 'en') {
+          window.location.href = '../en/' + hash;
+        } else {
+          window.location.href = '../tr/' + hash;
+        }
+      } else {
+        setLanguage(selectedLang);
+      }
     });
   });
 
-  // Init language from storage or default to Turkish
-  const savedLang = localStorage.getItem('edualist_lang') || 'tr';
-  setLanguage(savedLang);
+  // Initialize page language based on subdirectory context
+  setLanguage(pageLang);
 
   // ==========================================
   // MOBILE MENU TOGGLE

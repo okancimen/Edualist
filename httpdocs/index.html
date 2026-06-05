@@ -1,9 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edualist – Choose Language</title>
+  <title>Edualist – Uluslararası Okul Süreçleri ve Veli-Öğrenci Koçluğu</title>
+  <script>
+    // Redirect immediately to stored preferred language or default to Turkish
+    (function() {
+      const savedLang = localStorage.getItem('edualist_lang') || 'tr';
+      window.location.replace(savedLang + '/');
+    })();
+  </script>
   <link rel="stylesheet" href="styles.css" />
   <style>
     body { display:flex; align-items:center; justify-content:center; height:100vh; background:#f0f4f8; font-family:Arial,Helvetica,sans-serif; }
