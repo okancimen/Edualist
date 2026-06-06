@@ -110,6 +110,12 @@
   }
   </script>
 
+  <!-- Google Fonts — preconnect first, then non-render-blocking load -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"></noscript>
+
   <!-- Stylesheets -->
   <link rel="stylesheet" href="../styles.css">
 </head>
@@ -354,7 +360,7 @@
       <div class="about-grid">
         
         <div class="about-photo-wrapper scroll-reveal">
-          <img src="../assets/founder-avatar.png" alt="Özlem Çimen" class="about-image">
+          <img src="../assets/founder-avatar.png" alt="Özlem Çimen" class="about-image" loading="lazy">
           <div class="about-photo-card glass-dark">
             <div class="about-card-title">Özlem Çimen</div>
             <div class="about-card-desc tr-only">Kurucu & Veli-Öğrenci Koçu</div>
@@ -1084,6 +1090,6 @@
   </a>
 
   <!-- Script File -->
-  <script src="../app.js"></script>
+  <script src="../app.js" defer></script>
 </body>
 </html>
