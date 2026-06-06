@@ -231,10 +231,11 @@ document.addEventListener('DOMContentLoaded', () => {
             form.classList.remove('was-validated');
             alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             setTimeout(() => { alertBox.style.display = 'none'; }, 5000);
+          } else {
+            if (submitBtn) submitBtn.disabled = false;
           }
         })
-        .catch(() => {})
-        .finally(() => { if (submitBtn) submitBtn.disabled = false; });
+        .catch(() => { if (submitBtn) submitBtn.disabled = false; });
     });
   }
 
@@ -275,10 +276,11 @@ document.addEventListener('DOMContentLoaded', () => {
             webinarForm.reset();
             webinarAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             setTimeout(() => { webinarAlert.style.display = 'none'; }, 5000);
+          } else {
+            if (submitBtn) submitBtn.disabled = false;
           }
         })
-        .catch(() => {})
-        .finally(() => { if (submitBtn) submitBtn.disabled = false; });
+        .catch(() => { if (submitBtn) submitBtn.disabled = false; });
     });
   }
   // ==========================================
