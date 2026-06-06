@@ -685,13 +685,13 @@ html[lang="en"] .tr-only {
 
 .about-card-title {
   font-weight: 700;
-  color: var(--primary);
+  color: #fff;
   font-size: 1.1rem;
 }
 
 .about-card-desc {
   font-size: 0.85rem;
-  color: var(--text-muted);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .about-bio h2 {
