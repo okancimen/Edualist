@@ -1666,3 +1666,42 @@ html[lang="en"] .tr-only {
   50% { box-shadow: 0 0 0 15px hsla(43, 60%, 52%, 0.3); }
   100% { box-shadow: 0 0 0 30px hsla(43, 60%, 52%, 0); }
 }
+
+/* ── Sticky WhatsApp Button ── */
+.whatsapp-sticky {
+  position: fixed;
+  bottom: 1.75rem;
+  right: 1.75rem;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: #25d366;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.25rem 0.75rem 1rem;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.45);
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whatsapp-sticky:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(37, 211, 102, 0.55);
+}
+
+.whatsapp-sticky svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 480px) {
+  .whatsapp-sticky {
+    padding: 0.85rem;
+    border-radius: 50%;
+  }
+  .whatsapp-sticky-label {
+    display: none;
+  }
+}
