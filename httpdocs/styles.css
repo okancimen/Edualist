@@ -667,10 +667,6 @@ html[lang="en"] .tr-only {
   gap: 0;
 }
 
-.about-photo-inner {
-  position: relative;
-}
-
 .about-image {
   width: 100%;
   border-radius: var(--radius-lg);
@@ -680,17 +676,14 @@ html[lang="en"] .tr-only {
 }
 
 .about-photo-card {
-  position: absolute;
-  bottom: -2rem;
-  right: -2rem;
-  padding: 1.5rem 2rem;
-  border-radius: var(--radius-md);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 1.25rem 1.75rem;
+  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: var(--shadow-md);
 }
 
 .about-schools-block {
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding-top: 1.5rem;
   border-top: 1px solid rgba(11, 33, 58, 0.1);
 }
@@ -703,7 +696,7 @@ html[lang="en"] .tr-only {
 
 .about-card-desc {
   font-size: 0.85rem;
-  color: rgba(255, 255, 255, 0.8);
+  color: #fff;
 }
 
 .about-bio h2 {
