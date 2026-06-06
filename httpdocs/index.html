@@ -1,14 +1,24 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Edualist – Uluslararası Okul Süreçleri ve Veli-Öğrenci Koçluğu</title>
+  <title>Edualist – International School Consulting & Parent-Student Coaching</title>
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/tr/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/">
   <script>
-    // Redirect immediately to stored preferred language or default to Turkish
     (function() {
-      const savedLang = localStorage.getItem('edualist_lang') || 'tr';
-      window.location.replace(savedLang + '/');
+      // Respect previously saved manual preference
+      var saved = localStorage.getItem('edualist_lang');
+      if (saved === 'tr' || saved === 'en') {
+        window.location.replace(saved + '/');
+        return;
+      }
+      // Auto-detect from browser language, fall back to English
+      var browserLang = (navigator.languages && navigator.languages[0]) || navigator.language || 'en';
+      var lang = browserLang.toLowerCase().startsWith('tr') ? 'tr' : 'en';
+      window.location.replace(lang + '/');
     })();
   </script>
   <link rel="stylesheet" href="styles.css" />
