@@ -709,30 +709,10 @@ html[lang="en"] .tr-only {
   margin-bottom: 1.25rem;
 }
 
-.about-schools-section {
-  margin-top: 4rem;
-  padding-top: 3rem;
-  border-top: 1px solid rgba(11, 33, 58, 0.1);
-}
-
-.about-schools-lead {
-  font-size: 1.05rem;
-  color: var(--text-dark);
-  max-width: 800px;
-  margin-bottom: 1.5rem;
-}
-
-.about-schools-note {
-  font-size: 1rem;
-  color: var(--text-dark);
-  max-width: 800px;
-  margin-top: 1.5rem;
-}
-
 .about-schools-title {
   font-size: 1.4rem;
   font-weight: 600;
-  margin-top: 0;
+  margin-top: 2rem;
   margin-bottom: 1.25rem;
   color: var(--primary);
 }
