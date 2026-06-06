@@ -201,14 +201,16 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
 
-      // Basic HTML5 validation trigger
       if (!form.checkValidity()) {
         form.reportValidity();
         return;
       }
 
-      // Collect data (for presentation or simulation)
+      const submitBtn = form.querySelector('[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
       const data = {
+        type: 'consultation',
         name: document.getElementById('form-name').value,
         email: document.getElementById('form-email').value,
         phone: document.getElementById('form-phone').value,
@@ -216,26 +218,23 @@ document.addEventListener('DOMContentLoaded', () => {
         details: document.getElementById('form-details').value
       };
 
-      console.log('Form submission received:', data);
-
-      // Show beautiful feedback box
-      if (alertBox) {
-        alertBox.style.display = 'flex';
-        
-        // Clear all inputs
-        form.reset();
-        
-        // Scroll smoothly to alert box
-        alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-        // Remove validation classes if any
-        form.classList.remove('was-validated');
-
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-          alertBox.style.display = 'none';
-        }, 5000);
-      }
+      fetch('../mail.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(r => r.json())
+        .then(res => {
+          if (res.ok && alertBox) {
+            alertBox.style.display = 'flex';
+            form.reset();
+            form.classList.remove('was-validated');
+            alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            setTimeout(() => { alertBox.style.display = 'none'; }, 5000);
+          }
+        })
+        .catch(() => {})
+        .finally(() => { if (submitBtn) submitBtn.disabled = false; });
     });
   }
 
@@ -254,23 +253,32 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
       }
 
+      const submitBtn = webinarForm.querySelector('[type="submit"]');
+      if (submitBtn) submitBtn.disabled = true;
+
       const data = {
+        type: 'webinar',
         name: document.getElementById('webinar-name').value,
         email: document.getElementById('webinar-email').value,
         phone: document.getElementById('webinar-phone').value
       };
 
-      console.log('Webinar registration received:', data);
-
-      if (webinarAlert) {
-        webinarAlert.style.display = 'flex';
-        webinarForm.reset();
-        webinarAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
-
-        setTimeout(() => {
-          webinarAlert.style.display = 'none';
-        }, 5000);
-      }
+      fetch('../mail.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data)
+      })
+        .then(r => r.json())
+        .then(res => {
+          if (res.ok && webinarAlert) {
+            webinarAlert.style.display = 'flex';
+            webinarForm.reset();
+            webinarAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            setTimeout(() => { webinarAlert.style.display = 'none'; }, 5000);
+          }
+        })
+        .catch(() => {})
+        .finally(() => { if (submitBtn) submitBtn.disabled = false; });
     });
   }
   // ==========================================
