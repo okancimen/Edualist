@@ -51,6 +51,7 @@ if ($type === 'consultation') {
         exit;
     }
 
+    $to      = 'ceo@edualist.com';
     $subject = "Edualist – Webinar Registration from {$name}";
     $body    = "New webinar registration received from the Edualist website.\n\n"
              . "Name:  {$name}\n"
@@ -63,7 +64,7 @@ if ($type === 'consultation') {
     exit;
 }
 
-$from    = 'noreply@edualist.com';
+$from    = ($type === 'webinar') ? 'okan@cimen.net' : 'noreply@edualist.com';
 $headers = implode("\r\n", [
     "From: Edualist <{$from}>",
     "Reply-To: {$email}",
