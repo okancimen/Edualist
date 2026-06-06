@@ -50,13 +50,16 @@
   padding: 0;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-sans);
   background-color: var(--bg-warm);
   color: var(--text-dark);
   line-height: 1.6;
   font-size: 1rem;
-  overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
