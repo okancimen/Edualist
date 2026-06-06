@@ -662,6 +662,12 @@ html[lang="en"] .tr-only {
 }
 
 .about-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.about-photo-inner {
   position: relative;
 }
 
@@ -681,6 +687,12 @@ html[lang="en"] .tr-only {
   border-radius: var(--radius-md);
   border: 1px solid rgba(255, 255, 255, 0.5);
   box-shadow: var(--shadow-md);
+}
+
+.about-schools-block {
+  margin-top: 4rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(11, 33, 58, 0.1);
 }
 
 .about-card-title {
