@@ -2109,6 +2109,16 @@ html[lang="en"] .tr-only {
   color: var(--text-dark);
 }
 .blog-callout strong { color: var(--primary); font-style: italic; }
+.blog-callout-red {
+  background: hsla(0, 60%, 96%, 0.9);
+  border-left-color: #c62828;
+}
+.blog-callout-red strong { color: #c62828; }
+.blog-callout-blue {
+  background: hsla(214, 60%, 96%, 0.9);
+  border-left-color: var(--primary);
+}
+.blog-callout-blue strong { color: var(--primary); }
 
 /* Numbered steps */
 .blog-steps { list-style: none; margin: 1.5rem 0 2rem; padding: 0; }
@@ -2317,6 +2327,111 @@ html[lang="en"] .tr-only {
   .blog-docs-table { font-size: 0.82rem; }
   .blog-docs-table td, .blog-docs-table th { padding: 8px 10px; }
 }
+
+/* Highlight box (e.g. Fransa sınıf sistemi) */
+.blog-highlight-box {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(11,33,58,0.1);
+  border-radius: var(--radius-sm);
+  padding: 1.4rem 1.6rem;
+  margin: 1.5rem 0 2rem;
+}
+.blog-highlight-box h4 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.9rem;
+}
+.blog-highlight-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(11,33,58,0.07);
+  font-size: 0.9rem;
+}
+.blog-highlight-row:last-child { border-bottom: none; }
+.blog-highlight-row strong { color: var(--primary); font-weight: 600; }
+.blog-highlight-row span  { color: var(--text-muted); text-align: right; }
+
+/* Track/bar visual (e.g. Hollanda VWO/HAVO/VMBO) */
+.blog-track-visual {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(11,33,58,0.1);
+  border-radius: var(--radius-sm);
+  padding: 1.4rem 1.6rem;
+  margin: 1.5rem 0 2rem;
+}
+.blog-track-visual h4 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1.1rem;
+}
+.blog-track-row {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.6rem;
+}
+.blog-track-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  width: 52px;
+  flex-shrink: 0;
+  color: var(--primary);
+}
+.blog-track-bar {
+  flex: 1;
+  height: 30px;
+  border-radius: var(--radius-sm);
+  display: flex;
+  align-items: center;
+  padding: 0 0.75rem;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: #fff;
+  background: var(--primary);
+}
+.blog-track-bar.bar-high  { background: var(--primary); }
+.blog-track-bar.bar-mid   { background: hsl(210, 42%, 48%); }
+.blog-track-bar.bar-low   { background: hsl(175, 35%, 42%); }
+.blog-track-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  width: 140px;
+  flex-shrink: 0;
+  text-align: right;
+}
+@media (max-width: 560px) {
+  .blog-track-desc { display: none; }
+}
+
+/* Pro-tip box */
+.blog-pro-tip {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid hsla(43, 60%, 60%, 0.35);
+  border-radius: var(--radius-sm);
+  padding: 1.2rem 1.4rem;
+  margin: 1.75rem 0;
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.blog-pro-tip-icon { font-size: 1.5rem; flex-shrink: 0; line-height: 1; margin-top: 0.1rem; }
+.blog-pro-tip-text h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+.blog-pro-tip-text p { font-size: 0.9rem; color: var(--text-muted); line-height: 1.65; margin: 0; }
+
+/* Purple badge (international school) */
+.badge-purple { background: #f3e5f5; color: #6a1b9a; }
 
 /* SEO keyword tags */
 .blog-seo-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 1rem; }
