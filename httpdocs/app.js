@@ -144,24 +144,26 @@ document.addEventListener('DOMContentLoaded', () => {
   const revealElements = document.querySelectorAll('.scroll-reveal');
 
   if (!CSS.supports('(animation-timeline: view()) and (animation-range: entry)')) {
-    // Add initialization class to all reveal candidates
-    revealElements.forEach(el => el.classList.add('reveal-init'));
-
     const revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.classList.add('reveal-active');
-          // Once animated, no need to track again
           revealObserver.unobserve(entry.target);
         }
       });
     }, {
       root: null,
       threshold: 0.15,
-      rootMargin: '0px 0px -50px 0px' // Trigger slightly before element fits in viewport
+      rootMargin: '0px 0px -50px 0px'
     });
 
-    revealElements.forEach(el => revealObserver.observe(el));
+    // Defer to next frame — avoids forced reflow during language init on the same frame
+    requestAnimationFrame(() => {
+      revealElements.forEach(el => {
+        el.classList.add('reveal-init');
+        revealObserver.observe(el);
+      });
+    });
   }
 
   // ==========================================
