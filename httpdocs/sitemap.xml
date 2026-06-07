@@ -78,4 +78,25 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://www.edualist.com/blog/yurtdisi-egitim-maliyet-karsilastirma/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/cocugumu-yurtdisinda-okutmali-miyim/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/ib-alevel-amerikan-mufredat-karsilastirma/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
