@@ -2167,6 +2167,96 @@ html[lang="en"] .tr-only {
 .blog-tl-label { font-size: 0.72rem; color: var(--text-dark); line-height: 1.35; }
 .blog-tl-item.active .blog-tl-label { color: #fff; }
 
+/* School type cards */
+.blog-school-types {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1.5rem 0 2rem;
+}
+
+.blog-school-card {
+  background: rgba(255,255,255,0.75);
+  border: 1px solid rgba(11,33,58,0.1);
+  border-radius: var(--radius-sm);
+  padding: 1.25rem;
+}
+
+.blog-school-card.featured {
+  border-color: var(--primary);
+  border-width: 2px;
+}
+
+.blog-school-badge {
+  display: inline-block;
+  font-size: 0.68rem;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 20px;
+  margin-bottom: 0.6rem;
+}
+
+.badge-free    { background: #e8f5e9; color: #2e7d32; }
+.badge-paid    { background: hsla(212,60%,93%,1); color: var(--primary); }
+.badge-popular { background: hsla(43,60%,92%,1); color: hsl(43,70%,35%); }
+
+.blog-school-card h4 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 0.4rem;
+}
+
+.blog-school-card p {
+  font-size: 0.875rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Documents table */
+.blog-docs-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0 2rem;
+  font-size: 0.9rem;
+  background: rgba(255,255,255,0.75);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid rgba(11,33,58,0.1);
+}
+
+.blog-docs-table th {
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 10px 14px;
+  text-align: left;
+}
+
+.blog-docs-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(11,33,58,0.07);
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.blog-docs-table tr:last-child td { border-bottom: none; }
+.blog-docs-table td:first-child { color: var(--text-dark); font-style: normal; font-weight: 500; }
+.blog-docs-table tr:nth-child(even) { background: rgba(11,33,58,0.02); }
+
+@media (max-width: 540px) {
+  .blog-school-types { grid-template-columns: 1fr; }
+  .blog-docs-table { font-size: 0.82rem; }
+  .blog-docs-table td, .blog-docs-table th { padding: 8px 10px; }
+}
+
 /* SEO keyword tags */
 .blog-seo-tags { display: flex; gap: 0.4rem; flex-wrap: wrap; margin-top: 1rem; }
 .blog-seo-tag {
