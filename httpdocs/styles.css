@@ -1962,6 +1962,17 @@ html[lang="en"] .tr-only {
   aspect-ratio: 16/9;
   overflow: hidden;
   min-height: 180px;
+  position: relative;
+}
+.blog-card-flag {
+  position: absolute;
+  bottom: 8px;
+  right: 10px;
+  font-size: 1.45rem;
+  line-height: 1;
+  filter: drop-shadow(0 1px 4px rgba(0,0,0,0.55));
+  z-index: 2;
+  pointer-events: none;
 }
 
 .blog-card-thumb picture,
