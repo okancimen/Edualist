@@ -2628,3 +2628,49 @@ html[lang="en"] .tr-only {
   .blog-personal-note { flex-direction: column; gap: 0.75rem; }
   .blog-personal-note-img { width: 44px; height: 44px; }
 }
+
+/* ==========================================
+   FAQ SECTION
+   ========================================== */
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: 820px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: rgba(255, 255, 255, 0.65);
+  border: 1px solid var(--border-card);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-md);
+  padding: 1.5rem 2rem;
+}
+
+.faq-q {
+  font-family: var(--font-serif);
+  font-size: 1.1rem;
+  color: var(--primary);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  line-height: 1.35;
+}
+
+.faq-a {
+  color: var(--text-muted);
+  line-height: 1.75;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+.faq-a a {
+  color: var(--accent-hover);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+@media (max-width: 768px) {
+  .faq-item { padding: 1.25rem 1.5rem; }
+  .faq-q { font-size: 1rem; }
+}
