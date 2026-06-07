@@ -323,6 +323,10 @@ document.addEventListener('DOMContentLoaded', () => {
       target.setHours(20, 0, 0, 0);
       return target;
     }
+    const elDays    = document.getElementById('countdown-days');
+    const elHours   = document.getElementById('countdown-hours');
+    const elMinutes = document.getElementById('countdown-minutes');
+    const elSeconds = document.getElementById('countdown-seconds');
     function updateCountdown() {
       const now = new Date();
       const target = getNextWebinarDate(now);
@@ -332,12 +336,8 @@ document.addEventListener('DOMContentLoaded', () => {
       const hours = Math.floor((totalSeconds % (60 * 60 * 24)) / (60 * 60));
       const minutes = Math.floor((totalSeconds % (60 * 60)) / 60);
       const seconds = totalSeconds % 60;
-      const elDays = document.getElementById('countdown-days');
-      const elHours = document.getElementById('countdown-hours');
-      const elMinutes = document.getElementById('countdown-minutes');
-      const elSeconds = document.getElementById('countdown-seconds');
-      if (elDays) elDays.textContent = days;
-      if (elHours) elHours.textContent = String(hours).padStart(2, '0');
+      if (elDays)    elDays.textContent    = days;
+      if (elHours)   elHours.textContent   = String(hours).padStart(2, '0');
       if (elMinutes) elMinutes.textContent = String(minutes).padStart(2, '0');
       if (elSeconds) elSeconds.textContent = String(seconds).padStart(2, '0');
     }
