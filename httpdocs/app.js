@@ -344,4 +344,25 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCountdown();
     setInterval(updateCountdown, 1000);
   }
+
+  // ==========================================
+  // AI CHATBOT POPUP
+  // ==========================================
+  const chatbotBtn   = document.getElementById('chatbot-btn');
+  const chatbotPopup = document.getElementById('chatbot-popup');
+  const chatbotClose = document.getElementById('chatbot-close');
+
+  if (chatbotBtn && chatbotPopup) {
+    chatbotBtn.addEventListener('click', () => {
+      const opening = chatbotPopup.hidden;
+      chatbotPopup.hidden = !opening;
+      if (opening) {
+        const iframe = chatbotPopup.querySelector('iframe[data-src]');
+        if (iframe) { iframe.src = iframe.dataset.src; iframe.removeAttribute('data-src'); }
+      }
+    });
+    if (chatbotClose) {
+      chatbotClose.addEventListener('click', () => { chatbotPopup.hidden = true; });
+    }
+  }
 });
