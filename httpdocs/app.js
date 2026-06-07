@@ -39,8 +39,10 @@ document.addEventListener('DOMContentLoaded', () => {
   };
 
   function setLanguage(lang) {
-    // 1. Set HTML attribute
-    htmlRoot.setAttribute('lang', lang);
+    // 1. Set HTML attribute (skip if already correct — avoids spurious style recalc)
+    if (htmlRoot.getAttribute('lang') !== lang) {
+      htmlRoot.setAttribute('lang', lang);
+    }
     
     // 2. Update switcher buttons
     langBtns.forEach(btn => {
@@ -129,11 +131,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Only run JS scroll listener if native CSS scroll-driven animations are unsupported
   if (!CSS.supports('(animation-timeline: scroll()) and (animation-range: 0% 100%)')) {
+    let scrollTicking = false;
     window.addEventListener('scroll', () => {
-      if (window.scrollY > scrollThreshold) {
-        navbar.classList.add('header-scrolled');
-      } else {
-        navbar.classList.remove('header-scrolled');
+      if (!scrollTicking) {
+        requestAnimationFrame(() => {
+          navbar.classList.toggle('header-scrolled', window.scrollY > scrollThreshold);
+          scrollTicking = false;
+        });
+        scrollTicking = true;
       }
     }, { passive: true });
   }
