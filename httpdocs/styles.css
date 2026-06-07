@@ -1818,3 +1818,176 @@ html[lang="en"] .tr-only {
     height: 72vh;
   }
 }
+
+/* =========================================
+   BLOG
+   ========================================= */
+.blog-listing-hero {
+  padding: 140px 0 70px;
+  background: radial-gradient(circle at 10% 20%, hsla(35, 40%, 98%, 0.85) 0%, hsla(35, 20%, 96%, 0.95) 100%),
+              url('assets/hero-bg.webp') no-repeat center center / cover;
+  text-align: center;
+}
+
+.blog-listing-hero .section-subtitle { margin-bottom: 0.5rem; }
+.blog-listing-hero .section-title   { margin-bottom: 1rem; }
+.blog-listing-hero .section-desc    { max-width: 620px; margin: 0 auto; }
+
+.blog-listing-section { padding: 4rem 0 7rem; }
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.blog-card {
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.blog-card-thumb {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: linear-gradient(135deg, var(--primary) 0%, hsl(212,50%,30%) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.5rem;
+  min-height: 180px;
+}
+
+.blog-card-body {
+  padding: 1.5rem 1.75rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.blog-card-meta {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  display: flex;
+  gap: 1rem;
+}
+
+.blog-card-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.3;
+}
+
+.blog-card-excerpt {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  line-height: 1.65;
+  flex: 1;
+}
+
+.blog-card-readmore {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  margin-top: 0.25rem;
+}
+
+/* Blog Post */
+.blog-post-hero {
+  padding: 120px 0 50px;
+  background: radial-gradient(circle at 10% 20%, hsla(35, 40%, 98%, 0.85) 0%, hsla(35, 20%, 96%, 0.95) 100%),
+              url('assets/hero-bg.webp') no-repeat center center / cover;
+}
+
+.blog-post-main { padding: 3.5rem 0 7rem; }
+
+.blog-post-article {
+  max-width: 760px;
+  margin: 0 auto;
+}
+
+.blog-back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--accent);
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-bottom: 2rem;
+}
+
+.blog-back-link:hover { text-decoration: underline; }
+
+.blog-post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+.blog-post-title {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: clamp(2rem, 4vw, 2.8rem);
+  font-weight: 700;
+  color: var(--primary);
+  line-height: 1.25;
+  margin-bottom: 2.5rem;
+}
+
+.blog-post-body { font-size: 1.05rem; line-height: 1.85; color: var(--text-dark); }
+
+.blog-post-body h2 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin: 2.5rem 0 0.9rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid hsla(43, 60%, 52%, 0.25);
+}
+
+.blog-post-body h3 { font-size: 1.15rem; font-weight: 600; color: var(--primary); margin: 1.75rem 0 0.6rem; }
+.blog-post-body p  { margin-bottom: 1.25rem; }
+.blog-post-body ul,
+.blog-post-body ol { margin: 0.75rem 0 1.5rem 1.5rem; }
+.blog-post-body li { margin-bottom: 0.5rem; }
+.blog-post-body strong { color: var(--primary); font-weight: 600; }
+
+.blog-post-cta {
+  margin-top: 3.5rem;
+  padding: 2rem 2.5rem;
+  border-radius: var(--radius-lg);
+  text-align: center;
+}
+
+.blog-post-cta h3 {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 1.5rem;
+  color: var(--primary);
+  margin-bottom: 0.75rem;
+}
+
+.blog-post-cta p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.25rem; }
+
+@media (max-width: 640px) {
+  .blog-grid { grid-template-columns: 1fr; }
+  .blog-listing-hero { padding: 120px 0 50px; }
+}
