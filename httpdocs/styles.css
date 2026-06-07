@@ -2198,9 +2198,12 @@ html[lang="en"] .tr-only {
   margin-bottom: 0.6rem;
 }
 
-.badge-free    { background: #e8f5e9; color: #2e7d32; }
-.badge-paid    { background: hsla(212,60%,93%,1); color: var(--primary); }
-.badge-popular { background: hsla(43,60%,92%,1); color: hsl(43,70%,35%); }
+.badge-free     { background: #e8f5e9; color: #2e7d32; }
+.badge-paid     { background: hsla(212,60%,93%,1); color: var(--primary); }
+.badge-popular  { background: hsla(43,60%,92%,1); color: hsl(43,70%,35%); }
+.badge-academic { background: hsla(43,60%,92%,1); color: hsl(43,70%,35%); }
+.badge-practical{ background: hsla(212,60%,93%,1); color: var(--primary); }
+.badge-intl     { background: #fdecea; color: #c62828; }
 
 .blog-school-card h4 {
   font-family: 'Cormorant Garamond', Georgia, serif;
@@ -2216,6 +2219,64 @@ html[lang="en"] .tr-only {
   line-height: 1.6;
   margin: 0;
 }
+
+/* School card top-colour variants */
+.blog-school-card { position: relative; overflow: hidden; }
+.blog-school-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 3px;
+  background: transparent;
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+}
+.blog-school-card.top-gold::before  { background: hsl(43,70%,52%); }
+.blog-school-card.top-red::before   { background: #c62828; }
+.blog-school-card.top-navy::before  { background: var(--primary); }
+.blog-school-card.top-green::before { background: #2e7d32; }
+
+/* Language level table */
+.blog-lang-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0 2rem;
+  font-size: 0.9rem;
+  background: rgba(255,255,255,0.75);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  border: 1px solid rgba(11,33,58,0.1);
+}
+.blog-lang-table th {
+  background: var(--primary);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  padding: 10px 14px;
+  text-align: left;
+}
+.blog-lang-table td {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(11,33,58,0.07);
+  color: var(--text-muted);
+  font-style: italic;
+}
+.blog-lang-table tr:last-child td { border-bottom: none; }
+.blog-lang-table td:first-child { color: var(--text-dark); font-style: normal; font-weight: 500; }
+.blog-lang-table tr:nth-child(even) { background: rgba(11,33,58,0.02); }
+
+.level-badge {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 2px 8px;
+  border-radius: 20px;
+  letter-spacing: 0.04em;
+}
+.level-a { background: #fdecea; color: #c62828; }
+.level-b { background: hsla(43,60%,92%,1); color: hsl(43,70%,35%); }
+.level-c { background: #e8f5e9; color: #2e7d32; }
 
 /* Documents table */
 .blog-docs-table {
