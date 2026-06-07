@@ -2593,3 +2593,44 @@ html[lang="en"] .tr-only {
 .blog-verdict-card.ib-v { border-left: 3px solid var(--primary); }
 .blog-verdict-card.al-v { border-left: 3px solid #c62828; }
 .blog-verdict-card.ap-v { border-left: 3px solid #2e7d32; }
+
+/* ── Personal Author Note ───────────────────────────────────────────────── */
+.blog-personal-note {
+  display: flex;
+  gap: 1rem;
+  align-items: flex-start;
+  background: hsla(215, 55%, 96%, 1);
+  border-left: 3px solid var(--primary);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1.1rem 1.4rem;
+  margin: 1.5rem 0 2rem;
+}
+.blog-personal-note-img {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 2px solid var(--primary);
+}
+.blog-personal-note-body { flex: 1; }
+.blog-personal-note-name {
+  font-weight: 700;
+  font-size: 0.82rem;
+  color: var(--primary);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+  display: block;
+}
+.blog-personal-note-body p {
+  font-size: 0.92rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  font-style: italic;
+  margin: 0;
+}
+@media (max-width: 540px) {
+  .blog-personal-note { flex-direction: column; gap: 0.75rem; }
+  .blog-personal-note-img { width: 44px; height: 44px; }
+}
