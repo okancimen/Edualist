@@ -1454,6 +1454,10 @@ html[lang="en"] .tr-only {
     display: flex;
   }
   
+  .nav-controls .btn {
+    display: none;
+  }
+
   .nav-links {
     position: fixed;
     top: 100px;
