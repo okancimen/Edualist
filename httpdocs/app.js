@@ -366,6 +366,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (opening) {
         const iframe = chatbotPopup.querySelector('iframe[data-src]');
         if (iframe) { iframe.src = iframe.dataset.src; iframe.removeAttribute('data-src'); }
+        if (typeof gtag === 'function') {
+          gtag('event', 'chatbot_open', { event_category: 'engagement', event_label: 'EduBot' });
+        }
       }
     });
     if (chatbotClose) {
