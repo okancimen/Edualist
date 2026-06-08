@@ -238,6 +238,9 @@ document.addEventListener('DOMContentLoaded', () => {
             form.classList.remove('was-validated');
             alertBox.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             setTimeout(() => { alertBox.style.display = 'none'; }, 5000);
+            if (typeof gtag === 'function') {
+              gtag('event', 'consultation_form_submit', { event_category: 'lead', event_label: 'Consultation Form' });
+            }
           } else {
             if (submitBtn) submitBtn.disabled = false;
           }
@@ -283,6 +286,9 @@ document.addEventListener('DOMContentLoaded', () => {
             webinarForm.reset();
             webinarAlert.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
             setTimeout(() => { webinarAlert.style.display = 'none'; }, 5000);
+            if (typeof gtag === 'function') {
+              gtag('event', 'webinar_form_submit', { event_category: 'lead', event_label: 'Webinar Registration' });
+            }
           } else {
             if (submitBtn) submitBtn.disabled = false;
           }
