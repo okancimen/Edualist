@@ -225,7 +225,8 @@ document.addEventListener('DOMContentLoaded', () => {
         details: document.getElementById('form-details').value
       };
 
-      fetch('../mail.php', {
+      const mailPath = window.location.pathname === '/' ? '/mail.php' : '../mail.php';
+      fetch(mailPath, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
@@ -243,9 +244,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           } else {
             if (submitBtn) submitBtn.disabled = false;
+            alert('Mesaj gönderilemedi. Lütfen WhatsApp veya e-posta ile ulaşın.');
           }
         })
-        .catch(() => { if (submitBtn) submitBtn.disabled = false; });
+        .catch(() => {
+          if (submitBtn) submitBtn.disabled = false;
+          alert('Bağlantı hatası. Lütfen WhatsApp veya e-posta ile ulaşın.');
+        });
     });
   }
 
@@ -274,7 +279,8 @@ document.addEventListener('DOMContentLoaded', () => {
         phone: document.getElementById('webinar-phone').value
       };
 
-      fetch('../mail.php', {
+      const webinarMailPath = window.location.pathname === '/' ? '/mail.php' : '../mail.php';
+      fetch(webinarMailPath, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(data)
@@ -291,9 +297,13 @@ document.addEventListener('DOMContentLoaded', () => {
             }
           } else {
             if (submitBtn) submitBtn.disabled = false;
+            alert('Mesaj gönderilemedi. Lütfen WhatsApp veya e-posta ile ulaşın.');
           }
         })
-        .catch(() => { if (submitBtn) submitBtn.disabled = false; });
+        .catch(() => {
+          if (submitBtn) submitBtn.disabled = false;
+          alert('Bağlantı hatası. Lütfen WhatsApp veya e-posta ile ulaşın.');
+        });
     });
   }
   // ==========================================
