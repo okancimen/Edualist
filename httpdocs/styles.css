@@ -2546,6 +2546,7 @@ html[lang="en"] .tr-only {
 .blog-verdict { background: var(--primary); color: #fff; border-radius: var(--radius-sm); padding: 1.6rem; margin: 2rem 0; }
 .blog-verdict h3 { font-size: 1.05rem; font-weight: 700; color: #fff; margin-bottom: 1rem; }
 .blog-verdict-row { display: flex; gap: 12px; align-items: flex-start; margin-bottom: 0.6rem; font-size: 0.88rem; color: rgba(255,255,255,0.8); line-height: 1.55; }
+.blog-verdict strong { color: #fff; }
 .blog-verdict-dot { flex-shrink: 0; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); margin-top: 6px; }
 
 /* ── CURRICULUM CARDS (IB / A-Level / AP) ────────────────── */
