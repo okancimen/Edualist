@@ -130,4 +130,39 @@
     <priority>0.7</priority>
   </url>
 
+  <url>
+    <loc>https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/</loc>
+    <lastmod>2026-06-07</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/turk-egitim-sisteminden-uluslararasi-okula-gecis/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/cocugunuz-yurt-disinda-okumaya-hazir-mi/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/kizim-sinifin-zemininde-yatiyordu/</loc>
+    <lastmod>2026-06-10</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
