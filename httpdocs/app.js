@@ -241,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => { alertBox.style.display = 'none'; }, 5000);
             if (typeof gtag === 'function') {
               gtag('event', 'consultation_form_submit', { event_category: 'lead', event_label: 'Consultation Form' });
-              gtag('event', 'conversion', { send_to: 'AW-18221941570/e1yhCOvG2LscEMKG8_BD' });
+              gtag('event', 'conversion', { send_to: 'AW-18221941570/2k1tCKmdj7wcEMKG8_BD' });
             }
           } else {
             if (submitBtn) submitBtn.disabled = false;
@@ -295,7 +295,7 @@ document.addEventListener('DOMContentLoaded', () => {
             setTimeout(() => { webinarAlert.style.display = 'none'; }, 5000);
             if (typeof gtag === 'function') {
               gtag('event', 'webinar_form_submit', { event_category: 'lead', event_label: 'Webinar Registration' });
-              gtag('event', 'conversion', { send_to: 'AW-18221941570/e1yhCOvG2LscEMKG8_BD' });
+              gtag('event', 'conversion', { send_to: 'AW-18221941570/2k1tCKmdj7wcEMKG8_BD' });
             }
           } else {
             if (submitBtn) submitBtn.disabled = false;
