@@ -124,7 +124,7 @@ html[lang="en"] .tr-only {
 }
 
 .section {
-  padding: 8rem 0;
+  padding: 4rem 0;
   position: relative;
 }
 
@@ -1409,7 +1409,7 @@ html[lang="en"] .tr-only {
 
 @media (max-width: 768px) {
   .section {
-    padding: 5rem 0;
+    padding: 2.5rem 0;
   }
   .section-title {
     font-size: 2.25rem;
