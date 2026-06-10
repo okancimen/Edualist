@@ -44,6 +44,10 @@
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # HTTP → HTTPS (301 permanent)
+  RewriteCond %{HTTPS} off
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
   # Canonical: non-www → www (301 permanent)
   RewriteCond %{HTTP_HOST} ^edualist\.com$ [NC]
   RewriteRule ^ https://www.edualist.com%{REQUEST_URI} [R=301,L]
