@@ -74,9 +74,12 @@ document.addEventListener('DOMContentLoaded', () => {
     btn.addEventListener('click', () => {
       const selectedLang = btn.getAttribute('data-lang');
       localStorage.setItem('edualist_lang', selectedLang);
-      
-      // Navigate to the correct subfolder if it is different from the current page language
-      if (selectedLang !== pageLang) {
+
+      // Only navigate when on a dedicated language-specific page (/, /tr/, /en/).
+      // Bilingual single pages (blog posts, /neden-biz/, /blog/) just toggle in place.
+      const isLangPage = /^\/(tr|en)(\/|$)/.test(currentPath) || currentPath === '/';
+
+      if (isLangPage && selectedLang !== pageLang) {
         const hash = window.location.hash || '';
         if (selectedLang === 'en') {
           window.location.href = '../en/' + hash;
