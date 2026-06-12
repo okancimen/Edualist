@@ -1911,12 +1911,13 @@ html[lang="en"] .tr-only {
 }
 
 .blog-hero-portrait-ring {
-  width: 260px;
-  height: 260px;
+  width: 112px;
+  height: 140px;
   border-radius: 50%;
   padding: 5px;
   background: linear-gradient(135deg, var(--accent) 0%, hsl(43,80%,65%) 100%);
   box-shadow: 0 12px 40px rgba(11, 33, 58, 0.18);
+  overflow: hidden;
 }
 
 .blog-hero-portrait {
@@ -1924,8 +1925,10 @@ html[lang="en"] .tr-only {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: top;
+  object-position: center 18%;
   display: block;
+  transform: scale(1.75);
+  transform-origin: center 22%;
 }
 
 .blog-hero-badge {
@@ -1996,7 +1999,7 @@ html[lang="en"] .tr-only {
   .blog-hero-text { text-align: center; }
   .blog-hero-text .section-desc { max-width: 100%; margin: 0 auto; }
   .blog-hero-visual { display: flex; justify-content: center; }
-  .blog-hero-portrait-ring { width: 200px; height: 200px; }
+  .blog-hero-portrait-ring { width: 90px; height: 112px; }
   .blog-author-card { flex-direction: column; text-align: center; }
   .blog-author-card picture { margin: 0 auto; }
 }
