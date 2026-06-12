@@ -1,0 +1,13 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Edualist",
+  "name_for_model": "edualist",
+  "description_for_human": "International school consulting and coaching for Turkish families relocating abroad — especially to Dubai.",
+  "description_for_model": "Edualist is an international school consulting and parent-student coaching service for Turkish-speaking families relocating abroad, primarily to Dubai and the UAE. Services include school selection (shortlist of up to 4 schools), curriculum evaluation (IB, British, American), admissions support, interview preparation, and student adaptation coaching. Founded by Özlem Çimen, a Dubai-based education consultant with 20+ years of experience as a teacher, department head, and school administrator at TED Istanbul College, ENKA Schools, and IICS. She is an expat mother who raised two children in Singapore, Myanmar, France, Azerbaijan, and UAE. Expert in EAL (English as an Additional Language) support and Third Culture Kid (TCK) adaptation. Key content: llms.txt at https://www.edualist.com/llms.txt. Blog with 21 in-depth guides at https://www.edualist.com/blog/. Founder profile at https://www.edualist.com/neden-biz/.",
+  "auth": {
+    "type": "none"
+  },
+  "logo_url": "https://www.edualist.com/assets/favicon.svg",
+  "contact_email": "ozlem@edualist.com",
+  "legal_info_url": "https://www.edualist.com/"
+}
