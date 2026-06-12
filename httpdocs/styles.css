@@ -2523,6 +2523,26 @@ html[lang="en"] .tr-only {
   padding: 3px 10px;
 }
 
+.blog-summary {
+  background: rgba(11, 33, 58, 0.04);
+  border-left: 3px solid var(--accent);
+  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0 1.75rem;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: var(--text-dark);
+}
+.blog-summary strong {
+  display: block;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+  margin-bottom: 0.35rem;
+  font-family: var(--font-sans);
+}
+
 @media (max-width: 640px) {
   .blog-grid { grid-template-columns: 1fr; }
   .blog-listing-hero { padding: 120px 0 50px; }
