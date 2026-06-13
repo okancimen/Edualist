@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex">
+  <title>Sayfa Bulunamadı / Page Not Found | Edualist</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"></noscript>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .error-page {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 4rem 1.5rem;
+    }
+    .error-code {
+      font-family: var(--font-serif, 'Cormorant Garamond', serif);
+      font-size: clamp(5rem, 15vw, 10rem);
+      font-weight: 300;
+      line-height: 1;
+      color: var(--accent, #c8a96e);
+      opacity: 0.5;
+      margin-bottom: 1rem;
+    }
+    .error-title {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      margin-bottom: 1rem;
+    }
+    .error-desc {
+      color: var(--text-muted, #666);
+      max-width: 500px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+    .error-links {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="header-nav glass" id="navbar">
+    <div class="container nav-container">
+      <a href="/" class="logo" id="nav-logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="/tr/">Ana Sayfa / Home</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/neden-biz/">Hakkımızda / About</a></li>
+        </ul>
+      </nav>
+      <div class="nav-controls">
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="error-page">
+    <div>
+      <div class="error-code">404</div>
+      <h1 class="error-title">Sayfa Bulunamadı &nbsp;/&nbsp; Page Not Found</h1>
+      <p class="error-desc">
+        Aradığınız sayfa taşınmış, silinmiş veya hiç var olmamış olabilir.<br>
+        <em>The page you're looking for may have moved, been removed, or never existed.</em>
+      </p>
+      <div class="error-links">
+        <a href="/tr/" class="btn btn-primary">Ana Sayfa</a>
+        <a href="/blog/" class="btn btn-secondary">Blog</a>
+        <a href="/en/" class="btn btn-secondary">Home (EN)</a>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
+        <div><a href="/gizlilik-politikasi/" style="color:inherit;opacity:0.7">Gizlilik Politikası / Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
