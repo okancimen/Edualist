@@ -5,7 +5,16 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  
+
+  // Browser language auto-redirect — first visit only, root path only
+  if (window.location.pathname === '/' && !localStorage.getItem('edualist_lang')) {
+    if ((navigator.language || '').toLowerCase().startsWith('en')) {
+      localStorage.setItem('edualist_lang', 'en');
+      window.location.replace('/en/');
+      return;
+    }
+  }
+
   // ==========================================
   // MULTILINGUAL TRANSLATION ENGINE
   // ==========================================
