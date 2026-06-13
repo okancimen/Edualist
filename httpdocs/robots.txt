@@ -30,4 +30,4 @@ User-agent: Twitterbot
 Allow: /
 
 Sitemap: https://www.edualist.com/sitemap.xml
-LLMs: https://www.edualist.com/llms.txt
+# LLM content index: https://www.edualist.com/llms.txt
