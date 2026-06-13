@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   } else if (currentPath.includes('/tr/') || currentPath.endsWith('/tr')) {
     pageLang = 'tr';
   } else {
-    pageLang = htmlRoot.getAttribute('lang') || localStorage.getItem('edualist_lang') || 'tr';
+    pageLang = localStorage.getItem('edualist_lang') || htmlRoot.getAttribute('lang') || 'tr';
   }
 
   // Placeholder translation mapping
