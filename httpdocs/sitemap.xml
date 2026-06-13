@@ -3,8 +3,8 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
-    <loc>https://www.edualist.com/</loc>
-    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/"/>
+    <loc>https://www.edualist.com/tr/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/tr/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/"/>
     <lastmod>2026-06-13</lastmod>
@@ -14,22 +14,12 @@
 
   <url>
     <loc>https://www.edualist.com/en/</loc>
-    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/tr/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/"/>
     <lastmod>2026-06-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
-  </url>
-
-  <url>
-    <loc>https://www.edualist.com/tr/</loc>
-    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/"/>
-    <lastmod>2026-06-13</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 
   <url>
