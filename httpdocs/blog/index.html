@@ -1,7 +1,22 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <!-- Google Analytics -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Critical CSS: first resource browser discovers -->
+  <link rel="stylesheet" href="../styles.css?v=2">
+
+  <!-- Preload LCP resources immediately (before CSS is parsed) -->
+  <link rel="preload" as="image" href="../assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" imagesrcset="../assets/founder-avatar.webp" type="image/webp">
+
+  <!-- DNS prefetch for external origins -->
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Google Analytics (async — does not block rendering) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18221941570"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -10,8 +25,7 @@
     gtag('config', 'G-5KG3GY4CNJ');
     gtag('config', 'AW-18221941570');
   </script>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Blog — Yurt Dışı &amp; Uluslararası Okul Rehberleri | Edualist</title>
   <meta name="description" content="Yurt dışına taşınan Türk aileler için uluslararası okul rehberleri, TCK, müfredat karşılaştırması ve eğitim koçluğu. Özlem Çimen – Edualist.">
   <link rel="canonical" href="https://www.edualist.com/blog/">
@@ -26,12 +40,8 @@
   <meta property="og:url"   content="https://www.edualist.com/blog/">
   <meta property="og:image" content="https://www.edualist.com/assets/hero-bg.png">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"></noscript>
-
-  <link rel="stylesheet" href="../styles.css?v=2">
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
@@ -188,9 +198,6 @@
   ]
 }
   </script>
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-  <link rel="preload" as="image" href="../assets/founder-avatar.webp" type="image/webp" fetchpriority="high">
 </head>
 <body>
 
