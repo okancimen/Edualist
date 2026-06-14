@@ -31,7 +31,7 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap" media="print" onload="this.media='all'">
   <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=swap"></noscript>
 
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="stylesheet" href="../styles.css?v=2">
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
@@ -188,6 +188,9 @@
   ]
 }
   </script>
+  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preload" as="image" href="../assets/founder-avatar.webp" type="image/webp" fetchpriority="high">
 </head>
 <body>
 
@@ -257,7 +260,7 @@
         <div class="blog-hero-portrait-ring">
           <picture>
             <source srcset="../assets/founder-avatar.webp" type="image/webp">
-            <img src="../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-hero-portrait" width="1024" height="1024" loading="eager">
+            <img src="../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-hero-portrait" width="1024" height="1024" loading="eager" fetchpriority="high" decoding="sync">
           </picture>
         </div>
         <div class="blog-hero-badge glass">
@@ -277,7 +280,7 @@
 
         <a href="eduentry-uluslararasi-akademik-degerlendirme-nedir/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-dubai.webp" alt="Eduentry Uluslararası Akademik Değerlendirme" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-dubai.webp" alt="Eduentry Uluslararası Akademik Değerlendirme" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" loading="eager" width="800" height="450" decoding="async">
             <span class="blog-card-flag">🌍</span>
           </div>
           <div class="blog-card-body">
@@ -307,7 +310,7 @@
         <!-- Post: Türkiye Eğitim Sistemi Neden Yetmiyor -->
         <a href="turkiye-egitim-sistemi-neden-yetmiyor/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-turkiye-egitim.webp" alt="Türkiye Eğitim Sistemi Neden Yetmiyor?" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-turkiye-egitim.webp" alt="Türkiye Eğitim Sistemi Neden Yetmiyor?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏫</span>
           </div>
           <div class="blog-card-body">
@@ -332,7 +335,7 @@
         <!-- Post: Lise Yurt Dışı Taşınma Adaptasyon -->
         <a href="lise-yurt-disi-tasinma-adaptasyon/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-lise-tasima.webp" alt="Çocuğum Lisedeyken Yurt Dışına Taşınsak Nasıl Adapte Olur?" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-lise-tasima.webp" alt="Çocuğum Lisedeyken Yurt Dışına Taşınsak Nasıl Adapte Olur?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎓</span>
           </div>
           <div class="blog-card-body">
@@ -357,7 +360,7 @@
         <!-- Post: BAE Uluslararası Okul Rehberi -->
         <a href="bae-uluslararasi-okul-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-bae-okul.webp" alt="BAE'de Uluslararası Okul Seçimi" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-bae-okul.webp" alt="BAE'de Uluslararası Okul Seçimi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
           </div>
           <div class="blog-card-body">
@@ -381,7 +384,7 @@
 
         <a href="kizim-sinifin-zemininde-yatiyordu/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-yanlis-okul.webp" alt="Kızım Sınıfın Zemininde Yatıyordu — Yanlış Okulu Seçmenin Bedeli" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-yanlis-okul.webp" alt="Kızım Sınıfın Zemininde Yatıyordu — Yanlış Okulu Seçmenin Bedeli" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💔</span>
           </div>
           <div class="blog-card-body">
@@ -406,7 +409,7 @@
         <!-- Post: Oğlumun İngilizcesi İyiydi -->
         <a href="oglumun-ingilizcesi-iyiydi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-ingilizce.webp" alt="Oğlumun İngilizcesi İyiydi — Müdürün Odasında Nefes Alamadığım Gün" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-ingilizce.webp" alt="Oğlumun İngilizcesi İyiydi — Müdürün Odasında Nefes Alamadığım Gün" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💬</span>
           </div>
           <div class="blog-card-body">
@@ -431,7 +434,7 @@
         <!-- Post: Çocuğunuz Yurt Dışında Okumaya Hazır Mı? -->
         <a href="cocugunuz-yurt-disinda-okumaya-hazir-mi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-hazir.webp" alt="Çocuğunuz Yurt Dışında Okumaya Hazır Mı?" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-hazir.webp" alt="Çocuğunuz Yurt Dışında Okumaya Hazır Mı?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">✅</span>
           </div>
           <div class="blog-card-body">
@@ -456,7 +459,7 @@
         <!-- Post: Türk Eğitiminden Uluslararası Okula Geçiş -->
         <a href="turk-egitim-sisteminden-uluslararasi-okula-gecis/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-gecis.webp" alt="Türk Eğitim Sisteminden Uluslararası Okula Geçiş" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-gecis.webp" alt="Türk Eğitim Sisteminden Uluslararası Okula Geçiş" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎓</span>
           </div>
           <div class="blog-card-body">
@@ -481,7 +484,7 @@
         <!-- Post: Dubai En İyi Okullar -->
         <a href="dubai-en-iyi-uluslararasi-okullar/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-dubai-okul.webp" alt="Dubai En İyi Uluslararası Okullar" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-dubai-okul.webp" alt="Dubai En İyi Uluslararası Okullar" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏆</span>
           </div>
           <div class="blog-card-body">
@@ -506,7 +509,7 @@
         <!-- Post: Mülakat Rehberi -->
         <a href="uluslararasi-okul-mulakatı-nasil-gecilir/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-mulakat.webp" alt="Uluslararası Okul Mülakatı" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-mulakat.webp" alt="Uluslararası Okul Mülakatı" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
           </div>
           <div class="blog-card-body">
@@ -531,7 +534,7 @@
         <!-- Post: Kanada Rehberi -->
         <a href="kanada-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-kanada.webp" alt="Kanada Okul Kayıt" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-kanada.webp" alt="Kanada Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇨🇦</span>
           </div>
           <div class="blog-card-body">
@@ -556,7 +559,7 @@
         <!-- Post: TCK Rehberi -->
         <a href="ucuncu-kultur-cocugu-tck-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-tck.webp" alt="Üçüncü Kültür Çocuğu TCK" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-tck.webp" alt="Üçüncü Kültür Çocuğu TCK" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
           </div>
           <div class="blog-card-body">
@@ -581,7 +584,7 @@
         <!-- Post: Karar Rehberi -->
         <a href="cocugumu-yurtdisinda-okutmali-miyim/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-karar.webp" alt="Yurt Dışı Eğitim Kararı" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-karar.webp" alt="Yurt Dışı Eğitim Kararı" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
           </div>
           <div class="blog-card-body">
@@ -606,7 +609,7 @@
         <!-- Post: Maliyet Karşılaştırma -->
         <a href="yurtdisi-egitim-maliyet-karsilastirma/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-maliyet.webp" alt="Yurt Dışı Eğitim Maliyeti" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-maliyet.webp" alt="Yurt Dışı Eğitim Maliyeti" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
           </div>
           <div class="blog-card-body">
@@ -631,7 +634,7 @@
         <!-- Post: Müfredat Karşılaştırma -->
         <a href="ib-alevel-amerikan-mufredat-karsilastirma/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-mufredat.webp" alt="IB A-Level AP Müfredat Karşılaştırma" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-mufredat.webp" alt="IB A-Level AP Müfredat Karşılaştırma" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
           </div>
           <div class="blog-card-body">
@@ -656,7 +659,7 @@
         <!-- Post: Dubai'ye Gelmeden Önce Bilmeniz Gerekenler -->
         <a href="dubai-turk-okulu-var-mi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-dubai.webp" alt="Dubai'de Türk Okulu Var Mı?" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-dubai.webp" alt="Dubai'de Türk Okulu Var Mı?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
           </div>
           <div class="blog-card-body">
@@ -685,7 +688,7 @@
 
         <a href="ingilizcesi-yetersiz-cocuk-dubai-okulu-uyum/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-dubai.webp" alt="İngilizcesi Yetersiz Çocuk Dubai Okuluna Nasıl Uyum Sağlar?" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-dubai.webp" alt="İngilizcesi Yetersiz Çocuk Dubai Okuluna Nasıl Uyum Sağlar?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
           </div>
           <div class="blog-card-body">
@@ -714,7 +717,7 @@
 
         <a href="dubai-gelmeden-once-bilmeniz-gerekenler/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-dubai.webp" alt="Dubai'ye Gelmeden Önce Bilmeniz Gerekenler" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-dubai.webp" alt="Dubai'ye Gelmeden Önce Bilmeniz Gerekenler" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
           </div>
           <div class="blog-card-body">
@@ -744,7 +747,7 @@
         <!-- Post 3 -->
         <a href="ingiltere-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-ingiltere.webp" alt="İngiltere Okul Kayıt" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-ingiltere.webp" alt="İngiltere Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇬🇧</span>
           </div>
           <div class="blog-card-body">
@@ -774,7 +777,7 @@
         <!-- Post 5 -->
         <a href="fransa-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-fransa.webp" alt="Fransa Okul Kayıt" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-fransa.webp" alt="Fransa Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇫🇷</span>
           </div>
           <div class="blog-card-body">
@@ -799,7 +802,7 @@
         <!-- Post 6 -->
         <a href="hollanda-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-hollanda.webp" alt="Hollanda Okul Kayıt" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-hollanda.webp" alt="Hollanda Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇳🇱</span>
           </div>
           <div class="blog-card-body">
@@ -824,7 +827,7 @@
         <!-- Post 7 -->
         <a href="italya-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-italya.webp" alt="İtalya Okul Kayıt" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-italya.webp" alt="İtalya Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇮🇹</span>
           </div>
           <div class="blog-card-body">
@@ -849,7 +852,7 @@
         <!-- Post 4 -->
         <a href="almanya-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-almanya.webp" alt="Almanya Okul Kayıt" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-almanya.webp" alt="Almanya Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇩🇪</span>
           </div>
           <div class="blog-card-body">
@@ -879,7 +882,7 @@
         <!-- Post 2 -->
         <a href="dubai-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-dubai.webp" alt="Dubai Okul Kayıt" loading="lazy" width="800" height="450">
+            <img src="../assets/blog/thumb-dubai.webp" alt="Dubai Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
           </div>
           <div class="blog-card-body">
@@ -911,12 +914,12 @@
   </section>
 
   <!-- AUTHOR -->
-  <section class="blog-author-section">
+  <section class="blog-author-section" style="content-visibility:auto;contain-intrinsic-size:0 400px">
     <div class="container">
       <div class="blog-author-card glass scroll-reveal">
         <picture>
           <source srcset="../assets/founder-avatar.webp" type="image/webp">
-          <img src="../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-author-img" loading="lazy" width="1024" height="1024">
+          <img src="../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-author-img" loading="lazy" decoding="async" width="1024" height="1024">
         </picture>
         <div class="blog-author-info">
           <p class="blog-author-role">
@@ -934,7 +937,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer">
+  <footer class="footer" style="content-visibility:auto;contain-intrinsic-size:0 300px">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-bio-col">
