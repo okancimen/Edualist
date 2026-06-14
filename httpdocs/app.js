@@ -165,11 +165,12 @@ document.addEventListener('DOMContentLoaded', () => {
       rootMargin: '0px 0px -50px 0px'
     });
 
-    // Defer to next frame — avoids forced reflow during language init on the same frame
+    // Two-frame split: write (classList) in frame 1, read (observe) in frame 2.
+    // Mixing write+read in the same frame forces a reflow when observe() checks layout.
     requestAnimationFrame(() => {
-      revealElements.forEach(el => {
-        el.classList.add('reveal-init');
-        revealObserver.observe(el);
+      revealElements.forEach(el => el.classList.add('reveal-init'));
+      requestAnimationFrame(() => {
+        revealElements.forEach(el => revealObserver.observe(el));
       });
     });
   }
