@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
+  <script>/* Early lang detection — prevents post-paint reflow from setLanguage() */
+  (function(){var s=localStorage.getItem('edualist_lang'),p=location.pathname,l=p.includes('/en/')||p.endsWith('/en')?'en':p.includes('/tr/')||p.endsWith('/tr')?'tr':s||document.documentElement.getAttribute('lang')||'tr';document.documentElement.setAttribute('lang',l);}());
+  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -9,7 +12,7 @@
 
   <!-- Preload LCP resources immediately (before CSS is parsed) -->
   <link rel="preload" as="image" href="../assets/hero-bg.webp" type="image/webp" fetchpriority="high">
-  <link rel="preload" as="image" imagesrcset="../assets/founder-avatar.webp" type="image/webp">
+  <link rel="preload" as="image" imagesrcset="../assets/founder-avatar-300.webp 300w, ../assets/founder-avatar-600.webp 600w, ../assets/founder-avatar.webp 820w" imagesizes="(max-width: 640px) 143px, 200px" type="image/webp">
 
   <!-- DNS prefetch for external origins -->
   <link rel="dns-prefetch" href="https://www.googletagmanager.com">
@@ -266,8 +269,11 @@
       <div class="blog-hero-visual">
         <div class="blog-hero-portrait-ring">
           <picture>
-            <source srcset="../assets/founder-avatar.webp" type="image/webp">
-            <img src="../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-hero-portrait" width="1024" height="1024" loading="eager" fetchpriority="high" decoding="sync">
+            <source
+              srcset="../assets/founder-avatar-300.webp 300w, ../assets/founder-avatar-600.webp 600w, ../assets/founder-avatar.webp 820w"
+              sizes="(max-width: 640px) 143px, 200px"
+              type="image/webp">
+            <img src="../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-hero-portrait" width="820" height="1024" loading="eager" fetchpriority="high" decoding="sync">
           </picture>
         </div>
         <div class="blog-hero-badge glass">
@@ -317,7 +323,7 @@
         <!-- Post: Türkiye Eğitim Sistemi Neden Yetmiyor -->
         <a href="turkiye-egitim-sistemi-neden-yetmiyor/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-turkiye-egitim.webp" alt="Türkiye Eğitim Sistemi Neden Yetmiyor?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img srcset="../assets/blog/thumb-turkiye-egitim-640.webp 640w, thumb-turkiye-egitim.webp 800w" src="../assets/blog/thumb-turkiye-egitim.webp" alt="Türkiye Eğitim Sistemi Neden Yetmiyor?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏫</span>
           </div>
           <div class="blog-card-body">
@@ -367,7 +373,7 @@
         <!-- Post: BAE Uluslararası Okul Rehberi -->
         <a href="bae-uluslararasi-okul-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-bae-okul.webp" alt="BAE'de Uluslararası Okul Seçimi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img srcset="../assets/blog/thumb-bae-okul-640.webp 640w, thumb-bae-okul.webp 800w" src="../assets/blog/thumb-bae-okul.webp" alt="BAE'de Uluslararası Okul Seçimi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
           </div>
           <div class="blog-card-body">
@@ -441,7 +447,7 @@
         <!-- Post: Çocuğunuz Yurt Dışında Okumaya Hazır Mı? -->
         <a href="cocugunuz-yurt-disinda-okumaya-hazir-mi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-hazir.webp" alt="Çocuğunuz Yurt Dışında Okumaya Hazır Mı?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img srcset="../assets/blog/thumb-hazir-640.webp 640w, thumb-hazir.webp 800w" src="../assets/blog/thumb-hazir.webp" alt="Çocuğunuz Yurt Dışında Okumaya Hazır Mı?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">✅</span>
           </div>
           <div class="blog-card-body">
@@ -466,7 +472,7 @@
         <!-- Post: Türk Eğitiminden Uluslararası Okula Geçiş -->
         <a href="turk-egitim-sisteminden-uluslararasi-okula-gecis/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-gecis.webp" alt="Türk Eğitim Sisteminden Uluslararası Okula Geçiş" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img srcset="../assets/blog/thumb-gecis-640.webp 640w, thumb-gecis.webp 800w" src="../assets/blog/thumb-gecis.webp" alt="Türk Eğitim Sisteminden Uluslararası Okula Geçiş" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎓</span>
           </div>
           <div class="blog-card-body">
@@ -616,7 +622,7 @@
         <!-- Post: Maliyet Karşılaştırma -->
         <a href="yurtdisi-egitim-maliyet-karsilastirma/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-maliyet.webp" alt="Yurt Dışı Eğitim Maliyeti" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img srcset="../assets/blog/thumb-maliyet-640.webp 640w, thumb-maliyet.webp 800w" src="../assets/blog/thumb-maliyet.webp" alt="Yurt Dışı Eğitim Maliyeti" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
           </div>
           <div class="blog-card-body">
