@@ -43,23 +43,16 @@
   </script>
 
   <style>
-    .animation-section {
-      position: relative;
-      width: 100%;
-      height: calc(100vh - 100px);
-      margin-top: 100px;
-      background: #0a0a0a;
-      overflow: hidden;
+    .chart-section {
+      padding: 120px 0 3rem;
+      background: #ffffff;
     }
-    #animation-root {
-      position: absolute;
-      inset: 0;
-    }
-    .animation-section iframe {
+    .chart-img {
       width: 100%;
-      height: 100%;
-      border: none;
+      height: auto;
       display: block;
+      border-radius: 12px;
+      box-shadow: 0 12px 40px rgba(0,0,0,0.12);
     }
     .article-section {
       padding: 4rem 0;
@@ -94,7 +87,7 @@
       margin-top: 1.5rem;
     }
     @media (max-width: 600px) {
-      .animation-section { height: 56vw; min-height: 300px; }
+      .chart-section { padding-top: 100px; }
     }
   </style>
 </head>
@@ -127,9 +120,17 @@
 
   <main>
 
-  <!-- ANIMATION -->
-  <section class="animation-section" aria-label="İnteraktif grafik: 10 ülkede özel ortaokul yıllık ücreti karşılaştırması 2026. Türkiye 1.000.000 ₺ ile İngiltere'nin ardından 2. sırada; ABD, Almanya, Hollanda ve Fransa'nın önünde. Türkiye'de ücret/GSYİH oranı %147 ile en yüksek oran.">
-    <iframe src="grafik.html" title="Özel ortaokul yıllık ücreti karşılaştırması 2026 — 10 ülke animasyonlu grafik" loading="lazy" allowfullscreen></iframe>
+  <!-- CHART -->
+  <section class="chart-section" aria-label="10 ülkede özel ortaokul yıllık ücreti karşılaştırması 2026. Türkiye 1.000.000 ₺ ile İngiltere'nin ardından 2. sırada; ABD, Almanya, Hollanda ve Fransa'nın önünde. Türkiye'de ücret/GSYİH oranı %147 ile en yüksek oran.">
+    <div class="container">
+      <picture>
+        <source srcset="../assets/okul-ucretleri-grafik.webp" type="image/webp">
+        <img src="../assets/okul-ucretleri-grafik.png"
+             class="chart-img"
+             alt="İnfografik: 10 ülkede özel ortaokul yıllık ücretleri karşılaştırması 2026. Türkiye 1.000.000 ₺ ile İngiltere'nin (1.350.000 ₺) ardından 2. sırada; Hollanda (900.000 ₺), ABD (850.000 ₺), Almanya (750.000 ₺) ve Fransa'nın (640.000 ₺) önünde. Türkiye'de okul ücreti kişi başı GSYİH'nin %147'sine eşit — en yüksek oran. Kaynak: IMF, ISC, KHDA, 2026."
+             width="1112" height="610">
+      </picture>
+    </div>
   </section>
 
   <!-- SEO: machine-readable data table (visually hidden, crawlable) -->
@@ -246,6 +247,22 @@
     <span class="whatsapp-sticky-label">WhatsApp</span>
   </a>
 
+
+  <!-- EduBot -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Close">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
+  </div>
 
   <script src="../app.js" defer></script>
 </body>
