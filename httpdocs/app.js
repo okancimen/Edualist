@@ -375,6 +375,26 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // ==========================================
+  // BLOG CTA CLICK TRACKING
+  // ==========================================
+  const blogMatch = window.location.pathname.match(/\/blog\/([^/]+)\//);
+  if (blogMatch) {
+    const blogSlug = blogMatch[1];
+    document.addEventListener('click', e => {
+      const link = e.target.closest('a[href]');
+      if (!link || !link.classList.contains('btn') || typeof gtag !== 'function') return;
+      const href = link.getAttribute('href') || '';
+      if (href.includes('#contact')) {
+        gtag('event', 'blog_cta_click', { event_category: 'lead', event_label: blogSlug });
+      } else if (href.includes('/dubai/')) {
+        gtag('event', 'blog_dubai_cta_click', { event_category: 'engagement', event_label: blogSlug });
+      } else if (href.includes('eduentry.com')) {
+        gtag('event', 'blog_eduentry_click', { event_category: 'engagement', event_label: blogSlug });
+      }
+    });
+  }
+
+  // ==========================================
   // AI CHATBOT POPUP
   // ==========================================
   const chatbotBtn   = document.getElementById('chatbot-btn');
