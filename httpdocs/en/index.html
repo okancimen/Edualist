@@ -946,13 +946,17 @@ html[lang="en"] .tr-only {
   }
 }
 
-.testimonials-grid {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
+.testimonials-carousel {
+  position: relative;
+  overflow: hidden;
+}
+.testimonials-track {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.25, 1, 0.5, 1);
   gap: 2rem;
 }
 .testimonial-card {
-  grid-column: span 2;
+  flex: 0 0 calc((100% - 4rem) / 3);
   padding: 2rem;
   border-radius: var(--radius-md);
   border: 1px solid rgba(255,255,255,0.5);
@@ -960,8 +964,6 @@ html[lang="en"] .tr-only {
   display: flex;
   flex-direction: column;
 }
-.testimonial-card:nth-child(4) { grid-column: 2 / span 2; }
-.testimonial-card:nth-child(5) { grid-column: 4 / span 2; }
 .testimonial-mark {
   font-family: var(--font-serif);
   font-size: 4rem;
@@ -994,15 +996,52 @@ html[lang="en"] .tr-only {
   color: var(--text-muted);
   margin-top: 0.25rem;
 }
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--primary);
+  color: var(--text-light);
+  border: none;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.4rem;
+  cursor: pointer;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow-md);
+  transition: var(--transition-fast);
+  line-height: 1;
+}
+.carousel-btn:hover { background: var(--accent); color: var(--primary); }
+.carousel-btn:disabled { opacity: 0.3; cursor: default; }
+.carousel-prev { left: -22px; }
+.carousel-next { right: -22px; }
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 2rem;
+}
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--primary);
+  opacity: 0.2;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  transition: var(--transition-fast);
+}
+.carousel-dot.active { opacity: 1; background: var(--accent); }
 @media (max-width: 768px) {
-  .testimonials-grid {
-    grid-template-columns: 1fr;
-  }
-  .testimonial-card,
-  .testimonial-card:nth-child(4),
-  .testimonial-card:nth-child(5) {
-    grid-column: span 1;
-  }
+  .testimonial-card { flex: 0 0 100%; }
+  .carousel-prev { left: 0; }
+  .carousel-next { right: 0; }
 }
   </style>
   <link rel="preload" as="style" href="../styles.css?v=2">
@@ -1451,79 +1490,129 @@ html[lang="en"] .tr-only {
           <span class="en-only">Parent Experiences</span>
         </h2>
       </div>
-      <div class="testimonials-grid">
+      <div class="testimonials-carousel" id="testimonials-carousel">
+        <div class="testimonials-track" id="testimonials-track">
 
-        <div class="testimonial-card glass scroll-reveal">
-          <div class="testimonial-mark">"</div>
-          <p class="testimonial-quote">
-            <span class="tr-only">Özlem Hanım sayesinde Dubai'de doğru okulu bulmak sandığımızdan çok daha kolay oldu. Tüm başvuru sürecini o yönetti, biz sadece evrakları imzaladık.</span>
-            <span class="en-only">Thanks to Özlem, finding the right school in Dubai was far easier than we imagined. She managed the entire application process — we just signed the documents.</span>
-          </p>
-          <div class="testimonial-divider"></div>
-          <div class="testimonial-name">A. Kaya ailesi</div>
-          <div class="testimonial-detail">
-            <span class="tr-only">İstanbul → Dubai · 2025 · 2 çocuk</span>
-            <span class="en-only">Istanbul → Dubai · 2025 · 2 children</span>
+          <div class="testimonial-card glass">
+            <div class="testimonial-mark">"</div>
+            <p class="testimonial-quote">
+              <span class="tr-only">Özlem Hanım sayesinde Dubai'de doğru okulu bulmak sandığımızdan çok daha kolay oldu. Tüm başvuru sürecini o yönetti, biz sadece evrakları imzaladık.</span>
+              <span class="en-only">Thanks to Özlem, finding the right school in Dubai was far easier than we imagined. She managed the entire application process — we just signed the documents.</span>
+            </p>
+            <div class="testimonial-divider"></div>
+            <div class="testimonial-name">A. Kaya ailesi</div>
+            <div class="testimonial-detail">
+              <span class="tr-only">İstanbul → Dubai · 2025 · 2 çocuk</span>
+              <span class="en-only">Istanbul → Dubai · 2025 · 2 children</span>
+            </div>
           </div>
-        </div>
 
-        <div class="testimonial-card glass scroll-reveal">
-          <div class="testimonial-mark">"</div>
-          <p class="testimonial-quote">
-            <span class="tr-only">İngilizcesi henüz gelişmekte olan oğlumuz için en uygun okulu bulduk. İlk dönem adaptasyonu beklediğimizden çok daha sorunsuz geçti.</span>
-            <span class="en-only">We found the perfect school for our son who was still developing his English. His first-term adaptation went much more smoothly than we expected.</span>
-          </p>
-          <div class="testimonial-divider"></div>
-          <div class="testimonial-name">M. ve S. Arslan</div>
-          <div class="testimonial-detail">
-            <span class="tr-only">Ankara → Dubai · 2024 · 8 yaş, IB okulu</span>
-            <span class="en-only">Ankara → Dubai · 2024 · Age 8, IB school</span>
+          <div class="testimonial-card glass">
+            <div class="testimonial-mark">"</div>
+            <p class="testimonial-quote">
+              <span class="tr-only">İngilizcesi henüz gelişmekte olan oğlumuz için en uygun okulu bulduk. İlk dönem adaptasyonu beklediğimizden çok daha sorunsuz geçti.</span>
+              <span class="en-only">We found the perfect school for our son who was still developing his English. His first-term adaptation went much more smoothly than we expected.</span>
+            </p>
+            <div class="testimonial-divider"></div>
+            <div class="testimonial-name">M. ve S. Arslan</div>
+            <div class="testimonial-detail">
+              <span class="tr-only">Ankara → Dubai · 2024 · 8 yaş, IB okulu</span>
+              <span class="en-only">Ankara → Dubai · 2024 · Age 8, IB school</span>
+            </div>
           </div>
-        </div>
 
-        <div class="testimonial-card glass scroll-reveal">
-          <div class="testimonial-mark">"</div>
-          <p class="testimonial-quote">
-            <span class="tr-only">Türkiye'deyken tüm başvuruları hallettik. Dubai'ye geldiğimizde okul zaten hazırdı — bu kadar rahat olacağını tahmin etmemiştik.</span>
-            <span class="en-only">We handled everything from Turkey. By the time we arrived in Dubai, the school was already sorted — we hadn't expected it to be this easy.</span>
-          </p>
-          <div class="testimonial-divider"></div>
-          <div class="testimonial-name">F. Bozkurt ailesi</div>
-          <div class="testimonial-detail">
-            <span class="tr-only">İzmir → Dubai · 2026 · Tam Yönetim Paketi</span>
-            <span class="en-only">Izmir → Dubai · 2026 · Done For You package</span>
+          <div class="testimonial-card glass">
+            <div class="testimonial-mark">"</div>
+            <p class="testimonial-quote">
+              <span class="tr-only">Türkiye'deyken tüm başvuruları hallettik. Dubai'ye geldiğimizde okul zaten hazırdı — bu kadar rahat olacağını tahmin etmemiştik.</span>
+              <span class="en-only">We handled everything from Turkey. By the time we arrived in Dubai, the school was already sorted — we hadn't expected it to be this easy.</span>
+            </p>
+            <div class="testimonial-divider"></div>
+            <div class="testimonial-name">F. Bozkurt ailesi</div>
+            <div class="testimonial-detail">
+              <span class="tr-only">İzmir → Dubai · 2026 · Tam Yönetim Paketi</span>
+              <span class="en-only">Izmir → Dubai · 2026 · Done For You package</span>
+            </div>
           </div>
-        </div>
 
-        <div class="testimonial-card glass scroll-reveal">
-          <div class="testimonial-mark">"</div>
-          <p class="testimonial-quote">
-            <span class="tr-only">Azerbaycan'da uluslararası okul seçeneği sınırlı, nereden başlayacağımızı bilmiyorduk. Edualist hem okul listesini hazırladı hem de başvuru sürecini adım adım yönetti.</span>
-            <span class="en-only">International school options in Azerbaijan are limited and we had no idea where to start. Edualist prepared the school shortlist and guided us through every step of the application.</span>
-          </p>
-          <div class="testimonial-divider"></div>
-          <div class="testimonial-name">C. ve N. Yıldız</div>
-          <div class="testimonial-detail">
-            <span class="tr-only">İstanbul → Bakü · 2025 · 1 çocuk, 10 yaş</span>
-            <span class="en-only">Istanbul → Baku · 2025 · 1 child, age 10</span>
+          <div class="testimonial-card glass">
+            <div class="testimonial-mark">"</div>
+            <p class="testimonial-quote">
+              <span class="tr-only">Azerbaycan'da uluslararası okul seçeneği sınırlı, nereden başlayacağımızı bilmiyorduk. Edualist hem okul listesini hazırladı hem de başvuru sürecini adım adım yönetti.</span>
+              <span class="en-only">International school options in Azerbaijan are limited and we had no idea where to start. Edualist prepared the school shortlist and guided us through every step of the application.</span>
+            </p>
+            <div class="testimonial-divider"></div>
+            <div class="testimonial-name">C. ve N. Yıldız</div>
+            <div class="testimonial-detail">
+              <span class="tr-only">İstanbul → Bakü · 2025 · 1 çocuk, 10 yaş</span>
+              <span class="en-only">Istanbul → Baku · 2025 · 1 child, age 10</span>
+            </div>
           </div>
-        </div>
 
-        <div class="testimonial-card glass scroll-reveal">
-          <div class="testimonial-mark">"</div>
-          <p class="testimonial-quote">
-            <span class="tr-only">IB mi, A-Level mi, AP mi — hiçbir fikrimiz yoktu ve her araştırmamızda daha da karıştık. Özlem Hanım kızımızın profiline ve üniversite hedeflerine bakarak bizi IB'ye yönlendirdi; bu karardan çok memnunuz.</span>
-            <span class="en-only">IB, A-Level, AP — we had no idea and the more we researched the more confused we got. Özlem looked at our daughter's profile and university goals and pointed us to IB. We couldn't be happier with that decision.</span>
-          </p>
-          <div class="testimonial-divider"></div>
-          <div class="testimonial-name">E. ve T. Güneş</div>
-          <div class="testimonial-detail">
-            <span class="tr-only">İstanbul → Dubai · 2024 · 14 yaş, müfredat seçimi</span>
-            <span class="en-only">Istanbul → Dubai · 2024 · Age 14, curriculum selection</span>
+          <div class="testimonial-card glass">
+            <div class="testimonial-mark">"</div>
+            <p class="testimonial-quote">
+              <span class="tr-only">IB mi, A-Level mi, AP mi — hiçbir fikrimiz yoktu ve her araştırmamızda daha da karıştık. Özlem Hanım kızımızın profiline ve üniversite hedeflerine bakarak bizi IB'ye yönlendirdi; bu karardan çok memnunuz.</span>
+              <span class="en-only">IB, A-Level, AP — we had no idea and the more we researched the more confused we got. Özlem looked at our daughter's profile and university goals and pointed us to IB. We couldn't be happier with that decision.</span>
+            </p>
+            <div class="testimonial-divider"></div>
+            <div class="testimonial-name">E. ve T. Güneş</div>
+            <div class="testimonial-detail">
+              <span class="tr-only">İstanbul → Dubai · 2024 · 14 yaş, müfredat seçimi</span>
+              <span class="en-only">Istanbul → Dubai · 2024 · Age 14, curriculum selection</span>
+            </div>
           </div>
-        </div>
 
+        </div>
+        <button class="carousel-btn carousel-prev" id="carousel-prev" aria-label="Previous">&#8249;</button>
+        <button class="carousel-btn carousel-next" id="carousel-next" aria-label="Next">&#8250;</button>
+        <div class="carousel-dots" id="carousel-dots"></div>
       </div>
+      <script>
+        (function(){
+          var track = document.getElementById('testimonials-track');
+          var prevBtn = document.getElementById('carousel-prev');
+          var nextBtn = document.getElementById('carousel-next');
+          var dotsEl = document.getElementById('carousel-dots');
+          var cards = track.querySelectorAll('.testimonial-card');
+          var total = cards.length;
+          var current = 0;
+
+          function perView() { return window.innerWidth <= 768 ? 1 : 3; }
+
+          function maxIndex() { return total - perView(); }
+
+          function buildDots() {
+            dotsEl.innerHTML = '';
+            var count = maxIndex() + 1;
+            for (var i = 0; i < count; i++) {
+              var d = document.createElement('button');
+              d.className = 'carousel-dot' + (i === current ? ' active' : '');
+              d.setAttribute('aria-label', 'Slide ' + (i + 1));
+              d.dataset.i = i;
+              d.addEventListener('click', function(){ goTo(+this.dataset.i); });
+              dotsEl.appendChild(d);
+            }
+          }
+
+          function goTo(idx) {
+            current = Math.max(0, Math.min(idx, maxIndex()));
+            var pv = perView();
+            var cardWidth = cards[0].offsetWidth;
+            var gap = 32;
+            track.style.transform = 'translateX(-' + (current * (cardWidth + gap)) + 'px)';
+            prevBtn.disabled = current === 0;
+            nextBtn.disabled = current >= maxIndex();
+            dotsEl.querySelectorAll('.carousel-dot').forEach(function(d, i){ d.classList.toggle('active', i === current); });
+          }
+
+          prevBtn.addEventListener('click', function(){ goTo(current - 1); });
+          nextBtn.addEventListener('click', function(){ goTo(current + 1); });
+          window.addEventListener('resize', function(){ buildDots(); goTo(current); });
+          buildDots();
+          goTo(0);
+        })();
+      </script>
     </div>
   </section>
 
