@@ -946,6 +946,10 @@ html[lang="en"] .tr-only {
   }
 }
 
+@media (min-width: 769px) {
+  .service-desc { flex-grow: 0; min-height: 10rem; }
+}
+
 .testimonials-carousel {
   position: relative;
   overflow: hidden;
@@ -964,14 +968,6 @@ html[lang="en"] .tr-only {
   display: flex;
   flex-direction: column;
 }
-.testimonial-mark {
-  font-family: var(--font-serif);
-  font-size: 4rem;
-  line-height: 1;
-  color: var(--accent);
-  opacity: 0.4;
-  margin-bottom: 0.5rem;
-}
 .testimonial-quote {
   font-size: 1rem;
   line-height: 1.7;
@@ -979,6 +975,16 @@ html[lang="en"] .tr-only {
   flex: 1;
   margin-bottom: 1.5rem;
   font-style: italic;
+}
+.testimonial-quote::before {
+  content: '\201C';
+  font-family: var(--font-serif);
+  font-size: 2.5rem;
+  line-height: 0.6;
+  color: var(--accent);
+  opacity: 0.5;
+  float: left;
+  margin-right: 0.2em;
 }
 .testimonial-divider {
   width: 40px;
@@ -1494,7 +1500,6 @@ html[lang="en"] .tr-only {
         <div class="testimonials-track" id="testimonials-track">
 
           <div class="testimonial-card glass">
-            <div class="testimonial-mark">"</div>
             <p class="testimonial-quote">
               <span class="tr-only">Özlem Hanım sayesinde Dubai'de doğru okulu bulmak sandığımızdan çok daha kolay oldu. Tüm başvuru sürecini o yönetti, biz sadece evrakları imzaladık.</span>
               <span class="en-only">Thanks to Özlem, finding the right school in Dubai was far easier than we imagined. She managed the entire application process — we just signed the documents.</span>
@@ -1508,7 +1513,6 @@ html[lang="en"] .tr-only {
           </div>
 
           <div class="testimonial-card glass">
-            <div class="testimonial-mark">"</div>
             <p class="testimonial-quote">
               <span class="tr-only">İngilizcesi henüz gelişmekte olan oğlumuz için en uygun okulu bulduk. İlk dönem adaptasyonu beklediğimizden çok daha sorunsuz geçti.</span>
               <span class="en-only">We found the perfect school for our son who was still developing his English. His first-term adaptation went much more smoothly than we expected.</span>
@@ -1522,7 +1526,6 @@ html[lang="en"] .tr-only {
           </div>
 
           <div class="testimonial-card glass">
-            <div class="testimonial-mark">"</div>
             <p class="testimonial-quote">
               <span class="tr-only">Türkiye'deyken tüm başvuruları hallettik. Dubai'ye geldiğimizde okul zaten hazırdı — bu kadar rahat olacağını tahmin etmemiştik.</span>
               <span class="en-only">We handled everything from Turkey. By the time we arrived in Dubai, the school was already sorted — we hadn't expected it to be this easy.</span>
@@ -1536,7 +1539,6 @@ html[lang="en"] .tr-only {
           </div>
 
           <div class="testimonial-card glass">
-            <div class="testimonial-mark">"</div>
             <p class="testimonial-quote">
               <span class="tr-only">Azerbaycan'da uluslararası okul seçeneği sınırlı, nereden başlayacağımızı bilmiyorduk. Edualist hem okul listesini hazırladı hem de başvuru sürecini adım adım yönetti.</span>
               <span class="en-only">International school options in Azerbaijan are limited and we had no idea where to start. Edualist prepared the school shortlist and guided us through every step of the application.</span>
@@ -1550,7 +1552,6 @@ html[lang="en"] .tr-only {
           </div>
 
           <div class="testimonial-card glass">
-            <div class="testimonial-mark">"</div>
             <p class="testimonial-quote">
               <span class="tr-only">IB mi, A-Level mi, AP mi — hiçbir fikrimiz yoktu ve her araştırmamızda daha da karıştık. Özlem Hanım kızımızın profiline ve üniversite hedeflerine bakarak bizi IB'ye yönlendirdi; bu karardan çok memnunuz.</span>
               <span class="en-only">IB, A-Level, AP — we had no idea and the more we researched the more confused we got. Özlem looked at our daughter's profile and university goals and pointed us to IB. We couldn't be happier with that decision.</span>
