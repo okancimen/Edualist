@@ -887,6 +887,65 @@ html[lang="en"] .tr-only {
     gap: 1rem;
   }
 }
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+.testimonial-card {
+  grid-column: span 2;
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255,255,255,0.5);
+  box-shadow: var(--shadow-md);
+  display: flex;
+  flex-direction: column;
+}
+.testimonial-card:nth-child(4) { grid-column: 2 / span 2; }
+.testimonial-card:nth-child(5) { grid-column: 4 / span 2; }
+.testimonial-mark {
+  font-family: var(--font-serif);
+  font-size: 4rem;
+  line-height: 1;
+  color: var(--accent);
+  opacity: 0.4;
+  margin-bottom: 0.5rem;
+}
+.testimonial-quote {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-dark);
+  flex: 1;
+  margin-bottom: 1.5rem;
+  font-style: italic;
+}
+.testimonial-divider {
+  width: 40px;
+  height: 2px;
+  background: var(--accent);
+  margin-bottom: 1rem;
+}
+.testimonial-name {
+  font-weight: 600;
+  color: var(--primary);
+  font-size: 0.95rem;
+}
+.testimonial-detail {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  margin-top: 0.25rem;
+}
+@media (max-width: 768px) {
+  .testimonials-grid {
+    grid-template-columns: 1fr;
+  }
+  .testimonial-card,
+  .testimonial-card:nth-child(4),
+  .testimonial-card:nth-child(5) {
+    grid-column: span 1;
+  }
+}
   </style>
   <link rel="preload" as="style" href="../styles.css?v=2">
   <link rel="stylesheet" href="../styles.css?v=2" media="print" onload="this.media='all'">
@@ -1407,6 +1466,97 @@ html[lang="en"] .tr-only {
               <span class="tr-only">Yurt dışından başvuru yapanlar</span>
               <span class="en-only">Applying from abroad</span>
             </span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       TESTIMONIALS SECTION
+       ========================================== -->
+  <section class="section section-bg-alt" id="testimonials">
+    <div class="container">
+      <div class="section-title-wrapper scroll-reveal">
+        <span class="section-subtitle">
+          <span class="tr-only">Aileler Ne Diyor?</span>
+          <span class="en-only">What Families Say</span>
+        </span>
+        <h2 class="section-title">
+          <span class="tr-only">Veli Deneyimleri</span>
+          <span class="en-only">Parent Experiences</span>
+        </h2>
+      </div>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card glass scroll-reveal">
+          <div class="testimonial-mark">"</div>
+          <p class="testimonial-quote">
+            <span class="tr-only">Özlem Hanım sayesinde Dubai'de doğru okulu bulmak sandığımızdan çok daha kolay oldu. Tüm başvuru sürecini o yönetti, biz sadece evrakları imzaladık.</span>
+            <span class="en-only">Thanks to Özlem, finding the right school in Dubai was far easier than we imagined. She managed the entire application process — we just signed the documents.</span>
+          </p>
+          <div class="testimonial-divider"></div>
+          <div class="testimonial-name">A. Kaya ailesi</div>
+          <div class="testimonial-detail">
+            <span class="tr-only">İstanbul → Dubai · 2025 · 2 çocuk</span>
+            <span class="en-only">Istanbul → Dubai · 2025 · 2 children</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass scroll-reveal">
+          <div class="testimonial-mark">"</div>
+          <p class="testimonial-quote">
+            <span class="tr-only">İngilizcesi henüz gelişmekte olan oğlumuz için en uygun okulu bulduk. İlk dönem adaptasyonu beklediğimizden çok daha sorunsuz geçti.</span>
+            <span class="en-only">We found the perfect school for our son who was still developing his English. His first-term adaptation went much more smoothly than we expected.</span>
+          </p>
+          <div class="testimonial-divider"></div>
+          <div class="testimonial-name">M. ve S. Arslan</div>
+          <div class="testimonial-detail">
+            <span class="tr-only">Ankara → Dubai · 2024 · 8 yaş, IB okulu</span>
+            <span class="en-only">Ankara → Dubai · 2024 · Age 8, IB school</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass scroll-reveal">
+          <div class="testimonial-mark">"</div>
+          <p class="testimonial-quote">
+            <span class="tr-only">Türkiye'deyken tüm başvuruları hallettik. Dubai'ye geldiğimizde okul zaten hazırdı — bu kadar rahat olacağını tahmin etmemiştik.</span>
+            <span class="en-only">We handled everything from Turkey. By the time we arrived in Dubai, the school was already sorted — we hadn't expected it to be this easy.</span>
+          </p>
+          <div class="testimonial-divider"></div>
+          <div class="testimonial-name">F. Bozkurt ailesi</div>
+          <div class="testimonial-detail">
+            <span class="tr-only">İzmir → Dubai · 2026 · Tam Yönetim Paketi</span>
+            <span class="en-only">Izmir → Dubai · 2026 · Done For You package</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass scroll-reveal">
+          <div class="testimonial-mark">"</div>
+          <p class="testimonial-quote">
+            <span class="tr-only">Azerbaycan'da uluslararası okul seçeneği sınırlı, nereden başlayacağımızı bilmiyorduk. Edualist hem okul listesini hazırladı hem de başvuru sürecini adım adım yönetti.</span>
+            <span class="en-only">International school options in Azerbaijan are limited and we had no idea where to start. Edualist prepared the school shortlist and guided us through every step of the application.</span>
+          </p>
+          <div class="testimonial-divider"></div>
+          <div class="testimonial-name">C. ve N. Yıldız</div>
+          <div class="testimonial-detail">
+            <span class="tr-only">İstanbul → Bakü · 2025 · 1 çocuk, 10 yaş</span>
+            <span class="en-only">Istanbul → Baku · 2025 · 1 child, age 10</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card glass scroll-reveal">
+          <div class="testimonial-mark">"</div>
+          <p class="testimonial-quote">
+            <span class="tr-only">IB mi, A-Level mi, AP mi — hiçbir fikrimiz yoktu ve her araştırmamızda daha da karıştık. Özlem Hanım kızımızın profiline ve üniversite hedeflerine bakarak bizi IB'ye yönlendirdi; bu karardan çok memnunuz.</span>
+            <span class="en-only">IB, A-Level, AP — we had no idea and the more we researched the more confused we got. Özlem looked at our daughter's profile and university goals and pointed us to IB. We couldn't be happier with that decision.</span>
+          </p>
+          <div class="testimonial-divider"></div>
+          <div class="testimonial-name">E. ve T. Güneş</div>
+          <div class="testimonial-detail">
+            <span class="tr-only">İstanbul → Dubai · 2024 · 14 yaş, müfredat seçimi</span>
+            <span class="en-only">Istanbul → Dubai · 2024 · Age 14, curriculum selection</span>
           </div>
         </div>
 
