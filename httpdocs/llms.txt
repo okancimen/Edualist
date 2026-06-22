@@ -28,7 +28,9 @@ X / Twitter: https://x.com/OzlemGunayCimen
 ## Key Pages
 
 - [Why Edualist? About the Founder](https://www.edualist.com/neden-biz/): Background, credentials, and the personal expat journey behind Edualist
-- [Blog](https://www.edualist.com/blog/): 20+ in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
+- [International School Consulting Service](https://www.edualist.com/uluslararasi-okul-danismanligi/): Transactional service page — school placement, academic coaching, and VIP relocation support with pricing and booking
+- [Blog](https://www.edualist.com/blog/): 26 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
+- [AI Chatbot — Ela (EduBot)](https://ai-edualist-com.vercel.app/): Edualist's 24/7 AI advisor for school selection questions, curriculum comparison, and country-specific guidance
 
 ## Blog Articles
 
@@ -53,6 +55,11 @@ X / Twitter: https://x.com/OzlemGunayCimen
 - [İtalya Okul Kayıt Rehberi](https://www.edualist.com/blog/italya-okul-kayit-rehberi/): Italian school system and enrollment for Turkish families
 - [Kızım Sınıfın Zemininde Yatıyordu](https://www.edualist.com/blog/kizim-sinifin-zemininde-yatiyordu/): Personal account of the real cost of choosing the wrong school
 - [Oğlumun İngilizcesi İyiydi](https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/): Why language fluency alone is not enough for international school success
+- [Dubai'de Türk Okulu Yok — Peki Ne Yapacaksınız?](https://www.edualist.com/blog/dubai-turk-okulu-var-mi/): No Turkish curriculum school in Dubai — which curriculum to choose and how to preserve Turkish language
+- [İngilizcesi Yetersiz Çocuk Dubai Okuluna Nasıl Uyum Sağlar?](https://www.edualist.com/blog/ingilizcesi-yetersiz-cocuk-dubai-okulu-uyum/): EAL programmes, age-based adaptation, and what parents can do at home
+- [Türkiye Her Yıl 46.000 Çocuğunu Yurt Dışına Gönderiyor](https://www.edualist.com/blog/turkiye-yilda-46000-cocugunu-yurt-disina-gonderiyor/): TÜİK migration data on children and young people leaving Turkey annually
+- [Eduentry — Uluslararası Akademik Değerlendirme](https://www.edualist.com/blog/eduentry-uluslararasi-akademik-degerlendirme-nedir/): Free adaptive academic assessment for children aged 6–17 benchmarked against UK, US, PISA and IB frameworks using 2PL IRT methodology
+- [Gelecekte Hangi Meslekler Önem Kazanacak?](https://www.edualist.com/blog/gelecekte-hangi-meslekler-onem-kazanacak/): WEF, McKinsey and IMF data on 7 job categories gaining importance by 2030 — AI & data science, cybersecurity, green energy, health & biotech, education & coaching, creative economy, robotics — and how curriculum choices today shape children's career readiness
 
 ## Frequently Asked Questions
 
@@ -76,3 +83,12 @@ A Third Culture Kid is a child who grows up in a culture different from their pa
 
 **How early should families start the Dubai school enrollment process?**
 At least 12–18 months before the intended start date. Popular KHDA Outstanding-rated schools fill up quickly; late applications risk being waitlisted.
+
+**What jobs will be most in demand by 2030?**
+According to the WEF Future of Jobs 2025 report, the highest-growth categories are AI & data science (+30–40%), cybersecurity (+35%), robotics & automation engineering (+28%), green energy & sustainability (+24%), health & biotechnology (+20%), creative economy & UX (+18%), and education & coaching (+15%). The WEF also projects 170 million new jobs by 2030 while 92 million existing roles will be significantly transformed.
+
+**What academic skills will matter most in the future job market?**
+WEF's top skills for 2025–2030 are analytical thinking, creativity, adaptability, AI literacy, critical thinking, and problem-solving. Skills at risk include repetitive data processing, routine accounting, and rule-based decision-making. International curricula such as IB and A-Level directly develop the high-demand skills through critical inquiry, extended essay writing, and project-based learning.
+
+**What is Eduentry?**
+Eduentry is a free AI-powered adaptive academic assessment for children aged 6–17. It uses 2PL IRT (the same methodology as PISA, SAT, and GCSE) to measure maths, verbal reasoning, and English proficiency, benchmarked against UK, US, PISA, and IB international frameworks. Edualist recommends it to families before school selection to understand their child's current academic standing.
