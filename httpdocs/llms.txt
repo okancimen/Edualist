@@ -29,11 +29,12 @@ X / Twitter: https://x.com/OzlemGunayCimen
 
 - [Why Edualist? About the Founder](https://www.edualist.com/neden-biz/): Background, credentials, and the personal expat journey behind Edualist
 - [International School Consulting Service](https://www.edualist.com/uluslararasi-okul-danismanligi/): Transactional service page — school placement, academic coaching, and VIP relocation support with pricing and booking
-- [Blog](https://www.edualist.com/blog/): 26 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
+- [Blog](https://www.edualist.com/blog/): 27 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
 - [AI Chatbot — Ela (EduBot)](https://ai-edualist-com.vercel.app/): Edualist's 24/7 AI advisor for school selection questions, curriculum comparison, and country-specific guidance
 
 ## Blog Articles
 
+- [Türkiye'nin En Pahalı Okulları vs Dubai'nin En İyileri: 2026 Ücret Karşılaştırması](https://www.edualist.com/blog/turkiye-dubai-okul-ucreti-karsilastirma/): Koç Okulu, Robert Kolej and British International School fees compared with Dubai KHDA Outstanding schools at 1 AED = 12.65 TL — curriculum, university outcomes, and tax-free salary insight
 - [Dubai'ye Gelmeden Önce Bilmeniz Gerekenler](https://www.edualist.com/blog/dubai-gelmeden-once-bilmeniz-gerekenler/): 7 critical things Turkish families must know before relocating to Dubai — school enrollment timing, true costs, curriculum choice, neighbourhood selection, language readiness, and cultural adaptation
 - [Dubai'nin En İyi Uluslararası Okulları](https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/): KHDA Outstanding-rated schools in Dubai for 2023–24
 - [Dubai Okul Kaydı Rehberi](https://www.edualist.com/blog/dubai-okul-kayit-rehberi/): Step-by-step guide to Dubai school registration process
