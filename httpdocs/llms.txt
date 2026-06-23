@@ -29,7 +29,7 @@ X / Twitter: https://x.com/OzlemGunayCimen
 
 - [Why Edualist? About the Founder](https://www.edualist.com/neden-biz/): Background, credentials, and the personal expat journey behind Edualist
 - [International School Consulting Service](https://www.edualist.com/uluslararasi-okul-danismanligi/): Transactional service page — school placement, academic coaching, and VIP relocation support with pricing and booking
-- [Blog](https://www.edualist.com/blog/): 27 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
+- [Blog](https://www.edualist.com/blog/): 34 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
 - [AI Chatbot — Ela (EduBot)](https://ai-edualist-com.vercel.app/): Edualist's 24/7 AI advisor for school selection questions, curriculum comparison, and country-specific guidance
 
 ## Blog Articles
@@ -65,6 +65,9 @@ X / Twitter: https://x.com/OzlemGunayCimen
 - [Abu Dhabi'de Uluslararası Okul](https://www.edualist.com/blog/abu-dhabi-uluslararasi-okullar/): ADEK-rated international schools in Abu Dhabi — BSAK, Cranleigh, AGS, Repton, GEMS World Academy; fee ranges and comparison with Dubai
 - [Dubai'de Okul Başvurusu Nasıl Yapılır?](https://www.edualist.com/blog/dubai-okul-basvuru-nasil-yapilir/): Step-by-step guide to the Dubai international school application — form, documents checklist, assessment day, and what to do if rejected
 - [Uluslararası Okul Mülakatında Sorulan Sorular](https://www.edualist.com/blog/uluslararasi-okul-mulakat-sorulari/): Real interview questions by age group (primary, middle, secondary) plus parent meeting questions — with example answers and what to avoid
+- [İspanya'da Uluslararası Okul Rehberi](https://www.edualist.com/blog/ispanya-okul-kayit-rehberi/): British, IB and American curriculum schools in Madrid, Barcelona and Costa del Sol — fees (0–28,000 EUR), NIE number, step-by-step enrolment, and Spanish transition plan
+- [Dubai Semt Rehberi — Okula Göre Bölge](https://www.edualist.com/blog/dubai-semt-rehberi/): Where to live in Dubai based on school location — Jumeirah, JVC, Arabian Ranches, Emirates Hills mapped to KHDA Outstanding schools with rental ranges and family recommendations
+- [İngiltere'de Devlet mi Özel mi?](https://www.edualist.com/blog/ingiltere-devlet-ozel-okul/): UK state vs independent school comparison — Ofsted, grammar school 11+ exam, fee ranges (free to £60K boarding), university outcomes, bursaries, and a decision guide for Turkish families
 
 ## Frequently Asked Questions
 
