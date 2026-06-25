@@ -60,6 +60,10 @@ ErrorDocument 404 /404.html
   # Redirect old dubai slug to new Turkish slug (also catches /index.html variant)
   RewriteRule ^blog/dubai-school-guide(/index\.html)?/?$ /blog/dubai-gelmeden-once-bilmeniz-gerekenler/ [R=301,L]
 
+  # Redirect misrouted language paths under /blog/
+  RewriteRule ^blog/en/?$ /en/ [R=301,L]
+  RewriteRule ^blog/tr/?$ /tr/ [R=301,L]
+
   # Serve WebP if browser supports it and file exists
   RewriteCond %{HTTP_ACCEPT} image/webp
   RewriteCond %{REQUEST_FILENAME} \.(png|jpg|jpeg)$
