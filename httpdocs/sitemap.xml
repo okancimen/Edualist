@@ -27,8 +27,18 @@
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/blog/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/"/>
-    <lastmod>2026-06-25</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/anxious-generation-ergen-ruh-sagligi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/anxious-generation-ergen-ruh-sagligi/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/blog/anxious-generation-ergen-ruh-sagligi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/anxious-generation-ergen-ruh-sagligi/"/>
+    <lastmod>2026-06-29</lastmod>
+    <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
