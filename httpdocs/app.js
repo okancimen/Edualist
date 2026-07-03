@@ -64,9 +64,9 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // ── DEFERRED (setTimeout 0): secondary UI + all handlers ───────────
-  // Runs in the next task — after browser paints critical UI, freeing INP
+  // ── DEFERRED: split into multiple small tasks so no single task blocks INP ──
 
+  // Task A: visual UI (navbar scroll + scroll-reveal) — first deferred task
   setTimeout(() => {
 
     // Navbar scroll effect
@@ -100,6 +100,11 @@ document.addEventListener("DOMContentLoaded", () => {
         requestAnimationFrame(() => { revealEls.forEach(el => revealObs.observe(el)); });
       });
     }
+
+  }, 0); // end Task A
+
+  // Task B: forms + countdown + blog tracking + chatbot — separate task
+  setTimeout(() => {
 
     // Consultation form
     const consultForm = document.getElementById("consultation-form");
@@ -285,6 +290,6 @@ document.addEventListener("DOMContentLoaded", () => {
       sections.forEach(s => sectionObs.observe(s));
     });
 
-  }, 0); // end setTimeout
+  }, 0); // end Task B
 
 });
