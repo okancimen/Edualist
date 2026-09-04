@@ -912,6 +912,33 @@ html[lang="en"] .tr-only {
 .pricing-alt{font-size:1rem;color:var(--text-muted);}
 .pricing-note{margin-top:2rem;padding:.85rem 1.25rem;background:rgba(219,175,46,.07);border:1px solid rgba(219,175,46,.2);border-radius:var(--radius-sm);font-size:.88rem;color:var(--text-muted);text-align:center;max-width:860px;margin-left:auto;margin-right:auto;}
 .pricing-note strong{color:var(--primary);}
+.pricing-table-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch;max-width:900px;margin:2rem auto 0;}
+.pricing-table{width:100%;border-collapse:collapse;font-size:.88rem;}
+.pricing-table th,.pricing-table td{padding:.75rem 1rem;text-align:left;border-bottom:1px solid rgba(11,33,58,.07);}
+.pricing-table .col-feature{width:30%;color:var(--text-muted);font-size:.85rem;vertical-align:top;padding-top:.9rem;}
+.pricing-table .col-starter,.pricing-table .col-pro{width:35%;text-align:center;vertical-align:top;padding-top:.9rem;}
+.pricing-table .col-pro{background:rgba(219,175,46,.04);}
+.pricing-plan-badge{display:inline-block;font-size:.75rem;font-weight:700;padding:.3rem 1rem;border-radius:50px;letter-spacing:.06em;}
+.pricing-plan-badge.starter{background:rgba(11,33,58,.07);color:var(--primary);}
+.pricing-plan-badge.pro{background:rgba(219,175,46,.18);color:var(--primary);}
+.pricing-table .name-row td{padding-top:1rem;font-size:.92rem;font-weight:700;}
+.pricing-table .price-row td{padding:.5rem 1rem 1rem;border-bottom:2px solid rgba(11,33,58,.1);}
+.price-cell{font-family:var(--font-serif);font-size:1.5rem;font-weight:700;color:var(--primary);line-height:1.2;}
+.price-sub{display:block;font-size:.8rem;color:var(--text-muted);font-weight:400;font-family:inherit;margin-top:.25rem;}
+.pricing-table .diff-row td{background:rgba(219,175,46,.05);}
+.pricing-table .cta-row td{padding:1.25rem 1rem;border-bottom:none;}
+.pricing-featured{max-width:900px;margin:2.5rem auto 0;background:linear-gradient(135deg,#0B213A 0%,#122d52 100%);color:#fff;border-radius:var(--radius-md);padding:2rem 2.5rem;position:relative;overflow:hidden;}
+.pricing-featured::before{content:'';position:absolute;top:-50px;right:-50px;width:220px;height:220px;background:rgba(219,175,46,.07);border-radius:50%;}
+.pricing-featured-badge{display:inline-block;background:var(--accent);color:var(--primary);font-size:.72rem;font-weight:700;padding:.25rem .9rem;border-radius:50px;margin-bottom:1rem;letter-spacing:.08em;text-transform:uppercase;}
+.pricing-featured-title{font-family:var(--font-serif);font-size:1.5rem;font-weight:700;margin-bottom:.75rem;}
+.pricing-featured-desc{font-size:.93rem;line-height:1.75;opacity:.88;margin-bottom:.75rem;}
+.pricing-featured-quote{font-size:1.05rem;font-weight:700;font-style:italic;border-top:1px solid rgba(255,255,255,.15);padding-top:1.25rem;margin-top:.75rem;opacity:.95;}
+.pricing-included{max-width:900px;margin:1.5rem auto 0;background:rgba(219,175,46,.04);border:1px solid rgba(219,175,46,.18);border-radius:var(--radius-md);padding:1.5rem 2rem;}
+.pricing-included-title{font-weight:700;font-size:.85rem;color:var(--primary);margin-bottom:.9rem;text-align:center;text-transform:uppercase;letter-spacing:.07em;}
+.pricing-included-list{display:flex;flex-wrap:wrap;gap:.5rem 1.5rem;justify-content:center;list-style:none;margin:0;padding:0;}
+.pricing-included-list li{display:flex;align-items:center;gap:.4rem;font-size:.87rem;color:var(--text-muted);}
+.pricing-included-list li svg{flex-shrink:0;color:var(--accent);}
+@media(max-width:600px){.pricing-table .col-feature{width:32%;font-size:.78rem;padding:.65rem .5rem;}.pricing-table .col-starter,.pricing-table .col-pro{width:34%;font-size:.8rem;padding:.65rem .5rem;}.pricing-table th,.pricing-table td{padding:.65rem .5rem;}.price-cell{font-size:1.25rem;}.pricing-featured{padding:1.5rem;}.pricing-included{padding:1.25rem;}}
 
 .testimonials-carousel {
   position: relative;
@@ -1359,143 +1386,152 @@ html[lang="en"] .tr-only {
           <span class="en-only">Expertise & Services</span>
         </span>
         <h2 class="section-title">
-          <span class="tr-only">Hizmetlerimiz</span>
-          <span class="en-only">Our Services</span>
+          <span class="tr-only">Edualist Eğitim Danışmanlığı</span>
+          <span class="en-only">Edualist Education Consulting</span>
         </h2>
-        <p class="section-desc tr-only">Edualist, yurt dışında eğitim planlayan ailelere okul seçimi, müfredat değerlendirme, başvuru süreci ve adaptasyon desteği sunar. Hizmetlerimiz, özellikle Türkiye’den yurt dışına taşınmayı planlayan aileler için özel olarak tasarlanmıştır.</p>
-        <p class="section-desc en-only">Edualist supports families with school selection, curriculum evaluation, application guidance and student adaptation. Our services are designed for Turkish families relocating internationally.</p>
-        <p style="margin-top:1rem;font-size:0.95rem;font-weight:600;color:var(--accent);">
-          <span class="tr-only">Paketler 3.500 AED’den başlar &nbsp;·&nbsp; İlk görüşme ücretsiz</span>
-          <span class="en-only">Packages from AED 3,500 &nbsp;·&nbsp; First consultation free</span>
-        </p>
-      </div>
-      
-      <div class="services-grid" style="grid-template-columns:repeat(2,1fr);max-width:860px;margin:0 auto;">
-
-        <!-- Paket 1: 30 Günlük Başlangıç Paketi -->
-        <div class="service-card scroll-reveal" style="position:relative;">
-          <span class="pricing-duration tr-only">30 Günlük</span>
-          <span class="pricing-duration en-only">30-Day</span>
-          <div class="service-icon-wrap">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/>
-            </svg>
-          </div>
-          <h3 class="service-title">
-            <span class="tr-only">Başlangıç Paketi</span>
-            <span class="en-only">Starter Package</span>
-          </h3>
-          <div class="pricing-price-block">
-            <span class="pricing-amount">3.500 AED</span>
-            <span class="pricing-sep">·</span>
-            <span class="pricing-alt">45.000 TRY</span>
-          </div>
-          <p class="service-desc">
-            <span class="tr-only">Yeni bir eğitim sistemine adım atarken ihtiyaç duyduğunuz temel rehberlik ve başvuru asistanlığı. 30 gün boyunca başvuru ve kayıt süreçlerinde kesintisiz tam destek.</span>
-            <span class="en-only">Essential school placement guidance and application assistance as you step into a new education system. Full uninterrupted support throughout the 30-day process.</span>
-          </p>
-          <h4 class="service-includes-title">
-            <span class="tr-only">İçerik</span>
-            <span class="en-only">Includes</span>
-          </h4>
-          <ul class="service-list">
-            <li class="service-list-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="tr-only">Öğrencinin profiline uygun 4 okul önerisi</span>
-              <span class="en-only">Personalised shortlist of up to 4 schools</span>
-            </li>
-            <li class="service-list-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="tr-only">Seçilen okul için başvuru ve kayıt işlemlerinin eksiksiz yürütülmesi</span>
-              <span class="en-only">Full application and registration management for the chosen school</span>
-            </li>
-            <li class="service-list-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="tr-only">Haftada 2 durum değerlendirmesi (check-in) görüşmesi</span>
-              <span class="en-only">2 weekly check-in calls throughout the process</span>
-            </li>
-            <li class="service-list-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="tr-only">1 okul mülakatı/görüşmesine katılım desteği</span>
-              <span class="en-only">Support at 1 school interview or meeting</span>
-            </li>
-          </ul>
-          <a href="#contact" class="btn btn-outline" style="margin-top:1.5rem;width:100%;justify-content:center;">
-            <span class="tr-only">Görüşme Talep Et →</span>
-            <span class="en-only">Request a Consultation →</span>
-          </a>
-        </div>
-
-        <!-- Paket 2: 90 Günlük Kapsamlı Destek Paketi -->
-        <div class="service-card scroll-reveal" style="position:relative;border-color:rgba(219,175,46,.5);">
-          <span class="pricing-badge tr-only">Önerilen</span>
-          <span class="pricing-badge en-only">Recommended</span>
-          <span class="pricing-duration tr-only">90 Günlük</span>
-          <span class="pricing-duration en-only">90-Day</span>
-          <div class="service-icon-wrap">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
-            </svg>
-          </div>
-          <h3 class="service-title">
-            <span class="tr-only">Kapsamlı Destek Paketi</span>
-            <span class="en-only">Comprehensive Support</span>
-          </h3>
-          <div class="pricing-price-block">
-            <span class="pricing-amount">7.000 AED</span>
-            <span class="pricing-sep">·</span>
-            <span class="pricing-alt">90.000 TRY</span>
-          </div>
-          <p class="service-desc">
-            <span class="tr-only">Sadece kayıt değil; adaptasyon ve yerleşme süreçlerini de kapsayan, bir veli hassasiyetiyle hareket ettiğimiz premium danışmanlık. 90 gün boyunca her adımda tam kapsamlı destek.</span>
-            <span class="en-only">Beyond registration — premium consulting covering adaptation and settlement, with the sensitivity of a fellow parent. Full comprehensive support at every step for 90 days.</span>
-          </p>
-          <h4 class="service-includes-title">
-            <span class="tr-only">İçerik</span>
-            <span class="en-only">Includes</span>
-          </h4>
-          <ul class="service-list">
-            <li class="service-list-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="tr-only">6 okula kadar genişletilmiş okul önerisi</span>
-              <span class="en-only">Extended school shortlist of up to 6 schools</span>
-            </li>
-            <li class="service-list-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="tr-only">Başvuru ve kayıt işlemlerinin bizzat yürütülmesi</span>
-              <span class="en-only">Full hands-on application and registration management</span>
-            </li>
-            <li class="service-list-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="tr-only">Oturma izni gibi resmi belgelerin okula iletilmesi sürecinde tam destek</span>
-              <span class="en-only">Full support delivering official documents (e.g. residency permit) to the school</span>
-            </li>
-            <li class="service-list-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="tr-only">After-school aktivite ve kulüp kaydı için özel yönlendirme</span>
-              <span class="en-only">Personalised guidance for after-school activities and club enrolment</span>
-            </li>
-            <li class="service-list-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="tr-only">Okul WhatsApp grupları ve veli görüşmelerine uyum desteği</span>
-              <span class="en-only">Active support integrating into school WhatsApp groups and parent meetings</span>
-            </li>
-            <li class="service-list-item">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
-              <span class="tr-only">İngilizce adaptasyonu için özel 10 saatlik ders desteği</span>
-              <span class="en-only">10 hours of dedicated English language support for smooth adaptation</span>
-            </li>
-          </ul>
-          <a href="#contact" class="btn btn-accent" style="margin-top:1.5rem;width:100%;justify-content:center;">
-            <span class="tr-only">Hemen Başlayalım →</span>
-            <span class="en-only">Get Started →</span>
-          </a>
-        </div>
-
+        <p class="section-desc tr-only">Doğru okulu bulmaktan, yeni hayata güvenle başlamaya kadar yanınızdayız.</p>
+        <p class="section-desc en-only">From finding the right school to settling confidently into your new life — we are with you.</p>
       </div>
 
-      <p class="pricing-note tr-only"><strong>📌 Önemli Not:</strong> Okul başvuru ve kayıt ücretleri ilgili kurumlar tarafından tahsil edilmekte olup danışmanlık ücretlerimize dahil değildir.</p>
-      <p class="pricing-note en-only"><strong>📌 Please Note:</strong> School application and registration fees are collected directly by the respective institutions and are not included in our consulting fees.</p>
+      <div class="pricing-table-wrap scroll-reveal">
+        <table class="pricing-table">
+          <thead>
+            <tr>
+              <th class="col-feature"></th>
+              <th class="col-starter">
+                <span class="pricing-plan-badge starter tr-only">🌿 BAŞLANGIÇ</span>
+                <span class="pricing-plan-badge starter en-only">🌿 STARTER</span>
+              </th>
+              <th class="col-pro">
+                <span class="pricing-plan-badge pro tr-only">⭐ KAPSAMLI</span>
+                <span class="pricing-plan-badge pro en-only">⭐ COMPREHENSIVE</span>
+              </th>
+            </tr>
+            <tr class="name-row">
+              <td class="col-feature">
+                <span class="tr-only">Paket</span>
+                <span class="en-only">Package</span>
+              </td>
+              <td class="col-starter">
+                <strong><span class="tr-only">30 Günlük Başlangıç</span><span class="en-only">30-Day Starter</span></strong>
+              </td>
+              <td class="col-pro">
+                <strong><span class="tr-only">90 Günlük Kapsamlı Destek</span><span class="en-only">90-Day Comprehensive Support</span></strong>
+              </td>
+            </tr>
+            <tr class="price-row">
+              <td class="col-feature">
+                <span class="tr-only">Ücret</span>
+                <span class="en-only">Price</span>
+              </td>
+              <td class="col-starter">
+                <span class="price-cell">3.500 AED<span class="price-sub">45.000 TRY</span></span>
+              </td>
+              <td class="col-pro">
+                <span class="price-cell">7.000 AED<span class="price-sub">90.000 TRY</span></span>
+              </td>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="col-feature"><span class="tr-only">Kimler için?</span><span class="en-only">Best For</span></td>
+              <td class="col-starter"><span class="tr-only">Okul seçimini yapmış veya hızlı ve güvenli bir başvuru sürecine ihtiyaç duyan aileler</span><span class="en-only">Families who have chosen their school or need a swift, confident application process</span></td>
+              <td class="col-pro"><span class="tr-only">Yeni bir ülkeye veya eğitim sistemine geçişte uçtan uca profesyonel destek isteyen aileler</span><span class="en-only">Families wanting end-to-end professional support through a full country or education system transition</span></td>
+            </tr>
+            <tr>
+              <td class="col-feature">🎯 <span class="tr-only">Size Özel Okul Seçimi</span><span class="en-only">Personalised School Selection</span></td>
+              <td class="col-starter"><span class="tr-only">Öğrencinin profiline göre 4 okul önerisi</span><span class="en-only">Up to 4 schools matched to the student’s profile</span></td>
+              <td class="col-pro"><span class="tr-only">6 okula kadar genişletilmiş seçenek</span><span class="en-only">Extended shortlist of up to 6 schools</span></td>
+            </tr>
+            <tr>
+              <td class="col-feature">📝 <span class="tr-only">Başvuru &amp; Kayıt Yönetimi</span><span class="en-only">Application &amp; Registration</span></td>
+              <td class="col-starter"><span class="tr-only">Seçilen okulun başvuru ve kayıt sürecinin eksiksiz yönetimi</span><span class="en-only">Full management of the chosen school’s application and registration</span></td>
+              <td class="col-pro"><span class="tr-only">Veli hassasiyetiyle uçtan uca eksiksiz yönetim</span><span class="en-only">Hands-on, end-to-end management with the care of a fellow parent</span></td>
+            </tr>
+            <tr>
+              <td class="col-feature">📞 <span class="tr-only">Birebir Takip</span><span class="en-only">Personal Follow-Up</span></td>
+              <td class="col-starter"><span class="tr-only">Haftada 2 check-in görüşmesi</span><span class="en-only">2 check-in calls per week</span></td>
+              <td class="col-pro"><span class="tr-only">90 gün boyunca sürekli birebir danışmanlık</span><span class="en-only">Continuous one-to-one consulting for 90 days</span></td>
+            </tr>
+            <tr>
+              <td class="col-feature">🎤 <span class="tr-only">Okul Mülakatı</span><span class="en-only">School Interview</span></td>
+              <td class="col-starter"><span class="tr-only">1 online mülakat/görüşme desteği</span><span class="en-only">Support for 1 online interview or meeting</span></td>
+              <td class="col-pro"><span class="tr-only">Okulla iletişim ve görüşme süreçlerinde kapsamlı destek</span><span class="en-only">Comprehensive support throughout all school communication and meetings</span></td>
+            </tr>
+            <tr>
+              <td class="col-feature">📑 <span class="tr-only">Resmi Süreçler</span><span class="en-only">Official Processes</span></td>
+              <td class="col-starter" style="color:var(--text-muted);font-size:1.1rem;">—</td>
+              <td class="col-pro"><span class="tr-only">Oturum izni vb. belgelerin okula zamanında ulaştırılması</span><span class="en-only">Delivering residency permit and other documents to the school on time</span></td>
+            </tr>
+            <tr>
+              <td class="col-feature">🌍 <span class="tr-only">Yeni Okula Adaptasyon</span><span class="en-only">School Adaptation</span></td>
+              <td class="col-starter" style="color:var(--text-muted);font-size:1.1rem;">—</td>
+              <td class="col-pro"><span class="tr-only">Öğrencinin yeni eğitim sistemine ve okul kültürüne aktif uyum desteği</span><span class="en-only">Active support adapting to the new education system and school culture</span></td>
+            </tr>
+            <tr>
+              <td class="col-feature">⚽ <span class="tr-only">Sosyal Hayat &amp; Kulüpler</span><span class="en-only">Social Life &amp; Clubs</span></td>
+              <td class="col-starter" style="color:var(--text-muted);font-size:1.1rem;">—</td>
+              <td class="col-pro"><span class="tr-only">After-school aktiviteleri ve kulüpler için kişiye özel yönlendirme</span><span class="en-only">Personalised guidance for after-school activities and clubs</span></td>
+            </tr>
+            <tr>
+              <td class="col-feature">👨‍👩‍👦 <span class="tr-only">Veli Entegrasyonu</span><span class="en-only">Parent Integration</span></td>
+              <td class="col-starter" style="color:var(--text-muted);font-size:1.1rem;">—</td>
+              <td class="col-pro"><span class="tr-only">Okul WhatsApp grupları ve veli görüşmelerine katılım desteği</span><span class="en-only">Active support joining school WhatsApp groups and parent meetings</span></td>
+            </tr>
+            <tr>
+              <td class="col-feature">🇬🇧 <span class="tr-only">İngilizce Adaptasyon</span><span class="en-only">English Adaptation</span></td>
+              <td class="col-starter" style="color:var(--text-muted);font-size:1.1rem;">—</td>
+              <td class="col-pro"><span class="tr-only">10 saat İngilizce ders desteği</span><span class="en-only">10 hours of dedicated English language support</span></td>
+            </tr>
+            <tr class="diff-row">
+              <td class="col-feature">💛 <span class="tr-only">Edualist Farkı</span><span class="en-only">The Edualist Difference</span></td>
+              <td class="col-starter"><span class="tr-only">Doğru başlangıç</span><span class="en-only">The right start</span></td>
+              <td class="col-pro"><strong><span class="tr-only">Doğru başlangıç + güvenli geçiş + güçlü adaptasyon</span><span class="en-only">The right start + safe transition + strong adaptation</span></strong></td>
+            </tr>
+            <tr class="cta-row">
+              <td class="col-feature"></td>
+              <td class="col-starter">
+                <a href="#contact" class="btn btn-outline" style="width:100%;justify-content:center;">
+                  <span class="tr-only">Görüşme Talep Et →</span>
+                  <span class="en-only">Request a Consultation →</span>
+                </a>
+              </td>
+              <td class="col-pro">
+                <a href="#contact" class="btn btn-accent" style="width:100%;justify-content:center;">
+                  <span class="tr-only">Hemen Başlayalım →</span>
+                  <span class="en-only">Get Started →</span>
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="pricing-featured scroll-reveal">
+        <span class="pricing-featured-badge tr-only">⭐ EN ÇOK TERCİH EDİLEN</span>
+        <span class="pricing-featured-badge en-only">⭐ MOST POPULAR</span>
+        <div class="pricing-featured-title tr-only">90 Günlük Kapsamlı Destek</div>
+        <div class="pricing-featured-title en-only">90-Day Comprehensive Support</div>
+        <p class="pricing-featured-desc tr-only">Çünkü okul seçmek yalnızca ilk adımdır.<br><br>Yeni bir ülkeye ve eğitim sistemine geçiş; başvurudan çok daha fazlasıdır. Edualist, öğrencinin akademik, sosyal ve dil adaptasyonunu, aynı zamanda velinin okul kültürüne ve iletişim ağına entegrasyonunu destekler. İlk günden itibaren, bir danışmandan çok yanınızda olan deneyimli bir veli gibi.</p>
+        <p class="pricing-featured-desc en-only">Because choosing a school is only the first step.<br><br>Transitioning to a new country and education system means far more than submitting an application. Edualist supports the student’s academic, social and language adaptation — and the parents’ integration into the school community. From day one, less like a consultant, more like an experienced fellow parent right there beside you.</p>
+        <p class="pricing-featured-quote tr-only">"Biz sadece çocuğunuz için bir okul bulmuyoruz. Yeni eğitim hayatına doğru başlamasını sağlıyoruz."</p>
+        <p class="pricing-featured-quote en-only">"We don’t just find a school for your child. We make sure they start their new education life on the right foot."</p>
+      </div>
+
+      <div class="pricing-included scroll-reveal">
+        <div class="pricing-included-title tr-only">Her İki Pakette Dahil</div>
+        <div class="pricing-included-title en-only">Included in Both Packages</div>
+        <ul class="pricing-included-list">
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span class="tr-only">Öğrenci odaklı yaklaşım</span><span class="en-only">Student-centred approach</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span class="tr-only">Aileyle yakın iletişim</span><span class="en-only">Close communication with the family</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span class="tr-only">Sürecin profesyonel takibi</span><span class="en-only">Professional process tracking</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span class="tr-only">Okul ile gerekli iletişimin yürütülmesi</span><span class="en-only">Handling necessary communication with the school</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span class="tr-only">Şeffaf ve kişiselleştirilmiş danışmanlık</span><span class="en-only">Transparent and personalised consulting</span></li>
+        </ul>
+      </div>
+
+      <p class="pricing-note tr-only"><strong>📌 Not:</strong> Okullar tarafından ayrıca tahsil edilen application, registration ve diğer okul ücretleri Edualist danışmanlık ücretlerine dahil değildir.</p>
+      <p class="pricing-note en-only"><strong>📌 Please Note:</strong> Application, registration and other school fees collected separately by the schools are not included in Edualist consulting fees.</p>
 
     </div>
   </section>
