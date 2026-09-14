@@ -27,19 +27,20 @@ function cl($v) {
     return htmlspecialchars(strip_tags(trim((string)$v)), ENT_QUOTES, 'UTF-8');
 }
 
-if ($type === 'consultation') {
-    $name  = cl(isset($input['name'])       ? $input['name']       : '');
-    $email = filter_var(isset($input['email']) ? $input['email'] : '', FILTER_SANITIZE_EMAIL);
-    $phone = cl(isset($input['phone'])      ? $input['phone']      : '');
-    $dest  = cl(isset($input['relocation']) ? $input['relocation'] : '');
-    $det   = cl(isset($input['details'])    ? $input['details']    : '');
+if ($type === 'consultation' || $type === 'dubai-consultation') {
+    $name     = cl(isset($input['name'])        ? $input['name']        : '');
+    $email    = filter_var(isset($input['email']) ? $input['email'] : '', FILTER_SANITIZE_EMAIL);
+    $phone    = cl(isset($input['phone'])       ? $input['phone']       : '');
+    $dest     = cl(isset($input['destination']) ? $input['destination'] : (isset($input['relocation']) ? $input['relocation'] : ''));
+    $children = cl(isset($input['children'])    ? $input['children']    : '');
+    $det      = cl(isset($input['details'])     ? $input['details']     : '');
 
     if (!$name || !filter_var($email, FILTER_VALIDATE_EMAIL)) {
         jsonOut(false, 'Invalid input');
     }
 
     $subject = "Edualist - Yeni Danismanlik Talebi: " . $name;
-    $body    = "Yeni danismanlik talebi:\n\nAd Soyad:   $name\nE-posta:    $email\nTelefon:    $phone\nHedef Ulke: $dest\n\nDetaylar:\n$det";
+    $body    = "Yeni danismanlik talebi:\n\nAd Soyad:    $name\nE-posta:     $email\nTelefon:     $phone\nHedef Ulke:  $dest\nCocuk Yasi:  $children\n\nDetaylar:\n$det";
 
 } elseif ($type === 'webinar') {
     $name  = cl(isset($input['name'])  ? $input['name']  : '');
