@@ -491,16 +491,6 @@
   </url>
 
   <url>
-    <loc>https://www.edualist.com/blog/cat4-sinavi-nedir/</loc>
-    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cat4-sinavi-nedir/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/blog/cat4-sinavi-nedir/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cat4-sinavi-nedir/"/>
-    <lastmod>2026-09-10</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-
-  <url>
     <loc>https://www.edualist.com/blog/dubai-okul-bekleme-listesi/</loc>
     <lastmod>2026-09-11</lastmod>
     <changefreq>monthly</changefreq>
@@ -512,4 +502,25 @@
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/almanyada-turk-okulu-var-mi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/almanyada-turk-okulu-var-mi/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/blog/almanyada-turk-okulu-var-mi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/almanyada-turk-okulu-var-mi/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/robert-kolej-ucreti-2026/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/robert-kolej-ucreti-2026/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/blog/robert-kolej-ucreti-2026/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/robert-kolej-ucreti-2026/"/>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
