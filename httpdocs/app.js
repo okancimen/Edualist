@@ -104,7 +104,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 0); // end Task A
 
   // "New" badge on Blog nav link
-  const navMenu = document.getElementById("nav-menu");
   if (navMenu) {
     navMenu.querySelectorAll("a").forEach(a => {
       if (a.textContent.trim() === "Blog") {
