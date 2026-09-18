@@ -103,15 +103,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }, 0); // end Task A
 
-  // Post count badge on Blog nav link
-  if (navMenu) {
-    navMenu.querySelectorAll("a").forEach(a => {
-      if (a.textContent.trim() === "Blog") {
-        a.innerHTML = 'Blog <span class="nav-count-badge">8</span>';
-      }
-    });
-  }
-
   // Task B: forms + countdown + blog tracking + chatbot — separate task
   setTimeout(() => {
 
