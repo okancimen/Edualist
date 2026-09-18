@@ -103,11 +103,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
   }, 0); // end Task A
 
-  // "New" badge on Blog nav link
+  // Post count badge on Blog nav link
   if (navMenu) {
     navMenu.querySelectorAll("a").forEach(a => {
       if (a.textContent.trim() === "Blog") {
-        a.innerHTML = 'Blog <span class="nav-new-badge">New</span>';
+        a.innerHTML = 'Blog <span class="nav-new-badge">46</span>';
       }
     });
   }
