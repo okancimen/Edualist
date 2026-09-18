@@ -107,7 +107,7 @@ document.addEventListener("DOMContentLoaded", () => {
   if (navMenu) {
     navMenu.querySelectorAll("a").forEach(a => {
       if (a.textContent.trim() === "Blog") {
-        a.innerHTML = 'Blog <span class="nav-new-badge">8</span>';
+        a.innerHTML = 'Blog <span class="nav-count-badge">8</span>';
       }
     });
   }
