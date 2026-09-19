@@ -29,6 +29,24 @@ Allow: /
 User-agent: Twitterbot
 Allow: /
 
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: iaskspider
+Allow: /
+
 Sitemap: https://www.edualist.com/sitemap.xml
 # LLM content index: https://www.edualist.com/llms.txt
 # LLM full articles: https://www.edualist.com/llms-full.txt
