@@ -1,326 +1,34 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <script>/* Early lang detection — prevents post-paint reflow from setLanguage() */
-  (function(){var s=localStorage.getItem('edualist_lang'),p=location.pathname,l=p.includes('/en/')||p.endsWith('/en')?'en':p.includes('/tr/')||p.endsWith('/tr')?'tr':s||document.documentElement.getAttribute('lang')||'tr';document.documentElement.setAttribute('lang',l);}());
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18221941570"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-5WZJJ8B40P');
+    gtag('config', 'AW-18221941570');
   </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Critical CSS inlined: eliminates render-blocking resource -->
-  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:all 0.4s cubic-bezier(0.25, 1, 0.5, 1);--transition-fast:all 0.2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear backwards;animation-timeline:view();animation-range:entry 10% cover 40%}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}@starting-style{opacity:0}@keyframes highlightRing{0%{box-shadow:0 0 0 0 hsla(43,60%,52%,.8)}50%{box-shadow:0 0 0 15px hsla(43,60%,52%,.3)}100%{box-shadow:0 0 0 30px hsla(43,60%,52%,0)}}@media (max-width:480px){.whatsapp-sticky{padding:.85rem;border-radius:50%}.whatsapp-sticky-label{display:none}}@keyframes chatbot-pop-in{from{opacity:0;transform:scale(.93) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}@media (max-width:480px){.chatbot-btn{padding:.85rem;border-radius:50%}.chatbot-btn-label{display:none}.chatbot-popup{left:.75rem;right:.75rem;width:auto;bottom:5rem;height:72vh}}.blog-listing-hero{padding:130px 0 70px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../assets/hero-bg.webp') no-repeat center center/cover}.blog-hero-inner{display:grid;grid-template-columns:1fr auto;gap:4rem;align-items:center}.blog-hero-text{text-align:left}.blog-hero-text .section-subtitle{margin-bottom:.5rem}.blog-hero-text .section-title{margin-bottom:1rem}.blog-hero-text .section-desc{max-width:520px}.blog-hero-visual{position:relative;flex-shrink:0}.blog-hero-portrait-ring{width:112px;height:140px;border-radius:50%;padding:5px;background:linear-gradient(135deg,var(--accent) 0,#edc45e 100%);box-shadow:0 12px 40px rgba(11,33,58,.18);overflow:hidden}.blog-hero-portrait{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:center 18%;display:block;transform:scale(1.75);transform-origin:center 22%}.blog-hero-badge{position:absolute;bottom:-10px;left:-10px;padding:.5rem 1rem;border-radius:50px;font-size:.8rem;font-weight:700;color:var(--primary);white-space:nowrap}@media (max-width:768px){.blog-hero-inner{grid-template-columns:1fr;gap:2.5rem}.blog-hero-text{text-align:center}.blog-hero-text .section-desc{max-width:100%;margin:0 auto}.blog-hero-visual{display:flex;justify-content:center}.blog-hero-portrait-ring{width:90px;height:112px}.blog-author-card{flex-direction:column;text-align:center}.blog-author-card picture{margin:0 auto}}.btn-secondary{background:0 0;color:var(--primary);border:1.5px solid var(--primary)}.btn-secondary:hover{background:var(--primary);color:var(--text-light);transform:translateY(-2px)}.blog-tl-item.active{background:var(--primary)}.blog-tl-item.active .blog-tl-month{color:rgba(255,255,255,.6)}.blog-tl-item.active .blog-tl-label{color:#fff}@media (max-width:540px){.blog-school-types{grid-template-columns:1fr}.blog-docs-table{font-size:.82rem}.blog-docs-table td,.blog-docs-table th{padding:8px 10px}}@media (max-width:560px){.blog-track-desc{display:none}}@media (max-width:640px){.blog-grid{grid-template-columns:1fr}.blog-listing-hero{padding:120px 0 50px}.blog-timeline{flex-wrap:wrap}.blog-tl-item{flex:0 0 33.33%;border-bottom:1px solid rgba(11,33,58,.1)}}@media (max-width:560px){.blog-cost-grid{grid-template-columns:1fr}}@media (max-width:560px){.blog-hidden-grid{grid-template-columns:1fr 1fr}}@media (max-width:540px){.blog-pros-cons{grid-template-columns:1fr}}@media (max-width:540px){.blog-profile-grid{grid-template-columns:1fr}}@media (max-width:768px){.blog-related-grid{grid-template-columns:1fr;gap:.9rem}}@media (max-width:640px){.blog-curr-cards{grid-template-columns:1fr}}@media (max-width:640px){.blog-verdict-grid{grid-template-columns:1fr}}@media (max-width:540px){.blog-personal-note{flex-direction:column;gap:.75rem}.blog-personal-note-img{width:44px;height:44px}}@media (max-width:768px){.faq-item{padding:1.25rem 1.5rem}.faq-q{font-size:1rem}}</style>
-  <!-- Full CSS: preloaded immediately, applied after window.load to avoid GA-overlap reflow -->
-  <link rel="stylesheet" href="../styles.css?v=5" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../styles.css?v=5"></noscript>
-
-  <!-- Preload LCP resources immediately (before CSS is parsed) -->
-  <link rel="preload" as="image" href="../assets/hero-bg.webp" type="image/webp" fetchpriority="high">
-  <link rel="preload" as="image" imagesrcset="../assets/founder-avatar-300.webp 300w, ../assets/founder-avatar-600.webp 600w, ../assets/founder-avatar.webp 820w" imagesizes="(max-width: 640px) 143px, 200px" type="image/webp">
-
-  <!-- DNS prefetch for external origins -->
-  <link rel="dns-prefetch" href="https://www.googletagmanager.com">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Google Analytics (async — does not block rendering) -->
-  <script>
-    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');}['mousemove','scroll'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});(window.requestIdleCallback||function(c,o){setTimeout(c,(o&&o.timeout)||4000);})(g,{timeout:4000});})();
-  </script>
-
-  <title>Blog — Yurt Dışı &amp; Uluslararası Okul Rehberleri | Edualist</title>
-  <meta name="description" content="Yurt dışına taşınan Türk aileler için uluslararası okul rehberleri, TCK, müfredat karşılaştırması ve eğitim koçluğu. Özlem Çimen – Edualist.">
+  <title>Blog | Edualist</title>
+  <meta name="description" content="Uluslararası okul seçimi, Dubai eğitim sistemi ve veli-öğrenci koçluğu hakkında uzman görüşleri. Expert insights on international school selection and Dubai education.">
   <link rel="canonical" href="https://www.edualist.com/blog/">
-  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/">
-  <link rel="alternate" hreflang="en" href="https://www.edualist.com/blog/">
-  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 
   <meta property="og:type"  content="website">
   <meta property="og:title" content="Blog | Edualist">
   <meta property="og:description" content="Uluslararası eğitim dünyasından uzman görüşleri ve rehberlik.">
   <meta property="og:url"   content="https://www.edualist.com/blog/">
-  <meta property="og:image" content="https://www.edualist.com/assets/hero-bg.webp">
-  <meta property="og:image:type" content="image/webp">
-  <meta property="og:image:width" content="1024">
-  <meta property="og:image:height" content="1024">
+  <meta property="og:image" content="https://www.edualist.com/assets/hero-bg.png">
 
-  <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Blog | Edualist">
-  <meta name="twitter:description" content="Uluslararası eğitim dünyasından uzman görüşleri ve rehberlik.">
-  <meta name="twitter:image"       content="https://www.edualist.com/assets/hero-bg.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600;700&display=optional"></noscript>
 
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional"></noscript>
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "ItemList",
-  "name": "Edualist Blog — Uluslararası Eğitim Rehberleri",
-  "description": "Türk aileler için yurt dışı okul seçimi, müfredat karşılaştırması ve eğitim geçişi üzerine kapsamlı rehberler.",
-  "url": "https://www.edualist.com/blog/",
-  "numberOfItems": 40,
-  "itemListElement": [
-    {
-      "@type": "ListItem",
-      "position": 1,
-      "name": "International School Nedir? Türk Aileler İçin Eksiksiz Rehber",
-      "url": "https://www.edualist.com/blog/international-school-nedir/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 2,
-      "name": "Dubai'de Eğitim Sistemi Nasıl Çalışır? KHDA, Müfredatlar ve Okul Türleri",
-      "url": "https://www.edualist.com/blog/dubai-egitim-sistemi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 3,
-      "name": "Dubai'deki Başarılı Türk Öğrenciler: 5–14 Yaş Rehberi",
-      "url": "https://www.edualist.com/blog/dubai-basarili-turk-ogrenciler/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 4,
-      "name": "Türkiye'nin En Pahalı Okulları mı, Dubai'nin En İyileri mi? 2026 Ücret ve Kalite Karşılaştırması",
-      "url": "https://www.edualist.com/blog/turkiye-dubai-okul-ucreti-karsilastirma/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 5,
-      "name": "Gelecekte Hangi Meslekler Önem Kazanacak? Ebeveynlerin Şimdiden Bilmesi Gerekenler",
-      "url": "https://www.edualist.com/blog/gelecekte-hangi-meslekler-onem-kazanacak/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 6,
-      "name": "Türkiye Eğitim Sistemi Neden Yetmiyor?",
-      "url": "https://www.edualist.com/blog/turkiye-egitim-sistemi-neden-yetmiyor/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 7,
-      "name": "Türkiye Her Yıl 46.000 Çocuğunu Yurt Dışına Gönderiyor",
-      "url": "https://www.edualist.com/blog/turkiye-yilda-46000-cocugunu-yurt-disina-gonderiyor/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 8,
-      "name": "Çocuğum Lisedeyken Yurt Dışına Taşınsak Nasıl Adapte Olur?",
-      "url": "https://www.edualist.com/blog/lise-yurt-disi-tasinma-adaptasyon/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 9,
-      "name": "BAE'de Uluslararası Okul Seçimi: IB, British, Amerikan Rehberi",
-      "url": "https://www.edualist.com/blog/bae-uluslararasi-okul-rehberi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 10,
-      "name": "\"Kızım Sınıfın Zemininde Yatıyordu\" — Yanlış Okulu Seçmenin Bedeli",
-      "url": "https://www.edualist.com/blog/kizim-sinifin-zemininde-yatiyordu/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 11,
-      "name": "\"Oğlum 3 Yıl Gerideydi\" — Müdürün Odasında Nefes Alamadığım Gün",
-      "url": "https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 12,
-      "name": "Çocuğunuz Yurt Dışında Okumaya Hazır Mı? 5 Boyutlu Değerlendirme",
-      "url": "https://www.edualist.com/blog/cocugunuz-yurt-disinda-okumaya-hazir-mi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 13,
-      "name": "Türk Eğitim Sisteminden Uluslararası Okula Geçiş: 7 Zorluk",
-      "url": "https://www.edualist.com/blog/turk-egitim-sisteminden-uluslararasi-okula-gecis/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 14,
-      "name": "Dubai'nin En İyi Uluslararası Okulları: KHDA Outstanding Listesi",
-      "url": "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 15,
-      "name": "Uluslararası Okul Mülakatı Nasıl Geçilir? Çocuk & Ebeveyn Rehberi",
-      "url": "https://www.edualist.com/blog/uluslararasi-okul-mulakat%C4%B1-nasil-gecilir/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 16,
-      "name": "Kanada'da Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber",
-      "url": "https://www.edualist.com/blog/kanada-okul-kayit-rehberi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 17,
-      "name": "Üçüncü Kültür Çocuğu Rehberi: Kimlik, Aidiyet ve Aile Stratejileri",
-      "url": "https://www.edualist.com/blog/ucuncu-kultur-cocugu-tck-rehberi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 18,
-      "name": "Çocuğumu Yurt Dışında Okutmalı Mıyım?",
-      "url": "https://www.edualist.com/blog/cocugumu-yurtdisinda-okutmali-miyim/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 19,
-      "name": "Yurt Dışı Eğitim Ne Kadara Mal Olur? Ülke Ülke Maliyet Karşılaştırması",
-      "url": "https://www.edualist.com/blog/yurtdisi-egitim-maliyet-karsilastirma/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 20,
-      "name": "IB mi, A-Level mi, Amerikan Sistemi mi? Müfredat Karşılaştırma Rehberi",
-      "url": "https://www.edualist.com/blog/ib-alevel-amerikan-mufredat-karsilastirma/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 21,
-      "name": "Dubai'ye Gelmeden Önce Bilmeniz Gerekenler",
-      "url": "https://www.edualist.com/blog/dubai-gelmeden-once-bilmeniz-gerekenler/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 22,
-      "name": "İngiltere'de Okul Kayıt Süreci: Türk Aileler İçin Rehber",
-      "url": "https://www.edualist.com/blog/ingiltere-okul-kayit-rehberi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 23,
-      "name": "Fransa'da Okul Kayıt Süreci: Türk Aileler İçin Rehber",
-      "url": "https://www.edualist.com/blog/fransa-okul-kayit-rehberi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 24,
-      "name": "Hollanda'da Okul Kayıt Süreci: Türk Aileler İçin Rehber",
-      "url": "https://www.edualist.com/blog/hollanda-okul-kayit-rehberi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 25,
-      "name": "İtalya'da Okul Kayıt Süreci: Türk Aileler İçin Rehber",
-      "url": "https://www.edualist.com/blog/italya-okul-kayit-rehberi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 26,
-      "name": "Almanya'da Okul Kayıt Süreci: Türk Aileler İçin Rehber",
-      "url": "https://www.edualist.com/blog/almanya-okul-kayit-rehberi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 27,
-      "name": "Dubai Okul Kaydı: Türk Aileler İçin Adım Adım Rehber",
-      "url": "https://www.edualist.com/blog/dubai-okul-kayit-rehberi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 28,
-      "name": "Dubai'de Türk Okulu Yok — Peki Ne Yapacaksınız?",
-      "url": "https://www.edualist.com/blog/dubai-turk-okulu-var-mi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 29,
-      "name": "İngilizcesi Yetersiz Çocuk Dubai Okuluna Nasıl Uyum Sağlar?",
-      "url": "https://www.edualist.com/blog/ingilizcesi-yetersiz-cocuk-dubai-okulu-uyum/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 30,
-      "name": "Çocuğunuz Dünyayla Yarışıyor: Dünya Ortalamasındaki Yeri Nerede? Ücretsiz Bir Test Keşfettik",
-      "url": "https://www.edualist.com/blog/eduentry-uluslararasi-akademik-degerlendirme-nedir/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 31,
-      "name": "Dubai'de Okul Bursu Var Mı? 2026 Türk Aileler İçin Kapsamlı Rehber",
-      "url": "https://www.edualist.com/blog/dubai-okul-burs-imkanlari/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 32,
-      "name": "Abu Dhabi'de Uluslararası Okul: ADEK, Ücretler ve 2026 Rehberi",
-      "url": "https://www.edualist.com/blog/abu-dhabi-uluslararasi-okullar/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 33,
-      "name": "Dubai'de Okul Başvurusu Nasıl Yapılır? Adım Adım Kılavuz",
-      "url": "https://www.edualist.com/blog/dubai-okul-basvuru-nasil-yapilir/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 34,
-      "name": "Uluslararası Okul Mülakatında Gerçekten Sorulan Sorular",
-      "url": "https://www.edualist.com/blog/uluslararasi-okul-mulakat-sorulari/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 35,
-      "name": "İspanya'da Uluslararası Okul: Madrid ve Barselona Rehberi 2026",
-      "url": "https://www.edualist.com/blog/ispanya-okul-kayit-rehberi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 36,
-      "name": "Dubai'de Hangi Semtte Oturun? Okula Göre Bölge Rehberi 2026",
-      "url": "https://www.edualist.com/blog/dubai-semt-rehberi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 37,
-      "name": "İngiltere'de Devlet mi Özel mi? Türk Ailelerin Okul Kararı",
-      "url": "https://www.edualist.com/blog/ingiltere-devlet-ozel-okul/"
-    }
-  ]
-},
-    {
-      "@type": "ListItem",
-      "position": 38,
-      "name": "Dubai'de Yaşam Maliyeti 2026: Türk Aileler İçin Gerçek Rakamlar",
-      "url": "https://www.edualist.com/blog/dubai-yasam-maliyeti-2026/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 39,
-      "name": "The Anxious Generation: Dijital Çağda Ergen Ruh Sağlığı",
-      "url": "https://www.edualist.com/blog/anxious-generation-ergen-ruh-sagligi/"
-    },
-    {
-      "@type": "ListItem",
-      "position": 40,
-      "name": "Türkiye'deki Özel Okullardan Dubai Uluslararası Okullarına Geçiş: Kapsamlı Rehber",
-      "url": "https://www.edualist.com/blog/turkiye-ozel-okuldan-dubai-uluslararasi-okula-gecis/"
-    }
-  </script>
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@type": "BreadcrumbList",
-  "itemListElement": [
-    { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/tr/" },
-    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" }
-  ]
-  }
-  </script>
-  <!-- Microsoft Clarity -->
-  <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "yf8tc516c9");
-  </script>
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
 
@@ -339,12 +47,12 @@
             <a href="../tr/" class="tr-only">Ana Sayfa</a>
           </li>
           <li>
-            <a href="../neden-biz/" class="en-only">Why Us?</a>
-            <a href="../neden-biz/" class="tr-only">Neden Biz?</a>
+            <a href="../en/#why-us" class="en-only">Why Us?</a>
+            <a href="../tr/#why-us" class="tr-only">Neden Biz?</a>
           </li>
           <li>
-            <a href="../neden-biz/#about" class="en-only">About</a>
-            <a href="../neden-biz/#about" class="tr-only">Hakkımızda</a>
+            <a href="../en/#about" class="en-only">About</a>
+            <a href="../tr/#about" class="tr-only">Hakkımızda</a>
           </li>
           <li>
             <a href="../en/#services" class="en-only">Services</a>
@@ -380,11 +88,23 @@
           <span class="tr-only">Bilgi & Rehberlik</span>
           <span class="en-only">Insights & Guidance</span>
         </span>
-        <h1 class="section-title" style="color:var(--primary)"><span class="tr-only">Dubai, Yurt Dışı ve Uluslararası Okul Rehberleri</span><span class="en-only">Dubai, International School &amp; Relocation Guides</span></h1>
+        <h1 class="section-title" style="color:var(--primary)">Blog</h1>
         <p class="section-desc">
-          <span class="tr-only">Uluslararası okul seçimi, global eğitim sistemleri ve veli-öğrenci koçluğu hakkında uzman görüşleri.</span>
-          <span class="en-only">Expert perspectives on international school selection, global education systems, and parent–student coaching.</span>
+          <span class="tr-only">Uluslararası okul seçimi, Dubai eğitim sistemi ve veli-öğrenci koçluğu hakkında uzman görüşleri.</span>
+          <span class="en-only">Expert perspectives on international school selection, the Dubai education system, and parent–student coaching.</span>
         </p>
+      </div>
+      <div class="blog-hero-visual">
+        <div class="blog-hero-portrait-ring">
+          <picture>
+            <source srcset="../assets/founder-avatar.webp" type="image/webp">
+            <img src="../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-hero-portrait" width="1024" height="1024" loading="eager">
+          </picture>
+        </div>
+        <div class="blog-hero-badge glass">
+          <span class="tr-only">20+ Yıl Deneyim</span>
+          <span class="en-only">20+ Years Experience</span>
+        </div>
       </div>
     </div>
   </section>
@@ -392,798 +112,12 @@
   <!-- BLOG GRID -->
   <section class="blog-listing-section">
     <div class="container">
-      <h2 class="tr-only" style="text-align:center;margin-bottom:2rem;font-size:var(--font-xl)">Tüm Blog Yazıları</h2>
-      <h2 class="en-only" style="text-align:center;margin-bottom:2rem;font-size:var(--font-xl)">All Blog Articles</h2>
-      <!-- Featured infographic -->
-      <a href="/okul-ucretleri-karsilastirma/" class="tr-only" style="display:block;background:linear-gradient(135deg,#211C18 0%,#0F5499 100%);border-radius:var(--radius-md);padding:2rem 2.5rem;margin-bottom:2.5rem;text-decoration:none;color:#FFF1E5;position:relative;overflow:hidden;">
-        <div style="position:absolute;right:2rem;top:50%;transform:translateY(-50%);opacity:0.12;pointer-events:none;">
-          <svg viewBox="0 0 320 200" width="220" xmlns="http://www.w3.org/2000/svg"><rect x="80" y="60" width="100" height="22" fill="#FFF1E5"/><rect x="80" y="95" width="160" height="22" fill="#9E1B32"/><rect x="80" y="130" width="68" height="22" fill="#FFF1E5"/><rect x="72" y="54" width="3" height="110" fill="#FFF1E5"/></svg>
-        </div>
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.2em;color:#9E1B32;text-transform:uppercase;margin-bottom:0.5rem;font-weight:600;">VERİ GRAFİĞİ · 2026</div>
-        <div style="font-family:var(--font-serif);font-size:1.6rem;font-weight:600;line-height:1.2;margin-bottom:0.5rem;">Özel okul ücretinde Türkiye 2. sırada —<br>ABD, Almanya ve Hollanda'nın önünde</div>
-        <div style="font-size:0.9rem;opacity:0.75;margin-bottom:1rem;">10 ülkede yıllık özel ortaokul ücreti karşılaştırması · Veri infografiği</div>
-        <span style="display:inline-flex;align-items:center;gap:0.4rem;font-weight:600;font-size:0.9rem;color:#DBAF2E;">İncele →</span>
-      </a>
-
       <div class="blog-grid">
 
-        <!-- Post: Almanya'da Türk Okulu Var Mı? -->
-        <a href="almanyada-turk-okulu-var-mi/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-almanya.webp" alt="Almanya'da Türk Okulu Var Mı? 2026 Güncel Rehber" loading="lazy" decoding="async" width="800" height="450">
-            <span class="blog-card-flag">🇩🇪</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>14 Eylül 2026</span>
-              <span><span class="tr-only">7 dk</span><span class="en-only">7 min</span></span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Almanya'da Türk Okulu Var Mı? (2026 Güncel Rehber)</span>
-              <span class="en-only">Is There a Turkish School in Germany? (2026 Guide)</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">MEB müfredatlı Türk okulu yok — ama Maarif Vakfı okulları, konsolosluk Türkçe kursları ve Gymnasium sistemi var. Türk aileler için tam rehber.</span>
-              <span class="en-only">No MEB-curriculum Turkish school exists in Germany — but Maarif Foundation schools, consulate classes and the Gymnasium system do. Full guide for Turkish families.</span>
-            </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
-          </div>
-        </a>
-
-        <!-- Post: Robert Kolej Ücreti 2026-27 -->
-        <a href="robert-kolej-ucreti-2026/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-turkiye-dubai-okul.webp" alt="Robert Kolej Ücreti 2026-27 ve Alternatifler" loading="lazy" decoding="async" width="800" height="450">
-            <span class="blog-card-flag">💰</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>14 Eylül 2026</span>
-              <span><span class="tr-only">8 dk</span><span class="en-only">8 min</span></span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Robert Kolej Ücreti 2026-27: Özel Okul Ücretleri ve Alternatifler</span>
-              <span class="en-only">Robert Kolej Fees 2026-27: Turkey Private School Costs Compared</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Robert Kolej 2.488.200 TL, Koç Okulu 1.930.107 TL — Dubai IB okulu ile karşılaştırıldığında tablo ne gösteriyor? Gerçek maliyet analizi.</span>
-              <span class="en-only">Robert Kolej 2,488,200 TL, Koç Okulu 1,930,107 TL — how do they compare against Dubai IB schools? Real cost analysis.</span>
-            </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
-          </div>
-        </a>
-
-        <!-- Post: PISA 2025 + Erken İş Deneyimi -->
-        <a href="pisa-2025-erken-is-deneyimi/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-eduentry.webp" alt="PISA 2025 ve Erken İş Deneyimi" loading="lazy" decoding="async" width="800" height="450">
-            <span class="blog-card-flag">💼</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>11 Eylül 2026</span>
-              <span>
-                <span class="tr-only">13 dk</span>
-                <span class="en-only">13 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">PISA 2025 ve Erken İş Deneyimi: Türk Öğrenciler İçin Eksik Halka</span>
-              <span class="en-only">PISA 2025 and Early Work Experience: The Missing Link for Turkish Students</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">%53 devamsızlık, hesaplamalı düşünme açığı ve okul-iş bağının kopukluğu. PISA 2025 verileri erken iş deneyiminin neden şart olduğunu sayısal olarak kanıtlıyor.</span>
-              <span class="en-only">53% truancy, a computational thinking gap and a broken school-work connection. PISA 2025 data proves numerically why early work experience is essential.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: CAT4 Sınavı Nedir? -->
-        <a href="cat4-sinavi-nedir/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-basvuru.webp" alt="CAT4 Sınavı Nedir? Dubai Okullarında Başvuru ve Hazırlık Rehberi" loading="lazy" decoding="async" width="800" height="450">
-            <span class="blog-card-flag">🧠</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>10 Eylül 2026</span>
-              <span>
-                <span class="tr-only">8 dk</span>
-                <span class="en-only">8 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">CAT4 Sınavı Nedir? Dubai Okullarında Başvuru ve Hazırlık Rehberi</span>
-              <span class="en-only">CAT4 Test Dubai: What It Is, How Schools Use It and How to Prepare</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Dubai'deki IB ve İngiliz müfredatlı okulların çoğu kayıtta CAT4 istiyor. Testin 4 pili, skor yorumu ve 5 kanıta dayalı hazırlık stratejisi bu rehberde.</span>
-              <span class="en-only">Most IB and British-curriculum schools in Dubai require CAT4 for admissions. Here's what the 4 batteries measure, how scores are used and 5 evidence-based prep strategies.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: PISA 2025 Türkiye Sonuçları -->
-        <a href="pisa-2025-turkiye-sonuclari/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-turkiye-egitim-640.webp 640w, ../assets/blog/thumb-turkiye-egitim.webp 800w" src="../assets/blog/thumb-turkiye-egitim.webp" alt="PISA 2025 Türkiye Sonuçları" fetchpriority="high" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">📊</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>10 Eylül 2026</span>
-              <span>
-                <span class="tr-only">9 dk</span>
-                <span class="en-only">9 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">PISA 2025 Türkiye Sonuçları: Rakamlar İyimser Ama Endişe Gerçek</span>
-              <span class="en-only">PISA 2025 Turkey Results: The Numbers Look Better Than They Are</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Türkiye 3 alanda ilerledi — ama %53 devamsızlık, küresel liderlerden geride kalan üst performans oranları ve büyüyen eşitsizlik tablo iyimser değil.</span>
-              <span class="en-only">Turkey improved in all 3 PISA subjects — but 53% truancy, top-performer rates far behind global leaders, and widening inequality tell a more unsettling story.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Dubai'de Türk Okulu Var Mı? -->
-        <a href="dubai-okul-bekleme-listesi/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-basvuru.webp" alt="Dubai Okul Bekleme Listesi" loading="lazy" decoding="async" width="800" height="450">
-            <span class="blog-card-flag">⏳</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>11 Eylül 2026</span>
-              <span>
-                <span class="tr-only">8 dk</span>
-                <span class="en-only">8 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Dubai Okul Bekleme Listesi: Nasıl Girilir, Ne Zaman Başvurulur?</span>
-              <span class="en-only">Dubai School Waiting List: How to Get On, When to Apply</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">KHDA Outstanding okullar 12–18 ay önceden dolabiliyor. Bekleme listesine nasıl girilir, hangi belgeler lazım, kabul gelmezse ne yapılır?</span>
-              <span class="en-only">KHDA Outstanding schools fill up 12–18 months in advance. How to get on the waiting list, which documents you need, and what to do if no offer comes.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <a href="dubai-turk-okulu-var-mi/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-dubai-turk-okulu-640.webp 640w, ../assets/blog/thumb-dubai-turk-okulu.webp 800w" src="../assets/blog/thumb-dubai-turk-okulu.webp" alt="Dubai'de Türk Okulu Var Mı?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🇹🇷</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>14 Haziran 2026</span>
-              <span>
-                <span class="tr-only">6 dk</span>
-                <span class="en-only">6 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Türk Okulu Var Mı? (2026 Güncel Bilgi)</span>
-              <span class="en-only">Is There a Turkish School in Dubai? (2026 Guide)</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Kısa cevap: Hayır — ama 5.000'den fazla Türk öğrenci uluslararası okullarda okuyor. Hangi okul, nasıl seçim, Türkçe nasıl korunur?</span>
-              <span class="en-only">Short answer: No — but 5,000+ Turkish students attend international schools. Which school, how to choose, how to preserve Turkish.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Türkiye Özel Okuldan Dubai Uluslararası Okula Geçiş -->
-        <a href="turkiye-ozel-okuldan-dubai-uluslararasi-okula-gecis/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-gecis-640.webp 640w, ../assets/blog/thumb-gecis.webp 800w" src="../assets/blog/thumb-gecis.webp" alt="Türkiye'deki Özel Okullardan Dubai Uluslararası Okullarına Geçiş: Kapsamlı Rehber" fetchpriority="high" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🇦🇪</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>8 Eylül 2026</span>
-              <span>
-                <span class="tr-only">12 dk</span>
-                <span class="en-only">12 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Türkiye'deki Özel Okullardan Dubai Uluslararası Okullarına Geçiş: Kapsamlı Rehber</span>
-              <span class="en-only">From Turkish Private Schools to Dubai International Schools: A Complete Guide</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Belgeler, onay zinciri, CAT4 sınavı ve mülakat hazırlığı: Dubai'deki uluslararası okullara geçişin tüm adımları Edualist'ten.</span>
-              <span class="en-only">Documents, certification chain, CAT4 exam and interview prep: every step of transitioning to Dubai international schools, from Edualist.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: International School Nedir? -->
-        <a href="international-school-nedir/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-international-school-nedir-640.webp 640w, ../assets/blog/thumb-international-school-nedir.webp 800w" src="../assets/blog/thumb-international-school-nedir.webp" alt="International School Nedir? Türk Aileler İçin Eksiksiz Rehber" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🌍</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>3 Eylül 2026</span>
-              <span>
-                <span class="tr-only">9 dk</span>
-                <span class="en-only">9 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">International School Nedir? Türk Aileler İçin Eksiksiz Rehber</span>
-              <span class="en-only">What Is an International School? A Complete Guide for Turkish Families</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">IB, British, Amerikan müfredatları, KHDA/Ofsted denetimleri ve Türk çocukların bu okullarda nasıl başarılı olduğu — Özlem Çimen anlatıyor.</span>
-              <span class="en-only">IB, British, American curricula, KHDA/Ofsted inspections and how Turkish children thrive in international schools — explained by Özlem Çimen.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Dubai'de Eğitim Sistemi -->
-        <a href="dubai-egitim-sistemi/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-dubai-egitim-sistemi-640.webp 640w, ../assets/blog/thumb-dubai-egitim-sistemi.webp 800w" src="../assets/blog/thumb-dubai-egitim-sistemi.webp" alt="Dubai'de Eğitim Sistemi — KHDA, Müfredat ve Okul Seçimi Rehberi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🏫</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>1 Temmuz 2026</span>
-              <span>
-                <span class="tr-only">9 dk</span>
-                <span class="en-only">9 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Eğitim Sistemi Nasıl Çalışır? KHDA, Müfredatlar ve Okul Türleri</span>
-              <span class="en-only">How Does Dubai's Education System Work? KHDA, Curricula and School Types</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Devlet okulu yok, 200+ özel uluslararası okul var. KHDA denetimi nedir, British mi IB mi, ücretler ne kadar? Türk aileler için kapsamlı rehber.</span>
-              <span class="en-only">No government schools, 200+ private international schools. What is KHDA inspection, British or IB, how much do fees cost? A complete guide for Turkish families.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Dubai'de Başarılı Türk Öğrenciler -->
-        <a href="dubai-basarili-turk-ogrenciler/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-dubai-turk-ogrenci-640.webp 640w, ../assets/blog/thumb-dubai-turk-ogrenci.webp 800w" src="../assets/blog/thumb-dubai-turk-ogrenci.webp" alt="Dubai'deki Başarılı Türk Öğrenciler — 5-14 Yaş Rehberi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🌟</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>1 Temmuz 2026</span>
-              <span>
-                <span class="tr-only">8 dk</span>
-                <span class="en-only">8 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Dubai'deki Başarılı Türk Öğrenciler Ne Yapıyor? 5–14 Yaş Rehberi</span>
-              <span class="en-only">What Makes Turkish Students Succeed in Dubai? A 5–14 Age Guide</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Dil engeli, akademik temel ve liderlik. İki anonim vakadan Özlem Çimen'in gözlemlerine — Dubai uluslararası okullarında başarıya giden 5 pratik adım.</span>
-              <span class="en-only">Language barrier, academic foundation and leadership. From two anonymous cases to Özlem Çimen's observations — 5 practical steps to success at Dubai international schools.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: The Anxious Generation Bölüm 1 -->
-        <a href="anxious-generation-ergen-ruh-sagligi/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-anxious-gen-640.webp 640w, ../assets/blog/thumb-anxious-gen.webp 800w" src="../assets/blog/thumb-anxious-gen.webp" alt="The Anxious Generation Bölüm 1 — Dijital Çağda Ergen Ruh Sağlığı ve Kaygılı Nesil" loading="eager" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🧠</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>29 Haziran 2026</span>
-              <span>
-                <span class="tr-only">11 dk</span>
-                <span class="en-only">11 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">The Anxious Generation Bölüm 1: Dijital Çağda Ergen Ruh Sağlığı</span>
-              <span class="en-only">The Anxious Generation Part 1: Teen Mental Health in the Digital Age</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">GEMS DAA okul psikolojik danışmanıyla Jonathan Haidt'i okuyoruz. Z kuşağı neden "Mars'ta" büyüyor ve dijital çağın dört gelişimsel hasarı neler?</span>
-              <span class="en-only">Reading Jonathan Haidt with GEMS DAA's school counsellor. Why is Gen Z growing up "on Mars" and what are the four developmental harms of the phone-centric childhood?</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Dubai Yaşam Maliyeti 2026 -->
-        <a href="dubai-yasam-maliyeti-2026/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-dubai-yasam-640.webp 640w, ../assets/blog/thumb-dubai-yasam.webp 800w" src="../assets/blog/thumb-dubai-yasam.webp" alt="Dubai'de Yaşam Maliyeti 2026 — Türk Aileler İçin Gerçek Rakamlar" loading="eager" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">💰</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>25 Haziran 2026</span>
-              <span>
-                <span class="tr-only">12 dk</span>
-                <span class="en-only">12 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Yaşam Maliyeti 2026: Türk Aileler İçin Gerçek Rakamlar</span>
-              <span class="en-only">Cost of Living in Dubai 2026: Real Numbers for Turkish Families</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Kira, okul, market, ulaşım ve sağlık maliyetleri. 3 farklı aile senaryosu ve vergisiz maaş avantajıyla Dubai'de aylık gerçek rakamlar.</span>
-              <span class="en-only">Rent, school, groceries, transport and health costs. Three family scenarios and how Dubai's tax-free salary changes the real monthly budget.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: İspanya'da Uluslararası Okul -->
-        <a href="ispanya-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-ispanya-640.webp 640w, ../assets/blog/thumb-ispanya.webp 800w" src="../assets/blog/thumb-ispanya.webp" alt="İspanya'da Uluslararası Okul Rehberi 2026" loading="eager" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🇪🇸</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>23 Haziran 2026</span>
-              <span>
-                <span class="tr-only">10 dk</span>
-                <span class="en-only">10 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">İspanya'da Uluslararası Okul: Madrid ve Barselona Rehberi 2026</span>
-              <span class="en-only">International Schools in Spain: Madrid & Barcelona 2026 Guide</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Madrid, Barselona ve Costa del Sol'da British, IB ve Amerikan müfredatı seçenekleri, ücretler, NIE numarası ve kayıt süreci rehberi.</span>
-              <span class="en-only">British, IB and American curriculum options in Madrid, Barcelona and Costa del Sol — fees, NIE number, and step-by-step enrolment guide.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Dubai Semt Rehberi -->
-        <a href="dubai-semt-rehberi/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-dubai-semt-640.webp 640w, ../assets/blog/thumb-dubai-semt.webp 800w" src="../assets/blog/thumb-dubai-semt.webp" alt="Dubai Semt Rehberi 2026 — Okula Göre Bölge" loading="eager" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🗺️</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>23 Haziran 2026</span>
-              <span>
-                <span class="tr-only">10 dk</span>
-                <span class="en-only">10 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Hangi Semtte Oturun? Okula Göre Bölge Rehberi 2026</span>
-              <span class="en-only">Which Dubai Neighbourhood? School-by-School Area Guide 2026</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Jumeirah, JVC, Arabian Ranches, Emirates Hills — KHDA Outstanding okullarına göre semt karşılaştırması, kira aralıkları ve aile önerileri.</span>
-              <span class="en-only">Jumeirah, JVC, Arabian Ranches, Emirates Hills — neighbourhood comparison by KHDA Outstanding schools, rental ranges and family recommendations.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: İngiltere Devlet vs Özel Okul -->
-        <a href="ingiltere-devlet-ozel-okul/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-ingiltere-devlet-ozel-640.webp 640w, ../assets/blog/thumb-ingiltere-devlet-ozel.webp 800w" src="../assets/blog/thumb-ingiltere-devlet-ozel.webp" alt="İngiltere Devlet mi Özel mi Okul Rehberi 2026" loading="eager" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🏫</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>23 Haziran 2026</span>
-              <span>
-                <span class="tr-only">10 dk</span>
-                <span class="en-only">10 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">İngiltere'de Devlet mi Özel mi? Türk Ailelerin Okul Kararı</span>
-              <span class="en-only">UK State School vs Private School: A Turkish Family's Guide 2026</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Ofsted, ücret farkı, grammar school 11+ sınavı ve üniversite çıktısı — İngiltere'de doğru okul tipini seçmek için karar rehberi.</span>
-              <span class="en-only">Ofsted ratings, fee differences, grammar school 11-plus exams and university outcomes — a decision guide for choosing the right school type in the UK.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Dubai Okul Burs İmkânları -->
-        <a href="dubai-okul-burs-imkanlari/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-burs-640.webp 640w, ../assets/blog/thumb-burs.webp 800w" src="../assets/blog/thumb-burs.webp" alt="Dubai'de Okul Bursu İmkânları 2026" loading="eager" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🎓</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>23 Haziran 2026</span>
-              <span>
-                <span class="tr-only">10 dk</span>
-                <span class="en-only">10 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Okul Bursu Var Mı? 2026 Türk Aileler İçin Kapsamlı Rehber</span>
-              <span class="en-only">Scholarships at Dubai International Schools: 2026 Guide</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">GEMS, Repton ve Nord Anglia'da akademik, spor ve sanat bursları nasıl alınır? Başvuru koşulları ve şirket eğitim yardımı rehberi.</span>
-              <span class="en-only">Merit, sport and arts bursaries at Dubai's top international schools — how to apply, what schools look for, and the employer education allowance option.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Abu Dhabi'de Uluslararası Okul -->
-        <a href="abu-dhabi-uluslararasi-okullar/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-abudhabi-640.webp 640w, ../assets/blog/thumb-abudhabi.webp 800w" src="../assets/blog/thumb-abudhabi.webp" alt="Abu Dhabi'de Uluslararası Okul Rehberi" loading="eager" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🏛</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>23 Haziran 2026</span>
-              <span>
-                <span class="tr-only">11 dk</span>
-                <span class="en-only">11 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Abu Dhabi'de Uluslararası Okul: ADEK, Ücretler ve 2026 Rehberi</span>
-              <span class="en-only">International Schools in Abu Dhabi: ADEK, Fees & 2026 Guide</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">BSAK, Cranleigh, AGS ve Repton Abu Dhabi başta olmak üzere ADEK Outstanding okulları, ücretler ve Dubai'den farkı.</span>
-              <span class="en-only">BSAK, Cranleigh, AGS and Repton Abu Dhabi — ADEK ratings, fee ranges, and how Abu Dhabi compares to Dubai for Turkish families.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Dubai'de Okul Başvurusu Nasıl Yapılır -->
-        <a href="dubai-okul-basvuru-nasil-yapilir/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-basvuru-640.webp 640w, ../assets/blog/thumb-basvuru.webp 800w" src="../assets/blog/thumb-basvuru.webp" alt="Dubai'de Okul Başvurusu Nasıl Yapılır?" loading="eager" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">📋</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>23 Haziran 2026</span>
-              <span>
-                <span class="tr-only">11 dk</span>
-                <span class="en-only">11 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Okul Başvurusu Nasıl Yapılır? Adım Adım Kılavuz</span>
-              <span class="en-only">How to Apply to a Dubai International School: Step-by-Step 2026</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Başvuru formu, belgeler, değerlendirme günü hazırlığı ve reddedilme yönetimi. Kayıt rehberinden farklı: yalnızca başvuru aşamasına odaklı.</span>
-              <span class="en-only">Application form, required documents, assessment day prep, and what to do if rejected — focused entirely on the application stage.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Uluslararası Okul Mülakat Soruları -->
-        <a href="uluslararasi-okul-mulakat-sorulari/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-mulakat-sorular-640.webp 640w, ../assets/blog/thumb-mulakat-sorular.webp 800w" src="../assets/blog/thumb-mulakat-sorular.webp" alt="Uluslararası Okul Mülakat Soruları" loading="eager" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">💬</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>23 Haziran 2026</span>
-              <span>
-                <span class="tr-only">12 dk</span>
-                <span class="en-only">12 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Uluslararası Okul Mülakatında Gerçekten Sorulan Sorular</span>
-              <span class="en-only">Real Questions Asked in International School Interviews</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">İlkokul, ortaokul ve lise için yaş grubuna göre çocuk soruları; ebeveyn görüşmesinde sorulanlar ve her biri için ne söylemek işe yarıyor.</span>
-              <span class="en-only">Student questions by age group (primary, middle, secondary) plus parent meeting questions — with guidance on what works and what to avoid.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Türkiye vs Dubai Okul Ücreti Karşılaştırması -->
-        <a href="turkiye-dubai-okul-ucreti-karsilastirma/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-turkiye-dubai-okul-640.webp 640w, ../assets/blog/thumb-turkiye-dubai-okul.webp 800w" src="../assets/blog/thumb-turkiye-dubai-okul.webp" alt="Türkiye'nin En Pahalı Okulları vs Dubai'nin En İyileri" loading="eager" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">💰</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>22 Haziran 2026</span>
-              <span>
-                <span class="tr-only">10 dk</span>
-                <span class="en-only">10 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Türkiye'nin En Pahalı Okulları mı, Dubai'nin En İyileri mi? 2026 Ücret ve Kalite Karşılaştırması</span>
-              <span class="en-only">Turkey's Most Expensive Schools vs Dubai's Best: 2026 Fees &amp; Quality Compared</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Koç Okulu, Robert Kolej ve BIS ücretleri Dubai'nin KHDA Outstanding okullarıyla karşılaştırıldığında ne çıkıyor? 2026-27 gerçek rakamlar ve müfredat analizi.</span>
-              <span class="en-only">Robert Kolej, Koç Okulu vs KHDA Outstanding Dubai schools — real 2026-27 fee comparison, curricula, and university outcomes.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Gelecekte Hangi Meslekler Önem Kazanacak? -->
-        <a href="gelecekte-hangi-meslekler-onem-kazanacak/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-meslekler-640.webp 640w, ../assets/blog/thumb-meslekler.webp 800w" src="../assets/blog/thumb-meslekler.webp" alt="Gelecekte Hangi Meslekler Önem Kazanacak?" loading="eager" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🚀</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>21 Haziran 2026</span>
-              <span>
-                <span class="tr-only">8 dk</span>
-                <span class="en-only">8 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Gelecekte Hangi Meslekler Önem Kazanacak? Ebeveynlerin Şimdiden Bilmesi Gerekenler</span>
-              <span class="en-only">Which Jobs Will Matter in the Future? What Parents Need to Know Now</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Dünya Ekonomik Forumu, McKinsey ve LinkedIn verilerine göre 2030'da önem kazanacak 7 meslek grubu ve çocuğunuzu şimdiden nasıl hazırlayabileceğiniz.</span>
-              <span class="en-only">WEF, McKinsey and LinkedIn data on 7 job categories gaining importance by 2030 — and how to prepare your child now.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <a href="eduentry-uluslararasi-akademik-degerlendirme-nedir/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-eduentry-640.webp 640w, ../assets/blog/thumb-eduentry.webp 800w" src="../assets/blog/thumb-eduentry.webp" alt="Eduentry Uluslararası Akademik Değerlendirme" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" loading="eager" width="800" height="450" decoding="async">
-            <span class="blog-card-flag">🌍</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>14 Haziran 2026</span>
-              <span>
-                <span class="tr-only">5 dk</span>
-                <span class="en-only">5 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Çocuğunuz Dünyayla Yarışıyor: Dünya Ortalamasındaki Yeri Nerede? Ücretsiz Bir Test Keşfettik</span>
-              <span class="en-only">How Does Your Child Compare to the World? We Found a Free Test</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Eduentry, 6-17 yaş arası çocukların akademik seviyesini UK, ABD, PISA ve IB çerçevelerinde ücretsiz olarak ölçüyor.</span>
-              <span class="en-only">Eduentry measures children aged 6–17 against UK, US, PISA and IB frameworks — completely free.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Türkiye Eğitim Sistemi Neden Yetmiyor -->
-        <a href="turkiye-egitim-sistemi-neden-yetmiyor/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-turkiye-egitim-640.webp 640w, ../assets/blog/thumb-turkiye-egitim.webp 800w" src="../assets/blog/thumb-turkiye-egitim.webp" alt="Türkiye Eğitim Sistemi Neden Yetmiyor?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🏫</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>12 Haziran 2026</span>
-              <span><span class="tr-only">8 dk</span><span class="en-only">8 min</span></span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Türkiye Eğitim Sistemi Neden Yetmiyor?</span>
-              <span class="en-only">Why the Turkish Education System Falls Short: An Expat Mother's Perspective</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">PISA rakamları, ezber odaklı müfredat, 17 sistem değişikliği ve İngilizce açığı. Yurt dışına taşınan Türk aileler için gerçeklik tespiti ve ne yapılması gerektiği.</span>
-              <span class="en-only">PISA data, rote learning, 17 curriculum changes in 20 years, and the English gap. What Turkish families relocating abroad need to know — and how to bridge it.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Türkiye Yılda 46.000 Çocuğunu Yurt Dışına Gönderiyor -->
-        <a href="turkiye-yilda-46000-cocugunu-yurt-disina-gonderiyor/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-goc-istatistik-640.webp 640w, ../assets/blog/thumb-goc-istatistik.webp 800w" src="../assets/blog/thumb-goc-istatistik.webp" alt="Türkiye Her Yıl 46.000 Çocuğunu Yurt Dışına Gönderiyor" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">✈️</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>16 Haziran 2026</span>
-              <span><span class="tr-only">9 dk</span><span class="en-only">9 min</span></span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Türkiye Her Yıl 46.000 Çocuğunu Yurt Dışına Gönderiyor</span>
-              <span class="en-only">Turkey Sends 46,000 Children Abroad Every Year</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">TÜİK verilerine göre Türkiye'den yılda 46.399 çocuk ve genç yurt dışına göç ediyor. Rakamların, nedenlerin ve yaş gruplarına göre adaptasyon sürecinin arkasındaki gerçek.</span>
-              <span class="en-only">TÜİK data shows 46,399 children and young people leave Turkey every year. The numbers, the reasons, and what age-based adaptation really looks like.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: Lise Yurt Dışı Taşınma Adaptasyon -->
-        <a href="lise-yurt-disi-tasinma-adaptasyon/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-lise-tasima.webp" alt="Çocuğum Lisedeyken Yurt Dışına Taşınsak Nasıl Adapte Olur?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🎓</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>11 Haziran 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Çocuğum Lisedeyken Yurt Dışına Taşınsak Nasıl Adapte Olur?</span>
-              <span class="en-only">Moving Abroad During High School: Adaptation, Curriculum & University Path</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Lise çağında yurt dışına taşınmanın sosyal ve duygusal boyutu, IB ve AP müfredatlarında doğru zamanlama, üniversite yolculuğuna etkileri ve Edualist'in rehberlik yaklaşımı.</span>
-              <span class="en-only">The social and emotional side of relocating in high school, critical timing in IB and AP curricula, university admissions impact, and how Edualist guides families through it.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
-            </span>
-          </div>
-        </a>
-
-        <!-- Post: BAE Uluslararası Okul Rehberi -->
-        <a href="bae-uluslararasi-okul-rehberi/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-bae-okul-640.webp 640w, ../assets/blog/thumb-bae-okul.webp 800w" src="../assets/blog/thumb-bae-okul.webp" alt="BAE'de Uluslararası Okul Seçimi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🇦🇪</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>10 Haziran 2026</span>
-              <span><span class="tr-only">14 dk</span><span class="en-only">14 min</span></span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">BAE'de Uluslararası Okul Seçimi: IB, British, Amerikan Rehberi</span>
-              <span class="en-only">International Schools in the UAE: IB, British & American Guide</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">BAE'de 1.600'den fazla uluslararası okul var. IB, British, Amerikan ve Fransız müfredatlarını karşılaştır; ücretleri, başvuru sürecini ve şehir farklılıklarını öğren.</span>
-              <span class="en-only">Over 1,600 international schools in the UAE. Compare IB, British, American and French curricula, fee ranges, admission process and city differences.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
-            </span>
-          </div>
-        </a>
-
+        <!-- Post: Kızım Sınıfın Zemininde Yatıyordu -->
         <a href="kizim-sinifin-zemininde-yatiyordu/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-yanlis-okul.webp" alt="Kızım Sınıfın Zemininde Yatıyordu — Yanlış Okulu Seçmenin Bedeli" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-yanlis-okul.webp" alt="Kızım Sınıfın Zemininde Yatıyordu — Yanlış Okulu Seçmenin Bedeli" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">💔</span>
           </div>
           <div class="blog-card-body">
@@ -1208,7 +142,7 @@
         <!-- Post: Oğlumun İngilizcesi İyiydi -->
         <a href="oglumun-ingilizcesi-iyiydi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-ingilizce.webp" alt="Oğlumun İngilizcesi İyiydi — Müdürün Odasında Nefes Alamadığım Gün" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-ingilizce.webp" alt="Oğlumun İngilizcesi İyiydi — Müdürün Odasında Nefes Alamadığım Gün" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">💬</span>
           </div>
           <div class="blog-card-body">
@@ -1233,7 +167,7 @@
         <!-- Post: Çocuğunuz Yurt Dışında Okumaya Hazır Mı? -->
         <a href="cocugunuz-yurt-disinda-okumaya-hazir-mi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-hazir-640.webp 640w, ../assets/blog/thumb-hazir.webp 800w" src="../assets/blog/thumb-hazir.webp" alt="Çocuğunuz Yurt Dışında Okumaya Hazır Mı?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-hazir.webp" alt="Çocuğunuz Yurt Dışında Okumaya Hazır Mı?" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">✅</span>
           </div>
           <div class="blog-card-body">
@@ -1258,7 +192,7 @@
         <!-- Post: Türk Eğitiminden Uluslararası Okula Geçiş -->
         <a href="turk-egitim-sisteminden-uluslararasi-okula-gecis/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-gecis-640.webp 640w, ../assets/blog/thumb-gecis.webp 800w" src="../assets/blog/thumb-gecis.webp" alt="Türk Eğitim Sisteminden Uluslararası Okula Geçiş" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-gecis.webp" alt="Türk Eğitim Sisteminden Uluslararası Okula Geçiş" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🎓</span>
           </div>
           <div class="blog-card-body">
@@ -1283,7 +217,7 @@
         <!-- Post: Dubai En İyi Okullar -->
         <a href="dubai-en-iyi-uluslararasi-okullar/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-dubai-okul.webp" alt="Dubai En İyi Uluslararası Okullar" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-dubai-okul.webp" alt="Dubai En İyi Uluslararası Okullar" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🏆</span>
           </div>
           <div class="blog-card-body">
@@ -1308,7 +242,7 @@
         <!-- Post: Mülakat Rehberi -->
         <a href="uluslararasi-okul-mulakatı-nasil-gecilir/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-mulakat.webp" alt="Uluslararası Okul Mülakatı" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-mulakat.webp" alt="Uluslararası Okul Mülakatı" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
           </div>
           <div class="blog-card-body">
@@ -1333,7 +267,7 @@
         <!-- Post: Kanada Rehberi -->
         <a href="kanada-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-kanada.webp" alt="Kanada Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-kanada.webp" alt="Kanada Okul Kayıt" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🇨🇦</span>
           </div>
           <div class="blog-card-body">
@@ -1358,7 +292,7 @@
         <!-- Post: TCK Rehberi -->
         <a href="ucuncu-kultur-cocugu-tck-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-tck.webp" alt="Üçüncü Kültür Çocuğu TCK" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-tck.webp" alt="Üçüncü Kültür Çocuğu TCK" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
           </div>
           <div class="blog-card-body">
@@ -1383,7 +317,7 @@
         <!-- Post: Karar Rehberi -->
         <a href="cocugumu-yurtdisinda-okutmali-miyim/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-karar.webp" alt="Yurt Dışı Eğitim Kararı" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-karar.webp" alt="Yurt Dışı Eğitim Kararı" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
           </div>
           <div class="blog-card-body">
@@ -1408,7 +342,7 @@
         <!-- Post: Maliyet Karşılaştırma -->
         <a href="yurtdisi-egitim-maliyet-karsilastirma/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-maliyet-640.webp 640w, ../assets/blog/thumb-maliyet.webp 800w" src="../assets/blog/thumb-maliyet.webp" alt="Yurt Dışı Eğitim Maliyeti" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-maliyet.webp" alt="Yurt Dışı Eğitim Maliyeti" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
           </div>
           <div class="blog-card-body">
@@ -1433,7 +367,7 @@
         <!-- Post: Müfredat Karşılaştırma -->
         <a href="ib-alevel-amerikan-mufredat-karsilastirma/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-mufredat.webp" alt="IB A-Level AP Müfredat Karşılaştırma" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-mufredat.webp" alt="IB A-Level AP Müfredat Karşılaştırma" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
           </div>
           <div class="blog-card-body">
@@ -1455,56 +389,27 @@
           </div>
         </a>
 
-
-        <a href="ingilizcesi-yetersiz-cocuk-dubai-okulu-uyum/" class="blog-card glass scroll-reveal">
+        <!-- Post 1 -->
+        <a href="dubai-school-guide/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-ingilizce-uyum-640.webp 640w, ../assets/blog/thumb-ingilizce-uyum.webp 800w" src="../assets/blog/thumb-ingilizce-uyum.webp" alt="İngilizcesi Yetersiz Çocuk Dubai Okuluna Nasıl Uyum Sağlar?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-dubai.webp" alt="Dubai International Schools" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span>14 Haziran 2026</span>
+              <span>7 Haziran 2026 · 7 June 2026</span>
               <span>
-                <span class="tr-only">7 dk</span>
-                <span class="en-only">7 min</span>
+                <span class="tr-only">5 dk</span>
+                <span class="en-only">5 min</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">İngilizcesi Yetersiz Çocuk Dubai Okuluna Nasıl Uyum Sağlar?</span>
-              <span class="en-only">How Does a Child with Limited English Adapt to a Dubai School?</span>
+              <span class="tr-only">Dubai'de Uluslararası Okul Seçimi: Aileler İçin Kapsamlı Rehber</span>
+              <span class="en-only">Choosing an International School in Dubai: A Complete Family Guide</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">EAL programları nedir, uyum süreci yaşa göre nasıl değişir, okul seçiminde ne sorulmalı ve evde ne yapılabilir?</span>
-              <span class="en-only">What are EAL programmes, how does adaptation vary by age, what to ask at school visits, and what can you do at home?</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
-              →
-            </span>
-          </div>
-        </a>
-
-        <a href="dubai-gelmeden-once-bilmeniz-gerekenler/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-dubai-once-640.webp 640w, ../assets/blog/thumb-dubai-once.webp 800w" src="../assets/blog/thumb-dubai-once.webp" alt="Dubai'ye Gelmeden Önce Bilmeniz Gerekenler" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🇦🇪</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>7 Haziran 2026</span>
-              <span>
-                <span class="tr-only">8 dk</span>
-                <span class="en-only">8 min</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Dubai'ye Gelmeden Önce Bilmeniz Gerekenler</span>
-              <span class="en-only">What You Need to Know Before Moving to Dubai</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">Okul kayıt zamanlaması, gerçek maliyet, müfredat seçimi ve kültürel adaptasyon — Dubai'ye taşınmadan önce 7 kritik gerçek.</span>
-              <span class="en-only">School enrolment timing, true costs, curriculum choice and cultural adaptation — 7 critical things to know before relocating to Dubai.</span>
+              <span class="tr-only">Müfredat seçeneklerinden kayıt süreçlerine, ücret yapısından bölge avantajlarına kadar bilmeniz gereken her şey.</span>
+              <span class="en-only">Everything from curriculum options and enrolment timelines to fee structures and location advantages.</span>
             </div>
             <span class="blog-card-readmore">
               <span class="tr-only">Devamını Oku</span>
@@ -1517,7 +422,7 @@
         <!-- Post 3 -->
         <a href="ingiltere-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-ingiltere.webp" alt="İngiltere Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-ingiltere.webp" alt="İngiltere Okul Kayıt" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🇬🇧</span>
           </div>
           <div class="blog-card-body">
@@ -1547,7 +452,7 @@
         <!-- Post 5 -->
         <a href="fransa-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-fransa.webp" alt="Fransa Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-fransa.webp" alt="Fransa Okul Kayıt" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🇫🇷</span>
           </div>
           <div class="blog-card-body">
@@ -1572,7 +477,7 @@
         <!-- Post 6 -->
         <a href="hollanda-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-hollanda.webp" alt="Hollanda Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-hollanda.webp" alt="Hollanda Okul Kayıt" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🇳🇱</span>
           </div>
           <div class="blog-card-body">
@@ -1597,7 +502,7 @@
         <!-- Post 7 -->
         <a href="italya-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-italya.webp" alt="İtalya Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-italya.webp" alt="İtalya Okul Kayıt" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🇮🇹</span>
           </div>
           <div class="blog-card-body">
@@ -1622,7 +527,7 @@
         <!-- Post 4 -->
         <a href="almanya-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-almanya.webp" alt="Almanya Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-almanya.webp" alt="Almanya Okul Kayıt" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🇩🇪</span>
           </div>
           <div class="blog-card-body">
@@ -1652,7 +557,7 @@
         <!-- Post 2 -->
         <a href="dubai-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-dubai-kayit-sureci-640.webp 640w, ../assets/blog/thumb-dubai-kayit-sureci.webp 800w" src="../assets/blog/thumb-dubai-kayit-sureci.webp" alt="Dubai Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <img src="../assets/blog/thumb-dubai.webp" alt="Dubai Okul Kayıt" loading="lazy" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
           </div>
           <div class="blog-card-body">
@@ -1684,12 +589,12 @@
   </section>
 
   <!-- AUTHOR -->
-  <section class="blog-author-section" style="content-visibility:auto;contain-intrinsic-size:0 400px">
+  <section class="blog-author-section">
     <div class="container">
       <div class="blog-author-card glass scroll-reveal">
         <picture>
-          <source srcset="../assets/founder-avatar-300.webp 300w, ../assets/founder-avatar-600.webp 600w" sizes="(max-width:640px) 143px, 200px" type="image/webp">
-          <img src="../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-author-img" loading="lazy" decoding="async" width="1024" height="1024">
+          <source srcset="../assets/founder-avatar.webp" type="image/webp">
+          <img src="../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-author-img" loading="lazy" width="1024" height="1024">
         </picture>
         <div class="blog-author-info">
           <p class="blog-author-role">
@@ -1707,7 +612,7 @@
   </section>
 
   <!-- FOOTER -->
-  <footer class="footer" style="content-visibility:auto;contain-intrinsic-size:0 300px">
+  <footer class="footer">
     <div class="container">
       <div class="footer-grid">
         <div class="footer-bio-col">
@@ -1720,11 +625,11 @@
           <h4 class="tr-only">Hızlı Linkler</h4>
           <h4 class="en-only">Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="/en/" class="en-only">Home</a><a href="/tr/" class="tr-only">Ana Sayfa</a></li>
-            <li><a href="/neden-biz/" class="en-only">Why Us?</a><a href="/neden-biz/" class="tr-only">Neden Biz?</a></li>
-            <li><a href="/en/#services" class="en-only">Services</a><a href="/tr/#services" class="tr-only">Hizmetler</a></li>
-            <li><a href="/blog/">Blog <span class="nav-count-badge">5</span></a></li>
-            <li><a href="/uluslararasi-okul-danismanligi/" class="en-only">Book Session</a><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Görüşme Planla</a></li>
+            <li><a href="../en/" class="en-only">Home</a><a href="../tr/" class="tr-only">Ana Sayfa</a></li>
+            <li><a href="../en/#services" class="en-only">Services</a><a href="../tr/#services" class="tr-only">Hizmetler</a></li>
+            <li><a href="../en/#about" class="en-only">About</a><a href="../tr/#about" class="tr-only">Hakkımızda</a></li>
+            <li><a href=".">Blog</a></li>
+            <li><a href="../en/#contact" class="en-only">Book Session</a><a href="../tr/#contact" class="tr-only">Görüşme Planla</a></li>
           </ul>
         </div>
 
@@ -1734,23 +639,11 @@
           <ul class="footer-contact-list">
             <li class="footer-contact-item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
-              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+              <div><a href="mailto:ozlem@cimen.net">ozlem@cimen.net</a></div>
             </li>
             <li class="footer-contact-item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
               <div><span class="tr-only">Dubai, Birleşik Arap Emirlikleri</span><span class="en-only">Dubai, United Arab Emirates</span></div>
-            </li>
-            <li class="footer-contact-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener">LinkedIn</a></div>
-            </li>
-            <li class="footer-contact-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
-              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener">Instagram</a></div>
-            </li>
-            <li class="footer-contact-item">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener">X / Twitter</a></div>
             </li>
           </ul>
         </div>
@@ -1758,15 +651,14 @@
 
       <div class="footer-bottom">
         <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
-        <div><a href="/gizlilik-politikasi/" class="tr-only" style="color:inherit;opacity:0.7">Gizlilik Politikası</a><a href="/gizlilik-politikasi/" class="en-only" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
         <div>Designed for Excellence.</div>
       </div>
     </div>
   </footer>
 
   <!-- Sticky WhatsApp -->
-  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Merhaba,%20Daha%20fazla%20bilgi%20almak%20istiyorum" target="_blank" rel="noopener noreferrer"
-     class="whatsapp-sticky" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+  <a href="https://wa.me/971502709379" target="_blank" rel="noopener noreferrer"
+     class="whatsapp-sticky" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function')gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'})">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
       <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
@@ -1789,61 +681,6 @@
     </div>
     <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
   </div>
-
-  <!-- DefinedTerm Schema — key domain concepts for LLM comprehension -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "DefinedTermSet",
-    "name": "Uluslararası Eğitim Terimler Sözlüğü",
-    "description": "Edualist blog içeriklerinde geçen temel uluslararası eğitim terimleri",
-    "url": "https://www.edualist.com/blog/",
-    "hasDefinedTerm": [
-      {
-        "@type": "DefinedTerm",
-        "name": "IB (Uluslararası Bakalorya)",
-        "termCode": "IB",
-        "description": "International Baccalaureate Organization tarafından geliştirilen ve dünya genelinde 5.000'den fazla üniversite tarafından tanınan uluslararası müfredat sistemi. PYP (3-12 yaş), MYP (11-16 yaş), Diploma Programı (16-19 yaş) ve CP olmak üzere dört programdan oluşur. Türkiye'de YÖK tarafından tanınmaktadır.",
-        "inDefinedTermSet": "https://www.edualist.com/blog/"
-      },
-      {
-        "@type": "DefinedTerm",
-        "name": "KHDA",
-        "termCode": "KHDA",
-        "description": "Knowledge and Human Development Authority — Dubai'deki tüm özel okul ve kreşleri denetleyen resmi kurum. Okulları Outstanding, Very Good, Good, Acceptable ve Weak olmak üzere beş kategoride değerlendirir. Yıllık denetim raporları khda.ae adresinde kamuya açıktır.",
-        "inDefinedTermSet": "https://www.edualist.com/blog/"
-      },
-      {
-        "@type": "DefinedTerm",
-        "name": "TCK (Üçüncü Kültür Çocuğu)",
-        "termCode": "TCK",
-        "description": "Third Culture Kid — gelişim yıllarının önemli bir bölümünü ebeveynlerinin kültüründen farklı bir veya birden fazla ülkede geçiren çocuklar. Birden fazla kültürden beslenen ancak bunların hiçbirine tam anlamıyla ait olmayan kendine özgü bir kimlik geliştirirler. Çok dillilik ve kültürel esneklik temel güçlü yanlardır.",
-        "inDefinedTermSet": "https://www.edualist.com/blog/"
-      },
-      {
-        "@type": "DefinedTerm",
-        "name": "EAL (İngilizce Ek Dil)",
-        "termCode": "EAL",
-        "description": "English as an Additional Language — anadili İngilizce olmayan öğrencilerin akademik İngilizce becerilerini geliştirmesi için sunulan özel eğitim desteği. Günlük konuşma İngilizcesini (BICS) değil, akademik İngilizceyi (CALP) hedefler. Uluslararası okulların büyük bölümü EAL programları yürütmektedir.",
-        "inDefinedTermSet": "https://www.edualist.com/blog/"
-      },
-      {
-        "@type": "DefinedTerm",
-        "name": "A-Level",
-        "termCode": "A-Level",
-        "description": "Advanced Level — İngiliz eğitim sisteminde 16-18 yaş arası öğrencilerin üniversiteye hazırlık sürecinde aldığı konu bazlı sınavlar. Dubai ve BAE'de en yaygın müfredatlardan biridir. İngiliz ve Commonwealth üniversitelerine başvuruda tercih edilen standart değerlendirme sistemi.",
-        "inDefinedTermSet": "https://www.edualist.com/blog/"
-      },
-      {
-        "@type": "DefinedTerm",
-        "name": "Expatriyat Aile",
-        "termCode": "expat",
-        "description": "Kendi ülkesi dışında yaşayan ve çocuklarını uluslararası okullarda okutan aileler. Türk expatriyat aileler genellikle iş nedeniyle Dubai, Londra, Amsterdam gibi şehirlere taşınmakta ve çocuklarının eğitim geçişinde profesyonel danışmanlık ihtiyacı duymaktadır.",
-        "inDefinedTermSet": "https://www.edualist.com/blog/"
-      }
-    ]
-  }
-  </script>
 
   <script src="../app.js" defer></script>
 </body>
