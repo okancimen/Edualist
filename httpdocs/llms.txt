@@ -29,7 +29,8 @@ X / Twitter: https://x.com/OzlemGunayCimen
 
 - [Why Edualist? About the Founder](https://www.edualist.com/neden-biz/): Background, credentials, and the personal expat journey behind Edualist
 - [International School Consulting Service](https://www.edualist.com/uluslararasi-okul-danismanligi/): Transactional service page — school placement, academic coaching, and VIP relocation support with pricing and booking
-- [Blog](https://www.edualist.com/blog/): 40 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
+- [Blog](https://www.edualist.com/blog/): 47 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
+- [Full article content index](https://www.edualist.com/llms-full.txt): Complete text of all 46 blog articles for LLM indexing
 - [AI Chatbot — Ela (EduBot)](https://ai-edualist-com.vercel.app/): Edualist's 24/7 AI advisor for school selection questions, curriculum comparison, and country-specific guidance
 
 ## Blog Articles
@@ -74,6 +75,12 @@ X / Twitter: https://x.com/OzlemGunayCimen
 - [Dubai Semt Rehberi — Okula Göre Bölge](https://www.edualist.com/blog/dubai-semt-rehberi/): Where to live in Dubai based on school location — Jumeirah, JVC, Arabian Ranches, Emirates Hills mapped to KHDA Outstanding schools with rental ranges and family recommendations
 - [İngiltere'de Devlet mi Özel mi?](https://www.edualist.com/blog/ingiltere-devlet-ozel-okul/): UK state vs independent school comparison — Ofsted, grammar school 11+ exam, fee ranges (free to £60K boarding), university outcomes, bursaries, and a decision guide for Turkish families
 - [Türkiye'deki Özel Okullardan Dubai Uluslararası Okullarına Geçiş: Kapsamlı Rehber](https://www.edualist.com/blog/turkiye-ozel-okuldan-dubai-uluslararasi-okula-gecis/): Required documents (Transfer Certificate, report cards), the 4-step official certification chain (school → MEB → Apostille → UAE Consulate), CAT4 cognitive abilities test explained, primary/middle/high school interview processes, and EAL language support available in Dubai international schools
+- [Almanya'da Türk Okulu Var Mı? (2026 Güncel Rehber)](https://www.edualist.com/blog/almanyada-turk-okulu-var-mi/): Almanya'da MEB müfredatlı resmi Türk okulu bulunmuyor. Maarif Vakfı okulları seçili şehirlerde mevcut, konsolosluk Türkçe kursları hafta sonu bazında işliyor. Gymnasium, Gesamtschule ve uluslararası okul seçenekleri, Türkçe dil koruması stratejileri ve 5 adımlı okul seçim rehberi
+- [CAT4 Sınavı Nedir? Dubai'de Okul Başvurularında Hazırlık Rehberi](https://www.edualist.com/blog/cat4-sinavi-nedir/): CAT4 (Cognitive Abilities Test 4) nedir, Dubai uluslararası okulları neden kullanır, dört bölüm (sözel, sayısal, uzamsal, sözel olmayan akıl yürütme) nasıl çalışır, SAS skorları nasıl yorumlanır ve Türk çocuklar nasıl hazırlanır — pratik hazırlık stratejileri ile birlikte
+- [Dubai Okul Bekleme Listesi: Nasıl Girilir, Ne Zaman Başvurulur?](https://www.edualist.com/blog/dubai-okul-bekleme-listesi/): Dubai'de KHDA Outstanding okullarının bekleme listesi 12–24 ay önceden dolabiliyor. Listeye nasıl girilir, hangi belgeler gerekli, süreç nasıl takip edilir, liste yerine alternatif okullara nasıl başvurulur — ve neden geç başvuru en büyük hata
+- [PISA 2025 Türkiye Sonuçları: Türkiye Kaçıncı?](https://www.edualist.com/blog/pisa-2025-turkiye-sonuclari/): PISA 2025'te Türkiye matematik, okuma ve fen bilimlerinde OECD ortalamasının altında kaldı. Sonuçların ayrıntılı analizi, Türk öğrencilerin güçlü ve zayıf yönleri, diğer ülkelerle karşılaştırma ve çocuğunuz için pratik adımlar
+- [PISA 2025 ve Erken İş Deneyimi: Türk Öğrenciler İçin Eksik Halka](https://www.edualist.com/blog/pisa-2025-erken-is-deneyimi/): PISA 2025 Türkiye sonuçları fen ve okumada OECD ortalamasının üzerinde, ama hesaplamalı problem çözme geride ve devamsızlık %53. Erken iş deneyimi (staj, proje, girişimcilik) bu boşluğu nasıl kapatır — ve uluslararası müfredat bunu nasıl destekler
+- [Robert Kolej Ücreti 2026-27: Alternatiflerle Karşılaştırma](https://www.edualist.com/blog/robert-kolej-ucreti-2026/): Robert Kolej 2026-27 yıllık ücreti 2.488.200 TL. Koç Okulu, Hisar Okulu ve Dubai KHDA Outstanding IB okullarıyla ücret, müfredat ve üniversite çıktısı açısından karşılaştırma — ve 1 AED = 12,65 TL paritesiyle Dubai'nin nasıl rekabetçi hale geldiği
 
 ## Frequently Asked Questions
 
