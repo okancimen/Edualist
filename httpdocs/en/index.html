@@ -1235,7 +1235,7 @@ html[lang="en"] .tr-only {
     <div class="container">
       <div class="hero-grid">
         
-        <div class="hero-content scroll-reveal">
+        <div class="hero-content">
           <div class="hero-tag">
             <!-- Graduation Cap SVG -->
             <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
@@ -1270,7 +1270,7 @@ html[lang="en"] .tr-only {
         </div>
         
         <!-- Hero Right Side — Son Yazılar -->
-        <div class="hero-visual scroll-reveal">
+        <div class="hero-visual">
           <div class="hero-card glass hero-blog-preview">
             <div class="hero-blog-header">
               <span class="hero-blog-label tr-only">Son Yazılar</span>
@@ -1713,10 +1713,14 @@ html[lang="en"] .tr-only {
           var cards = track.querySelectorAll('.testimonial-card');
           var total = cards.length;
           var current = 0;
+          var cardW = 0;
 
           var mqSmall = window.matchMedia("(max-width:768px)"); function perView() { return mqSmall.matches ? 1 : 3; }
-
           function maxIndex() { return total - perView(); }
+
+          if ('ResizeObserver' in window) {
+            new ResizeObserver(function(e){ cardW = e[0].contentRect.width; if(current > 0) goTo(current); }).observe(cards[0]);
+          }
 
           function buildDots() {
             dotsEl.innerHTML = '';
@@ -1733,10 +1737,9 @@ html[lang="en"] .tr-only {
 
           function goTo(idx) {
             current = Math.max(0, Math.min(idx, maxIndex()));
-            var pv = perView();
-            var cardWidth = cards[0].offsetWidth;
+            var w = cardW || (current > 0 ? cards[0].offsetWidth : 0);
             var gap = 32;
-            track.style.transform = 'translateX(-' + (current * (cardWidth + gap)) + 'px)';
+            track.style.transform = 'translateX(-' + (current * (w + gap)) + 'px)';
             prevBtn.disabled = current === 0;
             nextBtn.disabled = current >= maxIndex();
             dotsEl.querySelectorAll('.carousel-dot').forEach(function(d, i){ d.classList.toggle('active', i === current); });
