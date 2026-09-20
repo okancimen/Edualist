@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>try{var _l=localStorage.getItem('edualist_lang');if(_l==='en')document.documentElement.setAttribute('lang','en');}catch(e){}</script>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PISA Nedir? PISA 2025 Puanı Nasıl Hesaplanır ve Türkiye Sonuçları | Edualist</title>
+  <meta name="description" content="PISA nedir, nasıl uygulanır, puanlar nasıl hesaplanır? PISA 2025 Türkiye sonuçları ve PISA başarısının çocuğunuzun iş hayatıyla bağlantısı. Deneyimli bir eğitimciden kapsamlı rehber.">
+  <meta name="keywords" content="pisa nedir, pisa 2025 nedir, pisa 2026 nedir, pisa puanı nasıl hesaplanır, pisa türkiye sonuçları, pisa oecd, pisa seviyeleri">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.edualist.com/blog/pisa-nedir/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/pisa-nedir/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/blog/pisa-nedir/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/pisa-nedir/">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title"       content="PISA Nedir? PISA 2025 Puanı Nasıl Hesaplanır ve Türkiye Sonuçları">
+  <meta property="og:description" content="PISA nedir, nasıl uygulanır, puanlar nasıl hesaplanır? PISA 2025 Türkiye sonuçları ve PISA başarısının çocuğunuzun iş hayatıyla bağlantısı. Deneyimli bir eğitimciden kapsamlı rehber.">
+  <meta property="og:url"         content="https://www.edualist.com/blog/pisa-nedir/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-turkiye-egitim.webp">
+  <meta property="article:published_time" content="2026-09-21">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="PISA Nedir? PISA 2025 ve Türkiye: Bir Eğitimciden Dürüst Rehber">
+  <meta name="twitter:description" content="PISA nedir, puanlar nasıl hesaplanır, Türkiye 2025'te nerede? PISA başarısı iş hayatını nasıl etkiliyor? Yumuşak ama gerçekçi bir bakış.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-turkiye-egitim.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "PISA Nedir? PISA 2025 Puanı Nasıl Hesaplanır ve Türkiye Sonuçları",
+    "description": "PISA nedir, nasıl uygulanır, puanlar nasıl hesaplanır? PISA 2025 Türkiye sonuçları ve PISA başarısının çocuğunuzun iş hayatıyla bağlantısı.",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen",
+      "@id": "https://www.edualist.com/#ozlem-cimen",
+      "url": "https://www.edualist.com/neden-biz/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com"
+    },
+    "datePublished": "2026-09-21",
+    "dateModified": "2026-09-21",
+    "wordCount": 2100,
+    "inLanguage": "tr",
+    "url": "https://www.edualist.com/blog/pisa-nedir/",
+    "image": "https://www.edualist.com/assets/blog/thumb-turkiye-egitim.webp",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".blog-summary", ".blog-post-title"]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/tr/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "PISA Nedir?", "item": "https://www.edualist.com/blog/pisa-nedir/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "PISA nedir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PISA (Programme for International Student Assessment), OECD tarafından her 3 yılda bir uygulanan uluslararası bir öğrenci değerlendirme programıdır. 15 yaşındaki öğrencilerin matematik, fen bilimleri ve okuma anlama becerilerini ölçer. 2025 yılında ilk kez hesaplamalı problem çözme becerisi de eklendi. 91 ülke ve ekonominin katıldığı test, bireysel not vermez; ülkelerin eğitim sistemlerini karşılaştırmalı olarak değerlendirir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "PISA 2025 nedir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PISA 2025, OECD'nin 2025 yılında uyguladığı PISA değerlendirme turudur. Sonuçlar Eylül 2026'da yayımlandı. 91 ülkeden 760.000'den fazla öğrencinin katıldığı bu turda Türkiye, matematik, fen ve okumada 2022'ye kıyasla üç alanda birden ilerleme kaydeden nadir ülkelerden biri oldu."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "PISA 2026 nedir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PISA 2026 diye ayrı bir değerlendirme yoktur. Ancak PISA 2025 sonuçları Eylül 2026'da açıklandığı için medyada ve aramalarda 'PISA 2026' olarak yer almaktadır. PISA 3 yılda bir yapılır: bir önceki tur 2025, bir sonraki tur 2028 yılında uygulanacaktır."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "PISA puanı nasıl hesaplanır?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PISA puanları, ham doğru/yanlış sayısına değil IRT (Item Response Theory) adlı istatistiksel ölçekleme yöntemine dayanır. Her öğrenci 2 saatlik bir test alır ve farklı soru kombinasyonlarına tabi tutulur. Soruların güçlük düzeyi ve öğrencinin genel performansı hesaplanarak OECD ortalaması yaklaşık 500 puan olacak şekilde normalleştirilen bir skor elde edilir. Sonuçlar Level 1b'den Level 6'ya kadar 7 yetkinlik düzeyine ayrılır; Level 2 temel yetkinlik eşiği kabul edilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "PISA başarısı iş hayatını etkiler mi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. OECD araştırmaları, PISA'da ölçülen becerilerin — özellikle okuma anlama, sayısal düşünme ve problem çözmenin — yetişkinlik döneminde gelir düzeyi ve istihdam kalitesiyle güçlü bir ilişki içinde olduğunu gösteriyor. Bu beceriler, 'sınav becerisi' değil 'iş hayatı becerisi' olarak tasarlanmıştır."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional"></noscript>
+
+  <link rel="preload" as="image" href="../../assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="../../styles.css?v=7">
+  <link rel="stylesheet" href="../../styles.css?v=7" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../styles.css?v=7"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="header-nav glass" id="navbar">
+    <div class="container nav-container">
+      <a href="../../" class="logo" id="nav-logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li>
+            <a href="../../en/" class="en-only">Home</a>
+            <a href="../../tr/" class="tr-only">Ana Sayfa</a>
+          </li>
+          <li>
+            <a href="../../neden-biz/" class="en-only">Why Us?</a>
+            <a href="../../neden-biz/" class="tr-only">Neden Biz?</a>
+          </li>
+          <li>
+            <a href="../../en/#services" class="en-only">Services</a>
+            <a href="../../tr/#services" class="tr-only">Hizmetler</a>
+          </li>
+          <li>
+            <a href="../../neden-biz/#about" class="en-only">About</a>
+            <a href="../../neden-biz/#about" class="tr-only">Hakkımızda</a>
+          </li>
+          <li><a href="../">Blog</a></li>
+          <li>
+            <a href="/uluslararasi-okul-danismanligi/" class="en-only">Contact</a>
+            <a href="/uluslararasi-okul-danismanligi/" class="tr-only">İletişim</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-cta-group">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN / TR</button>
+        <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary en-only" style="padding:0.6rem 1.2rem;font-size:0.9rem;">Book Now</a>
+        <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary tr-only" style="padding:0.6rem 1.2rem;font-size:0.9rem;">Görüşme Planla</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="blog-post-hero">
+      <div class="container">
+        <div class="blog-breadcrumb">
+          <a href="../../tr/" class="tr-only">Ana Sayfa</a>
+          <a href="../../en/" class="en-only">Home</a>
+          <span>›</span>
+          <a href="../">Blog</a>
+          <span>›</span>
+          <span class="tr-only">PISA Nedir?</span>
+          <span class="en-only">What Is PISA?</span>
+        </div>
+
+        <div class="blog-post-meta">
+          <span>21 Eylül 2026</span>
+          <span>·</span>
+          <span class="tr-only">11 dakika okuma</span>
+          <span class="en-only">11 min read</span>
+          <span>·</span>
+          <span><a href="../../neden-biz/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+        </div>
+
+        <div class="blog-summary">
+          <strong><span class="tr-only">Özet</span><span class="en-only">Summary</span></strong>
+          <p class="tr-only">PISA, 91 ülkedeki 15 yaşındaki öğrencilerin matematik, fen ve okuma becerilerini ölçen uluslararası bir değerlendirme programı. PISA 2025 sonuçları Eylül 2026'da açıklandı — Türkiye üç alanda birden ilerledi. Ama iyileşen ortalamanın arkasındaki tabloya baktığımda hem memnuniyet hem de kaygı hissediyorum. Bu yazıda, PISA'nın ne olduğunu, puanların nasıl hesaplandığını ve — en önemlisi — çocuğunuzun PISA'daki becerileriyle iş hayatı arasındaki doğrudan bağı anlatacağım.</p>
+          <p class="en-only">PISA is an international assessment that measures the skills of 15-year-olds across 91 countries in mathematics, science and reading. PISA 2025 results were published in September 2026 — Turkey improved in all three subjects. But behind the improving averages, there is a picture that both reassures and concerns me. This guide explains what PISA is, how scores are calculated, and — most importantly — the direct link between PISA skills and your child's future career.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container blog-post-container">
+      <article>
+
+        <!-- TR CONTENT -->
+        <div class="tr-only blog-post-body">
+
+          <h1 class="blog-post-title">PISA Nedir? PISA 2025, Puanlar ve Türk Çocukların İş Hayatına Hazırlığı</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">PISA nedir</span>
+            <span class="blog-seo-tag">PISA 2025</span>
+            <span class="blog-seo-tag">PISA puanı hesaplama</span>
+            <span class="blog-seo-tag">Türkiye eğitim</span>
+          </div>
+
+          <p>Bu soruyu ebeveynlerden çok duyuyorum: <em>"PISA nedir, bizimle ne ilgisi var?"</em> Çoğu zaman bunu, çocukları sınıfının başında olan, karnesi iyi ailelerden duyuyorum. Ve her seferinde aynı şeyi söylüyorum: PISA, sadece bir devlet istatistiği değil. Çocuğunuzun 15-20 yıl sonraki iş hayatını önceden görmemize yarayan en güvenilir araçlardan biri.</p>
+
+          <p>Yumuşatarak söylemek istemiyorum ama doğrudan olmak da zorunda değilim. Sadece şunu soracağım: Çocuğunuz Türkiye'de başarılı — peki ya dünyada?</p>
+
+          <h2>PISA Nedir?</h2>
+
+          <p>PISA, İngilizce adıyla "Programme for International Student Assessment" — Türkçe karşılığıyla Uluslararası Öğrenci Değerlendirme Programı. Ekonomik Kalkınma ve İşbirliği Örgütü (OECD) tarafından 3 yılda bir uygulanıyor.</p>
+
+          <p>Bu değerlendirme üç temel özelliği nedeniyle diğer sınavlardan ayrışıyor:</p>
+
+          <ul>
+            <li><strong>Evrensel yaş grubu:</strong> Katılım koşulu not ya da sınıf değil, yaş. Her ülkeden 15 yaş grubundaki öğrenciler test ediliyor.</li>
+            <li><strong>Geniş katılım:</strong> 2025 turunda 91 ülke ve ekonomi, 760.000'den fazla öğrenci ile temsil edildi. Türkiye'den 203 okulda 7.702 öğrenci katıldı; bu öğrenciler ülkedeki yaklaşık 920.900 15 yaşındaki öğrenciyi temsil ediyor.</li>
+            <li><strong>Gerçek hayat becerileri:</strong> PISA, müfredatı değil becerileri ölçüyor. "Ezberlemiş misin?" değil, "anlıyor musun, uygulayabiliyor musun?" soruyor.</li>
+          </ul>
+
+          <p>Test üç ana alanda uygulanıyor: <strong>matematik</strong>, <strong>fen bilimleri</strong> ve <strong>okuma anlama</strong>. 2025 yılında ilk kez dördüncü bir alan da eklendi: <strong>hesaplamalı problem çözme</strong> (computational problem solving). Bu, kodlama bilgisi değil; algoritmik düşünme, dijital ortamda problem analizi ve veri yorumlama becerisi. Yapay zeka çağının tam merkezindeki beceri.</p>
+
+          <div class="blog-callout">
+            <strong>PISA bir ülkeyi ölçer, bireysel öğrenciyi değil.</strong> Sonuçlar eğitim sistemleri hakkında karar vericilere veri sağlar. Ancak bu verilerin aile olarak size anlattığı şey, çocuğunuzun içinde bulunduğu sistemin kalitesidir — ve bu, görmezden gelinecek bir bilgi değil.
+          </div>
+
+          <h2>PISA 2025 Nedir? PISA 2026 Nedir?</h2>
+
+          <p>PISA 3 yılda bir yapılıyor: 2018, 2022, 2025 ve bir sonraki tur 2028. <strong>PISA 2025</strong>, 2025 yılında uygulanan değerlendirme turunun adı. Ancak sonuçlar Eylül 2026'da kamuoyuyla paylaşıldı. Bu nedenle haberlerde ve internet aramalarında <strong>"PISA 2026"</strong> ifadesini sık göreceksiniz — bunlar aynı şeyi kastediyor: 2025 yılında uygulanan testin, 2026'da açıklanan sonuçları.</p>
+
+          <p>Önemli bir not: Bazı aileler "2026'da çocuğum PISA'ya girecek mi?" diye soruyor. Hayır — PISA resmi okul sınavı değil, örneklem bazlı bir araştırma. Seçilen okullardan rastgele belirlenen öğrenciler katılıyor.</p>
+
+          <h2>PISA Puanı Nasıl Hesaplanır?</h2>
+
+          <p>Bu soru, özellikle sonuçlar açıklandığında çok soruluyor. Biraz açayım.</p>
+
+          <h3>Test nasıl uygulanır?</h3>
+
+          <p>Öğrenciler 2 saatlik bir test alıyor. Ancak herkes aynı soruları görmüyor — farklı öğrenciler farklı soru kombinasyonları alıyor (matematik + fen, fen + okuma gibi). Sorular çoktan seçmeli, kısa cevaplı ve açık uçlu olmak üzere karışık bir yapıda.</p>
+
+          <p>Test sonrasında öğrenciler yaklaşık 35 dakikalık bir anket dolduruyor. Bu ankette aile geçmişi, okul ortamı, motivasyon ve tutumlar ölçülüyor. Yani PISA sadece akademik başarıyı değil, öğrenme bağlamını da inceliyor.</p>
+
+          <h3>Puan hesaplaması nasıl işliyor?</h3>
+
+          <p>Ham doğru/yanlış sayısı, puanı doğrudan belirlemez. PISA, <strong>IRT (Item Response Theory)</strong> adlı istatistiksel ölçekleme yöntemini kullanır. Bu yöntemde:</p>
+
+          <ul>
+            <li>Her sorunun güçlük düzeyi ayrıca belirlenir</li>
+            <li>Öğrencinin cevap örüntüsüne göre genel yetkinlik seviyesi tahmin edilir</li>
+            <li>Tüm ülkelerin puanları, OECD ortalaması yaklaşık <strong>500 puan</strong> olacak şekilde normalize edilir</li>
+          </ul>
+
+          <p>Yani "40 soruyu doğru yaptım, kaç puan aldım?" sorusunun basit bir cevabı yoktur. O 40 sorunun zorluk düzeyi, diğer ülkelerdeki öğrencilerin performansı ve soruların birbirleriyle ilişkisi de hesaba katılır.</p>
+
+          <h3>Proficiency seviyeleri neler?</h3>
+
+          <p>PISA sonuçları Level 1b'den Level 6'ya kadar 7 yetkinlik düzeyine ayrılır:</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr><th>Seviye</th><th>Ne anlama geliyor?</th><th>OECD'nin değerlendirmesi</th></tr>
+            </thead>
+            <tbody>
+              <tr style="background:rgba(192,57,43,0.06)"><td><strong>Level 1b ve altı</strong></td><td>Çok temel görevleri bile yapmakta güçlük</td><td>Kritik endişe</td></tr>
+              <tr style="background:rgba(192,57,43,0.03)"><td><strong>Level 1a</strong></td><td>En basit görevleri yapabilir</td><td>Yetersiz</td></tr>
+              <tr><td><strong>Level 2</strong></td><td>Temel yetkinlik — günlük hayata yeterli minimum</td><td>Temel eşik</td></tr>
+              <tr><td><strong>Level 3–4</strong></td><td>Orta düzey — karmaşık görevleri çözebilir</td><td>Yeterli</td></tr>
+              <tr style="background:rgba(219,175,46,0.1)"><td><strong>Level 5–6</strong></td><td>Üst performans — soyut problem çözme, yaratıcı uygulama</td><td>Küresel rekabetçi</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>OECD, Level 2'yi "temel yetkinlik eşiği" olarak tanımlıyor. Bu seviyenin altında kalan öğrenciler, modern iş hayatında ve toplumda bağımsız olarak işlev görmekte ciddi güçlük çekecek. Level 5–6 ise uluslararası rekabette öne çıkan öğrencileri temsil ediyor.</p>
+
+          <h2>Türkiye PISA 2025'te Nerede?</h2>
+
+          <p>Şimdi verilere bakalım. Önce iyi haberler:</p>
+
+          <p>Türkiye, matematik, fen ve okumada 2022'ye kıyasla <strong>üç alanda birden ilerleme</strong> kaydeden nadir ülkelerden biri. 2015'ten bu yana düşük performanslı öğrenci oranı matematikte 16 puan, fen bilimlerinde 25 puan azaldı. Bu, gerçek bir ilerleme.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr><th>Alan</th><th>Türkiye Level 2+ oranı</th><th>OECD Ort.</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Fen bilimleri</td><td><strong>%81</strong></td><td>%74</td></tr>
+              <tr><td>Okuma</td><td><strong>%76</strong></td><td>%69</td></tr>
+              <tr><td>Matematik</td><td><strong>%64</strong></td><td>%65</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Fen ve okumada OECD ortalamasının üzerindeyiz. Matematikte neredeyse ortalamada. Bu tablo gerçekten umut verici.</p>
+
+          <p>Ancak üst performans tablosuna bakınca farklı bir resim çıkıyor:</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr><th>Alan</th><th>Türkiye Level 5–6 (üst performer)</th><th>OECD Ort.</th><th>Singapur</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Matematik</td><td><strong>%8</strong></td><td>%8</td><td>%37</td></tr>
+              <tr><td>Fen bilimleri</td><td><strong>%7</strong></td><td>%7</td><td>—</td></tr>
+              <tr><td>Okuma</td><td><strong>%4</strong></td><td>%6</td><td>—</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Türkiye OECD ortalamasında — ama küresel rekabette belirleyici olan üst çeyrek. Ve <strong>hesaplamalı problem çözme</strong> alanında Türkiye, OECD ortalamasının <em>altında</em> kaldı. Yapay zeka ekonomisinin tam merkezindeki bu beceri, Türkiye'de sistematik olarak geliştirilemiyor.</p>
+
+          <div class="blog-callout" style="border-left-color:#c0392b;background:rgba(192,57,43,0.07)">
+            <strong>Endişe verici bir detay daha:</strong> Türk öğrencilerin <strong>%53'ü</strong>, PISA sınavı öncesindeki iki haftada en az bir gün okula gitmediğini bildirdi. OECD ortalaması: %22. Bu, motivasyon ve okul bağlılığında ciddi bir uyarı işareti.
+          </div>
+
+          <h2>PISA Başarısı Neden İş Hayatındaki Başarıyla Doğrudan Bağlantılı?</h2>
+
+          <p>Burası, bana en çok "acaba bu kadar önemli mi?" sorusunun sorulduğu nokta. Ve dürüst olmak gerekirse: evet, o kadar önemli — belki de tahmin ettiğinizden daha fazla.</p>
+
+          <p>OECD'nin onlarca yıl süren araştırmaları şunu ortaya koyuyor: PISA'da ölçülen beceriler, yetişkinlik döneminde hem <strong>gelir düzeyi</strong> hem de <strong>istihdam kalitesiyle</strong> güçlü bir ilişki içinde.</p>
+
+          <p>Neden? Çünkü PISA "ders kitabını ezberle" değil, "gerçek bir problemi analiz et ve çöz" diyor. Bu iki beceri arasındaki fark tam da iş hayatında ortaya çıkıyor.</p>
+
+          <h3>Okuma anlama → İş hayatındaki her şey</h3>
+
+          <p>Bir raporu analiz etmek, müşteri talebini yorumlamak, sözleşme maddelerini değerlendirmek, ekibine açık talimat vermek — bunların tümü güçlü okuma anlama gerektiriyor. PISA'da bu beceride güçlü olan öğrenciler, iş dünyasında daha hızlı öğreniyor, daha iyi iletişim kuruyor.</p>
+
+          <h3>Sayısal düşünme → Finansal ve stratejik kararlar</h3>
+
+          <p>Proje bütçesini yönetmek, veri analizine dayanarak karar vermek, riskini hesaplamak — bunlar "matematikçilere özgü" beceriler değil. Herhangi bir yönetici, girişimci, proje lideri bu becerilere ihtiyaç duyuyor.</p>
+
+          <h3>Hesaplamalı problem çözme → Dijital ekonominin anahtarı</h3>
+
+          <p>Yapay zeka araçlarını etkin kullanmak, veriyi yorumlamak, dijital platformlarda sorun çözmek — artık "teknoloji uzmanı" rolü değil, her pozisyonun gerektirdiği temel yetkinlik. PISA 2025 bu beceriyi ilk kez ölçtü ve Türkiye OECD ortalamasının altında kaldı. Bu, gelecekteki iş gücü açısından endişe verici bir sinyal.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="../../assets/founder-avatar-300.webp" type="image/webp">
+              <img src="../../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Koçtan not</span>
+              <p>20 yılı aşkın eğitim deneyimimde en çok gözlemlediğim şey şu: Türkiye'de "iyi öğrenci" olarak yetişen çocuklar, uluslararası bir ortama geçtiklerinde zaman zaman beklenmedik bir boşlukla karşılaşıyor. Not başarısıyla beceri gelişimi her zaman paralel gitmiyor. PISA bu farkı sistematik olarak ortaya koyuyor — ve ailelerin bu farkı görmesi, kapatmak için doğru adımı atmanın başlangıcı.</p>
+            </div>
+          </div>
+
+          <h2>PISA Büyüme Hikayesi: Türkiye Gerçekten İlerliyor mu?</h2>
+
+          <p>Evet, ve bu önemli. 2015'ten 2025'e kadar olan 10 yıllık tabloya bakıldığında Türkiye için gerçekten olumlu bir eğilim görülüyor: Düşük performanslı öğrenci oranı matematikte 16 puan, fen bilimlerinde tam 25 puan azaldı. Bu, on yıl içinde gerçekleşmiş ciddi bir sistemsel iyileşme.</p>
+
+          <p>Türkiye, 2022-2025 arasında matematik, fen ve okuma alanlarında <em>aynı anda</em> ilerleme gösteren az sayıda ülkeden biri. Küresel tablo giderek daha rekabetçi hale gelirken, çoğu OECD ülkesi en az bir alanda geriledi ya da aynı kaldı. Türkiye'nin bu dönemde üç alanda birden ilerlemiş olması, eğitim politikasında bazı doğru adımların atıldığını gösteriyor.</p>
+
+          <p>Peki bunu neden yeterli görmüyorum? Çünkü iyileşme oranı ile küresel beklentiler arasındaki açık kapanmıyor. Fen ve okumada OECD ortalamasının üzerindeyiz — bu iyi. Ama yapay zeka çağının gerektirdiği hesaplamalı düşünme becerisinde OECD'nin <em>altındayız</em>. Ve bu, diğer başarıların gölgeside kalan kritik bir boşluk.</p>
+
+          <p>Bir ebeveyn olarak hem bu ilerlemeyi teslim etmenizi hem de bu boşluktan haberdar olmanızı istiyorum. Çünkü en doğru karar, her ikisini de görerek verilir.</p>
+
+          <h2>"Sınıfımın Birincisiyim" — Bu Yeterli mi?</h2>
+
+          <p>Bu soruyu danışmanlık seanslarımda çok alıyorum. Cevabım genellikle nazik ama net: Türkiye içindeki başarı, uluslararası yetkinliğin garantisi değil.</p>
+
+          <p>Düşünün: PISA 2025'te Türkiye'nin genel ortalaması fen ve okumada OECD'nin üzerinde. Bu, "iyi bir Türk öğrenci" ile "OECD ortalaması"nın örtüştüğü anlamına geliyor. Ama artık sadece OECD ile rekabet etmiyoruz. Üniversitelerde, stajlarda, iş başvurularında karşılaşılan rakipler Singapur'dan, Hindistan'dan, Almanya'dan geliyor.</p>
+
+          <p>Özellikle endişe verici olan şu: Türk öğrencilerin matematikte üst performans oranı <strong>%8</strong>. Singapur'da bu oran <strong>%37</strong>. Aynı küresel iş piyasasında rekabet edecek bu iki profil arasındaki fark gerçek ve büyüyor.</p>
+
+          <h2>PISA Becerileri ve Gerçek Dünya Deneyimi: Eksik Halka</h2>
+
+          <p>PISA bir şeyi ölçer ama onu geliştirmenin yolu başka. Beceriler müfredatta değil, uygulamada pekişiyor.</p>
+
+          <p>PISA 2025 verilerinde dikkatimi çeken bulgulardan biri şu: Türkiye'de öğrencilerin okul dışı gerçek dünya deneyimi oldukça kısıtlı. Oysa dünya genelinde staj ve erken iş deneyiminin hem akademik motivasyonu hem de iş hayatına geçişi güçlü biçimde desteklediği görülüyor.</p>
+
+          <p>Bu tam da bir aile olarak müdahale edebileceğiniz noktadır. Çocuğunuz akademik becerilerini geliştirirken, aynı zamanda gerçek bir iş ortamında çalışmanın nasıl bir şey olduğunu da öğrenebilir. Becerileri sınıfta kazanmak, onları gerçek projelerle pekiştirmek farklı bir şey — ve bu deneyim, mezun olduğunda rakiplerinden ayrışmasını sağlayan şeydir.</p>
+
+          <div class="blog-callout">
+            <strong>Çocuğunuz için erken iş deneyimi arıyorsanız:</strong><br>
+            <a href="https://eduentry.com/tr/staj" target="_blank" rel="noopener" style="color:var(--accent,#DBAF2E);font-weight:600;">EduEntry Staj Programı</a>, Türk gençlere uluslararası standartlarda gerçek proje deneyimi kazandırıyor. PISA'nın ölçtüğü problem çözme, analitik düşünme ve iletişim becerilerini iş ortamında geliştirmek için tasarlandı.
+          </div>
+
+          <h2>Aileler Olarak Ne Yapmalıyız?</h2>
+
+          <p>Endişeyi bir kenara bırakıp pratik adımlara geçelim. Bunlar, PISA verilerini okuyup kendime sorduğum sorulardan çıkardığım dört somut adım:</p>
+
+          <div class="blog-verdict">
+            <h3>1. Çocuğunuzu uluslararası bir ölçütle değerlendirin</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>PISA ülke ortalamaları gösterir — bireysel öğrenciyi değil. Çocuğunuzun uluslararası standartlardaki gerçek konumunu öğrenmek için CAT4 gibi bireysel değerlendirme araçlarını araştırın. Erken görmek, erken müdahale etmek demek.</span></div>
+          </div>
+
+          <div class="blog-verdict" style="margin-top:1rem">
+            <h3>2. Beceri boşluklarını not yerine gerçek anlama ile kapatın</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Okuma anlama, sayısal muhakeme, hesaplamalı düşünme — bunlar sınav notu değil, hayat performansı. Özellikle PISA'nın altında kaldığımız hesaplamalı düşünme becerisi, erken yaşlarda geliştirilebilir.</span></div>
+          </div>
+
+          <div class="blog-verdict" style="margin-top:1rem">
+            <h3>3. Gerçek dünya deneyimine erken başlayın</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Staj, proje katılımı, ekip çalışması — PISA'nın ölçtüğü becerilerin hayata geçirilmesi buradan geçiyor. <a href="https://eduentry.com/tr/staj" target="_blank" rel="noopener" style="color:var(--accent,#DBAF2E)">EduEntry staj programı</a> bu açığı kapatmak için iyi bir başlangıç noktası.</span></div>
+          </div>
+
+          <div class="blog-verdict" style="margin-top:1rem">
+            <h3>4. Motivasyonu okul ile gerçek hayat arasında köprü kurarak besleyin</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Türkiye'de öğrencilerin %53'ünün sınav öncesi okulu atlaması, motivasyon sorununa işaret ediyor. Çocuğunuz öğrendiklerinin gerçek hayatta ne işe yaradığını gördüğünde, okul bağlılığı kendiliğinden güçleniyor.</span></div>
+          </div>
+
+          <h2>PISA'ya Dair Sık Sorulan Sorular</h2>
+
+          <div class="blog-faq">
+
+            <div class="faq-item">
+              <h3 class="faq-q">PISA nedir kısaca?</h3>
+              <p class="faq-a">PISA (Programme for International Student Assessment), OECD tarafından 3 yılda bir 15 yaşındaki öğrencilere uygulanan uluslararası bir değerlendirme programıdır. 91 ülkede matematik, fen bilimleri, okuma anlama ve (2025'ten itibaren) hesaplamalı problem çözme becerilerini ölçer. Bireysel öğrencileri değil, ülkelerin eğitim sistemlerini karşılaştırır.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">PISA 2025 nedir?</h3>
+              <p class="faq-a">PISA 2025, 2025 yılında uygulanan PISA değerlendirme turudur. Sonuçlar Eylül 2026'da OECD tarafından yayımlandı. Türkiye bu turda matematik, fen ve okumada 2022'ye kıyasla üç alanda birden ilerleme kaydeden nadir ülkelerden biri oldu. Ancak üst performans oranları ve hesaplamalı problem çözme alanı endişe verici olmayı sürdürüyor.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">PISA 2026 nedir?</h3>
+              <p class="faq-a">"PISA 2026" diye ayrı bir değerlendirme yoktur. Ancak PISA 2025 sonuçları Eylül 2026'da açıklandığı için medyada ve aramalarda bu ifadeyi görmek mümkün. PISA 3 yılda bir yapılır; bir sonraki tur 2028 yılında uygulanacaktır.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">PISA puanı nasıl hesaplanır?</h3>
+              <p class="faq-a">PISA puanları ham doğru sayısına değil, IRT (Item Response Theory) istatistiksel yöntemine dayanır. Öğrenciler 2 saatlik test alır, farklı soru kombinasyonlarıyla test edilir. Soruların güçlük düzeyleri ve öğrencinin cevap örüntüsü değerlendirilerek OECD ortalaması ~500 puan olacak şekilde normalize edilmiş bir skor elde edilir. Sonuçlar Level 1b'den Level 6'ya kadar 7 yetkinlik düzeyine ayrılır.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">PISA başarısı iş hayatını etkiler mi?</h3>
+              <p class="faq-a">OECD araştırmaları, PISA'da ölçülen becerilerin — okuma anlama, sayısal düşünme ve problem çözme — yetişkinlik döneminde gelir düzeyi ve istihdam kalitesiyle güçlü bir ilişki içinde olduğunu gösteriyor. Bu beceriler "sınav becerisi" değil "iş hayatı becerisi" olarak tasarlanmış; dolayısıyla bu ilişki rastlantısal değil, yapısal.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Türkiye PISA'da kaçıncı sıradadır?</h3>
+              <p class="faq-a">Türkiye PISA 2025'te fen ve okumada OECD ortalamasının üzerinde, matematikte OECD ortalamasına yakın puan aldı. 91 ülke arasında kesin bir sıralama vermek yanıltıcı olabilir; önemli olan üst performans oranlarının Singapur (%37) ve Çin (%54) gibi ülkelerin çok gerisinde kaldığı ve hesaplamalı problem çözme alanında OECD ortalamasının altında olduğumuzdur.</p>
+            </div>
+
+          </div>
+
+          <div class="blog-callout" style="margin-top:2rem">
+            <strong>İlgili yazılar:</strong><br>
+            <a href="../pisa-2025-turkiye-sonuclari/" style="color:var(--accent,#DBAF2E);font-weight:500;">PISA 2025 Türkiye Sonuçları: Rakamlar İyimser Ama Endişe Gerçek →</a><br>
+            <a href="../pisa-2025-erken-is-deneyimi/" style="color:var(--accent,#DBAF2E);font-weight:500;">PISA 2025 ve Erken İş Deneyimi: Türk Öğrenciler İçin Eksik Halka →</a><br>
+            <a href="../turkiye-egitim-sistemi-neden-yetmiyor/" style="color:var(--accent,#DBAF2E);font-weight:500;">Türkiye Eğitim Sistemi Neden Yetmiyor? →</a>
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Çocuğunuz PISA'nın ölçtüğü becerileri gerçek hayatta nasıl geliştirebilir?</h3>
+            <p>EduEntry Staj Programı, Türk gençlere uluslararası standartlarda gerçek proje ve iş deneyimi kazandırıyor. Problem çözme, analitik düşünme ve iletişim — PISA'nın ölçtüğü, işverenlerin aradığı beceriler. Bugün başvurun.</p>
+            <a href="https://eduentry.com/tr/staj" target="_blank" rel="noopener" class="btn btn-primary">EduEntry Staj Programı →</a>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-accent" style="margin-top:0.5rem;">Özlem Çimen ile Ücretsiz Görüşme</a>
+          </div>
+
+        </div><!-- end tr-only -->
+
+        <!-- EN CONTENT -->
+        <div class="en-only blog-post-body">
+
+          <h1 class="blog-post-title">What Is PISA? Scores, PISA 2025 Results and What They Mean for Your Child's Career</h1>
+
+          <p>I'm often asked: <em>"What is PISA, and why does it matter to us?"</em> Usually by parents whose children are top of their class, with strong report cards. My answer is always the same: PISA isn't just a government statistic. It's one of the most reliable windows into where your child is heading — in their career, not just their classroom.</p>
+
+          <h2>What Is PISA?</h2>
+
+          <p>PISA stands for Programme for International Student Assessment. It's run by the OECD every three years, testing 15-year-olds in three core areas: <strong>mathematics</strong>, <strong>science</strong> and <strong>reading comprehension</strong>. In 2025, a fourth area was added for the first time: <strong>computational problem solving</strong> — not coding, but algorithmic thinking, data interpretation and digital problem analysis.</p>
+
+          <p>In 2025, 91 countries and economies participated, with over 760,000 students tested. Turkey sent 7,702 students from 203 schools, representing approximately 920,900 fifteen-year-olds.</p>
+
+          <div class="blog-callout">
+            <strong>PISA measures countries, not individual students.</strong> It tells you what kind of system your child is in — and that is not information to dismiss.
+          </div>
+
+          <h2>What Is PISA 2025? What Is PISA 2026?</h2>
+
+          <p>PISA runs on a 3-year cycle: 2018, 2022, 2025, and the next round is 2028. <strong>PISA 2025</strong> refers to the assessment conducted in 2025, whose results were published in September 2026. This is why you'll see "<strong>PISA 2026</strong>" in headlines and search results — it refers to the same thing: the 2025 assessment, announced in 2026.</p>
+
+          <h2>How Are PISA Scores Calculated?</h2>
+
+          <p>Students take a 2-hour test with different question combinations (not everyone sees the same items). Scores are not based on raw correct answers but on <strong>IRT (Item Response Theory)</strong> — a statistical model that accounts for each question's difficulty level and the student's overall response pattern. All scores are normalised so the OECD average sits near <strong>500 points</strong>.</p>
+
+          <p>Results are classified into 7 proficiency levels from Level 1b to Level 6. <strong>Level 2 is the baseline</strong> — the minimum OECD considers adequate for functioning in modern society. Level 5–6 represents globally competitive, top-performing students.</p>
+
+          <h2>Turkey in PISA 2025</h2>
+
+          <p>Turkey improved in all three core subjects compared to 2022 — one of only a handful of countries to do so. Science proficiency (Level 2+) reached <strong>81%</strong> (OECD: 74%), reading <strong>76%</strong> (OECD: 69%), and mathematics <strong>64%</strong> (OECD: 65%). Genuine progress.</p>
+
+          <p>But at the top: only <strong>8%</strong> of Turkish students reached Level 5–6 in mathematics (OECD average: 8%), <strong>7%</strong> in science, and just <strong>4%</strong> in reading (OECD average: 6%). Singapore's top-performer rate in mathematics: 37%. China's: 54%.</p>
+
+          <p>In computational problem solving — the new domain that most directly predicts AI-era career readiness — Turkey scored <strong>below the OECD average</strong>.</p>
+
+          <h2>Why PISA Skills Predict Career Success</h2>
+
+          <p>OECD research consistently shows that the skills PISA measures — reading comprehension, quantitative reasoning, problem solving — correlate strongly with adult earnings and employment quality. These are not "test skills"; they are the skills that determine how quickly someone learns on the job, how well they communicate, how effectively they make decisions under uncertainty.</p>
+
+          <p>The child who scores well in PISA reading isn't good at "reading tests" — they can parse a contract, interpret a data report, write instructions a team can follow. The child who scores well in PISA mathematics isn't just good at sums — they can manage a project budget, spot a flawed analysis, reason about risk.</p>
+
+          <p>Computational problem solving is now the most direct predictor of digital economy readiness. Turkey's below-average result here is a warning for future workforce competitiveness.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="../../assets/founder-avatar-300.webp" type="image/webp">
+              <img src="../../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Coaching note</span>
+              <p>In over 20 years of education work, one pattern I see repeatedly: students who are excellent inside Turkey's system sometimes encounter an unexpected gap when they enter international environments. Good grades and genuine skill development don't always run in parallel. PISA makes this gap systematic and visible — and seeing it early is the first step to closing it.</p>
+            </div>
+          </div>
+
+          <h2>The Missing Link: Real-World Experience</h2>
+
+          <p>PISA measures skills. But skills deepen through practice, not through more coursework. One of the patterns in the PISA 2025 data is that students with access to real-world learning environments — internships, project work, authentic problems — show stronger engagement and motivation.</p>
+
+          <p>If you want your child to develop the problem-solving, analytical and communication skills that PISA measures — and that employers value — structured early work experience is one of the most effective paths.</p>
+
+          <div class="blog-callout">
+            <strong>Looking for real-world experience for your child?</strong><br>
+            <a href="https://eduentry.com/tr/staj" target="_blank" rel="noopener" style="color:var(--accent,#DBAF2E);font-weight:600;">EduEntry Internship Programme</a> provides Turkish students with international-standard project experience — developing exactly the skills PISA measures and employers seek.
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Where does your child stand — and what can you do about it?</h3>
+            <p>Book a free session with Özlem Çimen to understand your child's international academic position and the most effective next steps.</p>
+            <a href="https://eduentry.com/tr/staj" target="_blank" rel="noopener" class="btn btn-primary">EduEntry Internship Programme →</a>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-accent" style="margin-top:0.5rem;">Free Consultation with Özlem Çimen</a>
+          </div>
+
+        </div><!-- end en-only -->
+
+      </article>
+    </div>
+
+    <!-- RELATED POSTS -->
+    <section class="blog-related-section">
+      <div class="container">
+        <h2 class="tr-only">İlgili Yazılar</h2>
+        <h2 class="en-only">Related Posts</h2>
+        <div class="blog-related-grid">
+          <a href="../pisa-2025-turkiye-sonuclari/" class="blog-related-card">
+            <img src="../../assets/blog/thumb-turkiye-egitim.webp" alt="PISA 2025 Türkiye Sonuçları" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title">
+                <span class="tr-only">PISA 2025 Türkiye Sonuçları: Rakamlar İyimser Ama Endişe Gerçek</span>
+                <span class="en-only">PISA 2025 Turkey Results: The Numbers Look Better Than They Are</span>
+              </div>
+              <div class="blog-related-card-meta">2026 · 9 dk</div>
+            </div>
+          </a>
+          <a href="../pisa-2025-erken-is-deneyimi/" class="blog-related-card">
+            <img src="../../assets/blog/thumb-turkiye-egitim.webp" alt="PISA 2025 ve Erken İş Deneyimi" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title">
+                <span class="tr-only">PISA 2025 ve Erken İş Deneyimi: Türk Öğrenciler İçin Eksik Halka</span>
+                <span class="en-only">PISA 2025 and Early Work Experience: The Missing Link</span>
+              </div>
+              <div class="blog-related-card-meta">2026 · 8 dk</div>
+            </div>
+          </a>
+          <a href="../turkiye-egitim-sistemi-neden-yetmiyor/" class="blog-related-card">
+            <img src="../../assets/blog/thumb-turkiye-egitim.webp" alt="Türkiye Eğitim Sistemi" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title">
+                <span class="tr-only">Türk Eğitim Sistemi Neden Yetmiyor?</span>
+                <span class="en-only">Why Turkey's Education System Falls Short</span>
+              </div>
+              <div class="blog-related-card-meta">2026 · 8 dk</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="padding:0 0 2rem;">
+      <p class="tr-only" style="margin:0;padding:1rem 1.25rem;background:hsla(43,60%,92%,0.7);border-left:3px solid var(--accent,#DBAF2E);border-radius:0 6px 6px 0;font-size:0.95rem;line-height:1.8;">
+        <strong>İlgili Rehberler:</strong><br>
+        <a href="/blog/pisa-2025-turkiye-sonuclari/" style="color:var(--accent,#DBAF2E);font-weight:500;">PISA 2025 Türkiye Sonuçları: Detaylı Analiz</a> ·
+        <a href="/blog/pisa-2025-erken-is-deneyimi/" style="color:var(--accent,#DBAF2E);font-weight:500;">PISA 2025 ve Erken İş Deneyimi</a> ·
+        <a href="/blog/turkiye-egitim-sistemi-neden-yetmiyor/" style="color:var(--accent,#DBAF2E);font-weight:500;">Türkiye Eğitim Sistemi Neden Yetmiyor?</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text tr-only">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi, müfredat değerlendirme ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
+          <p class="footer-bio-text en-only">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="tr-only">Hızlı Linkler</h4>
+          <h4 class="en-only">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/" class="en-only">Home</a><a href="/tr/" class="tr-only">Ana Sayfa</a></li>
+            <li><a href="/neden-biz/" class="en-only">Why Us?</a><a href="/neden-biz/" class="tr-only">Neden Biz?</a></li>
+            <li><a href="/en/#services" class="en-only">Services</a><a href="/tr/#services" class="tr-only">Hizmetler</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/" class="en-only">Book Session</a><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Görüşme Planla</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4 class="tr-only">İletişim</h4>
+          <h4 class="en-only">Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span class="tr-only">Dubai, Birleşik Arap Emirlikleri</span><span class="en-only">Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
+        <div><a href="/gizlilik-politikasi/" class="tr-only" style="color:inherit;opacity:0.7">Gizlilik Politikası</a><a href="/gizlilik-politikasi/" class="en-only" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../app.js" defer></script>
+</body>
+</html>
