@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <script>try{var _l=localStorage.getItem('edualist_lang');if(_l==='tr')document.documentElement.setAttribute('lang','tr');}catch(e){}</script>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212,66%,13%);--primary-light:hsl(212,66%,22%);--accent:hsl(43,60%,52%);--accent-hover:hsl(43,60%,44%);--bg-warm:hsl(35,40%,98%);--bg-warm-secondary:hsl(35,30%,94%);--text-dark:hsl(215,25%,15%);--text-muted:hsl(215,15%,20%);--text-light:hsl(35,40%,98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212,66%,13%,0.03);--shadow-md:0 12px 32px hsla(212,66%,13%,0.06);--radius-sm:6px;--radius-md:12px;--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:all .3s ease;gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px)}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:all .4s cubic-bezier(.25,1,.5,1)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a:hover::after{transform:scaleX(1)}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1}.nav-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.nav-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}@media (max-width:768px){.nav-toggle{display:flex}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:all .4s cubic-bezier(.25,1,.5,1);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}.blog-post-body ul{margin:0 0 1.25rem 1.5rem}.blog-post-body ul li{margin-bottom:.5rem}.blog-cost-table{width:100%;border-collapse:collapse;margin:1.25rem 0;font-size:.9rem}.blog-cost-table th{background:rgba(11,33,58,.07);padding:10px 14px;text-align:left;font-weight:600;font-size:.82rem;letter-spacing:.04em;text-transform:uppercase}.blog-cost-table td{padding:9px 14px;border-bottom:1px solid rgba(11,33,58,.06)}.blog-cost-table tr:last-child td{border-bottom:none}.blog-verdict{background:rgba(11,33,58,.03);border:1px solid rgba(11,33,58,.07);border-radius:var(--radius-md);padding:1.25rem 1.5rem;margin:.75rem 0}.blog-verdict h3{font-size:1rem;margin:0 0 .5rem}.blog-verdict-row{display:flex;align-items:flex-start;gap:.6rem;font-size:.93rem;line-height:1.6}.blog-verdict-dot{width:7px;height:7px;border-radius:50%;background:var(--accent);flex-shrink:0;margin-top:.5rem}.blog-faq{margin:2rem 0}.faq-item{border-bottom:1px solid rgba(11,33,58,.08);padding:1.4rem 1.75rem;background:rgba(11,33,58,.02);border-radius:var(--radius-sm);margin-bottom:.5rem}.faq-q{font-size:1.05rem;font-weight:600;color:var(--primary);margin:0 0 .5rem}.faq-a{font-size:.93rem;color:var(--text-muted);margin:0;line-height:1.7}.blog-post-cta{margin-top:3.5rem;padding:2rem 2.5rem;border-radius:var(--radius-md);text-align:center}.blog-post-cta h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;margin-bottom:.75rem}.blog-post-cta p{color:var(--text-muted);font-size:.95rem;margin-bottom:1.25rem}.blog-personal-note{display:flex;gap:1rem;align-items:flex-start;background:rgba(11,33,58,.04);border-radius:var(--radius-md);padding:1.25rem 1.5rem;margin:2rem 0}.blog-personal-note-img{width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0;border:2px solid var(--accent)}.blog-personal-note-body{flex:1}.blog-personal-note-name{font-size:.82rem;font-weight:700;color:var(--accent);letter-spacing:.04em;text-transform:uppercase;display:block;margin-bottom:.4rem}.blog-personal-note-body p{margin:0;font-size:.92rem;line-height:1.7;font-style:italic}.blog-seo-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.75rem}.blog-seo-tag{font-size:.78rem;font-weight:600;color:var(--accent);background:hsla(43,60%,52%,.1);border:1px solid hsla(43,60%,52%,.25);border-radius:50px;padding:.25rem .8rem;letter-spacing:.03em}.blog-breadcrumb{display:flex;align-items:center;gap:.5rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1.5rem}.blog-breadcrumb a{color:var(--text-muted)}.blog-breadcrumb a:hover{color:var(--accent)}.blog-related-section{background:var(--bg-warm-secondary);padding:4rem 0}.blog-related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:2rem}.blog-related-card{background:#fff;border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-sm);transition:transform .3s ease,box-shadow .3s ease}.blog-related-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}.blog-related-card img{width:100%;height:160px;object-fit:cover}.blog-related-card-body{padding:1rem 1.25rem}.blog-related-card-title{font-family:var(--font-serif);font-size:1.05rem;font-weight:600;color:var(--primary);line-height:1.3;margin-bottom:.35rem}.blog-related-card-meta{font-size:.78rem;color:var(--text-muted)}.footer{background:var(--primary);color:var(--text-light);padding:4rem 0 2rem}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1.5fr;gap:3rem;margin-bottom:3rem}.footer-bio-text{font-size:.9rem;opacity:.75;line-height:1.7;margin-top:.75rem}.footer-links{list-style:none;display:flex;flex-direction:column;gap:.6rem}.footer-links a{font-size:.9rem;opacity:.7;transition:opacity .2s}.footer-links a:hover{opacity:1}.footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}.footer-contact-item{display:flex;align-items:flex-start;gap:.75rem;font-size:.88rem;opacity:.75}.footer-contact-item a{color:inherit;opacity:1}.footer-bottom{border-top:1px solid rgba(255,255,255,.08);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;opacity:.55}@media (max-width:768px){.blog-related-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr;gap:2rem}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What Is PISA? PISA 2025 Results, Score Calculation and Career Impact | Edualist</title>
+  <meta name="description" content="What is PISA, how are scores calculated, and what do the 2025 global results mean? An experienced educator explains PISA's methodology, Turkey's performance, and why PISA skills predict career success.">
+  <meta name="keywords" content="what is pisa, pisa 2025 results, pisa test explained, pisa score calculation, pisa 2025 global, pisa oecd, pisa levels explained, pisa turkey 2025">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.edualist.com/blog/what-is-pisa/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/blog/what-is-pisa/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/pisa-nedir/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/what-is-pisa/">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="What Is PISA? 2025 Results, Score Calculation and Your Child's Future">
+  <meta property="og:description" content="What is PISA, how are scores calculated, and what do the 2025 results reveal? An experienced educator explains why PISA skills directly predict career success — and what families can do.">
+  <meta property="og:url"         content="https://www.edualist.com/blog/what-is-pisa/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-pisa.webp">
+  <meta property="article:published_time" content="2026-09-21">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="What Is PISA? 2025 Global Results and Why They Matter for Your Child's Career">
+  <meta name="twitter:description" content="PISA tests 760,000 students across 91 countries every 3 years. Here's what the scores mean, how they're calculated, and why they predict career outcomes.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-pisa.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "What Is PISA? PISA 2025 Results, Score Calculation and Career Impact",
+    "description": "What is PISA, how are scores calculated, and what do the 2025 global results mean for your child? An experienced educator explains PISA methodology and why PISA skills predict career success.",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen",
+      "@id": "https://www.edualist.com/#ozlem-cimen",
+      "url": "https://www.edualist.com/neden-biz/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com"
+    },
+    "datePublished": "2026-09-21",
+    "dateModified": "2026-09-21",
+    "wordCount": 2100,
+    "inLanguage": "en",
+    "url": "https://www.edualist.com/blog/what-is-pisa/",
+    "image": "https://www.edualist.com/assets/blog/thumb-pisa.webp",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".blog-summary", ".blog-post-title"]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.edualist.com/en/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "What Is PISA?", "item": "https://www.edualist.com/blog/what-is-pisa/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is PISA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PISA (Programme for International Student Assessment) is an international assessment run by the OECD every three years. It tests 15-year-old students in mathematics, science and reading comprehension across 91 countries. In 2025, a fourth domain was added: computational problem solving. PISA measures applied skills, not curriculum knowledge — how well students can use what they know to solve real problems."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What are the PISA 2025 results?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PISA 2025 results were published on 8 September 2026 by the OECD. Over 760,000 students from 91 countries participated. Top performers globally were China (B-S-J-Z), Singapore, Estonia, Japan, Korea, Macao, Chinese Taipei and the UK. Overall, OECD country averages declined — particularly in reading. Turkey was one of the few countries to improve in all three core subjects compared to 2022."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How are PISA scores calculated?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PISA scores are calculated using Item Response Theory (IRT), a statistical model that adjusts for each question's difficulty level and the student's overall response pattern. Students take a 2-hour adaptive test; raw correct/wrong counts are not used directly. All scores are normalised so the OECD average sits near 500 points. Results are grouped into proficiency levels from 1b to 6, with Level 2 as the baseline competency threshold."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does PISA predict career success?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. OECD longitudinal research shows that the skills PISA measures — particularly reading comprehension, quantitative reasoning and problem solving — correlate strongly with adult earnings and employment quality. These are not test-taking skills; they are the skills that determine how well someone functions in a knowledge economy."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can my child take the PISA test?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PISA does not test individual children — it works with representative national samples. However, EduEntry's academic assessment uses the same IRT methodology as PISA, giving children aged 6–17 an internationally benchmarked score in mathematics, verbal reasoning, quantitative reasoning and English. The assessment takes 20–35 minutes and is free. Visit https://eduentry.com/tr#akademik to start."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is a good PISA score?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The OECD average is approximately 500 points. Proficiency Level 2 (around 407–480 points depending on subject) is considered the baseline — students below this level struggle to function independently in modern society. Level 5–6 (above 607 points) represents globally competitive, top-performing students. Singapore and China consistently place the highest proportions of students at Level 5–6."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional"></noscript>
+
+  <link rel="preload" as="image" href="../../assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="../../styles.css?v=7">
+  <link rel="stylesheet" href="../../styles.css?v=7" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../styles.css?v=7"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="header-nav glass" id="navbar">
+    <div class="container nav-container">
+      <a href="../../" class="logo" id="nav-logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li><a href="../../en/" class="en-only">Home</a><a href="../../tr/" class="tr-only">Ana Sayfa</a></li>
+          <li><a href="../../neden-biz/" class="en-only">Why Us?</a><a href="../../neden-biz/" class="tr-only">Neden Biz?</a></li>
+          <li><a href="../../en/#services" class="en-only">Services</a><a href="../../tr/#services" class="tr-only">Hizmetler</a></li>
+          <li><a href="../../neden-biz/#about" class="en-only">About</a><a href="../../neden-biz/#about" class="tr-only">Hakkımızda</a></li>
+          <li><a href="../">Blog</a></li>
+          <li><a href="/uluslararasi-okul-danismanligi/" class="en-only">Contact</a><a href="/uluslararasi-okul-danismanligi/" class="tr-only">İletişim</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta-group">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">EN / TR</button>
+        <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary en-only" style="padding:0.6rem 1.2rem;font-size:0.9rem;">Book Now</a>
+        <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary tr-only" style="padding:0.6rem 1.2rem;font-size:0.9rem;">Görüşme Planla</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">&#9776;</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="blog-post-hero">
+      <div class="container">
+        <div class="blog-breadcrumb">
+          <a href="../../en/" class="en-only">Home</a>
+          <a href="../../tr/" class="tr-only">Ana Sayfa</a>
+          <span>›</span>
+          <a href="../">Blog</a>
+          <span>›</span>
+          <span class="en-only">What Is PISA?</span>
+          <span class="tr-only">PISA Nedir?</span>
+        </div>
+
+        <div class="blog-post-meta">
+          <span>21 September 2026</span>
+          <span>·</span>
+          <span class="en-only">12 min read</span>
+          <span class="tr-only">12 dk okuma</span>
+          <span>·</span>
+          <span><a href="../../neden-biz/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+        </div>
+
+        <div class="blog-summary">
+          <strong><span class="en-only">Summary</span><span class="tr-only">Özet</span></strong>
+          <p class="en-only">Every three years, the OECD publishes a global education report card — PISA. In 2025, over 760,000 fifteen-year-olds across 91 countries were tested in science, mathematics, reading and, for the first time, computational problem solving. This guide explains what PISA is, how scores are calculated, what the 2025 results reveal globally and for Turkey — and, most importantly, why PISA skills are among the strongest predictors of career success in the modern economy.</p>
+          <p class="tr-only">Her üç yılda bir OECD, küresel bir eğitim karnesi yayımlıyor: PISA. 2025'te 91 ülkeden 760.000'den fazla 15 yaşındaki, fen, matematik, okuma ve ilk kez hesaplamalı problem çözme alanlarında test edildi. Bu rehber PISA'nın ne olduğunu, puanların nasıl hesaplandığını, 2025 sonuçlarını ve PISA becerilerinin iş başarısının en güçlü öngörücüleri arasında neden yer aldığını açıklıyor.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container blog-post-container">
+      <article>
+
+        <!-- EN CONTENT (primary) -->
+        <div class="en-only blog-post-body">
+
+          <h1 class="blog-post-title">What Is PISA? The 2025 Global Results, Score Calculation and What It Means for Your Child's Future</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">What is PISA</span>
+            <span class="blog-seo-tag">PISA 2025 results</span>
+            <span class="blog-seo-tag">PISA score explained</span>
+            <span class="blog-seo-tag">PISA career impact</span>
+          </div>
+
+          <p>I've been working in international education for over twenty years. And every three years, when the OECD publishes the PISA results, I experience the same quiet unease — not because the numbers are bad, but because most families never see them. They look at their child's school report, see good grades, and assume that's the full picture. It rarely is.</p>
+
+          <p>PISA tells a different story. It asks not "what has your child memorised?" but "what can your child actually <em>do</em> with what they know?" And in a world that increasingly values the ability to solve novel problems over the ability to recall stored answers, that distinction matters enormously.</p>
+
+          <h2>What Is PISA?</h2>
+
+          <p>PISA stands for Programme for International Student Assessment. It is run by the OECD (Organisation for Economic Co-operation and Development) every three years, and it is the most comprehensive international comparison of educational outcomes in existence.</p>
+
+          <p>Three facts distinguish it from other assessments:</p>
+
+          <ul>
+            <li><strong>Age-based, not grade-based.</strong> Any 15-year-old in a participating country can be selected, regardless of what year of school they are in.</li>
+            <li><strong>Genuinely global scale.</strong> In 2025, 91 countries and economies participated. Over 760,000 students were tested, representing approximately 33 million 15-year-olds worldwide.</li>
+            <li><strong>Applied skills, not curriculum knowledge.</strong> PISA does not test what students have been taught — it tests whether they can apply reasoning to real-world problems they have never seen before.</li>
+          </ul>
+
+          <p>The three core domains are <strong>mathematics</strong>, <strong>science</strong> and <strong>reading comprehension</strong>. In 2025, a fourth domain was assessed for the first time: <strong>computational problem solving</strong> — not coding, but the capacity to think algorithmically, interpret data and solve problems in digital environments. This is the skill at the centre of the AI economy.</p>
+
+          <div class="blog-callout">
+            <strong>PISA measures education systems, not individual students.</strong> No child receives a personal PISA score. The results describe what a country's 15-year-olds can do on average — and that tells you a great deal about the system your child is growing up inside.
+          </div>
+
+          <!-- Inline CTA card -->
+          <div style="background:linear-gradient(135deg,hsla(212,66%,13%,0.96) 0%,hsla(212,66%,20%,0.95) 100%);border-radius:var(--radius-md);padding:1.5rem 2rem;margin:2rem 0;color:var(--text-light);border-left:4px solid var(--accent,#DBAF2E);box-shadow:var(--shadow-md);">
+            <p style="margin:0 0 1rem;font-size:1rem;line-height:1.7;color:rgba(255,247,235,0.92)"><strong style="color:#DBAF2E;">What would your child's PISA result look like?</strong> PISA works with national samples — individual children are never tested. But EduEntry's IRT-based assessment uses exactly the same methodology: adaptive questions across mathematics, verbal and quantitative reasoning in 20–35 minutes, producing a score benchmarked against peers from 91 countries. Free, no registration required.</p>
+            <a href="https://eduentry.com/tr#akademik" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;background:var(--accent,#DBAF2E);color:hsl(212,66%,13%);font-weight:700;font-size:0.9rem;padding:0.65rem 1.4rem;border-radius:var(--radius-md);text-decoration:none;">Start Free Assessment →</a>
+          </div>
+
+          <h2>How Are PISA Scores Calculated?</h2>
+
+          <h3>The test itself</h3>
+          <p>Each student completes a two-hour test. Crucially, not everyone sees the same questions — different students receive different combinations of subject areas (science + reading, mathematics + science, etc.). This design allows PISA to cover far more ground than any individual student could answer while keeping test time manageable.</p>
+
+          <p>After the test, students complete a 35-minute background questionnaire covering family circumstances, learning habits, digital device use, attitudes to school and wellbeing. This contextual data is what allows PISA to separate system effects from socio-economic effects.</p>
+
+          <h3>Item Response Theory (IRT)</h3>
+          <p>PISA scores are not based on raw correct/incorrect counts. They use <strong>Item Response Theory (IRT)</strong> — a statistical framework that accounts for each question's difficulty and discriminating power, as well as the pattern of each student's responses. The result is a latent ability estimate rather than a simple sum.</p>
+
+          <p>All scores are then placed on a common scale normalised so that the OECD average sits near <strong>500 points</strong>. This means a Turkish student's score can be directly compared with a Japanese, Finnish or Singaporean student's score.</p>
+
+          <h3>Proficiency levels</h3>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr><th>Level</th><th>What it means</th><th>OECD view</th></tr>
+            </thead>
+            <tbody>
+              <tr style="background:rgba(192,57,43,0.06)"><td><strong>Below Level 1b</strong></td><td>Cannot complete even the most basic tasks</td><td>Critical concern</td></tr>
+              <tr style="background:rgba(192,57,43,0.03)"><td><strong>Level 1a/1b</strong></td><td>Only the simplest, most direct tasks</td><td>Insufficient</td></tr>
+              <tr><td><strong>Level 2</strong></td><td>Baseline competency — minimum for modern life</td><td>Baseline threshold</td></tr>
+              <tr><td><strong>Level 3–4</strong></td><td>Can handle moderately complex tasks independently</td><td>Adequate</td></tr>
+              <tr style="background:rgba(219,175,46,0.1)"><td><strong>Level 5–6</strong></td><td>Abstract reasoning, creative problem solving</td><td>Globally competitive</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Level 2 is the critical threshold. Students who cannot reach it face serious difficulties functioning independently in modern society — and in the labour market. Level 5–6 is where global competitive advantage begins.</p>
+
+          <h2>PISA 2025: What the Global Results Show</h2>
+
+          <p>The PISA 2025 results, published 8 September 2026, reveal a picture that should give pause to education systems and families worldwide.</p>
+
+          <h3>Overall: performance stagnating or declining across most OECD countries</h3>
+
+          <p>Across OECD countries, average scores in science fell modestly between 2015 and 2025. Reading saw particularly large drops in many systems. Mathematics broadly held. The OECD's own characterisation: "largely stagnating or continuing to decline."</p>
+
+          <p>This is the global backdrop. Against it, countries that improved stand out sharply.</p>
+
+          <h3>Top performers in PISA 2025</h3>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr><th>Country / Economy</th><th>Position</th><th>Note</th></tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>China (B-S-J-Z)</strong></td><td>1st</td><td>54% top performers in mathematics</td></tr>
+              <tr><td><strong>Singapore</strong></td><td>2nd</td><td>37% top performers in mathematics</td></tr>
+              <tr><td>Japan, Korea, Chinese Taipei</td><td>Top 5</td><td>Consistently high across all domains</td></tr>
+              <tr><td>Estonia, UK</td><td>Top 10</td><td>Highest-performing European systems</td></tr>
+              <tr><td>OECD average</td><td>—</td><td>~500 pts; declining trend since 2015</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h3>New in 2025: computational problem solving and AI</h3>
+
+          <p>The 2025 cycle introduced the first ever assessment of <strong>computational problem solving</strong> — the ability to use algorithmic thinking, conduct experiments and build solutions in digital environments. This is not coding; it is the cognitive infrastructure that makes AI tools useful rather than passive.</p>
+
+          <p>PISA also collected unprecedented data on AI use in education. The finding that has generated the most discussion: <strong>students who used AI chatbots for specific schoolwork tasks (summarising, drafting, researching) scored lower in science</strong> than students who did not. Passive AI use appears to displace rather than augment thinking.</p>
+
+          <div class="blog-callout" style="border-left-color:#c0392b;background:rgba(192,57,43,0.07)">
+            <strong>The misinformation finding:</strong> PISA 2025 found that over half of students in OECD countries may be vulnerable to misinformation and disinformation — lacking the critical reading and reasoning skills to distinguish reliable from unreliable sources. This is not a technology problem. It is a literacy problem.
+          </div>
+
+          <h2>Turkey in PISA 2025: The Encouraging and the Concerning</h2>
+
+          <p>Turkey is one of the few countries to have improved in <em>all three core subjects</em> between 2022 and 2025. Against a backdrop of widespread global decline, this is a genuine achievement.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr><th>Domain</th><th>Turkey Level 2+</th><th>OECD Average</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Science</td><td><strong>81%</strong></td><td>74%</td></tr>
+              <tr><td>Reading</td><td><strong>76%</strong></td><td>69%</td></tr>
+              <tr><td>Mathematics</td><td><strong>64%</strong></td><td>65%</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Turkey is above the OECD average in science and reading, and essentially at the average in mathematics. Since 2015, the proportion of low-performing students has fallen by 16 percentage points in mathematics and 25 percentage points in science. These are real, systemic gains.</p>
+
+          <p>But the top-performer picture tells a different story:</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr><th>Domain</th><th>Turkey Level 5–6</th><th>OECD Average</th><th>Singapore</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Mathematics</td><td><strong>8%</strong></td><td>8%</td><td>37%</td></tr>
+              <tr><td>Science</td><td><strong>7%</strong></td><td>7%</td><td>—</td></tr>
+              <tr><td>Reading</td><td><strong>4%</strong></td><td>6%</td><td>—</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Turkey is at the OECD average for top performers — but the OECD average is not a globally competitive benchmark. In <strong>computational problem solving</strong>, Turkey scored below the OECD average. And 53% of Turkish students reported skipping at least one school day in the two weeks before the test, compared to an OECD average of 22%.</p>
+
+          <p>The honest summary: Turkey's floor is rising, but its ceiling is not.</p>
+
+          <h2>Why PISA Skills Predict Career Success</h2>
+
+          <p>This is the question that gets asked least and matters most: does any of this translate into real life?</p>
+
+          <p>The answer, backed by OECD longitudinal research across dozens of countries, is yes — strongly. The skills PISA measures correlate with adult earnings, employment quality, health outcomes and civic participation. Not weakly, not ambiguously: the relationship is robust and consistent across systems.</p>
+
+          <p>Here is why, concretely:</p>
+
+          <h3>Reading comprehension → every knowledge-economy role</h3>
+          <p>Parsing a contract, interpreting a research report, writing instructions a team can follow, identifying the flaw in a proposal — these all require the same underlying skill PISA measures in reading. A student who cannot reach Level 2 in reading will struggle with every white-collar role that exists. A student at Level 5–6 will learn new roles faster than their peers, every time.</p>
+
+          <h3>Quantitative reasoning → decision-making under uncertainty</h3>
+          <p>Managing a project budget, evaluating risk, reading a P&amp;L, interpreting clinical data, understanding interest rates — none of these require advanced mathematics. All of them require the numerical reasoning PISA measures at Levels 2–4. This is not a skill for mathematicians; it is a skill for anyone who will ever need to make a consequential decision.</p>
+
+          <h3>Computational problem solving → the AI economy</h3>
+          <p>The ability to think algorithmically — to decompose a problem, design a process, test a solution — is what separates someone who uses AI tools productively from someone who is replaced by them. PISA measured this for the first time in 2025. Countries that score well here are building workforces suited to the next fifty years of the economy. Countries that score poorly are not.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="../../assets/founder-avatar-300.webp" type="image/webp">
+              <img src="../../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — from the coach</span>
+              <p>In twenty years of working with families navigating international education, the most common pattern I see is this: a child who is excellent by their domestic system's standards arrives in an international setting and encounters an unexpected gap. The gap is not about intelligence. It is about the kind of thinking the system practised. PISA makes that gap visible — and visible early enough to close.</p>
+            </div>
+          </div>
+
+          <h2>What Would Your Child's PISA Score Be?</h2>
+
+          <p>PISA does not test individual children. It constructs a statistical portrait of a country's 15-year-olds by testing a representative sample. Your child's "PISA score" is never officially calculated.</p>
+
+          <p>But the question is worth asking: if your child had sat the test alongside 760,000 peers from 91 countries, where would they land? At the OECD average? In the top 16%? In the bottom quarter?</p>
+
+          <p>The only way to answer this for an individual child is through an assessment built on the same methodology — IRT — that PISA uses. IRT adapts to each child's responses in real time, accurately placing both struggling and high-performing students on the same international scale.</p>
+
+          <p>EduEntry's academic assessment is built on exactly this foundation. Children aged 6–17 answer adaptive questions in mathematics, verbal reasoning, quantitative reasoning and English. The result is a standardised score aligned to the same international scale as PISA — showing not where your child sits within their school, but where they sit within the global distribution.</p>
+
+          <div class="blog-callout">
+            <strong>Reading the scale:</strong> 100 = international average · 115 = approximately global top 16% · 130 = approximately top 2%. A school report card looks inward. This assessment looks outward — at the world. The two pictures do not always match.
+          </div>
+
+          <p>The assessment takes <strong>20–35 minutes</strong>, is completely <strong>free</strong> and requires no registration. Results appear immediately, with sub-scores across all four domains and a global percentile comparison.</p>
+
+          <div class="blog-post-cta glass" style="margin-bottom:2rem">
+            <h3>Find out where your child ranks in the world — free</h3>
+            <p>EduEntry's assessment uses the same IRT methodology as PISA. 20–35 minutes, free, no registration. Instant results with global percentile benchmarking across four domains.</p>
+            <a href="https://eduentry.com/tr#akademik" target="_blank" rel="noopener" class="btn btn-primary">Start Free Assessment →</a>
+          </div>
+
+          <h2>What Should Families Do?</h2>
+
+          <div class="blog-verdict">
+            <h3>1. Stop measuring your child against their class</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Being top of a Turkish school and being globally competitive are two different things. PISA makes this explicit. Measure your child against an international standard — early, while there is time to act on the result.</span></div>
+          </div>
+
+          <div class="blog-verdict" style="margin-top:1rem">
+            <h3>2. Prioritise applied skills over content knowledge</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Reading comprehension, mathematical reasoning, algorithmic thinking — PISA measures these because employers value them. Tuition that builds these skills is worth far more than tuition that builds exam scores.</span></div>
+          </div>
+
+          <div class="blog-verdict" style="margin-top:1rem">
+            <h3>3. Take computational skills seriously</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Turkey scored below the OECD average in computational problem solving — the one domain most directly linked to AI-era career readiness. This gap can be closed, but only if it is first acknowledged.</span></div>
+          </div>
+
+          <div class="blog-verdict" style="margin-top:1rem">
+            <h3>4. Use AI as a thinking partner, not a shortcut</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>PISA 2025 found that students who used AI to do tasks — rather than to think through tasks — scored lower. The goal is not to ban AI; it is to use it in ways that build rather than bypass cognition.</span></div>
+          </div>
+
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="blog-faq">
+
+            <div class="faq-item">
+              <h3 class="faq-q">What is PISA in simple terms?</h3>
+              <p class="faq-a">PISA is the world's largest international education assessment. Every three years, the OECD tests 15-year-olds across 91 countries in mathematics, science and reading. In 2025, computational problem solving was added. PISA measures applied skills — not what students have memorised, but what they can actually do with what they know.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">What were the PISA 2025 results?</h3>
+              <p class="faq-a">Results were published 8 September 2026. Top performers globally: China (B-S-J-Z), Singapore, Japan, Korea, Estonia and the UK. Most OECD countries saw stagnating or declining scores, particularly in reading. Turkey was among a small number of countries that improved in all three core subjects compared to 2022.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">How are PISA scores calculated?</h3>
+              <p class="faq-a">PISA uses Item Response Theory (IRT) — a statistical model that accounts for question difficulty and each student's response pattern. Scores are normalised to an OECD average of approximately 500 points. Results are grouped into 7 proficiency levels (1b to 6); Level 2 is the baseline competency threshold and Level 5–6 represents globally competitive performance.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">What is a good PISA score?</h3>
+              <p class="faq-a">The OECD average is approximately 500 points. Level 2 is the minimum considered adequate for modern life (around 407–480 points depending on the domain). Level 5–6 (above 607 points) represents globally competitive students. Singapore consistently places 37% of students at Level 5–6 in mathematics; Turkey places 8% — equal to the OECD average.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Does PISA predict career success?</h3>
+              <p class="faq-a">Yes. OECD longitudinal research consistently shows that the skills PISA measures — reading comprehension, quantitative reasoning and problem solving — correlate strongly with adult earnings and employment quality across all participating countries. These are not test-taking skills; they are the cognitive foundations of knowledge-economy work.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Can my child take a PISA-equivalent test?</h3>
+              <p class="faq-a">PISA does not test individuals. But EduEntry's academic assessment uses the same IRT methodology, giving children aged 6–17 an internationally benchmarked score across mathematics, verbal reasoning, quantitative reasoning and English. It takes 20–35 minutes, is free, and requires no registration. <a href="https://eduentry.com/tr#akademik" target="_blank" rel="noopener" style="color:var(--accent)">Start at eduentry.com/tr#akademik</a>.</p>
+            </div>
+
+          </div>
+
+          <div class="blog-callout" style="margin-top:2rem">
+            <strong>Related guides:</strong><br>
+            <a href="../pisa-2025-turkiye-sonuclari/" style="color:var(--accent,#DBAF2E);font-weight:500;">PISA 2025 Turkey Results: The Numbers Look Better Than They Are →</a><br>
+            <a href="../pisa-2025-erken-is-deneyimi/" style="color:var(--accent,#DBAF2E);font-weight:500;">PISA 2025 and Early Work Experience: The Missing Link →</a><br>
+            <a href="../pisa-nedir/" style="color:var(--accent,#DBAF2E);font-weight:500;">PISA Nedir? (Turkish guide) →</a>
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Where does your child stand in the world?</h3>
+            <p>Book a free session with Özlem Çimen to understand your child's international academic position and the most effective next steps for their education.</p>
+            <a href="https://eduentry.com/tr#akademik" target="_blank" rel="noopener" class="btn btn-primary">Start Free Assessment →</a>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-accent" style="margin-top:0.5rem;">Free Consultation with Özlem Çimen</a>
+          </div>
+
+        </div><!-- end en-only -->
+
+        <!-- TR CONTENT (secondary) -->
+        <div class="tr-only blog-post-body">
+
+          <h1 class="blog-post-title">PISA Nedir? 2025 Küresel Sonuçlar, Puan Hesaplama ve Çocuğunuzun Geleceği</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">PISA nedir</span>
+            <span class="blog-seo-tag">PISA 2025 sonuçları</span>
+            <span class="blog-seo-tag">PISA puanı hesaplama</span>
+            <span class="blog-seo-tag">uluslararası eğitim</span>
+          </div>
+
+          <p>Yirmi yılı aşkın uluslararası eğitim deneyimimde her üç yılda bir PISA sonuçları açıklandığında aynı sessiz kaygıyı yaşıyorum — rakamlar kötü olduğu için değil; çoğu ailenin bu rakamları hiç görmediği için. Okul karnesi iyi, notlar yüksek — ve bu yeterli sanılıyor. Genellikle değil.</p>
+
+          <p>PISA farklı bir soru soruyor: "Çocuğun öğrendiklerini gerçek bir problemle karşılaştığında <em>kullanabiliyor</em> mu?" Ezbere değil, uygulamaya bakıyor. Ve bu fark, modern ekonomide giderek daha belirleyici hale geliyor.</p>
+
+          <h2>PISA Nedir?</h2>
+
+          <p>PISA, Programme for International Student Assessment'ın kısaltması. OECD tarafından 3 yılda bir, 15 yaşındaki öğrencilere uygulanıyor. 2025'te 91 ülkeden 760.000'den fazla öğrenci fen, matematik, okuma ve ilk kez hesaplamalı problem çözme alanlarında test edildi; bu öğrenciler dünya genelinde yaklaşık 33 milyon 15 yaşlıyı temsil ediyor.</p>
+
+          <!-- Inline CTA card -->
+          <div style="background:linear-gradient(135deg,hsla(212,66%,13%,0.96) 0%,hsla(212,66%,20%,0.95) 100%);border-radius:var(--radius-md);padding:1.5rem 2rem;margin:2rem 0;color:var(--text-light);border-left:4px solid var(--accent,#DBAF2E);box-shadow:var(--shadow-md);">
+            <p style="margin:0 0 1rem;font-size:1rem;line-height:1.7;color:rgba(255,247,235,0.92)"><strong style="color:#DBAF2E;">Çocuğunuz PISA sınavına girseydi sonucu ne olurdu?</strong> PISA ulusal örneklemlerle çalışır — bireysel çocuklar test edilmez. Ama EduEntry'nin IRT tabanlı değerlendirmesi PISA ile aynı metodoloji üzerine kurulu: 20–35 dakikada matematik, sözel ve sayısal akıl yürütme alanlarında uyarlanabilir sorular; 91 ülkedeki yaşıtlarıyla kıyaslanmış küresel bir puan. Ücretsiz, kayıt gerektirmiyor.</p>
+            <a href="https://eduentry.com/tr#akademik" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:0.4rem;background:var(--accent,#DBAF2E);color:hsl(212,66%,13%);font-weight:700;font-size:0.9rem;padding:0.65rem 1.4rem;border-radius:var(--radius-md);text-decoration:none;">Ücretsiz Değerlendirmeyi Başlat →</a>
+          </div>
+
+          <h2>PISA Puanı Nasıl Hesaplanır?</h2>
+
+          <p>Her öğrenci 2 saatlik bir test alır — ancak herkes aynı soruları görmez. PISA, Madde Tepki Teorisi (IRT) adlı istatistiksel yöntemi kullanır: her sorunun güçlük düzeyi ve öğrencinin yanıt örüntüsü hesaba katılarak uluslararası ölçeğe hizalanmış bir yetkinlik tahmini üretilir. OECD ortalaması ~500 puan olacak şekilde normalize edilir. Sonuçlar Level 1b'den Level 6'ya kadar 7 yetkinlik düzeyine ayrılır; <strong>Level 2 temel eşik</strong>, Level 5–6 ise küresel rekabetçi performansı temsil eder.</p>
+
+          <h2>PISA 2025 Küresel Sonuçlar</h2>
+
+          <p>8 Eylül 2026'da yayımlanan sonuçlar: Çin (B-S-J-Z), Singapur, Japonya, Güney Kore, Estonya ve İngiltere küresel liderler arasında. OECD ülkelerinde genel performans düşüyor — özellikle okumada büyük gerilemeler var. Türkiye ise 2022'ye kıyasla üç alanda birden ilerleme kaydeden nadir ülkelerden biri.</p>
+
+          <p>2025'in en önemli yeniliği: hesaplamalı problem çözme testi. Yapay zeka çağının merkezindeki bu beceri alanında Türkiye OECD ortalamasının altında kaldı. Ayrıca PISA, yapay zeka kullanan öğrencilerin fen puanlarının AI kullanmayanlara göre daha düşük olduğunu ortaya koydu — pasif AI kullanımı düşünmeyi geliştirmiyor, yerinden ediyor.</p>
+
+          <h2>PISA Becerileri Neden İş Başarısını Öngörüyor?</h2>
+
+          <p>OECD'nin onlarca ülkede yürüttüğü boylamsal araştırmalar şunu gösteriyor: PISA'nın ölçtüğü beceriler — okuma anlama, sayısal muhakeme, problem çözme — yetişkinlik döneminde gelir düzeyi ve istihdam kalitesiyle güçlü bir ilişki içinde. Bu "sınav becerileri" değil; bilgi ekonomisinde işlev görebilmenin bilişsel temelleri.</p>
+
+          <div class="blog-post-cta glass" style="margin-bottom:2rem">
+            <h3>Çocuğunuzun dünya sıralamasını öğrenin — ücretsiz</h3>
+            <p>EduEntry değerlendirmesi PISA ile aynı IRT metodolojisini kullanıyor. 20–35 dakika, ücretsiz, kayıtsız. Sonuçlar anında; dört alanda alt puanlar ve küresel yüzdelik dilim karşılaştırması.</p>
+            <a href="https://eduentry.com/tr#akademik" target="_blank" rel="noopener" class="btn btn-primary">Ücretsiz Değerlendirmeyi Başlat →</a>
+          </div>
+
+          <div class="blog-callout" style="margin-top:1rem">
+            <strong>Türkçe kapsamlı rehber:</strong><br>
+            <a href="../pisa-nedir/" style="color:var(--accent,#DBAF2E);font-weight:500;">PISA Nedir? Puan Hesaplama, 2025 Sonuçları ve Kariyer Bağlantısı — Tam Rehber →</a>
+          </div>
+
+        </div><!-- end tr-only -->
+
+      </article>
+    </div>
+
+    <!-- RELATED POSTS -->
+    <section class="blog-related-section">
+      <div class="container">
+        <h2 class="en-only">Related Posts</h2>
+        <h2 class="tr-only">İlgili Yazılar</h2>
+        <div class="blog-related-grid">
+          <a href="../pisa-nedir/" class="blog-related-card">
+            <img src="../../assets/blog/thumb-pisa.webp" alt="PISA Nedir?" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title">
+                <span class="en-only">PISA Nedir? — Full Turkish Guide</span>
+                <span class="tr-only">PISA Nedir? — Tam Türkçe Rehber</span>
+              </div>
+              <div class="blog-related-card-meta">2026 · 11 dk</div>
+            </div>
+          </a>
+          <a href="../pisa-2025-turkiye-sonuclari/" class="blog-related-card">
+            <img src="../../assets/blog/thumb-turkiye-egitim.webp" alt="PISA 2025 Turkey Results" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title">
+                <span class="en-only">PISA 2025 Turkey: The Numbers Look Better Than They Are</span>
+                <span class="tr-only">PISA 2025 Türkiye Sonuçları</span>
+              </div>
+              <div class="blog-related-card-meta">2026 · 9 dk</div>
+            </div>
+          </a>
+          <a href="../pisa-2025-erken-is-deneyimi/" class="blog-related-card">
+            <img src="../../assets/blog/thumb-eduentry.webp" alt="PISA 2025 and Early Work Experience" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title">
+                <span class="en-only">PISA 2025 and Early Work Experience: The Missing Link</span>
+                <span class="tr-only">PISA 2025 ve Erken İş Deneyimi</span>
+              </div>
+              <div class="blog-related-card-meta">2026 · 8 dk</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="padding:0 0 2rem;">
+      <p class="en-only" style="margin:0;padding:1rem 1.25rem;background:hsla(43,60%,92%,0.7);border-left:3px solid var(--accent,#DBAF2E);border-radius:0 6px 6px 0;font-size:0.95rem;line-height:1.8;">
+        <strong>Related guides:</strong><br>
+        <a href="/blog/pisa-nedir/" style="color:var(--accent,#DBAF2E);font-weight:500;">PISA Nedir? — Full Turkish Guide</a> ·
+        <a href="/blog/pisa-2025-turkiye-sonuclari/" style="color:var(--accent,#DBAF2E);font-weight:500;">PISA 2025 Turkey Results: Detailed Analysis</a> ·
+        <a href="/blog/pisa-2025-erken-is-deneyimi/" style="color:var(--accent,#DBAF2E);font-weight:500;">PISA 2025 and Early Work Experience</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text en-only">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+          <p class="footer-bio-text tr-only">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="en-only">Quick Links</h4>
+          <h4 class="tr-only">Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="/en/" class="en-only">Home</a><a href="/tr/" class="tr-only">Ana Sayfa</a></li>
+            <li><a href="/neden-biz/" class="en-only">Why Us?</a><a href="/neden-biz/" class="tr-only">Neden Biz?</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/" class="en-only">Book Session</a><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Görüşme Planla</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4 class="en-only">Contact</h4>
+          <h4 class="tr-only">İletişim</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span class="en-only">Dubai, United Arab Emirates</span><span class="tr-only">Dubai, Birleşik Arap Emirlikleri</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved. / Tüm hakları saklıdır.</div>
+        <div><a href="/gizlilik-politikasi/" style="color:inherit;opacity:0.7">Privacy Policy / Gizlilik Politikası</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../../app.js" defer></script>
+</body>
+</html>
