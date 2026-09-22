@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>try{var _l=localStorage.getItem('edualist_lang');if(_l==='en')document.documentElement.setAttribute('lang','en');}catch(e){}</script>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.services-grid{grid-template-columns:1fr 1fr}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IB Diploma ile Üniversite Başvurusu: Ülke Ülke Puan Eşikleri 2026 | Edualist</title>
+  <meta name="description" content="IB Diploma 2026: Oxbridge, Russell Group, Hollanda, ABD Top 50 ve Türkiye YÖK denkliği için minimum puan eşikleri — 6 ülkede ülke ülke tam rehber. Dubai'deki IB okullarından üniversiteye giden aileler için.">
+  <meta name="keywords" content="IB diploma üniversite başvurusu, IB diploma kaç puan, IB diploma Russell Group, IB diploma Oxbridge minimum puan, IB diploma Hollanda üniversite, IB diploma ABD üniversite, IB diploma Türkiye YÖK denklik, conditional offer IB, IB HL college credit, IB diploma 2026">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.edualist.com/blog/ib-diploma-universite-basvuru/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/ib-diploma-universite-basvuru/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/blog/ib-diploma-universite-basvuru/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/ib-diploma-universite-basvuru/">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title"       content="IB Diploma University Applications 2026: Score Thresholds by Country">
+  <meta property="og:description" content="Minimum IB scores for Oxbridge, Russell Group, Dutch universities, US Top 50, Canada and Turkish YÖK — country-by-country guide for international families.">
+  <meta property="og:url"         content="https://www.edualist.com/blog/ib-diploma-universite-basvuru/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-mufredat.webp">
+  <meta property="article:published_time" content="2026-09-23">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="IB Diploma 2026: Score Thresholds for Oxbridge, Russell Group, Netherlands, US & Turkey">
+  <meta name="twitter:description" content="Country-by-country IB score guide — from Oxbridge (38+) to Dutch universities (28+) to Turkish YÖK equivalency.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-mufredat.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "IB Diploma ile Üniversite Başvurusu: Ülke Ülke Puan Eşikleri 2026",
+    "description": "IB Diploma 2026 puan eşikleri: Oxbridge, Russell Group, Hollanda, ABD Top 50, Kanada ve Türkiye YÖK denkliği — ülke ülke tam rehber.",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen",
+      "url": "https://www.edualist.com/neden-biz/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com"
+    },
+    "datePublished": "2026-09-23",
+    "dateModified": "2026-09-23",
+    "wordCount": 2200,
+    "inLanguage": "tr",
+    "url": "https://www.edualist.com/blog/ib-diploma-universite-basvuru/",
+    "image": "https://www.edualist.com/assets/blog/thumb-mufredat.webp",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".blog-summary", ".blog-post-title"]
+    }
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional"></noscript>
+
+  <link rel="preload" as="image" href="../../assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="../../styles.css?v=7">
+  <link rel="stylesheet" href="../../styles.css?v=7" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../styles.css?v=7"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/tr/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "IB Diploma ile Üniversite Başvurusu: Ülke Ülke Puan Eşikleri 2026", "item": "https://www.edualist.com/blog/ib-diploma-universite-basvuru/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "IB diplomamla Türkiye'de üniversiteye başvurabilir miyim?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. IB Diploma, YÖK tarafından yabancı diploma kapsamında tanınmaktadır. Devlet üniversiteleri için genellikle YÖS veya SAT/ACT sonucu da gereklidir. Koç, Sabancı, Bilkent gibi vakıf üniversiteleri çoğunlukla kendi burslu sınavları veya SAT/ACT ile başvuru kabul eder."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Conditional offer nedir, IB'de nasıl çalışır?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Conditional offer, UK üniversitelerinin IB sonucu açıklanmadan önce gönderdiği koşullu kabul teklifleridir. Örneğin 'IB 36, HL Kimya 6' gibi bir koşul içerir. Öğrenci Temmuz ayında bu puanı veya üstünü alırsa yeri kesinleşir; altında kalırsa yer iptal olabilir ve clearing süreci başlar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "IB HL notlarıyla üniversitede college credit kazanabilir miyim?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet, başta ABD üniversiteleri olmak üzere bazı kurumlar HL 6 veya 7 aldığınız konularda kredi sayabilir. Politikalar üniversiteden üniversiteye büyük farklılık gösterir — Harvard, MIT, Columbia, UCL gibi kurumların kredi politikalarını kabul mektubuyla birlikte teyit etmeniz gerekir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "IB diplomam 24 puanın altında kaldı, ne yapabilirim?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "IB diploması alamadığınızda (24 puanın altı) Course Results belgesi alınır. Bu belgeyle bazı üniversiteler foundation year programlarına kabul verebilir. Ayrıca sınav retake (Kasım/Mayıs) seçeneği değerlendirilebilir. BAE'deki bazı üniversiteler daha esnek kabul kriterleri uygular."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "EE ve TOK neden bu kadar önemli, gerçekten 3 puan fark eder mi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. EE (Extended Essay) ve TOK (Theory of Knowledge) bileşenlerinden elde edilen 3 bonus puan, borderline durumlarda belirleyici olabilir. 33 puan alıp 3 bonus kazanan öğrenci 36'lık conditional offer'ı karşılar; kazanamazsa karşılamaz. EE konusunu hedef üniversite bölümüyle örtüştürmek de başvuru sürecinde avantaj sağlayabilir."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="header-nav glass" id="navbar">
+    <div class="container nav-container">
+      <a href="../../" class="logo" id="nav-logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li>
+            <a href="../../en/" class="en-only">Home</a>
+            <a href="../../tr/" class="tr-only">Ana Sayfa</a>
+          </li>
+          <li>
+            <a href="../../neden-biz/" class="en-only">Why Us?</a>
+            <a href="../../neden-biz/" class="tr-only">Neden Biz?</a>
+          </li>
+          <li>
+            <a href="../../en/#services" class="en-only">Services</a>
+            <a href="../../tr/#services" class="tr-only">Hizmetler</a>
+          </li>
+          <li>
+            <a href="../../neden-biz/#about" class="en-only">About</a>
+            <a href="../../neden-biz/#about" class="tr-only">Hakkımızda</a>
+          </li>
+          <li><a href="../" class="active">Blog</a></li>
+          <li>
+            <a href="/uluslararasi-okul-danismanligi/" class="en-only">Contact</a>
+            <a href="/uluslararasi-okul-danismanligi/" class="tr-only">İletişim</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-controls">
+        <div class="lang-toggle" id="lang-switcher">
+          <button class="lang-btn active" data-lang="tr" aria-label="Türkçe">TR</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <div class="tr-only">
+        <div class="blog-post-meta">
+          <span><a href="../../neden-biz/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>·</span>
+          <span>23 Eylül 2026</span>
+          <span>·</span>
+          <span>14 dk okuma</span>
+        </div>
+        <h1 class="blog-post-title">IB Diploma ile Üniversite Başvurusu:<br>Ülke Ülke Puan Eşikleri 2026</h1>
+        <div class="blog-seo-tags">
+          <span class="blog-seo-tag">IB diploma puan eşikleri</span>
+          <span class="blog-seo-tag">IB Russell Group minimum puan</span>
+          <span class="blog-seo-tag">IB Oxbridge kaç puan</span>
+          <span class="blog-seo-tag">IB Türkiye YÖK denklik</span>
+        </div>
+      </div>
+      <div class="en-only">
+        <div class="blog-post-meta">
+          <span><a href="../../neden-biz/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>·</span>
+          <span>23 September 2026</span>
+          <span>·</span>
+          <span>14 min read</span>
+        </div>
+        <h1 class="blog-post-title">IB Diploma University Applications 2026:<br>Score Thresholds by Country</h1>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <a href="../" class="blog-back-link">← Blog</a>
+
+        <div class="blog-summary">
+          <strong><span class="tr-only">Kısa Cevap</span><span class="en-only">Short Answer</span></strong>
+          <p class="tr-only">IB Diploma 45 puan üzerinden hesaplanır. <strong>Oxbridge için 38–40+</strong>, Russell Group için 32–38, Hollanda araştırma üniversiteleri için 28–32, ABD Top 50 için 34–38+ ve BAE için 24–40 geniş aralık geçerli. Türkiye'de YÖK denkliği ayrı bir süreç gerektiriyor. Bu rehber ülke ülke gerçek eşikleri ve strateji önerilerini tek yerde topluyor.</p>
+          <p class="en-only">IB Diploma is scored out of 45. <strong>Oxbridge requires 38–40+</strong>, Russell Group 32–38, Dutch research universities 28–32, US Top 50 typically 34–38+, and UAE options range from 24–40. Turkey's YÖK equivalency is a separate process. This guide consolidates real thresholds and strategy notes country by country.</p>
+        </div>
+
+        <!-- TR CONTENT -->
+        <div class="tr-only blog-post-body">
+
+          <p>IB sınavları bitti, puan geldi. Sıradaki soru — ve çoğu ailenin yeterince hazırlıklı olmadığı soru — şu: "Bu puan hangi ülkelerde, hangi üniversitelere yeterli?" Cevap ülkeden ülkeye dramatik biçimde değişiyor. Hollanda'da 28 ile kapı açılırken, Oxbridge için 38 bile zaman zaman yetmiyor. Bu rehberi, danışmanlık süreçlerinde sürekli aldığım "kaç puan lazım?" sorusuna net bir cevap vermek için yazdım.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="../../assets/founder-avatar-300.webp" type="image/webp">
+              <img src="../../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Koçtan not</span>
+              <p>Bu rehberdeki eşikler üniversitelerin resmi yayımladığı verilerden, UCAS istatistiklerinden ve onlarca aile ile yürüttüğüm başvuru süreçlerinden derlendi. Puanlar yıla ve programa göre değişebilir — ama genel tablo tutarlı kalıyor. Buradaki rakamları bir başlangıç noktası, kendi üniversitelerinizin güncel koşullarını teyit etmeyi ise zorunlu bir adım olarak görün.</p>
+            </div>
+          </div>
+
+          <h2>IB Puanlama Sistemi — 45'in Gerçek Anlamı</h2>
+
+          <p>IB Diploma maksimum <strong>45 puan</strong> üzerinden hesaplanır: 6 ders × 7 puan = 42 puan + Extended Essay (EE) ve Theory of Knowledge (TOK) bileşenlerinden gelen <strong>3 bonus puan</strong>. Diploma için minimum eşik <strong>24 puan</strong>. Küresel ortalama yaklaşık 30 puan civarında seyrediyor.</p>
+
+          <div class="blog-verdict">
+            <h3>Puanlama Özeti</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Maksimum puan:</strong> 45 (6 ders × 7 + 3 bonus)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Diploma eşiği:</strong> 24 puan (ve bazı ek koşullar)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Küresel ortalama:</strong> ~30 puan</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>EE + TOK bonusu:</strong> maksimum 3 puan — borderline durumlarda belirleyici</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>HL (Higher Level):</strong> en az 3 ders HL olmalı; üniversiteler genellikle HL notlarına ayrıca bakıyor</span></div>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Conditional offer nedir?</strong> UK üniversiteleri IB sonucu açıklanmadan önce koşullu kabul gönderir: örn. "IB 36, HL Kimya 6". Temmuz'da bu koşulu karşılarsan yer kesinleşir. EE + TOK'tan gelen 3 bonus puan borderline durumlarda bu farkı kapatabilir.
+          </div>
+
+          <h2>İngiltere — Oxbridge ve Russell Group</h2>
+
+          <p>Dubai'deki IB okullarından mezun olan Türk aileler için en popüler hedef hâlâ İngiltere. UCAS başvuru sistemi, predicted grades ve conditional offer mekanizması diğer ülkelerden farklı çalışıyor — bu farkları anlamak kritik.</p>
+
+          <div class="blog-verdict">
+            <h3>UK Üniversiteleri — IB Puan Eşikleri</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Oxford / Cambridge:</strong> 38–40+ (program bağımlı; Tıp, Hukuk, Matematik 40–42 isteyebilir; Beşeri Bilimler 38–40; HL koşulları ayrıca kritik)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Imperial College London, UCL, Edinburgh:</strong> 36–38</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>King's College London, Durham, Bristol, Warwick:</strong> 34–36</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Leeds, Glasgow, Birmingham, Southampton:</strong> 32–34</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Exeter, Cardiff, Nottingham, Leicester:</strong> 30–32</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Russell Group dışı iyi UK üniversiteleri:</strong> 28–30</span></div>
+          </div>
+
+          <p>UK başvurusunda önemli nokta: <strong>predicted grades</strong> (öğretmenin tahmini notlar) Ekim/Aralık'ta UCAS'a giriliyor. Gerçek IB sonucu Temmuz'da açıklanıyor. Yani offer alıp almadığınızı Nisan-Mayıs'ta öğreniyorsunuz; puanı Temmuz'da karşılayıp karşılamadığınızı ise ağustosta. Bu takvimi erkenden planlayın.</p>
+
+          <h2>ABD — Top 50 Üniversiteler</h2>
+
+          <p>IB müfredatı ABD'de zorunlu değil — ama güçlü bir profil unsuru. Admissions komiteleri IB öğrencilerini "rigorous curriculum" aldıkları için olumlu değerlendiriyor. Ancak ABD başvurusu IB puanından çok daha geniş bir pakete bakıyor: essay'ler, aktiviteler, öneriler, SAT/ACT (optional olsa bile tercihli).</p>
+
+          <div class="blog-verdict">
+            <h3>ABD Üniversiteleri — IB Profil Beklentisi</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Ivy League + MIT, Stanford, University of Chicago:</strong> 38–42 ve HL 6–7 (SAT/ACT ve güçlü extracurricular da zorunlu)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>ABD Top 20–50 (Duke, Georgetown, Vanderbilt, UCLA):</strong> 34–38</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>ABD Top 50–100:</strong> 30–34 ile sağlam başvuru mümkün</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>College credit:</strong> HL 6 veya 7 alanlar bazı üniversitelerde (Harvard, MIT, Columbia) kredi kazanabilir — politikalar kuruma göre değişiyor</span></div>
+          </div>
+
+          <div class="blog-callout">
+            <strong>ABD'de IB sonucu beklenmez:</strong> Early Decision / Early Action başvurularında (Kasım) IB sonucu henüz yok. Predicted grades ve transcript yeterli. IB sonucu geldiğinde üniversiteye iletilmesi gerekiyor — bu adımı unutmayın.
+          </div>
+
+          <h2>Hollanda — Araştırma Üniversiteleri</h2>
+
+          <p>Hollanda, Dubai'den ailelerin giderek daha fazla keşfettiği bir seçenek. İngilizce programlar çok geniş (600+), ücretler AB dışı öğrenciler için yıllık 11.000–14.000 € aralığında ve IB kabul eşikleri diğer ülkelere kıyasla daha erişilebilir.</p>
+
+          <div class="blog-verdict">
+            <h3>Hollanda Üniversiteleri — IB Puan Eşikleri</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>TU Delft — Mühendislik / Mimarlık:</strong> 33–36 (HL Matematik ve Fizik güçlü beklentisi)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Universiteit van Amsterdam (UvA), Leiden, Utrecht:</strong> 28–32</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Erasmus Rotterdam, Groningen, Maastricht:</strong> 27–30</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Tıp / Diş programları:</strong> 36–40 + numerus fixus (ön seçim sistemi; puan tek başına yeterli değil)</span></div>
+          </div>
+
+          <p>Hollanda'da bazı popüler programlara (Tıp, Psikoloji, Hukuk) <strong>numerus fixus</strong> uygulanıyor: kontenjan sınırlı, kura veya ön seçim sürecine girmeniz gerekiyor. Hollanda okul sistemi ve başvuru süreci hakkında daha fazla bilgi için <a href="../hollanda-okul-kayit-rehberi/">Hollanda okul kayıt rehberi</a>mize bakabilirsiniz.</p>
+
+          <h2>Kanada</h2>
+
+          <p>Kanada, İngiltere ve ABD'ye kıyasla daha esnek başvuru süreciyle dikkat çekiyor. IB puanı dönüşüm tabloları aracılığıyla yerel not eşdeğerine çevriliyor ve yüzdelik dilim (percentile) bazında değerlendiriliyor.</p>
+
+          <div class="blog-verdict">
+            <h3>Kanada Üniversiteleri — IB Puan Eşikleri</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>University of Toronto, McGill:</strong> 34–38</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>UBC Vancouver:</strong> 32–36</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>McMaster, Queen's, Western, Simon Fraser:</strong> 30–34</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Diğer iyi Kanada üniversiteleri:</strong> 27–32</span></div>
+          </div>
+
+          <h2>BAE ve Körfez</h2>
+
+          <p>Dubai'de yaşayan aileler için yerel seçenek hem lojistik kolaylık hem de maliyet avantajı sunabilir. Ancak üniversitelerin global tanınırlığı ve kariyer çıktısı değerlendirmede önemli bir kriter olmalı.</p>
+
+          <div class="blog-verdict">
+            <h3>BAE / Körfez Üniversiteleri — IB Puan Eşikleri</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>NYU Abu Dhabi:</strong> 40+ (burs ağırlıklı; HL 7-7-6 ve üstü; son derece rekabetçi, her yıl ~20 ülkeden öğrenci kabul ediyor)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>American University of Sharjah (AUS):</strong> 26–30</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>American University in Dubai (AUD):</strong> 24–28</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Khalifa University, UAEU:</strong> 24–28 (BAE vatandaşı olmayan başvurularda farklı kriterler)</span></div>
+          </div>
+
+          <h2>Türkiye — YÖK Denklik</h2>
+
+          <p>IB Diploma, YÖK (Yükseköğretim Kurulu) tarafından yabancı diploma kapsamında tanınıyor. Ancak Türk üniversitelerine başvuru süreci diğer ülkelere göre daha karmaşık bir yapıya sahip.</p>
+
+          <div class="blog-verdict">
+            <h3>Türkiye Başvuru Yolları</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Devlet üniversiteleri (Boğaziçi, İTÜ, ODTÜ):</strong> YÖS (Yabancı Uyruklu Sınavı) veya bazılarında SAT/ACT kabul ediliyor; IB puanı doğrudan kabul için yeterli değil</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Koç, Sabancı, Bilkent:</strong> Kendi burslu sınavları veya SAT/ACT ile başvuru mümkün; IB 36+ güçlü burs başvurusu profili oluşturuyor</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>YÖK denklik belgesi:</strong> Diploma alındıktan sonra denklik başvurusu ayrı yapılıyor; işlem 1–3 ay sürebilir</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Türkçe dil şartı:</strong> Bazı programlar (Türkçe eğitim veren bölümler) YÖS içinde Türkçe dil testi de istiyor</span></div>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Önemli:</strong> IB puanı Türk üniversitelerine doğrudan kabul için yeterli değil — çoğu durumda ek sınav gerekiyor. Türkiye seçeneğini düşünüyorsanız YÖS başvuru takvimini IB takviminden bağımsız olarak planlayın.
+          </div>
+
+          <h2>Özet: Hangi Puan Hangi Kapıyı Açıyor?</h2>
+
+          <p>Aşağıdaki tablo, IB puan aralığına göre açılan seçeneklerin genel haritasını çıkarıyor. Programdan programa ve yıldan yıla değişkenlik gösterdiğini unutmayın.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-docs-table">
+            <thead>
+              <tr>
+                <th>IB Puanı</th>
+                <th>Açılan Seçenekler</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>40–45</strong></td>
+                <td>Oxbridge, Ivy League, NYU Abu Dhabi, Imperial/UCL; dünyanın her yerindeki top programlar</td>
+              </tr>
+              <tr>
+                <td><strong>36–39</strong></td>
+                <td>Tüm Russell Group, ABD Top 50, Kanada Top 5, Hollanda top (TU Delft dahil)</td>
+              </tr>
+              <tr>
+                <td><strong>32–35</strong></td>
+                <td>Russell Group (çoğu), Hollanda araştırma üniversiteleri, Kanada orta katman, iyi ABD üniversiteleri</td>
+              </tr>
+              <tr>
+                <td><strong>28–31</strong></td>
+                <td>UK iyi üniversiteler (non-Russell), Hollanda, Kanada, BAE orta katman</td>
+              </tr>
+              <tr>
+                <td><strong>24–27</strong></td>
+                <td>UK foundation year, BAE yerel üniversiteler, Türkiye vakıf üniversiteleri (SAT ile)</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h2>HL Konu Seçimi ve EE/TOK: Göz Ardı Edilen Strateji</h2>
+
+          <p>Toplam puan kadar — hatta bazen daha fazla — önem taşıyan iki faktör: hangi dersleri HL aldığınız ve EE/TOK performansınız. Yanlış HL seçimi, yüksek bir puanı bile hedef programdan uzak tutabilir.</p>
+
+          <div class="blog-verdict">
+            <h3>Programa Göre HL Konu Beklentileri</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>UK Mühendislik / Bilgisayar Bilimleri:</strong> HL Matematik ve Fizik zorunlu veya çok güçlü beklenti</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>UK Tıp / Diş:</strong> HL Kimya + Biyoloji (genellikle ikisi birden; sadece biri yetmiyor)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>UK Ekonomi / İşletme / Muhasebe:</strong> HL Matematik güçlü avantaj, zaman zaman zorunlu</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Hollanda:</strong> Programdan programa değişiyor ama genel olarak daha esnek; matematik ağırlıklı programlar HL Matematik istiyor</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>ABD:</strong> Zorunlu HL yok; hedef bölümle örtüşen HL tercih ediliyor</span></div>
+          </div>
+
+          <p><strong>EE + TOK stratejisi:</strong> 3 bonus puan borderline durumları çözüyor. 33 puan alıp EE/TOK'tan 3 tam puan kazanan öğrenci 36'lık conditional offer'ı karşılar. EE konusunu başvurduğunuz bölümle örtüştürmek (örn. Ekonomi bölümüne başvuruyorsa EE'de ekonomi konusu seçmek) hem puanınıza hem de başvuru motivation letter'ına güç katıyor.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="../../assets/founder-avatar-300.webp" type="image/webp">
+              <img src="../../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Danışmanlık notu</span>
+              <p>Bu rehberdeki eşikleri karşılamak başlangıç noktası — ama üniversite seçimi süreci puan hesabından çok daha geniş. Hangi ülke, hangi program, hangi kampüs kültürü, hangi kariyer yolu? Bu soruları doğru sırayla ele almadan yalnızca puana bakarak karar vermek çoğu zaman pahalıya mal olabiliyor. Bir görüşmede çocuğunuzun profilini birlikte değerlendirmekten memnuniyet duyarım.</p>
+            </div>
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Çocuğunuzun IB profili hangi üniversiteleri açıyor?</h3>
+            <p>Özlem Çimen ile birebir görüşmede IB puanını, HL konularını ve üniversite hedeflerini birlikte değerlendirebilirsiniz.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary" style="display:inline-flex">Ücretsiz Görüşme Planla</a>
+          </div>
+
+        </div>
+
+        <!-- EN CONTENT -->
+        <div class="en-only blog-post-body">
+
+          <p>The IB exams are over, the score is in. The next question — and one many families aren't prepared for — is: "What does this score unlock, and where?" The answer shifts dramatically by country. A 28 opens doors in the Netherlands that remain closed at Oxbridge. A 36 is comfortably competitive in Canada but barely borderline for Imperial. This guide consolidates the real thresholds I've seen families navigate across consultancy sessions.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="../../assets/founder-avatar-300.webp" type="image/webp">
+              <img src="../../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — A note from the coach</span>
+              <p>The thresholds in this guide are drawn from official university data, UCAS statistics and the application processes I've run with dozens of families. Scores shift by programme and year — but the overall picture remains consistent. Treat these as your starting baseline, and always verify current conditions directly with each institution.</p>
+            </div>
+          </div>
+
+          <h2>The IB Scoring System — What 45 Actually Means</h2>
+
+          <p>IB Diploma is scored out of a maximum of <strong>45 points</strong>: 6 subjects × 7 points each = 42 subject points, plus up to <strong>3 bonus points</strong> from Extended Essay (EE) and Theory of Knowledge (TOK). The minimum to earn the diploma is <strong>24 points</strong>. The global average sits around 30.</p>
+
+          <div class="blog-verdict">
+            <h3>Scoring at a Glance</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Maximum score:</strong> 45 (6 subjects × 7 + 3 bonus)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Diploma threshold:</strong> 24 points (plus additional conditions)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Global average:</strong> ~30 points</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>EE + TOK bonus:</strong> up to 3 points — decisive in borderline situations</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>HL (Higher Level):</strong> minimum 3 subjects at HL; universities scrutinise HL grades separately</span></div>
+          </div>
+
+          <div class="blog-callout">
+            <strong>What is a conditional offer?</strong> UK universities send conditional offers before IB results are published: e.g. "IB 36, HL Chemistry 6." If you meet that condition in July, your place is confirmed. The 3-point EE/TOK bonus can make the difference in borderline situations — never treat it as a footnote.
+          </div>
+
+          <h2>United Kingdom — Oxbridge and Russell Group</h2>
+
+          <p>The UK remains the most common destination for IB students from Dubai's international schools. Understanding the UCAS timeline, predicted grades and conditional offer mechanism is essential — the system works differently from every other country.</p>
+
+          <div class="blog-verdict">
+            <h3>UK Universities — IB Score Thresholds</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Oxford / Cambridge:</strong> 38–40+ (programme-dependent; Medicine, Law, Maths may require 40–42; Arts/Humanities 38–40; HL conditions are separate and critical)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Imperial College London, UCL, Edinburgh:</strong> 36–38</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>King's College London, Durham, Bristol, Warwick:</strong> 34–36</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Leeds, Glasgow, Birmingham, Southampton:</strong> 32–34</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Exeter, Cardiff, Nottingham, Leicester:</strong> 30–32</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Good non-Russell Group UK universities:</strong> 28–30</span></div>
+          </div>
+
+          <p>Key UK timeline point: <strong>predicted grades</strong> are submitted via UCAS in October/December. The real IB score comes in July. Offers arrive April–May; confirmation or release happens in August. Build this timeline into your planning from Year 1 of the IB.</p>
+
+          <h2>United States — Top 50 Universities</h2>
+
+          <p>IB is not required for US admissions — but it signals academic rigour that admissions committees value. US applications assess a much broader package than a score alone: essays, activities, recommendations and standardised tests all matter. Think of IB as a foundation, not the deciding factor.</p>
+
+          <div class="blog-verdict">
+            <h3>US Universities — IB Profile Expectations</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Ivy League + MIT, Stanford, University of Chicago:</strong> 38–42 and HL 6–7 (SAT/ACT and strong extracurriculars are also expected)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>US Top 20–50 (Duke, Georgetown, Vanderbilt, UCLA):</strong> 34–38</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>US Top 50–100:</strong> 30–34 is a competitive starting point</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>College credit:</strong> HL scores of 6 or 7 may earn university credit at Harvard, MIT, Columbia and others — policies vary significantly by institution</span></div>
+          </div>
+
+          <div class="blog-callout">
+            <strong>IB results are not required for US applications:</strong> Early Decision / Early Action deadlines (November) precede IB results entirely. Predicted grades and your transcript are sufficient. Once results arrive, ensure they're sent to your university — this step is frequently forgotten.
+          </div>
+
+          <h2>Netherlands — Research Universities</h2>
+
+          <p>The Netherlands has become an increasingly attractive destination for Dubai families. English-medium programmes are extensive (600+), annual fees for non-EU students range from €11,000–14,000, and IB acceptance thresholds are more accessible than the UK.</p>
+
+          <div class="blog-verdict">
+            <h3>Dutch Universities — IB Score Thresholds</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>TU Delft — Engineering / Architecture:</strong> 33–36 (strong expectation of HL Mathematics and Physics)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>University of Amsterdam (UvA), Leiden, Utrecht:</strong> 28–32</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Erasmus Rotterdam, Groningen, Maastricht:</strong> 27–30</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Medicine / Dentistry:</strong> 36–40 + numerus fixus (selective entry lottery — a high score alone is not sufficient)</span></div>
+          </div>
+
+          <p>Popular Dutch programmes including Medicine, Psychology and Law operate under <strong>numerus fixus</strong>: places are capped and allocated via a weighted lottery or selection process. Scoring high is necessary but not sufficient. For a broader guide to settling your family in the Netherlands, see our <a href="../hollanda-okul-kayit-rehberi/">Netherlands school registration guide</a>.</p>
+
+          <h2>Canada</h2>
+
+          <p>Canada offers a more transparent and flexible admissions process than the UK or US. IB scores are converted to local grade equivalents and assessed on a percentile basis within each province's grading scale.</p>
+
+          <div class="blog-verdict">
+            <h3>Canadian Universities — IB Score Thresholds</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>University of Toronto, McGill:</strong> 34–38</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>UBC Vancouver:</strong> 32–36</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>McMaster, Queen's, Western, Simon Fraser:</strong> 30–34</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Other strong Canadian universities:</strong> 27–32</span></div>
+          </div>
+
+          <h2>UAE and the Gulf</h2>
+
+          <p>For families based in Dubai, local options offer logistical ease and no relocation. Career outcomes and global recognition should be weighed carefully when comparing these with UK, Dutch or Canadian alternatives.</p>
+
+          <div class="blog-verdict">
+            <h3>UAE / Gulf Universities — IB Score Thresholds</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>NYU Abu Dhabi:</strong> 40+ (heavily merit and scholarship based; HL 7-7-6 or above; extremely competitive — accepts students from ~20 countries annually)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>American University of Sharjah (AUS):</strong> 26–30</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>American University in Dubai (AUD):</strong> 24–28</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Khalifa University, UAEU:</strong> 24–28 (different criteria apply for non-UAE nationals)</span></div>
+          </div>
+
+          <h2>Turkey — YÖK Equivalency</h2>
+
+          <p>IB Diploma is recognised by Turkey's Higher Education Council (YÖK) as a foreign diploma. However, the application pathway to Turkish universities is more complex than simply presenting your IB score.</p>
+
+          <div class="blog-verdict">
+            <h3>Turkish University Application Routes</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Public universities (Boğaziçi, ITU, METU):</strong> YÖS (Foreign Student Exam) or in some cases SAT/ACT required; IB score alone is not sufficient for direct admission</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Private universities (Koç, Sabancı, Bilkent):</strong> Own scholarship exams or SAT/ACT accepted; IB 36+ creates a strong scholarship application profile</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>YÖK equivalency certificate:</strong> Processed after receiving your diploma — allow 1–3 months</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Turkish language requirement:</strong> Some programmes (Turkish-language instruction) require a Turkish proficiency test within YÖS</span></div>
+          </div>
+
+          <h2>Score Summary: What Each Range Unlocks</h2>
+
+          <div style="overflow-x:auto">
+          <table class="blog-docs-table">
+            <thead>
+              <tr>
+                <th>IB Score</th>
+                <th>Realistic Options</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>40–45</strong></td>
+                <td>Oxbridge, Ivy League, NYU Abu Dhabi, Imperial/UCL; top programmes globally</td>
+              </tr>
+              <tr>
+                <td><strong>36–39</strong></td>
+                <td>All Russell Group, US Top 50, Canada Top 5, Dutch top (including TU Delft)</td>
+              </tr>
+              <tr>
+                <td><strong>32–35</strong></td>
+                <td>Most Russell Group, Dutch research universities, mid-tier Canada, strong US universities</td>
+              </tr>
+              <tr>
+                <td><strong>28–31</strong></td>
+                <td>Good non-Russell UK universities, Netherlands, Canada, UAE mid-tier</td>
+              </tr>
+              <tr>
+                <td><strong>24–27</strong></td>
+                <td>UK foundation year, UAE local universities, Turkish private universities (with SAT)</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h2>HL Subject Selection and EE/TOK: The Overlooked Strategy</h2>
+
+          <p>Two factors matter as much as — sometimes more than — total score: which subjects you take at HL, and your EE/TOK performance. The wrong HL combination can disqualify a high-scoring candidate from their target programme.</p>
+
+          <div class="blog-verdict">
+            <h3>HL Subject Expectations by Programme</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>UK Engineering / Computer Science:</strong> HL Mathematics and Physics required or strongly expected</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>UK Medicine / Dentistry:</strong> HL Chemistry + Biology — both, typically; one alone is rarely sufficient</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>UK Economics / Business / Accounting:</strong> HL Mathematics is a strong advantage, often required</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Netherlands:</strong> More flexible than UK; maths-heavy programmes expect HL Mathematics</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>United States:</strong> No mandatory HL; subject-programme alignment is assessed holistically</span></div>
+          </div>
+
+          <p><strong>EE + TOK strategy:</strong> Those 3 bonus points resolve borderline situations. A student scoring 33 who earns all 3 EE/TOK points meets a 36-point conditional offer; without them, they don't. Aligning your EE topic with your intended degree subject (e.g. choosing an Economics EE when applying for Economics) strengthens both your score and your personal statement.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="../../assets/founder-avatar-300.webp" type="image/webp">
+              <img src="../../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Advisory note</span>
+              <p>Meeting the score threshold is the starting line, not the finish. University selection is a much broader conversation: which country, which programme culture, which campus environment, which career trajectory? Choosing purely by score often leads to expensive course corrections later. I'd be glad to evaluate your child's full IB profile together in a one-to-one session.</p>
+            </div>
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Let's map your child's IB profile to the right universities</h3>
+            <p>In a one-to-one session with Özlem Çimen, we evaluate IB score, HL choices and university targets together.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary" style="display:inline-flex">Book a Free Session</a>
+          </div>
+
+        </div>
+
+        <!-- FAQ -->
+        <div class="blog-faq">
+          <h2>Sık Sorulan Sorular</h2>
+
+          <div class="faq-item">
+            <h3 class="faq-q">IB diplomamla Türkiye'de üniversiteye başvurabilir miyim?</h3>
+            <p class="faq-a">Evet. IB Diploma, YÖK tarafından yabancı diploma kapsamında tanınmaktadır. Devlet üniversiteleri için genellikle YÖS veya SAT/ACT sonucu da gereklidir. Koç, Sabancı, Bilkent gibi vakıf üniversiteleri çoğunlukla kendi burslu sınavları veya SAT/ACT ile başvuru kabul eder. YÖK denklik belgesi, diploma alındıktan sonra ayrı bir başvuru süreciyle alınır.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">Conditional offer nedir, IB'de nasıl çalışır?</h3>
+            <p class="faq-a">Conditional offer, UK üniversitelerinin IB sonucu açıklanmadan önce gönderdiği koşullu kabul teklifleridir. Örneğin "IB 36, HL Kimya 6" gibi bir koşul içerir. Öğrenci Temmuz ayında bu puanı veya üstünü alırsa yeri kesinleşir; altında kalırsa yer iptal olabilir ve Ağustos'ta UCAS Clearing süreci başlar. EE+TOK bonusu bu borderline durumlarda belirleyici olabilir.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">IB HL notlarımla üniversitede college credit kazanabilir miyim?</h3>
+            <p class="faq-a">Evet, başta ABD üniversiteleri olmak üzere bazı kurumlar HL 6 veya 7 aldığınız konularda kredi sayabilir. Politikalar üniversiteden üniversiteye büyük farklılık gösterir — Harvard, MIT, Columbia, UCL gibi kurumların kredi politikalarını kabul mektubuyla birlikte ayrıca teyit etmeniz gerekir. Kredi transferi gelecekteki ders yükünüzü azaltabilir.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">IB diplomam 24 puanın altında kaldı, ne yapabilirim?</h3>
+            <p class="faq-a">IB diploması alamadığınızda (24 puanın altı) Course Results belgesi alınır. Bu belgeyle bazı üniversiteler foundation year programlarına kabul verebilir. Mayıs veya Kasım döneminde sınav retake seçeneği de değerlendirilebilir. BAE'deki bazı üniversiteler daha esnek kabul kriterleri uygular. Durumu erken tespit edip seçenekleri hızla değerlendirmek önemli.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">EE ve TOK neden bu kadar önemli?</h3>
+            <p class="faq-a">EE ve TOK bileşenlerinden en fazla 3 bonus puan kazanılabilir. Borderline durumlarda bu 3 puan conditional offer'ı karşılayıp karşılamadığınızı belirleyebilir. Ayrıca EE konusu başvurduğunuz bölümle örtüşüyorsa (örn. Ekonomi başvurusu için Ekonomi EE) hem UCAS personal statement'ınıza güç katar hem de admissions tutor'ların dikkatini çeker.</p>
+          </div>
+        </div>
+
+        <p class="tr-only">IB müfredatını okul seçimiyle birlikte değerlendirmek istiyorsanız <a href="../ib-alevel-amerikan-mufredat-karsilastirma/">IB, A-Level ve Amerikan müfredatı karşılaştırma rehberimize</a> bakın. Dubai'deki IB okulları hakkında ise <a href="../dubai-en-iyi-uluslararasi-okullar/">Dubai'nin en iyi uluslararası okulları rehberini</a> inceleyebilirsiniz.</p>
+        <p class="en-only">To evaluate IB alongside other curricula, read our <a href="../ib-alevel-amerikan-mufredat-karsilastirma/">IB vs A-Level vs AP comparison guide</a>. For IB schools in Dubai, see our <a href="../dubai-en-iyi-uluslararasi-okullar/">best international schools in Dubai guide</a>.</p>
+
+      </article>
+    </div>
+
+    <!-- RELATED POSTS -->
+    <section class="blog-related-section">
+      <div class="container">
+        <h2 class="tr-only">İlgili Yazılar</h2>
+        <h2 class="en-only">Related Posts</h2>
+        <div class="blog-related-grid">
+          <a href="../ib-alevel-amerikan-mufredat-karsilastirma/" class="blog-related-card">
+            <img src="../../assets/blog/thumb-mufredat.webp" alt="IB, A-Level ve AP Müfredat Karşılaştırması" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title">
+                <span class="tr-only">IB, A-Level ve AP Farkı: Hangi Müfredat Çocuğunuza Uygun?</span>
+                <span class="en-only">IB, A-Level or AP? Curriculum Comparison Guide</span>
+              </div>
+              <div class="blog-related-card-meta">7 Haziran 2026 · 12 dk</div>
+            </div>
+          </a>
+          <a href="../dubai-en-iyi-uluslararasi-okullar/" class="blog-related-card">
+            <img src="../../assets/blog/thumb-dubai-okullar.webp" alt="Dubai En İyi Uluslararası Okullar" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title">
+                <span class="tr-only">Dubai'de En İyi 23 KHDA Outstanding Okul</span>
+                <span class="en-only">Dubai's 23 KHDA Outstanding International Schools</span>
+              </div>
+              <div class="blog-related-card-meta">10 Haziran 2026 · 15 dk</div>
+            </div>
+          </a>
+          <a href="../turkiye-dubai-okul-ucreti-karsilastirma/" class="blog-related-card">
+            <img src="../../assets/blog/thumb-turkiye-dubai-okul.webp" alt="Türkiye Dubai Okul Ücreti Karşılaştırması" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title">
+                <span class="tr-only">Türkiye vs Dubai Okul Ücreti: 2026 Karşılaştırması</span>
+                <span class="en-only">Turkey vs Dubai School Fees: 2026 Comparison</span>
+              </div>
+              <div class="blog-related-card-meta">5 Haziran 2026 · 10 dk</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="padding:0 0 2rem;">
+      <p class="tr-only" style="margin:0;padding:1rem 1.25rem;background:hsla(43,60%,92%,0.7);border-left:3px solid var(--accent,#DBAF2E);border-radius:0 6px 6px 0;font-size:0.95rem;line-height:1.8;">
+        <strong>İlgili Rehberler:</strong><br>
+        <a href="/blog/ib-alevel-amerikan-mufredat-karsilastirma/" style="color:var(--accent,#DBAF2E);font-weight:500;">IB, A-Level ve AP Müfredat Karşılaştırması</a> ·
+        <a href="/blog/dubai-en-iyi-uluslararasi-okullar/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai'de En İyi IB Okulları</a> ·
+        <a href="/dubai/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai Okul Danışmanlığı</a>
+      </p>
+      <p class="en-only" style="margin:0;padding:1rem 1.25rem;background:hsla(43,60%,92%,0.7);border-left:3px solid var(--accent,#DBAF2E);border-radius:0 6px 6px 0;font-size:0.95rem;line-height:1.8;">
+        <strong>Related Guides:</strong><br>
+        <a href="/blog/ib-alevel-amerikan-mufredat-karsilastirma/" style="color:var(--accent,#DBAF2E);font-weight:500;">IB vs A-Level vs AP Comparison</a> ·
+        <a href="/blog/dubai-en-iyi-uluslararasi-okullar/" style="color:var(--accent,#DBAF2E);font-weight:500;">Best IB Schools in Dubai</a> ·
+        <a href="/dubai/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai School Consultancy</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text tr-only">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi, müfredat değerlendirme ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
+          <p class="footer-bio-text en-only">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="tr-only">Hızlı Linkler</h4>
+          <h4 class="en-only">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/" class="en-only">Home</a><a href="/tr/" class="tr-only">Ana Sayfa</a></li>
+            <li><a href="/neden-biz/" class="en-only">Why Us?</a><a href="/neden-biz/" class="tr-only">Neden Biz?</a></li>
+            <li><a href="/en/#services" class="en-only">Services</a><a href="/tr/#services" class="tr-only">Hizmetler</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/" class="en-only">Book Session</a><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Görüşme Planla</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4 class="tr-only">İletişim</h4>
+          <h4 class="en-only">Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span class="tr-only">Dubai, Birleşik Arap Emirlikleri</span><span class="en-only">Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
+        <div><a href="/gizlilik-politikasi/" class="tr-only" style="color:inherit;opacity:0.7">Gizlilik Politikası</a><a href="/gizlilik-politikasi/" class="en-only" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP STICKY -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Merhaba,%20Daha%20fazla%20bilgi%20almak%20istiyorum" class="whatsapp-sticky" target="_blank" rel="noopener" aria-label="WhatsApp ile yazın" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- AI Chatbot Button -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="AI Asistan">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <!-- AI Chatbot Popup -->
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Kapat">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="Edualist AI Asistan"></iframe>
+  </div>
+
+<script src="../../app.js"></script>
+</body>
+</html>
