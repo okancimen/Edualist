@@ -29,7 +29,7 @@ X / Twitter: https://x.com/OzlemGunayCimen
 
 - [Why Edualist? About the Founder](https://www.edualist.com/neden-biz/): Background, credentials, and the personal expat journey behind Edualist
 - [International School Consulting Service](https://www.edualist.com/uluslararasi-okul-danismanligi/): Transactional service page — school placement, academic coaching, and VIP relocation support with pricing and booking
-- [Blog](https://www.edualist.com/blog/): 47 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
+- [Blog](https://www.edualist.com/blog/): 48 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
 - [Full article content index](https://www.edualist.com/llms-full.txt): Complete text of all 46 blog articles for LLM indexing
 - [AI Chatbot — Ela (EduBot)](https://ai-edualist-com.vercel.app/): Edualist's 24/7 AI advisor for school selection questions, curriculum comparison, and country-specific guidance
 
@@ -83,6 +83,7 @@ X / Twitter: https://x.com/OzlemGunayCimen
 - [PISA 2025 Türkiye Sonuçları: Türkiye Kaçıncı?](https://www.edualist.com/blog/pisa-2025-turkiye-sonuclari/): PISA 2025'te Türkiye matematik, okuma ve fen bilimlerinde OECD ortalamasının altında kaldı. Sonuçların ayrıntılı analizi, Türk öğrencilerin güçlü ve zayıf yönleri, diğer ülkelerle karşılaştırma ve çocuğunuz için pratik adımlar
 - [PISA 2025 ve Erken İş Deneyimi: Türk Öğrenciler İçin Eksik Halka](https://www.edualist.com/blog/pisa-2025-erken-is-deneyimi/): PISA 2025 Türkiye sonuçları fen ve okumada OECD ortalamasının üzerinde, ama hesaplamalı problem çözme geride ve devamsızlık %53. Erken iş deneyimi (staj, proje, girişimcilik) bu boşluğu nasıl kapatır — ve uluslararası müfredat bunu nasıl destekler
 - [Robert Kolej Ücreti 2026-27: Alternatiflerle Karşılaştırma](https://www.edualist.com/blog/robert-kolej-ucreti-2026/): Robert Kolej 2026-27 yıllık ücreti 2.488.200 TL. Koç Okulu, Hisar Okulu ve Dubai KHDA Outstanding IB okullarıyla ücret, müfredat ve üniversite çıktısı açısından karşılaştırma — ve 1 AED = 12,65 TL paritesiyle Dubai'nin nasıl rekabetçi hale geldiği
+- [IB Diploma ile Üniversite Başvurusu: Ülke Ülke Puan Eşikleri 2026](https://www.edualist.com/blog/ib-diploma-universite-basvuru/): IB Diploma minimum score thresholds by country — Oxbridge 38–40+, Russell Group 32–38, Imperial/UCL 36–38, Dutch research universities 28–32 (TU Delft 33–36), Canadian top universities 34–38, US Ivy League 38+, UAE NYU Abu Dhabi 40+, AUS/AUD 24–30, Turkish YÖK equivalency process. Includes conditional offer explanation, HL subject requirements by programme (Medicine, Engineering, Economics), EE+TOK bonus point strategy, and score-to-university-tier summary table
 
 ## Frequently Asked Questions
 
@@ -112,6 +113,24 @@ According to the WEF Future of Jobs 2025 report, the highest-growth categories a
 
 **What academic skills will matter most in the future job market?**
 WEF's top skills for 2025–2030 are analytical thinking, creativity, adaptability, AI literacy, critical thinking, and problem-solving. Skills at risk include repetitive data processing, routine accounting, and rule-based decision-making. International curricula such as IB and A-Level directly develop the high-demand skills through critical inquiry, extended essay writing, and project-based learning.
+
+**What IB score is needed for Oxbridge (Oxford or Cambridge)?**
+Oxford and Cambridge typically require 38–40+ IB points depending on the programme. Medicine, Law and Mathematics programmes may require 40–42 with specific Higher Level conditions. Arts and Humanities programmes generally accept 38–40. HL subject requirements are assessed separately and are non-negotiable for science and engineering programmes.
+
+**What IB score is needed for Russell Group universities?**
+Imperial College London, UCL and Edinburgh typically require 36–38. King's College London, Durham, Bristol and Warwick require 34–36. Leeds, Glasgow, Birmingham and Southampton require 32–34. Most Russell Group universities use conditional offers — they send the offer before IB results and confirm or withdraw it based on final scores in July.
+
+**What IB score is needed for Dutch universities?**
+Most Dutch research universities (University of Amsterdam, Leiden, Utrecht, Erasmus Rotterdam) accept 28–32 IB points. TU Delft Engineering programmes typically require 33–36 with strong HL Mathematics and Physics. Medicine and Dentistry programmes require 36–40 and operate under a numerus fixus lottery system.
+
+**What IB score is needed for Canadian universities?**
+University of Toronto and McGill typically require 34–38. UBC Vancouver requires 32–36. McMaster, Queen's and Western accept 30–34. Canadian universities convert IB scores to local provincial grade equivalents for assessment.
+
+**How does IB Diploma apply to Turkish university admissions (YÖK)?**
+IB Diploma is recognised by Turkey's YÖK (Higher Education Council) as a foreign diploma. Public universities (Boğaziçi, ITU, METU) generally require a YÖS (Foreign Student Exam) or SAT/ACT in addition to the IB diploma. Private universities (Koç, Sabancı, Bilkent) often accept SAT/ACT or their own scholarship exams. A YÖK equivalency certificate must be obtained separately after receiving the diploma, which takes 1–3 months.
+
+**What is a conditional offer in IB university applications?**
+A conditional offer is a university acceptance letter sent before IB results are published, stating the minimum IB score required (e.g. "IB 36, HL Chemistry 6"). If the student meets the stated conditions when results are released in July, the place is confirmed. The 3 bonus points from EE and TOK can be decisive in borderline situations — a student scoring 33 in subjects who earns 3 EE/TOK bonus points meets a 36-point conditional offer.
 
 **What is Eduentry?**
 Eduentry is a free AI-powered adaptive academic assessment for children aged 6–17. It uses 2PL IRT (the same methodology as PISA, SAT, and GCSE) to measure maths, verbal reasoning, and English proficiency, benchmarked against UK, US, PISA, and IB international frameworks. Edualist recommends it to families before school selection to understand their child's current academic standing.

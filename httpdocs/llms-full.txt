@@ -17867,3 +17867,99 @@ Yurt dışı eğitim planlarken en sık sorulan soru bu: "Toplam ne ödeyeceğiz
 
             Evet, özellikle expat paketi sunan şirketlerde eğitim yardımı miktarı müzakere edilebilir. İş görüşmeleri sırasında veya relocation paketini belirlerken okul ücret belgelerini sunarak tavan miktarı artırabilirsiniz. Bazı şirketler belirli okul listesi dahilindeki harcamaları %100 karşılarken diğerleri yalnızca belirli bir tavan uygulamaktadır.
 
+
+---
+
+## [IB Diploma ile Üniversite Başvurusu: Ülke Ülke Puan Eşikleri 2026](https://www.edualist.com/blog/ib-diploma-universite-basvuru/)
+
+**URL:** https://www.edualist.com/blog/ib-diploma-universite-basvuru/  
+**Date:** 2026-09-23
+
+IB sınavları bitti, puan geldi. Sıradaki soru: "Bu puan hangi ülkelerde, hangi üniversitelere yeterli?" Cevap ülkeden ülkeye dramatik biçimde değişiyor. Hollanda'da 28 ile kapı açılırken, Oxbridge için 38 bile zaman zaman yetmiyor.
+
+## IB Puanlama Sistemi
+
+IB Diploma maksimum 45 puan üzerinden hesaplanır: 6 ders × 7 puan = 42 puan + Extended Essay (EE) ve Theory of Knowledge (TOK) bileşenlerinden gelen 3 bonus puan. Diploma için minimum eşik 24 puan. Küresel ortalama yaklaşık 30 puan.
+
+- Maksimum puan: 45 (6 ders × 7 + 3 bonus)
+- Diploma eşiği: 24 puan
+- Küresel ortalama: ~30 puan
+- EE + TOK bonusu: maksimum 3 puan — borderline durumlarda belirleyici
+- HL (Higher Level): en az 3 ders HL olmalı; üniversiteler HL notlarına ayrıca bakıyor
+
+Conditional offer: UK üniversiteleri IB sonucu açıklanmadan önce koşullu kabul gönderir (örn. "IB 36, HL Kimya 6"). Temmuz'da bu koşulu karşılarsan yer kesinleşir.
+
+## İngiltere — Oxbridge ve Russell Group
+
+- Oxford / Cambridge: 38–40+ (Tıp/Hukuk/Matematik 40–42; Beşeri Bilimler 38–40)
+- Imperial College London, UCL, Edinburgh: 36–38
+- King's College London, Durham, Bristol, Warwick: 34–36
+- Leeds, Glasgow, Birmingham, Southampton: 32–34
+- Exeter, Cardiff, Nottingham, Leicester: 30–32
+- Russell Group dışı iyi UK üniversiteleri: 28–30
+
+UK başvurusunda predicted grades Ekim/Aralık'ta UCAS'a giriliyor. Gerçek IB sonucu Temmuz'da açıklanıyor. Offer alıp almadığınızı Nisan-Mayıs'ta, puanı karşılayıp karşılamadığınızı Ağustos'ta öğreniyorsunuz.
+
+## ABD — Top 50 Üniversiteler
+
+IB müfredatı ABD'de zorunlu değil ama güçlü bir profil unsuru. ABD başvurusu IB puanından çok daha geniş bir pakete bakıyor: essay'ler, aktiviteler, öneriler, SAT/ACT.
+
+- Ivy League + MIT, Stanford, University of Chicago: 38–42 ve HL 6–7
+- ABD Top 20–50 (Duke, Georgetown, Vanderbilt, UCLA): 34–38
+- ABD Top 50–100: 30–34 ile sağlam başvuru
+- College credit: HL 6 veya 7 alanlar bazı üniversitelerde kredi kazanabilir
+
+Early Decision / Early Action başvurularında IB sonucu henüz yok — predicted grades ve transcript yeterli.
+
+## Hollanda — Araştırma Üniversiteleri
+
+- TU Delft — Mühendislik / Mimarlık: 33–36 (HL Matematik ve Fizik zorunlu)
+- Universiteit van Amsterdam, Leiden, Utrecht: 28–32
+- Erasmus Rotterdam, Groningen, Maastricht: 27–30
+- Tıp / Diş programları: 36–40 + numerus fixus (ön seçim sistemi)
+
+İngilizce programlar çok geniş (600+), yıllık ücretler AB dışı öğrenciler için 11.000–14.000 €.
+
+## Kanada
+
+- University of Toronto, McGill: 34–38
+- UBC Vancouver: 32–36
+- McMaster, Queen's, Western, Simon Fraser: 30–34
+- Diğer iyi Kanada üniversiteleri: 27–32
+
+## BAE ve Körfez
+
+- NYU Abu Dhabi: 40+ (burs ağırlıklı, çok rekabetçi; HL 7-7-6 ve üstü)
+- American University of Sharjah (AUS): 26–30
+- American University in Dubai (AUD): 24–28
+- Khalifa University, UAEU: 24–28
+
+## Türkiye — YÖK Denklik
+
+IB Diploma, YÖK tarafından yabancı diploma kapsamında tanınıyor.
+
+- Devlet üniversiteleri (Boğaziçi, İTÜ, ODTÜ): YÖS veya SAT/ACT gerekiyor; IB puanı doğrudan kabul için yeterli değil
+- Koç, Sabancı, Bilkent: Kendi burslu sınavları veya SAT/ACT; IB 36+ güçlü burs profili
+- YÖK denklik belgesi: diploma alındıktan sonra 1–3 ay süren ayrı bir süreç
+- Türkçe dil şartı: bazı programlar YÖS içinde Türkçe dil testi istiyor
+
+## Özet Puan Tablosu
+
+| IB Puanı | Açılan Seçenekler |
+|---|---|
+| 40–45 | Oxbridge, Ivy League, NYU Abu Dhabi, Imperial/UCL |
+| 36–39 | Tüm Russell Group, ABD Top 50, Kanada Top 5, Hollanda top |
+| 32–35 | Russell Group (çoğu), Hollanda araştırma üniversiteleri, Kanada |
+| 28–31 | UK iyi üniversiteler (non-Russell), Hollanda, Kanada, BAE orta |
+| 24–27 | UK foundation year, BAE yerel, Türkiye vakıf (SAT ile) |
+
+## HL Konu Seçimi ve EE/TOK Stratejisi
+
+HL konu beklentileri:
+- UK Mühendislik / Bilgisayar: HL Matematik + Fizik zorunlu
+- UK Tıp / Diş: HL Kimya + Biyoloji (ikisi birden)
+- UK Ekonomi / İşletme: HL Matematik güçlü avantaj
+- Hollanda: daha esnek; mühendislik HL Matematik istiyor
+- ABD: zorunlu HL yok; program uyumu değerlendiriliyor
+
+EE + TOK 3 bonus puan borderline durumlarda belirleyici: 33 puan + 3 bonus = 36'lık conditional offer karşılanır. EE konusunu başvurduğunuz bölümle örtüştürmek (Ekonomi bölümüne başvururken Ekonomi EE seçmek) hem puana hem motivation letter'a güç katar.
