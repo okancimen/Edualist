@@ -18204,3 +18204,75 @@ Wrong: prestige-only motivation, presenting school as back-up, over-focusing on 
 Results: 2–4 weeks. Continue evaluating other schools during wait. Request feedback on rejection — usually given, always useful.
 
 Common mistakes: teaching rehearsed answers (experienced interviewers detect them immediately); underpreparing for parent interview; going hungry or tired (measurably reduces performance).
+
+---
+
+## [PISA Nedir? PISA 2025, Puanlar ve Türk Çocukların İş Hayatına Hazırlığı](https://www.edualist.com/blog/pisa-nedir/)
+
+**URL:** https://www.edualist.com/blog/pisa-nedir/
+**Language:** TR
+**Date:** 2026-09-21
+
+PISA (Programme for International Student Assessment), OECD tarafından 3 yılda bir 15 yaşındaki öğrencilere uygulanan uluslararası bir değerlendirme programıdır. 2025'te 91 ülkeden 760.000'den fazla öğrenci matematik, fen bilimleri, okuma anlama ve ilk kez hesaplamalı problem çözme alanlarında test edildi. PISA bireysel değil, ülkelerin eğitim sistemlerini karşılaştırır.
+
+### PISA Puanı Nasıl Hesaplanır?
+
+PISA ham doğru/yanlış sayısına değil, IRT (Item Response Theory) yöntemine dayanır. Öğrenciler 2 saatlik test + 35 dakika anket alır. Puanlar OECD ortalaması ~500 puan olacak şekilde normalize edilir ve Level 1b'den Level 6'ya kadar 7 yetkinlik düzeyine ayrılır. Level 2 temel eşik; Level 5–6 küresel rekabetçi performans.
+
+### Türkiye PISA 2025
+
+Türkiye, 2022–2025 arasında matematik, fen ve okumada üç alanda birden ilerleme kaydeden nadir ülkelerden biri. Level 2+ oranları: fen %81 (OECD ort. %74), okuma %76 (OECD %69), matematik %64 (OECD %65). Ancak üst performans tablosunda (Level 5–6): matematik %8, fen %7, okuma %4 — Singapur'un matematik %37 oranının çok gerisinde. Hesaplamalı problem çözme alanında Türkiye OECD ortalamasının altında kaldı. Türk öğrencilerin %53'ü sınav öncesi iki haftada en az bir gün okula gitmedi (OECD ort. %22).
+
+### PISA Becerileri ve İş Hayatı
+
+OECD araştırmaları, PISA becerilerinin yetişkinlik döneminde gelir düzeyi ve istihdam kalitesiyle güçlü ilişki içinde olduğunu gösteriyor. Okuma anlama → iş hayatındaki her bilgi ekonomisi rolü; sayısal düşünme → finansal ve stratejik kararlar; hesaplamalı problem çözme → yapay zeka ekonomisinin anahtarı.
+
+### Aile İçin Pratik Adımlar
+- Çocuğu sınıf değil, uluslararası ölçütle değerlendirin
+- Not değil gerçek beceri gelişimine odaklanın (okuma anlama, sayısal muhakeme, hesaplamalı düşünme)
+- Erken gerçek dünya deneyimi edindirin
+- Motivasyonu okul-gerçek hayat köprüsüyle besleyin
+
+### Sık Sorulan Sorular
+- PISA nedir kısaca? OECD'nin 3 yılda bir 91 ülkede uyguladığı uluslararası eğitim değerlendirmesi; not değil uygulama becerisi ölçer.
+- PISA 2025 ile PISA 2026 farkı? Aynı şey; 2025'te uygulanan testin sonuçları Eylül 2026'da açıklandı. Bir sonraki tur 2028.
+- Türkiye PISA'da kaçıncı? Fen ve okumada OECD ortalaması üzerinde; üst performans ve hesaplamalı düşünmede zayıf.
+
+---
+
+## [What Is PISA? The 2025 Global Results, Score Calculation and What It Means for Your Child's Future](https://www.edualist.com/blog/what-is-pisa/)
+
+**URL:** https://www.edualist.com/blog/what-is-pisa/
+**Language:** EN
+**Date:** 2026-09-21
+
+PISA (Programme for International Student Assessment) is the OECD's triennial global education benchmark. In 2025, over 760,000 fifteen-year-olds across 91 countries were tested in mathematics, science, reading comprehension and — for the first time — computational problem solving. PISA measures applied skills, not memorised content.
+
+### How PISA Scores Work
+
+PISA uses Item Response Theory (IRT): not raw correct counts but a statistical model that accounts for each question's difficulty and each student's response pattern. All scores normalised to OECD average ≈ 500 pts. Seven proficiency levels (1b → 6): Level 2 is the critical baseline; Level 5–6 is globally competitive.
+
+### PISA 2025 Global Results (published 8 September 2026)
+
+Top performers: China B-S-J-Z (1st; 54% top performers in maths), Singapore (2nd; 37%), Japan, Korea, Estonia, UK. Most OECD countries: stagnating or declining. New 2025 finding: students who used AI chatbots passively for tasks (summarising, drafting) scored lower in science — passive AI use displaces thinking. Misinformation finding: over half of OECD students lack the critical reading to distinguish reliable from unreliable sources.
+
+### Turkey in PISA 2025
+
+One of few countries to improve in all three core subjects vs 2022. Level 2+ rates: science 81% (OECD 74%), reading 76% (OECD 69%), mathematics 64% (OECD 65%). Top performers (Level 5–6): maths 8%, science 7%, reading 4% — vs Singapore 37% in maths. Computational problem solving: below OECD average. 53% of Turkish students skipped at least one school day in the two weeks before the test (OECD avg 22%). Summary: Turkey's floor is rising; its ceiling is not.
+
+### Why PISA Skills Predict Career Success
+
+OECD longitudinal research across dozens of countries confirms robust correlation between PISA skills and adult earnings + employment quality. Reading comprehension → every knowledge-economy role; quantitative reasoning → decision-making under uncertainty; computational problem solving → AI-era career readiness. These are not test-taking skills — they are cognitive foundations for knowledge-economy work.
+
+### What Families Should Do
+1. Stop measuring your child against their class — measure against international benchmarks
+2. Prioritise applied skills (reading, reasoning, algorithmic thinking) over content knowledge
+3. Take computational skills seriously — Turkey is below OECD average in the domain most directly linked to AI-era readiness
+4. Use AI as a thinking partner, not a shortcut (PISA 2025 data shows passive AI use reduces learning outcomes)
+
+### FAQs
+- What is PISA in simple terms? The world's largest international education assessment; tests 15-year-olds across 91 countries in applied skills, not curriculum knowledge. Run by the OECD every 3 years.
+- What were the PISA 2025 results? Published 8 Sep 2026. China and Singapore top. Turkey improved in all three core subjects. Most OECD countries stagnating. Computational problem solving assessed for first time.
+- How are PISA scores calculated? IRT methodology; normalised to OECD average ~500; 7 proficiency levels.
+- What is a good PISA score? Level 2 (~407–480 pts) = baseline adequate. Level 5–6 (>607) = globally competitive. Singapore: 37% in Level 5–6 maths; Turkey: 8%.
+- Does PISA predict career success? Yes — OECD longitudinal research shows strong consistent correlation with adult earnings across all participating countries.
