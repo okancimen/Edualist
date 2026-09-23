@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>try{var _l=localStorage.getItem('edualist_lang');if(_l==='en')document.documentElement.setAttribute('lang','en');}catch(e){}</script>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-secondary{background:0 0;color:var(--primary);border:1.5px solid var(--primary)}.btn-secondary:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:768px){.section{padding:2.5rem 0}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}.blog-seo-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.75rem}.blog-seo-tag{background:hsla(43,60%,52%,.1);color:var(--primary);font-size:.78rem;font-weight:500;padding:.25rem .7rem;border-radius:50px;border:1px solid hsla(43,60%,52%,.2)}.blog-personal-note{display:flex;gap:1rem;background:hsla(212,66%,13%,.04);border-radius:var(--radius-md);padding:1.25rem 1.5rem;margin:1.75rem 0;align-items:flex-start}.blog-personal-note-img{width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0}.blog-personal-note-body{flex:1}.blog-personal-note-name{font-size:.8rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:.4rem}.blog-timeline{display:flex;gap:0;margin:1.5rem 0;overflow-x:auto;border-radius:var(--radius-sm)}.blog-tl-item{flex:1;min-width:80px;padding:.75rem .5rem;text-align:center;background:hsla(212,66%,13%,.04);border-right:1px solid hsla(212,66%,13%,.08)}.blog-tl-item:last-child{border-right:none}.blog-tl-item.active{background:var(--primary);color:var(--text-light)}.blog-tl-item.active .blog-tl-month{color:var(--accent)}.blog-tl-month{font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em;color:var(--accent);display:block;margin-bottom:.3rem}.blog-tl-item.active .blog-tl-month{color:hsla(43,60%,80%,1)}.blog-tl-label{font-size:.78rem;line-height:1.3}.blog-verdict{background:hsla(212,66%,13%,.03);border:1px solid hsla(212,66%,13%,.08);border-radius:var(--radius-md);padding:1.5rem;margin:1.75rem 0}.blog-verdict h3{font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--primary)}.blog-verdict-row{display:flex;gap:1rem;padding:.6rem 0;border-bottom:1px solid hsla(212,66%,13%,.06);font-size:.92rem;align-items:flex-start}.blog-verdict-row:last-child{border-bottom:none}.blog-verdict-label{font-weight:600;min-width:220px;flex-shrink:0;color:var(--primary)}.blog-verdict-val{color:var(--text-muted)}.blog-verdict-dot{width:8px;height:8px;background:var(--accent);border-radius:50%;margin-top:.45rem;flex-shrink:0}.blog-faq{margin:2.5rem 0}.blog-faq h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;margin-bottom:1.5rem}.faq-item{border-bottom:1px solid hsla(212,66%,13%,.08);padding:1.1rem 0}.faq-q{font-size:1rem;font-weight:600;color:var(--primary);margin-bottom:.5rem}.faq-a{font-size:.93rem;color:var(--text-muted);line-height:1.7}.blog-post-cta{padding:2rem 2.5rem;border-radius:var(--radius-lg);margin:2.5rem 0}.blog-post-cta h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:700;color:var(--primary);margin-bottom:.6rem}.blog-post-cta p{color:var(--text-muted);margin-bottom:1.25rem;font-size:.97rem}.blog-related-section{padding:3rem 0 4rem;background:var(--bg-warm-secondary)}.blog-related-section h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;color:var(--primary);margin-bottom:2rem;text-align:center}.blog-related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}@media (max-width:900px){.blog-related-grid{grid-template-columns:1fr 1fr}}@media (max-width:600px){.blog-related-grid{grid-template-columns:1fr}.blog-verdict-row{flex-direction:column;gap:.3rem}.blog-verdict-label{min-width:unset}}.blog-related-card{display:block;border-radius:var(--radius-md);overflow:hidden;background:#fff;box-shadow:var(--shadow-sm);transition:var(--transition-smooth)}.blog-related-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}.blog-related-card img{width:100%;height:160px;object-fit:cover}.blog-related-card-body{padding:1rem}.blog-related-card-title{font-size:.95rem;font-weight:600;color:var(--primary);line-height:1.4;margin-bottom:.4rem}.blog-related-card-meta{font-size:.78rem;color:var(--text-muted)}.footer{background:var(--primary);color:var(--text-light);padding:4rem 0 2rem}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}@media (max-width:768px){.footer-grid{grid-template-columns:1fr;gap:2rem}}.footer-bio-col h3{font-family:var(--font-serif);font-size:1.6rem;font-weight:600;margin-bottom:1rem;color:var(--text-light)}.footer-bio-text{font-size:.92rem;color:rgba(255,255,255,.7);line-height:1.7}.footer-links-col h4,.footer-contact-col h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;font-weight:600;color:var(--accent);margin-bottom:1rem}.footer-links{list-style:none;display:flex;flex-direction:column;gap:.6rem}.footer-links a{font-size:.9rem;color:rgba(255,255,255,.75);transition:color .2s}.footer-links a:hover{color:var(--accent)}.footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}.footer-contact-item{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem;color:rgba(255,255,255,.75)}.footer-contact-item svg{flex-shrink:0;stroke:var(--accent);margin-top:.1rem}.footer-contact-item a{color:rgba(255,255,255,.75);transition:color .2s}.footer-contact-item a:hover{color:var(--accent)}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:rgba(255,255,255,.5);flex-wrap:wrap;gap:.75rem}.whatsapp-sticky{position:fixed;bottom:1.5rem;right:1.5rem;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.4);z-index:900;transition:transform .2s,box-shadow .2s}.whatsapp-sticky:hover{transform:scale(1.08);box-shadow:0 6px 20px rgba(37,211,102,.5)}.whatsapp-sticky-label{position:absolute;right:64px;background:#25d366;color:#fff;font-size:.8rem;font-weight:600;padding:.3rem .75rem;border-radius:50px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}.whatsapp-sticky:hover .whatsapp-sticky-label{opacity:1}.chatbot-btn{position:fixed;bottom:1.5rem;left:1.5rem;width:56px;height:56px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);box-shadow:var(--shadow-md);z-index:900;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s}.chatbot-btn:hover{transform:scale(1.08)}.chatbot-btn-label{position:absolute;left:64px;background:var(--primary);color:#fff;font-size:.8rem;font-weight:600;padding:.3rem .75rem;border-radius:50px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}.chatbot-btn:hover .chatbot-btn-label{opacity:1}.chatbot-popup{position:fixed;bottom:5rem;left:1.5rem;width:360px;height:500px;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);z-index:901;background:#fff}.chatbot-popup-header{background:var(--primary);color:#fff;padding:.75rem 1rem;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:.95rem}.chatbot-popup-close{background:0 0;border:none;color:#fff;cursor:pointer;font-size:1.1rem;line-height:1}.chatbot-iframe{width:100%;height:calc(100% - 44px);border:none}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai'de Okul Kayıt Sezonu Ne Zaman Başlar? 2026–2027 Takvim Rehberi | Edualist</title>
+  <meta name="description" content="Dubai okul kayıt sezonu Eylül'de açılır ama popüler KHDA Outstanding okullar için 18 ay öncesinden başvurmanız gerekiyor. 2026–2027 term tarihleri, ay ay aksiyon planı.">
+  <meta name="keywords" content="Dubai okul kayıt sezonu, Dubai okul başvuru tarihi, Dubai uluslararası okul takvim, KHDA okul kayıt, Dubai okul ne zaman başlar, Edualist">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.edualist.com/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Dubai'de Okul Kayıt Sezonu Ne Zaman Başlar? 2026–2027 Takvim Rehberi">
+  <meta property="og:description" content="Dubai okul kayıt sezonu Eylül'de açılır ama popüler KHDA okullar için 18 ay öncesinden başvurmanız gerekiyor. Term tarihleri ve ay ay plan.">
+  <meta property="og:url" content="https://www.edualist.com/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/">
+  <meta property="og:image" content="https://www.edualist.com/assets/blog/thumb-dubai-kayit-sureci.webp">
+  <meta property="article:published_time" content="2026-09-23">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dubai School Registration Season: When Does It Open?">
+  <meta name="twitter:description" content="Dubai's school year starts in September, but the best schools open registration 12–18 months earlier. 2026–2027 calendar and month-by-month action plan.">
+  <meta name="twitter:image" content="https://www.edualist.com/assets/blog/thumb-dubai-kayit-sureci.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Dubai'de Okul Kayıt Sezonu Ne Zaman Başlar? 2026–2027 Takvim Rehberi",
+    "description": "Dubai okul kayıt sezonu ve başvuru takvimine dair kapsamlı rehber. KHDA Outstanding okullar için 18 ay önceden başlamanız gerekiyor.",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen",
+      "url": "https://www.edualist.com/neden-biz/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com"
+    },
+    "datePublished": "2026-09-23",
+    "dateModified": "2026-09-23",
+    "wordCount": 1400,
+    "inLanguage": "tr",
+    "url": "https://www.edualist.com/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/",
+    "image": "https://www.edualist.com/assets/blog/thumb-dubai-kayit-sureci.webp"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Dubai'de okul kayıt sezonu ne zaman başlar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dubai'de kayıt sezonu genellikle Eylül–Ekim aylarında açılır — bir sonraki yılın Eylül başlangıcı için. KHDA Outstanding okullar bu tarihten bile önce, Temmuz–Ağustos'ta bekleme listelerini açabilir. Taşınma planınızı biliyorsanız mümkün olan en erken tarihte başvurun."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'de okullar hangi ayda başlar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dubai'deki uluslararası okulların büyük çoğunluğu Eylül'ün ilk veya ikinci haftasında başlar. Bazı okullar Ağustos'un son haftasında açılır. Amerikan müfredatlı birkaç okul ise Ağustos ortasında başlayabilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai okul yılı kaç dönemden oluşur?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dubai'deki çoğu uluslararası okul İngiliz modelini izler: üç dönem. 1. dönem Eylül–Kasım, 2. dönem Ocak–Mart, 3. dönem Nisan–Haziran. Amerikan müfredatlı okullar iki dönem (semester) modelini kullanabilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Yıl ortasında Dubai'ye taşınırsam çocuğumu okula kaydedebilir miyim?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet, çoğu okul yıl ortası kaydı kabul eder ancak kontenjan kısıtlıdır. Ocak (2. dönem başı) en uygun yıl ortası giriş noktasıdır. KHDA portalındaki 'mid-year vacancies' filtresiyle açık yer bulunan okulları görebilirsiniz."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/tr/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dubai'de Okul Kayıt Sezonu Ne Zaman Başlar?", "item": "https://www.edualist.com/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/" }
+    ]
+  }
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional"></noscript>
+  <link rel="preload" as="image" href="../../assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="../../styles.css?v=13">
+  <link rel="stylesheet" href="../../styles.css?v=13" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../styles.css?v=13"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <header class="header-nav glass" id="navbar">
+    <div class="container nav-container">
+      <a href="../../" class="logo" id="nav-logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <nav>
+        <ul class="nav-links" id="nav-menu">
+          <li>
+            <a href="../../en/" class="en-only">Home</a>
+            <a href="../../tr/" class="tr-only">Ana Sayfa</a>
+          </li>
+          <li>
+            <a href="../../neden-biz/" class="en-only">Why Us?</a>
+            <a href="../../neden-biz/" class="tr-only">Neden Biz?</a>
+          </li>
+          <li>
+            <a href="../../en/#services" class="en-only">Services</a>
+            <a href="../../tr/#services" class="tr-only">Hizmetler</a>
+          </li>
+          <li>
+            <a href="../../neden-biz/#about" class="en-only">About</a>
+            <a href="../../neden-biz/#about" class="tr-only">Hakkımızda</a>
+          </li>
+          <li><a href="../" class="active">Blog</a></li>
+          <li>
+            <a href="/uluslararasi-okul-danismanligi/" class="en-only">Contact</a>
+            <a href="/uluslararasi-okul-danismanligi/" class="tr-only">İletişim</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="nav-controls">
+        <div class="lang-toggle" id="lang-switcher">
+          <button class="lang-btn active" data-lang="tr" aria-label="Türkçe">TR</button>
+          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        </div>
+        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary en-only" style="padding:0.6rem 1.2rem;font-size:0.9rem;">Book Now</a>
+        <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary tr-only" style="padding:0.6rem 1.2rem;font-size:0.9rem;">Görüşme Planla</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="../" class="blog-back-link">← Blog</a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span class="tr-only">23 Eylül 2026</span>
+          <span class="en-only">23 September 2026</span>
+          <span><a href="../../neden-biz/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span class="tr-only">7 dakika okuma</span>
+          <span class="en-only">7 min read</span>
+        </div>
+
+        <div class="blog-summary">
+          <strong><span class="tr-only">Özet</span><span class="en-only">Summary</span></strong>
+          <p class="tr-only">Dubai'de okul kayıt sezonu Eylül–Ekim'de başlar — bir sonraki yılın Eylül başlangıcı için. Ancak KHDA Outstanding okullar bu tarihten önce bekleme listelerini açar. Bu yazıda 2026–2027 akademik takvimini, dönem tarihlerini ve okul tipine göre başvuru pencerelerini bulacaksınız.</p>
+          <p class="en-only">Dubai's school registration season opens in September–October for the following year's September start. But KHDA Outstanding schools open waiting lists even earlier. This guide covers the 2026–2027 academic calendar, term dates, and application windows by school type.</p>
+        </div>
+
+        <!-- TR -->
+        <div class="tr-only">
+          <h1 class="blog-post-title">Dubai'de Okul Kayıt Sezonu Ne Zaman Başlar? 2026–2027 Takvim Rehberi</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">Dubai okul kayıt sezonu</span>
+            <span class="blog-seo-tag">Dubai okul başvuru tarihi</span>
+            <span class="blog-seo-tag">KHDA kayıt takvimi</span>
+            <span class="blog-seo-tag">Dubai okul term tarihleri</span>
+          </div>
+
+          <div class="blog-post-body">
+
+            <p>Dubai'ye taşınmayı planladığınızda aklınıza gelen ilk sorulardan biri şu: <em>"Okul kaydına ne zaman başlamalıyım?"</em> Cevap, çoğu ailenin tahmin ettiğinden çok daha erken. Dubai'de okullar Eylül'de başlar — ama bazı okullarda kayıt penceresi <strong>18 ay öncesinden</strong> kapanır.</p>
+
+            <div class="blog-personal-note">
+              <picture>
+                <source srcset="../../assets/founder-avatar-300.webp" type="image/webp">
+                <img src="../../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+              </picture>
+              <div class="blog-personal-note-body">
+                <span class="blog-personal-note-name">Özlem Çimen — Koçtan not</span>
+                <p>En sık duyduğum cümle: "Zaten daha bir yılım var." Dubai'de bir yıl, bazı okullar için geç bile sayılabilir. Repton'da arama yaptığımda bana şunu söylediler: "Bekleme listemiz şu an 14 aylık." Bu bilgiyi erkenden öğrenen aileler kazanıyor.</p>
+              </div>
+            </div>
+
+            <h2>Dubai Akademik Takvimi: Okullar Hangi Tarihlerde Başlar?</h2>
+
+            <p>Dubai'deki uluslararası okulların büyük çoğunluğu İngiliz okul modelini izler ve akademik yıl üç döneme bölünür:</p>
+
+            <div class="blog-verdict">
+              <h3>2026–2027 Term Tarihleri (Tipik İngiliz Müfredatlı Okullar)</h3>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">1. Dönem (Autumn Term)</span>
+                <span class="blog-verdict-val">Eylül başı – Kasım ortası / Aralık başı</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">Kış tatili</span>
+                <span class="blog-verdict-val">Aralık ortası – Ocak başı (~2.5 hafta)</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">2. Dönem (Spring Term)</span>
+                <span class="blog-verdict-val">Ocak başı – Mart sonu</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">Bahar tatili</span>
+                <span class="blog-verdict-val">Nisan başı – Nisan ortası (~2 hafta)</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">3. Dönem (Summer Term)</span>
+                <span class="blog-verdict-val">Nisan ortası – Haziran sonu</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">Yaz tatili</span>
+                <span class="blog-verdict-val">Temmuz – Ağustos (yaklaşık 8 hafta)</span>
+              </div>
+            </div>
+
+            <div class="blog-callout">
+              <strong>Amerikan müfredatlı okullar farklı çalışır:</strong> GEMS American Academy ve benzer okullar iki dönem (semester) sistemini kullanır ve Ağustos ortasında başlayabilir. Başvurmadan önce ilgilendiğiniz okulun kendi akademik takvimini mutlaka kontrol edin.
+            </div>
+
+            <h2>Kayıt Sezonu Ne Zaman Açılır?</h2>
+
+            <p>Kayıt sezonu, okulun KHDA derecesine ve müfredatına göre değişir. Genel kural şudur: ne kadar popüler, o kadar erken başlayın.</p>
+
+            <div class="blog-verdict">
+              <h3>Okul Tipine Göre Başvuru Penceresi</h3>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">KHDA Outstanding IB okulları</span>
+                <span class="blog-verdict-val">Bekleme listesi Temmuz–Eylül'de açılır. Hedef Eylül 2028 için Temmuz 2026'da başvurmanız gerekebilir. Bazı yıl gruplarında (Reception, Y1) liste 2+ yıl dolu.</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">KHDA Outstanding British okulları</span>
+                <span class="blog-verdict-val">Resmi başvurular Eylül–Ekim'de açılır. Bekleme listesi daha önce başlatılabilir. 12–18 ay erken başvuru önerilir.</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">KHDA Good / Very Good okullar</span>
+                <span class="blog-verdict-val">Kasım–Ocak arasında başvurmak çoğunlukla yeterlidir. 6–9 ay öncesinden harekete geçin.</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">Ani/zorunlu taşınma (&lt;3 ay)</span>
+                <span class="blog-verdict-val">KHDA portalındaki "mid-year vacancies" filtresini kullanın. Yıl ortası (Ocak başı) en uygun açık kontenjan dönemidir.</span>
+              </div>
+            </div>
+
+            <div class="blog-callout">
+              <strong>En çok başvurulan KHDA Outstanding okullar ve tahmini bekleme süresi:</strong><br>
+              GEMS Wellington International — 12–18 ay<br>
+              Jumeirah English Speaking School (JESS) — 12–24 ay<br>
+              Repton School Dubai — 10–16 ay<br>
+              Dubai International Academy (IB) — 18–24 ay<br>
+              Safa British School — 8–14 ay
+            </div>
+
+            <div class="blog-post-cta glass" style="margin:2rem 0">
+              <h3>Hangi okula ne zaman başvurmanız gerekiyor?</h3>
+              <p>Çocuğunuzun yaşı ve taşınma tarihinize göre kişisel bir başvuru planı çıkaralım.</p>
+              <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary" style="display:inline-flex">Ücretsiz Görüşme Planla</a>
+            </div>
+
+            <h2>Ay Ay Aksiyon Planı: Eylül 2027 Başlangıcı İçin</h2>
+
+            <p>Dubai'ye Eylül 2027'de başlamayı hedefliyorsanız, şu takvimi referans alın:</p>
+
+            <div class="blog-timeline">
+              <div class="blog-tl-item active">
+                <div class="blog-tl-month">Eyl–Eki 26</div>
+                <div class="blog-tl-label">Araştırma başlat, bekleme listelerine gir</div>
+              </div>
+              <div class="blog-tl-item">
+                <div class="blog-tl-month">Kas–Ara 26</div>
+                <div class="blog-tl-label">Resmi başvurular, okul turları</div>
+              </div>
+              <div class="blog-tl-item">
+                <div class="blog-tl-month">Oca–Mar 27</div>
+                <div class="blog-tl-label">Değerlendirme, kabul mektupları</div>
+              </div>
+              <div class="blog-tl-item">
+                <div class="blog-tl-month">Nis–May 27</div>
+                <div class="blog-tl-label">Kayıt ücreti, yer ayırtma</div>
+              </div>
+              <div class="blog-tl-item">
+                <div class="blog-tl-month">Eyl 27</div>
+                <div class="blog-tl-label">Okul başlangıcı</div>
+              </div>
+            </div>
+
+            <p>Bekleme listesi gerçeğini göz ardı etmeyin. Paralel olarak en az 3 okula başvurun: 1 "hayalindeki" okul, 1 güçlü alternatif, 1 güvenli seçenek. Bu strateji, tek okula bahis koyup hayal kırıklığı yaşayan pek çok ailenin öğrendiği dersi önceden bilmenizi sağlar. Detaylı başvuru stratejisi için <a href="../dubai-okul-bekleme-listesi/">Dubai Okul Bekleme Listesi rehberimize</a> bakın.</p>
+
+            <h2>Yıl Ortasında Taşınıyorsanız: Ocak Kaydı</h2>
+
+            <p>Tüm aileler Eylül'de taşınamaz. İş değişikliği, vize süreci veya başka nedenlerle Ocak, Şubat ya da Mart'ta Dubai'ye gelmeniz gerekebilir. İyi haber: çoğu Dubai okulu yıl ortası kayıt kabul eder.</p>
+
+            <p>En uygun yıl ortası giriş noktası <strong>Ocak başı</strong> — 2. dönemin açılışı. Bu tarihe yetişemezseniz Nisan (3. dönem) da mümkündür, ancak çocuğunuz yaz tatiline yakın bir dönemde adapte olmak zorunda kalır.</p>
+
+            <div class="blog-callout">
+              <strong>Yıl ortası için pratik adımlar:</strong><br>
+              1. KHDA portalına gidin → "Find a school" → "Mid-year vacancies" filtresini açın<br>
+              2. İlgilendiğiniz okulu arayın, admissions offis ile doğrudan konuşun<br>
+              3. Belgelerinizi (Transfer Certificate, transkript, pasaport) önceden hazırlayın — okul kabul ederse hızlı hareket etmeniz gerekecek<br>
+              4. Çocuğunuzun dönem ortasında başlayacağını kabul edin: ilk birkaç hafta adaptasyon zor olabilir, EAL desteği olan okulları önceliklendirin
+            </div>
+
+            <h2>Hangi Belgeler Ne Zaman Hazır Olmalı?</h2>
+
+            <p>Kayıt sezonunu takip etmenin yanı sıra belgelerinizin hazır olması gerekiyor. Türkiye'den alınan okul belgelerinin Apostil ve BAE Konsolosluğu onayından geçmesi zaman aldığından, bu süreci kayıt başvurusundan en az 3–4 ay önce başlatmanızı öneririm. Tam belge listesi ve onay zinciri için <a href="../dubai-okul-kayit-rehberi/">Dubai Okul Kayıt Rehberi</a>'ne bakın.</p>
+
+            <div class="blog-faq">
+              <h2>Sık Sorulan Sorular</h2>
+
+              <div class="faq-item">
+                <h3 class="faq-q">Dubai'de okul kayıt sezonu ne zaman başlar?</h3>
+                <p class="faq-a">Kayıt sezonu genellikle Eylül–Ekim aylarında açılır — bir sonraki yılın Eylül başlangıcı için. KHDA Outstanding okullar bekleme listelerini Temmuz–Ağustos'ta açabilir. Taşınma planınızı biliyorsanız mümkün olan en erken tarihte başvurun.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">Dubai'de okullar hangi ayda başlar?</h3>
+                <p class="faq-a">Dubai'deki uluslararası okulların büyük çoğunluğu Eylül'ün ilk veya ikinci haftasında başlar. Amerikan müfredatlı bazı okullar Ağustos ortasında açılır.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">Dubai okul yılı kaç dönemden oluşur?</h3>
+                <p class="faq-a">Çoğu okul İngiliz modelini izler: üç dönem. 1. dönem Eylül–Kasım, 2. dönem Ocak–Mart, 3. dönem Nisan–Haziran. Amerikan müfredatlı okullar iki dönem kullanabilir.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">Yıl ortasında Dubai'ye taşınırsam okul bulabilir miyim?</h3>
+                <p class="faq-a">Evet, çoğu okul yıl ortası kaydı kabul eder ancak kontenjan kısıtlıdır. Ocak başı (2. dönem) en uygun giriş noktasıdır. KHDA portalındaki "mid-year vacancies" filtresiyle açık yer bulunan okulları görebilirsiniz.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">Başvuru için ne kadar erken harekete geçmeliyim?</h3>
+                <p class="faq-a">KHDA Outstanding okullar için taşınmadan 12–18 ay önce başvurmanız gerekiyor. Good/Very Good dereceli okullar için 6–9 ay çoğunlukla yeterlidir. Emin değilseniz erken başlamak her zaman daha iyidir — başvuru penceresi kapanmaz, bekleme listesi dolar.</p>
+              </div>
+            </div>
+
+            <div class="blog-callout" style="margin-top:2rem">
+              <strong>İlgili rehberler:</strong><br>
+              <a href="../dubai-okul-kayit-rehberi/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai Okul Kayıt Rehberi: Adım Adım Süreç →</a><br>
+              <a href="../dubai-okul-bekleme-listesi/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai Okul Bekleme Listesi: Nasıl Girilir, Ne Zaman Başvurulur? →</a><br>
+              <a href="../dubai-en-iyi-uluslararasi-okullar/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai'de En İyi 23 Uluslararası Okul 2026 →</a>
+            </div>
+
+            <div class="blog-post-cta glass">
+              <h3>Doğru okula, doğru zamanda başvuralım</h3>
+              <p>Özlem Çimen ile ilk görüşmede çocuğunuzun profiline ve taşınma tarihinize göre kişisel bir başvuru planı çıkarabilirsiniz.</p>
+              <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary" style="display:inline-flex">Ücretsiz Görüşme Planla</a>
+              <a href="../../dubai/" class="btn btn-secondary" style="margin-top:0.5rem;display:inline-flex">Dubai Danışmanlık Sayfamız →</a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- EN -->
+        <div class="en-only">
+          <h1 class="blog-post-title">When Does Dubai School Registration Season Open? 2026–2027 Calendar Guide</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">Dubai school registration</span>
+            <span class="blog-seo-tag">Dubai school term dates</span>
+            <span class="blog-seo-tag">KHDA application window</span>
+            <span class="blog-seo-tag">Dubai international school calendar</span>
+          </div>
+
+          <div class="blog-post-body">
+
+            <p>When you start planning a move to Dubai, one of the first practical questions is: <em>"When do I need to start the school registration process?"</em> The answer is almost always earlier than families expect. Schools in Dubai start in September — but for the most sought-after schools, the registration window closes <strong>18 months before that</strong>.</p>
+
+            <div class="blog-personal-note">
+              <picture>
+                <source srcset="../../assets/founder-avatar-300.webp" type="image/webp">
+                <img src="../../assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+              </picture>
+              <div class="blog-personal-note-body">
+                <span class="blog-personal-note-name">Özlem Çimen — A note from the coach</span>
+                <p>The most common thing I hear: "We still have a year." In Dubai, a year can be too late for some schools. When I called Repton recently, they told me: "Our waiting list is currently 14 months long." Families who learn this early are the ones who get their first-choice school.</p>
+              </div>
+            </div>
+
+            <h2>Dubai Academic Calendar: When Do Schools Start?</h2>
+
+            <p>Most international schools in Dubai follow the British school model, with the academic year divided into three terms:</p>
+
+            <div class="blog-verdict">
+              <h3>2026–2027 Term Dates (Typical British-curriculum Schools)</h3>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">Autumn Term</span>
+                <span class="blog-verdict-val">Early September – mid/late November</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">Winter break</span>
+                <span class="blog-verdict-val">Mid-December – early January (~2.5 weeks)</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">Spring Term</span>
+                <span class="blog-verdict-val">Early January – end of March</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">Spring break</span>
+                <span class="blog-verdict-val">Early April – mid-April (~2 weeks)</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">Summer Term</span>
+                <span class="blog-verdict-val">Mid-April – late June</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">Summer break</span>
+                <span class="blog-verdict-val">July – August (approx. 8 weeks)</span>
+              </div>
+            </div>
+
+            <div class="blog-callout">
+              <strong>American-curriculum schools differ:</strong> GEMS American Academy and similar schools use a two-semester model and may start as early as mid-August. Always check the specific school's own academic calendar before applying.
+            </div>
+
+            <h2>When Does Registration Open?</h2>
+
+            <p>The registration season depends heavily on the school's KHDA rating and curriculum. The core rule: the more popular the school, the earlier you need to start.</p>
+
+            <div class="blog-verdict">
+              <h3>Application Window by School Type</h3>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">KHDA Outstanding IB schools</span>
+                <span class="blog-verdict-val">Waiting lists open July–September. For a September 2028 start you may need to apply by July 2026. Some year groups (Reception, Y1) have 2+ year waiting lists.</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">KHDA Outstanding British schools</span>
+                <span class="blog-verdict-val">Formal applications open September–October. Waiting lists may open earlier. Apply 12–18 months before your target start.</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">KHDA Good / Very Good schools</span>
+                <span class="blog-verdict-val">Applying in November–January is usually sufficient. Start 6–9 months before your target start.</span>
+              </div>
+              <div class="blog-verdict-row">
+                <span class="blog-verdict-label">Urgent / short-notice move (&lt;3 months)</span>
+                <span class="blog-verdict-val">Use the "mid-year vacancies" filter on the KHDA portal. January (start of Spring Term) is the best mid-year entry point.</span>
+              </div>
+            </div>
+
+            <div class="blog-callout">
+              <strong>Typical waiting times at the most popular KHDA Outstanding schools:</strong><br>
+              GEMS Wellington International — 12–18 months<br>
+              Jumeirah English Speaking School (JESS) — 12–24 months<br>
+              Repton School Dubai — 10–16 months<br>
+              Dubai International Academy (IB) — 18–24 months<br>
+              Safa British School — 8–14 months
+            </div>
+
+            <div class="blog-post-cta glass" style="margin:2rem 0">
+              <h3>Which school, and when should you apply?</h3>
+              <p>Let's build a personalised application plan based on your child's age and move date.</p>
+              <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary" style="display:inline-flex">Book a Free Session</a>
+            </div>
+
+            <h2>Month-by-Month Action Plan: September 2027 Start</h2>
+
+            <p>If you're aiming for a September 2027 school start, use this timeline as your reference:</p>
+
+            <div class="blog-timeline">
+              <div class="blog-tl-item active">
+                <div class="blog-tl-month">Sep–Oct 26</div>
+                <div class="blog-tl-label">Research, join waiting lists</div>
+              </div>
+              <div class="blog-tl-item">
+                <div class="blog-tl-month">Nov–Dec 26</div>
+                <div class="blog-tl-label">Formal applications, school tours</div>
+              </div>
+              <div class="blog-tl-item">
+                <div class="blog-tl-month">Jan–Mar 27</div>
+                <div class="blog-tl-label">Assessments, offers received</div>
+              </div>
+              <div class="blog-tl-item">
+                <div class="blog-tl-month">Apr–May 27</div>
+                <div class="blog-tl-label">Enrolment fee, secure place</div>
+              </div>
+              <div class="blog-tl-item">
+                <div class="blog-tl-month">Sep 27</div>
+                <div class="blog-tl-label">School starts</div>
+              </div>
+            </div>
+
+            <p>Don't put all your eggs in one basket. Apply to at least three schools in parallel: one dream school, one strong alternative, one safe option. This is the lesson many families learn too late. For a detailed strategy, see our <a href="../dubai-okul-bekleme-listesi/">Dubai School Waiting List guide</a>.</p>
+
+            <h2>Moving Mid-Year? January Enrolment</h2>
+
+            <p>Not every family can time a September arrival. Job changes, visa processes, or other circumstances may mean you arrive in January, February, or even March. The good news: most Dubai schools accept mid-year enrolment.</p>
+
+            <p>The best mid-year entry point is <strong>early January</strong> — the start of the Spring Term. If you can't make that, April (Summer Term) is possible, though your child will have less time to settle before the summer break.</p>
+
+            <div class="blog-callout">
+              <strong>Practical steps for mid-year enrolment:</strong><br>
+              1. Go to the KHDA portal → "Find a school" → enable the "mid-year vacancies" filter<br>
+              2. Call the admissions office at schools that interest you directly<br>
+              3. Prepare your documents in advance (Transfer Certificate, transcripts, passports) — if a school has a place, you'll need to move quickly<br>
+              4. Prioritise schools with strong EAL programmes — joining mid-term is harder and language support makes a significant difference
+            </div>
+
+            <h2>When Should Your Documents Be Ready?</h2>
+
+            <p>Tracking the registration season is only half the job — your documents also need to be in order. School documents from Turkey require an Apostille and UAE Consulate endorsement, which takes time. Start this process at least 3–4 months before your application date. For the full document checklist and approval chain, see the <a href="../dubai-okul-kayit-rehberi/">Dubai School Registration Guide</a>.</p>
+
+            <div class="blog-faq">
+              <h2>Frequently Asked Questions</h2>
+
+              <div class="faq-item">
+                <h3 class="faq-q">When does Dubai school registration season start?</h3>
+                <p class="faq-a">Registration for the following September typically opens in September–October of the current year. KHDA Outstanding schools may open waiting lists as early as July–August. If you know your move date, apply as early as possible.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">Which month do Dubai schools start?</h3>
+                <p class="faq-a">Most international schools in Dubai start in the first or second week of September. Some American-curriculum schools start as early as mid-August.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">How many terms does the Dubai school year have?</h3>
+                <p class="faq-a">Most schools follow the British model: three terms. Autumn term September–November, Spring term January–March, Summer term April–June. American-curriculum schools may use two semesters.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">Can I enrol my child mid-year if we move to Dubai mid-year?</h3>
+                <p class="faq-a">Yes, most schools accept mid-year enrolment but places are limited. January (start of Spring Term) is the best entry point. Use the KHDA portal's "mid-year vacancies" filter to find schools with available places.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">How early should I start the process?</h3>
+                <p class="faq-a">For KHDA Outstanding schools: 12–18 months before your target start. For Good/Very Good schools: 6–9 months is usually enough. When in doubt, start earlier — the application window doesn't close; the waiting list fills up.</p>
+              </div>
+            </div>
+
+            <div class="blog-callout" style="margin-top:2rem">
+              <strong>Related guides:</strong><br>
+              <a href="../dubai-okul-kayit-rehberi/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai School Registration: Step-by-Step Process →</a><br>
+              <a href="../dubai-okul-bekleme-listesi/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai School Waiting Lists: How to Join and When to Apply →</a><br>
+              <a href="../dubai-en-iyi-uluslararasi-okullar/" style="color:var(--accent,#DBAF2E);font-weight:500;">Best 23 International Schools in Dubai 2026 →</a>
+            </div>
+
+            <div class="blog-post-cta glass">
+              <h3>Let's apply to the right school at the right time</h3>
+              <p>In a first session with Özlem Çimen, we'll build a personalised application plan based on your child's profile and move date.</p>
+              <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary" style="display:inline-flex">Book a Free Session</a>
+              <a href="../../dubai/" class="btn btn-secondary" style="margin-top:0.5rem;display:inline-flex">Our Dubai Consultancy Page →</a>
+            </div>
+
+          </div>
+        </div>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2 class="tr-only">İlgili Yazılar</h2>
+      <h2 class="en-only">Related Posts</h2>
+      <div class="blog-related-grid">
+        <a href="../dubai-okul-kayit-rehberi/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-kayit-sureci.webp" alt="Dubai Okul Kayıt Rehberi" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span class="tr-only">Dubai Okul Kayıt Rehberi: Adım Adım Süreç</span>
+              <span class="en-only">Dubai School Registration: Step-by-Step Guide</span>
+            </div>
+            <div class="blog-related-card-meta tr-only">7 Haziran 2026 · 8 dk</div>
+            <div class="blog-related-card-meta en-only">7 June 2026 · 8 min</div>
+          </div>
+        </a>
+        <a href="../dubai-en-iyi-uluslararasi-okullar/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai.webp" alt="Dubai En İyi Uluslararası Okullar" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span class="tr-only">Dubai'de En İyi 23 Uluslararası Okul 2026</span>
+              <span class="en-only">Best 23 International Schools in Dubai 2026</span>
+            </div>
+            <div class="blog-related-card-meta tr-only">7 Haziran 2026 · 11 dk</div>
+            <div class="blog-related-card-meta en-only">7 June 2026 · 11 min</div>
+          </div>
+        </a>
+        <a href="../dubai-okul-bekleme-listesi/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-kayit-sureci.webp" alt="Dubai Okul Bekleme Listesi" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span class="tr-only">Dubai Okul Bekleme Listesi: Nasıl Girilir?</span>
+              <span class="en-only">Dubai School Waiting Lists: How to Join</span>
+            </div>
+            <div class="blog-related-card-meta tr-only">7 Haziran 2026 · 5 dk</div>
+            <div class="blog-related-card-meta en-only">7 June 2026 · 5 min</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text tr-only">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi, müfredat değerlendirme ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
+          <p class="footer-bio-text en-only">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="tr-only">Hızlı Linkler</h4>
+          <h4 class="en-only">Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/" class="en-only">Home</a><a href="/tr/" class="tr-only">Ana Sayfa</a></li>
+            <li><a href="/neden-biz/" class="en-only">Why Us?</a><a href="/neden-biz/" class="tr-only">Neden Biz?</a></li>
+            <li><a href="/en/#services" class="en-only">Services</a><a href="/tr/#services" class="tr-only">Hizmetler</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/" class="en-only">Book Session</a><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Görüşme Planla</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4 class="tr-only">İletişim</h4>
+          <h4 class="en-only">Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span class="tr-only">Dubai, Birleşik Arap Emirlikleri</span><span class="en-only">Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener">Instagram</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
+        <div><a href="/gizlilik-politikasi/" style="color:inherit;opacity:0.7" class="tr-only">Gizlilik Politikası</a><a href="/gizlilik-politikasi/" style="color:inherit;opacity:0.7" class="en-only">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp sticky -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Merhaba,%20Daha%20fazla%20bilgi%20almak%20istiyorum" target="_blank" rel="noopener noreferrer"
+     class="whatsapp-sticky" aria-label="Chat on WhatsApp"
+     onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- EduBot -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Close">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
+  </div>
+
+  <script src="../../app.js" defer></script>
+</body>
+</html>
