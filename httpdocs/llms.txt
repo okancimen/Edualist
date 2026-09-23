@@ -29,8 +29,8 @@ X / Twitter: https://x.com/OzlemGunayCimen
 
 - [Why Edualist? About the Founder](https://www.edualist.com/neden-biz/): Background, credentials, and the personal expat journey behind Edualist
 - [International School Consulting Service](https://www.edualist.com/uluslararasi-okul-danismanligi/): Transactional service page — school placement, academic coaching, and VIP relocation support with pricing and booking
-- [Blog](https://www.edualist.com/blog/): 48 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
-- [Full article content index](https://www.edualist.com/llms-full.txt): Complete text of all 46 blog articles for LLM indexing
+- [Blog](https://www.edualist.com/blog/): 49 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
+- [Full article content index](https://www.edualist.com/llms-full.txt): Complete text of all blog articles for LLM indexing
 - [AI Chatbot — Ela (EduBot)](https://ai-edualist-com.vercel.app/): Edualist's 24/7 AI advisor for school selection questions, curriculum comparison, and country-specific guidance
 
 ## Blog Articles
@@ -44,6 +44,7 @@ X / Twitter: https://x.com/OzlemGunayCimen
 - [Dubai'ye Gelmeden Önce Bilmeniz Gerekenler](https://www.edualist.com/blog/dubai-gelmeden-once-bilmeniz-gerekenler/): 7 critical things Turkish families must know before relocating to Dubai — school enrollment timing, true costs, curriculum choice, neighbourhood selection, language readiness, and cultural adaptation
 - [Dubai'nin En İyi Uluslararası Okulları](https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/): KHDA Outstanding-rated schools in Dubai for 2023–24 — Best IB schools (Dubai International Academy full PYP+MYP+Diploma, GEMS World Academy, Nord Anglia); Best British schools (JESS, Repton, GEMS Wellington, Kings, Dubai British School, Horizons, DESS, DESC); Best American school (GEMS Dubai American Academy — AP/SAT, only Outstanding American-curriculum school); school-by-neighbourhood breakdown; comparison table
 - [Dubai Okul Kaydı Rehberi](https://www.edualist.com/blog/dubai-okul-kayit-rehberi/): Step-by-step guide to Dubai school registration — application timelines by curriculum (IB Outstanding: 18 months ahead; British Outstanding: 12–18 months; Good/Very Good: 6–9 months; urgent relocation: apply immediately); GEMS Wellington/Repton/JESS waiting lists 12–18 months; required documents; fee ranges 25,000–100,000 AED/year
+- [Dubai'de Okul Kayıt Sezonu Ne Zaman Başlar?](https://www.edualist.com/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/): 2026–2027 Dubai academic calendar and registration season guide — three-term dates (Autumn Sep–Nov, Spring Jan–Mar, Summer Apr–Jun); application windows by school type (KHDA Outstanding IB: 18+ months; Outstanding British: 12–18 months; Good/Very Good: 6–9 months; mid-year: January entry); estimated waiting times at top 5 KHDA schools (GEMS Wellington 12–18 months, JESS 12–24 months, Repton 10–16 months, DIA 18–24 months, Safa British 8–14 months); month-by-month action plan for September 2027 start; mid-year enrolment process and KHDA mid-year vacancies filter
 - [BAE'de Uluslararası Okul Seçimi](https://www.edualist.com/blog/bae-uluslararasi-okul-rehberi/): IB, British, and American curricula compared for UAE families
 - [IB, A-Level, Amerikan Müfredat Karşılaştırması](https://www.edualist.com/blog/ib-alevel-amerikan-mufredat-karsilastirma/): Detailed comparison of major international curricula and university admissions impact
 - [Türkiye Eğitim Sistemi Neden Yetmiyor?](https://www.edualist.com/blog/turkiye-egitim-sistemi-neden-yetmiyor/): Data-driven analysis of Turkey's education system using PISA data
