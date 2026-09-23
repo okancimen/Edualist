@@ -290,6 +290,18 @@ document.addEventListener("DOMContentLoaded", () => {
       sections.forEach(s => sectionObs.observe(s));
     });
 
+    // ── Pricing tab switcher (mobile) ──────────────────────────────────
+    document.querySelectorAll(".pricing-tab-bar").forEach(function(bar) {
+      bar.addEventListener("click", function(e) {
+        const btn = e.target.closest(".pricing-tab");
+        if (!btn) return;
+        bar.querySelectorAll(".pricing-tab").forEach(function(b) { b.classList.remove("active"); });
+        btn.classList.add("active");
+        const table = bar.nextElementSibling && bar.nextElementSibling.querySelector(".pricing-table");
+        if (table) table.classList.toggle("show-pro", btn.dataset.col === "pro");
+      });
+    });
+
   }, 0); // end Task B
 
 });
