@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>try{var _l=localStorage.getItem('edualist_lang');if(_l==='en')document.documentElement.setAttribute('lang','en');}catch(e){}</script>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-secondary{background:0 0;color:var(--primary);border:1.5px solid var(--primary)}.btn-secondary:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:768px){.section{padding:2.5rem 0}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}.blog-seo-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.75rem}.blog-seo-tag{background:hsla(43,60%,52%,.1);color:var(--primary);font-size:.78rem;font-weight:500;padding:.25rem .7rem;border-radius:50px;border:1px solid hsla(43,60%,52%,.2)}.blog-personal-note{display:flex;gap:1rem;background:hsla(212,66%,13%,.04);border-radius:var(--radius-md);padding:1.25rem 1.5rem;margin:1.75rem 0;align-items:flex-start}.blog-personal-note-img{width:52px;height:52px;border-radius:50%;object-fit:cover;flex-shrink:0}.blog-personal-note-body{flex:1}.blog-personal-note-name{font-size:.8rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:.05em;display:block;margin-bottom:.4rem}.blog-verdict{background:hsla(212,66%,13%,.03);border:1px solid hsla(212,66%,13%,.08);border-radius:var(--radius-md);padding:1.5rem;margin:1.75rem 0}.blog-verdict h3{font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--primary)}.blog-verdict-row{display:flex;gap:1rem;padding:.6rem 0;border-bottom:1px solid hsla(212,66%,13%,.06);font-size:.92rem;align-items:flex-start}.blog-verdict-row:last-child{border-bottom:none}.blog-verdict-label{font-weight:600;min-width:220px;flex-shrink:0;color:var(--primary)}.blog-verdict-val{color:var(--text-muted)}.blog-verdict-dot{width:8px;height:8px;background:var(--accent);border-radius:50%;margin-top:.45rem;flex-shrink:0}.blog-faq{margin:2.5rem 0}.blog-faq h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;margin-bottom:1.5rem}.faq-item{border-bottom:1px solid hsla(212,66%,13%,.08);padding:1.1rem 0}.faq-q{font-size:1rem;font-weight:600;color:var(--primary);margin-bottom:.5rem}.faq-a{font-size:.93rem;color:var(--text-muted);line-height:1.7}.blog-post-cta{padding:2rem 2.5rem;border-radius:var(--radius-lg);margin:2.5rem 0}.blog-post-cta h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:700;color:var(--primary);margin-bottom:.6rem}.blog-post-cta p{color:var(--text-muted);margin-bottom:1.25rem;font-size:.97rem}.blog-related-section{padding:3rem 0 4rem;background:var(--bg-warm-secondary)}.blog-related-section h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;color:var(--primary);margin-bottom:2rem;text-align:center}.blog-related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}@media (max-width:900px){.blog-related-grid{grid-template-columns:1fr 1fr}}@media (max-width:600px){.blog-related-grid{grid-template-columns:1fr}.blog-verdict-row{flex-direction:column;gap:.3rem}.blog-verdict-label{min-width:unset}}.blog-related-card{display:block;border-radius:var(--radius-md);overflow:hidden;background:#fff;box-shadow:var(--shadow-sm);transition:var(--transition-smooth)}.blog-related-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}.blog-related-card img{width:100%;height:160px;object-fit:cover}.blog-related-card-body{padding:1rem}.blog-related-card-title{font-size:.95rem;font-weight:600;color:var(--primary);line-height:1.4;margin-bottom:.4rem}.blog-related-card-meta{font-size:.78rem;color:var(--text-muted)}.footer{background:var(--primary);color:var(--text-light);padding:4rem 0 2rem}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}@media (max-width:768px){.footer-grid{grid-template-columns:1fr;gap:2rem}}.footer-bio-col h3{font-family:var(--font-serif);font-size:1.6rem;font-weight:600;margin-bottom:1rem;color:var(--text-light)}.footer-bio-text{font-size:.92rem;color:rgba(255,255,255,.7);line-height:1.7}.footer-links-col h4,.footer-contact-col h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;font-weight:600;color:var(--accent);margin-bottom:1rem}.footer-links{list-style:none;display:flex;flex-direction:column;gap:.6rem}.footer-links a{font-size:.9rem;color:rgba(255,255,255,.75);transition:color .2s}.footer-links a:hover{color:var(--accent)}.footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}.footer-contact-item{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem;color:rgba(255,255,255,.75)}.footer-contact-item svg{flex-shrink:0;stroke:var(--accent);margin-top:.1rem}.footer-contact-item a{color:rgba(255,255,255,.75);transition:color .2s}.footer-contact-item a:hover{color:var(--accent)}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:rgba(255,255,255,.5);flex-wrap:wrap;gap:.75rem}.whatsapp-sticky{position:fixed;bottom:1.5rem;right:1.5rem;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.4);z-index:900;transition:transform .2s,box-shadow .2s}.whatsapp-sticky:hover{transform:scale(1.08);box-shadow:0 6px 20px rgba(37,211,102,.5)}.whatsapp-sticky-label{position:absolute;right:64px;background:#25d366;color:#fff;font-size:.8rem;font-weight:600;padding:.3rem .75rem;border-radius:50px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}.whatsapp-sticky:hover .whatsapp-sticky-label{opacity:1}.chatbot-btn{position:fixed;bottom:1.5rem;left:1.5rem;width:56px;height:56px;background:var(--primary);border-radius:50%;display:flex;align-items:center;justify-content:center;color:var(--accent);box-shadow:var(--shadow-md);z-index:900;border:none;cursor:pointer;transition:transform .2s,box-shadow .2s}.chatbot-btn:hover{transform:scale(1.08)}.chatbot-btn-label{position:absolute;left:64px;background:var(--primary);color:#fff;font-size:.8rem;font-weight:600;padding:.3rem .75rem;border-radius:50px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}.chatbot-btn:hover .chatbot-btn-label{opacity:1}.chatbot-popup{position:fixed;bottom:5rem;left:1.5rem;width:360px;height:500px;border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-lg);z-index:901;background:#fff}.chatbot-popup-header{background:var(--primary);color:#fff;padding:.75rem 1rem;display:flex;justify-content:space-between;align-items:center;font-weight:600;font-size:.95rem}.chatbot-popup-close{background:0 0;border:none;color:#fff;cursor:pointer;font-size:1.1rem;line-height:1}.chatbot-iframe{width:100%;height:calc(100% - 44px);border:none}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai Okul Tatil Tarihleri 2026–2027 | Dönemler ve Resmi Tatiller | Edualist</title>
+  <meta name="description" content="Dubai uluslararası okullarında tatil tarihleri 2026-2027: 3 dönem yapısı, yarı yıl tatilleri, UAE resmi tatiller ve Türk aileler için Türkiye ziyaret planlaması.">
+  <meta name="keywords" content="Dubai okul tatil tarihleri, Dubai okul takvimi 2026-2027, Dubai okulları ne zaman tatil, UAE school holidays, Dubai uluslararası okul tatil, KHDA takvim">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Dubai Okul Tatil Tarihleri 2026–2027 | Dönemler ve Resmi Tatiller">
+  <meta property="og:description" content="Dubai uluslararası okullarının 3 dönem yapısı, yarı yıl tatilleri, UAE resmi tatilleri ve Türk aileler için tatil planlaması.">
+  <meta property="og:url" content="https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/">
+  <meta property="og:image" content="https://www.edualist.com/assets/blog/thumb-dubai.webp">
+  <meta property="article:published_time" content="2026-09-26">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dubai School Holiday Dates 2026–2027">
+  <meta name="twitter:description" content="Dubai international school terms, half-term breaks, UAE public holidays and holiday planning tips for Turkish families.">
+  <meta name="twitter:image" content="https://www.edualist.com/assets/blog/thumb-dubai.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Dubai Okul Tatil Tarihleri 2026–2027",
+    "description": "Dubai uluslararası okullarında 3 dönem yapısı, yarı yıl tatilleri, UAE resmi tatilleri ve Türk aileler için tatil planlaması.",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen",
+      "url": "https://www.edualist.com/neden-biz/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com",
+      "logo": { "@type": "ImageObject", "url": "https://www.edualist.com/assets/favicon.svg" }
+    },
+    "datePublished": "2026-09-26",
+    "dateModified": "2026-09-26",
+    "url": "https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/",
+    "inLanguage": ["tr", "en"],
+    "image": "https://www.edualist.com/assets/blog/thumb-dubai.webp",
+    "mainEntityOfPage": { "@type": "WebPage", "@id": "https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/" }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Dubai'de okul tatil tarihleri ne zaman?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dubai uluslararası okullarında akademik yıl 3 döneme bölünür. 1. Dönem Eylül–Aralık, 2. Dönem Ocak–Mart, 3. Dönem Nisan–Haziran sonu arasıdır. Yaz tatili yaklaşık 9 haftadır (Temmuz–Ağustos)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai okullarında yarı yıl tatili var mı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet. Her dönemin ortasında yaklaşık bir haftalık yarı yıl tatili (half-term break) vardır. 1. Dönem yarı yılı Ekim sonunda, 2. Dönem yarı yılı Şubat ortasında gerçekleşir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'de okullar Ramazan'da kapanıyor mu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Hayır, Dubai'deki uluslararası okullar Ramazan süresince açık kalır. Ancak okul günleri kısaltılır: ders saatleri yaklaşık 1–2 saat kısalır ve bazı etkinlikler askıya alınır. 2027'de Ramazan Şubat–Mart dönemine denk gelecek."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Müfredata göre tatil tarihleri değişiyor mu?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "KHDA tüm özel okullara geçerli bir çerçeve takvim yayımlar. Okullar bu çerçeve içinde kalarak birkaç gün oynayabilir. British müfredat okullarının büyük çoğunluğu KHDA takvimine yakın gider; Amerikan müfredat okulları dönem başlangıçlarında birkaç günlük farklılık gösterebilir."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dubai Okul Tatil Tarihleri 2026–2027", "item": "https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/" }
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@400;500;600&display=swap"></noscript>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/" class="tr-only">Dubai'de Okul</a><a href="/dubai/" class="en-only">Dubai Schools</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Danışmanlık</a><a href="/uluslararasi-okul-danismanligi/" class="en-only">Consultancy</a></li>
+        <li><a href="/blog/" class="nav-blog-highlight tr-only">Blog</a><a href="/blog/" class="nav-blog-highlight en-only">Blog</a></li>
+        <li><a href="/neden-biz/" class="tr-only">Hakkımızda</a><a href="/neden-biz/" class="en-only">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group" aria-label="Dil seçimi">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')" aria-label="Türkçe">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')" aria-label="English">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span class="tr-only">Blog'a Dön</span><span class="en-only">Back to Blog</span>
+      </a>
+      <div class="blog-post-meta">
+        <span>📅 <span class="tr-only">26 Eylül 2026</span><span class="en-only">26 September 2026</span></span>
+        <span>✍️ Özlem Çimen</span>
+        <span>⏱ <span class="tr-only">8 dk okuma</span><span class="en-only">8 min read</span></span>
+        <span>🏷️ <span class="tr-only">Dubai · Okul Takvimi</span><span class="en-only">Dubai · School Calendar</span></span>
+      </div>
+      <h1 class="blog-post-title">
+        <span class="tr-only">Dubai Okul Tatil Tarihleri 2026–2027</span>
+        <span class="en-only">Dubai School Holiday Dates 2026–2027</span>
+      </h1>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-seo-tags">
+          <span class="blog-seo-tag tr-only">Dubai okul tatil tarihleri</span>
+          <span class="blog-seo-tag en-only">Dubai school holiday dates</span>
+          <span class="blog-seo-tag tr-only">Dubai okul takvimi 2026-2027</span>
+          <span class="blog-seo-tag en-only">Dubai school calendar 2026-2027</span>
+          <span class="blog-seo-tag tr-only">UAE resmi tatiller</span>
+          <span class="blog-seo-tag en-only">UAE public holidays</span>
+          <span class="blog-seo-tag tr-only">Dubai dönem tarihleri</span>
+          <span class="blog-seo-tag en-only">Dubai term dates</span>
+        </div>
+
+        <div class="blog-post-body">
+
+          <h2 class="tr-only">Dubai Okul Tatil Tarihleri 2026–2027</h2>
+          <h2 class="en-only">Dubai School Holiday Dates 2026–2027</h2>
+
+          <p class="tr-only">Dubai'deki uluslararası okullar 2026–2027 akademik yılında üç döneme göre çalışır: 1. Dönem Eylül–Aralık 2026, 2. Dönem Ocak–Mart 2027, 3. Dönem Nisan–Haziran 2027. Her dönemin ortasında yaklaşık bir haftalık yarı yıl tatili vardır; yaz tatili ise Temmuz–Ağustos olmak üzere yaklaşık 9 haftayı kapsar. KHDA her yıl çerçeve takvimi yayımlar; okullar bu takvim içinde birkaç günlük esnekliğe sahip olabilir.</p>
+          <p class="en-only">Dubai international schools operate on a three-term calendar in 2026–2027: Term 1 September–December 2026, Term 2 January–March 2027, Term 3 April–June 2027. Each term includes a mid-term half-term break of approximately one week; the summer holiday covers roughly nine weeks in July–August. KHDA publishes a framework calendar annually; individual schools may vary by a few days within that framework.</p>
+
+          <div class="blog-summary tr-only">
+            <strong>Bu yazıda:</strong> 3 dönem tarihleri · yarı yıl tatilleri · UAE resmi tatilleri · Ramazan etkisi · müfredat farklılıkları · Türkiye ziyaret planlaması
+          </div>
+          <div class="blog-summary en-only">
+            <strong>In this article:</strong> Term dates · half-term breaks · UAE public holidays · Ramadan impact · curriculum differences · planning trips to Turkey
+          </div>
+
+          <h2 class="tr-only">3 Dönem Yapısı: Genel Çerçeve</h2>
+          <h2 class="en-only">The Three-Term Structure: Overview</h2>
+
+          <p class="tr-only">Dubai'deki tüm özel uluslararası okullar KHDA (Dubai Bilgi ve İnsan Geliştirme Otoritesi) denetimindedir. KHDA, her yıl tüm okullar için geçerli olan asgari öğretim günü sayısını (185 gün) ve genel tatil çerçevesini belirler. Bu çerçeveye göre akademik yıl üç döneme ayrılır.</p>
+          <p class="en-only">All private international schools in Dubai operate under KHDA (Knowledge and Human Development Authority) oversight. KHDA sets the minimum number of teaching days (185) and the general holiday framework each year. Within this framework, the academic year is divided into three terms.</p>
+
+          <div class="blog-verdict tr-only">
+            <h3>2026–2027 Dönem Takvimi (Genel Çerçeve)</h3>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">1. Dönem (Sonbahar)</div>
+              <div class="blog-verdict-val">~27 Ağustos – 18 Aralık 2026 · Yarı yıl tatili: ~25–29 Ekim</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Kış Tatili</div>
+              <div class="blog-verdict-val">~19 Aralık 2026 – 3 Ocak 2027 (yaklaşık 2 hafta)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">2. Dönem (Bahar)</div>
+              <div class="blog-verdict-val">~4 Ocak – 20 Mart 2027 · Yarı yıl tatili: ~14–18 Şubat</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Bahar Tatili</div>
+              <div class="blog-verdict-val">~21 Mart – 5 Nisan 2027 (yaklaşık 2 hafta)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">3. Dönem (Yaz)</div>
+              <div class="blog-verdict-val">~6 Nisan – 25 Haziran 2027 · Ara tatil yok</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Yaz Tatili</div>
+              <div class="blog-verdict-val">~26 Haziran – 26 Ağustos 2027 (yaklaşık 9 hafta)</div>
+            </div>
+          </div>
+
+          <div class="blog-verdict en-only">
+            <h3>2026–2027 Term Calendar (General Framework)</h3>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Term 1 (Autumn)</div>
+              <div class="blog-verdict-val">~27 Aug – 18 Dec 2026 · Half-term: ~25–29 Oct</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Winter Break</div>
+              <div class="blog-verdict-val">~19 Dec 2026 – 3 Jan 2027 (approx. 2 weeks)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Term 2 (Spring)</div>
+              <div class="blog-verdict-val">~4 Jan – 20 Mar 2027 · Half-term: ~14–18 Feb</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Spring Break</div>
+              <div class="blog-verdict-val">~21 Mar – 5 Apr 2027 (approx. 2 weeks)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Term 3 (Summer)</div>
+              <div class="blog-verdict-val">~6 Apr – 25 Jun 2027 · No half-term break</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Summer Holiday</div>
+              <div class="blog-verdict-val">~26 Jun – 26 Aug 2027 (approx. 9 weeks)</div>
+            </div>
+          </div>
+
+          <div class="blog-callout tr-only">
+            <strong>Önemli not:</strong> Yukarıdaki tarihler KHDA'nın önceki yıllardaki takvim çerçevesine dayanmaktadır. Okulunuzun kesin tatil tarihlerini her yılın başında okuldan veya KHDA'nın resmi web sitesinden doğrulayın.
+          </div>
+          <div class="blog-callout en-only">
+            <strong>Important:</strong> The dates above are based on KHDA's framework from previous years. Always confirm your school's exact holiday calendar directly with the school or via KHDA's official website at the start of each academic year.
+          </div>
+
+          <h2 class="tr-only">UAE Resmi Tatilleri 2026–2027</h2>
+          <h2 class="en-only">UAE Public Holidays 2026–2027</h2>
+
+          <p class="tr-only">BAE'deki uluslararası okullar hem sabit (Miladi takvim) hem de değişken (Hicri takvim) resmi tatillere uymak zorundadır. Sabit tarihli tatilleri planlamak kolaydır; İslami takvime bağlı tatiller ise ay gözlemine göre ± 1–2 gün kayabilir.</p>
+          <p class="en-only">International schools in the UAE observe both fixed (Gregorian) and variable (Hijri calendar) public holidays. Fixed holidays are straightforward to plan around; Islamic calendar holidays can shift ±1–2 days depending on moon sighting.</p>
+
+          <h3 class="tr-only">Sabit Tarihli Resmi Tatiller</h3>
+          <h3 class="en-only">Fixed Public Holidays</h3>
+
+          <div class="blog-verdict tr-only">
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Peygamber'in Doğum Günü (Mevlid)</div>
+              <div class="blog-verdict-val">~Eylül 2026 (Hicri takvim, değişken)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Şehitler Günü (Commemoration Day)</div>
+              <div class="blog-verdict-val">30 Kasım 2026 (sabit)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">BAE Milli Günü</div>
+              <div class="blog-verdict-val">2–3 Aralık 2026 (sabit)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Yılbaşı</div>
+              <div class="blog-verdict-val">1 Ocak 2027 (sabit)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Eid Al Fitr (Ramazan Bayramı)</div>
+              <div class="blog-verdict-val">~9–12 Mart 2027 (değişken, 3 gün)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Eid Al Adha (Kurban Bayramı)</div>
+              <div class="blog-verdict-val">~17–20 Mayıs 2027 (değişken, 3 gün)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">İslam Yeni Yılı (Muharrem 1)</div>
+              <div class="blog-verdict-val">~27 Haziran 2027 (değişken)</div>
+            </div>
+          </div>
+
+          <div class="blog-verdict en-only">
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Prophet's Birthday (Mawlid)</div>
+              <div class="blog-verdict-val">~September 2026 (Hijri, variable)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Commemoration Day</div>
+              <div class="blog-verdict-val">30 November 2026 (fixed)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">UAE National Day</div>
+              <div class="blog-verdict-val">2–3 December 2026 (fixed)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">New Year's Day</div>
+              <div class="blog-verdict-val">1 January 2027 (fixed)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Eid Al Fitr</div>
+              <div class="blog-verdict-val">~9–12 March 2027 (variable, 3 days)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Eid Al Adha</div>
+              <div class="blog-verdict-val">~17–20 May 2027 (variable, 3 days)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Islamic New Year (Muharram 1)</div>
+              <div class="blog-verdict-val">~27 June 2027 (variable)</div>
+            </div>
+          </div>
+
+          <h2 class="tr-only">Ramazan Dönemi: Okullar Nasıl Etkileniyor?</h2>
+          <h2 class="en-only">Ramadan: How Does It Affect Schools?</h2>
+
+          <p class="tr-only">2026–2027 akademik yılında Ramazan Şubat başından Mart başına (~7 Şubat – 8 Mart 2027) denk gelecektir; yani 2. Dönem'in içinde kalır. Uluslararası okullar Ramazan'da kapanmaz; ancak KHDA zorunluluğu gereği ders günleri kısaltılır.</p>
+          <p class="en-only">In 2026–2027, Ramadan falls approximately 7 February – 8 March 2027 — within Term 2. International schools do not close for Ramadan; however, KHDA requires shortened school days throughout the month.</p>
+
+          <h3 class="tr-only">Ramazan'da Tipik Okul Günü</h3>
+          <h3 class="en-only">Typical School Day During Ramadan</h3>
+
+          <ul style="margin:0.5rem 0 1.25rem 1.5rem;color:var(--text-dark);font-size:1.05rem;line-height:2;">
+            <li class="tr-only">Ders saatleri ~1,5–2 saat kısalır (örn. 07:30–13:00)</li>
+            <li class="en-only">School hours shorten by ~1.5–2 hours (e.g., 07:30–13:00)</li>
+            <li class="tr-only">Yemekhaneler açık; Müslüman olmayan öğrenciler ayrı alanlarda yemek yiyebilir</li>
+            <li class="en-only">Canteens stay open; non-Muslim students can eat in designated areas</li>
+            <li class="tr-only">Spor etkinlikleri ve saha gezileri genellikle askıya alınır</li>
+            <li class="en-only">Sports events and field trips are typically suspended</li>
+            <li class="tr-only">Ödev yükü hafifler; sınavlar genellikle Ramazan'a denk getirilmez</li>
+            <li class="en-only">Homework loads reduce; major exams are generally not scheduled during Ramadan</li>
+          </ul>
+
+          <p class="tr-only">Türk ailelerin dikkat etmesi gereken nokta: Ramazan, 2027'de 2. Dönem ortasına denk geldiğinden, bu dönemin ikinci yarısında çocukların akademik temposu yavaşlar. Önemli sınavlar varsa öncesinde hazırlık yapmak önemlidir.</p>
+          <p class="en-only">For Turkish families: since Ramadan 2027 falls in the second half of Term 2, the academic pace slows noticeably. If your child has important assessments in that period, preparation before Ramadan begins is advisable.</p>
+
+          <h2 class="tr-only">Müfredata Göre Takvim Farkları</h2>
+          <h2 class="en-only">Calendar Differences by Curriculum</h2>
+
+          <p class="tr-only">KHDA çerçeve takvimi tüm okullar için bağlayıcıdır; ancak okullar kendi müfredatlarına göre birkaç günlük esnekliğe sahip olabilir.</p>
+          <p class="en-only">The KHDA framework applies to all schools, but individual schools may adjust by a few days based on their curriculum needs.</p>
+
+          <h3 class="tr-only">British Müfredat Okulları</h3>
+          <h3 class="en-only">British Curriculum Schools</h3>
+          <p class="tr-only">GEMS, Repton, Dubai British School gibi okullar KHDA takvimine en yakın şekilde çalışır. 3 dönem + yarı yıl tatilleri formatı İngiltere'deki sistemi yansıtır. İngiliz aileler için alışkın oldukları yapıyla örtüşür.</p>
+          <p class="en-only">Schools like GEMS, Repton and Dubai British School follow the KHDA calendar most closely. The three-term plus half-term format mirrors the England system — familiar for British families and straightforward for Turkish families to adapt to.</p>
+
+          <h3 class="tr-only">Amerikan Müfredat Okulları</h3>
+          <h3 class="en-only">American Curriculum Schools</h3>
+          <p class="tr-only">Amerikan müfredat okulları (örn. American School of Dubai) iki dönemli (semester) sistemi tercih eder. Başlangıç tarihleri birkaç gün farklı olabilir; Şükran Günü (Kasım) ve Bağımsızlık Günü (Temmuz 4) gibi ABD'ye özgü tatiller eklenebilir. Yaz tatili başlangıcı Haziran sonu yerine Haziran ortasına denk gelebilir.</p>
+          <p class="en-only">American curriculum schools (e.g., American School of Dubai) tend to use a semester system. Start dates may differ by a few days; US-specific holidays like Thanksgiving (November) may be observed. Summer break may begin in mid-June rather than late June.</p>
+
+          <h3 class="tr-only">IB Okulları</h3>
+          <h3 class="en-only">IB Schools</h3>
+          <p class="tr-only">IB müfredatı uygulayan okullar genellikle British ya da Amerikan takvim yapısını benimser. IB sınavları (Mayıs) dönem takvimiyle örtüşür; 3. dönemin başı sınav yoğunluğu nedeniyle Nisan'dan itibaren yoğun bir tempo kazanır.</p>
+          <p class="en-only">IB schools typically follow either a British or American term structure. IB exams (May) fall within Term 3; the pace from April onwards is intensive due to exam preparation.</p>
+
+          <h2 class="tr-only">Türk Aileler İçin Türkiye Ziyaret Planlaması</h2>
+          <h2 class="en-only">Planning Turkey Visits — Tips for Turkish Families</h2>
+
+          <p class="tr-only">Dubai'deki Türk ailelerin en sık sorduğu sorulardan biri: "Türkiye'ye ne zaman gidebiliriz?" Dubai okul takvimi ile Türkiye okul takvimi örtüşmediği için bu planlama gerçekten önemli.</p>
+          <p class="en-only">One of the most frequent questions from Turkish families in Dubai: "When can we visit Turkey?" Dubai and Turkey school calendars don't align perfectly — so planning is genuinely important.</p>
+
+          <div class="blog-verdict tr-only">
+            <h3>Türkiye Ziyareti İçin En Uygun Pencereler</h3>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Ekim yarı yıl tatili (~1 hafta)</div>
+              <div class="blog-verdict-val">Kısa; İstanbul uçuşları pahalı olabilir ama mümkün</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Kış tatili – Aralık sonu / Ocak başı (~2 hafta)</div>
+              <div class="blog-verdict-val">En popüler pencere; Yeni Yıl ile çakışır, bilet erken alınmalı</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Bahar tatili – Mart sonu / Nisan başı (~2 hafta)</div>
+              <div class="blog-verdict-val">İdeal; hava güzel, Ramazan Bayramı bu döneme denk gelebilir</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Kurban Bayramı – Mayıs ortası (~3–4 gün)</div>
+              <div class="blog-verdict-val">Kısa ama yurt dışı gezmek için yeterli; Türkiye yoğun olur</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Yaz tatili – Temmuz–Ağustos (~9 hafta)</div>
+              <div class="blog-verdict-val">Ana pencere; çoğu aile tüm yaz Türkiye'de geçirir</div>
+            </div>
+          </div>
+
+          <div class="blog-verdict en-only">
+            <h3>Best Windows for Turkey Visits</h3>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">October half-term (~1 week)</div>
+              <div class="blog-verdict-val">Short but doable; Istanbul flights can be expensive — book early</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Winter break – late Dec / early Jan (~2 weeks)</div>
+              <div class="blog-verdict-val">Most popular window; overlaps with New Year — book flights early</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Spring break – late Mar / early Apr (~2 weeks)</div>
+              <div class="blog-verdict-val">Ideal; good weather, may overlap with Eid Al Fitr</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Eid Al Adha – mid-May (~3–4 days)</div>
+              <div class="blog-verdict-val">Short but workable for a quick visit; Turkey is busy</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Summer holiday – Jul–Aug (~9 weeks)</div>
+              <div class="blog-verdict-val">Main window; most families spend the whole summer in Turkey</div>
+            </div>
+          </div>
+
+          <div class="blog-callout tr-only">
+            <strong>Pratik not:</strong> Dubai okullarının 1 Eylül'de başlaması ile Türkiye okullarının ~11 Eylül'de başlaması arasında yaklaşık 10 günlük bir fark vardır. Bu boşluğu kullanarak bazı aileler Ağustos sonunu Türkiye'de geçirebilir.
+          </div>
+          <div class="blog-callout en-only">
+            <strong>Practical tip:</strong> Dubai schools start around 27 August while Turkish schools start around 11 September — a gap of roughly 10 days. Some families use this window to extend their Turkey trip into late August.
+          </div>
+
+          <h2 class="tr-only">Okulunuzun Kesin Takvimini Nasıl Öğrenirsiniz?</h2>
+          <h2 class="en-only">How to Get Your School's Exact Calendar</h2>
+
+          <p class="tr-only">KHDA çerçeve takvimi bir yol haritası sağlar; ancak okul başına birkaç günlük fark olabilir. Kesin tarihleri şu yollarla öğrenebilirsiniz:</p>
+          <p class="en-only">The KHDA framework gives a roadmap, but individual schools may vary by a few days. Here's how to confirm exact dates:</p>
+
+          <ul style="margin:0.5rem 0 1.25rem 1.5rem;color:var(--text-dark);font-size:1.05rem;line-height:2;">
+            <li class="tr-only">Okulun resmi web sitesindeki "School Calendar" bölümü (genellikle Ağustos'ta güncellenir)</li>
+            <li class="en-only">The school's official website — "School Calendar" section (usually updated in August)</li>
+            <li class="tr-only">Kayıt sırasında size verilecek "Parent Handbook" veya "Welcome Pack"</li>
+            <li class="en-only">The "Parent Handbook" or "Welcome Pack" given during registration</li>
+            <li class="tr-only">Okulun MySchool, GEMS Connect veya benzeri aile portalı</li>
+            <li class="en-only">The school's parent portal (MySchool, GEMS Connect or similar)</li>
+            <li class="tr-only">KHDA'nın resmi sitesi: khda.ae → Private Schools → Academic Calendar</li>
+            <li class="en-only">KHDA's official site: khda.ae → Private Schools → Academic Calendar</li>
+          </ul>
+
+          <!-- CTA 1 -->
+          <div class="blog-post-cta glass">
+            <h3 class="tr-only">Dubai'de hangi okul size uygun?</h3>
+            <h3 class="en-only">Which Dubai school is right for your family?</h3>
+            <p class="tr-only">Okul seçiminde takvim önemli ama tek kıstas değil. KHDA notu, müfredat uyumu, ücret yapısı ve sınıf kapasitesi de hesaba girer. Ücretsiz danışmanlık görüşmesinde tüm bunları birlikte değerlendirelim.</p>
+            <p class="en-only">The calendar matters, but it's not the only factor in school selection. KHDA rating, curriculum fit, fee structure and class availability all play a role. Let's assess them together in a free consultation.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary">
+              <span class="tr-only">Ücretsiz Görüşme Planla</span>
+              <span class="en-only">Book a Free Session</span>
+            </a>
+          </div>
+
+          <h2 class="tr-only">Tatil Takvimini Bilmenin Okul Seçimine Etkisi</h2>
+          <h2 class="en-only">Why the Holiday Calendar Matters for School Selection</h2>
+
+          <p class="tr-only">Tatil takvimi sıradan bir bilgi gibi görünse de okul seçimini doğrudan etkileyebilir. Özellikle şu durumlarda:</p>
+          <p class="en-only">The holiday calendar may seem like a minor detail, but it can directly affect your school choice — especially in these situations:</p>
+
+          <h3 class="tr-only">Küçük Çocuklarda Uyum Süreci</h3>
+          <h3 class="en-only">Settling In for Young Children</h3>
+          <p class="tr-only">3–6 yaş grubunda çocuklar için ilk dönem uzunluğu önemlidir. 1. Dönem 16 haftayla en uzun dönemdir; Ekim tatili bu uzun koşunun ortasında gelen nefes arasıdır. Bazı aileler bu nedenle Amerikan takvimini (daha kısa ara dönemler) tercih ediyor.</p>
+          <p class="en-only">For children aged 3–6, the length of the first term matters for adjustment. Term 1 at 16 weeks is the longest; the October half-term is the mid-run break. Some families prefer the American calendar with shorter interim periods for exactly this reason.</p>
+
+          <h3 class="tr-only">Çalışan Ebeveynlerin Planlama Yükü</h3>
+          <h3 class="en-only">Planning Burden for Working Parents</h3>
+          <p class="tr-only">Çalışan iki ebeveynli ailelerde yarı yıl tatilleri (özellikle 1 haftalık Ekim tatili) ciddi bir lojistik sorun yaratabilir. Okul, bakıcı kapasitesi ya da aile desteği konusunda hazırlıklı olmak gerekir.</p>
+          <p class="en-only">For dual-income families, half-term breaks (especially the one-week October break) can create a genuine logistics challenge. Plan around school holiday cover — childcare, extended family or school holiday programmes.</p>
+
+          <h3 class="tr-only">Türkiye Bağlantısı Kuvvetli Ailelerde Tatil Yönetimi</h3>
+          <h3 class="en-only">Families with Strong Turkey Ties</h3>
+          <p class="tr-only">Türkiye'deki büyükanne büyükbaba ile düzenli görüşmek isteyen aileler için kış tatilinin aralık sonu / ocak başına denk gelmesi büyük avantaj. Bu pencere, Türkiye okul tatiliyle (yılbaşı haftası) tam örtüşür.</p>
+          <p class="en-only">For families who want regular contact with grandparents in Turkey, the winter break falling in late December / early January is a major advantage — it aligns almost perfectly with Turkey's New Year school holiday week.</p>
+
+          <!-- FAQ -->
+          <div class="blog-faq">
+            <h2 class="tr-only">Sıkça Sorulan Sorular</h2>
+            <h2 class="en-only">Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+              <p class="faq-q tr-only">Dubai'de okul tatil tarihleri ne zaman?</p>
+              <p class="faq-q en-only">When are school holidays in Dubai?</p>
+              <p class="faq-a tr-only">Dubai uluslararası okullarında 3 ana tatil dönemi vardır: Kış tatili (~2 hafta, Aralık sonu–Ocak başı), Bahar tatili (~2 hafta, Mart sonu–Nisan başı) ve Yaz tatili (~9 hafta, Temmuz–Ağustos). Bunlara ek olarak her dönemde birer haftalık yarı yıl tatili ve UAE resmi tatilleri eklenir.</p>
+              <p class="faq-a en-only">Dubai international schools have three main holiday periods: Winter break (~2 weeks, late Dec–early Jan), Spring break (~2 weeks, late Mar–early Apr) and Summer holiday (~9 weeks, Jul–Aug). Each term also includes a one-week half-term break, plus UAE public holidays.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q tr-only">Dubai okullarında yarı yıl tatili var mı?</p>
+              <p class="faq-q en-only">Is there a half-term break in Dubai schools?</p>
+              <p class="faq-a tr-only">Evet. 1. Dönem'de Ekim sonunda ve 2. Dönem'de Şubat ortasında yaklaşık birer haftalık yarı yıl tatili (half-term break) vardır. 3. Dönem'de yarı yıl tatili bulunmaz.</p>
+              <p class="faq-a en-only">Yes. Term 1 has a half-term break in late October and Term 2 has one in mid-February — each approximately one week. Term 3 has no half-term break.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q tr-only">Dubai'de okullar Ramazan'da kapanıyor mu?</p>
+              <p class="faq-q en-only">Do schools close for Ramadan in Dubai?</p>
+              <p class="faq-a tr-only">Hayır. Dubai'deki uluslararası okullar Ramazan boyunca açık kalır; ancak ders günleri KHDA kararıyla kısaltılır. Büyük sınavlar ve spor etkinlikleri genellikle bu döneme programlanmaz. 2027 Ramazan'ı yaklaşık 7 Şubat – 8 Mart arasına denk geliyor.</p>
+              <p class="faq-a en-only">No. International schools in Dubai stay open throughout Ramadan, but school hours are shortened by KHDA decision. Major exams and sports events are generally not scheduled during this period. Ramadan 2027 falls approximately 7 February – 8 March.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q tr-only">Müfredata göre tatil tarihleri değişiyor mu?</p>
+              <p class="faq-q en-only">Do holiday dates differ by curriculum?</p>
+              <p class="faq-a tr-only">KHDA çerçeve takvimi tüm okullar için bağlayıcıdır. Okullar bu çerçeve içinde birkaç gün oynayabilir. Amerikan müfredat okulları dönem başlangıcında veya yaz tatili başlangıcında birkaç günlük farklılık gösterebilir; British ve IB okulları KHDA takvimine çok daha yakın gider. Okulunuzun kesin takvimi için okul web sitesini kontrol edin.</p>
+              <p class="faq-a en-only">The KHDA framework calendar is binding for all schools. Schools may vary by a few days within it. American curriculum schools may differ slightly at term starts or the beginning of summer; British and IB schools tend to follow the KHDA calendar very closely. Always check your school's website for exact dates.</p>
+            </div>
+          </div>
+
+          <!-- CTA 2 -->
+          <div class="blog-post-cta glass">
+            <h3 class="tr-only">Okul seçimini erken başlatın</h3>
+            <h3 class="en-only">Start school selection early</h3>
+            <p class="tr-only">KHDA Outstanding kategorisindeki okulların başvuru pencereleri genellikle Eylül–Kasım'da açılır. Tatil planlamasını yaparken başvuru takvimini de göz önünde bulundurmak gerekiyor. Ücretsiz görüşmede her ikisini birlikte planlamak mümkün.</p>
+            <p class="en-only">KHDA Outstanding schools typically open their application windows in September–November. Alongside holiday planning, application timing deserves equal attention. In a free consultation, we can plan both together.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary">
+              <span class="tr-only">Ücretsiz Görüşme Planla</span>
+              <span class="en-only">Book a Free Session</span>
+            </a>
+          </div>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2 class="tr-only">İlgili Rehberler</h2>
+      <h2 class="en-only">Related Guides</h2>
+      <div class="blog-related-grid">
+        <a href="/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-kayit-sureci.webp" alt="Dubai okul kayıt sezonu" width="400" height="160" loading="lazy">
+          <div class="blog-related-card-body">
+            <p class="blog-related-card-title tr-only">Dubai'de Okul Kayıt Sezonu Ne Zaman Başlar?</p>
+            <p class="blog-related-card-title en-only">When Does Dubai's School Registration Season Open?</p>
+            <p class="blog-related-card-meta tr-only">Başvuru takvimleri ve ay ay plan</p>
+            <p class="blog-related-card-meta en-only">Application timelines and month-by-month plan</p>
+          </div>
+        </a>
+        <a href="/blog/khda-notu-nedir/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai.webp" alt="KHDA notu nedir" width="400" height="160" loading="lazy">
+          <div class="blog-related-card-body">
+            <p class="blog-related-card-title tr-only">KHDA Notu Nedir? Outstanding ile Very Good Farkı</p>
+            <p class="blog-related-card-title en-only">What Is a KHDA Rating? Outstanding vs Very Good</p>
+            <p class="blog-related-card-meta tr-only">Dubai okul denetim sistemi</p>
+            <p class="blog-related-card-meta en-only">Dubai school inspection system</p>
+          </div>
+        </a>
+        <a href="/blog/dubai-okul-kayit-rehberi/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-kayit-sureci.webp" alt="Dubai okul kayıt rehberi" width="400" height="160" loading="lazy">
+          <div class="blog-related-card-body">
+            <p class="blog-related-card-title tr-only">Dubai Okul Kaydı: Adım Adım Rehber</p>
+            <p class="blog-related-card-title en-only">Dubai School Registration: Step-by-Step Guide</p>
+            <p class="blog-related-card-meta tr-only">Belgeler, KHDA onayı, süreç</p>
+            <p class="blog-related-card-meta en-only">Documents, KHDA approval, process</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text tr-only">Dubai'ye taşınan Türk aileler için ücretsiz, bağımsız uluslararası okul danışmanlığı.</p>
+          <p class="footer-bio-text en-only">Free, independent international school consultancy for Turkish families relocating to Dubai.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="tr-only">Sayfalar</h4>
+          <h4 class="en-only">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="/dubai/" class="tr-only">Dubai'de Okul</a><a href="/dubai/" class="en-only">Dubai Schools</a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Danışmanlık</a><a href="/uluslararasi-okul-danismanligi/" class="en-only">Consultancy</a></li>
+            <li><a href="/blog/" class="tr-only">Blog</a><a href="/blog/" class="en-only">Blog</a></li>
+            <li><a href="/neden-biz/" class="tr-only">Hakkımızda</a><a href="/neden-biz/" class="en-only">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4 class="tr-only">İletişim</h4>
+          <h4 class="en-only">Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Dubai, UAE</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Edualist. <span class="tr-only">Tüm hakları saklıdır.</span><span class="en-only">All rights reserved.</span></span>
+        <a href="/gizlilik-politikasi/" style="color:rgba(255,255,255,.5)" class="tr-only">Gizlilik Politikası</a>
+        <a href="/gizlilik-politikasi/" style="color:rgba(255,255,255,.5)" class="en-only">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379" target="_blank" rel="noopener" class="whatsapp-sticky" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.124 1.526 5.857L.057 23.215a.75.75 0 0 0 .916.916l5.357-1.469A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.75 9.75 0 0 1-4.984-1.371l-.355-.213-3.683 1.01 1.01-3.684-.213-.354A9.75 9.75 0 1 1 12 21.75z"/></svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <script>
+    function setLang(lang) {
+      document.documentElement.setAttribute('lang', lang);
+      try { localStorage.setItem('edualist_lang', lang); } catch(e){}
+      document.getElementById('langTR').classList.toggle('active', lang === 'tr');
+      document.getElementById('langEN').classList.toggle('active', lang === 'en');
+    }
+    (function(){
+      var l = 'tr';
+      try { l = localStorage.getItem('edualist_lang') || 'tr'; } catch(e){}
+      setLang(l);
+    })();
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
