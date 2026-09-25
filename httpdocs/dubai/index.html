@@ -304,6 +304,15 @@
       align-items: center;
       gap: 0.5rem;
     }
+    .dubai-guides-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem}
+    .dubai-guide-card{display:block;background:#fff;border-radius:var(--radius-md);padding:1.75rem;box-shadow:var(--shadow-sm);border:1px solid var(--border-card);transition:var(--transition-smooth)}
+    .dubai-guide-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:hsla(43,60%,52%,.3)}
+    .dubai-guide-tag{display:inline-block;font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);background:hsla(43,60%,52%,.1);border-radius:50px;padding:.2rem .65rem;margin-bottom:.75rem}
+    .dubai-guide-card h3{font-family:var(--font-serif);font-size:1.1rem;color:var(--primary);margin-bottom:.5rem;line-height:1.35}
+    .dubai-guide-card p{font-size:.88rem;color:var(--text-muted);line-height:1.6;margin-bottom:1rem}
+    .dubai-guide-link{font-size:.85rem;font-weight:600;color:var(--accent)}
+    @media(max-width:900px){.dubai-guides-grid{grid-template-columns:1fr 1fr}}
+    @media(max-width:600px){.dubai-guides-grid{grid-template-columns:1fr}}
   </style>
 
   <script type="application/ld+json">
@@ -705,6 +714,87 @@
             <p class="faq-a tr-only">Evet. Her çocuk için ayrı profil çalışması yapıyoruz — farklı yaş, karakter ve akademik geçmişe göre ayrı değerlendirme ve ayrı okul önerisi sunuyoruz.</p>
             <p class="faq-a en-only">Yes. We create a separate profile for each child — individual assessment and individual school recommendations based on different ages, characters and academic backgrounds.</p>
           </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- DUBAI GUIDES HUB -->
+    <section class="section">
+      <div class="container">
+        <p class="section-subtitle tr-only" style="text-align:center">Ücretsiz Rehberler</p>
+        <p class="section-subtitle en-only" style="text-align:center">Free Guides</p>
+        <h2 class="section-title tr-only" style="text-align:center">Dubai Okul Süreciyle İlgili Her Şey</h2>
+        <h2 class="section-title en-only" style="text-align:center">Everything About Dubai's School Process</h2>
+        <p style="text-align:center;color:var(--text-muted);max-width:620px;margin:0 auto 3rem;font-size:1rem;" class="tr-only">KHDA verilerine dayalı, Türk aileler için hazırlanmış bağımsız rehberler. Okul seçiminden kayıt sürecine her adım burada.</p>
+        <p style="text-align:center;color:var(--text-muted);max-width:620px;margin:0 auto 3rem;font-size:1rem;" class="en-only">Independent guides for Turkish families, based on KHDA data. Every step from school selection to registration — covered here.</p>
+        <div class="dubai-guides-grid">
+
+          <a href="/blog/dubai-egitim-sistemi/" class="dubai-guide-card scroll-reveal">
+            <span class="dubai-guide-tag tr-only">Temel Rehber</span>
+            <span class="dubai-guide-tag en-only">Foundation</span>
+            <h3 class="tr-only">Dubai Eğitim Sistemi Nasıl Çalışır?</h3>
+            <h3 class="en-only">How Does Dubai's Education System Work?</h3>
+            <p class="tr-only">KHDA denetim sistemi, müfredat türleri ve Türk aileler için bilinmesi gerekenler.</p>
+            <p class="en-only">The KHDA inspection system, curriculum types and what Turkish families need to know.</p>
+            <span class="dubai-guide-link tr-only">Rehberi Oku →</span>
+            <span class="dubai-guide-link en-only">Read the Guide →</span>
+          </a>
+
+          <a href="/blog/khda-notu-nedir/" class="dubai-guide-card scroll-reveal">
+            <span class="dubai-guide-tag tr-only">KHDA Analizi</span>
+            <span class="dubai-guide-tag en-only">KHDA Analysis</span>
+            <h3 class="tr-only">KHDA Notu Nedir? Outstanding ile Very Good Farkı</h3>
+            <h3 class="en-only">What Is a KHDA Rating? Outstanding vs Very Good</h3>
+            <p class="tr-only">4 denetim kategorisi, bekleme listesi farkı ve okul seçiminde ne anlama geliyor.</p>
+            <p class="en-only">4 inspection categories, waiting list differences and what the ratings mean for school choice.</p>
+            <span class="dubai-guide-link tr-only">Rehberi Oku →</span>
+            <span class="dubai-guide-link en-only">Read the Guide →</span>
+          </a>
+
+          <a href="/blog/dubai-en-iyi-uluslararasi-okullar/" class="dubai-guide-card scroll-reveal">
+            <span class="dubai-guide-tag tr-only">Okul Seçimi</span>
+            <span class="dubai-guide-tag en-only">School Selection</span>
+            <h3 class="tr-only">Dubai'nin En İyi 23 Uluslararası Okulu</h3>
+            <h3 class="en-only">Dubai's Best 23 International Schools</h3>
+            <p class="tr-only">KHDA Outstanding kategorisindeki okullar, ücretler ve Türk aileler için öneriler.</p>
+            <p class="en-only">KHDA Outstanding schools, fees and recommendations for Turkish families.</p>
+            <span class="dubai-guide-link tr-only">Rehberi Oku →</span>
+            <span class="dubai-guide-link en-only">Read the Guide →</span>
+          </a>
+
+          <a href="/blog/dubai-okul-kayit-rehberi/" class="dubai-guide-card scroll-reveal">
+            <span class="dubai-guide-tag tr-only">Kayıt Süreci</span>
+            <span class="dubai-guide-tag en-only">Registration</span>
+            <h3 class="tr-only">Dubai Okul Kaydı: Adım Adım Rehber</h3>
+            <h3 class="en-only">Dubai School Registration: Step-by-Step Guide</h3>
+            <p class="tr-only">Gerekli belgeler, KHDA onay süreci ve sık yapılan hatalar.</p>
+            <p class="en-only">Required documents, the KHDA approval process and common mistakes to avoid.</p>
+            <span class="dubai-guide-link tr-only">Rehberi Oku →</span>
+            <span class="dubai-guide-link en-only">Read the Guide →</span>
+          </a>
+
+          <a href="/blog/dubai-okul-basvuru-nasil-yapilir/" class="dubai-guide-card scroll-reveal">
+            <span class="dubai-guide-tag tr-only">Başvuru</span>
+            <span class="dubai-guide-tag en-only">Application</span>
+            <h3 class="tr-only">Dubai'de Okul Başvurusu Nasıl Yapılır?</h3>
+            <h3 class="en-only">How to Apply to a Dubai International School</h3>
+            <p class="tr-only">Online form, değerlendirme günü ve kabul mektubu sürecinin tüm adımları.</p>
+            <p class="en-only">Online form, assessment day and every step from application to offer letter.</p>
+            <span class="dubai-guide-link tr-only">Rehberi Oku →</span>
+            <span class="dubai-guide-link en-only">Read the Guide →</span>
+          </a>
+
+          <a href="/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/" class="dubai-guide-card scroll-reveal">
+            <span class="dubai-guide-tag tr-only">Zamanlama</span>
+            <span class="dubai-guide-tag en-only">Timing</span>
+            <h3 class="tr-only">Dubai'de Okul Kayıt Sezonu Ne Zaman Başlar?</h3>
+            <h3 class="en-only">When Does Dubai's School Registration Season Open?</h3>
+            <p class="tr-only">2026–2027 takvim rehberi: Outstanding okullar için pencere ne zaman açılıyor?</p>
+            <p class="en-only">2026–2027 calendar guide: when do Outstanding schools open their application window?</p>
+            <span class="dubai-guide-link tr-only">Rehberi Oku →</span>
+            <span class="dubai-guide-link en-only">Read the Guide →</span>
+          </a>
 
         </div>
       </div>
