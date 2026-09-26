@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>try{var _l=localStorage.getItem('edualist_lang');if(_l==='en')document.documentElement.setAttribute('lang','en');}catch(e){}</script>
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-secondary{background:0 0;color:var(--primary);border:1.5px solid var(--primary)}.btn-secondary:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:768px){.section{padding:2.5rem 0}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}.blog-seo-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.75rem}.blog-seo-tag{background:hsla(43,60%,52%,.1);color:var(--primary);font-size:.78rem;font-weight:500;padding:.25rem .7rem;border-radius:50px;border:1px solid hsla(43,60%,52%,.2)}.blog-verdict{background:hsla(212,66%,13%,.03);border:1px solid hsla(212,66%,13%,.08);border-radius:var(--radius-md);padding:1.5rem;margin:1.75rem 0}.blog-verdict h3{font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--primary)}.blog-verdict-row{display:flex;gap:1rem;padding:.6rem 0;border-bottom:1px solid hsla(212,66%,13%,.06);font-size:.92rem;align-items:flex-start}.blog-verdict-row:last-child{border-bottom:none}.blog-verdict-label{font-weight:600;min-width:200px;flex-shrink:0;color:var(--primary)}.blog-verdict-val{color:var(--text-muted)}.blog-verdict-dot{width:8px;height:8px;background:var(--accent);border-radius:50%;margin-top:.45rem;flex-shrink:0}.blog-faq{margin:2.5rem 0}.blog-faq h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;margin-bottom:1.5rem}.faq-item{border-bottom:1px solid hsla(212,66%,13%,.08);padding:1.1rem 0}.faq-q{font-size:1rem;font-weight:600;color:var(--primary);margin-bottom:.5rem}.faq-a{font-size:.93rem;color:var(--text-muted);line-height:1.7}.blog-post-cta{padding:2rem 2.5rem;border-radius:var(--radius-lg);margin:2.5rem 0}.blog-post-cta h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:700;color:var(--primary);margin-bottom:.6rem}.blog-post-cta p{color:var(--text-muted);margin-bottom:1.25rem;font-size:.97rem}.blog-related-section{padding:3rem 0 4rem;background:var(--bg-warm-secondary)}.blog-related-section h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;color:var(--primary);margin-bottom:2rem;text-align:center}.blog-related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}@media (max-width:900px){.blog-related-grid{grid-template-columns:1fr 1fr}}@media (max-width:600px){.blog-related-grid{grid-template-columns:1fr}.blog-verdict-row{flex-direction:column;gap:.3rem}.blog-verdict-label{min-width:unset}}.blog-related-card{display:block;border-radius:var(--radius-md);overflow:hidden;background:#fff;box-shadow:var(--shadow-sm);transition:var(--transition-smooth)}.blog-related-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}.blog-related-card img{width:100%;height:160px;object-fit:cover}.blog-related-card-body{padding:1rem}.blog-related-card-title{font-size:.95rem;font-weight:600;color:var(--primary);line-height:1.4;margin-bottom:.4rem}.blog-related-card-meta{font-size:.78rem;color:var(--text-muted)}.fee-table{width:100%;border-collapse:collapse;font-size:.92rem;margin:1.5rem 0}.fee-table th{background:var(--primary);color:#fff;padding:.75rem 1rem;text-align:left;font-weight:600;font-size:.85rem}.fee-table td{padding:.65rem 1rem;border-bottom:1px solid hsla(212,66%,13%,.08)}.fee-table tr:nth-child(even) td{background:hsla(212,66%,13%,.02)}.fee-table tr:hover td{background:hsla(43,60%,52%,.08)}.fee-table td:first-child{font-weight:600;color:var(--primary)}.footer{background:var(--primary);color:var(--text-light);padding:4rem 0 2rem}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}@media (max-width:768px){.footer-grid{grid-template-columns:1fr;gap:2rem}}.footer-bio-col h3{font-family:var(--font-serif);font-size:1.6rem;font-weight:600;margin-bottom:1rem;color:var(--text-light)}.footer-bio-text{font-size:.92rem;color:rgba(255,255,255,.7);line-height:1.7}.footer-links-col h4,.footer-contact-col h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;font-weight:600;color:var(--accent);margin-bottom:1rem}.footer-links{list-style:none;display:flex;flex-direction:column;gap:.6rem}.footer-links a{font-size:.9rem;color:rgba(255,255,255,.75);transition:color .2s}.footer-links a:hover{color:var(--accent)}.footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}.footer-contact-item{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem;color:rgba(255,255,255,.75)}.footer-contact-item svg{flex-shrink:0;stroke:var(--accent);margin-top:.1rem}.footer-contact-item a{color:rgba(255,255,255,.75);transition:color .2s}.footer-contact-item a:hover{color:var(--accent)}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:rgba(255,255,255,.5);flex-wrap:wrap;gap:.75rem}.whatsapp-sticky{position:fixed;bottom:1.5rem;right:1.5rem;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.4);z-index:900;transition:transform .2s,box-shadow .2s}.whatsapp-sticky:hover{transform:scale(1.08)}.whatsapp-sticky-label{position:absolute;right:64px;background:#25d366;color:#fff;font-size:.8rem;font-weight:600;padding:.3rem .75rem;border-radius:50px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}.whatsapp-sticky:hover .whatsapp-sticky-label{opacity:1}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai Okul Ücretleri 2026–2027: KHDA ve Müfredada Göre Fiyat Tablosu | Edualist</title>
+  <meta name="description" content="Dubai okul ücretleri 2026-27: KHDA Outstanding okullarda 65.000–100.000 AED, Good okullarda 25.000–50.000 AED. IB, British ve Amerikan müfredatına göre fiyat tablosu ve gizli masraflar.">
+  <meta name="keywords" content="dubai okul ücretleri, dubai okul fiyatları, dubai uluslararası okul ücreti 2026, dubai özel okul fiyatı, KHDA okul ücretleri, IB okul ücreti dubai, british okul ücreti dubai">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.edualist.com/blog/dubai-okul-ucretleri-2026/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-okul-ucretleri-2026/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/blog/dubai-okul-ucretleri-2026/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-okul-ucretleri-2026/">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Dubai Okul Ücretleri 2026–2027: KHDA ve Müfredada Göre Fiyat Tablosu">
+  <meta property="og:description" content="Dubai uluslararası okul ücretleri 2026-27: Outstanding 65k–100k AED, Good 25k–50k AED. IB, British ve Amerikan müfredatına göre tam fiyat tablosu.">
+  <meta property="og:url" content="https://www.edualist.com/blog/dubai-okul-ucretleri-2026/">
+  <meta property="og:image" content="https://www.edualist.com/assets/blog/thumb-dubai-okul.webp">
+  <meta property="article:published_time" content="2026-09-27">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Dubai International School Fees 2026–2027: Full Price Table by KHDA Grade">
+  <meta name="twitter:description" content="Dubai school fees 2026-27: Outstanding schools 65k–100k AED, Good schools 25k–50k AED. Fee table by curriculum and KHDA grade.">
+  <meta name="twitter:image" content="https://www.edualist.com/assets/blog/thumb-dubai-okul.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Dubai Okul Ücretleri 2026–2027: KHDA ve Müfredada Göre Fiyat Tablosu",
+    "description": "Dubai uluslararası okul ücretleri 2026-27: KHDA Outstanding, Very Good ve Good okulların yıllık ücret aralıkları, müfredatlara göre karşılaştırma ve gizli masraflar.",
+    "author": {"@type": "Person", "name": "Özlem Çimen", "url": "https://www.edualist.com/neden-biz/"},
+    "publisher": {"@type": "Organization", "name": "Edualist", "url": "https://www.edualist.com"},
+    "datePublished": "2026-09-27",
+    "dateModified": "2026-09-27",
+    "url": "https://www.edualist.com/blog/dubai-okul-ucretleri-2026/",
+    "inLanguage": ["tr", "en"],
+    "image": "https://www.edualist.com/assets/blog/thumb-dubai-okul.webp"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Dubai'de okul ücreti ne kadar?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Dubai'de uluslararası okul ücretleri 2026-27'de yıllık 25.000–100.000 AED arasında değişir. KHDA Outstanding okullarda 65.000–100.000 AED, Very Good okullarda 40.000–65.000 AED, Good okullarda 25.000–45.000 AED'dir. Servis, üniformalar ve aktiviteler bu fiyatlara dahil değildir."}
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'de IB okul ücreti ne kadar?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Dubai'de IB müfredatlı okulların yıllık ücreti 60.000–100.000 AED arasındadır. KHDA Outstanding IB okulları (Dubai International Academy, GEMS World Academy, Nord Anglia) 75.000–100.000 AED bandındadır. Orta segment IB okulları 55.000–70.000 AED aralığında yer alır."}
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai okul ücretleri her yıl ne kadar artıyor?",
+        "acceptedAnswer": {"@type": "Answer", "text": "KHDA, Dubai'deki özel okulların yıllık ücret artışını denetler ve sınırlar. Okul performansına göre artış oranı belirlenir: Outstanding okullar daha yüksek artış oranı alabilirken Good okullar daha sınırlı artış yapabilir. Bu sistem Türkiye'deki gibi sınırsız yıllık artışların önüne geçer."}
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'de okul ücretlerine neler dahil değil?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Dubai'de okul ücretine genellikle şunlar dahil değildir: okul servisi (yıllık 6.000–9.000 AED), üniformalar (800–1.500 AED), ders kitapları ve malzemeleri (1.000–2.500 AED), kulüp ve aktivite ücretleri (3.000–6.000 AED), okul gezileri (1.500–4.000 AED). Toplam ek maliyet yıllık ücretin %20–30'u kadar olabilir."}
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "Dubai Okul Ücretleri 2026–2027", "item": "https://www.edualist.com/blog/dubai-okul-ucretleri-2026/"}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@400;500;600&display=swap"></noscript>
+</head>
+<body>
+
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/" class="tr-only">Dubai'de Okul</a><a href="/dubai/" class="en-only">Dubai Schools</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Danışmanlık</a><a href="/uluslararasi-okul-danismanligi/" class="en-only">Consultancy</a></li>
+        <li><a href="/blog/" class="nav-blog-highlight tr-only">Blog <span class="nav-count-badge">53</span></a><a href="/blog/" class="nav-blog-highlight en-only">Blog <span class="nav-count-badge">53</span></a></li>
+        <li><a href="/neden-biz/" class="tr-only">Hakkımızda</a><a href="/neden-biz/" class="en-only">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group" aria-label="Dil seçimi">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')" aria-label="Türkçe">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')" aria-label="English">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span class="tr-only">Blog'a Dön</span><span class="en-only">Back to Blog</span>
+      </a>
+      <div class="blog-post-meta">
+        <span>💰 <span class="tr-only">27 Eylül 2026</span><span class="en-only">27 September 2026</span></span>
+        <span>✍️ Özlem Çimen</span>
+        <span>⏱ <span class="tr-only">8 dk okuma</span><span class="en-only">8 min read</span></span>
+        <span>🏷️ <span class="tr-only">Dubai · Okul Ücretleri</span><span class="en-only">Dubai · School Fees</span></span>
+      </div>
+      <h1 class="blog-post-title">
+        <span class="tr-only">Dubai Okul Ücretleri 2026–2027:<br>KHDA ve Müfredada Göre Fiyat Tablosu</span>
+        <span class="en-only">Dubai International School Fees 2026–2027:<br>Full Price Table by KHDA Grade and Curriculum</span>
+      </h1>
+    </div>
+  </section>
+
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-seo-tags">
+          <span class="blog-seo-tag tr-only">Dubai okul ücretleri 2026</span>
+          <span class="blog-seo-tag en-only">Dubai school fees 2026</span>
+          <span class="blog-seo-tag tr-only">Dubai okul fiyatları</span>
+          <span class="blog-seo-tag en-only">Dubai school costs</span>
+          <span class="blog-seo-tag tr-only">KHDA okul ücretleri</span>
+          <span class="blog-seo-tag en-only">KHDA school fees</span>
+          <span class="blog-seo-tag tr-only">IB okul ücreti Dubai</span>
+          <span class="blog-seo-tag en-only">IB school fees Dubai</span>
+        </div>
+
+        <div class="blog-post-body tr-only">
+
+          <h2>Dubai Okul Ücretleri 2026–2027: KHDA Notuna Göre</h2>
+
+          <p>Dubai'de uluslararası okul ücretleri 2026–27'de yıllık <strong>25.000–100.000 AED</strong> aralığında değişir. KHDA Outstanding okullarda 65.000–100.000 AED, Very Good okullarda 40.000–65.000 AED, Good okullarda 25.000–45.000 AED'dir. Bu rakamlar yalnızca öğrenim ücretini kapsar; servis, üniformalar ve aktiviteler hariçtir.</p>
+
+          <div class="blog-summary">
+            <strong>Bu yazıda:</strong> KHDA notuna göre ücret bantları · müfredatlara göre fiyat tablosu · okul bazında örnekler · gizli masraflar · KHDA ücret artış kuralı · Türkiye ile karşılaştırma
+          </div>
+
+          <h2>KHDA Notuna Göre Ücret Bantları</h2>
+
+          <p>Dubai'deki okul ücretlerini anlamanın en güvenilir yolu KHDA (Knowledge and Human Development Authority) denetim sisteminden geçer. Okul kalitesi ile fiyat doğrudan bağlantılıdır.</p>
+
+          <table class="fee-table">
+            <thead>
+              <tr>
+                <th>KHDA Notu</th>
+                <th>Okul Sayısı</th>
+                <th>Yıllık Ücret Aralığı</th>
+                <th>TL Karşılığı (~12,65 TL)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Outstanding ⭐⭐⭐</td>
+                <td>~23 okul</td>
+                <td>65.000–100.000 AED</td>
+                <td>822.000–1.265.000 TL</td>
+              </tr>
+              <tr>
+                <td>Very Good ⭐⭐</td>
+                <td>~72 okul</td>
+                <td>40.000–65.000 AED</td>
+                <td>506.000–822.000 TL</td>
+              </tr>
+              <tr>
+                <td>Good ⭐</td>
+                <td>~64 okul</td>
+                <td>25.000–45.000 AED</td>
+                <td>316.000–569.000 TL</td>
+              </tr>
+              <tr>
+                <td>Acceptable</td>
+                <td>~30 okul</td>
+                <td>15.000–30.000 AED</td>
+                <td>190.000–379.000 TL</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="blog-callout">
+            <strong>KHDA ücret artış kuralı:</strong> KHDA, her okulun yıllık ücret artışını denetler ve sınırlar. Okul performans puanına göre belirlenen artış oranı, Türkiye'deki gibi %40–70 sürpriz artışların önüne geçer. Bu, Dubai'yi bütçe planlaması açısından daha öngörülür kılan en önemli faktördür.
+          </div>
+
+          <h2>Müfredatlara Göre Dubai Okul Ücretleri 2026</h2>
+
+          <table class="fee-table">
+            <thead>
+              <tr>
+                <th>Müfredat</th>
+                <th>Yıllık Ücret Aralığı</th>
+                <th>Örnek Okullar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>IB (Diploma + MYP + PYP)</td>
+                <td>60.000–100.000 AED</td>
+                <td>Dubai International Academy, GEMS World Academy, Nord Anglia</td>
+              </tr>
+              <tr>
+                <td>British (IGCSE / A-Level)</td>
+                <td>45.000–95.000 AED</td>
+                <td>JESS, Repton, GEMS Wellington, Kings School, Safa British</td>
+              </tr>
+              <tr>
+                <td>Amerikan (AP / Common Core)</td>
+                <td>50.000–85.000 AED</td>
+                <td>GEMS Dubai American Academy (DAA)</td>
+              </tr>
+              <tr>
+                <td>British (orta segment)</td>
+                <td>25.000–50.000 AED</td>
+                <td>DESS, DESC, Dubai British School, Horizon</td>
+              </tr>
+              <tr>
+                <td>Hint (CBSE / ICSE)</td>
+                <td>10.000–25.000 AED</td>
+                <td>Indian High School, GEMS Modern Academy</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Popüler Okullarda 2026–27 Ücret Örnekleri</h2>
+
+          <div class="blog-verdict">
+            <h3>KHDA Outstanding Okullar — Yıllık Ücret Aralıkları</h3>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Dubai International Academy (IB)</div>
+              <div class="blog-verdict-val">80.000–95.000 AED · ~1.012.000–1.202.000 TL</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">GEMS Wellington International</div>
+              <div class="blog-verdict-val">68.000–85.000 AED · ~860.000–1.075.000 TL</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Repton School Dubai</div>
+              <div class="blog-verdict-val">65.000–90.000 AED · ~822.000–1.138.000 TL</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">JESS (Jumeirah English Speaking School)</div>
+              <div class="blog-verdict-val">60.000–75.000 AED · ~759.000–949.000 TL</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Kings School Dubai</div>
+              <div class="blog-verdict-val">58.000–72.000 AED · ~734.000–911.000 TL</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Safa Community School</div>
+              <div class="blog-verdict-val">45.000–62.000 AED · ~570.000–784.000 TL</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">GEMS Dubai American Academy (Amerikan)</div>
+              <div class="blog-verdict-val">70.000–85.000 AED · ~885.000–1.075.000 TL</div>
+            </div>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Kur notu:</strong> TL karşılıkları 1 AED = 12,65 TL kuru üzerinden hesaplanmıştır (Eylül 2026). Dubai ücretleri AED cinsinden sabitlendiğinden, TL karşılığı kur değişimlerine göre dalgalanır.
+          </div>
+
+          <h2>Gizli Masraflar: Okul Ücretine Neler Dahil Değil?</h2>
+
+          <p>Dubai'de öğrenci başı gerçek maliyet, bültenin gösterdiğinden %20–30 daha fazladır. Aşağıdakiler çoğunlukla okul ücretine dahil değildir:</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Okul servisi</div>
+              <div class="blog-verdict-val">6.000–9.000 AED/yıl — neredeyse zorunlu (trafik yoğun)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Üniformalar</div>
+              <div class="blog-verdict-val">800–1.500 AED/yıl</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Ders kitapları ve malzemeleri</div>
+              <div class="blog-verdict-val">1.000–2.500 AED/yıl (IB'de daha yüksek)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Kulüp ve aktiviteler</div>
+              <div class="blog-verdict-val">3.000–6.000 AED/yıl</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Okul gezileri</div>
+              <div class="blog-verdict-val">1.500–4.000 AED/yıl</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Kayıt ücreti (tek seferlik)</div>
+              <div class="blog-verdict-val">500–1.500 AED — genellikle iade edilmez</div>
+            </div>
+          </div>
+
+          <p>Outstanding okul için <strong>gerçek yıllık toplam</strong>: 80.000–115.000 AED (~1,0–1,45 milyon TL). Good okul için: 30.000–55.000 AED (~380.000–695.000 TL).</p>
+
+          <!-- CTA 1 -->
+          <div class="blog-post-cta glass">
+            <h3>Bütçenize göre hangi okul uygun?</h3>
+            <p>Ücret bantları önemli ama tek kriter değil. Çocuğunuzun profili, müfredat geçmişi ve bekleme listesi durumuna göre hangi okulların gerçekten ulaşılabilir olduğunu birlikte değerlendirelim.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary">Ücretsiz Görüşme Planla</a>
+          </div>
+
+          <h2>Dubai ile Türkiye Özel Okulu Karşılaştırması</h2>
+
+          <p>2026–27 rakamlarına göre:</p>
+
+          <table class="fee-table">
+            <thead>
+              <tr>
+                <th>Okul</th>
+                <th>Yıllık Ücret</th>
+                <th>Müfredat</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Robert Koleji (TR)</td>
+                <td>2.488.200 TL</td>
+                <td>IB Diploma</td>
+              </tr>
+              <tr>
+                <td>Koç Okulu (TR)</td>
+                <td>1.930.107 TL</td>
+                <td>IB Diploma</td>
+              </tr>
+              <tr>
+                <td>Dubai International Academy (KHDA Outstanding, IB)</td>
+                <td>~1.012.000–1.202.000 TL</td>
+                <td>Tam IB (PYP+MYP+Diploma)</td>
+              </tr>
+              <tr>
+                <td>GEMS Wellington (KHDA Outstanding, British)</td>
+                <td>~860.000–1.075.000 TL</td>
+                <td>IGCSE / A-Level</td>
+              </tr>
+              <tr>
+                <td>Safa Community School (KHDA Outstanding, British)</td>
+                <td>~570.000–784.000 TL</td>
+                <td>IGCSE / A-Level</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="blog-callout">
+            <strong>Önemli fark:</strong> Türkiye'deki okul ücretleri TL bazlı ve enflasyonla bağlantılı — son 3 yılda yıllık %40–70 artış. Dubai'de KHDA ücret artışlarını denetler ve sınırlar. 5 yıllık bütçe planlaması yapılacaksa bu istikrar ciddi bir avantaj.
+          </div>
+
+          <p>Detaylı Türkiye–Dubai karşılaştırması için: <a href="../turkiye-dubai-okul-ucreti-karsilastirma/" style="color:var(--accent);font-weight:600">Türkiye vs Dubai Okul Ücreti Karşılaştırması</a> yazımıza bakabilirsiniz.</p>
+
+          <h2>Dubai'de Okul Ücretlerini Düşürmenin 5 Yolu</h2>
+
+          <h3>1. KHDA Very Good Okul Seçin</h3>
+          <p>Outstanding ile Very Good arasındaki fiyat farkı %20–35. Eğer Outstanding olmak zorunda değilseniz, KHDA Very Good notlu bir okul benzer eğitim kalitesini çok daha uygun fiyata sunar.</p>
+
+          <h3>2. Burslara Başvurun</h3>
+          <p>Birçok Dubai okulu akademik başarı, spor veya sanat bursu sunar. Sibling (kardeş) indirimi de yaygın. Başvurmadan önce her okulu araştırın. Detaylar için: <a href="../dubai-okul-burs-imkanlari/" style="color:var(--accent);font-weight:600">Dubai Okul Bursu İmkânları</a>.</p>
+
+          <h3>3. Şirket Eğitim Yardımından Yararlanın</h3>
+          <p>Dubai'deki pek çok şirket expat çalışanlarına okul yardımı sağlar. İşe başlamadan önce bu kalemi net olarak müzakere edin — yıllık 30.000–60.000 AED fark yaratabilir.</p>
+
+          <h3>4. Öğrencinin Seviyesine Uygun Okul Seçin</h3>
+          <p>Outstanding okul, her çocuk için en doğru ortam değil. Küçük sınıf büyüklüğü ve güçlü EAL programı olan Good/Very Good okul, bazı çocuklar için çok daha uygun başlangıç noktasıdır.</p>
+
+          <h3>5. Erken Başvurun</h3>
+          <p>Bekleme listesine geç girip ikinci tercih okulda ödeme yapmak yerine, 12–18 ay önceden planlama yapın. İstediğiniz okula kabul şansı artar, müzakere gücünüz de.</p>
+
+          <!-- FAQ -->
+          <div class="blog-faq">
+            <h2>Sıkça Sorulan Sorular</h2>
+
+            <div class="faq-item">
+              <p class="faq-q">Dubai'de okul ücreti ne kadar?</p>
+              <p class="faq-a">2026–27'de yıllık 25.000–100.000 AED (yaklaşık 316.000–1.265.000 TL). KHDA Outstanding okullarda 65.000–100.000 AED, Good okullarda 25.000–45.000 AED. Servis, ünifroma ve aktiviteler ekstra.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q">Dubai'de IB okul ücreti ne kadar?</p>
+              <p class="faq-a">Dubai'de IB müfredatlı okulların yıllık ücreti 60.000–100.000 AED arasındadır. KHDA Outstanding IB okulları (DIA, GEMS World Academy, Nord Anglia) 75.000–100.000 AED bandındadır.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q">Dubai'de okul ücretleri her yıl ne kadar artıyor?</p>
+              <p class="faq-a">KHDA, her okulun yıllık ücret artışını denetler. Artış oranı okul performansına göre belirlenir ve duyurulur. Türkiye'deki %40–70 sürpriz artışların aksine Dubai'de öngörülebilir bir bant içinde kalır.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q">Dubai'de okul ücretlerine neler dahil değil?</p>
+              <p class="faq-a">Servis (6.000–9.000 AED/yıl), üniformalar (800–1.500 AED), ders kitapları (1.000–2.500 AED), aktiviteler (3.000–6.000 AED) ve okul gezileri genellikle okul ücretine dahil değildir. Gerçek toplam maliyet, headline ücretin %20–30 üzerindedir.</p>
+            </div>
+          </div>
+
+          <!-- CTA 2 -->
+          <div class="blog-post-cta glass">
+            <h3>Hangi okul bütçenize gerçekten giriyor?</h3>
+            <p>KHDA notu, müfredat ve çocuğunuzun profiline göre gerçekçi bir okul listesi çıkaralım. Bekleme listesi durumunu da dahil ederek planlayalım.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary">Ücretsiz Görüşme Planla</a>
+          </div>
+
+        </div>
+
+        <!-- EN VERSION -->
+        <div class="blog-post-body en-only">
+
+          <h2>Dubai International School Fees 2026–2027 by KHDA Grade</h2>
+
+          <p>Dubai international school fees for 2026–27 range from <strong>AED 25,000 to AED 100,000</strong> per year. KHDA Outstanding schools charge AED 65,000–100,000, Very Good schools AED 40,000–65,000, and Good schools AED 25,000–45,000. These figures cover tuition only — transport, uniforms and activities are charged separately.</p>
+
+          <div class="blog-summary">
+            <strong>In this guide:</strong> Fee bands by KHDA grade · fee table by curriculum · school-by-school examples · hidden costs · KHDA fee increase rules · comparison with Turkey
+          </div>
+
+          <h2>Fee Bands by KHDA Grade</h2>
+
+          <table class="fee-table">
+            <thead>
+              <tr>
+                <th>KHDA Grade</th>
+                <th>No. of Schools</th>
+                <th>Annual Fee Range</th>
+                <th>USD equivalent</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Outstanding ⭐⭐⭐</td>
+                <td>~23 schools</td>
+                <td>AED 65,000–100,000</td>
+                <td>~USD 17,700–27,200</td>
+              </tr>
+              <tr>
+                <td>Very Good ⭐⭐</td>
+                <td>~72 schools</td>
+                <td>AED 40,000–65,000</td>
+                <td>~USD 10,900–17,700</td>
+              </tr>
+              <tr>
+                <td>Good ⭐</td>
+                <td>~64 schools</td>
+                <td>AED 25,000–45,000</td>
+                <td>~USD 6,800–12,200</td>
+              </tr>
+              <tr>
+                <td>Acceptable</td>
+                <td>~30 schools</td>
+                <td>AED 15,000–30,000</td>
+                <td>~USD 4,100–8,200</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="blog-callout">
+            <strong>KHDA fee increase rule:</strong> KHDA regulates and caps annual fee increases for every private school. The permitted increase is linked to the school's inspection performance score. This prevents the unpredictable 40–70% annual jumps common in Turkey's private school market and makes Dubai much more budget-plannable over a 5-year horizon.
+          </div>
+
+          <h2>Dubai School Fees by Curriculum 2026</h2>
+
+          <table class="fee-table">
+            <thead>
+              <tr>
+                <th>Curriculum</th>
+                <th>Annual Fee Range</th>
+                <th>Example Schools</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>IB (Diploma + MYP + PYP)</td>
+                <td>AED 60,000–100,000</td>
+                <td>Dubai International Academy, GEMS World Academy, Nord Anglia</td>
+              </tr>
+              <tr>
+                <td>British (IGCSE / A-Level) top</td>
+                <td>AED 45,000–95,000</td>
+                <td>JESS, Repton, GEMS Wellington, Kings School, Safa British</td>
+              </tr>
+              <tr>
+                <td>American (AP / Common Core)</td>
+                <td>AED 50,000–85,000</td>
+                <td>GEMS Dubai American Academy (DAA)</td>
+              </tr>
+              <tr>
+                <td>British (mid-tier)</td>
+                <td>AED 25,000–50,000</td>
+                <td>DESS, DESC, Dubai British School, Horizon</td>
+              </tr>
+              <tr>
+                <td>Indian (CBSE / ICSE)</td>
+                <td>AED 10,000–25,000</td>
+                <td>Indian High School, GEMS Modern Academy</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h2>Hidden Costs: What Is Not Included in School Fees?</h2>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">School transport (bus)</div>
+              <div class="blog-verdict-val">AED 6,000–9,000/year — near-essential given Dubai traffic</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Uniforms</div>
+              <div class="blog-verdict-val">AED 800–1,500/year</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Textbooks and materials</div>
+              <div class="blog-verdict-val">AED 1,000–2,500/year (higher for IB)</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Clubs and activities</div>
+              <div class="blog-verdict-val">AED 3,000–6,000/year</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">School trips</div>
+              <div class="blog-verdict-val">AED 1,500–4,000/year</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Registration fee (one-off)</div>
+              <div class="blog-verdict-val">AED 500–1,500 — usually non-refundable</div>
+            </div>
+          </div>
+
+          <p><strong>Real annual total</strong> for an Outstanding school: AED 80,000–115,000. For a Good school: AED 30,000–55,000.</p>
+
+          <div class="blog-faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+              <p class="faq-q">How much do international schools cost in Dubai?</p>
+              <p class="faq-a">In 2026–27, annual tuition ranges from AED 25,000 to AED 100,000 (approximately USD 6,800–27,200). KHDA Outstanding schools charge AED 65,000–100,000; Good schools charge AED 25,000–45,000. Transport, uniforms and activities are charged separately.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q">How much do IB schools cost in Dubai?</p>
+              <p class="faq-a">IB curriculum schools in Dubai charge AED 60,000–100,000 per year. KHDA Outstanding IB schools (Dubai International Academy, GEMS World Academy, Nord Anglia) sit in the AED 75,000–100,000 band.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q">Do Dubai school fees increase every year?</p>
+              <p class="faq-a">Yes, but KHDA regulates and caps the annual increase. The permitted rate is linked to the school's inspection performance score. This makes Dubai fees far more predictable than private school fees in Turkey, which have risen 40–70% annually in recent years.</p>
+            </div>
+
+            <div class="faq-item">
+              <p class="faq-q">What is not included in Dubai school fees?</p>
+              <p class="faq-a">Transport (AED 6,000–9,000/year), uniforms (AED 800–1,500), textbooks (AED 1,000–2,500), clubs and activities (AED 3,000–6,000) and school trips are typically not included. The real annual cost is 20–30% above the headline tuition figure.</p>
+            </div>
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Which schools realistically fit your budget?</h3>
+            <p>Fee bands are one input — your child's academic profile, EAL needs and waiting list timing all affect which schools are actually reachable. Let's build a realistic shortlist together.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary">Book a Free Session</a>
+          </div>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <section class="blog-related-section">
+    <div class="container">
+      <h2 class="tr-only">İlgili Rehberler</h2>
+      <h2 class="en-only">Related Guides</h2>
+      <div class="blog-related-grid">
+        <a href="/blog/dubai-en-iyi-uluslararasi-okullar/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-okul.webp" alt="Dubai en iyi uluslararası okullar" width="400" height="160" loading="lazy">
+          <div class="blog-related-card-body">
+            <p class="blog-related-card-title tr-only">Dubai'nin En İyi 23 Uluslararası Okulu</p>
+            <p class="blog-related-card-title en-only">Dubai's Top 23 International Schools</p>
+            <p class="blog-related-card-meta tr-only">KHDA Outstanding tam liste</p>
+            <p class="blog-related-card-meta en-only">Full KHDA Outstanding list</p>
+          </div>
+        </a>
+        <a href="/blog/turkiye-dubai-okul-ucreti-karsilastirma/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-turkiye-dubai-okul.webp" alt="Türkiye Dubai okul ücreti karşılaştırma" width="400" height="160" loading="lazy">
+          <div class="blog-related-card-body">
+            <p class="blog-related-card-title tr-only">Türkiye vs Dubai Okul Ücretleri</p>
+            <p class="blog-related-card-title en-only">Turkey vs Dubai School Fees</p>
+            <p class="blog-related-card-meta tr-only">Robert Kolej, Koç Okulu vs DIA</p>
+            <p class="blog-related-card-meta en-only">Robert Kolej, Koç School vs DIA</p>
+          </div>
+        </a>
+        <a href="/blog/khda-notu-nedir/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-okul.webp" alt="KHDA notu nedir" width="400" height="160" loading="lazy">
+          <div class="blog-related-card-body">
+            <p class="blog-related-card-title tr-only">KHDA Notu Nedir? Outstanding, Very Good, Good Farkı</p>
+            <p class="blog-related-card-title en-only">What Is KHDA Grade? Outstanding vs Very Good vs Good</p>
+            <p class="blog-related-card-meta tr-only">Denetim sistemi ve not skalası</p>
+            <p class="blog-related-card-meta en-only">Inspection system and rating scale</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text tr-only">Dubai ve yurt dışına taşınan Türk aileler için ücretsiz, bağımsız uluslararası okul danışmanlığı.</p>
+          <p class="footer-bio-text en-only">Free, independent international school consultancy for Turkish families relocating abroad.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="tr-only">Sayfalar</h4><h4 class="en-only">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="/dubai/" class="tr-only">Dubai'de Okul</a><a href="/dubai/" class="en-only">Dubai Schools</a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Danışmanlık</a><a href="/uluslararasi-okul-danismanligi/" class="en-only">Consultancy</a></li>
+            <li><a href="/blog/" class="tr-only">Blog</a><a href="/blog/" class="en-only">Blog</a></li>
+            <li><a href="/neden-biz/" class="tr-only">Hakkımızda</a><a href="/neden-biz/" class="en-only">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4 class="tr-only">İletişim</h4><h4 class="en-only">Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Dubai, UAE</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Edualist. <span class="tr-only">Tüm hakları saklıdır.</span><span class="en-only">All rights reserved.</span></span>
+        <a href="/gizlilik-politikasi/" style="color:rgba(255,255,255,.5)" class="tr-only">Gizlilik Politikası</a>
+        <a href="/gizlilik-politikasi/" style="color:rgba(255,255,255,.5)" class="en-only">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=971502709379" target="_blank" rel="noopener" class="whatsapp-sticky" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.124 1.526 5.857L.057 23.215a.75.75 0 0 0 .916.916l5.357-1.469A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.75 9.75 0 0 1-4.984-1.371l-.355-.213-3.683 1.01 1.01-3.684-.213-.354A9.75 9.75 0 1 1 12 21.75z"/></svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <script>
+    function setLang(lang) {
+      document.documentElement.setAttribute('lang', lang);
+      try { localStorage.setItem('edualist_lang', lang); } catch(e){}
+      document.getElementById('langTR').classList.toggle('active', lang === 'tr');
+      document.getElementById('langEN').classList.toggle('active', lang === 'en');
+    }
+    (function(){
+      var l = 'tr';
+      try { l = localStorage.getItem('edualist_lang') || 'tr'; } catch(e){}
+      setLang(l);
+    })();
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
