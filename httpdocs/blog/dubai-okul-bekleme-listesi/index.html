@@ -726,6 +726,25 @@
     </div>
   </footer>
 
-  <script src="../../scripts.js?v=4" defer></script>
+  <script>
+    function setLang(lang) {
+      document.documentElement.setAttribute('lang', lang);
+      try { localStorage.setItem('edualist_lang', lang); } catch(e){}
+      document.getElementById('langTR').classList.toggle('active', lang === 'tr');
+      document.getElementById('langEN').classList.toggle('active', lang === 'en');
+    }
+    (function(){
+      var l = 'tr';
+      try { l = localStorage.getItem('edualist_lang') || 'tr'; } catch(e){}
+      setLang(l);
+    })();
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>
