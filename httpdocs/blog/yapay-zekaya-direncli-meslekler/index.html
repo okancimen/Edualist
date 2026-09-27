@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <script>try{var _l=localStorage.getItem('edualist_lang');if(_l==='en')document.documentElement.setAttribute('lang','en');}catch(e){}</script>
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-secondary{background:0 0;color:var(--primary);border:1.5px solid var(--primary)}.btn-secondary:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (max-width:768px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%)}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}.blog-post-body ul,.blog-post-body ol{margin:1rem 0 1.25rem 1.5rem;line-height:2}.blog-seo-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.75rem}.blog-seo-tag{background:hsla(43,60%,52%,.1);color:var(--primary);font-size:.78rem;font-weight:500;padding:.25rem .7rem;border-radius:50px;border:1px solid hsla(43,60%,52%,.2)}.blog-verdict{background:hsla(212,66%,13%,.03);border:1px solid hsla(212,66%,13%,.08);border-radius:var(--radius-md);padding:1.5rem;margin:1.75rem 0}.blog-verdict h3{font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--primary)}.blog-verdict-row{display:flex;gap:1rem;padding:.6rem 0;border-bottom:1px solid hsla(212,66%,13%,.06);font-size:.92rem;align-items:flex-start}.blog-verdict-row:last-child{border-bottom:none}.blog-verdict-label{font-weight:600;min-width:220px;flex-shrink:0;color:var(--primary)}.blog-verdict-val{color:var(--text-muted)}.blog-verdict-dot{width:8px;height:8px;background:var(--accent);border-radius:50%;margin-top:.45rem;flex-shrink:0}.blog-faq{margin:2.5rem 0}.blog-faq h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;margin-bottom:1.5rem}.faq-item{border-bottom:1px solid hsla(212,66%,13%,.08);padding:1.1rem 0}.faq-q{font-size:1rem;font-weight:600;color:var(--primary);margin-bottom:.5rem}.faq-a{font-size:.93rem;color:var(--text-muted);line-height:1.7}.blog-post-cta{padding:2rem 2.5rem;border-radius:var(--radius-lg);margin:2.5rem 0}.blog-post-cta h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:700;color:var(--primary);margin-bottom:.6rem}.blog-post-cta p{color:var(--text-muted);margin-bottom:1.25rem;font-size:.97rem}.blog-post-cta .cta-btn-row{display:flex;gap:1rem;flex-wrap:wrap}.job-table{width:100%;border-collapse:collapse;font-size:.88rem;margin:1.5rem 0}.job-table th{background:var(--primary);color:#fff;padding:.65rem 1rem;text-align:left;font-weight:600;font-size:.82rem}.job-table td{padding:.55rem 1rem;border-bottom:1px solid hsla(212,66%,13%,.07)}.job-table tr:nth-child(even) td{background:hsla(212,66%,13%,.02)}.job-table tr:hover td{background:hsla(43,60%,52%,.07)}.job-table td:first-child{font-weight:600;color:var(--primary)}.job-table .growth{color:#1a7f4b;font-weight:600}.category-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.25rem;margin:1.5rem 0}@media (max-width:600px){.category-grid{grid-template-columns:1fr}}.category-card{background:rgba(11,33,58,.03);border:1px solid rgba(11,33,58,.08);border-radius:var(--radius-md);padding:1.25rem}.category-card-icon{font-size:1.6rem;margin-bottom:.5rem}.category-card-title{font-weight:700;color:var(--primary);font-size:1rem;margin-bottom:.4rem}.category-card-list{font-size:.85rem;color:var(--text-muted);line-height:1.9}.step-list{counter-reset:steps;list-style:none;margin:1rem 0 1.5rem 0;padding:0}.step-item{counter-increment:steps;display:flex;gap:1rem;align-items:flex-start;padding:.85rem 0;border-bottom:1px solid hsla(212,66%,13%,.06)}.step-item:last-child{border-bottom:none}.step-num{background:var(--primary);color:var(--accent);font-family:var(--font-serif);font-weight:700;font-size:1rem;width:32px;height:32px;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:.1rem}.step-text{font-size:.95rem;color:var(--text-dark);line-height:1.7}.step-text strong{color:var(--primary)}.blog-related-section{padding:3rem 0 4rem;background:var(--bg-warm-secondary)}.blog-related-section h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;color:var(--primary);margin-bottom:2rem;text-align:center}.blog-related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}@media (max-width:900px){.blog-related-grid{grid-template-columns:1fr 1fr}}@media (max-width:600px){.blog-related-grid{grid-template-columns:1fr}}.blog-related-card{display:block;border-radius:var(--radius-md);overflow:hidden;background:#fff;box-shadow:var(--shadow-sm);transition:var(--transition-smooth)}.blog-related-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}.blog-related-card img{width:100%;height:160px;object-fit:cover}.blog-related-card-body{padding:1rem}.blog-related-card-title{font-size:.95rem;font-weight:600;color:var(--primary);line-height:1.4;margin-bottom:.4rem}.blog-related-card-meta{font-size:.78rem;color:var(--text-muted)}.footer{background:var(--primary);color:var(--text-light);padding:4rem 0 2rem}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}@media (max-width:768px){.footer-grid{grid-template-columns:1fr;gap:2rem}}.footer-bio-col h3{font-family:var(--font-serif);font-size:1.6rem;font-weight:600;margin-bottom:1rem;color:var(--text-light)}.footer-bio-text{font-size:.92rem;color:rgba(255,255,255,.7);line-height:1.7}.footer-links-col h4,.footer-contact-col h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;font-weight:600;color:var(--accent);margin-bottom:1rem}.footer-links{list-style:none;display:flex;flex-direction:column;gap:.6rem}.footer-links a{font-size:.9rem;color:rgba(255,255,255,.75);transition:color .2s}.footer-links a:hover{color:var(--accent)}.footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}.footer-contact-item{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem;color:rgba(255,255,255,.75)}.footer-contact-item svg{flex-shrink:0;stroke:var(--accent);margin-top:.1rem}.footer-contact-item a{color:rgba(255,255,255,.75)}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:rgba(255,255,255,.5);flex-wrap:wrap;gap:.75rem}.whatsapp-sticky{position:fixed;bottom:1.5rem;right:1.5rem;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.4);z-index:900;transition:transform .2s}.whatsapp-sticky:hover{transform:scale(1.08)}.whatsapp-sticky-label{position:absolute;right:64px;background:#25d366;color:#fff;font-size:.8rem;font-weight:600;padding:.3rem .75rem;border-radius:50px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s}.whatsapp-sticky:hover .whatsapp-sticky-label{opacity:1}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yapay Zekaya Dirençli 65 Meslek: Amerika Kariyer Enstitüsü Araştırması | Edualist</title>
+  <meta name="description" content="Amerika Kariyer Enstitüsü'nün araştırması: %0 otomasyon riskiyle 65 meslek belirlendi. Sağlık, eğitim ve yaratıcı alanlar önde. Çocuğunuzun geleceği için hangi yetenekler geliştirilmeli?">
+  <meta name="keywords" content="yapay zekaya dirençli meslekler, otomasyon riski düşük meslekler, gelecekte geçerli meslekler, yapay zeka iş riski, çocuk kariyer planlaması, AI proof jobs">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="Yapay Zekaya Dirençli 65 Meslek: Amerika Kariyer Enstitüsü Araştırması">
+  <meta property="og:description" content="%0 otomasyon riskiyle 65 meslek: Nurse Practitioners %40 büyüme, Fizik Tedavi Uzmanları %11. Duygusal zeka, yaratıcılık ve insan teması algoritmanın yapamadığı şeyler.">
+  <meta property="og:url" content="https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/">
+  <meta property="og:image" content="https://www.edualist.com/assets/blog/thumb-dubai-okul.webp">
+  <meta property="article:published_time" content="2026-09-28">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="65 Jobs Safe from AI Automation — US Career Institute Research: What It Means for Your Child">
+  <meta name="twitter:description" content="US Career Institute identifies 65 jobs with 0% automation risk. Nurse Practitioners growing 40%. What skills should your child develop? A parent's action guide.">
+  <meta name="twitter:image" content="https://www.edualist.com/assets/blog/thumb-dubai-okul.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Yapay Zekaya Dirençli 65 Meslek: Amerika Kariyer Enstitüsü Araştırması ve Çocuğunuz İçin Ne Anlama Geliyor",
+    "description": "Amerika Kariyer Enstitüsü'nün araştırmasına göre %0 otomasyon riskiyle 65 meslek belirlendi. Sağlık, eğitim ve yaratıcı alanlarda büyüme hızlanıyor. Ebeveynler için pratik kariyer planlama rehberi.",
+    "author": {"@type": "Person", "name": "Özlem Çimen", "url": "https://www.edualist.com/neden-biz/"},
+    "publisher": {"@type": "Organization", "name": "Edualist", "url": "https://www.edualist.com"},
+    "datePublished": "2026-09-28",
+    "dateModified": "2026-09-28",
+    "url": "https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/",
+    "inLanguage": ["tr", "en"],
+    "image": "https://www.edualist.com/assets/blog/thumb-dubai-okul.webp"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Yapay zekadan etkilenmeyen meslekler hangileri?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Amerika Kariyer Enstitüsü'nün araştırmasına göre %0 otomasyon riskiyle öne çıkan 5 alan: sağlık (hemşire pratisyenler, fizyoterapistler, cerrahlar), ruh sağlığı (psikolojik danışmanlar, aile terapistleri), eğitim (öğretim görevlileri, okul yöneticileri), yaratıcı alanlar (mimarlar, iç mimarlar, koreograflar) ve acil müdahale (itfaiyeciler, paramedikler). Bu mesleklerin ortak özelliği duygusal zeka, değişken görev yapısı ve fiziksel insan temasıdır."}
+      },
+      {
+        "@type": "Question",
+        "name": "Çocuğumun geleceği için hangi yetenekleri geliştirmeliyim?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Otomasyon riskine dirençli kariyer alanlarına göre en kritik 3 yetenek grubu: (1) Duygusal zeka ve empati — sağlık, eğitim ve terapi alanlarında vazgeçilmez. (2) Yaratıcı problem çözme — mimarlık, tasarım, mühendislik. (3) Fiziksel-pratik yetkinlik — cerrahlık, fizyoterapi, acil müdahale. Bu yetkinliklerin gelişimi çocuğun doğal bilişsel profiliyle örtüştüğünde en verimli sonuç alınır."}
+      },
+      {
+        "@type": "Question",
+        "name": "Yapay zekaya dirençli mesleklerde maaşlar ne kadar?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Amerika Kariyer Enstitüsü'nün araştırmasına göre en yüksek ücretli otomasyon-güvenli meslekler: Cerrahlar ve uzman hekimler (yılda 239.200 dolar ve üzeri), Üst düzey yöneticiler (206.420 dolar), Diş hekimleri (172.790 dolar), Fizikçiler (166.290 dolar). En hızlı büyüyen meslek olan Nurse Practitioner (İleri Pratisyen Hemşire) yıllık 129.210 dolar kazanıyor ve 2034'e kadar %40 büyüme öngörülüyor."}
+      },
+      {
+        "@type": "Question",
+        "name": "Hangi müfredat yapay zekaya dirençli kariyerlere hazırlar?",
+        "acceptedAnswer": {"@type": "Answer", "text": "IB (International Baccalaureate) müfredatı, özellikle eleştirel düşünme, araştırma ve disiplinlerarası çalışmayı geliştirmesiyle otomasyon-dirençli kariyer alanlarına en iyi hazırlayan müfredat olarak öne çıkıyor. British A-Level derin uzmanlaşma için, Amerikan AP ise üniversite kredisi transferi için avantaj sağlıyor. Ancak asıl belirleyici olan müfredattan önce çocuğun bilişsel profilidir."}
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/"},
+      {"@type": "ListItem", "position": 3, "name": "Yapay Zekaya Dirençli 65 Meslek", "item": "https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/"}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@400;500;600&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Outfit:wght@400;500;600&display=swap"></noscript>
+</head>
+<body>
+
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/" class="tr-only">Dubai'de Okul</a><a href="/dubai/" class="en-only">Dubai Schools</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Danışmanlık</a><a href="/uluslararasi-okul-danismanligi/" class="en-only">Consultancy</a></li>
+        <li><a href="/blog/" class="nav-blog-highlight tr-only">Blog <span class="nav-count-badge">56</span></a><a href="/blog/" class="nav-blog-highlight en-only">Blog <span class="nav-count-badge">56</span></a></li>
+        <li><a href="/neden-biz/" class="tr-only">Hakkımızda</a><a href="/neden-biz/" class="en-only">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span class="tr-only">Blog'a Dön</span><span class="en-only">Back to Blog</span>
+      </a>
+      <div class="blog-post-meta">
+        <span>🤖 <span class="tr-only">28 Eylül 2026</span><span class="en-only">28 September 2026</span></span>
+        <span>✍️ Özlem Çimen</span>
+        <span>⏱ <span class="tr-only">14 dk okuma</span><span class="en-only">14 min read</span></span>
+        <span>🏷️ <span class="tr-only">Kariyer · Yapay Zeka · Çocuk Geleceği</span><span class="en-only">Career · AI · Child's Future</span></span>
+      </div>
+      <h1 class="blog-post-title">
+        <span class="tr-only">Yapay Zekaya Dirençli 65 Meslek:<br>Amerika Kariyer Enstitüsü Araştırması ve Çocuğunuz İçin Ne Anlama Geliyor</span>
+        <span class="en-only">65 Jobs Safe from AI Automation:<br>US Career Institute Research and What It Means for Your Child</span>
+      </h1>
+    </div>
+  </section>
+
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-seo-tags">
+          <span class="blog-seo-tag tr-only">Yapay zekaya dirençli meslekler</span>
+          <span class="blog-seo-tag en-only">AI-proof jobs</span>
+          <span class="blog-seo-tag tr-only">Otomasyon riski düşük</span>
+          <span class="blog-seo-tag en-only">Low automation risk</span>
+          <span class="blog-seo-tag tr-only">Çocuk kariyer planlaması</span>
+          <span class="blog-seo-tag en-only">Child career planning</span>
+          <span class="blog-seo-tag">US Career Institute 2026</span>
+        </div>
+
+        <!-- TURKISH CONTENT -->
+        <div class="blog-post-body tr-only">
+
+          <h2>Yapay Zekaya Dirençli Meslekler Hangileri?</h2>
+
+          <p>Amerika Kariyer Enstitüsü'nün (US Career Institute) araştırması, "Will Robots Take My Job?" otomasyon risk verilerini ABD Çalışma İstatistikleri Bürosu'nun (BLS) 2024–2034 istihdam büyüme projeksiyonlarıyla birleştirerek <strong>%0 otomasyon riskiyle 65 mesleği</strong> belirledi. Bu meslekler hem yapay zekanın ikame edemeyeceği insan yeteneklerine dayanıyor hem de önümüzdeki on yılda büyümesi öngörülen alanlarda yoğunlaşıyor.</p>
+
+          <p>Listedeki en hızlı büyüyen meslek olan Nurse Practitioner (İleri Pratisyen Hemşire), 2034'e kadar <strong>%40 büyüme</strong> ile listenin ikinci sırasındaki mesleğin büyüme hızının iki katına ulaşıyor. Üst düzey yöneticiler, cerrahlar ve fizikçiler yıllık 166.000–239.000 dolar aralığında gelir elde ederken otomasyon risklerine karşı tam korunaklı durumda.</p>
+
+          <div class="blog-summary">
+            <strong>Bu yazıda:</strong> Araştırmanın metodolojisi · 65 mesleğin 5 ana kategorisi · En hızlı büyüyen ve en yüksek kazandıran 10 meslek · Ortak özellikler: Neden bu meslekler güvende? · Çocuğunuz için pratik 5 adım · Hangi müfredat bu kariyerlere hazırlar
+          </div>
+
+          <h2>Araştırma Hakkında: Metodoloji</h2>
+
+          <p>Amerika Kariyer Enstitüsü'nün bu çalışması iki veri kaynağını birleştiriyor:</p>
+
+          <ul>
+            <li><strong>"Will Robots Take My Job?" platformu</strong> — Her meslek için Oxford Üniversitesi'nin otomasyon risk metodolojisine dayanan otomasyon olasılığı skoru. Listedeki 65 mesleğin tamamı <strong>%0.0 otomasyon olasılığı</strong> alıyor.</li>
+            <li><strong>ABD Çalışma İstatistikleri Bürosu (BLS) 2024–2034 projeksiyonları</strong> — On yıllık istihdam büyümesi öngörüsü. Sıralama bu büyüme hızına göre yapılıyor: en hızlı büyüyen meslek birinci sıraya geliyor.</li>
+          </ul>
+
+          <p>Metodoloji açısından önemli bir not: Araştırma seçim kriteri olarak <em>hem</em> otomasyon direncini <em>hem de</em> istihdam büyümesini kullanıyor. Dolayısıyla bu liste yalnızca "zor otomatize edilecek" meslekleri değil, aynı zamanda önümüzdeki on yılda talep görecek meslekleri gösteriyor. İkisinin kesişimi, çocuğunuzun kariyerini planlarken en sağlam başlangıç noktasını oluşturuyor.</p>
+
+          <h2>65 Mesleğin 5 Ana Kategorisi</h2>
+
+          <div class="category-grid">
+            <div class="category-card">
+              <div class="category-card-icon">🏥</div>
+              <div class="category-card-title">Sağlık ve Terapötik Bakım</div>
+              <div class="category-card-list">
+                İleri Pratisyen Hemşire (%40 büyüme)<br>
+                Fizyoterapist · Ergoterapist<br>
+                Müzik &amp; Sanat Terapisti<br>
+                Cerrahlar (tüm uzmanlıklar)<br>
+                Nörolog · Psikiyatrist · Dermatolog<br>
+                Paramedikal Personel · Ebe
+              </div>
+            </div>
+            <div class="category-card">
+              <div class="category-card-icon">🧠</div>
+              <div class="category-card-title">Ruh Sağlığı ve Sosyal Hizmetler</div>
+              <div class="category-card-list">
+                Ruh Sağlığı Danışmanı (%17 büyüme)<br>
+                Aile ve Evlilik Terapisti<br>
+                Psikiyatri Hemşiresi<br>
+                Klinik Nöropsikolog<br>
+                Ruh Sağlığı Sosyal Hizmet Uzmanı<br>
+                Sağlık Sosyal Hizmet Uzmanı
+              </div>
+            </div>
+            <div class="category-card">
+              <div class="category-card-icon">🎓</div>
+              <div class="category-card-title">Eğitim ve Akademi</div>
+              <div class="category-card-list">
+                Hemşirelik Öğretim Görevlisi (%17 büyüme)<br>
+                Psikoloji Öğretim Görevlisi<br>
+                Mimarlık Öğretim Görevlisi<br>
+                Sosyal Hizmetler Öğretim Görevlisi<br>
+                Sanat, Drama ve Müzik Öğretmeni<br>
+                Okul Yöneticisi (K-12)
+              </div>
+            </div>
+            <div class="category-card">
+              <div class="category-card-icon">🎨</div>
+              <div class="category-card-title">Yaratıcı Alanlar ve Tasarım</div>
+              <div class="category-card-list">
+                Mimar · İç Mimar<br>
+                Peyzaj Mimarı<br>
+                Sahne ve Sergi Tasarımcısı<br>
+                Koreograf<br>
+                Biyomedikal Mühendis<br>
+                İnşaat Mühendisi · Ulaşım Mühendisi
+              </div>
+            </div>
+            <div class="category-card">
+              <div class="category-card-icon">🚒</div>
+              <div class="category-card-title">Kamu Güvenliği ve Bilim</div>
+              <div class="category-card-list">
+                İtfaiyeci · Paramedik<br>
+                Polis Birinci Amir<br>
+                Acil Durum Yöneticisi<br>
+                Şehir ve Bölge Plancısı<br>
+                Fizikçi · Toprak ve Bitki Bilimci<br>
+                Balık ve Av Denetçisi
+              </div>
+            </div>
+            <div class="category-card">
+              <div class="category-card-icon">💼</div>
+              <div class="category-card-title">Liderlik ve Üst Yönetim</div>
+              <div class="category-card-list">
+                Üst Düzey Yönetici (CEO/C-suite)<br>
+                Güvenlik Yöneticisi<br>
+                Spor Antrenörü ve İzci<br>
+                Fitness ve Sağlıklı Yaşam Koordinatörü<br>
+                Ortez-Protez Uzmanı<br>
+                Kentsel Planlama Direktörü
+              </div>
+            </div>
+          </div>
+
+          <h2>En Hızlı Büyüyen ve En Yüksek Kazandıran 10 Meslek</h2>
+
+          <table class="job-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Meslek</th>
+                <th>2034 Büyüme</th>
+                <th>Yıllık Maaş (USD)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>İleri Pratisyen Hemşire</td><td class="growth">%40</td><td>$129,210</td></tr>
+              <tr><td>2</td><td>Fizyoterapist Asistanı (PA)</td><td class="growth">%20</td><td>$133,260</td></tr>
+              <tr><td>3</td><td>Hemşirelik Öğretim Görevlisi</td><td class="growth">%17</td><td>$79,940</td></tr>
+              <tr><td>4</td><td>Ruh Sağlığı Danışmanı</td><td class="growth">%17</td><td>$59,190</td></tr>
+              <tr><td>5</td><td>Ergoterapist</td><td class="growth">%14</td><td>$98,340</td></tr>
+              <tr><td>6</td><td>Ortez-Protez Uzmanı</td><td class="growth">%13</td><td>$78,310</td></tr>
+              <tr><td>7</td><td>Aile ve Evlilik Terapisti</td><td class="growth">%13</td><td>$63,780</td></tr>
+              <tr><td>8</td><td>Ebe (Nurse Midwife)</td><td class="growth">%11</td><td>$128,790</td></tr>
+              <tr><td>9</td><td>Fizyoterapist</td><td class="growth">%11</td><td>$101,020</td></tr>
+              <tr><td>10</td><td>Sanat / Müzik Terapisti</td><td class="growth">%11</td><td>$65,010</td></tr>
+            </tbody>
+          </table>
+
+          <div class="blog-callout">
+            <strong>Dikkat çekici veri:</strong> Liste boyunca en yüksek ücretli meslek grubu <strong>239.200 dolar ve üzeri</strong> kazanan cerrahlar ve uzman hekimlerdir — nörolog, psikiyatrist, dermatolog, ortopedi cerrahı dahil 8'den fazla uzmanlık bu bantta yer alıyor. Üst düzey yöneticiler (CEO ve C-suite) ise 206.420 dolar ile listenin tek kamu-dışı liderlik rolü olarak öne çıkıyor.
+          </div>
+
+          <h2>Neden Bu Meslekler Güvende? 3 Ortak Özellik</h2>
+
+          <h3>1. Duygusal Zeka ve Güven İlişkisi</h3>
+          <p>Araştırmanın temel bulgusu: hızla büyüyen otomasyon-dirençli mesleklerin neredeyse tamamı <em>"bir tür insan bağlantısı içeriyor."</em> Hasta bakımı güven üzerine kurulur. Bir fizyoterapistin hastasıyla kurduğu ilişki, bir aile terapistinin empatiyle dinlemesi, bir öğretmenin öğrencisinin motivasyon düşüşünü fark etmesi — bunlar davranışsal sinyal okuma gerektiren kapasitelerdir ve bugünkü yapay zeka sistemleri bu kapasiteyi güvenilir biçimde taklit edemiyor.</p>
+
+          <p>Duygusal zekanın işlenmesi için beynin prefrontal korteksi ve limbik sistemi arasındaki dinamik entegrasyon gereklidir. Makine öğrenmesi modelleri bu entegrasyonu sınırlı bağlamlarda simüle edebilir ama gerçek zamanlı, yüksek riskli, belirsizlik içeren insan etkileşimlerinde — bir cerrahın ameliyathanedeki kararları, bir terapistin kriz anındaki tepkileri — henüz yetersiz kalmaktadır.</p>
+
+          <h3>2. Yüksek Görev Değişkenliği</h3>
+          <p>Otomasyon, tekrarlayan ve öngörülür görev yapılarında güçlüdür. Listedeki mesleklerin ortak özelliği, her iş gününün farklı bir problem seti içermesidir. Bir acil tıp teknisyeninin sahadaki kararları, bir şehir plancısının paydaş çatışmalarını yönetmesi, bir koreografın toplulukla yarattığı eserin benzersizliği — bunların hiçbiri standartlaştırılabilir rutin değildir. Değişkenlik ne kadar yüksekse, otomasyon o kadar az verimlidir.</p>
+
+          <h3>3. Fiziksel Varlık ve Dokunma</h3>
+          <p>Listedeki sağlık ve güvenlik mesleklerinin büyük çoğunluğu fiziksel varlık gerektirir: cerrahi müdahale, fizik tedavi uygulaması, yangın söndürme operasyonu, acil paramedikal müdahale. Robotik bu alanda ilerleme kaydediyor, ancak karmaşık, dinamik ve duyarsallık gerektiren fiziksel görevlerde insan eli on yıl daha belirleyici olmaya devam edecek.</p>
+
+          <!-- CTA 1: Eduentry -->
+          <div class="blog-post-cta glass">
+            <h3>Çocuğunuz hangi alana yatkın?</h3>
+            <p>Bu 65 meslek bilişsel olarak homojen değil: bir cerrahın uzamsal akıl yürütmesi ile bir terapistin sözel kapasitesi çok farklı profiller. Çocuğunuzun doğal eğilimi hangi kariyer alanıyla örtüşüyor? Eduentry'nin 60–90 dakikalık değerlendirmesi, 4 bilişsel alanda standartlaştırılmış bir profil çıkarıyor.</p>
+            <div class="cta-btn-row">
+              <a href="https://eduentry.com/#academic" target="_blank" rel="noopener" class="btn btn-primary">Çocuğunuzu Değerlendirin</a>
+              <a href="https://eduentry.com/sample-report" target="_blank" rel="noopener" class="btn btn-secondary">Örnek Raporu Görün</a>
+            </div>
+          </div>
+
+          <h2>Bu Araştırma Ebeveyn Olarak Size Ne Söylüyor?</h2>
+
+          <p>Verilere bakıldığında ortaya çıkan tablo şu: Çocuğunuzun kariyerini güvence altına almanın yolu teknik beceri yığını değil, <strong>insan kapasitesini geliştiren bir eğitim yolculuğu</strong>. Ama bu yolculuğu tasarlamadan önce yanıtlamanız gereken üç soru var.</p>
+
+          <h3>Soru 1: Çocuğunuzun doğal eğilimi hangi kategoriye yatkın?</h3>
+          <p>Sağlık ve terapötik bakım meslekleri yüksek sözel akıl yürütme, güçlü empati kapasitesi ve baskı altında sakin kalabilme gerektirir. Mühendislik ve mimarlık uzamsal akıl yürütme ve sayısal akıl yürütme ağırlıklıdır. Yaratıcı ve tasarım alanları sözel-uzamsal birleşimini ödüllendirir. Üst düzey yönetim ise bütünsel bilişsel esneklik ister.</p>
+          <p>Bu dört yetkinlik profilinden hangisinin çocuğunuzda daha belirgin olduğunu sezgisel değil, ölçülebilir biçimde bilmek; kariyer yönlendirmesini somut bir temele oturtmanıza olanak tanır.</p>
+
+          <h3>Soru 2: Seçtiğiniz okul bu kariyerlere hangi müfredatla hazırlar?</h3>
+          <p>Tüm müfredatlar eşit değil. Otomasyon-dirençli kariyer alanlarının gerektirdiği yetkinliklere göre üç sistemi şöyle konumlandırabiliriz:</p>
+
+          <div class="blog-verdict">
+            <h3>Müfredat — Kariyer Uyumu</h3>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">IB Diploma</div>
+              <div class="blog-verdict-val">Eleştirel düşünme (TOK), araştırma (Extended Essay) ve disiplinlerarası yaklaşım — ruh sağlığı, eğitim, mimarlık, üst yönetim için güçlü temel</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">British A-Level</div>
+              <div class="blog-verdict-val">Seçilen 2–4 alanda derinleşme — tıp (Biology+Chemistry), mühendislik (Maths+Physics), hukuk (bütünleşik sosyal bilimler) için ideal</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Amerikan AP</div>
+              <div class="blog-verdict-val">Modüler yapısı geniş kariyer testi imkânı sunar; AP Psychology, AP Biology ve AP Statistics sağlık ve davranış bilimi kariyerleri için doğrudan kredi avantajı</div>
+            </div>
+          </div>
+
+          <h3>Soru 3: Duygusal zeka okulda öğretilebilir mi?</h3>
+          <p>Kısmen evet — ama doğru okul ortamıyla. KHDA Outstanding okul denetimleri, öğrenci kişisel gelişimini (Personal Development) ayrı bir kategori olarak değerlendiriyor. Bu kategori sosyal-duygusal öğrenme programlarını, rehberlik etkinliklerini ve topluluk hizmetini kapsıyor. Çocuğunuzun duygusal zekasını kasıtlı olarak geliştiren bir okul seçmek, listedeki kariyer alanlarına hazırlıkta teknik müfredattan daha belirleyici olabilir.</p>
+
+          <h2>Ebeveyn Olarak Şimdi Atılabilecek 5 Adım</h2>
+
+          <ul class="step-list">
+            <li class="step-item">
+              <div class="step-num">1</div>
+              <div class="step-text"><strong>Çocuğunuzun bilişsel profilini ölçün.</strong> Sezgi yerine veri kullanın. Sözel, sayısal, uzamsal ve sözel olmayan akıl yürütme alanlarındaki güçlü-zayıf profil, hangi kariyer kategorisinin daha az çabayla daha derin ilerleme sağlayacağını gösterir.</div>
+            </li>
+            <li class="step-item">
+              <div class="step-num">2</div>
+              <div class="step-text"><strong>Okul seçiminde duygusal zeka programına bakın.</strong> Teknik ders saatinin yanı sıra rehberlik, topluluk hizmeti ve sosyal-duygusal öğrenme programlarını sorgulayın. Bu, KHDA denetiminde "Personal Development" kategorisinde ölçülen bir kriterdir.</div>
+            </li>
+            <li class="step-item">
+              <div class="step-num">3</div>
+              <div class="step-text"><strong>Müfredatı hedefle hizalayın.</strong> Tıp hedefleniyorsa A-Level Biology + Chemistry kombinasyonu; ruh sağlığı veya eğitim düşünülüyorsa IB'nin TOK + Extended Essay bileşeni; geniş kariyer keşfi isteniyorsa AP'nin modüler yapısı avantajlıdır.</div>
+            </li>
+            <li class="step-item">
+              <div class="step-num">4</div>
+              <div class="step-text"><strong>Erken deneyime yer açın.</strong> Araştırmadaki mesleklerin büyük çoğunluğu gönüllülük, staj veya mentorluk yoluyla erken pratiğe açık: hastane gönüllülüğü, spor antrenörlüğü, topluluk tasarım projeleri. Bu deneyimler üniversite başvurularında da güçlü bir profil oluşturuyor.</div>
+            </li>
+            <li class="step-item">
+              <div class="step-num">5</div>
+              <div class="step-text"><strong>Teknolojiyi rakip değil araç olarak konumlandırın.</strong> Bu listedeki mesleklerin hiçbiri teknolojiyi dışlamıyor — tam tersi, teknoloji araçlarını en etkin kullanan sağlık profesyoneli, mimar veya danışman rekabet avantajını koruyor. Amaç teknolojiyi reddetmek değil, teknolojinin ikame edemeyeceği insan kapasitesini geliştirmektir.</div>
+            </li>
+          </ul>
+
+          <!-- CTA 2: Edualist -->
+          <div class="blog-post-cta glass">
+            <h3>Doğru okul, doğru müfredat, doğru kariyer yolu</h3>
+            <p>Çocuğunuzun bilişsel profili ve hedef kariyer alanına göre hangi okul ve müfredatın en iyi eşleşmeyi sağladığını birlikte değerlendirelim. Dubai, Almanya, İngiltere veya Kanada — bulunduğunuz ya da taşınmayı planladığınız her ülkede geçerli bir yol haritası çıkaralım.</p>
+            <div class="cta-btn-row">
+              <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary">Ücretsiz Görüşme Planla</a>
+              <a href="https://eduentry.com/#academic" target="_blank" rel="noopener" class="btn btn-secondary">Önce Değerlendirme Yap</a>
+            </div>
+          </div>
+
+          <!-- FAQ -->
+          <div class="blog-faq">
+            <h2>Sıkça Sorulan Sorular</h2>
+            <div class="faq-item">
+              <p class="faq-q">Yapay zekadan etkilenmeyen meslekler hangileri?</p>
+              <p class="faq-a">Amerika Kariyer Enstitüsü'nün araştırmasına göre %0 otomasyon riskiyle 65 meslek belirlendi. Öne çıkan kategoriler: sağlık (İleri Pratisyen Hemşire, Fizyoterapist, Cerrahlar), ruh sağlığı (Psikolojik Danışman, Aile Terapisti), eğitim (öğretim görevlileri, okul yöneticileri), yaratıcı-teknik (Mimar, Mühendis, Tasarımcı) ve kamu güvenliği (İtfaiyeci, Paramedik, Polis Yöneticisi).</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-q">Çocuğumun geleceği için hangi yetenekleri geliştirmeliyim?</p>
+              <p class="faq-a">Araştırmadaki mesleklerin ortak paydası üç yetenek kümesi: duygusal zeka ve empati, yüksek görev değişkenliğini yönetme kapasitesi ve yaratıcı problem çözme. Bu yetkinliklerin hangisinin çocuğunuzun doğal profiline daha yakın olduğunu bilmek için standartlaştırılmış bilişsel değerlendirme en güvenilir başlangıç noktasıdır.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-q">Yapay zekaya dirençli mesleklerde maaşlar ne kadar?</p>
+              <p class="faq-a">En yüksek ücretli grup 239.200 dolar ve üzeri kazanan cerrahlar ve uzman hekimler. Üst düzey yöneticiler 206.420 dolar, diş hekimleri 172.790 dolar, fizikçiler 166.290 dolar. En hızlı büyüyen meslek İleri Pratisyen Hemşire 129.210 dolar yıllık maaş ile 2034'e kadar %40 büyüme öngörülüyor.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-q">Hangi müfredat yapay zekaya dirençli kariyerlere en iyi hazırlar?</p>
+              <p class="faq-a">IB Diploma eleştirel düşünme ve araştırma becerileriyle ruh sağlığı, eğitim ve mimarlık için; A-Level tıp ve mühendislik uzmanlaşması için; AP geniş kariyer keşfi ve ABD üniversitelerine kredi transferi için avantajlıdır. Müfredattan önce belirleyici olan çocuğun bilişsel profilidir.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- ENGLISH CONTENT -->
+        <div class="blog-post-body en-only">
+
+          <h2>65 Jobs with Zero Automation Risk: The Research</h2>
+
+          <p>US Career Institute's research combines automation risk scores from "Will Robots Take My Job?" with the Bureau of Labor Statistics (BLS) 2024–2034 employment projections to identify <strong>65 occupations with a 0.0% probability of automation</strong>. These jobs share two characteristics: they resist AI replacement, and they are projected to grow over the next decade.</p>
+
+          <p>The fastest-growing occupation on the list — Nurse Practitioners — is projected to grow by <strong>40% by 2034</strong>, double the growth rate of the second-ranked occupation. At the top of the earnings scale, surgeons and specialist physicians earn $239,200+ annually while carrying zero automation risk.</p>
+
+          <div class="blog-summary">
+            <strong>In this guide:</strong> Research methodology · 5 categories of AI-safe jobs · Top 10 fastest-growing and highest-earning · Why these jobs are protected · 5 practical steps for parents · Which curriculum best prepares children for these careers
+          </div>
+
+          <h2>Research Methodology</h2>
+
+          <p>US Career Institute's study draws on two data sources:</p>
+
+          <ul>
+            <li><strong>"Will Robots Take My Job?" platform</strong> — Automation probability scores based on Oxford University's occupational automation methodology. Every occupation on the list scores exactly <strong>0.0% automation probability</strong>.</li>
+            <li><strong>US Bureau of Labor Statistics (BLS) 2024–2034 projections</strong> — Ten-year employment growth forecasts. Rankings are ordered by this growth rate: fastest-growing occupations rank highest.</li>
+          </ul>
+
+          <p>A methodologically important note: the research uses both automation resistance <em>and</em> employment growth as selection criteria. This list does not simply show "hard to automate" jobs — it shows jobs that are both hard to automate <em>and</em> growing in demand. The intersection of these two factors provides the most reliable foundation for long-term career planning.</p>
+
+          <h2>The 5 Categories of AI-Safe Jobs</h2>
+
+          <div class="category-grid">
+            <div class="category-card">
+              <div class="category-card-icon">🏥</div>
+              <div class="category-card-title">Healthcare & Therapeutic Care</div>
+              <div class="category-card-list">
+                Nurse Practitioners (40% growth)<br>
+                Physical &amp; Occupational Therapists<br>
+                Music &amp; Art Therapists<br>
+                Surgeons (all specialties)<br>
+                Neurologists · Psychiatrists · Dermatologists<br>
+                Paramedics · Nurse Midwives
+              </div>
+            </div>
+            <div class="category-card">
+              <div class="category-card-icon">🧠</div>
+              <div class="category-card-title">Mental Health & Social Services</div>
+              <div class="category-card-list">
+                Mental Health Counselors (17% growth)<br>
+                Marriage and Family Therapists<br>
+                Advanced-Practice Psychiatric Nurses<br>
+                Clinical Neuropsychologists<br>
+                Mental Health Social Workers<br>
+                Healthcare Social Workers
+              </div>
+            </div>
+            <div class="category-card">
+              <div class="category-card-icon">🎓</div>
+              <div class="category-card-title">Education & Academia</div>
+              <div class="category-card-list">
+                Nursing Instructors (17% growth)<br>
+                Psychology &amp; Architecture Professors<br>
+                Art, Drama and Music Teachers<br>
+                Social Work Educators<br>
+                K-12 Education Administrators<br>
+                Religious Education Directors
+              </div>
+            </div>
+            <div class="category-card">
+              <div class="category-card-icon">🎨</div>
+              <div class="category-card-title">Creative Fields & Design</div>
+              <div class="category-card-list">
+                Architects · Interior Designers<br>
+                Landscape Architects<br>
+                Set and Exhibit Designers<br>
+                Choreographers<br>
+                Biomedical Engineers<br>
+                Civil &amp; Transportation Engineers
+              </div>
+            </div>
+            <div class="category-card">
+              <div class="category-card-icon">🚒</div>
+              <div class="category-card-title">Public Safety & Science</div>
+              <div class="category-card-list">
+                Firefighters · Paramedics<br>
+                First-Line Police Supervisors<br>
+                Emergency Management Directors<br>
+                Urban and Regional Planners<br>
+                Physicists · Soil Scientists<br>
+                Fish and Game Wardens
+              </div>
+            </div>
+            <div class="category-card">
+              <div class="category-card-icon">💼</div>
+              <div class="category-card-title">Leadership & Management</div>
+              <div class="category-card-list">
+                Chief Executives (CEO/C-suite)<br>
+                Security Managers<br>
+                Coaches and Scouts<br>
+                Fitness and Wellness Coordinators<br>
+                Orthotists and Prosthetists<br>
+                Urban Planning Directors
+              </div>
+            </div>
+          </div>
+
+          <h2>Top 10 Fastest-Growing AI-Safe Occupations</h2>
+
+          <table class="job-table">
+            <thead>
+              <tr><th>#</th><th>Occupation</th><th>Growth to 2034</th><th>Median Annual Wage</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>1</td><td>Nurse Practitioners</td><td class="growth">40%</td><td>$129,210</td></tr>
+              <tr><td>2</td><td>Physician Assistants</td><td class="growth">20%</td><td>$133,260</td></tr>
+              <tr><td>3</td><td>Nursing Instructors (Post-Secondary)</td><td class="growth">17%</td><td>$79,940</td></tr>
+              <tr><td>4</td><td>Mental Health Counselors</td><td class="growth">17%</td><td>$59,190</td></tr>
+              <tr><td>5</td><td>Occupational Therapists</td><td class="growth">14%</td><td>$98,340</td></tr>
+              <tr><td>6</td><td>Orthotists and Prosthetists</td><td class="growth">13%</td><td>$78,310</td></tr>
+              <tr><td>7</td><td>Marriage and Family Therapists</td><td class="growth">13%</td><td>$63,780</td></tr>
+              <tr><td>8</td><td>Nurse Midwives</td><td class="growth">11%</td><td>$128,790</td></tr>
+              <tr><td>9</td><td>Physical Therapists</td><td class="growth">11%</td><td>$101,020</td></tr>
+              <tr><td>10</td><td>Art and Music Therapists</td><td class="growth">11%</td><td>$65,010</td></tr>
+            </tbody>
+          </table>
+
+          <div class="blog-callout">
+            <strong>Notable data point:</strong> The highest-earning group throughout the list is surgeons and specialist physicians at <strong>$239,200+ annually</strong> — neurologists, psychiatrists, dermatologists, orthopedic surgeons and more than 8 other specialties sit in this band. Chief Executives at $206,420 are the only non-clinical leadership role at comparable earnings.
+          </div>
+
+          <h2>Why Are These Jobs Protected? 3 Common Characteristics</h2>
+
+          <h3>1. Emotional Intelligence and Trust</h3>
+          <p>The research's central finding: nearly all rapidly-expanding automation-resistant careers involve <em>"human connection of some kind."</em> Patient care runs on trust. The relationship a physical therapist builds with a patient, the empathy a family counsellor brings to a crisis, the moment a teacher recognises a student's disengagement before it becomes failure — these require real-time behavioural signal reading that current AI systems cannot reliably replicate.</p>
+
+          <p>Processing emotional intelligence requires dynamic integration between the prefrontal cortex and the limbic system. Machine learning models can simulate this in narrow, scripted contexts — but in real-time, high-stakes, ambiguity-rich interactions (a surgeon's intraoperative decisions, a therapist's crisis response), they remain systematically insufficient.</p>
+
+          <h3>2. High Task Variability</h3>
+          <p>Automation is most effective at standardisable, predictable task sequences. The occupations in this list share a common characteristic: no two working days present the same problem set. An emergency technician's field decisions, an urban planner's stakeholder conflict management, a choreographer's collaborative creative process — none of these can be reduced to repeatable routines. The higher the variability, the lower the automation efficiency.</p>
+
+          <h3>3. Physical Presence and Touch</h3>
+          <p>The majority of health and safety roles on this list require physical presence: surgical intervention, hands-on physiotherapy, firefighting operations, emergency paramedical response. Robotics is advancing in this domain, but in complex, dynamic and sensitivity-requiring physical tasks, the human hand will remain decisive for at least another decade.</p>
+
+          <!-- CTA 1: Eduentry -->
+          <div class="blog-post-cta glass">
+            <h3>Which of these fields fits your child's natural profile?</h3>
+            <p>The 65 occupations are cognitively heterogeneous: a surgeon's spatial reasoning profile is very different from a therapist's verbal capacity. Eduentry's 60–90 minute assessment produces a standardised profile across 4 cognitive domains — telling you which career category aligns with your child's natural strengths rather than requiring you to guess.</p>
+            <div class="cta-btn-row">
+              <a href="https://eduentry.com/#academic" target="_blank" rel="noopener" class="btn btn-primary">Assess Your Child</a>
+              <a href="https://eduentry.com/sample-report" target="_blank" rel="noopener" class="btn btn-secondary">View Sample Report</a>
+            </div>
+          </div>
+
+          <h2>5 Practical Steps for Parents</h2>
+
+          <ul class="step-list">
+            <li class="step-item">
+              <div class="step-num">1</div>
+              <div class="step-text"><strong>Measure your child's cognitive profile.</strong> Use data rather than intuition. A standardised assessment of verbal, quantitative, spatial, and non-verbal reasoning shows which career category will produce the most progress with the least friction.</div>
+            </li>
+            <li class="step-item">
+              <div class="step-num">2</div>
+              <div class="step-text"><strong>Evaluate the school's emotional intelligence programme.</strong> Ask specifically about pastoral care, social-emotional learning, community service, and KHDA "Personal Development" criteria — not just academic results.</div>
+            </li>
+            <li class="step-item">
+              <div class="step-num">3</div>
+              <div class="step-text"><strong>Align curriculum with career target.</strong> IB for critical thinking across rôles in mental health, education and leadership; A-Level for deep specialisation in medicine and engineering; AP for modular exploration and US university credit transfer.</div>
+            </li>
+            <li class="step-item">
+              <div class="step-num">4</div>
+              <div class="step-text"><strong>Create space for early experience.</strong> Nearly all careers on this list are accessible through volunteering, coaching, or project work from secondary school: hospital volunteering, sports coaching, community design projects. These build both skill and university admissions profile.</div>
+            </li>
+            <li class="step-item">
+              <div class="step-num">5</div>
+              <div class="step-text"><strong>Position technology as a tool, not a threat.</strong> None of these jobs excludes technology — the healthcare professional, architect, or counsellor who masters relevant tools maintains a competitive edge. The goal is not to avoid technology but to develop the human capacities that technology cannot replace.</div>
+            </li>
+          </ul>
+
+          <!-- CTA 2: Edualist -->
+          <div class="blog-post-cta glass">
+            <h3>Right school, right curriculum, right career path</h3>
+            <p>Let's evaluate which school and curriculum best matches your child's cognitive profile and target career area. Whether you're in Dubai, Germany, the UK, or Canada — we'll build a roadmap that works for your specific situation.</p>
+            <div class="cta-btn-row">
+              <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary">Book a Free Session</a>
+              <a href="https://eduentry.com/#academic" target="_blank" rel="noopener" class="btn btn-secondary">Assessment First</a>
+            </div>
+          </div>
+
+          <div class="blog-faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+              <p class="faq-q">Which jobs are safe from AI automation?</p>
+              <p class="faq-a">US Career Institute identified 65 jobs with 0.0% automation risk. Key categories: healthcare (Nurse Practitioners, Physical Therapists, Surgeons), mental health (Counselors, Family Therapists), education (post-secondary instructors, K-12 administrators), creative-technical (Architects, Engineers, Designers) and public safety (Firefighters, Paramedics, Police Supervisors).</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-q">What skills should I develop in my child for the future?</p>
+              <p class="faq-a">The research points to three skill clusters: emotional intelligence and empathy (healthcare, education, therapy), capacity to manage high task variability (emergency services, planning, design) and creative problem-solving (architecture, engineering, choreography). Which cluster aligns with your child's natural cognitive profile is best determined through standardised assessment.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-q">How much do AI-safe jobs pay?</p>
+              <p class="faq-a">Highest-earning group: surgeons and specialist physicians at $239,200+. Chief Executives: $206,420. Dentists: $172,790. Physicists: $166,290. The fastest-growing role, Nurse Practitioners, earns $129,210 median annual wage with 40% projected growth to 2034.</p>
+            </div>
+            <div class="faq-item">
+              <p class="faq-q">Which curriculum best prepares children for automation-resistant careers?</p>
+              <p class="faq-a">IB Diploma for critical thinking and research skills across mental health, education and leadership roles; A-Level for deep subject specialisation in medicine and engineering; AP for modular career exploration with US university credit transfer. The determining factor ahead of curriculum choice is the child's cognitive profile.</p>
+            </div>
+          </div>
+
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <section class="blog-related-section">
+    <div class="container">
+      <h2 class="tr-only">İlgili Rehberler</h2>
+      <h2 class="en-only">Related Guides</h2>
+      <div class="blog-related-grid">
+        <a href="/blog/gelecekte-hangi-meslekler-onem-kazanacak/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-okul.webp" alt="Gelecekte hangi meslekler önem kazanacak" width="400" height="160" loading="lazy">
+          <div class="blog-related-card-body">
+            <p class="blog-related-card-title tr-only">Gelecekte Hangi Meslekler Önem Kazanacak?</p>
+            <p class="blog-related-card-title en-only">Which Jobs Will Matter Most in the Future?</p>
+            <p class="blog-related-card-meta tr-only">WEF ve McKinsey verileriyle 2030 analizi</p>
+            <p class="blog-related-card-meta en-only">WEF and McKinsey data — 2030 analysis</p>
+          </div>
+        </a>
+        <a href="/blog/cocugunuzun-guclu-yonleri/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-okul.webp" alt="Çocuğun güçlü yönleri bilişsel değerlendirme" width="400" height="160" loading="lazy">
+          <div class="blog-related-card-body">
+            <p class="blog-related-card-title tr-only">Çocuğunuzun Güçlü Yönlerini Tanımak</p>
+            <p class="blog-related-card-title en-only">Knowing Your Child's Strengths</p>
+            <p class="blog-related-card-meta tr-only">4 bilişsel alan · IRT metodolojisi</p>
+            <p class="blog-related-card-meta en-only">4 cognitive domains · IRT methodology</p>
+          </div>
+        </a>
+        <a href="/blog/ib-alevel-amerikan-mufredat-karsilastirma/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-bae-okul.webp" alt="IB A-Level Amerikan müfredat karşılaştırması" width="400" height="160" loading="lazy">
+          <div class="blog-related-card-body">
+            <p class="blog-related-card-title tr-only">IB mi, A-Level mi, AP mi? Müfredat Karşılaştırması</p>
+            <p class="blog-related-card-title en-only">IB vs A-Level vs AP: Curriculum Comparison</p>
+            <p class="blog-related-card-meta tr-only">Üniversite hedefine göre doğru müfredat</p>
+            <p class="blog-related-card-meta en-only">Right curriculum for your university target</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text tr-only">Dubai ve yurt dışına taşınan Türk aileler için ücretsiz, bağımsız uluslararası okul danışmanlığı.</p>
+          <p class="footer-bio-text en-only">Free, independent international school consultancy for Turkish families relocating abroad.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4 class="tr-only">Sayfalar</h4><h4 class="en-only">Pages</h4>
+          <ul class="footer-links">
+            <li><a href="/dubai/" class="tr-only">Dubai'de Okul</a><a href="/dubai/" class="en-only">Dubai Schools</a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Danışmanlık</a><a href="/uluslararasi-okul-danismanligi/" class="en-only">Consultancy</a></li>
+            <li><a href="/blog/" class="tr-only">Blog</a><a href="/blog/" class="en-only">Blog</a></li>
+            <li><a href="/neden-biz/" class="tr-only">Hakkımızda</a><a href="/neden-biz/" class="en-only">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4 class="tr-only">İletişim</h4><h4 class="en-only">Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Dubai, UAE</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Edualist.</span>
+        <a href="/gizlilik-politikasi/" style="color:rgba(255,255,255,.5)" class="tr-only">Gizlilik Politikası</a>
+        <a href="/gizlilik-politikasi/" style="color:rgba(255,255,255,.5)" class="en-only">Privacy Policy</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=971502709379" target="_blank" rel="noopener"
+     class="whatsapp-sticky" aria-label="WhatsApp"
+     onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.124 1.526 5.857L.057 23.215a.75.75 0 0 0 .916.916l5.357-1.469A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.75 9.75 0 0 1-4.984-1.371l-.355-.213-3.683 1.01 1.01-3.684-.213-.354A9.75 9.75 0 1 1 12 21.75z"/></svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <script>
+    function setLang(lang) {
+      document.documentElement.setAttribute('lang', lang);
+      try { localStorage.setItem('edualist_lang', lang); } catch(e){}
+      document.getElementById('langTR').classList.toggle('active', lang === 'tr');
+      document.getElementById('langEN').classList.toggle('active', lang === 'en');
+    }
+    (function(){
+      var l = 'tr';
+      try { l = localStorage.getItem('edualist_lang') || 'tr'; } catch(e){}
+      setLang(l);
+    })();
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
