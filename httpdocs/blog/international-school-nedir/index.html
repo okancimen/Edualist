@@ -182,55 +182,37 @@
 <body>
 
   <!-- NAVIGATION -->
-  <header class="header-nav glass" id="navbar">
-    <div class="container nav-container">
-      <a href="../../" class="logo" id="nav-logo">
+    <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/" class="logo">
         <div class="logo-icon">E</div>
         <span class="logo-text">Edualist</span>
       </a>
-      <nav>
-        <ul class="nav-links" id="nav-menu">
-          <li>
-            <a href="../../en/" class="en-only">Home</a>
-            <a href="../../tr/" class="tr-only">Ana Sayfa</a>
-          </li>
-          <li>
-            <a href="../../neden-biz/" class="en-only">Why Us?</a>
-            <a href="../../neden-biz/" class="tr-only">Neden Biz?</a>
-          </li>
-          <li>
-            <a href="../../en/#services" class="en-only">Services</a>
-            <a href="../../tr/#services" class="tr-only">Hizmetler</a>
-          </li>
-          <li>
-            <a href="../../neden-biz/#about" class="en-only">About</a>
-            <a href="../../neden-biz/#about" class="tr-only">Hakkımızda</a>
-          </li>
-          <li><a href="../" class="active">Blog</a></li>
-          <li>
-            <a href="/uluslararasi-okul-danismanligi/" class="en-only">Contact</a>
-            <a href="/uluslararasi-okul-danismanligi/" class="tr-only">İletişim</a>
-          </li>
-        </ul>
-      </nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/" class="tr-only">Dubai'de Okul</a><a href="/dubai/" class="en-only">Dubai Schools</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Danışmanlık</a><a href="/uluslararasi-okul-danismanligi/" class="en-only">Consultancy</a></li>
+        <li><a href="/blog/" class="nav-blog-highlight tr-only">Blog <span class="nav-count-badge">56</span></a><a href="/blog/" class="nav-blog-highlight en-only">Blog <span class="nav-count-badge">56</span></a></li>
+        <li><a href="/neden-biz/" class="tr-only">Hakkımızda</a><a href="/neden-biz/" class="en-only">About</a></li>
+      </ul>
       <div class="nav-controls">
-        <div class="lang-toggle" id="lang-switcher">
-          <button class="lang-btn active" data-lang="tr" aria-label="Türkçe">TR</button>
-          <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
         </div>
-        <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
-        <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary en-only" style="padding:0.6rem 1.2rem;font-size:0.9rem;">Book Now</a>
-        <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary tr-only" style="padding:0.6rem 1.2rem;font-size:0.9rem;">Görüşme Planla</a>
       </div>
     </div>
-  </header>
+  </nav>
 
   <!-- POST HERO -->
   <section class="blog-post-hero">
     <div class="container">
-      <a href="../" class="blog-back-link">← Blog</a>
+      <a href="/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span class="tr-only">Blog'a Dön</span><span class="en-only">Back to Blog</span>
+      </a>
     </div>
   </section>
 
@@ -644,7 +626,7 @@
             <li><a href="/en/" class="en-only">Home</a><a href="/tr/" class="tr-only">Ana Sayfa</a></li>
             <li><a href="/neden-biz/" class="en-only">Why Us?</a><a href="/neden-biz/" class="tr-only">Neden Biz?</a></li>
             <li><a href="/en/#services" class="en-only">Services</a><a href="/tr/#services" class="tr-only">Hizmetler</a></li>
-            <li><a href="/blog/">Blog <span class="nav-count-badge">53</span></a></li>
+            <li><a href="/blog/">Blog <span class="nav-count-badge">56</span></a></li>
             <li><a href="/uluslararasi-okul-danismanligi/" class="en-only">Book Session</a><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Görüşme Planla</a></li>
           </ul>
         </div>
@@ -709,6 +691,25 @@
     <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
   </div>
 
-  <script src="../../app.js" defer></script>
+    <script>
+    function setLang(lang) {
+      document.documentElement.setAttribute('lang', lang);
+      try { localStorage.setItem('edualist_lang', lang); } catch(e){}
+      document.getElementById('langTR').classList.toggle('active', lang === 'tr');
+      document.getElementById('langEN').classList.toggle('active', lang === 'en');
+    }
+    (function(){
+      var l = 'tr';
+      try { l = localStorage.getItem('edualist_lang') || 'tr'; } catch(e){}
+      setLang(l);
+    })();
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
 </body>
 </html>
