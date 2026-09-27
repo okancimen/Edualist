@@ -49,6 +49,11 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Combined: http non-www → https www (single hop, prevents chain)
+  RewriteCond %{HTTPS} off
+  RewriteCond %{HTTP_HOST} ^edualist\.com$ [NC]
+  RewriteRule ^ https://www.edualist.com%{REQUEST_URI} [R=301,L]
+
   # HTTP → HTTPS (301 permanent)
   RewriteCond %{HTTPS} off
   RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
@@ -56,6 +61,10 @@ ErrorDocument 404 /404.html
   # Canonical: non-www → www (301 permanent)
   RewriteCond %{HTTP_HOST} ^edualist\.com$ [NC]
   RewriteRule ^ https://www.edualist.com%{REQUEST_URI} [R=301,L]
+
+  # 404 fix: URL with Turkish ü char → correct slug
+  RewriteRule ^blog/uluslararasi-okul-m%C3%BClakata%C4%B1-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakat%C4%B1-nasil-gecilir/ [R=301,L]
+  RewriteRule ^blog/uluslararasi-okul-m%C3%BClakat%C4%B1-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakat%C4%B1-nasil-gecilir/ [R=301,L]
 
   # Redirect old dubai slug to new Turkish slug (also catches /index.html variant)
   RewriteRule ^blog/dubai-school-guide(/index\.html)?/?$ /blog/dubai-gelmeden-once-bilmeniz-gerekenler/ [R=301,L]

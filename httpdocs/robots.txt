@@ -1,5 +1,6 @@
 User-agent: *
 Allow: /
+Disallow: /mail.php
 
 # LLM Crawlers — explicitly allowed
 User-agent: GPTBot
