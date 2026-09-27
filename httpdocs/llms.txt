@@ -29,7 +29,7 @@ X / Twitter: https://x.com/OzlemGunayCimen
 
 - [Why Edualist? About the Founder](https://www.edualist.com/neden-biz/): Background, credentials, and the personal expat journey behind Edualist
 - [International School Consulting Service](https://www.edualist.com/uluslararasi-okul-danismanligi/): Transactional service page — school placement, academic coaching, and VIP relocation support with pricing and booking
-- [Blog](https://www.edualist.com/blog/): 51 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
+- [Blog](https://www.edualist.com/blog/): 55 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
 - [Full article content index](https://www.edualist.com/llms-full.txt): Complete text of all blog articles for LLM indexing
 - [AI Chatbot — Ela (EduBot)](https://ai-edualist-com.vercel.app/): Edualist's 24/7 AI advisor for school selection questions, curriculum comparison, and country-specific guidance
 
