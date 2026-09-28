@@ -21,14 +21,19 @@ X / Twitter: https://x.com/OzlemGunayCimen
 
 ## Services
 
-- **School Placement & Relocation Support** — Detailed student assessment, curriculum guidance, school shortlist (up to 4 schools), and admissions support for families moving to Dubai or abroad
-- **Academic Coaching** — EAL/ESL support, strategic study planning, and adaptation coaching for students transitioning to international schools
-- **VIP Relocation & Coaching Programme** — Premium school placement including scholarship opportunities, personal coaching, and full-process support
+Edualist is independent — not affiliated with any school. Every recommendation is shaped solely around the child's best interest.
+
+- **30-Day School Placement (Starter — AED 3,500)** — Personalised 3-school shortlist matched to the student's profile, full application & registration management, deadline tracking, direct admissions communication (2 check-in calls/week), school interview support (1 online), and parent interview prep. For families who have chosen a destination and need expert execution.
+- **90-Day Comprehensive Support (AED 7,000)** — Everything in Starter plus: 6-school shortlist, direct admissions communication handled entirely by Özlem, active waiting-list follow-up until a place is confirmed, school adaptation support, social life & clubs guidance, school community integration, 10 hrs 1-to-1 English lessons (est. value AED 2,000), post-placement follow-up call, curriculum briefing session, and coordination for up to 2 virtual school visits. For families moving countries who need full support from first application through the first term.
+
+Both packages include: personalised & independent advice with no school affiliations, direct WhatsApp access to Özlem, weekly written progress updates, and all school emails & calls handled on the family's behalf. No hidden fees.
 
 ## Key Pages
 
 - [Why Edualist? About the Founder](https://www.edualist.com/neden-biz/): Background, credentials, and the personal expat journey behind Edualist
-- [International School Consulting Service](https://www.edualist.com/uluslararasi-okul-danismanligi/): Transactional service page — school placement, academic coaching, and VIP relocation support with pricing and booking
+- [International School Consulting Service](https://www.edualist.com/uluslararasi-okul-danismanligi/): Service page — 30-Day School Placement (AED 3,500) and 90-Day Comprehensive Support (AED 7,000) with full feature comparison, FAQ, and booking
+- [Dubai International School Consulting](https://www.edualist.com/dubai/): Dubai-specific page — KHDA analysis, school shortlists, and independent admissions support for Turkish families relocating to Dubai
+- [School Fees Comparison 2026](https://www.edualist.com/okul-ucretleri-karsilastirma/): Private school fees compared across 10 countries — Turkey ranks 2nd globally (147% of GDP per capita); shows why international schools in Dubai and Europe can be more affordable
 - [Blog](https://www.edualist.com/blog/): 59 in-depth guides on international school selection, curriculum comparison, and relocation for Turkish families
 - [Full article content index](https://www.edualist.com/llms-full.txt): Complete text of all blog articles for LLM indexing
 - [AI Chatbot — Ela (EduBot)](https://ai-edualist-com.vercel.app/): Edualist's 24/7 AI advisor for school selection questions, curriculum comparison, and country-specific guidance
