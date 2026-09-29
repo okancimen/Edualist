@@ -18698,3 +18698,10 @@ Tarih: 2026-06-07
 URL: https://www.edualist.com/blog/yurtdisi-egitim-maliyet-karsilastirma/
 Tarih: 2026-06-07
 Özet: Dubai okul ücreti 45.000–100.000 AED, Londra 15.000–30.000 GBP, Berlin 10.000–24.000 EUR — 6 ülkede yıllık okul + yaşam maliyeti tablosu, gizli masraflar ve bütçeyi düşürmenin 7 yolu.
+
+## Hizmet Sayfaları
+
+### IB DP Akademik Koçluk — Ebeveynler İçin
+URL: https://www.edualist.com/ib-dp-koclugu/
+Tarih: 2026-09-30
+Özet: IB Diploma Programme öğrencilerinin ebeveynlerine yönelik birebir akademik koçluk. Haftada 2 online seans, Extended Essay ve IA takvim yönetimi, TOK sunum hazırlığı. 900 AED/ay. Hedef kitle: IB DP Year 1 ve 2 öğrencilerinin Türk ebeveynleri.
