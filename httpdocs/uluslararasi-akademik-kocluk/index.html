@@ -195,7 +195,9 @@
     .section-h2{font-family:var(--font-serif);font-size:clamp(1.7rem,3.5vw,2.4rem);font-weight:600;color:var(--primary);margin-bottom:.75rem}
     .section-kicker{font-size:.88rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:700;margin-bottom:.5rem;display:block}
     .section-lead{font-size:1.05rem;color:var(--text-muted);line-height:1.75;max-width:620px;margin-bottom:1rem}
+    .package-card{background:var(--primary);color:var(--text-light);border-radius:var(--radius-lg);padding:2.25rem;position:relative;overflow:hidden;margin-top:0}
     @media(max-width:900px){.package-grid{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:1fr 1fr}.pain-grid{grid-template-columns:1fr}}
+    @media(max-width:700px){#paket .package-two-col{grid-template-columns:1fr!important}}
     @media(max-width:600px){.testimonial-grid{grid-template-columns:1fr}.coach-about{grid-template-columns:1fr;text-align:center}.coach-about-creds{justify-content:center}.coach-hero-stat{gap:1.5rem}}
   </style>
   <script type="text/javascript">
@@ -509,36 +511,66 @@
   <!-- PACKAGE -->
   <section class="section" id="paket">
     <div class="container">
-      <div class="package-grid">
-        <div>
-          <span class="section-kicker tr-only">Paket İçeriği</span>
-          <span class="section-kicker en-only">What's Included</span>
-          <h2 class="section-h2 tr-only">Aylık 900 AED'e Neler Dahil?</h2>
-          <h2 class="section-h2 en-only">What's Included for 900 AED/Month?</h2>
-          <p class="section-lead tr-only">Sadece bir danışman değil — haftalık sistemi olan, çocuğunuzun akademik yolculuğunu bilen bir koç.</p>
-          <p class="section-lead en-only">Not just a consultant — a coach with a weekly system who knows your child's academic journey inside out.</p>
-        </div>
+
+      <span class="section-kicker tr-only">Paket İçeriği</span>
+      <span class="section-kicker en-only">What's Included</span>
+      <h2 class="section-h2 tr-only">Paketler</h2>
+      <h2 class="section-h2 en-only">Packages</h2>
+      <p class="section-lead tr-only">Sadece bir danışman değil — haftalık sistemi olan, çocuğunuzun akademik yolculuğunu bilen bir koç.</p>
+      <p class="section-lead en-only">Not just a consultant — a coach with a weekly system who knows your child's academic journey inside out.</p>
+
+      <div class="package-two-col" style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2.5rem">
+
+        <!-- Starter Package -->
         <div class="package-card">
           <div>
             <span class="package-price">900 AED<span class="package-price-period">/ay</span></span>
-            <div class="package-title tr-only">Uluslararası Akademik Koçluk</div>
-            <div class="package-title en-only">Academic &amp; Transition Coaching</div>
-            <div class="package-desc tr-only">Haftada 2 birebir online seans + tam destek paketi. Her ay, iptal öncesi 1 hafta bildirim ile durdurabilirsiniz.</div>
-            <div class="package-desc en-only">2 × 1-on-1 online sessions per week + full support package. Cancel anytime with 1 week's notice.</div>
+            <div class="package-title tr-only">Başlangıç Paketi</div>
+            <div class="package-title en-only">Starter Package</div>
+            <div class="package-desc tr-only">Haftada 2 ebeveyn seansı. İptal için 1 hafta önceden bildirim yeterli.</div>
+            <div class="package-desc en-only">2 parent sessions per week. Cancel with 1 week's notice.</div>
             <ul class="package-includes">
-              <li><span class="tr-only">Haftada 2 × 40 dk birebir seanslar</span><span class="en-only">2 × 40-min 1-on-1 sessions per week</span></li>
+              <li><span class="tr-only">Haftada 2 × 40 dk ebeveyn seansı</span><span class="en-only">2 × 40-min parent sessions per week</span></li>
               <li><span class="tr-only">Kişiselleştirilmiş öğrenme stratejileri ve zaman yönetimi planı</span><span class="en-only">Personalised learning strategies &amp; time management plan</span></li>
               <li><span class="tr-only">Müfredat geçişi için bütünleşik akademik takvim</span><span class="en-only">Integrated academic calendar for curriculum transitions</span></li>
               <li><span class="tr-only">Ödev ve proje yönetimi desteği</span><span class="en-only">Assignment &amp; project management support</span></li>
               <li><span class="tr-only">Haftalık yazılı aksiyon planı (ebeveyn için)</span><span class="en-only">Weekly written action plan for parents</span></li>
               <li><span class="tr-only">WhatsApp erişimi (mesai saatleri içinde)</span><span class="en-only">WhatsApp access (within business hours)</span></li>
             </ul>
-            <a href="https://eduentry.com/tr#akademik" target="_blank" rel="noopener" class="btn btn-accent" style="width:100%;justify-content:center" onclick="if(typeof gtag==='function'){gtag('event','coaching_cta_click',{event_category:'engagement',event_label:'Package CTA'});}">
-              <span class="tr-only">Ücretsiz Değerlendirme Yap →</span>
+            <a href="https://eduentry.com/tr#akademik" target="_blank" rel="noopener" class="btn btn-outline" style="width:100%;justify-content:center" onclick="if(typeof gtag==='function'){gtag('event','coaching_cta_click',{event_category:'engagement',event_label:'Package Starter'});}">
+              <span class="tr-only">Ücretsiz Değerlendirme →</span>
               <span class="en-only">Start Free Assessment →</span>
             </a>
           </div>
         </div>
+
+        <!-- Intensive Package -->
+        <div class="package-card" style="border:2px solid var(--accent);position:relative">
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--accent);color:var(--primary);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:.3rem 1rem;border-radius:50px;white-space:nowrap" class="tr-only">En Kapsamlı</div>
+          <div style="position:absolute;top:-14px;left:50%;transform:translateX(-50%);background:var(--accent);color:var(--primary);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.1em;padding:.3rem 1rem;border-radius:50px;white-space:nowrap" class="en-only">Most Comprehensive</div>
+          <div>
+            <span class="package-price">1.500 AED<span class="package-price-period">/ay</span></span>
+            <div class="package-title tr-only">Yoğun Paket</div>
+            <div class="package-title en-only">Intensive Package</div>
+            <div class="package-desc tr-only">Haftada 3 seans: 1 ebeveyn + 2 öğrenci. Okul sistemine doğrudan erişimle gerçek zamanlı takip.</div>
+            <div class="package-desc en-only">3 sessions per week: 1 parent + 2 student. Real-time tracking with direct access to school systems.</div>
+            <ul class="package-includes">
+              <li><span class="tr-only">Haftada 1 × 40 dk ebeveyn seansı</span><span class="en-only">1 × 40-min parent session per week</span></li>
+              <li><span class="tr-only">Haftada 2 × 40 dk öğrenci birebir seansı</span><span class="en-only">2 × 40-min 1-on-1 student sessions per week</span></li>
+              <li><span class="tr-only">Okul sistemine doğrudan erişim (ManageBac, iSAMS, Toddle vb.) — ödev ve not takibi</span><span class="en-only">Direct access to school systems (ManageBac, iSAMS, Toddle etc.) — homework &amp; grade tracking</span></li>
+              <li><span class="tr-only">Kişiselleştirilmiş öğrenme stratejileri ve zaman yönetimi planı</span><span class="en-only">Personalised learning strategies &amp; time management plan</span></li>
+              <li><span class="tr-only">Müfredat geçişi için bütünleşik akademik takvim</span><span class="en-only">Integrated academic calendar for curriculum transitions</span></li>
+              <li><span class="tr-only">Ödev ve proje yönetimi — gerçek zamanlı takip</span><span class="en-only">Assignment &amp; project management — real-time tracking</span></li>
+              <li><span class="tr-only">Aylık kapsamlı ilerleme raporu (ebeveyn + öğrenci)</span><span class="en-only">Monthly comprehensive progress report (parent + student)</span></li>
+              <li><span class="tr-only">WhatsApp erişimi (7/7, hafta sonu dahil)</span><span class="en-only">WhatsApp access (7 days/week including weekends)</span></li>
+            </ul>
+            <a href="https://eduentry.com/tr#akademik" target="_blank" rel="noopener" class="btn btn-accent" style="width:100%;justify-content:center" onclick="if(typeof gtag==='function'){gtag('event','coaching_cta_click',{event_category:'engagement',event_label:'Package Intensive'});}">
+              <span class="tr-only">Ücretsiz Değerlendirme →</span>
+              <span class="en-only">Start Free Assessment →</span>
+            </a>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
