@@ -23,7 +23,7 @@ KEY_FILE = Path.home() / "Downloads/aibot-92369-5069a2de1bb0.json"
 
 URLS = [
     # Yeni ve değiştirilen sayfalar — 2026-09-30
-    "https://www.edualist.com/ib-dp-koclugu/",
+    "https://www.edualist.com/uluslararasi-akademik-kocluk/",
     "https://www.edualist.com/tr/",
     "https://www.edualist.com/en/",
     "https://www.edualist.com/hakkimda/",

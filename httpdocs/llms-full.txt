@@ -18702,6 +18702,6 @@ Tarih: 2026-06-07
 ## Hizmet Sayfaları
 
 ### IB DP Akademik Koçluk — Ebeveynler İçin
-URL: https://www.edualist.com/ib-dp-koclugu/
+URL: https://www.edualist.com/uluslararasi-akademik-kocluk/
 Tarih: 2026-09-30
 Özet: IB Diploma Programme öğrencilerinin ebeveynlerine yönelik birebir akademik koçluk. Haftada 2 online seans, Extended Essay ve IA takvim yönetimi, TOK sunum hazırlığı. 900 AED/ay. Hedef kitle: IB DP Year 1 ve 2 öğrencilerinin Türk ebeveynleri.
