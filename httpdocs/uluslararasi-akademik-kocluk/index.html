@@ -206,6 +206,7 @@
     .package-card{background:var(--primary);color:var(--text-light);border-radius:var(--radius-lg);padding:2.25rem;position:relative;overflow:hidden;margin-top:0}
     @media(max-width:900px){.package-grid{grid-template-columns:1fr}.testimonial-grid{grid-template-columns:1fr 1fr}.pain-grid{grid-template-columns:1fr}}
     @media(max-width:700px){#paket .package-two-col{grid-template-columns:1fr!important}}
+    .highlight-cell{background:hsla(43,60%,52%,.13)!important;color:var(--primary);font-weight:500;line-height:1.55;padding:.85rem 1rem;border-left:2px solid rgba(219,175,46,.5)}
     @media(max-width:600px){.testimonial-grid{grid-template-columns:1fr}.coach-about{grid-template-columns:1fr;text-align:center}.coach-about-creds{justify-content:center}.coach-hero-stat{gap:1.5rem}}
   </style>
   <script type="text/javascript">
@@ -418,8 +419,8 @@
                 <th style="padding:.85rem 1rem;text-align:left;font-weight:600" class="en-only">The Subject Tutor</th>
                 <th style="padding:.85rem 1rem;text-align:left;font-weight:600" class="tr-only">Okul Rehber Öğretmeni</th>
                 <th style="padding:.85rem 1rem;text-align:left;font-weight:600" class="en-only">The School Counsellor</th>
-                <th style="padding:.85rem 1rem;text-align:left;font-weight:600;background:hsla(43,60%,52%,.25);border-radius:0 var(--radius-sm) 0 0" class="tr-only">Akademik Koç</th>
-                <th style="padding:.85rem 1rem;text-align:left;font-weight:600;background:hsla(43,60%,52%,.25);border-radius:0 var(--radius-sm) 0 0" class="en-only">The Academic Coach</th>
+                <th style="padding:.85rem 1rem;text-align:left;font-weight:600;background:hsla(43,60%,52%,.25);border-radius:0 var(--radius-sm) 0 0;border-left:2px solid rgba(219,175,46,.6)" class="tr-only">Akademik Koç</th>
+                <th style="padding:.85rem 1rem;text-align:left;font-weight:600;background:hsla(43,60%,52%,.25);border-radius:0 var(--radius-sm) 0 0;border-left:2px solid rgba(219,175,46,.6)" class="en-only">The Academic Coach</th>
               </tr>
             </thead>
             <tbody>
@@ -430,8 +431,8 @@
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">The Content — fixing a C in Math to an A.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="tr-only">Kurum — ders programı, krediler, kriz yönetimi.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">The Institution — schedules, credits, crisis control.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="tr-only">Sistem &amp; Zihniyeti — her derste A alacak alışkanlıkları inşa etmek.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="en-only">The System &amp; Mindset — building the habits to get A's in every subject.</td>
+                <td class="tr-only highlight-cell">Sistem &amp; Zihniyeti — her derste A alacak alışkanlıkları inşa etmek.</td>
+                <td class="en-only highlight-cell">The System &amp; Mindset — building the habits to get A's in every subject.</td>
               </tr>
               <tr style="border-bottom:1px solid hsla(0,0%,0%,.07)">
                 <td style="padding:.85rem 1rem;font-weight:600;color:var(--primary);background:#fafaf8" class="tr-only">Çalışma Kapsamı</td>
@@ -440,8 +441,8 @@
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Reactive and short-term — focused on the next test.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="tr-only">Makro ve sistemik — mezuniyet gereksinimlerine odaklı.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Macro and systemic — focused on graduation requirements.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="tr-only">Proaktif ve ömür boyu — bilişsel beceri kazanımına odaklı.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="en-only">Proactive and lifelong — focused on cognitive skill acquisition.</td>
+                <td class="tr-only highlight-cell">Proaktif ve ömür boyu — bilişsel beceri kazanımına odaklı.</td>
+                <td class="en-only highlight-cell">Proactive and lifelong — focused on cognitive skill acquisition.</td>
               </tr>
               <tr style="border-bottom:1px solid hsla(0,0%,0%,.07)">
                 <td style="padding:.85rem 1rem;font-weight:600;color:var(--primary);background:#fafaf8" class="tr-only">Temel Değer</td>
@@ -450,8 +451,8 @@
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Explains what the textbook means.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="tr-only">Öğrencinin nerede olması gerektiğini yönetir.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Manages where the student needs to be.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="tr-only">Öğrenciyi tüm iş yükünü fethetmek için güçlendirir.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="en-only">Empowers the student to conquer the entire workload.</td>
+                <td class="tr-only highlight-cell">Öğrenciyi tüm iş yükünü fethetmek için güçlendirir.</td>
+                <td class="en-only highlight-cell">Empowers the student to conquer the entire workload.</td>
               </tr>
               <tr style="border-bottom:1px solid hsla(0,0%,0%,.07)">
                 <td style="padding:.85rem 1rem;font-weight:600;color:var(--primary);background:#fafaf8" class="tr-only">İletişim Sıklığı &amp; Takip</td>
@@ -460,8 +461,8 @@
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Communicates only during lesson time (1–2 hrs/week); follow-up ends when the session ends.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="tr-only">Genellikle kriz anlarında veya dönemde 1–2 kez zorunlu resmi görüşmelerde ulaşılabilir.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Typically available in crisis moments or 1–2 mandatory formal meetings per term.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="tr-only">Haftalık düzenli seanslar ve hafta içi anlık (WhatsApp vb.) takip mekanizmasıyla sürekli etkindir.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="en-only">Continuously active through weekly sessions and between-session instant support (WhatsApp etc.).</td>
+                <td class="tr-only highlight-cell">Haftalık düzenli seanslar ve hafta içi anlık (WhatsApp vb.) takip mekanizmasıyla sürekli etkindir.</td>
+                <td class="en-only highlight-cell">Continuously active through weekly sessions and between-session instant support (WhatsApp etc.).</td>
               </tr>
               <tr style="border-bottom:1px solid hsla(0,0%,0%,.07)">
                 <td style="padding:.85rem 1rem;font-weight:600;color:var(--primary);background:#fafaf8" class="tr-only">Motivasyon Kaynağı</td>
@@ -470,8 +471,8 @@
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">External and short-term (e.g. "You need to pass this exam").</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="tr-only">Kurumsal beklentiler (Örn: "Okul kurallarına ve takvime uymalısın").</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Institutional expectations (e.g. "You must follow school rules and the schedule").</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="tr-only">İçsel ve kalıcı — öğrencinin kendi potansiyelini, ilgi alanlarını ve "neden"ini keşfetmesini sağlar.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="en-only">Internal and lasting — helps the student discover their own potential, interests, and "why".</td>
+                <td class="tr-only highlight-cell">İçsel ve kalıcı — öğrencinin kendi potansiyelini, ilgi alanlarını ve "neden"ini keşfetmesini sağlar.</td>
+                <td class="en-only highlight-cell">Internal and lasting — helps the student discover their own potential, interests, and "why".</td>
               </tr>
               <tr style="border-bottom:1px solid hsla(0,0%,0%,.07)">
                 <td style="padding:.85rem 1rem;font-weight:600;color:var(--primary);background:#fafaf8" class="tr-only">Aile ile İlişki</td>
@@ -480,8 +481,8 @@
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Updates the family only on the student's immediate grade in that subject.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="tr-only">Okulun genel kuralları veya disiplin/başarı süreçleri için aileyle resmi temas kurar.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Makes formal contact with the family around general school rules or disciplinary processes.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="tr-only">Aile–öğrenci arasındaki akademik çatışmaları yönetir; evdeki çalışma ortamını optimize etmek için veliye de rehberlik eder.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="en-only">Manages academic conflicts between family and student; guides parents on optimising the home study environment.</td>
+                <td class="tr-only highlight-cell">Aile–öğrenci arasındaki akademik çatışmaları yönetir; evdeki çalışma ortamını optimize etmek için veliye de rehberlik eder.</td>
+                <td class="en-only highlight-cell">Manages academic conflicts between family and student; guides parents on optimising the home study environment.</td>
               </tr>
               <tr style="border-bottom:1px solid hsla(0,0%,0%,.07)">
                 <td style="padding:.85rem 1rem;font-weight:600;color:var(--primary);background:#fafaf8" class="tr-only">Dil ve Adaptasyon</td>
@@ -490,8 +491,8 @@
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Explains lesson content in the target language only; offers no strategy for overcoming the language barrier.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="tr-only">Okul içi oryantasyonla sınırlıdır; uluslararası müfredat arası geçiş travmasını derinlemesine çözemez.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Limited to in-school orientation; cannot deeply resolve the transition trauma between international curricula.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="tr-only">Özlem'in uzmanlık alanı: uluslararası okula geçişteki "akademik kültür şokunu" ve yabancı dilde eğitim kaygısını sistemli şekilde çözer.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08)" class="en-only">Özlem's specialist area: systematically resolves the "academic culture shock" of international school transition and the anxiety of studying in a foreign language.</td>
+                <td class="tr-only highlight-cell">Özlem'in uzmanlık alanı: uluslararası okula geçişteki "akademik kültür şokunu" ve yabancı dilde eğitim kaygısını sistemli şekilde çözer.</td>
+                <td class="en-only highlight-cell">Özlem's specialist area: systematically resolves the "academic culture shock" of international school transition and the anxiety of studying in a foreign language.</td>
               </tr>
               <tr>
                 <td style="padding:.85rem 1rem;font-weight:600;color:var(--primary);background:#fafaf8;border-radius:0 0 0 var(--radius-sm)" class="tr-only">Problem Çözme Biçimi</td>
@@ -500,8 +501,8 @@
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Direct: gives the student the answer or solution path straight away.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="tr-only">Yönlendirici: okul içi kurallara ve prosedürlere göre yönlendirme yapar.</td>
                 <td style="padding:.85rem 1rem;color:var(--text-muted);line-height:1.55" class="en-only">Directive: guides according to school rules and procedures.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08);border-radius:0 0 var(--radius-sm) 0" class="tr-only">Sorgulayıcı (Koçluk): doğru sorularla öğrencinin kendi çözüm yolunu ve çalışma metodunu bulmasını sağlar.</td>
-                <td style="padding:.85rem 1rem;color:var(--primary);font-weight:500;line-height:1.55;background:hsla(43,60%,52%,.08);border-radius:0 0 var(--radius-sm) 0" class="en-only">Inquiry-based (Coaching): uses the right questions to help the student find their own solution path and study method.</td>
+                <td class="tr-only highlight-cell">Sorgulayıcı (Koçluk): doğru sorularla öğrencinin kendi çözüm yolunu ve çalışma metodunu bulmasını sağlar.</td>
+                <td class="en-only highlight-cell">Inquiry-based (Coaching): uses the right questions to help the student find their own solution path and study method.</td>
               </tr>
             </tbody>
           </table>
