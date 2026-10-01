@@ -82,6 +82,8 @@ try {
     $key_file     = $project_root . '/private/aibot-service-account.json';
     $base_url     = 'https://www.edualist.com';
     $daily_limit  = 195;
+    $time_limit   = 25; // stop after 25s so panel doesn't time out
+    $start_time   = time();
 
     // State
     $state     = file_exists($state_file)
@@ -145,21 +147,26 @@ try {
             $errors[] = $url . ' -> HTTP ' . $code . ': ' . $body;
             $fail++;
         }
-        usleep(300000);
+        usleep(100000); // 100ms between requests
+        if ((time() - $start_time) >= $time_limit) break; // save state and exit before panel timeout
     }
 
-    // Save state
-    $state['last_run_ts'] = time();
-    $state['submitted']   = $submitted;
+    // Save state — only advance timestamp if all URLs were processed
+    $timed_out = (time() - $start_time) >= $time_limit;
+    if (!$timed_out) { $state['last_run_ts'] = time(); }
+    $state['submitted'] = $submitted;
     file_put_contents($state_file, json_encode($state, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
     // Response
-    http_response_code($fail > 0 && $ok === 0 ? 500 : 200);
+    $status = $fail === 0 ? 'ok' : ($ok > 0 ? 'partial' : 'error');
+    if ($timed_out) { $status = 'partial_timeout'; }
+    http_response_code(200);
     header('Content-Type: application/json');
     echo json_encode(array(
-        'status'    => $fail === 0 ? 'ok' : ($ok > 0 ? 'partial' : 'error'),
+        'status'    => $status,
         'submitted' => $ok,
         'failed'    => $fail,
+        'timed_out' => $timed_out,
         'errors'    => $errors,
     ), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 
