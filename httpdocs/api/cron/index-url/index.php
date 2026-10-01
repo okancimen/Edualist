@@ -123,7 +123,7 @@ try {
 
     // Submit
     $access_token = get_access_token($key_file);
-    $ok = 0; $fail = 0; $errors = array();
+    $ok = 0; $fail = 0; $quota_hit = false; $errors = array();
 
     foreach ($urls as $url) {
         $ch = curl_init('https://indexing.googleapis.com/v3/urlNotifications:publish');
@@ -143,30 +143,37 @@ try {
         if ($code === 200) {
             $submitted[$url] = date('c');
             $ok++;
+        } elseif ($code === 429) {
+            $quota_hit = true;
+            break; // quota exhausted — remaining URLs will fail too, stop and retry tomorrow
         } else {
             $errors[] = $url . ' -> HTTP ' . $code . ': ' . $body;
             $fail++;
         }
         usleep(100000); // 100ms between requests
-        if ((time() - $start_time) >= $time_limit) break; // save state and exit before panel timeout
+        if ((time() - $start_time) >= $time_limit) break; // stop before panel timeout
     }
 
-    // Save state — only advance timestamp if all URLs were processed
+    // Save state — only advance timestamp if all URLs were processed without hitting quota/timeout
     $timed_out = (time() - $start_time) >= $time_limit;
-    if (!$timed_out) { $state['last_run_ts'] = time(); }
+    $incomplete = $timed_out || $quota_hit;
+    if (!$incomplete) { $state['last_run_ts'] = time(); }
     $state['submitted'] = $submitted;
     file_put_contents($state_file, json_encode($state, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE));
 
-    // Response
-    $status = $fail === 0 ? 'ok' : ($ok > 0 ? 'partial' : 'error');
-    if ($timed_out) { $status = 'partial_timeout'; }
+    // Response — quota exhaustion and timeout are not errors, just partial progress
+    if ($quota_hit)   { $status = 'quota_exhausted'; }
+    elseif ($timed_out) { $status = 'partial_timeout'; }
+    elseif ($fail === 0) { $status = 'ok'; }
+    else { $status = $ok > 0 ? 'partial' : 'error'; }
     http_response_code(200);
     header('Content-Type: application/json');
     echo json_encode(array(
-        'status'    => $status,
-        'submitted' => $ok,
-        'failed'    => $fail,
-        'timed_out' => $timed_out,
+        'status'      => $status,
+        'submitted'   => $ok,
+        'failed'      => $fail,
+        'quota_hit'   => $quota_hit,
+        'timed_out'   => $timed_out,
         'errors'    => $errors,
     ), JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
 
