@@ -23,7 +23,14 @@ KEY_FILE = Path.home() / "Downloads/aibot-92369-5069a2de1bb0.json"
 
 URLS = [
     # Yeni ve değiştirilen sayfalar — 2026-10-01
+    "https://www.edualist.com/blog/yurt-disi-universite-hazirlik-lisede/",
+    "https://www.edualist.com/blog/farklilastirilmis-ogretim-nedir/",
+    "https://www.edualist.com/blog/lgs-surecinde-ders-calis-savaslari/",
     "https://www.edualist.com/blog/basarili-ogrenciler-ib-de-neden-zorlanir/",
+    "https://www.edualist.com/blog/egitim-kocu-ne-yapar/",
+    "https://www.edualist.com/blog/akademik-koc-nedir/",
+    "https://www.edualist.com/blog/turk-egitim-sisteminden-uluslararasi-okula-gecis/",
+    "https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/",
     "https://www.edualist.com/blog/",
 ]
 
