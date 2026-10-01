@@ -23,9 +23,8 @@ KEY_FILE = Path.home() / "Downloads/aibot-92369-5069a2de1bb0.json"
 
 URLS = [
     # Yeni ve değiştirilen sayfalar — 2026-10-01
-    "https://www.edualist.com/blog/dubai-okul-burs-imkanlari/",
-    "https://www.edualist.com/blog/ucuncu-kultur-cocugu-tck-rehberi/",
-    "https://www.edualist.com/blog/akademik-koc-nedir/",
+    "https://www.edualist.com/blog/basarili-ogrenciler-ib-de-neden-zorlanir/",
+    "https://www.edualist.com/blog/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
