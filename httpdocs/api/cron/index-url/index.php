@@ -24,6 +24,10 @@ $key_file     = $project_root . '/private/aibot-service-account.json';
 $base_url     = 'https://www.edualist.com';
 $daily_limit  = 195;
 
+// ── Diagnostics (remove after first successful run) ───────────────────────────
+
+try {
+
 // ── State ─────────────────────────────────────────────────────────────────────
 
 $state     = file_exists($state_file)
@@ -151,11 +155,28 @@ file_put_contents($state_file, json_encode($state, JSON_PRETTY_PRINT | JSON_UNES
 
 // ── Response ──────────────────────────────────────────────────────────────────
 
-http_response_code($fail > 0 && $ok === 0 ? 500 : 200);
-header('Content-Type: application/json');
-echo json_encode([
-    'status'    => $fail === 0 ? 'ok' : ($ok > 0 ? 'partial' : 'error'),
-    'submitted' => $ok,
-    'failed'    => $fail,
-    'errors'    => $errors,
-], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+    http_response_code($fail > 0 && $ok === 0 ? 500 : 200);
+    header('Content-Type: application/json');
+    echo json_encode([
+        'status'    => $fail === 0 ? 'ok' : ($ok > 0 ? 'partial' : 'error'),
+        'submitted' => $ok,
+        'failed'    => $fail,
+        'errors'    => $errors,
+    ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+
+} catch (Throwable $e) {
+    http_response_code(500);
+    header('Content-Type: application/json');
+    echo json_encode([
+        'status'       => 'error',
+        'message'      => $e->getMessage(),
+        'paths'        => [
+            '__DIR__'      => __DIR__,
+            'httpdocs'     => $httpdocs,
+            'project_root' => $project_root,
+            'key_file'     => $key_file,
+            'key_exists'   => file_exists($key_file),
+            'state_file'   => $state_file,
+        ],
+    ], JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+}
