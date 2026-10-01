@@ -22,14 +22,12 @@ except ImportError:
 KEY_FILE = Path.home() / "Downloads/aibot-92369-5069a2de1bb0.json"
 
 URLS = [
-    # Yeni ve değiştirilen sayfalar — 2026-09-30
-    "https://www.edualist.com/blog/akademik-koc-nedir/",
-    "https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/",
-    "https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/",
+    # Yeni ve değiştirilen sayfalar — 2026-10-01
+    "https://www.edualist.com/blog/egitim-kocu-ne-yapar/",
     "https://www.edualist.com/blog/",
-    "https://www.edualist.com/uluslararasi-akademik-kocluk/",
-    "https://www.edualist.com/tr/",
-    "https://www.edualist.com/en/",
+    "https://www.edualist.com/blog/international-school-nedir/",
+    "https://www.edualist.com/blog/dubai-egitim-sistemi/",
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
