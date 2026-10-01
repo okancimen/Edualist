@@ -23,11 +23,9 @@ KEY_FILE = Path.home() / "Downloads/aibot-92369-5069a2de1bb0.json"
 
 URLS = [
     # Yeni ve değiştirilen sayfalar — 2026-10-01
-    "https://www.edualist.com/blog/egitim-kocu-ne-yapar/",
-    "https://www.edualist.com/blog/",
-    "https://www.edualist.com/blog/international-school-nedir/",
-    "https://www.edualist.com/blog/dubai-egitim-sistemi/",
-    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
+    "https://www.edualist.com/blog/dubai-okul-burs-imkanlari/",
+    "https://www.edualist.com/blog/ucuncu-kultur-cocugu-tck-rehberi/",
+    "https://www.edualist.com/blog/akademik-koc-nedir/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
