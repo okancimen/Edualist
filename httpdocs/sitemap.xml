@@ -662,4 +662,150 @@
     <priority>0.9</priority>
   </url>
 
+  <!-- Non-blog pages -->
+  <url>
+    <loc>https://www.edualist.com/uluslararasi-akademik-kocluk/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/uluslararasi-akademik-kocluk/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/uluslararasi-akademik-kocluk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/uluslararasi-akademik-kocluk/"/>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/ib-dp-koclugu/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/ib-dp-koclugu/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/ib-dp-koclugu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/ib-dp-koclugu/"/>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/hakkimda/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/hakkimda/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/hakkimda/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/hakkimda/"/>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/gizlilik-politikasi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/gizlilik-politikasi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/gizlilik-politikasi/"/>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Blog posts added after last sitemap update -->
+  <url>
+    <loc>https://www.edualist.com/blog/lise-ogrencisi-staj-is-deneyimi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/lise-ogrencisi-staj-is-deneyimi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/lise-ogrencisi-staj-is-deneyimi/"/>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/universitede-fark-yaratan-aktiviteler/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/universitede-fark-yaratan-aktiviteler/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/universitede-fark-yaratan-aktiviteler/"/>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/lise-ogrencisi-yaz-programlari/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/lise-ogrencisi-yaz-programlari/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/lise-ogrencisi-yaz-programlari/"/>
+    <lastmod>2026-10-03</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/yurt-disi-universite-hazirlik-lisede/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/yurt-disi-universite-hazirlik-lisede/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/yurt-disi-universite-hazirlik-lisede/"/>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/akademik-koc-nedir/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/akademik-koc-nedir/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/blog/akademik-koc-nedir/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/akademik-koc-nedir/"/>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/basarili-ogrenciler-ib-de-neden-zorlanir/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/basarili-ogrenciler-ib-de-neden-zorlanir/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/blog/basarili-ogrenciler-ib-de-neden-zorlanir/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/basarili-ogrenciler-ib-de-neden-zorlanir/"/>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/farklilastirilmis-ogretim-nedir/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/farklilastirilmis-ogretim-nedir/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/blog/farklilastirilmis-ogretim-nedir/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/farklilastirilmis-ogretim-nedir/"/>
+    <lastmod>2026-09-28</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/egitim-kocu-ne-yapar/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/egitim-kocu-ne-yapar/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/blog/egitim-kocu-ne-yapar/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/egitim-kocu-ne-yapar/"/>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/"/>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/"/>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/lgs-surecinde-ders-calis-savaslari/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/lgs-surecinde-ders-calis-savaslari/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/lgs-surecinde-ders-calis-savaslari/"/>
+    <lastmod>2026-09-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
 </urlset>
