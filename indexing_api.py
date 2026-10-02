@@ -22,12 +22,12 @@ except ImportError:
 KEY_FILE = Path.home() / "Downloads/aibot-92369-5069a2de1bb0.json"
 
 URLS = [
-    # Yeni ve değiştirilen sayfalar — 2026-10-03
-    "https://www.edualist.com/blog/lise-ogrencisi-staj-is-deneyimi/",
-    "https://www.edualist.com/blog/universitede-fark-yaratan-aktiviteler/",
-    "https://www.edualist.com/blog/lise-ogrencisi-yaz-programlari/",
-    "https://www.edualist.com/blog/yurt-disi-universite-hazirlik-lisede/",
-    "https://www.edualist.com/blog/",
+    # Yeni ve değiştirilen sayfalar — 2026-10-02
+    "https://www.edualist.com/cocugunuzun-potansiyeli/",
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    "https://www.edualist.com/blog/farklilastirilmis-ogretim-nedir/",
+    "https://www.edualist.com/blog/eduentry-uluslararasi-akademik-degerlendirme-nedir/",
+    "https://www.edualist.com/blog/basarili-ogrenciler-ib-de-neden-zorlanir/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
