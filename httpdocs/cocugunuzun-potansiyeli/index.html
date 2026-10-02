@@ -67,9 +67,11 @@
   }
   </script>
 
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Outfit:wght@400;500;600&family=Inter:wght@400;500;600;700;800&display=swap"></noscript>
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -78,6 +80,8 @@
       --navy:   #1a2744;
       --navy2:  #243259;
       --gold:   #DBAF2E;
+      --font-serif: 'Cormorant Garamond', Georgia, serif;
+      --font-sans:  'Outfit', -apple-system, BlinkMacSystemFont, sans-serif;
       --gold-l: #f5e8b0;
       --green:  #2e7d32;
       --green-l:hsla(120,40%,97%,0.9);
@@ -98,15 +102,37 @@
     .container { max-width: 860px; margin: 0 auto; padding: 0 1.25rem; }
 
     /* ── Nav ── */
-    .nav { background: var(--navy); padding: 1rem 0; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 12px rgba(0,0,0,0.15); }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; }
-    .nav-logo { color: var(--white); font-weight: 700; font-size: 1.2rem; text-decoration: none; letter-spacing: -0.02em; }
-    .nav-logo span { color: var(--gold); }
-    .nav-cta { background: var(--gold); color: var(--navy); font-weight: 700; padding: .5rem 1.25rem; border-radius: 6px; text-decoration: none; font-size: .9rem; transition: opacity .2s; }
-    .nav-cta:hover { opacity: .88; }
+    .header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:background-color .4s,box-shadow .4s,border-color .4s}
+    .nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}
+    .logo{display:flex;align-items:center;gap:.75rem;text-decoration:none}
+    .logo-icon{width:40px;height:40px;border-radius:6px;background-color:var(--navy);color:var(--gold);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:0 4px 12px rgba(26,39,68,.1)}
+    .logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--navy)}
+    .nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}
+    .nav-links a{font-family:var(--font-sans);font-size:1rem;font-weight:500;color:var(--navy);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative;text-decoration:none}
+    .nav-links a:hover{opacity:1;color:var(--gold)}
+    .nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--gold);transform:scaleX(0);transition:transform .3s ease}
+    .nav-links a:hover::after{transform:scaleX(1)}
+    .nav-links a.nav-blog-highlight{color:var(--gold);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}
+    .nav-links a.nav-blog-highlight::after{display:none}
+    .nav-count-badge{display:inline-block;background:var(--gold);color:var(--navy);font-size:.7rem;font-weight:700;padding:.1rem .4rem;border-radius:10px;margin-left:.3rem;vertical-align:middle}
+    .nav-controls{display:flex;align-items:center;gap:1.5rem}
+    .nav-cta-btn{background-color:var(--navy);color:#fff;font-family:var(--font-sans);font-weight:500;padding:.75rem 1.5rem;border-radius:8px;text-decoration:none;font-size:.9rem;transition:background-color .2s,transform .2s;white-space:nowrap}
+    .nav-cta-btn:hover{background-color:var(--navy2);transform:translateY(-1px)}
+    .menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}
+    .menu-toggle span{width:100%;height:2px;background-color:var(--navy);border-radius:2px;transition:.2s}
+    .menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}
+    .menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}
+    .menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}
+    .header-scrolled{background-color:rgba(255,255,255,.96);box-shadow:0 4px 16px rgba(26,39,68,.08);border-bottom:1px solid rgba(26,39,68,.06)}
+    @media(max-width:768px){
+      .menu-toggle{display:flex}
+      .nav-controls .nav-cta-btn{display:none}
+      .nav-links{position:fixed;top:100px;left:0;width:100%;background-color:#f7f9fc;border-bottom:1px solid rgba(26,39,68,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:0 8px 24px rgba(26,39,68,.08);transform:translateY(-120%);opacity:0;transition:.4s cubic-bezier(.25,1,.5,1);z-index:999}
+      .nav-links.open{transform:translateY(0);opacity:1}
+    }
 
     /* ── Hero ── */
-    .hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%); color: var(--white); padding: 5rem 0 4rem; text-align: center; }
+    .hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy2) 100%); color: var(--white); padding: 8rem 0 4rem; text-align: center; }
     .hero-label { display: inline-block; background: rgba(219,175,46,0.2); color: var(--gold); font-size: .8rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; padding: .35rem .9rem; border-radius: 20px; margin-bottom: 1.5rem; border: 1px solid rgba(219,175,46,0.3); }
     .hero h1 { font-size: clamp(1.75rem, 4vw, 2.6rem); font-weight: 800; line-height: 1.2; max-width: 720px; margin: 0 auto 1.25rem; letter-spacing: -0.03em; }
     .hero h1 em { font-style: normal; color: var(--gold); }
@@ -182,8 +208,27 @@
     .cta-note { font-size: .82rem; color: rgba(255,255,255,0.45); margin-top: 1rem; }
 
     /* ── Footer ── */
-    footer { background: var(--navy); color: rgba(255,255,255,0.5); text-align: center; padding: 2rem 1rem; font-size: .85rem; }
-    footer a { color: var(--gold); text-decoration: none; }
+    .footer{background:var(--navy);color:rgba(255,255,255,.85);padding:4rem 0 2rem}
+    .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}
+    @media(max-width:768px){.footer-grid{grid-template-columns:1fr;gap:2rem}}
+    .footer-bio-col h3{font-family:var(--font-serif);font-size:1.6rem;font-weight:600;margin-bottom:1rem;color:#fff}
+    .footer-bio-text{font-size:.92rem;color:rgba(255,255,255,.65);line-height:1.7}
+    .footer-links-col h4,.footer-contact-col h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;font-weight:600;color:var(--gold);margin-bottom:1rem;font-family:var(--font-sans)}
+    .footer-links{list-style:none;display:flex;flex-direction:column;gap:.6rem}
+    .footer-links a{font-size:.9rem;color:rgba(255,255,255,.7);text-decoration:none;transition:color .2s;font-family:var(--font-sans)}
+    .footer-links a:hover{color:var(--gold)}
+    .footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+    .footer-contact-item{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem;color:rgba(255,255,255,.7);font-family:var(--font-sans)}
+    .footer-contact-item svg{flex-shrink:0;stroke:var(--gold);margin-top:.1rem}
+    .footer-contact-item a{color:rgba(255,255,255,.7);text-decoration:none;transition:color .2s}
+    .footer-contact-item a:hover{color:var(--gold)}
+    .footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:rgba(255,255,255,.45);flex-wrap:wrap;gap:.75rem;font-family:var(--font-sans)}
+    .footer-bottom a{color:rgba(255,255,255,.45);text-decoration:none}
+    /* ── WhatsApp sticky ── */
+    .whatsapp-sticky{position:fixed;bottom:1.5rem;right:1.5rem;width:56px;height:56px;background:#25d366;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;box-shadow:0 4px 16px rgba(37,211,102,.4);z-index:900;transition:transform .2s,box-shadow .2s;text-decoration:none}
+    .whatsapp-sticky:hover{transform:scale(1.08)}
+    .whatsapp-sticky-label{position:absolute;right:64px;background:#25d366;color:#fff;font-size:.8rem;font-weight:600;padding:.3rem .75rem;border-radius:50px;white-space:nowrap;opacity:0;pointer-events:none;transition:opacity .2s;font-family:var(--font-sans)}
+    .whatsapp-sticky:hover .whatsapp-sticky-label{opacity:1}
 
     /* ── Tags ── */
     .tag-row { display: flex; flex-wrap: wrap; gap: .5rem; margin-bottom: 1.5rem; }
@@ -199,10 +244,25 @@
 </head>
 <body>
 
-  <nav class="nav">
-    <div class="container nav-inner">
-      <a href="https://www.edualist.com/" class="nav-logo">Edu<span>alist</span></a>
-      <a href="https://eduentry.com/tr/auth/register" class="nav-cta">Ücretsiz Değerlendirme →</a>
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/">Dubai'de Okul</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/">Danışmanlık</a></li>
+        <li><a href="/uluslararasi-akademik-kocluk/">Akademik Koçluk</a></li>
+        <li><a href="/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">70</span></a></li>
+        <li><a href="/neden-biz/">Hakkımızda</a></li>
+      </ul>
+      <div class="nav-controls">
+        <a href="https://eduentry.com/tr/auth/register" class="nav-cta-btn">Ücretsiz Değerlendirme →</a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Menüyü aç/kapat" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
   </nav>
 
@@ -408,10 +468,61 @@
     </div>
   </main>
 
-  <footer>
-    <p>© 2026 <a href="https://www.edualist.com/">Edualist</a> · Uluslararası Eğitim Danışmanlığı</p>
-    <p style="margin-top:.5rem"><a href="/blog/">Blog</a> · <a href="https://eduentry.com/tr/auth/register">Ücretsiz Değerlendirme</a></p>
+  <footer class="footer">
+    <div class="container" style="max-width:1200px">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Dubai ve yurt dışına taşınan Türk aileler için ücretsiz, bağımsız uluslararası okul danışmanlığı.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Sayfalar</h4>
+          <ul class="footer-links">
+            <li><a href="/dubai/">Dubai'de Okul</a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/">Danışmanlık</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/neden-biz/">Hakkımızda</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>İletişim</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Dubai, UAE</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Edualist. Tüm hakları saklıdır.</span>
+        <a href="/gizlilik-politikasi/">Gizlilik Politikası</a>
+      </div>
+    </div>
   </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=971502709379" target="_blank" rel="noopener"
+     class="whatsapp-sticky" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.554 4.124 1.526 5.857L.057 23.215a.75.75 0 0 0 .916.916l5.357-1.469A11.946 11.946 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.75a9.75 9.75 0 0 1-4.984-1.371l-.355-.213-3.683 1.01 1.01-3.684-.213-.354A9.75 9.75 0 1 1 12 21.75z"/></svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+    window.addEventListener('scroll', () => {
+      document.getElementById('mainNav').classList.toggle('header-scrolled', window.scrollY > 20);
+    }, {passive: true});
+  </script>
 
 </body>
 </html>
