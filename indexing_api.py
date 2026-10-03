@@ -55,6 +55,11 @@ URLS = [
     "https://www.edualist.com/blog/ozel-ders-mi-akademik-koc-mu/",
     "https://www.edualist.com/blog/cocugum-ib-ye-basliyor/",
     "https://www.edualist.com/blog/cocugum-akademik-olarak-geride-kaliyor/",
+    # Yeni ne-yapmalıyım yazıları 2026-10-05
+    "https://www.edualist.com/blog/cocugum-motivasyonunu-kaybetti/",
+    "https://www.edualist.com/blog/cocugum-sinav-kaygisi-yasiyor/",
+    "https://www.edualist.com/blog/cocugum-okul-degistiriyor/",
+    "https://www.edualist.com/blog/cocugum-ingilizce-ogrenemıyor/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────

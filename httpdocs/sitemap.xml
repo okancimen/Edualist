@@ -862,4 +862,40 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.edualist.com/blog/cocugum-motivasyonunu-kaybetti/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-motivasyonunu-kaybetti/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-motivasyonunu-kaybetti/"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/cocugum-sinav-kaygisi-yasiyor/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-sinav-kaygisi-yasiyor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-sinav-kaygisi-yasiyor/"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/cocugum-okul-degistiriyor/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-okul-degistiriyor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-okul-degistiriyor/"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/cocugum-ingilizce-ogrenemıyor/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-ingilizce-ogrenemıyor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-ingilizce-ogrenemıyor/"/>
+    <lastmod>2026-10-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
