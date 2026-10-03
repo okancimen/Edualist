@@ -49,11 +49,11 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
-  # non-www + directory without trailing slash → www + slash (1 hop, prevents 2-redirect chain)
+  # non-www + no trailing slash + no file extension → www + slash (1 hop, prevents 2-redirect chain)
   RewriteCond %{HTTP_HOST} ^edualist\.com$ [NC]
   RewriteCond %{REQUEST_URI} !/$
-  RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} -d
-  RewriteRule ^(.+)$ https://www.edualist.com%{REQUEST_URI}/ [R=301,L]
+  RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{1,6}$
+  RewriteRule ^(.*)$ https://www.edualist.com%{REQUEST_URI}/ [R=301,L]
 
   # http non-www → https www (single hop)
   RewriteCond %{HTTPS} off
