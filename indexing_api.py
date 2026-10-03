@@ -60,6 +60,19 @@ URLS = [
     "https://www.edualist.com/blog/cocugum-sinav-kaygisi-yasiyor/",
     "https://www.edualist.com/blog/cocugum-okul-degistiriyor/",
     "https://www.edualist.com/blog/cocugum-ingilizce-ogrenemıyor/",
+    # Yeni Dubai + geçiş rehberleri 2026-10-08
+    "https://www.edualist.com/blog/dubai-ib-okul-secimi/",
+    "https://www.edualist.com/blog/turkiyeden-dubaya-tasima-cocuk-okul/",
+    "https://www.edualist.com/blog/dubai-ozel-okul-mu-devlet-okulu-mu/",
+    "https://www.edualist.com/blog/dubai-turk-aileler-okul-rehberi/",
+    # Genişletilen yazılar + EN body + SearchAction
+    "https://www.edualist.com/blog/dubai-okul-ucretleri-2026/",
+    "https://www.edualist.com/blog/dubai-yasam-maliyeti-2026/",
+    "https://www.edualist.com/blog/international-school-nedir/",
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
+    "https://www.edualist.com/blog/akademik-koc-nedir/",
+    "https://www.edualist.com/tr/",
+    "https://www.edualist.com/en/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
