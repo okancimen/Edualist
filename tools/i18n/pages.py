@@ -1,0 +1,245 @@
+"""Turkish ↔ English page map for the /en/ site.
+
+Turkish pages keep their existing URLs. Each entry maps a Turkish path to its
+English path plus the English <title> and meta description. Pages that are
+not listed here are Turkish-only (no English version yet).
+
+`source` overrides which bilingual file the English page is cut from (used
+where an English-first post already existed at another URL).
+"""
+
+SITE = 'https://www.edualist.com'
+
+# Non-blog pages
+PAGES = {
+    '/tr/': {
+        'en': '/en/',
+        'source': '/en/',
+        'title': 'International School Consulting for Dubai & Expat Families | Edualist',
+        'desc': None,  # /en/ already has English head tags
+    },
+    '/dubai/': {
+        'en': '/en/dubai/',
+        'title': 'Dubai International School Consultancy | KHDA Expert | Edualist',
+        'desc': 'Free Dubai school consultancy for Turkish families: KHDA ratings, curriculum choice, fees, waiting lists and admissions support from Özlem Çimen.',
+    },
+    '/hakkimda/': {
+        'en': '/en/about/',
+        'title': 'Özlem Çimen | International Education Consultant | Edualist',
+        'desc': 'Özlem Çimen, founder of Edualist: 20+ years in education, an expat mother across five countries, helping families choose and thrive in international schools.',
+    },
+    '/neden-biz/': {
+        'en': '/en/why-edualist/',
+        'title': 'Why Edualist? International School Consulting | Edualist',
+        'desc': 'Why families choose Edualist: independent international school advice, first-hand Dubai experience and coaching that continues after admission.',
+    },
+    '/uluslararasi-akademik-kocluk/': {
+        'en': '/en/academic-coaching/',
+        'title': 'Academic & Transition Coaching for International Schools | Edualist',
+        'desc': 'Academic and transition coaching for students in international schools: study systems, IB and A-Level support, time management and adaptation.',
+    },
+    '/uluslararasi-okul-danismanligi/': {
+        'en': '/en/international-school-consulting/',
+        'title': 'International School Consulting for Turkish Families | Edualist',
+        'desc': 'International school consulting for families moving abroad: school shortlists, curriculum comparison, admissions, interviews and relocation planning.',
+    },
+    '/gizlilik-politikasi/': {
+        'en': '/en/privacy-policy/',
+        'title': 'Privacy Policy | Edualist',
+        'desc': 'How Edualist collects, uses and protects your personal data, including your rights under KVKK and applicable privacy laws.',
+    },
+    '/blog/': {
+        'en': '/en/blog/',
+        'title': 'Blog — Dubai & International School Guides | Edualist',
+        'desc': 'Guides for expat families: Dubai schools, KHDA ratings, fees, admissions, IB vs A-Level, relocation and academic coaching, by Özlem Çimen.',
+    },
+}
+
+# Blog posts: Turkish slug -> (English slug, English title, English description)
+POSTS = {
+    'abu-dhabi-uluslararasi-okullar': ('abu-dhabi-international-schools',
+        "Abu Dhabi International Schools 2026: ADEK, Fees & Dubai | Edualist",
+        "Abu Dhabi's international schools in 2026: ADEK ratings, top schools, fee ranges and how Abu Dhabi compares with Dubai for expat families."),
+    'akademik-koc-nedir': ('what-is-an-academic-coach',
+        "What Is an Academic Coach? Coach vs Tutor | Edualist",
+        "An academic coach teaches students how to learn. What academic coaching is, how it differs from tutoring and the signs your child needs one."),
+    'almanya-okul-kayit-rehberi': ('school-enrolment-germany',
+        "School Enrolment in Germany: Step-by-Step Guide | Edualist",
+        "How to enrol your child in a school in Germany: the state-by-state system, school types, mandatory registration and practical tips for families."),
+    'almanyada-turk-okulu-var-mi': ('turkish-school-in-germany',
+        "Is There a Turkish School in Germany? (2026 Guide) | Edualist",
+        "No school in Germany follows the Turkish MEB curriculum, but Maarif schools, consulate Turkish classes and international schools are options."),
+    'anxious-generation-ergen-ruh-sagligi': ('anxious-generation-teen-mental-health',
+        "Teen Mental Health & The Anxious Generation | Edualist",
+        "Reading Jonathan Haidt's The Anxious Generation with a Dubai school counsellor: phone-based childhood, four developmental harms and what parents can do."),
+    'bae-uluslararasi-okul-rehberi': ('uae-international-school-guide',
+        "UAE International School Guide: IB, British, American | Edualist",
+        "How to choose among 1,600+ international schools in the UAE: IB, British and American curricula compared to find the right fit for your child."),
+    'basarili-ogrenciler-ib-de-neden-zorlanir': ('why-high-achievers-struggle-with-ib',
+        "Why High Achievers Struggle with the IB | Edualist",
+        "The IB tests time management and academic writing, not intelligence. Why strong students struggle with the EE, TOK and IAs, and how coaching helps."),
+    'cat4-sinavi-nedir': ('cat4-test-dubai',
+        "CAT4 Test Dubai: What It Is & How to Prepare | Edualist",
+        "CAT4 is used by most British and IB schools in Dubai for admissions. Its four batteries, how scores are read and five ways to prepare."),
+    'cocugumu-yurtdisinda-okutmali-miyim': ('should-my-child-study-abroad',
+        "Should I Send My Child to School Abroad? | Edualist",
+        "A practical framework for deciding on international education abroad: the real benefits, the challenges and the questions families should ask first."),
+    'cocugunuzun-guclu-yonleri': ('child-strengths-and-weaknesses',
+        "Your Child's Strengths & Weaknesses: Academic Profile | Edualist",
+        "Performance vs potential, the four cognitive domains and how a strength profile changes school selection, plus weaknesses as a development roadmap."),
+    'cocuklar-icin-gelecek-becerileri': ('future-skills-for-children',
+        "4 Critical Future Skills for Children (WEF & Big 4) | Edualist",
+        "39% of core job skills will change by 2030. Research from WEF, McKinsey, Deloitte and PwC distilled into four future skills every child needs."),
+    'dubai-basarili-turk-ogrenciler': ('turkish-students-succeeding-in-dubai',
+        "What Makes Turkish Students Succeed in Dubai Schools | Edualist",
+        "Why some Turkish children thrive in Dubai's international schools, even starting with no English: case studies and five practical steps for families."),
+    'dubai-egitim-sistemi': ('dubai-education-system',
+        "Dubai Education System Explained: KHDA & Curricula | Edualist",
+        "How Dubai's education system works: private international schools, KHDA inspections, British, IB and American curricula and typical annual fees."),
+    'dubai-en-iyi-uluslararasi-okullar': ('dubai-khda-outstanding-schools',
+        "Dubai's KHDA Outstanding Schools 2026: Full List | Edualist",
+        "All of Dubai's KHDA Outstanding-rated schools with curriculum, fee ranges and key strengths, plus the best IB, British and American schools."),
+    'dubai-gelmeden-once-bilmeniz-gerekenler': ('before-moving-to-dubai',
+        "What to Know Before Moving to Dubai with Children | Edualist",
+        "Seven things families must know before relocating to Dubai: school timing, true costs, curriculum, neighbourhood choice, language and adaptation."),
+    'dubai-okul-basvuru-nasil-yapilir': ('how-to-apply-dubai-school',
+        "How to Apply to a Dubai School 2026: Step by Step | Edualist",
+        "The Dubai international school application process: forms, documents, assessment day preparation and what to do if your application is rejected."),
+    'dubai-okul-bekleme-listesi': ('dubai-school-waiting-list',
+        "Dubai School Waiting Lists: How & When to Apply | Edualist",
+        "Waiting lists at Dubai's Outstanding schools can fill 12–18 months ahead. When to apply, how many schools to target and how registration fees work."),
+    'dubai-okul-burs-imkanlari': ('dubai-school-scholarships',
+        "Dubai School Scholarships 2026: Who Offers Them | Edualist",
+        "How scholarships work at Dubai's international schools: merit, sport and arts bursaries, employer education allowances and application strategy."),
+    'dubai-okul-kayit-rehberi': ('dubai-school-registration',
+        "Dubai School Registration 2026: Guide & Checklist | Edualist",
+        "Step-by-step Dubai school registration: KHDA ratings, application timelines, the documents you need and first-hand tips to avoid common mistakes."),
+    'dubai-okul-kayit-sezonu-ne-zaman-baslar': ('dubai-school-registration-season',
+        "When Does Dubai School Registration Open? 2026–27 | Edualist",
+        "Dubai's school registration season, the 2026–2027 academic calendar, term dates and application windows by school type and KHDA rating."),
+    'dubai-okul-tatil-tarihleri': ('dubai-school-holidays',
+        "Dubai School Holiday Dates 2026–2027 | Edualist",
+        "Dubai school term dates, half-term breaks, UAE public holidays, Ramadan timings and curriculum differences for the 2026–2027 school year."),
+    'dubai-okul-ucretleri-2026': ('dubai-school-fees-2026',
+        "Dubai School Fees 2026–2027: Full Price Table | Edualist",
+        "Dubai international school fees for 2026–2027 by KHDA rating and curriculum, school examples, hidden costs and KHDA fee increase rules."),
+    'dubai-semt-rehberi': ('dubai-neighbourhood-school-guide',
+        "Where to Live in Dubai: School-Based Area Guide 2026 | Edualist",
+        "Choosing a Dubai neighbourhood around schools: Marina, JVC and Downtown compared for school access and budget, with a rent-plus-fees formula."),
+    'dubai-turk-okulu-var-mi': ('turkish-school-in-dubai',
+        "Is There a Turkish School in Dubai? (2026 Guide) | Edualist",
+        "There is no MEB-curriculum Turkish school in Dubai. Where 5,000+ Turkish students study instead and how to keep up Turkish through consulate classes."),
+    'dubai-yasam-maliyeti-2026': ('dubai-cost-of-living-2026',
+        "Cost of Living in Dubai 2026: Real Family Numbers | Edualist",
+        "Monthly costs for a family of four in Dubai, from budget to premium: rent, school fees and everyday spending, and what zero income tax really means."),
+    'eal-nedir': ('what-is-eal',
+        "What Is EAL? English Support in Dubai Schools | Edualist",
+        "EAL (English as an Additional Language) explained: how Dubai international schools support children whose English is not yet strong enough."),
+    'eduentry-uluslararasi-akademik-degerlendirme-nedir': ('eduentry-international-assessment',
+        "How Does Your Child Compare to the World? | Edualist",
+        "Is your child's level good enough abroad? EduEntry gives a free, internationally benchmarked score so families relocating know where they stand."),
+    'egitim-kocu-ne-yapar': ('what-does-an-education-coach-do',
+        "What Does an Education Coach Do? Tutor vs Coach | Edualist",
+        "An education coach builds a learning system rather than teaching content. What happens in a session and five scenarios to choose coach or tutor."),
+    'fransa-okul-kayit-rehberi': ('school-enrolment-france',
+        "School Enrolment in France: Step-by-Step Guide | Edualist",
+        "Enrolling your child in school in France: the national curriculum, administrative steps, language considerations and public vs international schools."),
+    'gelecegin-meslekleri-ebeveyn-sorulari': ('future-careers-2030-parent-questions',
+        "Future Careers 2030: 8 Parent Questions Answered | Edualist",
+        "Is medicine dying? Should kids learn to code? Which jobs disappear by 2030? Eight questions parents ask about future careers, answered with data."),
+    'gelecekte-hangi-meslekler-onem-kazanacak': ('jobs-of-the-future',
+        "Which Jobs Will Matter in the Future? | Edualist",
+        "WEF projects 170 million new jobs by 2030. The job categories gaining ground and how today's school and curriculum choices shape your child's options."),
+    'hollanda-okul-kayit-rehberi': ('school-enrolment-netherlands',
+        "School Enrolment in the Netherlands: Family Guide | Edualist",
+        "Moving to the Netherlands with children: the Dutch primary system, the CITO transition test and international schools in Amsterdam and The Hague."),
+    'ib-alevel-amerikan-mufredat-karsilastirma': ('ib-vs-a-level-vs-ap',
+        "IB vs A-Level vs AP: Which Curriculum to Choose? | Edualist",
+        "IB, A-Level and AP compared: breadth vs specialisation, university recognition by country and which curriculum fits your child's learning style."),
+    'ib-diploma-universite-basvuru': ('ib-diploma-university-requirements',
+        "IB Diploma University Requirements 2026 by Country | Edualist",
+        "IB Diploma score thresholds for Oxbridge, Russell Group, Dutch, US and UAE universities, plus Turkey's YÖK equivalency, country by country."),
+    'ingilizcesi-yetersiz-cocuk-dubai-okulu-uyum': ('limited-english-child-dubai-school',
+        "Child with Limited English Starting a Dubai School | Edualist",
+        "How children with limited English adapt to Dubai international schools: EAL programmes, adaptation timelines by age and how to help at home."),
+    'ingiltere-okul-kayit-rehberi': ('uk-school-enrolment',
+        "UK School Enrolment: Step-by-Step Guide for Families | Edualist",
+        "The UK school system for relocating families: state vs independent schools, Ofsted ratings, the 11+ and applying to boarding and day schools."),
+    'international-school-nedir': ('what-is-an-international-school',
+        "What Is an International School? Complete Guide | Edualist",
+        "What makes a school international: independent curricula like IB, A-Level and AP, multinational classrooms and university options worldwide."),
+    'italya-okul-kayit-rehberi': ('school-enrolment-italy',
+        "School Enrolment in Italy: Step-by-Step Guide | Edualist",
+        "Enrolling your child in school in Italy: the tiered system, compulsory education, registration steps and international schools in major cities."),
+    'kanada-okul-kayit-rehberi': ('school-enrolment-canada',
+        "School Enrolment in Canada: Step-by-Step Guide | Edualist",
+        "School enrolment in Canada: provincial systems in Ontario (TDSB) and British Columbia, required documents, timelines and tips for a smooth move."),
+    'katar-okul-kayit-rehberi': ('qatar-international-schools',
+        "Qatar International Schools 2026: Doha Guide | Edualist",
+        "Qatar's education system, curricula, popular Doha schools and areas, fees, step-by-step applications and how Qatar compares with Dubai."),
+    'khda-notu-nedir': ('what-is-a-khda-rating',
+        "What Is a KHDA Rating? Outstanding to Weak Explained | Edualist",
+        "What KHDA ratings mean for Dubai private schools: how inspections work, what each grade tells you and how to use ratings when choosing a school."),
+    'pisa-2025-erken-is-deneyimi': ('pisa-2025-early-work-experience',
+        "PISA 2025 & Early Work Experience: The Missing Link | Edualist",
+        "PISA 2025 shows Turkish students above the OECD average in science and reading but behind in problem solving. Why early work experience matters."),
+    'pisa-2025-turkiye-sonuclari': ('pisa-2025-turkey-results',
+        "PISA 2025 Turkey Results: Better Than They Look? | Edualist",
+        "Turkey improved in all three PISA 2025 subjects, but top-performer rates, problem solving and inequality tell a more worrying story for families."),
+    'pisa-nedir': ('what-is-pisa',
+        "What Is PISA? 2025 Results & Score Calculation | Edualist",
+        "What PISA measures, how scores are calculated, what the 2025 global results show for Turkey and the world, and why PISA skills predict careers.",
+        'what-is-pisa'),
+    'robert-kolej-ucreti-2026': ('robert-kolej-fees-2026',
+        "Robert Kolej Fees 2026-27 vs Turkey & Dubai Schools | Edualist",
+        "Robert Kolej's 2026-27 fee compared with Koç and Hisar, and what the same budget buys at a full IB school in Dubai. The real cost picture."),
+    'turkiye-dubai-okul-ucreti-karsilastirma': ('turkey-vs-dubai-school-fees',
+        "Turkey vs Dubai School Fees 2026: Cost & Quality | Edualist",
+        "Turkey's top private schools cost 1.2–2.75 million TL a year. Dubai's KHDA Outstanding schools cost 40–60% less, with IB or British curricula."),
+    'turkiye-egitim-sistemi-neden-yetmiyor': ('why-turkish-education-falls-short',
+        "Why the Turkish Education System Falls Short | Edualist",
+        "PISA rankings, rote learning, frequent curriculum changes and the English gap: a data-driven look at Turkish education from an expat mother."),
+    'turkiye-ozel-okuldan-dubai-uluslararasi-okula-gecis': ('turkey-to-dubai-international-school',
+        "Moving from a Turkish School to Dubai: Documents & CAT4 | Edualist",
+        "Moving from a Turkish private school to a Dubai international school: required documents, the certification chain, CAT4 and interview preparation."),
+    'turkiye-yilda-46000-cocugunu-yurt-disina-gonderiyor': ('turkey-46000-children-abroad',
+        "Turkey Sends 46,000 Children Abroad Every Year | Edualist",
+        "TÜİK data shows 46,399 children and young people leave Turkey each year. Which ages are most affected and how families can prepare for the move."),
+    'uluslararasi-okul-mulakat-sorulari': ('international-school-interview-questions',
+        "30+ International School Interview Questions 2026 | Edualist",
+        "Real questions from Dubai and UAE international school interviews, by age group and for parents, with guidance on what to say and what to avoid."),
+    'uluslararasi-okul-mulakatı-nasil-gecilir': ('how-to-pass-international-school-interview',
+        "How to Pass an International School Interview | Edualist",
+        "Prepare for every stage of international school admissions: student interview, parent meeting, written assessment and playdate evaluation."),
+    'yapay-zekaya-direncli-meslekler': ('ai-proof-jobs',
+        "65 Jobs Safe from AI: What It Means for Your Child | Edualist",
+        "65 careers least exposed to AI automation, why they are protected, the fastest-growing among them and which curricula prepare children best."),
+    'yurtdisi-egitim-maliyet-karsilastirma': ('international-education-cost',
+        "How Much Does International Education Cost? 2026 | Edualist",
+        "A country-by-country cost comparison for international education: tuition plus uniforms, activities, registration fees and other hidden costs."),
+}
+
+# English-first posts with no Turkish counterpart; the old URL redirects to /en/.
+EN_ONLY_POSTS = {
+    'dubai-top-schools': ('dubai-top-schools',
+        "Top 10 International Schools in Dubai (2026) | Edualist",
+        "The top 10 Dubai international schools ranked for expat families, with a fee comparison table and first-hand coaching notes from Özlem Çimen."),
+}
+
+# Old URLs that now redirect to their English page.
+REDIRECTS = {
+    '/blog/what-is-pisa/': '/en/blog/what-is-pisa/',
+    '/blog/dubai-top-schools/': '/en/blog/dubai-top-schools/',
+}
+
+
+def all_pairs():
+    """Yield (tr_path or None, en_path, source_path, title, desc)."""
+    for tr, d in PAGES.items():
+        yield tr, d['en'], d.get('source', tr), d['title'], d['desc']
+    for tr_slug, v in POSTS.items():
+        en_slug, title, desc = v[:3]
+        src = v[3] if len(v) > 3 else tr_slug
+        yield f'/blog/{tr_slug}/', f'/en/blog/{en_slug}/', f'/blog/{src}/', title, desc
+    for src, (en_slug, title, desc) in EN_ONLY_POSTS.items():
+        yield None, f'/en/blog/{en_slug}/', f'/blog/{src}/', title, desc

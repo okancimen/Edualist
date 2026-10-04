@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.hero-blog-preview{padding:1.5rem 1.75rem}.hero-blog-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}.hero-blog-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.hero-blog-all{font-size:.8rem;color:var(--text-muted);text-decoration:none;transition:color .2s}.hero-blog-all:hover{color:var(--accent)}.hero-blog-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}.hero-blog-item{border-top:1px solid var(--border);padding:.85rem 0}.hero-blog-item:first-child{border-top:none;padding-top:0}.hero-blog-item a{font-size:.92rem;font-weight:500;color:var(--text-primary);text-decoration:none;line-height:1.4;display:block;transition:color .2s}.hero-blog-item a:hover{color:var(--accent)}.hero-blog-item-meta{font-size:.75rem;color:var(--text-muted);margin-top:.2rem}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/blog/pisa-2025-turkiye-sonuclari/assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PISA 2025 Turkey Results: Better Than They Look? | Edualist</title>
+  <meta name="description" content="Turkey improved in all three PISA 2025 subjects, but top-performer rates, problem solving and inequality tell a more worrying story for families.">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/en/blog/pisa-2025-turkey-results/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/pisa-2025-turkiye-sonuclari/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/pisa-2025-turkey-results/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/pisa-2025-turkiye-sonuclari/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="PISA 2025 Turkey Results: Better Than They Look?">
+  <meta property="og:description" content="Turkey improved in all three PISA 2025 subjects, but top-performer rates, problem solving and inequality tell a more worrying story for families.">
+  <meta property="og:url"         content="https://www.edualist.com/en/blog/pisa-2025-turkey-results/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-turkiye-egitim.webp">
+  <meta property="article:published_time" content="2026-09-10">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="PISA 2025 Turkey Results: Better Than They Look?">
+  <meta name="twitter:description" content="Turkey improved in all three PISA 2025 subjects, but top-performer rates, problem solving and inequality tell a more worrying story for families.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-turkiye-egitim.webp">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "PISA 2025 Turkey Results: The Numbers Look Better Than They Are",
+  "description": "Turkey improved in all three PISA 2025 subjects, but top-performer rates, problem solving and inequality tell a more worrying story for families.",
+  "author": {
+    "@type": "Person",
+    "name": "Özlem Çimen",
+    "url": "https://www.edualist.com/en/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edualist",
+    "url": "https://www.edualist.com/en/"
+  },
+  "datePublished": "2026-09-10",
+  "dateModified": "2026-10-03",
+  "wordCount": 2200,
+  "inLanguage": "en",
+  "url": "https://www.edualist.com/en/blog/pisa-2025-turkey-results/",
+  "image": "https://www.edualist.com/assets/blog/thumb-turkiye-egitim.webp",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".blog-summary",
+      ".blog-post-title"
+    ]
+  }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.edualist.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.edualist.com/en/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "PISA 2025 Turkey Results: Better Than They Look?",
+      "item": "https://www.edualist.com/en/blog/pisa-2025-turkey-results/"
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where does Turkey rank in PISA 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Turkey scored above the OECD average in science and reading, and close to the average in mathematics. However, the full ranking across 91 countries shows Turkey's top-performer rates remain far behind global leaders such as Singapore, China and Japan."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is Turkey's weakest area in PISA 2025?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Computational problem solving is the area where Turkey falls most clearly below the OECD average. Top-performance rates (Level 5–6) in mathematics (8%), science (7%) and especially reading (4%) are also well behind global leaders."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How can I measure my child's international academic level?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "PISA does not assess individual children — it measures country-level averages. To understand where your child specifically stands on an international scale, look at individual assessment tools like EduEntry 's international academic evaluation programme."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Did Turkey improve in PISA compared to 2022?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Turkey is one of the few countries to have improved in all three subjects between 2022 and 2025. This is genuine progress — but the picture on top performance, computational skills and widening socio-economic inequality remains concerning."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why is school truancy so high in Turkey?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "According to PISA 2025, 53% of Turkish students reported skipping at least one school day in the two weeks before the test — more than double the OECD average of 22%. This is a significant warning sign for school engagement and motivation."
+      }
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional"></noscript>
+
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="/styles.css?v=13">
+  <link rel="stylesheet" href="/styles.css?v=13" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/styles.css?v=13"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+    <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Dubai Schools</a></li>
+        <li><a href="/en/international-school-consulting/">Consultancy</a></li>
+        <li><a href="/en/academic-coaching/">Coaching</a></li><li><a href="/en/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">55</span></a></li>
+        <li><a href="/en/why-edualist/">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="blog-post-hero">
+      <div class="container">
+<a href="/en/blog/" class="blog-back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+<span>Back to Blog</span>
+        </a>
+        <div class="blog-breadcrumb">
+          <a href="/en/">Home</a>
+          <span>›</span>
+          <a href="/en/blog/">Blog</a>
+          <span>›</span>
+          <span>PISA 2025 Turkey</span>
+        </div>
+
+        <div class="blog-post-meta">
+          <span>10 September 2026</span>
+          <span>·</span>
+          <span>9 min read</span>
+          <span>·</span>
+          <span><a href="/en/about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+        </div>
+
+        <div class="blog-summary">
+          <strong><span>Summary</span></strong>
+          <p>Turkey improved in all three PISA 2025 subjects compared to 2022 — genuinely good news. But behind the headline, the picture is more unsettling: top-performer rates remain far behind global leaders, computational problem solving lags the OECD average, socio-economic inequality is widening, and 53% of students skipped at least one school day in the two weeks before the test. "I'm doing well in my class" is no longer enough.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container blog-post-container">
+      <article>
+
+
+        <div class="blog-post-body">
+
+          <h1 class="blog-post-title">PISA 2025 Turkey Results: The Numbers Look Better Than They Are</h1>
+
+          <p>On 8 September 2026, the OECD published PISA 2025 results. Turkey is one of the few countries to have improved in all three subjects — mathematics, reading and science — compared to 2022. That is a genuine achievement worth acknowledging.</p>
+
+          <p>But as an educator and school counsellor, I look at the numbers carefully. And what I see both reassures and worries me.</p>
+
+          <div class="blog-callout" style="border-left-color:#c0392b;background:rgba(192,57,43,0.07)">
+            <strong>The concern:</strong> Behind Turkey's improving averages lie serious question marks about where Turkish children actually stand on a global scale — and far too little effort is made to find out.
+          </div>
+
+          <h2>How Much Did Turkey Improve in PISA 2025?</h2>
+
+          <p>Let's be honest first. PISA 2025 contains genuinely positive signals for Turkey:</p>
+
+          <ul>
+            <li>Science: <strong>81%</strong> of students reached baseline proficiency Level 2 (OECD average: 74%)</li>
+            <li>Reading: <strong>76%</strong> at Level 2 or above (OECD average: 69%)</li>
+            <li>Mathematics: <strong>64%</strong> at Level 2 or above (OECD average: 65%) — near the average</li>
+            <li>Since 2015: low-performing students fell by 16 percentage points in maths, 25 points in science</li>
+          </ul>
+
+          <p>This picture shows that some education policy steps are bearing fruit. The headlines are understandable.</p>
+
+          <h2>Why PISA 2025 Turkey Results Are Not Enough</h2>
+
+          <h3>1. Top Performers: Turkey Is Far Behind the Global Leaders</h3>
+
+          <p>Passing the OECD average is one thing. Producing globally competitive students is another.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr><th>Country</th><th>Top-performing students in maths (Level 5–6)</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>China (B-S-J-Z)</td><td><strong>54%</strong></td></tr>
+              <tr><td>Singapore</td><td><strong>37%</strong></td></tr>
+              <tr><td>Chinese Taipei</td><td><strong>32%</strong></td></tr>
+              <tr><td>Japan</td><td><strong>22%</strong></td></tr>
+              <tr><td>Korea</td><td><strong>23%</strong></td></tr>
+              <tr><td>OECD average</td><td><strong>8%</strong></td></tr>
+              <tr style="background:rgba(192,57,43,0.08)"><td><strong>Turkey</strong></td><td><strong>8%</strong></td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Turkey is at the OECD average — but in global competition, the OECD average is not the benchmark that matters. Only <strong>8%</strong> of Turkish students reach Level 5–6 in mathematics, <strong>7%</strong> in science, <strong>4%</strong> in reading. The universities and workplaces these children will enter will be filled with graduates from Singapore, China and Japan. The gap is enormous.</p>
+
+          <h3>2. Computational Problem Solving: The Most Critical Skill for the AI Age — Below OECD Average</h3>
+
+          <div class="blog-callout" style="border-left-color:#c0392b;background:rgba(192,57,43,0.07)">
+            PISA 2025 measured <strong>computational problem solving</strong> for the first time — not coding, but algorithmic thinking, data interpretation and digital problem solving. Turkey scored <strong>below the OECD average</strong> in this domain.
+          </div>
+
+          <p>In an AI-driven world, this is the skill that will command the highest premium. While maths and science averages improved, Turkey is falling behind in exactly the skill the future demands most.</p>
+
+          <h3>3. Socio-Economic Inequality Is Widening</h3>
+
+          <p>PISA 2025 data show that <strong>32%</strong> of Turkish students — nearly one in three — are in the bottom international quartile of socio-economic status. This is not a comparison within Turkey; this is the <strong>bottom quarter of 91 countries worldwide</strong>.</p>
+
+          <p>More alarming: between 2015 and 2025, the performance gap between the most advantaged and most disadvantaged students in Turkey <strong>widened</strong> — while the OECD average gap narrowed. Growth in scores benefited advantaged students more than disadvantaged ones.</p>
+
+          <h3>4. Truancy: Half of Students Skipped School Before the Test</h3>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr><th></th><th>Turkey</th><th>OECD Average</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Skipped at least 1 school day</td><td><strong>53%</strong></td><td>22%</td></tr>
+              <tr><td>Skipped at least 1 class</td><td><strong>41%</strong></td><td>24%</td></tr>
+              <tr><td>Arrived late for school</td><td>49%</td><td>50%</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>More than half of Turkish students skipped at least one school day in the two weeks before the PISA test — more than double the OECD rate. This isn't just a system problem; it points to family and community factors as well.</p>
+
+          <h3>5. Parental Involvement Is Declining</h3>
+
+          <p>Between 2022 and 2025, the share of parents who discussed school with their children at least weekly fell from <strong>66% to 63%</strong>; those who discussed problems their children were having at school fell from <strong>53% to 43%</strong>. A global trend — but a worrying rate for Turkey.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="/assets/founder-avatar-300.webp" type="image/webp">
+              <img src="/assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Coaching note</span>
+              <p>The question I get asked most: "My child is the best in their class — is that enough?" The honest answer, most of the time, is no. Turkey's averages are improving, but the gap between "doing well in Turkey" and "globally competitive" is not closing. The only way for families to see this gap clearly is to measure their child against an international benchmark — not to wait for a system report.</p>
+            </div>
+          </div>
+
+          <h2>Where Do Turkish Students Stand in PISA 2025 Globally?</h2>
+
+          <p>PISA is a system measurement. It takes samples of 15-year-olds and produces country averages. These numbers matter for the Ministry of Education — but they do not tell you where <em>your specific child</em> stands.</p>
+
+          <p>Many families experience this: their child is doing well in a good Turkish school, grades are strong. Then they apply to an international school abroad or an overseas university — and the assessment reveals they are far behind expectations.</p>
+
+          <p>The reason is that success metrics in Turkey do not always align with international standards. And the earlier you see that gap, the more time you have to close it.</p>
+
+          <div class="blog-callout">
+            <strong>Want to measure your child's international academic level?</strong><br>
+            <a href="https://eduentry.com" target="_blank" rel="noopener" style="color:var(--accent,#DBAF2E);font-weight:600;">EduEntry</a> is an international academic assessment platform that gives you a clear picture of where your child stands on a global scale. PISA measures a country — EduEntry measures your child.
+          </div>
+
+          <h2>PISA 2025 Turkey: What Should Families Do?</h2>
+
+          <div class="blog-verdict">
+            <h3>1. The average is better — but top performance is still rare</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Your child's goal should not be to pass the OECD average; it should be to enter the global top tier. That requires early measurement and deliberate preparation.</span></div>
+          </div>
+
+          <div class="blog-verdict" style="margin-top:1rem">
+            <h3>2. Computational skills are the most critical gap</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>In the AI era, algorithmic thinking matters more than rote knowledge. This skill is not systematically developed in Turkey's system — but it can be developed privately and early.</span></div>
+          </div>
+
+          <div class="blog-verdict" style="margin-top:1rem">
+            <h3>3. "Top of my class" is not informative enough</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Classroom success does not guarantee international competitiveness. Measure your child against an international standard — and do it early, while there is still time to act.</span></div>
+          </div>
+
+          <div class="blog-faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Where does Turkey rank in PISA 2025?</h3>
+              <p class="faq-a">Turkey scored above the OECD average in science and reading, and close to the average in mathematics. However, the full ranking across 91 countries shows Turkey's top-performer rates remain far behind global leaders such as Singapore, China and Japan.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">What is Turkey's weakest area in PISA 2025?</h3>
+              <p class="faq-a">Computational problem solving is the area where Turkey falls most clearly below the OECD average. Top-performance rates (Level 5–6) in mathematics (8%), science (7%) and especially reading (4%) are also well behind global leaders.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">How can I measure my child's international academic level?</h3>
+              <p class="faq-a">PISA does not assess individual children — it measures country-level averages. To understand where your child specifically stands on an international scale, look at individual assessment tools like <a href="https://eduentry.com" target="_blank" rel="noopener" style="color:var(--accent)">EduEntry</a>'s international academic evaluation programme.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Did Turkey improve in PISA compared to 2022?</h3>
+              <p class="faq-a">Yes. Turkey is one of the few countries to have improved in all three subjects between 2022 and 2025. This is genuine progress — but the picture on top performance, computational skills and widening socio-economic inequality remains concerning.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Why is school truancy so high in Turkey?</h3>
+              <p class="faq-a">According to PISA 2025, 53% of Turkish students reported skipping at least one school day in the two weeks before the test — more than double the OECD average of 22%. This is a significant warning sign for school engagement and motivation.</p>
+            </div>
+          </div>
+
+          <div class="blog-callout" style="margin-top:2rem">
+            <strong>Related guides:</strong><br>
+            <a href="/en/blog/ib-vs-a-level-vs-ap/" style="color:var(--accent,#DBAF2E);font-weight:500;">IB, A-Level or AP 2026: Which Curriculum Is Right for Your Child? →</a><br>
+            <a href="/en/blog/turkey-to-dubai-international-school/" style="color:var(--accent,#DBAF2E);font-weight:500;">From Turkish Schools to Dubai International Schools: Documents and CAT4 →</a><br>
+            <a href="/en/blog/dubai-khda-outstanding-schools/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai's Best International Schools 2026: KHDA Outstanding List →</a>
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Where does your child stand in the world?</h3>
+            <p>If you're planning international school or overseas education, knowing your child's current international academic position is the starting point for everything. Book a free session with Özlem Çimen to work through this together.</p>
+            <a href="/en/international-school-consulting/" class="btn btn-primary">Book a Free Consultation</a>
+            <a href="https://eduentry.com" target="_blank" rel="noopener" class="btn btn-secondary" style="margin-top:0.5rem;">Assess Your Child with EduEntry →</a>
+          </div>
+
+        </div>
+      </article>
+    </div>
+
+    <!-- RELATED POSTS -->
+    <section class="blog-related-section">
+      <div class="container">
+        <h2>Related Posts</h2>
+        <div class="blog-related-grid">
+          <a href="/en/blog/why-turkish-education-falls-short/" class="blog-related-card">
+            <img src="/assets/blog/thumb-turkiye-egitim.webp" alt="Why the Turkish Education System Falls Short" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title">
+                <span>Why Turkey's Education System Falls Short</span>
+              </div>
+              <div class="blog-related-card-meta">2026 · 8 min</div>
+            </div>
+          </a>
+          <a href="/en/blog/ib-vs-a-level-vs-ap/" class="blog-related-card">
+            <img src="/assets/blog/thumb-mufredat.webp" alt="IB vs A-Level vs AP: Which Curriculum to Choose?" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title">
+                <span>IB, A-Level or AP: Which Curriculum Wins?</span>
+              </div>
+              <div class="blog-related-card-meta">2026 · 12 min</div>
+            </div>
+          </a>
+          <a href="/en/blog/turkey-to-dubai-international-school/" class="blog-related-card">
+            <img src="/assets/blog/thumb-gecis.webp" alt="Moving from a Turkish School to Dubai: Documents &amp; CAT4" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title">
+                <span>From Turkish Schools to Dubai International Schools</span>
+              </div>
+              <div class="blog-related-card-meta">2026 · 10 min</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="container" style="padding:0 0 2rem;">
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/why-edualist/">Why Us?</a></li>
+            <li><a href="/en/#services">Services</a></li>
+            <li><a href="/en/blog/">Blog <span class="nav-count-badge">55</span></a></li>
+            <li><a href="/en/international-school-consulting/">Book Session</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+    <script>
+    
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+<script>
+  window.setLang = function (l) {
+    if (l === document.documentElement.lang) return;
+    try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+  };
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+    b.classList.toggle('active', l === document.documentElement.lang);
+    if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+  });
+</script>
+</body>
+</html>

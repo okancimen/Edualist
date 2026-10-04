@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.hero-blog-preview{padding:1.5rem 1.75rem}.hero-blog-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}.hero-blog-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.hero-blog-all{font-size:.8rem;color:var(--text-muted);text-decoration:none;transition:color .2s}.hero-blog-all:hover{color:var(--accent)}.hero-blog-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}.hero-blog-item{border-top:1px solid var(--border);padding:.85rem 0}.hero-blog-item:first-child{border-top:none;padding-top:0}.hero-blog-item a{font-size:.92rem;font-weight:500;color:var(--text-primary);text-decoration:none;line-height:1.4;display:block;transition:color .2s}.hero-blog-item a:hover{color:var(--accent)}.hero-blog-item-meta{font-size:.75rem;color:var(--text-muted);margin-top:.2rem}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/blog/ingilizcesi-yetersiz-cocuk-dubai-okulu-uyum/assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Child with Limited English Starting a Dubai School | Edualist</title>
+  <meta name="description" content="How children with limited English adapt to Dubai international schools: EAL programmes, adaptation timelines by age and how to help at home.">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/en/blog/limited-english-child-dubai-school/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/ingilizcesi-yetersiz-cocuk-dubai-okulu-uyum/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/limited-english-child-dubai-school/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/ingilizcesi-yetersiz-cocuk-dubai-okulu-uyum/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="Child with Limited English Starting a Dubai School">
+  <meta property="og:description" content="How children with limited English adapt to Dubai international schools: EAL programmes, adaptation timelines by age and how to help at home.">
+  <meta property="og:url"         content="https://www.edualist.com/en/blog/limited-english-child-dubai-school/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-ingilizce-uyum.webp">
+  <meta property="article:published_time" content="2026-06-14">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Child with Limited English Starting a Dubai School">
+  <meta name="twitter:description" content="How children with limited English adapt to Dubai international schools: EAL programmes, adaptation timelines by age and how to help at home.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-ingilizce-uyum.webp">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional"></noscript>
+
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="/styles.css?v=13">
+  <link rel="stylesheet" href="/styles.css?v=13" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/styles.css?v=13"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How Does a Child with Limited English Adapt to a Dubai School?",
+  "author": {
+    "@type": "Person",
+    "name": "Özlem Çimen",
+    "url": "https://www.edualist.com/en/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edualist",
+    "url": "https://www.edualist.com/en/"
+  },
+  "inLanguage": "en",
+  "datePublished": "2026-06-14",
+  "dateModified": "2026-10-03",
+  "wordCount": 2500,
+  "url": "https://www.edualist.com/en/blog/limited-english-child-dubai-school/",
+  "image": "https://www.edualist.com/assets/blog/thumb-ingilizce-uyum.webp",
+  "description": "How children with limited English adapt to Dubai international schools: EAL programmes, adaptation timelines by age and how to help at home.",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".blog-summary",
+      ".blog-post-title"
+    ]
+  }
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.edualist.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.edualist.com/en/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Child with Limited English Starting a Dubai School",
+      "item": "https://www.edualist.com/en/blog/limited-english-child-dubai-school/"
+    }
+  ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can a child with limited English be accepted to a Dubai school?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The vast majority of international schools in Dubai accept students with limited English through EAL/ELL programmes. A level assessment is done before enrolment and a support plan is prepared accordingly."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are schools with EAL programmes more expensive?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "EAL support is generally included in the school fee. Some schools may charge extra for intensive individual support — clarify this before enrolment."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What age is easiest for language adaptation?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ages 4–8 is the fastest period for language acquisition. But adaptation is possible at any age — the timeline and level of support needed simply varies."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens if my child can't adapt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A school with a good EAL programme tracks progress regularly and intensifies support when needed. If the school doesn't offer this flexibility, it's a sign the school choice needs to be reconsidered."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can Turkish and English be learned at the same time?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Absolutely. Growing up bilingual is not a disadvantage — it's a cognitive advantage. Preserving Turkish at home does not hinder your child's English learning; on the contrary, a strong mother tongue foundation facilitates new language acquisition."
+      }
+    }
+  ]
+}
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+    <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Dubai Schools</a></li>
+        <li><a href="/en/international-school-consulting/">Consultancy</a></li>
+        <li><a href="/en/academic-coaching/">Coaching</a></li><li><a href="/en/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">55</span></a></li>
+        <li><a href="/en/why-edualist/">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/en/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+<span>Back to Blog</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>14 June 2026</span>
+          <span><a href="/en/about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>
+            <span>7 min read</span>
+          </span>
+        </div>
+
+        <h1 class="blog-post-title">
+          <span>How Does a Child with Limited English Adapt to a Dubai School?</span>
+        </h1>
+
+        <div class="blog-summary">
+          <strong><span>Summary</span></strong>
+          <p>Children with limited English successfully adapt to Dubai's international schools every day. What are EAL programmes, how does the adaptation timeline vary by age, what questions should you ask, and what can you do at home?</p>
+        </div>
+
+        <!-- TURKISH CONTENT -->
+
+        <!-- ENGLISH CONTENT -->
+        <div class="blog-post-body">
+
+          <p>You've decided to move to Dubai. Visas are sorted, a home has been found, work is arranged. But there's a question circling relentlessly in the back of your mind:</p>
+
+          <p><em>"My child has had some English at school in Turkey, but not enough. What's going to happen in Dubai?"</em></p>
+
+          <p>I hear this from many families. Most children in Turkey receive some school English — but that English is usually not sufficient to use as a daily medium of instruction in an international school in Dubai. A close friend's son faced exactly this situation: he had a few years of school English behind him, but in those first weeks he simply couldn't find his way into the fluent conversations happening all around him in class.</p>
+
+          <p>Looking back now, I can say clearly: most of what I worried about was unnecessary. But the parts I was caught unprepared for were genuinely difficult.</p>
+
+          <p>This post is here to map that difficulty for you in advance.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="/assets/founder-avatar-300.webp" type="image/webp">
+              <img src="/assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — A note from your coach</span>
+              <p>My son arrived in Dubai with virtually no classroom English. The first months were hard. But within a year he was speaking fluently. I'm sharing everything I learned from that experience here.</p>
+            </div>
+          </div>
+
+          <h2>Let's Be Honest First: Yes, the Start Is Hard</h2>
+          <p>I won't sugarcoat it. The first few months will not be easy for your child. Sitting in class without understanding, struggling to break into the social group, not fully grasping what the teacher is asking — these are real difficulties.</p>
+          <p>But I also need to say this: Dubai schools face this situation every single day. Because the vast majority of students in Dubai come from families whose first language isn't English. Schools know this reality and are structured accordingly.</p>
+
+          <h2>How Do Dubai Schools Provide Support?</h2>
+          <p>International schools in Dubai run specialist programmes called <strong>EAL</strong> (English as an Additional Language) or <strong>ELL</strong> (English Language Learners). These programmes are designed precisely for a child in your situation.</p>
+
+          <p><strong>An assessment is done at enrolment.</strong> The school measures your child's English level during the application process. For younger children this is usually play-based; for older students more systematic tests are used. The point isn't to screen children out — it's to understand how much support they'll need.</p>
+
+          <p><strong>An individual language plan is prepared.</strong> Well-established schools like GEMS Royal Dubai School create an Individual Language Development Plan for each student with limited English. This plan sets out which targets will be tracked across the term.</p>
+
+          <p><strong>The EAL teacher enters the classroom.</strong> In some schools the support teacher doesn't only see your child in a separate room — they're present during science, maths and other lessons too, using translator apps and visual tools to bridge comprehension gaps.</p>
+
+          <p><strong>Peer integration is prioritised.</strong> As one EAL coordinator put it: <em>"These children are not cognitively lacking. They're on a language journey. Research shows they go on to genuinely outperform over time."</em></p>
+
+          <h2>How Long Does Adaptation Take?</h2>
+          <p>The honest answer: it varies by age and the child's character.</p>
+
+          <p><strong>Children aged 4–8</strong> adapt the fastest. Language acquisition at this age is almost a biological reflex. I've seen many children communicating comfortably with peers within 6–12 months.</p>
+
+          <p><strong>Ages 9–12</strong> may take a little longer — 12–18 months. But in this group too, academic performance typically recovers rapidly once language develops.</p>
+
+          <p><strong>13 and above</strong> is the most challenging group. Entering a new environment during a critical period for both language and identity development is complex. For this age group, <a href="/en/blog/dubai-khda-outstanding-schools/">school selection</a> needs to be particularly careful — schools with strong EAL programmes and a genuine focus on social integration should be prioritised.</p>
+
+          <h2>Questions to Ask When Choosing a School</h2>
+          <p>Every Dubai school says it offers EAL support. But the quality varies enormously. Ask these directly during visits or calls:</p>
+
+          <p><strong>"How does your EAL/ELL programme work?"</strong><br>
+          A general answer isn't enough. How many EAL teachers do you have, how long does the programme run, do you offer in-class support or only separate sessions — get specific.</p>
+
+          <p><strong>"How long does adaptation typically take for children in similar situations?"</strong><br>
+          Critical for realistic expectation management.</p>
+
+          <p><strong>"How will you communicate with my child in the first month?"</strong><br>
+          Some schools match new students with a buddy who shares their home language. This small detail makes the first weeks much easier.</p>
+
+          <p><strong>"How often do you give parents progress feedback?"</strong><br>
+          Good schools update monthly, some even fortnightly.</p>
+
+          <h2>What You Can Do at Home</h2>
+          <p>Even with school support, the home environment is decisive.</p>
+
+          <p><strong>Bring English into daily life.</strong><br>
+          Switch from Turkish dubbing to English audio with Turkish subtitles on Netflix. Your child will resist at first — but their ear begins to adjust.</p>
+
+          <p><strong>Convert school English into living English — before you move.</strong><br>
+          If you can start 2–3 months before relocating, build English habits outside school hours. Using words they already know in real contexts — writing a shopping list, playing an English game, watching a simple series — turns classroom English into a living language. They're not starting from zero; they need activation.</p>
+
+          <p><strong>Don't push, observe.</strong><br>
+          When your child comes home, instead of "what did you learn today, could you speak English?" ask how they're feeling, who they sat next to, what they had for lunch. Social adaptation comes before language adaptation.</p>
+
+          <p><strong>Don't neglect Turkish.</strong><br>
+          You don't have to lose one language while learning another. <a href="/blog/ucuncu-kultur-cocugu-tck-rehberi/">Children raised bilingually</a> have higher cognitive flexibility. Keep Turkish alive at home — school will take care of the English.</p>
+
+          <h2>Be Wary of Schools Without Real EAL Programmes</h2>
+          <p>Some schools in Dubai say "we accept everyone" but have no genuine EAL infrastructure. In that case your child may spend days sitting in class without understanding anything — creating both academic and psychological burden.</p>
+          <p>KHDA inspection reports include assessments of each school's EAL/ELL support. Review these reports before school visits. <a href="/en/blog/dubai-khda-outstanding-schools/">Schools rated "Outstanding" or "Very Good"</a> typically offer this support more systematically.</p>
+
+          <h2>Conclusion: Decide from Knowledge, Not Fear</h2>
+          <p>Children with limited English successfully adapt to Dubai schools every day. Two things are required: the right school and an informed family.</p>
+          <p>Finding the right school — matched to your child's age, character and needs — is exactly what Edualist does. I have witnessed hundreds of Turkish families navigate this process, and in every single case the most critical difference came from the preparation made in <a href="/en/blog/dubai-school-registration/">choosing the school</a>.</p>
+          <p>If you're asking "where do I start?" — reach out. Let's arrange a free consultation.</p>
+
+        </div>
+
+        <!-- FAQ -->
+
+        <div class="blog-faq">
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Can a child with limited English be accepted to a Dubai school?</h3>
+            <p class="faq-a">Yes. The vast majority of international schools in Dubai accept students with limited English through EAL/ELL programmes. A level assessment is done before enrolment and a support plan is prepared accordingly.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Are schools with EAL programmes more expensive?</h3>
+            <p class="faq-a">EAL support is generally included in the school fee. Some schools may charge extra for intensive individual support — clarify this before enrolment.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">What age is easiest for language adaptation?</h3>
+            <p class="faq-a">Ages 4–8 is the fastest period for language acquisition. But adaptation is possible at any age — the timeline and level of support needed simply varies.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">What happens if my child can't adapt?</h3>
+            <p class="faq-a">A school with a good EAL programme tracks progress regularly and intensifies support when needed. If the school doesn't offer this flexibility, it's a sign the school choice needs to be reconsidered.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Can Turkish and English be learned at the same time?</h3>
+            <p class="faq-a">Absolutely. Growing up bilingual is not a disadvantage — it's a cognitive advantage. Preserving Turkish at home does not hinder your child's English learning; on the contrary, a strong mother tongue foundation facilitates new language acquisition.</p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <div class="blog-post-cta glass">
+          <h3>Let's Find the Right School for Your Child Together</h3>
+          <p>I can identify Dubai schools with strong EAL support, matched to your child's age and specific needs, through a personalised assessment.</p>
+          <a href="/en/international-school-consulting/" class="btn btn-primary">Book a Free Session</a>
+          
+          <a href="/en/dubai/" class="btn btn-secondary" style="margin-top:0.5rem;">Our Dubai Consultancy Page →</a>
+        </div>
+
+      </article>
+    </div>
+
+    <div class="container" style="padding:0 0 2rem;">
+    </div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>Related Posts</h2>
+      <div class="blog-related-grid">
+        <a href="/en/blog/turkish-school-in-dubai/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai.webp" alt="Is There a Turkish School in Dubai? (2026 Guide)" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>No Turkish School in Dubai — What to Do?</span>
+            </div>
+            <div class="blog-related-card-meta">14 June 2026 · 6 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/dubai-khda-outstanding-schools/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai.webp" alt="Dubai&#x27;s KHDA Outstanding Schools 2026: Full List" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Best International Schools in Dubai</span>
+            </div>
+            <div class="blog-related-card-meta">7 June 2026 · 11 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/dubai-school-registration/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai-okul.webp" alt="Dubai School Registration 2026: Guide &amp; Checklist" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Dubai School Registration: Step-by-Step Guide</span>
+            </div>
+            <div class="blog-related-card-meta">7 June 2026 · 10 min</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/why-edualist/">Why Us?</a></li>
+            <li><a href="/en/#services">Services</a></li>
+            <li><a href="/en/blog/">Blog <span class="nav-count-badge">55</span></a></li>
+            <li><a href="/en/international-school-consulting/">Book Session</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp Floating Button -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Contact us on WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.825 1.451 5.436 0 9.86-4.37 9.864-9.799.002-2.63-1.023-5.101-2.885-6.966C16.588 1.974 14.116.95 11.487.95 6.056.95 1.632 5.32 1.628 10.753c-.001 1.77.475 3.497 1.38 5.04L2.01 21.547l5.811-1.516c1.51.825 3.09 1.245 4.67 1.245z"/>
+    </svg>
+  </a>
+
+
+  <!-- Sticky WhatsApp -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" target="_blank" rel="noopener noreferrer"
+     class="whatsapp-sticky" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- EduBot -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Close">&#x2715;</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
+  </div>
+
+    <script>
+    
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+<script>
+  window.setLang = function (l) {
+    if (l === document.documentElement.lang) return;
+    try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+  };
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+    b.classList.toggle('active', l === document.documentElement.lang);
+    if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+  });
+</script>
+</body>
+</html>

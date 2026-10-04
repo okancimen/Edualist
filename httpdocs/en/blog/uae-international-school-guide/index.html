@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.hero-blog-preview{padding:1.5rem 1.75rem}.hero-blog-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}.hero-blog-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.hero-blog-all{font-size:.8rem;color:var(--text-muted);text-decoration:none;transition:color .2s}.hero-blog-all:hover{color:var(--accent)}.hero-blog-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}.hero-blog-item{border-top:1px solid var(--border);padding:.85rem 0}.hero-blog-item:first-child{border-top:none;padding-top:0}.hero-blog-item a{font-size:.92rem;font-weight:500;color:var(--text-primary);text-decoration:none;line-height:1.4;display:block;transition:color .2s}.hero-blog-item a:hover{color:var(--accent)}.hero-blog-item-meta{font-size:.75rem;color:var(--text-muted);margin-top:.2rem}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/blog/bae-uluslararasi-okul-rehberi/assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UAE International School Guide: IB, British, American | Edualist</title>
+  <meta name="description" content="How to choose among 1,600+ international schools in the UAE: IB, British and American curricula compared to find the right fit for your child.">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/en/blog/uae-international-school-guide/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/bae-uluslararasi-okul-rehberi/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/uae-international-school-guide/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/bae-uluslararasi-okul-rehberi/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="UAE International School Guide: IB, British, American">
+  <meta property="og:description" content="How to choose among 1,600+ international schools in the UAE: IB, British and American curricula compared to find the right fit for your child.">
+  <meta property="og:url"         content="https://www.edualist.com/en/blog/uae-international-school-guide/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-bae-okul.webp">
+  <meta property="article:published_time" content="2026-06-10">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="UAE International School Guide: IB, British, American">
+  <meta name="twitter:description" content="How to choose among 1,600+ international schools in the UAE: IB, British and American curricula compared to find the right fit for your child.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-bae-okul.webp">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "UAE International School Guide: Everything You Need to Know",
+  "description": "How to choose among 1,600+ international schools in the UAE: IB, British and American curricula compared to find the right fit for your child.",
+  "author": {
+    "@type": "Person",
+    "name": "Özlem Çimen",
+    "url": "https://www.edualist.com/en/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edualist",
+    "url": "https://www.edualist.com/en/"
+  },
+  "datePublished": "2026-06-10",
+  "dateModified": "2026-10-03",
+  "wordCount": 1700,
+  "inLanguage": "en",
+  "url": "https://www.edualist.com/en/blog/uae-international-school-guide/",
+  "image": "https://www.edualist.com/assets/blog/thumb-bae-okul.webp",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".blog-summary",
+      ".blog-post-title"
+    ]
+  }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.edualist.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.edualist.com/en/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "UAE International School Guide: IB, British, American",
+      "item": "https://www.edualist.com/en/blog/uae-international-school-guide/"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional"></noscript>
+
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="/styles.css?v=13">
+  <link rel="stylesheet" href="/styles.css?v=13" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/styles.css?v=13"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How many international schools are there in the UAE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "More than 1,600 international schools operate across the UAE. Dubai schools are regulated by KHDA; Abu Dhabi schools by ADEK."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the difference between the Dubai and Abu Dhabi school systems?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dubai schools are rated by KHDA and the emirate has 200+ international schools with wide curriculum variety. Abu Dhabi schools fall under ADEK inspection. Both cities offer IB and British curriculum options widely."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which curriculum is most common in the UAE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "British (GCSE/A-Level) is the most widespread. IB is the fastest-growing curriculum and increasingly the first choice for expat families targeting global universities."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Are there government school options in the UAE?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "UAE government schools are open only to UAE nationals. For expat families, the only option is KHDA or ADEK-regulated private international schools."
+      }
+    }
+  ]
+}
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+    <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Dubai Schools</a></li>
+        <li><a href="/en/international-school-consulting/">Consultancy</a></li>
+        <li><a href="/en/academic-coaching/">Coaching</a></li><li><a href="/en/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">55</span></a></li>
+        <li><a href="/en/why-edualist/">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/en/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+<span>Back to Blog</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>10 June 2026</span>
+          <span><a href="/en/about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>14 min read</span>
+        </div>
+
+
+        <div class="blog-summary">
+          <strong><span>Summary</span></strong>
+          <p>A comprehensive guide to choosing among 1,600+ international schools in the UAE — comparing IB, British, and American curricula to help families find the right fit for their child.</p>
+        </div>
+        <!-- TR -->
+
+
+
+        <!-- EN body -->
+        <div class="blog-post-body">
+          <h1 class="blog-post-title">UAE International School Guide: Everything You Need to Know</h1>
+
+          <div class="blog-callout" style="background:hsla(43,60%,88%,0.5);border-left:4px solid var(--accent);">
+            <strong>Quick Answer — UAE International Schools:</strong> The UAE hosts nearly 1,600 international schools with over 1.1 million students. Dubai schools are regulated by KHDA; Abu Dhabi schools by ADEK. The five main curricula are IB, British (IGCSE/A-Level), American (AP), French (Baccalauréat) and IPC. Annual fees range from AED 20,000 to 100,000+. The right school depends on where you work, where your child will go to university, and their learning style.
+          </div>
+
+          <p>The education landscape waiting for you when you move to the UAE is both exciting and overwhelming. With nearly <strong>1,600 international schools</strong> and over <strong>1.1 million students</strong>, the UAE hosts one of the world's largest and most diverse international education ecosystems.</p>
+
+          <p>But that diversity brings a question: which school is right for your child?</p>
+
+          <p>I have lived this system from the inside for years — both as an educator and as an expat parent. While my own children were in school in the UAE, I visited dozens of schools, spoke with parents and compared curricula. I wrote this guide to share that experience with you.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="/assets/founder-avatar-300.webp" type="image/webp">
+              <img src="/assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Coach's note</span>
+              <p>When we first moved to Dubai I had just a handful of school names to start with. As I researched, the lists grew and my head spun. Eventually I realised the most important thing was not "the best school" but "the right school for my child." These are two very different things.</p>
+            </div>
+          </div>
+
+          <h2>Overview of the UAE Education System</h2>
+
+          <p>Education in the UAE runs on two separate tracks: government schools (for Emirati nationals, taught in Arabic) and private international schools (designed for expat families, in various languages). As an expat family, the private track is almost always where you'll be looking.</p>
+
+          <p>Dubai schools are regulated by <strong>KHDA (Knowledge and Human Development Authority)</strong>; Abu Dhabi schools by <strong>ADEK (Abu Dhabi Department of Education and Knowledge)</strong>. Both bodies inspect schools regularly and publish rating reports — the most reliable source for school selection. For a detailed guide to how Dubai's education system works, see our <a href="/en/blog/dubai-education-system/">Dubai Education System guide</a>. For Abu Dhabi schools, fees and ADEK ratings, see our <a href="/en/blog/abu-dhabi-international-schools/">Abu Dhabi International Schools guide</a>.</p>
+
+          <h2>Curriculum Options: Which Is Right for You?</h2>
+
+          <p>Five major curriculum systems operate widely across the UAE. Each has different strengths, a different target student and a different university destination profile.</p>
+
+          <h3>1. International Baccalaureate (IB)</h3>
+          <p>The UAE has <strong>42 IB schools</strong> — one of the highest concentrations in the Middle East. The IB programme runs in three stages: Primary Years Programme (PYP), Middle Years Programme (MYP) and Diploma Programme (DP). IB emphasises critical thinking, academic writing and self-directed research. Universities in the US, Canada, UK and Australia view the IB Diploma as a strong qualification.</p>
+
+          <div class="blog-verdict">
+            <strong>Who is IB ideal for?</strong> Students who enjoy analytical thinking, who target more than one university system (US + UK + Australia) and who can handle academic pressure. Intensely demanding — not suited to every student.
+          </div>
+
+          <h3>2. British Curriculum</h3>
+          <p>The most common curriculum in the UAE. IGCSE (ages 14–16) and A-Level (ages 16–18) qualifications give students comfortable access to UK, American and Canadian universities. The British system is structured and exam-focused — students specialise deeply in 3–4 subjects at A-Level.</p>
+
+          <div class="blog-verdict">
+            <strong>Who is British curriculum ideal for?</strong> Students targeting UK, Canada or US universities who thrive in a structured, exam-based environment. The most popular choice among Turkish families.
+          </div>
+
+          <h3>3. American Curriculum</h3>
+          <p>Organised across elementary, middle and high school levels. AP (Advanced Placement) courses and SAT/ACT preparation provide a strong foundation for US university applications. Known for flexibility and a wide range of subject choices.</p>
+
+          <div class="blog-verdict">
+            <strong>Who is American curriculum ideal for?</strong> Students firmly planning to study in the US who prefer a flexible, project-oriented learning environment.
+          </div>
+
+          <h3>4. French Curriculum</h3>
+          <p>French lycées in Dubai and Abu Dhabi follow the French Ministry of Education programme, preparing students for the Baccalauréat exam. Teaching is in French; direct entry to universities in France and all Francophone countries is available.</p>
+
+          <h3>5. IPC (International Primary Curriculum)</h3>
+          <p>Designed for ages 5–12, IPC takes a thematic, cross-cultural approach, prioritising curiosity and discovery over academic rigour. A good starting point for primary-age children at certain schools.</p>
+
+          <h2>Curriculum Comparison Table</h2>
+
+          <div style="overflow-x:auto;margin:2rem 0;">
+            <table class="blog-table">
+              <thead>
+                <tr>
+                  <th>Curriculum</th>
+                  <th>Age Range</th>
+                  <th>Strength</th>
+                  <th>Target University</th>
+                  <th>UAE Availability</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>IB</strong></td>
+                  <td>3–18</td>
+                  <td>Critical thinking, research</td>
+                  <td>Global (US, UK, Australia)</td>
+                  <td>42 schools</td>
+                </tr>
+                <tr>
+                  <td><strong>British</strong></td>
+                  <td>3–18</td>
+                  <td>Structure, exam-focused</td>
+                  <td>UK, US, Canada</td>
+                  <td>Most widespread</td>
+                </tr>
+                <tr>
+                  <td><strong>American</strong></td>
+                  <td>5–18</td>
+                  <td>Flexibility, AP courses</td>
+                  <td>US primarily</td>
+                  <td>Common</td>
+                </tr>
+                <tr>
+                  <td><strong>French</strong></td>
+                  <td>3–18</td>
+                  <td>Discipline, rigour</td>
+                  <td>France and Francophone countries</td>
+                  <td>Limited (3–4 schools)</td>
+                </tr>
+                <tr>
+                  <td><strong>IPC</strong></td>
+                  <td>5–12</td>
+                  <td>Curiosity, cross-cultural</td>
+                  <td>Early education focus</td>
+                  <td>Few schools</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <h2>Fees: A Realistic Picture</h2>
+
+          <div style="overflow-x:auto;margin:2rem 0;">
+            <table class="blog-table">
+              <thead>
+                <tr>
+                  <th>School Type</th>
+                  <th>Annual Fee (AED)</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>Mid-range schools</td><td>20,000 – 45,000</td></tr>
+                <tr><td>Upper-range schools</td><td>45,000 – 75,000</td></tr>
+                <tr><td>Prestige / elite schools</td><td>75,000 – 100,000+</td></tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p>Some schools offer scholarships — particularly for academically or artistically outstanding students. Always ask about scholarship options during the application process. For comprehensive information on scholarship programmes at GEMS, Nord Anglia and Repton, see our <a href="/en/blog/dubai-school-scholarships/">Dubai School Scholarships guide</a>.</p>
+
+          <div class="blog-verdict">
+            <strong>Watch out:</strong> Fees do not include uniforms, transport, meals, activities and registration costs. Budget for the real annual cost to be 20–30% above the listed school fee.
+          </div>
+
+          <h2>By City</h2>
+
+          <h3>Dubai</h3>
+          <p>The UAE's largest and most diverse education ecosystem. Over 200 KHDA-regulated private schools — options for every budget and curriculum. Waiting lists at popular schools can be long: apply at least <strong>12 months before your planned move</strong>.</p>
+
+          <h3>Abu Dhabi</h3>
+          <p>ADEK-regulated, smaller but high-quality ecosystem. Advantageous location for families working in government or energy sector roles. Some schools have ADEK-supported scholarship programmes.</p>
+
+          <h3>Sharjah</h3>
+          <p>Close to Dubai, with more affordable alternatives. Family-oriented character; school choice is more limited than Dubai.</p>
+
+          <h3>Ras Al Khaimah (RAK)</h3>
+          <p>For families seeking a quieter lifestyle. Established IB schools such as RAK Academy. Fees are noticeably lower than Dubai.</p>
+
+          <h2>Application Process: Step by Step</h2>
+
+          <p>Applications to UAE schools follow a standard pattern, though each school has its own specific requirements. Generally expected:</p>
+          <ul>
+            <li><strong>Passport copy</strong> (child and parents)</li>
+            <li><strong>Previous school transcripts</strong> (last 2 years, with English translation)</li>
+            <li><strong>Vaccination record</strong> (complete and current)</li>
+            <li><strong>Health form</strong> (school-specific)</li>
+            <li><strong>Completed application form</strong></li>
+            <li><strong>Interview or assessment</strong> (with the child at some schools, with the family at others)</li>
+          </ul>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="/assets/founder-avatar-300.webp" type="image/webp">
+              <img src="/assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Coach's note</span>
+              <p>Having transcripts with an Apostille and a certified English translation speeds the process up significantly. Getting a notarised translation done in Turkey before you arrive avoids delays. I strongly recommend completing this before you submit any application. For the full document authentication chain (School → MEB → Apostille → UAE Consulate) for Turkish school documents, read our <a href="/en/blog/turkey-to-dubai-international-school/">comprehensive transition guide</a>.</p>
+            </div>
+          </div>
+
+          <h2>Choosing the Right School: A Practical Framework</h2>
+
+          <p>An exercise I recommend to families before they start school searching: make a <strong>"must have" and "nice to have"</strong> list. Without keeping these two lists separate, you'll get lost in every school's glossy brochure.</p>
+
+          <p><strong>Must-have questions:</strong></p>
+          <ul>
+            <li>What language will your child be taught in? Is their English preparation adequate?</li>
+            <li>Which country are you targeting for university long term?</li>
+            <li>Is your child young? Do they need a play-based or a structured environment?</li>
+            <li>Do you want Arabic language instruction? (Required in UAE schools — check the hours.)</li>
+            <li>Is the distance between school and home acceptable?</li>
+          </ul>
+
+          <p><strong>Nice-to-have questions:</strong></p>
+          <ul>
+            <li>Is there a swimming pool, arts studio or robotics club?</li>
+            <li>Is school transport available?</li>
+            <li>Is there a community of Turkish families?</li>
+          </ul>
+
+          <div class="blog-callout">
+            <strong>Golden rule:</strong> Go on a school tour. Not the website photos — the teacher-student interaction you observe in a real classroom tells you the truth.
+          </div>
+
+          <h2>Common Mistakes</h2>
+
+          <div class="blog-verdict">
+            <strong>Mistake 1: Deciding on fees alone.</strong> The most expensive school is not necessarily the right one for your child. Curriculum fit and teaching quality are far more decisive.
+          </div>
+
+          <div class="blog-verdict">
+            <strong>Mistake 2: Applying late.</strong> Waiting lists at popular Dubai schools can run 6–18 months. Apply as soon as your relocation decision is made.
+          </div>
+
+          <div class="blog-verdict">
+            <strong>Mistake 3: Leaving your child out of the process.</strong> For children over 10, bring them to school visits. When they feel ownership of the school, the settling-in period is significantly faster.
+          </div>
+
+          <div class="blog-verdict">
+            <strong>Mistake 4: Confusing curriculum with country.</strong> A "British school" follows the UK curriculum — but it's in Dubai. The school has no direct connection to a London, Sydney or Boston university. University applications are made separately.
+          </div>
+
+          <h2>Conclusion: Asking the Right Question</h2>
+
+          <p>Choosing an international school in the UAE requires asking not "which school is the best?" but rather <strong>"which environment is right for my child?"</strong> These two questions can lead to very different answers.</p>
+
+          <p>As an educator, I have analysed curricula for years. As an expat parent, I have lived this system from the inside. Every family's equation is different — but when families learn to ask the right questions, finding the right answer becomes much easier.</p>
+
+          <div class="blog-callout" style="margin-top:2rem">
+              <strong>Related guides:</strong><br>
+              <a href="/en/blog/dubai-khda-outstanding-schools/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai's Best 23 International Schools 2026: KHDA Outstanding →</a><br>
+              <a href="/en/blog/abu-dhabi-international-schools/" style="color:var(--accent,#DBAF2E);font-weight:500;">Abu Dhabi's Best International Schools 2026: ADEK Guide →</a><br>
+              <a href="/en/blog/ib-vs-a-level-vs-ap/" style="color:var(--accent,#DBAF2E);font-weight:500;">IB, A-Level or AP 2026: Curriculum Comparison →</a>
+            </div>
+
+          <div style="text-align:center;margin:2.5rem 0;display:flex;gap:0.75rem;justify-content:center;flex-wrap:wrap;">
+            <a href="/en/international-school-consulting/" class="btn btn-primary">Book a Free Session</a>
+            <a href="/en/dubai/" class="btn btn-secondary">Our Dubai Consultancy Page →</a>
+          </div>
+
+          <div class="blog-faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+              <h3 class="faq-q">How many international schools are there in the UAE?</h3>
+              <p class="faq-a">More than 1,600 international schools operate across the UAE. Dubai schools are regulated by KHDA; Abu Dhabi schools by ADEK.</p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-q">What is the difference between the Dubai and Abu Dhabi school systems?</h3>
+              <p class="faq-a">Dubai schools are rated by KHDA and the emirate has 200+ international schools with wide curriculum variety. Abu Dhabi schools fall under ADEK inspection. Both cities offer IB and British curriculum options widely.</p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-q">Which curriculum is most common in the UAE?</h3>
+              <p class="faq-a">British (GCSE/A-Level) is the most widespread. IB is the fastest-growing curriculum and increasingly the first choice for expat families targeting global universities.</p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-q">Are there government school options in the UAE?</h3>
+              <p class="faq-a">UAE government schools are open only to UAE nationals. For expat families, the only option is KHDA or ADEK-regulated private international schools.</p>
+            </div>
+          </div>
+
+        </div>
+</article>
+    </div>
+
+    <div class="container" style="padding:0 0 2rem;">
+    </div>
+  </main>
+
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>Related Posts</h2>
+      <div class="blog-related-grid">
+        <a href="/en/blog/dubai-khda-outstanding-schools/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai.webp" alt="Dubai&#x27;s KHDA Outstanding Schools 2026: Full List" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Best International Schools in Dubai</span>
+            </div>
+            <div class="blog-related-card-meta">7 June 2026 · 11 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/dubai-school-registration/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai-okul.webp" alt="Dubai School Registration 2026: Guide &amp; Checklist" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Dubai School Registration Guide</span>
+            </div>
+            <div class="blog-related-card-meta">7 June 2026 · 10 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/ib-vs-a-level-vs-ap/" class="blog-related-card">
+          <img src="/assets/blog/thumb-mufredat.webp" alt="IB vs A-Level vs AP: Which Curriculum to Choose?" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>IB, A-Level & American Curriculum Compared</span>
+            </div>
+            <div class="blog-related-card-meta">7 June 2026 · 11 min</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/why-edualist/">Why Us?</a></li>
+            <li><a href="/en/#services">Services</a></li>
+            <li><a href="/en/blog/">Blog <span class="nav-count-badge">55</span></a></li>
+            <li><a href="/en/international-school-consulting/">Book Session</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky WhatsApp -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" target="_blank" rel="noopener noreferrer"
+     class="whatsapp-sticky" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- AI Chatbot Button -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="AI Asistan">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <!-- AI Chatbot Popup -->
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Kapat">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="Edualist AI Asistan"></iframe>
+  </div>
+
+    <script>
+    
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+<script>
+  window.setLang = function (l) {
+    if (l === document.documentElement.lang) return;
+    try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+  };
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+    b.classList.toggle('active', l === document.documentElement.lang);
+    if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+  });
+</script>
+</body>
+</html>

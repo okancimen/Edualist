@@ -18240,9 +18240,9 @@ OECD araştırmaları, PISA becerilerinin yetişkinlik döneminde gelir düzeyi 
 
 ---
 
-## [What Is PISA? The 2025 Global Results, Score Calculation and What It Means for Your Child's Future](https://www.edualist.com/blog/what-is-pisa/)
+## [What Is PISA? The 2025 Global Results, Score Calculation and What It Means for Your Child's Future](https://www.edualist.com/en/blog/what-is-pisa/)
 
-**URL:** https://www.edualist.com/blog/what-is-pisa/
+**URL:** https://www.edualist.com/en/blog/what-is-pisa/
 **Language:** EN
 **Date:** 2026-09-21
 
@@ -18416,7 +18416,7 @@ Tarih: 2026-09-28
 Özet: WEF 2025: temel becerilerin %39'u 2030'a kadar değişecek. Soft skills nedir, STEAM eğitimi ne işe yarar, dijital okuryazarlık çocuklara nasıl kazandırılır? Deloitte, PwC, KPMG ve WEF verilerine dayalı ebeveyn rehberi.
 
 ### Top 10 International Schools in Dubai (2026) — Expert Picks
-URL: https://www.edualist.com/blog/dubai-top-schools/
+URL: https://www.edualist.com/en/blog/dubai-top-schools/
 Tarih: 2026-09-28
 Özet: Which are the top 10 schools in Dubai? Our 2026 guide ranks the best KHDA Outstanding international schools by curriculum, fees and expat family suitability — with a comparison table and expert coaching notes.
 
@@ -18470,7 +18470,7 @@ Tarih: 2026-09-21
 Özet: PISA nedir, nasıl uygulanır, puanlar nasıl hesaplanır? PISA 2025 Türkiye sonuçları ve PISA başarısının çocuğunuzun iş hayatıyla bağlantısı. Deneyimli bir eğitimciden kapsamlı rehber.
 
 ### What Is PISA? PISA 2025 Results, Score Calculation and Career Impact
-URL: https://www.edualist.com/blog/what-is-pisa/
+URL: https://www.edualist.com/en/blog/what-is-pisa/
 Tarih: 2026-09-21
 Özet: What is PISA, how are scores calculated, and what do the 2025 global results mean? An experienced educator explains PISA's methodology, Turkey's performance, and why PISA skills predict career success.
 

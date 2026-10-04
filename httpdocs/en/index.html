@@ -11,29 +11,28 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="preconnect" href="https://www.clarity.ms">
   <!-- LCP image preloads: before inline CSS for earliest discovery -->
-  <link rel="preload" as="image" href="../assets/hero-bg.webp" type="image/webp" fetchpriority="high" imagesrcset="../assets/hero-bg-480.webp 480w,../assets/hero-bg.webp 1024w" imagesizes="100vw">
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp" fetchpriority="high" imagesrcset="../assets/hero-bg-480.webp 480w,../assets/hero-bg.webp 1024w" imagesizes="100vw">
   <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.hero-blog-preview{padding:1.5rem 1.75rem}.hero-blog-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}.hero-blog-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.hero-blog-all{font-size:.8rem;color:var(--text-muted);text-decoration:none;transition:color .2s}.hero-blog-all:hover{color:var(--accent)}.hero-blog-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}.hero-blog-item{border-top:1px solid var(--border);padding:.85rem 0}.hero-blog-item:first-child{border-top:none;padding-top:0}.hero-blog-item a{font-size:.92rem;font-weight:500;color:var(--text-primary);text-decoration:none;line-height:1.4;display:block;transition:color .2s}.hero-blog-item a:hover{color:var(--accent)}.hero-blog-item-meta{font-size:.75rem;color:var(--text-muted);margin-top:.2rem}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeaderBg{to{opacity:1}}.header-nav::after{content:'';position:absolute;inset:0;z-index:-1;background:rgba(255,255,255,.92);box-shadow:0 4px 12px hsla(212,66%,13%,.03);border-bottom:1px solid rgba(11,33,58,.06);opacity:0;pointer-events:none;animation:shrinkHeaderBg auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.hero{position:relative;z-index:0;min-height:100vh;display:flex;align-items:center;padding-top:100px;overflow:hidden}.hero::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.8) 0,hsla(35,20%,96%,.9) 100%);z-index:1;pointer-events:none}.hero-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;pointer-events:none}.hero>.container{position:relative;z-index:2}.hero-grid{display:grid;grid-template-columns:1.2fr 0.8fr;gap:4rem;align-items:center}.hero-content{z-index:2}.hero-tag{display:inline-flex;align-items:center;gap:.5rem;padding:.5rem 1rem;background-color:hsla(43,60%,52%,.12);border:1px solid hsla(43,60%,52%,.25);border-radius:50px;color:var(--primary-light);font-size:.9rem;font-weight:600;margin-bottom:1.5rem}.hero-tag svg{fill:var(--accent)}.hero h1{font-size:4rem;font-weight:700;margin-bottom:1.5rem;letter-spacing:-.01em}.hero-desc{font-size:1.25rem;color:var(--text-muted);margin-bottom:2.5rem;max-width:620px;line-height:1.5}.hero-ctas{display:flex;gap:1.5rem;align-items:center}.hero-visual{display:flex;justify-content:flex-end;position:relative;z-index:2}.hero-card{padding:2.5rem;border-radius:var(--radius-lg);max-width:400px;text-align:left;border:1px solid rgba(255,255,255,.6);box-shadow:var(--shadow-lg);position:relative;overflow:hidden}.hero-card::before{content:'';position:absolute;top:0;left:0;width:4px;height:100%;background-color:var(--accent)}.hero-card-quote{font-family:var(--font-serif);font-size:1.4rem;font-style:italic;color:var(--primary);margin-bottom:1.5rem;line-height:1.4}.hero-card-author{font-size:.95rem;font-weight:600;color:var(--text-dark)}.hero-card-role{font-size:.85rem;color:var(--text-muted)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}@media (max-width:480px){.container{padding:0 1rem}.section{padding:2rem 0}.section-title{font-size:1.85rem}.hero{padding:110px 0 40px}.hero h1{font-size:1.95rem;line-height:1.15}.hero-desc{font-size:1.05rem;margin-bottom:1.75rem}.hero-stats{gap:1.25rem}.hero-stat-num{font-size:1.75rem}.service-card{padding:1.75rem 1.5rem}}@font-face{font-family:'Outfit';font-style:normal;font-weight:400;font-display:optional;src:url(https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJuktqUYLkn8BJ.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Outfit';font-style:normal;font-weight:400;font-display:optional;src:url(https://fonts.gstatic.com/s/outfit/v15/QGYvz_MVcBeNP4NJtEtqUYLknw.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:optional;src:url(https://fonts.gstatic.com/s/cormorantgaramond/v21/co3umX5slCNuHLi8bLeY9MK7whWMhyjypVO7abI26QOD_iE9KnrOitk9IfqxUYT9.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:600;font-display:optional;src:url(https://fonts.gstatic.com/s/cormorantgaramond/v21/co3bmX5slCNuHLi8bLeY9MK7whWMhyjYqXtKky2F7g.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}.hero-h1-alt{font-family:var(--font-serif);color:var(--primary);font-weight:700;font-size:4rem;line-height:1.2;margin-bottom:1.5rem;letter-spacing:-.01em}@media(max-width:1024px){.hero-h1-alt{font-size:3.2rem}}@media(max-width:768px){.hero-h1-alt{font-size:2.5rem}}@media(max-width:480px){.hero-h1-alt{font-size:1.95rem;line-height:1.15}}</style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>International School Consulting for Dubai &amp; Expat Families | Edualist</title>
 
   <!-- Canonical & Hreflang -->
   <link rel="canonical" href="https://www.edualist.com/en/">
-  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
-  <link rel="icon" type="image/svg+xml" href="../assets/favicon.svg">
-  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/">
   <link rel="alternate" hreflang="tr" href="https://www.edualist.com/tr/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/">
   <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/tr/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
 
   <!-- SEO Meta Tags -->
   <meta name="description" content="International school consulting for Turkish families relocating abroad. Expert guidance by Özlem Çimen — 20+ years in education, expat mother of two.">
-  <meta name="keywords" content="Dubai school admissions, international school consulting, EAL coaching, IB curriculum, school relocation Dubai, expat education, student coaching, Özlem Çimen, Edualist">
   <meta name="author" content="Özlem Çimen – Edualist">
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
 
   <!-- Open Graph -->
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Edualist">
-  <meta property="og:title" content="International School Consulting for Dubai &amp; Expat Families | Edualist">
+  <meta property="og:title" content="International School Consulting for Dubai &amp; Expat Families">
   <meta property="og:description" content="Expert school placement and student coaching for families relocating internationally. Guided by an educator and expat mother with 20+ years of experience.">
   <meta property="og:url" content="https://www.edualist.com/en/">
   <meta property="og:image" content="https://www.edualist.com/assets/hero-bg.webp">
@@ -45,12 +44,12 @@
 
   <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="International School Consulting for Dubai &amp; Expat Families | Edualist">
+  <meta name="twitter:title" content="International School Consulting for Dubai &amp; Expat Families">
   <meta name="twitter:description" content="Expert school placement and student coaching for families relocating internationally.">
   <meta name="twitter:image" content="https://www.edualist.com/assets/hero-bg.webp">
-  <link rel="preload" as="style" fetchpriority="low" href="../styles.css?v=13">
-  <link rel="stylesheet" href="../styles.css?v=13" media="print" onload="this.media='all'">
-  <noscript><link rel="stylesheet" href="../styles.css?v=13"></noscript>
+  <link rel="preload" as="style" fetchpriority="low" href="/styles.css?v=13">
+  <link rel="stylesheet" href="/styles.css?v=13" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/styles.css?v=13"></noscript>
 
   <script>
     (function(){var l=false;function g(){if(l)return;l=true;(function(c,d,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=d.createElement(r);t.async=1;t.src='https://www.clarity.ms/tag/'+i;y=d.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,'clarity','script','yf8tc516c9');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});})();
@@ -72,34 +71,29 @@
       <nav>
         <ul class="nav-links" id="nav-menu">
           <li>
-            <a href="../neden-biz/">
-              <span class="tr-only">Neden Biz?</span>
-              <span class="en-only">Why Us?</span>
+            <a href="/en/why-edualist/">
+              <span>Why Us?</span>
             </a>
           </li>
           <li>
-            <a href="../neden-biz/#about">
-              <span class="tr-only">Hakkımızda</span>
-              <span class="en-only">About</span>
+            <a href="/en/why-edualist/#about">
+              <span>About</span>
             </a>
           </li>
           <li>
             <a href="#services">
-              <span class="tr-only">Hizmetler</span>
-              <span class="en-only">Services</span>
+              <span>Services</span>
             </a>
           </li>
           <li>
-            <a href="/uluslararasi-akademik-kocluk/" class="tr-only">Akademik Koçluk</a>
-            <a href="/uluslararasi-akademik-kocluk/" class="en-only">Coaching</a>
+            <a href="/en/academic-coaching/">Coaching</a>
           </li>
           <li>
-            <a href="../blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">84</span></a>
+            <a href="/en/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">55</span></a>
           </li>
           <li>
             <a href="#contact">
-              <span class="tr-only">İletişim</span>
-              <span class="en-only">Contact</span>
+              <span>Contact</span>
             </a>
           </li>
         </ul>
@@ -112,8 +106,7 @@
           <button class="lang-btn" data-lang="en" aria-label="English">EN</button>
         </div>
         
-        <a href="#contact" class="btn btn-primary tr-only" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Görüşme Planla</a>
-        <a href="#contact" class="btn btn-primary en-only" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Book Now</a>
+        <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.9rem;">Book Now</a>
         
         <!-- Mobile Menu Toggle Button -->
         <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu">
@@ -131,8 +124,8 @@
        HERO SECTION
        ========================================== -->
   <section class="hero" id="hero">
-    <img src="../assets/hero-bg.webp"
-         srcset="../assets/hero-bg-480.webp 480w,../assets/hero-bg.webp 1024w"
+    <img src="/assets/hero-bg.webp"
+         srcset="/assets/hero-bg-480.webp 480w, /assets/hero-bg.webp 1024w"
          sizes="100vw"
          fetchpriority="high"
          loading="eager"
@@ -151,29 +144,26 @@
               <path d="M12 3L1 9L12 15L21 10.09V17H23V9L12 3M5.43 11.78L12 15.36L18.57 11.78L12 15.28L5.43 11.78M12 17.5L5.43 14L4.3 14.62L12 18.78L19.7 14.62L18.57 14L12 17.5Z"/>
             </svg>
             
-            <span class="en-only">International School Relocation</span>
+            <span>International School Relocation</span>
           </div>
           
-          <p class="hero-h1-alt tr-only">Profesyonel Uluslararası Okul Danışmanlığı</p>
-          <h1 class="en-only">Professional International School Consulting</h1>
+          <h1>Professional International School Consulting</h1>
           
-          <p class="hero-desc tr-only">Edualist, çocuklarının eğitimi için yurt dışına taşınmayı planlayan ailelere; okul seçimi, müfredat değerlendirmesi, başvuru süreci ve adaptasyon aşamalarında kişiselleştirilmiş rehberlik sunar.</p>
-          <p class="hero-desc en-only">&ldquo;Navigating global education with an educator&rsquo;s mind and a mother&rsquo;s heart.&rdquo; Turning the overwhelm of school relocation into a clear, confident path for Turkish families moving internationally.</p>
+          <p class="hero-desc">&ldquo;Navigating global education with an educator&rsquo;s mind and a mother&rsquo;s heart.&rdquo; Turning the overwhelm of school relocation into a clear, confident path for Turkish families moving internationally.</p>
           
-          <p class="hero-desc tr-only" style="font-size: 1.05rem; border-left: 2px solid var(--accent); padding-left: 1rem; margin-top: -1rem;">Aile ile yurt dışına taşınmak önemli bir dönüm noktasıdır ve doğru okulu bulmak başarılı bir geçişin merkezinde yer alır. Edualist, Türk ailelerle ortaklık kurarak uluslararası taşınmalar için net ve stratejik bir rehberlik sunar.</p>
-          <p class="hero-desc tr-only">Bir eğitim uzmanı ve ailesini küresel taşınmalar boyunca yönlendirmiş bir göçmen anne olarak, kurucumuz Özlem Çimen bu zorlukları bizzat deneyimlemiştir. Bunaltıcı seçimleri net, yönetilebilir bir yola dönüştürüyor; çocuğunuzun geleceği için sakin ve güvenli kararlar almanıza güç veriyoruz.</p>
-          <p class="hero-desc en-only" style="font-size: 1.05rem; border-left: 2px solid var(--accent); padding-left: 1rem; margin-top: -1rem;">Moving your family is a major milestone, and finding the right school is at the heart of a successful transition. Edualist partners with Turkish families to provide clear, strategic guidance for international moves, for families relocating internationally.</p>
-          <p class="hero-desc en-only">As an education expert and an expat mother who has guided her own family through global relocations, founder Özlem Çimen understands the challenges firsthand. We transform overwhelming choices into a clear, manageable path, empowering you to make calm, confident decisions for your child&rsquo;s future.</p>
+          
+          <p class="hero-desc" style="font-size: 1.05rem; border-left: 2px solid var(--accent); padding-left: 1rem; margin-top: -1rem;">Moving your family is a major milestone, and finding the right school is at the heart of a successful transition. Edualist partners with Turkish families to provide clear, strategic guidance for international moves, for families relocating internationally.</p>
+          <p class="hero-desc">As an education expert and an expat mother who has guided her own family through global relocations, founder Özlem Çimen understands the challenges firsthand. We transform overwhelming choices into a clear, manageable path, empowering you to make calm, confident decisions for your child&rsquo;s future.</p>
           
           <div class="hero-ctas">
             <a href="#contact" class="btn btn-accent">
               
-              <span class="en-only">Book a Consultation</span>
+              <span>Book a Consultation</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
             </a>
             <a href="#services" class="btn btn-outline">
               
-              <span class="en-only">Our Services</span>
+              <span>Our Services</span>
             </a>
           </div>
         </div>
@@ -182,31 +172,25 @@
         <div class="hero-visual">
           <div class="hero-card glass hero-blog-preview">
             <div class="hero-blog-header">
-              <span class="hero-blog-label tr-only">Son Yazılar</span>
-              <span class="hero-blog-label en-only">Latest Posts</span>
-              <a href="../blog/" class="hero-blog-all tr-only">Tümünü Gör →</a>
-              <a href="../blog/" class="hero-blog-all en-only">View All →</a>
+              <span class="hero-blog-label">Latest Posts</span>
+              <a href="/en/blog/" class="hero-blog-all">View All →</a>
             </div>
             <ul class="hero-blog-list">
               <li class="hero-blog-item">
-                <a href="../blog/yapay-zekaya-direncli-meslekler/" class="tr-only">Yapay Zekaya Dirençli 65 Meslek: Araştırma ve Çocuğunuz İçin Ne Anlama Geliyor?</a>
-                <a href="../blog/yapay-zekaya-direncli-meslekler/" class="en-only">65 Jobs Safe from AI: US Career Institute Research & What It Means for Your Child</a>
-                <div class="hero-blog-item-meta">28 Eylül 2026 · <span class="tr-only">14 dk okuma</span><span class="en-only">14 min read</span></div>
+                <a href="/en/blog/ai-proof-jobs/">65 Jobs Safe from AI: US Career Institute Research & What It Means for Your Child</a>
+                <div class="hero-blog-item-meta">28 September 2026 · <span>14 min read</span></div>
               </li>
               <li class="hero-blog-item">
-                <a href="../blog/dubai-top-schools/" class="tr-only">Dubai'de En İyi 10 Okul (2026) — Expat Aileler İçin Uzman Seçimleri</a>
-                <a href="../blog/dubai-top-schools/" class="en-only">Top 10 International Schools in Dubai (2026) — Expert Picks for Expat Families</a>
-                <div class="hero-blog-item-meta">28 Eylül 2026 · <span class="tr-only">10 dk okuma</span><span class="en-only">10 min read</span></div>
+                <a href="/en/blog/dubai-top-schools/">Top 10 International Schools in Dubai (2026) — Expert Picks for Expat Families</a>
+                <div class="hero-blog-item-meta">28 September 2026 · <span>10 min read</span></div>
               </li>
               <li class="hero-blog-item">
-                <a href="../blog/cocuklar-icin-gelecek-becerileri/" class="tr-only">WEF ve Big 4'e Göre Çocuklar İçin 4 Kritik Gelecek Becerisi</a>
-                <a href="../blog/cocuklar-icin-gelecek-becerileri/" class="en-only">4 Critical Future Skills for Children According to WEF &amp; Big 4 Reports</a>
-                <div class="hero-blog-item-meta">28 Eylül 2026 · <span class="tr-only">15 dk okuma</span><span class="en-only">15 min read</span></div>
+                <a href="/en/blog/future-skills-for-children/">4 Critical Future Skills for Children According to WEF &amp; Big 4 Reports</a>
+                <div class="hero-blog-item-meta">28 September 2026 · <span>15 min read</span></div>
               </li>
               <li class="hero-blog-item">
-                <a href="../blog/dubai-okul-ucretleri-2026/" class="tr-only">Dubai Okul Ücretleri 2026–2027: KHDA ve Müfredada Göre Fiyat Tablosu</a>
-                <a href="../blog/dubai-okul-ucretleri-2026/" class="en-only">Dubai International School Fees 2026–2027: Full Price Table by KHDA Grade and Curriculum</a>
-                <div class="hero-blog-item-meta">27 Eylül 2026 · <span class="tr-only">8 dk okuma</span><span class="en-only">8 min read</span></div>
+                <a href="/en/blog/dubai-school-fees-2026/">Dubai International School Fees 2026–2027: Full Price Table by KHDA Grade and Curriculum</a>
+                <div class="hero-blog-item-meta">27 September 2026 · <span>8 min read</span></div>
               </li>
             </ul>
           </div>
@@ -226,57 +210,47 @@
         <div class="why-left-content scroll-reveal">
           <span class="section-subtitle">
             
-            <span class="en-only">A Unique Approach</span>
+            <span>A Unique Approach</span>
           </span>
-          <h2 class="tr-only">Neden Edualist?</h2>
-          <h2 class="en-only">Why Edualist?</h2>
+          <h2>Why Edualist?</h2>
           
-          <p class="tr-only">Doğru okulu seçmek, yalnızca web sitelerini karşılaştırıp broşür okumaktan çok daha fazlasını gerektirir. Çocuğunuzun başarılı ve mutlu olabileceği doğru eğitim kurumunu bulmak, birçok farklı faktörün dikkate alınmasını gerektirir.</p>
 
-          <p class="tr-only" style="margin-top: -0.5rem; margin-bottom: 1rem;">En iyi kararı vermek için şu unsurlara yakından bakıyoruz:</p>
 
-          <ul class="tr-only" style="margin-bottom: 1.5rem; padding-left: 1.2rem; line-height: 2;">
-            <li><strong>Öğrenci:</strong> Çocuğunuzun akademik profili, dil hazır bulunuşluk seviyesi, öğrenme stili ve kişisel özellikleri.</li>
-            <li><strong>Akademik Program:</strong> Çocuğunuz için ideal olan müfredatın seçimi (IB, Amerikan, İngiliz, Fransız vb.) ve uzun vadeli üniversite yönelimi.</li>
-            <li><strong>Aile:</strong> Eğitim kurumundan beklentileriniz, okul için ayırdığınız bütçe ve okulun vizyon ve misyonunun sizin ve çocuğunuzun hedefleriyle ne kadar örtüştüğü.</li>
-          </ul>
 
-          <p class="tr-only" style="font-weight: 600; font-size: 1.05rem; margin-bottom: 0.5rem;">Edualist Avantajı</p>
-          <p class="en-only">Choosing the right international school goes far beyond simply comparing websites and reading brochures. Finding the right place for your child to succeed means considering many different factors.</p>
+          <p>Choosing the right international school goes far beyond simply comparing websites and reading brochures. Finding the right place for your child to succeed means considering many different factors.</p>
           
-          <p class="en-only" style="margin-top: -0.5rem; margin-bottom: 1rem;">To make the best decision, we look closely at:</p>
+          <p style="margin-top: -0.5rem; margin-bottom: 1rem;">To make the best decision, we look closely at:</p>
           
-          <ul class="en-only" style="margin-bottom: 1.5rem; padding-left: 1.2rem; line-height: 2;">
+          <ul style="margin-bottom: 1.5rem; padding-left: 1.2rem; line-height: 2;">
             <li><strong>The Student:</strong> Your child’s unique academic profile, language readiness, learning style, and emotional adaptability.</li>
             <li><strong>The Academics:</strong> The exact curriculum fit (IB, American, British, etc.) and long-term university directions.</li>
             <li><strong>The Family:</strong> Your core expectations, budget requirements, and ideal lifestyle or location in your new city.</li>
           </ul>
           
-          <p class="en-only" style="font-weight: 600; font-size: 1.05rem; margin-bottom: 0.5rem;">The Edualist Advantage</p>
+          <p style="font-weight: 600; font-size: 1.05rem; margin-bottom: 0.5rem;">The Edualist Advantage</p>
           
-          <p class="tr-only" style="margin-top: -0.5rem; margin-bottom: 2rem;">20 yılı aşkın eğitim deneyimi ve farklı ülkelerde okul başvurularında bulunmuş, çocuklarını uluslararası okullarda okutmuş bir göçmen annenin sahadan gelen bilgisiyle nasıl yardım edileceğini biliyoruz. Yurt dışına taşınmanın stresli sürecini net ve basit bir plana dönüştürüyoruz ki bu da yeni bir ülkeye taşınma sürecinde gerek aileyi gerekse öğrenciyi güvende ve rahat hissettirir.</p>
-          <p class="en-only" style="margin-top: -0.5rem; margin-bottom: 2rem;">With over 20 years of education experience and the firsthand knowledge of an expat mom who has moved her family across five countries, we know how to help. We turn the stressful process of moving abroad into a clear, simple plan—so your family feels supported and your child starts their new school with confidence.</p>
+          <p style="margin-top: -0.5rem; margin-bottom: 2rem;">With over 20 years of education experience and the firsthand knowledge of an expat mom who has moved her family across five countries, we know how to help. We turn the stressful process of moving abroad into a clear, simple plan—so your family feels supported and your child starts their new school with confidence.</p>
           
           <div class="why-badge-list">
             <div class="why-badge-item">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
               
-              <span class="en-only">20+ Years Experience</span>
+              <span>20+ Years Experience</span>
             </div>
             <div class="why-badge-item">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
               
-              <span class="en-only">Real Parent Perspective</span>
+              <span>Real Parent Perspective</span>
             </div>
             <div class="why-badge-item">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
               
-              <span class="en-only">IB, PYP, MYP Expertise</span>
+              <span>IB, PYP, MYP Expertise</span>
             </div>
             <div class="why-badge-item">
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>
               
-              <span class="en-only">Bespoke Roadmaps</span>
+              <span>Bespoke Roadmaps</span>
             </div>
           </div>
         </div>
@@ -288,10 +262,10 @@
               <span class="why-icon-wrap" style="margin-bottom:0;flex-shrink:0;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
               </span>
-              <span class="en-only">Pedagogical & Empathetic</span>
+              <span>Pedagogical & Empathetic</span>
             </h3>
             <p class="why-feature-desc">
-              <span class="en-only">We address international schooling processes with the background of an educator and the care of a mother who raised two children abroad.</span>
+              <span>We address international schooling processes with the background of an educator and the care of a mother who raised two children abroad.</span>
             </p>
           </div>
 
@@ -300,10 +274,10 @@
               <span class="why-icon-wrap" style="margin-bottom:0;flex-shrink:0;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>
               </span>
-              <span class="en-only">Expectation Management</span>
+              <span>Expectation Management</span>
             </h3>
             <p class="why-feature-desc">
-              <span class="en-only">Balancing family expectations, school capacity, and student reality to target the absolute best educational fit.</span>
+              <span>Balancing family expectations, school capacity, and student reality to target the absolute best educational fit.</span>
             </p>
           </div>
 
@@ -312,10 +286,10 @@
               <span class="why-icon-wrap" style="margin-bottom:0;flex-shrink:0;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><path d="m9 14 2 2 4-4"/></svg>
               </span>
-              <span class="en-only">Interview & Admission Test Prep</span>
+              <span>Interview & Admission Test Prep</span>
             </h3>
             <p class="why-feature-desc">
-              <span class="en-only">We support students through school interviews and admission tests (CAT4, BCAT, etc.) with a structured preparation process to secure school acceptance.</span>
+              <span>We support students through school interviews and admission tests (CAT4, BCAT, etc.) with a structured preparation process to secure school acceptance.</span>
             </p>
           </div>
 
@@ -324,14 +298,14 @@
               <span class="why-icon-wrap" style="margin-bottom:0;flex-shrink:0;">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
               </span>
-              <span class="en-only">Independent Guidance</span>
+              <span>Independent Guidance</span>
             </h3>
             <p class="why-feature-desc">
-              <span class="en-only">Edualist has no affiliations with any school. Every recommendation is shaped solely around your child's best interest — not to benefit any institution.</span>
+              <span>Edualist has no affiliations with any school. Every recommendation is shaped solely around your child's best interest — not to benefit any institution.</span>
             </p>
           </div>
 
-          <div class="why-feature-card glass en-only" style="border:1px solid rgba(219,175,46,0.35);position:relative;overflow:hidden;">
+          <div class="why-feature-card glass" style="border:1px solid rgba(219,175,46,0.35);position:relative;overflow:hidden;">
             <div style="position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--accent),hsl(43,60%,72%));"></div>
             <div style="display:flex;align-items:center;gap:0.75rem;margin-bottom:0.75rem;">
               <div class="why-icon-wrap" style="margin-bottom:0;flex-shrink:0;">
@@ -370,25 +344,20 @@
     <div class="container">
       <div class="section-title-wrapper scroll-reveal">
         <span class="section-subtitle">
-          <span class="tr-only">Uzmanlık & Hizmetler</span>
-          <span class="en-only">Expertise & Services</span>
+          <span>Expertise & Services</span>
         </span>
         <h2 class="section-title">
-          <span class="tr-only">Edualist Eğitim Danışmanlığı</span>
-          <span class="en-only">Edualist Education Consulting</span>
+          <span>Edualist Education Consulting</span>
         </h2>
-        <p class="section-desc tr-only">Doğru okulu bulmaktan, yeni hayata güvenle başlamaya kadar yanınızdayız.</p>
-        <p class="section-desc en-only">From finding the right school to settling confidently into your new life — we are with you.</p>
+        <p class="section-desc">From finding the right school to settling confidently into your new life — we are with you.</p>
       </div>
 
       <div class="pricing-tab-bar">
         <button class="pricing-tab active" data-col="starter">
-          <span class="tr-only">🌿 Başlangıç</span>
-          <span class="en-only">🌿 Starter</span>
+          <span>🌿 Starter</span>
         </button>
         <button class="pricing-tab" data-col="pro">
-          <span class="tr-only">⭐ Kapsamlı</span>
-          <span class="en-only">⭐ Comprehensive</span>
+          <span>⭐ Comprehensive</span>
         </button>
       </div>
 
@@ -398,141 +367,133 @@
             <tr>
               <th class="col-feature"></th>
               <th class="col-starter">
-                <span class="pricing-plan-badge starter tr-only">🌿 BAŞLANGIÇ</span>
-                <span class="pricing-plan-badge starter en-only">🌿 STARTER</span>
+                <span class="pricing-plan-badge starter">🌿 STARTER</span>
               </th>
               <th class="col-pro">
-                <span class="pricing-popular-banner tr-only">EN ÇOK TERCİH EDİLEN</span>
-                <span class="pricing-popular-banner en-only">MOST POPULAR</span>
-                <span class="pricing-plan-badge pro tr-only">⭐ KAPSAMLI</span>
-                <span class="pricing-plan-badge pro en-only">⭐ COMPREHENSIVE</span>
+                <span class="pricing-popular-banner">MOST POPULAR</span>
+                <span class="pricing-plan-badge pro">⭐ COMPREHENSIVE</span>
               </th>
             </tr>
             <tr class="name-row">
               <td class="col-feature">
-                <span class="tr-only">Paket</span>
-                <span class="en-only">Package</span>
+                <span>Package</span>
               </td>
               <td class="col-starter">
-                <strong><span class="tr-only">30 Günlük Okul Yerleştirme</span><span class="en-only">30-Day School Placement</span></strong>
+                <strong><span>30-Day School Placement</span></strong>
               </td>
               <td class="col-pro">
-                <strong><span class="tr-only">90 Günlük Kapsamlı Destek</span><span class="en-only">90-Day Comprehensive Support</span></strong>
+                <strong><span>90-Day Comprehensive Support</span></strong>
               </td>
             </tr>
             <tr class="price-row">
               <td class="col-feature">
-                <span class="tr-only">Ücret<br><small style="font-size:.75rem;font-weight:400;color:var(--text-muted);">tek seferlik</small></span>
-                <span class="en-only">Price<br><small style="font-size:.75rem;font-weight:400;color:var(--text-muted);">one-time flat fee</small></span>
+                <span>Price<br><small style="font-size:.75rem;font-weight:400;color:var(--text-muted);">one-time flat fee</small></span>
               </td>
               <td class="col-starter">
                 <span class="price-cell">AED 3,500</span>
               </td>
               <td class="col-pro">
                 <span class="price-cell">AED 7,000</span>
-                <span class="pricing-discount-badge tr-only">%35 İndirim Uygulandı</span>
-                <span class="pricing-discount-badge en-only">35% discount applied</span>
+                <span class="pricing-discount-badge">35% discount applied</span>
               </td>
             </tr>
           </thead>
           <tbody>
             <tr>
-              <td class="col-feature"><span class="tr-only">Kimler için?</span><span class="en-only">Best For</span></td>
-              <td class="col-starter"><span class="tr-only">Okul seçtiniz — şimdi doğru yapılmasına ihtiyacınız var.</span><span class="en-only">You've chosen a school — now you need it done right.</span></td>
-              <td class="col-pro"><span class="tr-only">Ülke değiştiriyorsunuz. Başvurudan fazlasına ihtiyacınız var.</span><span class="en-only">You're moving countries. You need more than an application.</span></td>
+              <td class="col-feature"><span>Best For</span></td>
+              <td class="col-starter"><span>You've chosen a school — now you need it done right.</span></td>
+              <td class="col-pro"><span>You're moving countries. You need more than an application.</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Size Özel Okul Seçimi</span><span class="en-only">Personalised School Selection</span></td>
-              <td class="col-starter"><span class="tr-only">Öğrencinin profiline uygun 3 okul önerisi</span><span class="en-only">3 schools matched to the student's profile</span></td>
-              <td class="col-pro"><span class="tr-only">Öğrencinin profiline uygun 6 okul önerisi</span><span class="en-only">6 schools matched to the student's profile</span></td>
+              <td class="col-feature"><span>Personalised School Selection</span></td>
+              <td class="col-starter"><span>3 schools matched to the student's profile</span></td>
+              <td class="col-pro"><span>6 schools matched to the student's profile</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Başvuru &amp; Kayıt Yönetimi</span><span class="en-only">Application &amp; Registration</span></td>
-              <td class="col-starter"><span class="tr-only">Seçilen okulun başvuru ve kayıt sürecinin eksiksiz yönetimi</span><span class="en-only">Full management of the chosen school's application and registration</span></td>
-              <td class="col-pro"><span class="tr-only">Veli hassasiyetiyle uçtan uca eksiksiz yönetim; kayıt sonrası süreçlerde de destek</span><span class="en-only">Hands-on, end-to-end management with the care of a fellow parent, including post-registration support</span></td>
+              <td class="col-feature"><span>Application &amp; Registration</span></td>
+              <td class="col-starter"><span>Full management of the chosen school's application and registration</span></td>
+              <td class="col-pro"><span>Hands-on, end-to-end management with the care of a fellow parent, including post-registration support</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Son Başvuru Tarihi Takibi</span><span class="en-only">Deadline Tracking</span></td>
-              <td class="col-starter"><span class="tr-only">Önemli son başvuru tarihleri takip edilir ve bildirilir</span><span class="en-only">Key deadlines tracked and flagged</span></td>
-              <td class="col-pro"><span class="tr-only">Tüm başvuru takvimi sizin adınıza eksiksiz yönetilir</span><span class="en-only">Full deadline calendar managed on your behalf</span></td>
+              <td class="col-feature"><span>Deadline Tracking</span></td>
+              <td class="col-starter"><span>Key deadlines tracked and flagged</span></td>
+              <td class="col-pro"><span>Full deadline calendar managed on your behalf</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Doğrudan Kabul Yazışması</span><span class="en-only">Direct Admissions Communication</span></td>
+              <td class="col-feature"><span>Direct Admissions Communication</span></td>
               <td class="col-starter" style="text-align:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(11,33,58,0.2)" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
-              <td class="col-pro"><span class="tr-only">Tüm okul kabul yazışmaları ve aramaları doğrudan Özlem tarafından yürütülür</span><span class="en-only">All admissions emails and calls handled directly by Özlem</span></td>
+              <td class="col-pro"><span>All admissions emails and calls handled directly by Özlem</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Özlem'e Doğrudan Erişim</span><span class="en-only">Direct Access to Özlem</span></td>
-              <td class="col-starter"><span class="tr-only">Haftada 2 check-in görüşmesi</span><span class="en-only">2 check-in calls per week</span></td>
-              <td class="col-pro"><span class="tr-only">Haftada 4 check-in görüşmesi</span><span class="en-only">4 check-in calls per week</span></td>
+              <td class="col-feature"><span>Direct Access to Özlem</span></td>
+              <td class="col-starter"><span>2 check-in calls per week</span></td>
+              <td class="col-pro"><span>4 check-in calls per week</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Okul Mülakatı</span><span class="en-only">School Interview</span></td>
-              <td class="col-starter"><span class="tr-only">1 online mülakat/görüşme desteği</span><span class="en-only">Support for 1 online interview or meeting</span></td>
-              <td class="col-pro"><span class="tr-only">3 online mülakat/görüşme desteği</span><span class="en-only">Support for 3 online interviews or meetings</span></td>
+              <td class="col-feature"><span>School Interview</span></td>
+              <td class="col-starter"><span>Support for 1 online interview or meeting</span></td>
+              <td class="col-pro"><span>Support for 3 online interviews or meetings</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Veli Mülakat Hazırlığı</span><span class="en-only">Parent Interview Prep</span></td>
-              <td class="col-starter"><span class="tr-only">Bir hazırlık görüşmesi</span><span class="en-only">One preparation call</span></td>
-              <td class="col-pro"><span class="tr-only">Geri bildirimli mülakat simülasyonu</span><span class="en-only">Full mock interview session with written feedback</span></td>
+              <td class="col-feature"><span>Parent Interview Prep</span></td>
+              <td class="col-starter"><span>One preparation call</span></td>
+              <td class="col-pro"><span>Full mock interview session with written feedback</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Bekleme Listesi Takibi</span><span class="en-only">Waiting-List Follow-Up</span></td>
+              <td class="col-feature"><span>Waiting-List Follow-Up</span></td>
               <td class="col-starter" style="text-align:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(11,33,58,0.2)" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
-              <td class="col-pro"><span class="tr-only">Yer onaylanana kadar bekleme listesi aktif olarak takip edilir</span><span class="en-only">Active follow-up on waiting lists until a place is confirmed</span></td>
+              <td class="col-pro"><span>Active follow-up on waiting lists until a place is confirmed</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">İkamet &amp; Evrak İşlemleri</span><span class="en-only">Residency &amp; Document Handling</span></td>
+              <td class="col-feature"><span>Residency &amp; Document Handling</span></td>
               <td class="col-starter" style="text-align:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(11,33,58,0.2)" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
-              <td class="col-pro"><span class="tr-only">Oturum izni vb. belgelerin okula zamanında ulaştırılması</span><span class="en-only">Delivering residency permit and other documents to the school on time</span></td>
+              <td class="col-pro"><span>Delivering residency permit and other documents to the school on time</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Yeni Okula Adaptasyon</span><span class="en-only">School Adaptation</span></td>
+              <td class="col-feature"><span>School Adaptation</span></td>
               <td class="col-starter" style="text-align:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(11,33,58,0.2)" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
-              <td class="col-pro"><span class="tr-only">Öğrencinin yeni eğitim sistemine ve okul kültürüne aktif uyum desteği</span><span class="en-only">Active support adapting to the new education system and school culture</span></td>
+              <td class="col-pro"><span>Active support adapting to the new education system and school culture</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Sosyal Hayat &amp; Kulüpler</span><span class="en-only">Social Life &amp; Clubs</span></td>
+              <td class="col-feature"><span>Social Life &amp; Clubs</span></td>
               <td class="col-starter" style="text-align:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(11,33,58,0.2)" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
-              <td class="col-pro"><span class="tr-only">After-school aktiviteleri ve kulüpler için kişiye özel yönlendirme</span><span class="en-only">Personalised guidance for after-school activities and clubs</span></td>
+              <td class="col-pro"><span>Personalised guidance for after-school activities and clubs</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Okul Topluluğuna Entegrasyon</span><span class="en-only">School Community Integration</span></td>
+              <td class="col-feature"><span>School Community Integration</span></td>
               <td class="col-starter" style="text-align:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(11,33,58,0.2)" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
-              <td class="col-pro"><span class="tr-only">Okul WhatsApp grupları ve veli görüşmelerine katılım desteği</span><span class="en-only">Active support joining school WhatsApp groups and parent meetings</span></td>
+              <td class="col-pro"><span>Active support joining school WhatsApp groups and parent meetings</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">İngilizce Adaptasyon</span><span class="en-only">English Adaptation</span></td>
+              <td class="col-feature"><span>English Adaptation</span></td>
               <td class="col-starter" style="text-align:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(11,33,58,0.2)" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
-              <td class="col-pro"><span class="tr-only">10 saatlik 1-1 İngilizce dersi <small style="display:block;font-size:.75rem;color:var(--accent);font-weight:600;margin-top:.2rem;">Tahmini değer: AED 2,000</small></span><span class="en-only">10-hour 1-to-1 English lessons <small style="display:block;font-size:.75rem;color:var(--accent);font-weight:600;margin-top:.2rem;">est. value AED 2,000</small></span></td>
+              <td class="col-pro"><span>10-hour 1-to-1 English lessons <small style="display:block;font-size:.75rem;color:var(--accent);font-weight:600;margin-top:.2rem;">est. value AED 2,000</small></span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Yerleşim Sonrası Takip</span><span class="en-only">Post-Placement Follow-Up</span></td>
+              <td class="col-feature"><span>Post-Placement Follow-Up</span></td>
               <td class="col-starter" style="text-align:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(11,33,58,0.2)" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
-              <td class="col-pro"><span class="tr-only">Çocuğunuz okula başladıktan bir hafta sonra takip görüşmesi</span><span class="en-only">One check-in call after your child's first week at school</span></td>
+              <td class="col-pro"><span>One check-in call after your child's first week at school</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Müfredat Bilgilendirmesi</span><span class="en-only">Curriculum Briefing</span></td>
+              <td class="col-feature"><span>Curriculum Briefing</span></td>
               <td class="col-starter" style="text-align:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(11,33,58,0.2)" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
-              <td class="col-pro"><span class="tr-only">Yeni müfredat, notlama sistemi ve beklentiler üzerine özel seans</span><span class="en-only">Dedicated session on the new curriculum, grading system &amp; expectations</span></td>
+              <td class="col-pro"><span>Dedicated session on the new curriculum, grading system &amp; expectations</span></td>
             </tr>
             <tr>
-              <td class="col-feature"><span class="tr-only">Okul Ziyareti Koordinasyonu</span><span class="en-only">School Visit Coordination</span></td>
+              <td class="col-feature"><span>School Visit Coordination</span></td>
               <td class="col-starter" style="text-align:center;"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="rgba(11,33,58,0.2)" stroke-width="3" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/></svg></td>
-              <td class="col-pro"><span class="tr-only">2 sanal okul ziyareti için koordinasyon</span><span class="en-only">Coordination for up to 2 virtual school visits</span></td>
+              <td class="col-pro"><span>Coordination for up to 2 virtual school visits</span></td>
             </tr>
             <tr class="cta-row">
               <td class="col-feature"></td>
               <td class="col-starter">
                 <a href="#contact" class="btn btn-outline" style="width:100%;justify-content:center;">
-                  <span class="tr-only">Hemen Başlayın →</span>
-                  <span class="en-only">Start Here →</span>
+                  <span>Start Here →</span>
                 </a>
               </td>
               <td class="col-pro">
                 <a href="#contact" class="btn btn-accent" style="width:100%;justify-content:center;">
-                  <span class="tr-only">Hemen Başlayalım →</span>
-                  <span class="en-only">Get Started →</span>
+                  <span>Get Started →</span>
                 </a>
               </td>
             </tr>
@@ -542,54 +503,46 @@
 
       <div class="pricing-summary-badges scroll-reveal">
         <span class="pricing-summary-badge starter-badge">
-          <span class="tr-only">🌿 <strong>Başlangıç</strong> — Doğru başlangıç</span>
-          <span class="en-only">🌿 <strong>Starter</strong> — The right start</span>
+          <span>🌿 <strong>Starter</strong> — The right start</span>
         </span>
         <span class="pricing-summary-badge pro-badge">
-          <span class="tr-only">⭐ <strong>Kapsamlı</strong> — Doğru başlangıç + güvenli geçiş + güçlü adaptasyon</span>
-          <span class="en-only">⭐ <strong>Comprehensive</strong> — The right start + safe transition + strong adaptation</span>
+          <span>⭐ <strong>Comprehensive</strong> — The right start + safe transition + strong adaptation</span>
         </span>
       </div>
 
       <div class="pricing-featured scroll-reveal">
-        <span class="pricing-featured-badge tr-only">⭐ EN ÇOK TERCİH EDİLEN</span>
-        <span class="pricing-featured-badge en-only">⭐ MOST POPULAR</span>
-        <div class="pricing-featured-title tr-only">90 Günlük Kapsamlı Destek</div>
-        <div class="pricing-featured-title en-only">90-Day Comprehensive Support</div>
-        <p class="pricing-featured-desc tr-only">Çünkü okul seçmek yalnızca ilk adımdır.<br><br>Yeni bir ülkeye ve eğitim sistemine geçiş; başvurudan çok daha fazlasıdır. Edualist, öğrencinin akademik, sosyal ve dil adaptasyonunu, aynı zamanda velinin okul kültürüne ve iletişim ağına entegrasyonunu destekler. İlk günden itibaren, bir danışmandan çok yanınızda olan deneyimli bir veli gibi.</p>
-        <p class="pricing-featured-desc en-only">Because choosing a school is only the first step.<br><br>Transitioning to a new country and education system means far more than submitting an application. Edualist supports the student's academic, social and language adaptation — and the parents' integration into the school community. From day one, less like a consultant, more like an experienced fellow parent right there beside you.</p>
-        <p class="pricing-featured-quote tr-only">"Biz sadece çocuğunuz için bir okul bulmuyoruz. Yeni eğitim hayatına doğru başlamasını sağlıyoruz."</p>
-        <p class="pricing-featured-quote en-only">"We don't just find a school for your child. We make sure they start their new education life on the right foot."</p>
+        <span class="pricing-featured-badge">⭐ MOST POPULAR</span>
+        <div class="pricing-featured-title">90-Day Comprehensive Support</div>
+        <p class="pricing-featured-desc">Because choosing a school is only the first step.<br><br>Transitioning to a new country and education system means far more than submitting an application. Edualist supports the student's academic, social and language adaptation — and the parents' integration into the school community. From day one, less like a consultant, more like an experienced fellow parent right there beside you.</p>
+        <p class="pricing-featured-quote">"We don't just find a school for your child. We make sure they start their new education life on the right foot."</p>
       </div>
 
       <div class="pricing-included scroll-reveal">
-        <div class="pricing-included-title tr-only">Her İki Pakette Dahil</div>
-        <div class="pricing-included-title en-only">Included in Both Packages</div>
+        <div class="pricing-included-title">Included in Both Packages</div>
         <ul class="pricing-included-list">
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span class="tr-only">Her karar çocuğunuzun ihtiyaçlarına göre şekillenir</span><span class="en-only">Every decision shaped around your child's needs</span></li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span class="tr-only">Özlem'e doğrudan WhatsApp erişimi</span><span class="en-only">Direct WhatsApp access to Özlem</span></li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span class="tr-only">Haftalık yazılı gelişme güncellemesi</span><span class="en-only">Weekly written progress updates</span></li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span class="tr-only">Tüm okul yazışmaları ve aramaları sizin adınıza yönetilir</span><span class="en-only">All school emails &amp; calls handled for you</span></li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span class="tr-only">Bağımsız ve kişiselleştirilmiş tavsiye — hiçbir okulla bağlantımız yok</span><span class="en-only">Personalised &amp; independent advice — no school affiliations</span></li>
-          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span class="tr-only">Gizli ücret yok, sürpriz yok</span><span class="en-only">No hidden fees, no surprises</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span>Every decision shaped around your child's needs</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span>Direct WhatsApp access to Özlem</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span>Weekly written progress updates</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span>All school emails &amp; calls handled for you</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span>Personalised &amp; independent advice — no school affiliations</span></li>
+          <li><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg><span>No hidden fees, no surprises</span></li>
         </ul>
       </div>
 
-      <p class="pricing-note tr-only"><strong>📌 Not:</strong> Okullar tarafından ayrıca tahsil edilen application, registration ve diğer okul ücretleri Edualist danışmanlık ücretlerine dahil değildir.</p>
-      <p class="pricing-note en-only"><strong>📌 Please Note:</strong> Application, registration and other school fees collected separately by the schools are not included in Edualist consulting fees.</p>
+      <p class="pricing-note"><strong>📌 Please Note:</strong> Application, registration and other school fees collected separately by the schools are not included in Edualist consulting fees.</p>
 
       <div class="pricing-faq scroll-reveal">
         <div class="pricing-faq-item">
-          <span class="pricing-faq-q"><span class="tr-only">Ya çocuğum okula kabul edilmezse?</span><span class="en-only">What if my child doesn't get accepted?</span></span>
-          <span class="pricing-faq-a"><span class="tr-only">Yalnızca çocuğunuzun profiline uygun, yüksek kabul ihtimali olan okulları öneriyoruz — ve her zaman alternatiflerimiz hazır.</span><span class="en-only">We only shortlist schools with strong acceptance probability for your child's profile — and always have alternatives ready.</span></span>
+          <span class="pricing-faq-q"><span>What if my child doesn't get accepted?</span></span>
+          <span class="pricing-faq-a"><span>We only shortlist schools with strong acceptance probability for your child's profile — and always have alternatives ready.</span></span>
         </div>
         <div class="pricing-faq-item">
-          <span class="pricing-faq-q"><span class="tr-only">Hedef ülkemizi değiştirirsek ne olur?</span><span class="en-only">What if we change our destination?</span></span>
-          <span class="pricing-faq-a"><span class="tr-only">Planı birlikte güncelleriz. Yeni şehir, yeni okul — destek devam eder.</span><span class="en-only">We update the plan together. New city, new school — the support continues.</span></span>
+          <span class="pricing-faq-q"><span>What if we change our destination?</span></span>
+          <span class="pricing-faq-a"><span>We update the plan together. New city, new school — the support continues.</span></span>
         </div>
         <div class="pricing-faq-item">
-          <span class="pricing-faq-q"><span class="tr-only">Taksitle ödeme mümkün mü?</span><span class="en-only">Is a payment plan available?</span></span>
-          <span class="pricing-faq-a"><span class="tr-only">Evet. Ödeme planı için bizimle doğrudan iletişime geçin.</span><span class="en-only">Yes. Reach out directly and we'll arrange it together.</span></span>
+          <span class="pricing-faq-q"><span>Is a payment plan available?</span></span>
+          <span class="pricing-faq-a"><span>Yes. Reach out directly and we'll arrange it together.</span></span>
         </div>
       </div>
 
@@ -601,16 +554,12 @@
     <div class="container">
       <div style="display:flex;align-items:center;justify-content:space-between;gap:2rem;flex-wrap:wrap">
         <div>
-          <span style="font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:700;display:block;margin-bottom:.5rem" class="tr-only">Adım 2</span>
-          <span style="font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:700;display:block;margin-bottom:.5rem" class="en-only">Step Two</span>
-          <h2 style="font-family:var(--font-serif);font-size:clamp(1.4rem,3vw,2rem);color:#fff;margin:0 0 .6rem;font-weight:600;line-height:1.25" class="tr-only">Doğru okula girmek sadece ilk adım.<br>Asıl yolculuk orada başlıyor.</h2>
-          <h2 style="font-family:var(--font-serif);font-size:clamp(1.4rem,3vw,2rem);color:#fff;margin:0 0 .6rem;font-weight:600;line-height:1.25" class="en-only">Getting into the right school is only step one.<br>Thriving inside it is where the real journey begins.</h2>
-          <p style="color:rgba(255,255,255,.7);font-size:.95rem;line-height:1.65;max-width:540px;margin:0" class="tr-only">IB, A-Level veya yeni ülkede müfredat geçişi yaşayan öğrencilere yönelik akademik koçluk. Haftada 2 birebir online seans. <strong style="color:var(--accent)">900 AED/ay.</strong></p>
-          <p style="color:rgba(255,255,255,.7);font-size:.95rem;line-height:1.65;max-width:540px;margin:0" class="en-only">Academic coaching for students navigating IB, A-Level, or curriculum transitions. Parent-focused 1-on-1 coaching, 2 sessions per week. <strong style="color:var(--accent)">900 AED/month.</strong></p>
+          <span style="font-size:.82rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:700;display:block;margin-bottom:.5rem">Step Two</span>
+          <h2 style="font-family:var(--font-serif);font-size:clamp(1.4rem,3vw,2rem);color:#fff;margin:0 0 .6rem;font-weight:600;line-height:1.25">Getting into the right school is only step one.<br>Thriving inside it is where the real journey begins.</h2>
+          <p style="color:rgba(255,255,255,.7);font-size:.95rem;line-height:1.65;max-width:540px;margin:0">Academic coaching for students navigating IB, A-Level, or curriculum transitions. Parent-focused 1-on-1 coaching, 2 sessions per week. <strong style="color:var(--accent)">900 AED/month.</strong></p>
         </div>
-        <a href="/uluslararasi-akademik-kocluk/" class="btn btn-accent" style="flex-shrink:0;font-size:1rem;padding:.9rem 2rem">
-          <span class="tr-only">Akademik Koçluk →</span>
-          <span class="en-only">Academic Coaching →</span>
+        <a href="/en/academic-coaching/" class="btn btn-accent" style="flex-shrink:0;font-size:1rem;padding:.9rem 2rem">
+          <span>Academic Coaching →</span>
         </a>
       </div>
     </div>
@@ -623,12 +572,10 @@
     <div class="container">
       <div class="section-title-wrapper scroll-reveal">
         <span class="section-subtitle">
-          <span class="tr-only">Aileler Ne Diyor?</span>
-          <span class="en-only">What Families Say</span>
+          <span>What Families Say</span>
         </span>
         <h2 class="section-title">
-          <span class="tr-only">Veli Deneyimleri</span>
-          <span class="en-only">Parent Experiences</span>
+          <span>Parent Experiences</span>
         </h2>
       </div>
       <div class="testimonials-carousel" id="testimonials-carousel">
@@ -636,79 +583,67 @@
 
           <div class="testimonial-card glass">
             <p class="testimonial-quote">
-              <span class="tr-only">Özlem Hanım sayesinde Repton Al Barsha'ya kabul almak sandığımızdan çok daha kolay oldu. Tüm başvuru sürecini o yönetti, biz sadece evrakları imzaladık.</span>
-              <span class="en-only">Thanks to Özlem, getting accepted to Repton Al Barsha was far easier than we imagined. She managed the entire application process — we just signed the documents.</span>
+              <span>Thanks to Özlem, getting accepted to Repton Al Barsha was far easier than we imagined. She managed the entire application process — we just signed the documents.</span>
             </p>
             <div class="testimonial-divider"></div>
             <div class="testimonial-name">A. Kaya ailesi</div>
             <div class="testimonial-detail">
-              <span class="tr-only">İstanbul → Dubai · 2025 · 2 çocuk · Repton Al Barsha</span>
-              <span class="en-only">Istanbul → Dubai · 2025 · 2 children · Repton Al Barsha</span>
+              <span>Istanbul → Dubai · 2025 · 2 children · Repton Al Barsha</span>
             </div>
           </div>
 
           <div class="testimonial-card glass">
             <p class="testimonial-quote">
-              <span class="tr-only">İngilizcesi henüz gelişmekte olan oğlumuz için GEMS International Dubai çok doğru bir seçim oldu. İlk dönem adaptasyonu beklediğimizden çok daha sorunsuz geçti.</span>
-              <span class="en-only">GEMS International Dubai turned out to be exactly the right choice for our son who was still developing his English. His first-term adaptation went much more smoothly than we expected.</span>
+              <span>GEMS International Dubai turned out to be exactly the right choice for our son who was still developing his English. His first-term adaptation went much more smoothly than we expected.</span>
             </p>
             <div class="testimonial-divider"></div>
             <div class="testimonial-name">M. ve S. Arslan</div>
             <div class="testimonial-detail">
-              <span class="tr-only">Ankara → Dubai · 2024 · 8 yaş · GEMS International Dubai</span>
-              <span class="en-only">Ankara → Dubai · 2024 · Age 8 · GEMS International Dubai</span>
+              <span>Ankara → Dubai · 2024 · Age 8 · GEMS International Dubai</span>
             </div>
           </div>
 
           <div class="testimonial-card glass">
             <p class="testimonial-quote">
-              <span class="tr-only">Türkiye'deyken tüm GEMS Wellington Dubai Hills başvurularını hallettik. Dubai'ye geldiğimizde okul zaten hazırdı — bu kadar rahat olacağını tahmin etmemiştik.</span>
-              <span class="en-only">We handled all the GEMS Wellington Dubai Hills paperwork from Turkey. By the time we arrived in Dubai, the school was already sorted — we hadn't expected it to be this easy.</span>
+              <span>We handled all the GEMS Wellington Dubai Hills paperwork from Turkey. By the time we arrived in Dubai, the school was already sorted — we hadn't expected it to be this easy.</span>
             </p>
             <div class="testimonial-divider"></div>
             <div class="testimonial-name">F. Bozkurt ailesi</div>
             <div class="testimonial-detail">
-              <span class="tr-only">İzmir → Dubai · 2026 · GEMS Wellington Dubai Hills · Tam Yönetim Paketi</span>
-              <span class="en-only">Izmir → Dubai · 2026 · GEMS Wellington Dubai Hills · Done For You package</span>
+              <span>Izmir → Dubai · 2026 · GEMS Wellington Dubai Hills · Done For You package</span>
             </div>
           </div>
 
           <div class="testimonial-card glass">
             <p class="testimonial-quote">
-              <span class="tr-only">Azerbaycan'da uluslararası okul seçeneği sınırlı, nereden başlayacağımızı bilmiyorduk. Edualist hem okul listesini hazırladı hem de başvuru sürecini adım adım yönetti.</span>
-              <span class="en-only">International school options in Azerbaijan are limited and we had no idea where to start. Edualist prepared the school shortlist and guided us through every step of the application.</span>
+              <span>International school options in Azerbaijan are limited and we had no idea where to start. Edualist prepared the school shortlist and guided us through every step of the application.</span>
             </p>
             <div class="testimonial-divider"></div>
-            <div class="testimonial-name">C. ve N. Yıldız</div>
+            <div class="testimonial-name">C. & N. Yıldız</div>
             <div class="testimonial-detail">
-              <span class="tr-only">İstanbul → Bakü · 2025 · 1 çocuk, 10 yaş</span>
-              <span class="en-only">Istanbul → Baku · 2025 · 1 child, age 10</span>
+              <span>Istanbul → Baku · 2025 · 1 child, age 10</span>
             </div>
           </div>
 
           <div class="testimonial-card glass">
             <p class="testimonial-quote">
-              <span class="tr-only">IB mi, A-Level mi, AP mi — hiçbir fikrimiz yoktu ve her araştırmamızda daha da karıştık. Özlem Hanım kızımızın profiline ve üniversite hedeflerine bakarak bizi IB'ye yönlendirdi; GEMS Dubai American Academy'den çok memnunuz.</span>
-              <span class="en-only">IB, A-Level, AP — we had no idea and the more we researched the more confused we got. Özlem looked at our daughter's profile and university goals and pointed us to IB. We couldn't be happier with GEMS Dubai American Academy.</span>
+              <span>IB, A-Level, AP — we had no idea and the more we researched the more confused we got. Özlem looked at our daughter's profile and university goals and pointed us to IB. We couldn't be happier with GEMS Dubai American Academy.</span>
             </p>
             <div class="testimonial-divider"></div>
-            <div class="testimonial-name">E. ve T. Güneş</div>
+            <div class="testimonial-name">E. & T. Güneş</div>
             <div class="testimonial-detail">
-              <span class="tr-only">İstanbul → Dubai · 2024 · 14 yaş, müfredat seçimi</span>
-              <span class="en-only">Istanbul → Dubai · 2024 · Age 14, curriculum selection</span>
+              <span>Istanbul → Dubai · 2024 · Age 14, curriculum selection</span>
             </div>
           </div>
 
           <div class="testimonial-card glass">
             <p class="testimonial-quote">
-              <span class="tr-only">GEMS okuluna başvurduk ve reddedildik. Özlem Hanım eksiklerimizi tek tek tespit etti, başvurumuzu baştan yapılandırdı. Aynı okula yeniden başvurduk — bu sefer kabul edildik. Çocuklarımızın eğitimini kurtardı.</span>
-              <span class="en-only">We applied to GEMS and were rejected. Özlem identified every gap, restructured our application from scratch. We reapplied to the same school — and got in. She genuinely saved our children's education.</span>
+              <span>We applied to GEMS and were rejected. Özlem identified every gap, restructured our application from scratch. We reapplied to the same school — and got in. She genuinely saved our children's education.</span>
             </p>
             <div class="testimonial-divider"></div>
             <div class="testimonial-name">S. ve R. Karahan</div>
             <div class="testimonial-detail">
-              <span class="tr-only">Dubai · 2025 · GEMS okulu kabulü · 2 çocuk</span>
-              <span class="en-only">Dubai · 2025 · GEMS school admission · 2 children</span>
+              <span>Dubai · 2025 · GEMS school admission · 2 children</span>
             </div>
           </div>
 
@@ -778,13 +713,11 @@
         <div class="webinar-info scroll-reveal">
           <span class="section-subtitle">
             
-            <span class="en-only">Free Monthly Live Events</span>
+            <span>Free Monthly Live Events</span>
           </span>
-          <h2 class="tr-only">Aylık Ücretsiz Çevrimiçi Seminerler</h2>
-          <h2 class="en-only">Free Monthly Online Sessions</h2>
+          <h2>Free Monthly Online Sessions</h2>
 
-          <p class="webinar-lead tr-only">Sadece dinlemek için değil, <strong>gerçek sorular sormak</strong> ve <strong>diğer ailelerin deneyimlerinden öğrenmek</strong> için katılın. Her ayın son Çarşambası Özlem Çimen ile canlı, samimi ve tamamen ücretsiz bir buluşma gerçekleştiriyoruz.</p>
-          <p class="webinar-lead en-only">This isn't a passive webinar — it's a <strong>live conversation</strong>. Ask your most pressing questions, get <strong>immediate, expert answers</strong>, and hear real stories from families who've navigated international school systems firsthand.</p>
+          <p class="webinar-lead">This isn't a passive webinar — it's a <strong>live conversation</strong>. Ask your most pressing questions, get <strong>immediate, expert answers</strong>, and hear real stories from families who've navigated international school systems firsthand.</p>
 
           <!-- Feature Benefit Cards -->
           <div class="webinar-benefits">
@@ -794,10 +727,8 @@
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
               </div>
               <div class="wb-text">
-                <h3 class="tr-only">Doğrudan Soru Sorun</h3>
-                <h3 class="en-only">Ask Direct Questions</h3>
-                <p class="tr-only">Merak ettiğiniz her şeyi canlı yayında Özlem Çimen'e sorun. Genel bilgi değil, size özel yanıtlar alın.</p>
-                <p class="en-only">No pre-screened topics — ask exactly what's on your mind during the live session and get a direct, honest response.</p>
+                <h3>Ask Direct Questions</h3>
+                <p>No pre-screened topics — ask exactly what's on your mind during the live session and get a direct, honest response.</p>
               </div>
             </div>
 
@@ -806,10 +737,8 @@
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
               </div>
               <div class="wb-text">
-                <h3 class="tr-only">Anlık Yanıtlar Alın</h3>
-                <h3 class="en-only">Get Immediate Answers</h3>
-                <p class="tr-only">Günler ya da haftalar beklemeden; kayıt tarihleri, sınav süreçleri ve okul listeleri hakkında anında netlik kazanın.</p>
-                <p class="en-only">No waiting days for a callback — get clarity on admission timelines, KHDA ratings, and school lists in real time.</p>
+                <h3>Get Immediate Answers</h3>
+                <p>No waiting days for a callback — get clarity on admission timelines, KHDA ratings, and school lists in real time.</p>
               </div>
             </div>
 
@@ -818,10 +747,8 @@
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
               </div>
               <div class="wb-text">
-                <h3 class="tr-only">Diğer Ailelerin Deneyimlerini Duyun</h3>
-                <h3 class="en-only">Hear From Other Parents</h3>
-                <p class="tr-only">Yurt dışına taşınan ya da taşınmayı planlayan ailelerle aynı platformda buluşun; gerçek hikayeler ve pratik ipuçları paylaşılır.</p>
-                <p class="en-only">Connect with families who've already made the move — share struggles, successes, and school experiences in a supportive community.</p>
+                <h3>Hear From Other Parents</h3>
+                <p>Connect with families who've already made the move — share struggles, successes, and school experiences in a supportive community.</p>
               </div>
             </div>
 
@@ -830,10 +757,8 @@
                 <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"></path><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg>
               </div>
               <div class="wb-text">
-                <h3 class="tr-only">Uzman Rehberliği, Ücretsiz</h3>
-                <h3 class="en-only">Expert Guidance, Zero Cost</h3>
-                <p class="tr-only">10+ yıllık eğitim danışmanlığı deneyimiyle Özlem Çimen'in içgörülerinden herhangi bir ücret ödemeden yararlanın.</p>
-                <p class="en-only">Benefit from Özlem Çimen's 10+ years of education consulting expertise with no fees, no strings attached.</p>
+                <h3>Expert Guidance, Zero Cost</h3>
+                <p>Benefit from Özlem Çimen's 10+ years of education consulting expertise with no fees, no strings attached.</p>
               </div>
             </div>
 
@@ -843,20 +768,17 @@
           <div class="webinar-social-proof">
             <div class="wsp-item">
               <span class="wsp-number">200+</span>
-              <span class="wsp-label tr-only">Katılan Aile</span>
-              <span class="wsp-label en-only">Families Joined</span>
+              <span class="wsp-label">Families Joined</span>
             </div>
             <div class="wsp-divider"></div>
             <div class="wsp-item">
               <span class="wsp-number">12+</span>
-              <span class="wsp-label tr-only">Tamamlanan Oturum</span>
-              <span class="wsp-label en-only">Sessions Completed</span>
+              <span class="wsp-label">Sessions Completed</span>
             </div>
             <div class="wsp-divider"></div>
             <div class="wsp-item">
               <span class="wsp-number">100%</span>
-              <span class="wsp-label tr-only">Ücretsiz</span>
-              <span class="wsp-label en-only">Free of Charge</span>
+              <span class="wsp-label">Free of Charge</span>
             </div>
           </div>
 
@@ -865,14 +787,12 @@
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
             </div>
             <div class="webinar-next-details">
-              <h3 class="tr-only">Gelecek Seminer Konusu:</h3>
-              <h3 class="en-only">Next Session Topic:</h3>
-              <p class="webinar-topic tr-only">"Uluslararası Okul Kabul Süreçleri: Veliler İçin Pratik Yol Haritası"</p>
-              <p class="webinar-topic en-only">"Navigating International School Admissions: A Parent's Practical Timeline"</p>
+              <h3>Next Session Topic:</h3>
+              <p class="webinar-topic">"Navigating International School Admissions: A Parent's Practical Timeline"</p>
               <div class="webinar-time">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
                 
-                <span class="en-only">Last Wednesday of every month at 20:00 (Dubai Time)</span>
+                <span>Last Wednesday of every month at 20:00 (Dubai Time)</span>
               </div>
             </div>
           </div>
@@ -882,7 +802,7 @@
         <div class="webinar-reg-card glass scroll-reveal">
           <h3 class="reg-title">
             
-            <span class="en-only">Register for Free</span>
+            <span>Register for Free</span>
           </h3>
 
           <form id="webinar-form" novalidate>
@@ -890,22 +810,22 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <div>
                 
-                <span class="en-only">Registration successful! Webinar join details have been sent to your email.</span>
+                <span>Registration successful! Webinar join details have been sent to your email.</span>
               </div>
             </div>
 
             <div class="form-group">
               <label for="webinar-name" class="form-label">
                 
-                <span class="en-only">Full Name *</span>
+                <span>Full Name *</span>
               </label>
-              <input type="text" id="webinar-name" class="form-control" placeholder="Örn: Ahmet Yılmaz" required>
+              <input type="text" id="webinar-name" class="form-control" placeholder="e.g. John Doe" required>
             </div>
 
             <div class="form-group">
               <label for="webinar-email" class="form-label">
                 
-                <span class="en-only">Email Address *</span>
+                <span>Email Address *</span>
               </label>
               <input type="email" id="webinar-email" class="form-control" placeholder="name@domain.com" required>
             </div>
@@ -913,14 +833,14 @@
             <div class="form-group">
               <label for="webinar-phone" class="form-label">
                 
-                <span class="en-only">WhatsApp Number *</span>
+                <span>WhatsApp Number *</span>
               </label>
               <input type="tel" id="webinar-phone" class="form-control" placeholder="+90 555 123 4567" required>
             </div>
 
             <button type="submit" class="btn btn-accent full-width" style="width: 100%; justify-content: center; margin-top: 1rem;">
               
-              <span class="en-only">Secure My Free Seat</span>
+              <span>Secure My Free Seat</span>
             </button>
           </form>
         </div>
@@ -976,13 +896,11 @@
         <div class="booking-info scroll-reveal">
           <span class="section-subtitle">
             
-            <span class="en-only">Start Your Journey</span>
+            <span>Start Your Journey</span>
           </span>
-          <h2 class="tr-only">İlk Görüşmeyi Planlayın</h2>
-          <h2 class="en-only">Book a Consultation</h2>
+          <h2>Book a Consultation</h2>
           
-          <p class="booking-info-desc tr-only">Çocuğunuz için yurt dışında okul seçeneklerini değerlendiriyorsanız, ilk görüşmede ailenizin ihtiyaçlarını, çocuğunuzun mevcut durumunu ve olası eğitim yollarını birlikte ele alabiliriz.</p>
-          <p class="booking-info-desc en-only">If you are exploring international school options for your child, the first consultation helps us understand your family’s needs, your child’s current profile and possible education pathways.</p>
+          <p class="booking-info-desc">If you are exploring international school options for your child, the first consultation helps us understand your family’s needs, your child’s current profile and possible education pathways.</p>
           
           <div class="booking-features">
             
@@ -991,10 +909,8 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
               </div>
               <div class="booking-feat-text">
-                <h3 class="tr-only">Hedef ve Zamanlama Planı</h3>
-                <h3 class="en-only">Curriculum & Timing Focus</h3>
-                <p class="tr-only">Çocuğun yaşı, sınıfı, dil seviyesi ve akademik geçmişine uygun yol haritası.</p>
-                <p class="en-only">A personalized roadmap matching the child’s age, grade, language and credentials.</p>
+                <h3>Curriculum & Timing Focus</h3>
+                <p>A personalized roadmap matching the child’s age, grade, language and credentials.</p>
               </div>
             </div>
             
@@ -1003,17 +919,15 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
               </div>
               <div class="booking-feat-text">
-                <h3 class="tr-only">Somut Fayda</h3>
-                <h3 class="en-only">Clear Strategic Deliverables</h3>
-                <p class="tr-only">Görüşme sonunda net bir yön, öncelik listesi ve sonraki adımlar.</p>
-                <p class="en-only">Gain a clear sense of direction, key checklist priorities, and immediate steps.</p>
+                <h3>Clear Strategic Deliverables</h3>
+                <p>Gain a clear sense of direction, key checklist priorities, and immediate steps.</p>
               </div>
             </div>
             
           </div>
           
           <!-- WhatsApp Quick Contact Card -->
-          <a href="https://api.whatsapp.com/send?phone=971502709379&text=Merhaba,%20Daha%20fazla%20bilgi%20almak%20istiyorum" target="_blank" class="whatsapp-card glass">
+          <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" target="_blank" class="whatsapp-card glass">
             <div class="wa-icon">
               <!-- WhatsApp SVG -->
               <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
@@ -1021,10 +935,8 @@
               </svg>
             </div>
             <div class="wa-text">
-              <h3 class="tr-only">WhatsApp ile İletişime Geçin</h3>
-              <h3 class="en-only">Contact via WhatsApp</h3>
-              <p class="tr-only">Sorularınız için bize WhatsApp üzerinden hızlıca ulaşabilirsiniz.</p>
-              <p class="en-only">Have quick questions? Get in touch immediately via WhatsApp message.</p>
+              <h3>Contact via WhatsApp</h3>
+              <p>Have quick questions? Get in touch immediately via WhatsApp message.</p>
             </div>
           </a>
         </div>
@@ -1033,7 +945,7 @@
         <div class="booking-form-wrap glass scroll-reveal">
           <h3 class="form-title">
             
-            <span class="en-only">Request a Session</span>
+            <span>Request a Session</span>
           </h3>
           
           <form id="consultation-form" novalidate>
@@ -1042,7 +954,7 @@
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg>
               <div>
                 
-                <span class="en-only">Your request has been sent! We will get in touch with you shortly.</span>
+                <span>Your request has been sent! We will get in touch with you shortly.</span>
               </div>
             </div>
             
@@ -1050,15 +962,15 @@
               <div class="form-group">
                 <label for="form-name" class="form-label">
                   
-                  <span class="en-only">Full Name *</span>
+                  <span>Full Name *</span>
                 </label>
-                <input type="text" id="form-name" class="form-control" placeholder="Örn: Ahmet Yılmaz" required>
+                <input type="text" id="form-name" class="form-control" placeholder="e.g. John Doe" required>
               </div>
               
               <div class="form-group">
                 <label for="form-email" class="form-label">
                   
-                  <span class="en-only">Email Address *</span>
+                  <span>Email Address *</span>
                 </label>
                 <input type="email" id="form-email" class="form-control" placeholder="name@domain.com" required>
               </div>
@@ -1068,7 +980,7 @@
               <div class="form-group">
                 <label for="form-phone" class="form-label">
                   
-                  <span class="en-only">Phone Number *</span>
+                  <span>Phone Number *</span>
                 </label>
                 <input type="tel" id="form-phone" class="form-control" placeholder="+90 555 123 4567" required>
               </div>
@@ -1076,13 +988,11 @@
               <div class="form-group">
                 <label for="form-relocation" class="form-label">
                   
-                  <span class="en-only">Target Destination</span>
+                  <span>Target Destination</span>
                 </label>
                 <select id="form-relocation" class="form-control">
-                  <option value="dubai" class="tr-only">Dubai, BAE</option>
-                  <option value="dubai" class="en-only">Dubai, UAE</option>
-                  <option value="abroad" class="tr-only">Diğer Yurt Dışı</option>
-                  <option value="abroad" class="en-only">Other Countries</option>
+                  <option value="dubai">Dubai, UAE</option>
+                  <option value="abroad">Other Countries</option>
                 </select>
               </div>
             </div>
@@ -1090,14 +1000,14 @@
             <div class="form-group full-width">
               <label for="form-details" class="form-label">
                 
-                <span class="en-only">Child’s Age, Grade Level & Educational History</span>
+                <span>Child’s Age, Grade Level & Educational History</span>
               </label>
               <textarea id="form-details" class="form-control" rows="4" placeholder="..."></textarea>
             </div>
             
             <button type="submit" class="btn btn-primary full-width" style="width: 100%; justify-content: center;">
               
-              <span class="en-only">Submit Request</span>
+              <span>Submit Request</span>
             </button>
           </form>
         </div>
@@ -1116,25 +1026,22 @@
       <div class="footer-grid">
         <div class="footer-bio-col">
           <h3>Edualist</h3>
-          <p class="footer-bio-text tr-only">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi, müfredat değerlendirme ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
-          <p class="footer-bio-text en-only">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+          <p class="footer-bio-text">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
         </div>
         <div class="footer-links-col">
-          <h4 class="tr-only">Hızlı Linkler</h4>
-          <h4 class="en-only">Quick Links</h4>
+          <h4>Quick Links</h4>
           <ul class="footer-links">
-            <li><a href="/neden-biz/" class="en-only">Why Us?</a><a href="/neden-biz/" class="tr-only">Neden Biz?</a></li>
-            <li><a href="/hakkimda/" class="en-only">About Özlem</a><a href="/hakkimda/" class="tr-only">Hakkımda</a></li>
-            <li><a href="/en/#services" class="en-only">Services</a><a href="/tr/#services" class="tr-only">Hizmetler</a></li>
-            <li><a href="/blog/">Blog <span class="nav-count-badge">84</span></a></li>
-            <li><a href="/uluslararasi-okul-danismanligi/" class="en-only">Book Session</a><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Görüşme Planla</a></li>
-            <li><a href="/dubai/" class="en-only">Dubai Schools</a><a href="/dubai/" class="tr-only">Dubai Okulları</a></li>
-            <li><a href="/okul-ucretleri-karsilastirma/" class="en-only">School Fees Guide</a><a href="/okul-ucretleri-karsilastirma/" class="tr-only">Okul Ücretleri</a></li>
+            <li><a href="/en/why-edualist/">Why Us?</a></li>
+            <li><a href="/en/about/">Özlem Çimen | International Education Consultant</a></li>
+            <li><a href="/en/#services">Services</a></li>
+            <li><a href="/en/blog/">Blog <span class="nav-count-badge">55</span></a></li>
+            <li><a href="/en/international-school-consulting/">Book Session</a></li>
+            <li><a href="/en/dubai/">Dubai Schools</a></li>
+            <li><a href="/okul-ucretleri-karsilastirma/">School Fees Guide</a></li>
           </ul>
         </div>
         <div class="footer-contact-col">
-          <h4 class="tr-only">İletişim</h4>
-          <h4 class="en-only">Contact</h4>
+          <h4>Contact</h4>
           <ul class="footer-contact-list">
             <li class="footer-contact-item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -1142,7 +1049,7 @@
             </li>
             <li class="footer-contact-item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <div><span class="tr-only">Dubai, Birleşik Arap Emirlikleri</span><span class="en-only">Dubai, United Arab Emirates</span></div>
+              <div><span>Dubai, United Arab Emirates</span></div>
             </li>
             <li class="footer-contact-item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
@@ -1160,8 +1067,8 @@
         </div>
       </div>
       <div class="footer-bottom">
-        <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
-        <div><a href="/gizlilik-politikasi/" class="tr-only" >Gizlilik Politikası</a><a href="/gizlilik-politikasi/" class="en-only" >Privacy Policy</a></div>
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" >Privacy Policy</a></div>
         <div>Designed for Excellence.</div>
       </div>
     </div>
@@ -1175,50 +1082,48 @@
     <div class="dialog-content">
       <div class="dialog-badge">
         
-        <span class="en-only">Exclusive Live Event</span>
+        <span>Exclusive Live Event</span>
       </div>
       
-      <h3 class="tr-only">Kaçırmayın! Canlı Seminer İçin Geri Sayım Başladı</h3>
-      <h3 class="en-only">Don't Miss Out! Countdown to Our Live Session</h3>
+      <h3>Don't Miss Out! Countdown to Our Live Session</h3>
       
       <div class="countdown-display">
         <div class="countdown-unit">
           <div class="countdown-number" id="countdown-days">5</div>
-          <div class="countdown-label"><span class="en-only">Days</span></div>
+          <div class="countdown-label"><span>Days</span></div>
         </div>
         <div class="countdown-unit">
           <div class="countdown-number" id="countdown-hours">0</div>
-          <div class="countdown-label"><span class="en-only">Hours</span></div>
+          <div class="countdown-label"><span>Hours</span></div>
         </div>
         <div class="countdown-unit">
           <div class="countdown-number" id="countdown-minutes">0</div>
-          <div class="countdown-label"><span class="en-only">Minutes</span></div>
+          <div class="countdown-label"><span>Minutes</span></div>
         </div>
         <div class="countdown-unit">
           <div class="countdown-number" id="countdown-seconds">0</div>
-          <div class="countdown-label"><span class="en-only">Seconds</span></div>
+          <div class="countdown-label"><span>Seconds</span></div>
         </div>
       </div>
       
-      <p class="dialog-text tr-only">Her ayın son Çarşamba günü gerçekleştirdiğimiz, uluslararası okul kabul süreçleri ve veli koçluğu rehberimizi paylaşacağımız canlı yayınımıza ücretsiz katılım fırsatını kaçırmayın. Kontenjanlarımız sınırlıdır.</p>
-      <p class="dialog-text en-only">Join our live interactive session with Özlem Çimen on international school placements and timelines. Limited free seats are available to ensure high-quality Q&As. Secure your free invite now!</p>
+      <p class="dialog-text">Join our live interactive session with Özlem Çimen on international school placements and timelines. Limited free seats are available to ensure high-quality Q&As. Secure your free invite now!</p>
       
       <div class="dialog-opportunity-badge">
         <!-- Promo Tag SVG -->
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg>
         
-        <span class="en-only">Free Registration (Limited Seats)</span>
+        <span>Free Registration (Limited Seats)</span>
       </div>
       
       <button class="btn btn-accent full-width" id="dialog-cta" style="width: 100%; justify-content: center;">
         
-        <span class="en-only">Register Now for Free</span>
+        <span>Register Now for Free</span>
       </button>
     </div>
   </dialog>
 
   <!-- Sticky WhatsApp Button -->
-  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Merhaba,%20Daha%20fazla%20bilgi%20almak%20istiyorum" target="_blank" rel="noopener noreferrer"
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" target="_blank" rel="noopener noreferrer"
      class="whatsapp-sticky" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
       <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
@@ -1245,10 +1150,10 @@
   </div>
 
   <!-- Script File -->
-  <script src="../app.js" defer></script>
+  <script src="/app.js?v=20261004" defer></script>
   <!-- Structured Data -->
   <script type="application/ld+json">
-  {
+{
   "@context": "https://schema.org",
   "@graph": [
     {
@@ -1256,10 +1161,10 @@
         "LocalBusiness",
         "EducationalOrganization"
       ],
-      "@id": "https://www.edualist.com/#business",
+      "@id": "https://www.edualist.com/en/#business",
       "name": "Edualist",
       "description": "International school consulting and parent-student coaching for families relocating internationally.",
-      "url": "https://www.edualist.com",
+      "url": "https://www.edualist.com/en/",
       "logo": "https://www.edualist.com/assets/favicon_180x180.png",
       "image": "https://www.edualist.com/assets/hero-bg.webp",
       "email": "ozlem@edualist.com",
@@ -1275,7 +1180,7 @@
         "addressCountry": "AE"
       },
       "founder": {
-        "@id": "https://www.edualist.com/#ozlem-cimen"
+        "@id": "https://www.edualist.com/en/#ozlem-cimen"
       },
       "areaServed": [
         "AE",
@@ -1302,7 +1207,11 @@
               "@type": "Service",
               "name": "30-Day School Placement (Starter)",
               "description": "Personalised 3-school shortlist, full application & registration management, deadline tracking, 2 check-in calls/week, school interview support, and parent interview prep. One-time fee: AED 3,500.",
-              "offers": { "@type": "Offer", "price": "3500", "priceCurrency": "AED" }
+              "offers": {
+                "@type": "Offer",
+                "price": "3500",
+                "priceCurrency": "AED"
+              }
             }
           },
           {
@@ -1311,7 +1220,11 @@
               "@type": "Service",
               "name": "90-Day Comprehensive Support",
               "description": "Everything in Starter plus: 6-school shortlist, direct admissions communication, waiting-list follow-up, school adaptation, social & club guidance, 10 hrs English lessons, post-placement follow-up, curriculum briefing, and school visit coordination. One-time fee: AED 7,000.",
-              "offers": { "@type": "Offer", "price": "7000", "priceCurrency": "AED" }
+              "offers": {
+                "@type": "Offer",
+                "price": "7000",
+                "priceCurrency": "AED"
+              }
             }
           }
         ]
@@ -1319,11 +1232,11 @@
     },
     {
       "@type": "Person",
-      "@id": "https://www.edualist.com/#ozlem-cimen",
+      "@id": "https://www.edualist.com/en/#ozlem-cimen",
       "name": "Özlem Çimen",
       "jobTitle": "International Education Consultant & Coach",
       "worksFor": {
-        "@id": "https://www.edualist.com/#business"
+        "@id": "https://www.edualist.com/en/#business"
       },
       "description": "20+ years in education at TED Istanbul College, ENKA Schools, and IICS. Expat parent with children educated across 5 countries. MBA in International Marketing. IB, EAL, and Child Protection certified.",
       "email": "ozlem@edualist.com",
@@ -1349,7 +1262,7 @@
     },
     {
       "@type": "WebSite",
-      "url": "https://www.edualist.com",
+      "url": "https://www.edualist.com/en/",
       "name": "Edualist",
       "inLanguage": [
         "en",
@@ -1360,7 +1273,7 @@
       "@type": "WebPage",
       "@id": "https://www.edualist.com/en/#webpage",
       "url": "https://www.edualist.com/en/",
-      "name": "International School Selection & Education Consulting | Edualist",
+      "name": "International School Consulting for Dubai & Expat Families",
       "speakable": {
         "@type": "SpeakableSpecification",
         "cssSelector": [
@@ -1369,163 +1282,175 @@
           ".why-feature-title"
         ]
       }
-    },
-    {
-      "@type": "Course",
-      "name": "Akademik Koçluk & Özel Ders Desteği",
-      "description": "Uluslararası okullara geçen ilköğretim ve ortaöğretim öğrencileri için EAL desteği, stratejik çalışma planlaması ve adaptasyon koçluğu.",
-      "provider": {
-        "@id": "https://www.edualist.com/#business"
-      },
-      "instructor": {
-        "@id": "https://www.edualist.com/#ozlem-cimen"
-      },
-      "educationalLevel": "Primary and Secondary",
-      "hasCourseInstance": {
-        "@type": "CourseInstance",
-        "courseMode": "online",
-        "inLanguage": [
-          "tr",
-          "en"
-        ]
-      },
-      "url": "https://www.edualist.com/#services"
-    },
-    {
-      "@type": "Course",
-      "name": "Eğitim Relokasyon Desteği",
-      "description": "Yurt dışına taşınan aileler için derinlemesine öğrenci değerlendirmesi, müfredat rehberliği, okul kısa listesi (en fazla 4 okul) ve kabul başvuru desteği.",
-      "provider": {
-        "@id": "https://www.edualist.com/#business"
-      },
-      "instructor": {
-        "@id": "https://www.edualist.com/#ozlem-cimen"
-      },
-      "educationalLevel": "K-12",
-      "hasCourseInstance": {
-        "@type": "CourseInstance",
-        "courseMode": "online",
-        "inLanguage": [
-          "tr",
-          "en"
-        ]
-      },
-      "url": "https://www.edualist.com/#services"
     }
   ]
 }
   </script>
 
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "@id": "https://www.edualist.com/#website",
-    "name": "Edualist",
-    "url": "https://www.edualist.com",
-    "description": "International school consulting and coaching for Turkish families",
-    "inLanguage": ["tr", "en"],
-    "publisher": { "@id": "https://www.edualist.com/#business" },
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": {
-        "@type": "EntryPoint",
-        "urlTemplate": "https://www.edualist.com/blog/?q={search_term_string}"
-      },
-      "query-input": "required name=search_term_string"
-    }
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "Which countries does Edualist advise on for international school placement?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Edualist provides international school placement and adaptation support for families relocating worldwide, including Dubai & UAE, UK, Canada, Germany, France, the Netherlands, Italy, and Singapore."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How much do international school fees in Dubai cost?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Annual tuition fees at Dubai international schools range from AED 25,000 to over AED 120,000. When uniforms, books, transport, and activity fees are added, the true cost can be 20–30% above the advertised tuition price. Edualist prepares a school shortlist matched to the family's budget."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is my child's English good enough for an international school?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Conversational English and academic English are very different skill sets. Many students described as 'good at English' in Turkey struggle in an international school environment during the first term. Edualist assesses the child's EAL (English as an Additional Language) level before the move and plans targeted language coaching if needed."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "At what age is transitioning to an international school easiest?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Primary school transitions (ages 6–10) typically produce the fastest language and social adaptation. Secondary and high school transitions (ages 11–17) require extra attention to curriculum differences and university planning, but with the right preparation a successful transition is achievable at any age."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "Is the IB Diploma accepted by Turkish universities?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Yes. The IB Diploma is recognised by Turkey's YÖK (Council of Higher Education) and scores are used in the equivalency calculation for university admissions. It is also accepted by over 5,000 universities worldwide, making it the most portable curriculum for families who relocate frequently."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How do I get started with Edualist?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "The process begins with a free initial consultation. Özlem Çimen evaluates the child's academic background, language level, and family goals, then prepares a personalised school shortlist and roadmap. To request a session, use the contact form on the Edualist website."
-        }
-      }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.edualist.com/en/" }
-    ]
-  }
-  </script>
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Event",
-    "name": "Free Monthly International School Consulting Webinar",
-    "description": "Live monthly online session with Özlem Çimen — international school selection, curriculum comparison, and relocation guidance for Turkish families. Free, every last Wednesday of the month.",
-    "startDate": "2026-09-30T20:00:00+04:00",
-    "endDate": "2026-09-30T21:00:00+04:00",
-    "eventStatus": "https://schema.org/EventScheduled",
-    "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
-    "isAccessibleForFree": true,
-    "location": { "@type": "VirtualLocation", "url": "https://www.edualist.com/en/#webinar" },
-    "organizer": { "@type": "Person", "name": "Özlem Çimen", "url": "https://www.edualist.com/neden-biz/" },
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "USD",
-      "availability": "https://schema.org/InStock",
-      "url": "https://www.edualist.com/en/#webinar"
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": "https://www.edualist.com/en/#website",
+  "name": "Edualist",
+  "url": "https://www.edualist.com/en/",
+  "description": "International school consulting and coaching for Turkish families",
+  "inLanguage": [
+    "tr",
+    "en"
+  ],
+  "publisher": {
+    "@id": "https://www.edualist.com/en/#business"
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://www.edualist.com/en/blog/?q={search_term_string}"
     },
-    "url": "https://www.edualist.com/en/#webinar"
+    "query-input": "required name=search_term_string"
   }
+}
   </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What if my child doesn't get accepted?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We only shortlist schools with strong acceptance probability for your child's profile — and always have alternatives ready."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What if we change our destination?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We update the plan together. New city, new school — the support continues."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a payment plan available?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. Reach out directly and we'll arrange it together."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Which countries does Edualist advise on for international school placement?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Edualist provides international school placement and adaptation support for families relocating worldwide, including Dubai & UAE, UK, Canada, Germany, France, the Netherlands, Italy, and Singapore."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much do international school fees in Dubai cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Annual tuition fees at Dubai international schools range from AED 25,000 to over AED 120,000. When uniforms, books, transport, and activity fees are added, the true cost can be 20–30% above the advertised tuition price. Edualist prepares a school shortlist matched to the family's budget."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is my child's English good enough for an international school?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Conversational English and academic English are very different skill sets. Many students described as 'good at English' struggle in an international school environment during the first term. Edualist assesses the child's EAL (English as an Additional Language) level before the move and plans targeted language coaching if needed."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "At what age is transitioning to an international school easiest?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Primary school transitions (ages 6–10) typically produce the fastest language and social adaptation. Secondary and high school transitions (ages 11–17) require extra attention to curriculum differences and university planning, but with the right preparation a successful transition is achievable at any age."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the IB Diploma accepted by Turkish universities?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. The IB Diploma is recognised by Turkey's YÖK (Council of Higher Education) and scores are used in the equivalency calculation for university admissions. It is also accepted by over 5,000 universities worldwide, making it the most portable curriculum for families who relocate frequently."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I get started with Edualist?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "The process begins with a free initial consultation. Özlem Çimen evaluates the child's academic background, language level, and family goals, then prepares a personalised school shortlist and roadmap. To request a session, use the contact form on this page."
+      }
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.edualist.com/en/"
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Event",
+  "name": "Free Monthly International School Consulting Webinar",
+  "description": "Live monthly online session with Özlem Çimen — international school selection, curriculum comparison, and relocation guidance for Turkish families. Free, every last Wednesday of the month.",
+  "startDate": "2026-09-30T20:00:00+04:00",
+  "endDate": "2026-09-30T21:00:00+04:00",
+  "eventStatus": "https://schema.org/EventScheduled",
+  "eventAttendanceMode": "https://schema.org/OnlineEventAttendanceMode",
+  "isAccessibleForFree": true,
+  "location": {
+    "@type": "VirtualLocation",
+    "url": "https://www.edualist.com/en/#webinar"
+  },
+  "organizer": {
+    "@type": "Person",
+    "name": "Özlem Çimen",
+    "url": "https://www.edualist.com/en/why-edualist/"
+  },
+  "offers": {
+    "@type": "Offer",
+    "price": "0",
+    "priceCurrency": "USD",
+    "availability": "https://schema.org/InStock",
+    "url": "https://www.edualist.com/en/#webinar"
+  },
+  "url": "https://www.edualist.com/en/#webinar"
+}
+  </script>
+<script>
+  window.setLang = function (l) {
+    if (l === document.documentElement.lang) return;
+    try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+  };
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+    b.classList.toggle('active', l === document.documentElement.lang);
+    if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+  });
+</script>
 </body>
 </html>

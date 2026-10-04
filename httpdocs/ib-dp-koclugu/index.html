@@ -3,10 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="refresh" content="0;url=/uluslararasi-akademik-kocluk/">
-  <link rel="canonical" href="https://www.edualist.com/uluslararasi-akademik-kocluk/">
+  <link rel="canonical" href="https://www.edualist.com/ib-dp-koclugu/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/ib-dp-koclugu/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/ib-dp-koclugu/">
   <title>Yönlendiriliyor... / Redirecting...</title>
 </head>
 <body>
   <p><a href="/uluslararasi-akademik-kocluk/">Sayfaya yönlendiriliyor...</a></p>
+<script>
+  window.setLang = function (l) {
+    if (l === document.documentElement.lang) return;
+    try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+  };
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+    b.classList.toggle('active', l === document.documentElement.lang);
+    if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+  });
+</script>
 </body>
 </html>

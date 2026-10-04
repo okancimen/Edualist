@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.hero-blog-preview{padding:1.5rem 1.75rem}.hero-blog-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}.hero-blog-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.hero-blog-all{font-size:.8rem;color:var(--text-muted);text-decoration:none;transition:color .2s}.hero-blog-all:hover{color:var(--accent)}.hero-blog-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}.hero-blog-item{border-top:1px solid var(--border);padding:.85rem 0}.hero-blog-item:first-child{border-top:none;padding-top:0}.hero-blog-item a{font-size:.92rem;font-weight:500;color:var(--text-primary);text-decoration:none;line-height:1.4;display:block;transition:color .2s}.hero-blog-item a:hover{color:var(--accent)}.hero-blog-item-meta{font-size:.75rem;color:var(--text-muted);margin-top:.2rem}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/blog/dubai-okul-burs-imkanlari/assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai School Scholarships 2026: Who Offers Them | Edualist</title>
+  <meta name="description" content="How scholarships work at Dubai&#x27;s international schools: merit, sport and arts bursaries, employer education allowances and application strategy.">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/en/blog/dubai-school-scholarships/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-okul-burs-imkanlari/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/dubai-school-scholarships/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-okul-burs-imkanlari/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="Dubai School Scholarships 2026: Who Offers Them">
+  <meta property="og:description" content="How scholarships work at Dubai&#x27;s international schools: merit, sport and arts bursaries, employer education allowances and application strategy.">
+  <meta property="og:url"         content="https://www.edualist.com/en/blog/dubai-school-scholarships/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-burs.webp">
+  <meta property="article:published_time" content="2026-06-23">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Dubai School Scholarships 2026: Who Offers Them">
+  <meta name="twitter:description" content="How scholarships work at Dubai&#x27;s international schools: merit, sport and arts bursaries, employer education allowances and application strategy.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-burs.webp">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Dubai School Scholarships 2026: How to Apply & Which Schools Offer Them",
+  "description": "How scholarships work at Dubai's international schools: merit, sport and arts bursaries, employer education allowances and application strategy.",
+  "author": {
+    "@type": "Person",
+    "name": "Özlem Çimen",
+    "url": "https://www.edualist.com/en/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edualist",
+    "url": "https://www.edualist.com/en/"
+  },
+  "datePublished": "2026-06-23",
+  "dateModified": "2026-10-03",
+  "wordCount": 1750,
+  "inLanguage": "en",
+  "url": "https://www.edualist.com/en/blog/dubai-school-scholarships/",
+  "image": "https://www.edualist.com/assets/blog/thumb-burs.webp",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".blog-summary",
+      ".blog-post-title"
+    ]
+  }
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional"></noscript>
+
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="/styles.css?v=13">
+  <link rel="stylesheet" href="/styles.css?v=13" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/styles.css?v=13"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.edualist.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.edualist.com/en/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Dubai School Scholarships 2026: Who Offers Them",
+      "item": "https://www.edualist.com/en/blog/dubai-school-scholarships/"
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Are there scholarships at international schools in Dubai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, but there is no standardised system — schools such as GEMS, Nord Anglia, Repton and Cranleigh offer academic, sport and arts scholarships with varying criteria and amounts."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is needed to apply for a Dubai school scholarship?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Last 2 years' transcripts, reference letters, the student's personal statement and copies of awards or certifications."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can an employer education allowance replace a scholarship?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "They are technically separate channels, but the financial impact of an employer allowance can be far greater — review your expat package carefully."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Do KHDA Outstanding schools offer scholarships?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Not all — GEMS, Nord Anglia and Repton do; JESS and Wellington do not have formal programmes but individual conversations are possible."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should we do if a scholarship application is rejected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Ask about instalment payment plans and early registration discounts; explore Good-rated schools with more accessible fees."
+      }
+    }
+  ]
+}
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+    <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Dubai Schools</a></li>
+        <li><a href="/en/international-school-consulting/">Consultancy</a></li>
+        <li><a href="/en/academic-coaching/">Coaching</a></li><li><a href="/en/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">55</span></a></li>
+        <li><a href="/en/why-edualist/">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/en/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+<span>Back to Blog</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>23 June 2026</span>
+          <span><a href="/en/about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>10 min read</span>
+        </div>
+
+        <div class="blog-summary">
+          <strong><span>Summary</span></strong>
+          <p>How do scholarships work at Dubai's international schools? A realistic guide for Turkish families covering merit, sport, and arts bursaries, employer education allowances, and application strategy.</p>
+        </div>
+
+        <!-- TR -->
+
+        <!-- EN body -->
+        <div>
+          <h1 class="blog-post-title">Dubai School Scholarships 2026: How to Apply &amp; Which Schools Offer Them</h1>
+          <div class="blog-post-body">
+
+            <div class="blog-callout" style="background:hsla(43,60%,88%,0.5);border-left:4px solid var(--accent);">
+              <strong>Quick Answer — Are There Scholarships at Dubai International Schools?</strong> Yes — but not through a centralised, transparent system. Bursaries are school-specific, rarely advertised, and often only disclosed to families who ask directly. Academic merit awards (10–25% fee reduction), sports scholarships (20–40%), performing arts bursaries and employer education allowances (AED 40,000–80,000/year) are the main options.
+            </div>
+
+            <p>Every family moving to Dubai asks the same question in our first session: <em>"Are there scholarship opportunities?"</em> The answer is yes — but this is not a standardised, transparent system like state scholarship programmes. Dubai school scholarships vary by school, are rarely publicised, and are mostly disclosed to families who ask directly. This guide explains the scholarship system in layers: what types exist, which schools offer them, how to apply and how to strengthen your application.</p>
+
+            <div class="blog-callout">
+              <strong>Important:</strong> Dubai scholarships typically apply a 10–50% reduction on annual school fees. Full scholarships (100% coverage) are extremely rare and largely limited to elite sport or performing arts profiles.
+            </div>
+
+            <h2>How the Dubai School Scholarship System Works</h2>
+
+            <p>Dubai schools are private institutions and their scholarship programmes are entirely at their own discretion. KHDA does not require schools to offer scholarships — though some schools report their bursary policies in KHDA reports. Scholarships are typically communicated through three channels: the school's official website, conversations with the admissions team during a school tour, and word-of-mouth from current parents.</p>
+
+            <p>Terms used interchangeably: <em>scholarship</em> (academic achievement), <em>bursary</em> (financial need or talent), <em>award</em> (performance recognition) and <em>discount</em> (sibling or early registration). Clarifying which term the school uses before applying is a meaningful first step.</p>
+
+            <h2>Types of Scholarship: Which Applies to You?</h2>
+
+            <h3>1. Academic Merit Scholarship</h3>
+            <p>The most common category for Turkish families. Based on the student's last 2 years of academic transcripts, teacher assessments and sometimes the school's entrance assessment result. Typically provides 10–25% fee reduction. GEMS World Academy, Nord Anglia and Cranleigh offer this type regularly. Key note: these scholarships usually require annual renewal — if your child's academic performance drops, the scholarship may be withdrawn.</p>
+
+            <h3>2. Sports Scholarship</h3>
+            <p>Sport scholarships in Dubai schools — particularly for swimming, football and tennis — can reach significant amounts. Some schools actively seek talented students for their school teams. A trial or coach assessment is required; fee reductions range from 20–40%. Repton Dubai and Kings' School lead in this category.</p>
+
+            <h3>3. Performing Arts Bursary</h3>
+            <p>Available to students with demonstrated talent in music or arts who have placed in international competitions. Requires a portfolio or audition. Less common than academic or sports scholarships, but Cranleigh Dubai and select Nord Anglia schools actively support arts bursaries.</p>
+
+            <h3>4. Sibling Discount</h3>
+            <p>Technically not a scholarship, but the practical effect is similar. If you have more than one child at the same school, a 5–15% reduction may apply. This is often not automatic — you need to request it. Some schools apply it from the second child; others from the third.</p>
+
+            <h3>5. Employer Education Allowance</h3>
+            <p>Not part of the scholarship system, but financially the most powerful tool. Many multinational companies provide expat employees in Dubai with an annual education allowance of AED 40,000–80,000. This is paid directly to the school and is tax-free — it comes off neither your gross nor net salary. Before moving to Dubai, review your employer's expat package carefully and ask explicitly what the education allowance covers.</p>
+
+            <div class="blog-personal-note">
+              <picture>
+                <source srcset="/assets/founder-avatar-300.webp" type="image/webp">
+                <img src="/assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+              </picture>
+              <div class="blog-personal-note-body">
+                <span class="blog-personal-note-name">Özlem Çimen — Coach's note</span>
+                <p>In my consultancy sessions, most families ask about scholarships last — when they should be asking first. Some schools close their scholarship application windows in October–November; if you apply in January, there's no opportunity left for that year. Asking about scholarships does not create an impression of "we can't afford it" — schools view it as an organised, research-oriented family profile.</p>
+              </div>
+            </div>
+
+            <h2>Which Schools Offer Scholarship Programmes?</h2>
+
+            <p><strong>GEMS World Academy (IB — KHDA Outstanding):</strong> Runs an Academic Excellence Awards programme — a limited number of fee reductions awarded each year. Application window typically open September–November.</p>
+
+            <p><strong>Nord Anglia International Schools:</strong> Group schools operate within a global scholarship framework, offering Academic Excellence, Performing Arts and Sport categories. A key advantage: an application assessed at one Nord Anglia school can be shared with other group schools.</p>
+
+            <p><strong>Repton School Dubai:</strong> Strong scholarship culture, particularly in sport. Academic scholarship minimum expectations are high — outstanding performance across all subjects in the last two years is typically required.</p>
+
+            <p><strong>Cranleigh Dubai:</strong> Draws on the bursary tradition of its UK parent school. Arts, music and academic performance scholarships available. Application process is highly competitive.</p>
+
+            <p><strong>Kings' School Dubai:</strong> Sport and academic scholarships offered. Amounts are more modest than other private groups but still a meaningful contribution to the annual cost.</p>
+
+            <div class="blog-callout">
+              <strong>Good schools that don't have formal scholarship programmes:</strong> JESS and GEMS Wellington International do not offer formal bursaries — but individual conversations are possible in exceptional circumstances. Don't hesitate to ask.
+            </div>
+
+            <h2>Scholarship Application: Practical Steps</h2>
+
+            <ol class="blog-steps">
+              <li>
+                <span class="blog-step-num">1</span>
+                <div><strong>Identify your target school and check the admissions page</strong> — Look for "Scholarship," "Bursary" or "Award" sections. If you can't find them, call the admissions office directly.</div>
+              </li>
+              <li>
+                <span class="blog-step-num">2</span>
+                <div><strong>Find out the application timeline</strong> — Most schools accept scholarship applications September–November. Applying in January–February typically means you're applying for the following academic year.</div>
+              </li>
+              <li>
+                <span class="blog-step-num">3</span>
+                <div><strong>Prepare your documents</strong> — Last 2 years' transcripts (certified English translation), at least 2 teacher reference letters, the student's personal statement and copies of awards or certificates.</div>
+              </li>
+              <li>
+                <span class="blog-step-num">4</span>
+                <div><strong>Prepare for the assessment</strong> — Academic scholarships may require an assessment similar to the school entrance exam. Sports and arts scholarships require a coach or jury evaluation.</div>
+              </li>
+              <li>
+                <span class="blog-step-num">5</span>
+                <div><strong>Understand the scholarship terms clearly</strong> — Is it renewable? What performance targets are expected? Can it be withdrawn mid-year? Ask these questions before applying.</div>
+              </li>
+            </ol>
+
+            <h2>What Strengthens a Scholarship Application</h2>
+
+            <p>Beyond academic GPA, Dubai schools look for: international exam results (UKMT, AMC, IELTS), community service activities, leadership experience and the student's motivation letter. When two similar profiles compete, the personal statement is usually the deciding factor — allocate most of your preparation time to it.</p>
+
+            <p>A practical reality: if the school genuinely wants your child but you are experiencing financial difficulty, sharing this honestly and directly — especially as a newly relocated family — can positively influence the scholarship decision. Schools care about occupancy and diversity; they do not want to lose a motivated student over cost.</p>
+
+            <h2>Alternatives If No Scholarship Is Available</h2>
+
+            <p>If you don't receive a scholarship, or if your preferred school doesn't have a programme, consider: <strong>KHDA "Good"-rated schools</strong> — lower fees than Outstanding but the quality gap is smaller than you'd expect. Serious options exist in the AED 35,000–55,000/year range. <strong>Early registration discounts</strong> — some schools offer 3–8% savings for autumn applications. <strong>Instalment payment plans</strong> — paying the annual fee in three instalments can make a meaningful difference to cash flow.</p>
+
+            <p>Finally: if the school your child attends — or wants to attend — doesn't offer scholarships, this is a "not yet," not a "no." Paying the first year's fees and applying for a scholarship in year two, as an already-known student, often results in a more favourable outcome.</p>
+
+            <div class="blog-faq">
+              <h2>Frequently Asked Questions</h2>
+
+              <div class="faq-item">
+                <h3 class="faq-q">Are there scholarships at international schools in Dubai?</h3>
+                <p class="faq-a">Yes, but there is no standardised system — schools such as GEMS, Nord Anglia, Repton and Cranleigh offer academic, sport and arts scholarships with varying criteria and amounts.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">What is needed to apply for a Dubai school scholarship?</h3>
+                <p class="faq-a">Last 2 years' transcripts, reference letters, the student's personal statement and copies of awards or certifications.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">Can an employer education allowance replace a scholarship?</h3>
+                <p class="faq-a">They are technically separate channels, but the financial impact of an employer allowance can be far greater — review your expat package carefully.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">Do KHDA Outstanding schools offer scholarships?</h3>
+                <p class="faq-a">Not all — GEMS, Nord Anglia and Repton do; JESS and Wellington do not have formal programmes but individual conversations are possible.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">What should we do if a scholarship application is rejected?</h3>
+                <p class="faq-a">Ask about instalment payment plans and early registration discounts; explore Good-rated schools with more accessible fees.</p>
+              </div>
+            </div>
+
+            
+            <div class="blog-callout" style="margin-top:2rem">
+              <strong>Related guides:</strong><br>
+              <a href="/en/blog/dubai-khda-outstanding-schools/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai's Best International Schools 2026: KHDA Outstanding List →</a><br>
+              <a href="/en/blog/how-to-apply-dubai-school/" style="color:var(--accent,#DBAF2E);font-weight:500;">How to Apply to a Dubai International School 2026 →</a><br>
+              <a href="/en/blog/dubai-cost-of-living-2026/" style="color:var(--accent,#DBAF2E);font-weight:500;">Cost of Living in Dubai 2026: Full Family Budget Breakdown →</a>
+            </div>
+<div class="blog-post-cta glass">
+              <h3>Let's find the right scholarship opportunities for your child together</h3>
+              <p>In a free first session with Özlem Çimen, you can assess your child's scholarship potential, school shortlist and application timeline together.</p>
+              <a href="/en/international-school-consulting/" class="btn btn-primary" style="display:inline-flex">Book a Free Session</a>
+              <a href="/en/dubai/" class="btn btn-secondary" style="margin-top:0.5rem;">Our Dubai Consultancy Page →</a>
+            </div>
+
+          </div>
+        </div>
+
+      </article>
+    </div>
+
+    <div class="container" style="padding:0 0 2rem;">
+    </div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>Related Posts</h2>
+      <div class="blog-related-grid">
+        <a href="/en/blog/dubai-khda-outstanding-schools/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai.webp" alt="Dubai&#x27;s KHDA Outstanding Schools 2026: Full List" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Best International Schools in Dubai: KHDA List</span>
+            </div>
+            <div class="blog-related-card-meta">7 June 2026 · 11 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/uae-international-school-guide/" class="blog-related-card">
+          <img src="/assets/blog/thumb-bae-okul.webp" alt="UAE International School Guide: IB, British, American" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>International Schools in the UAE: Full Guide</span>
+            </div>
+            <div class="blog-related-card-meta">10 June 2026 · 14 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/dubai-school-registration/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai-kayit-sureci.webp" alt="Dubai School Registration 2026: Guide &amp; Checklist" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Dubai School Enrolment: Step-by-Step Guide</span>
+            </div>
+            <div class="blog-related-card-meta">7 June 2026 · 8 min</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/why-edualist/">Why Us?</a></li>
+            <li><a href="/en/#services">Services</a></li>
+            <li><a href="/en/blog/">Blog <span class="nav-count-badge">55</span></a></li>
+            <li><a href="/en/international-school-consulting/">Book Session</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" target="_blank" rel="noopener noreferrer"
+     class="whatsapp-sticky" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Close">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
+  </div>
+
+    <script>
+    
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+<script>
+  window.setLang = function (l) {
+    if (l === document.documentElement.lang) return;
+    try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+  };
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+    b.classList.toggle('active', l === document.documentElement.lang);
+    if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+  });
+</script>
+</body>
+</html>

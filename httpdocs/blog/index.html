@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <script>/* Early lang detection — prevents post-paint reflow from setLanguage() */
-  (function(){var s=localStorage.getItem('edualist_lang'),p=location.pathname,l=p.includes('/en/')||p.endsWith('/en')?'en':p.includes('/tr/')||p.endsWith('/tr')?'tr':s||document.documentElement.getAttribute('lang')||'tr';document.documentElement.setAttribute('lang',l);}());
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -31,10 +28,10 @@
   <title>Blog — Yurt Dışı &amp; Uluslararası Okul Rehberleri | Edualist</title>
   <meta name="description" content="Çocuğumun akademik gelişimi için ne yapmalıyım? 75+ rehber: okul seçimi, IB geçişi, akademik koçluk, uluslararası değerlendirme, Dubai ve yurt dışı eğitim. Özlem Çimen – Edualist.">
   <link rel="canonical" href="https://www.edualist.com/blog/">
-  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
   <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/">
-  <link rel="alternate" hreflang="en" href="https://www.edualist.com/blog/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/">
   <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
   <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 
   <meta property="og:type"  content="website">
@@ -427,25 +424,20 @@
       <nav>
         <ul class="nav-links" id="nav-menu">
           <li>
-            <a href="../neden-biz/" class="en-only">Why Us?</a>
-            <a href="../neden-biz/" class="tr-only">Neden Biz?</a>
+            <a href="../neden-biz/">Neden Biz?</a>
           </li>
           <li>
-            <a href="../neden-biz/#about" class="en-only">About</a>
-            <a href="../neden-biz/#about" class="tr-only">Hakkımızda</a>
+            <a href="../neden-biz/#about">Hakkımızda</a>
           </li>
           <li>
-            <a href="../en/#services" class="en-only">Services</a>
-            <a href="../tr/#services" class="tr-only">Hizmetler</a>
+            <a href="../tr/#services">Hizmetler</a>
           </li>
           <li>
-            <a href="../uluslararasi-akademik-kocluk/" class="tr-only">Akademik Koçluk</a>
-            <a href="../uluslararasi-akademik-kocluk/" class="en-only">Coaching</a>
+            <a href="../uluslararasi-akademik-kocluk/">Akademik Koçluk</a>
           </li>
-          <li><a href="." class="active nav-blog-highlight">Blog <span class="nav-count-badge">84</span></a></li>
+          <li><a href="." class="active nav-blog-highlight">Blog <span class="nav-count-badge">83</span></a></li>
           <li>
-            <a href="../en/#contact" class="en-only">Contact</a>
-            <a href="../tr/#contact" class="tr-only">İletişim</a>
+            <a href="../tr/#contact">İletişim</a>
           </li>
         </ul>
       </nav>
@@ -458,8 +450,7 @@
         <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
-        <a href="../en/#contact" class="btn btn-primary en-only" style="padding:0.45rem;width:2rem;height:2rem;border-radius:50%;flex-shrink:0" title="Book Now"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></a>
-        <a href="../tr/#contact" class="btn btn-primary tr-only" style="padding:0.45rem;width:2rem;height:2rem;border-radius:50%;flex-shrink:0" title="Görüşme Planla"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></a>
+        <a href="../tr/#contact" class="btn btn-primary" style="padding:0.45rem;width:2rem;height:2rem;border-radius:50%;flex-shrink:0" title="Görüşme Planla"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></a>
       </div>
     </div>
   </header>
@@ -469,17 +460,14 @@
     <div class="container blog-hero-inner">
       <div class="blog-hero-text">
         <span class="section-subtitle">
-          <span class="tr-only">Bilgi & Rehberlik</span>
-          <span class="en-only">Insights & Guidance</span>
+          <span>Bilgi & Rehberlik</span>
         </span>
-        <h1 class="section-title" style="color:var(--primary)"><span class="tr-only">Dubai, Yurt Dışı ve Uluslararası Okul Rehberleri</span><span class="en-only">Dubai, International School &amp; Relocation Guides</span></h1>
+        <h1 class="section-title" style="color:var(--primary)"><span>Dubai, Yurt Dışı ve Uluslararası Okul Rehberleri</span></h1>
         <p class="section-desc">
-          <span class="tr-only">Çocuğumun akademik gelişimi için ne yapmalıyım? Uluslararası okul seçimi, IB geçişi, akademik koçluk ve değerlendirme hakkında 84+ bağımsız rehber.</span>
-          <span class="en-only">What should I do for my child's academic development? 75+ independent guides on international school selection, IB transition, academic coaching and assessment.</span>
+          <span>Çocuğumun akademik gelişimi için ne yapmalıyım? Uluslararası okul seçimi, IB geçişi, akademik koçluk ve değerlendirme hakkında 80+ bağımsız rehber.</span>
         </p>
         <p style="margin-top:1rem">
-          <a href="/cocugunuzun-potansiyeli/" class="tr-only" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-weight:600;font-size:.95rem;">📖 Tüm konularda tek rehber: Çocuğunuzun Akademik Gelişimi →</a>
-          <a href="/cocugunuzun-potansiyeli/" class="en-only" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-weight:600;font-size:.95rem;">📖 Everything in one place: Your Child's Academic Development →</a>
+          <a href="/cocugunuzun-potansiyeli/" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-weight:600;font-size:.95rem;">📖 Tüm konularda tek rehber: Çocuğunuzun Akademik Gelişimi →</a>
         </p>
       </div>
     </div>
@@ -488,17 +476,13 @@
   <!-- BLOG GRID -->
   <section class="blog-listing-section">
     <div class="container">
-      <h2 class="tr-only" style="text-align:center;margin-bottom:1.5rem;font-size:var(--font-xl)">Tüm Blog Yazıları</h2>
-      <h2 class="en-only" style="text-align:center;margin-bottom:1.5rem;font-size:var(--font-xl)">All Blog Articles</h2>
+      <h2 style="text-align:center;margin-bottom:1.5rem;font-size:var(--font-xl)">Tüm Blog Yazıları</h2>
 
-      <p class="tr-only" style="max-width:720px;margin:0 auto 2.5rem;text-align:center;line-height:1.9;font-size:1.05rem;color:var(--text-muted)">
-        Çocuğumun akademik gelişimi için ne yapmalıyım — Dubai'de okul seçiminden IB geçişine, akademik koçluktan uluslararası değerlendirmeye kadar 84 bağımsız rehber. Her yazı, Özlem Çimen'in 20+ yıllık eğitim deneyimi ve 5 ülkede expatriyat annelik deneyiminden doğmuştur. Okul seçimi, müfredat karşılaştırması, çocuğumun neden başarısız olduğu, özel ders mi akademik koç mu sorusu — yanıtları burada bulabilirsiniz.
-      </p>
-      <p class="en-only" style="max-width:720px;margin:0 auto 2.5rem;text-align:center;line-height:1.9;font-size:1.05rem;color:var(--text-muted)">
-        76 independent guides on international school selection, IB transition, academic coaching and assessment — written from 20+ years of education experience and expatriate parenting across 5 countries. From Dubai school fees and KHDA ratings to curriculum comparison (IB vs A-Level vs American) and academic support for expat children.
+      <p style="max-width:720px;margin:0 auto 2.5rem;text-align:center;line-height:1.9;font-size:1.05rem;color:var(--text-muted)">
+        Çocuğumun akademik gelişimi için ne yapmalıyım — Dubai'de okul seçiminden IB geçişine, akademik koçluktan uluslararası değerlendirmeye kadar 83 bağımsız rehber. Her yazı, Özlem Çimen'in 20+ yıllık eğitim deneyimi ve 5 ülkede expatriyat annelik deneyiminden doğmuştur. Okul seçimi, müfredat karşılaştırması, çocuğumun neden başarısız olduğu, özel ders mi akademik koç mu sorusu — yanıtları burada bulabilirsiniz.
       </p>
       <!-- Featured infographic -->
-      <a href="/okul-ucretleri-karsilastirma/" class="tr-only" style="display:block;background:linear-gradient(135deg,#211C18 0%,#0F5499 100%);border-radius:var(--radius-md);padding:2rem 2.5rem;margin-bottom:2.5rem;text-decoration:none;color:#FFF1E5;position:relative;overflow:hidden;">
+      <a href="/okul-ucretleri-karsilastirma/" style="display:block;background:linear-gradient(135deg,#211C18 0%,#0F5499 100%);border-radius:var(--radius-md);padding:2rem 2.5rem;margin-bottom:2.5rem;text-decoration:none;color:#FFF1E5;position:relative;overflow:hidden;">
         <div style="position:absolute;right:2rem;top:50%;transform:translateY(-50%);opacity:0.12;pointer-events:none;">
           <svg viewBox="0 0 320 200" width="220" xmlns="http://www.w3.org/2000/svg"><rect x="80" y="60" width="100" height="22" fill="#FFF1E5"/><rect x="80" y="95" width="160" height="22" fill="#9E1B32"/><rect x="80" y="130" width="68" height="22" fill="#FFF1E5"/><rect x="72" y="54" width="3" height="110" fill="#FFF1E5"/></svg>
         </div>
@@ -510,28 +494,6 @@
 
       <div class="blog-grid">
 
-        <!-- Post: Top 10 International Schools in Dubai -->
-        <a href="dubai-top-schools/" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img src="../assets/blog/thumb-dubai.webp" srcset="../assets/blog/thumb-dubai.webp 800w" alt="Top 10 international schools in Dubai 2026" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🏫</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span class="tr-only">28 Eylül 2026</span><span class="en-only">28 September 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">Dubai'de En İyi 10 Okul (2026) — Karşılaştırma Tablosu &amp; Uzman Notları</span>
-              <span class="en-only">Top 10 International Schools in Dubai (2026) — Expert Picks &amp; Fee Table</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">KHDA Outstanding derecelendirmesine göre top 5, top 10, top 20 okul listesi. Ücret karşılaştırma tablosu, müfredat seçimi ve koçluk notlarıyla.</span>
-              <span class="en-only">KHDA Outstanding rankings: top 5, top 10 and top 20 schools in Dubai. Fee comparison table (48k–92k AED), curriculum guide and coaching notes for expat families.</span>
-            </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
-          </div>
-        </a>
 
         <!-- Post: WEF ve Big 4 - Çocuklar İçin Gelecek Becerileri -->
         <a href="cocuklar-icin-gelecek-becerileri/" class="blog-card glass scroll-reveal">
@@ -542,17 +504,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>28 Eylül 2026</span>
-              <span><span class="tr-only">15 dk</span><span class="en-only">15 min</span></span>
+              <span><span>15 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">WEF ve Big 4'e Göre Çocuklar İçin 4 Kritik Gelecek Becerisi</span>
-              <span class="en-only">4 Critical Future Skills for Children: WEF &amp; Big 4 Reports</span>
+              <span>WEF ve Big 4'e Göre Çocuklar İçin 4 Kritik Gelecek Becerisi</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Teknik bilginin yarı ömrü 2.5 yıla düştü. Deloitte ve PwC'ye göre uyum sağlama yeteneği yeni #1 öncelik. Dijital okuryazarlık, STEAM, soft skills ve yeşil beceriler — kanıta dayalı rehber.</span>
-              <span class="en-only">Technical skills half-life dropped to 2.5 years. Deloitte and PwC say adaptability is the new #1 priority. Digital literacy, STEAM, soft skills and green skills — an evidence-based parent guide.</span>
+              <span>Teknik bilginin yarı ömrü 2.5 yıla düştü. Deloitte ve PwC'ye göre uyum sağlama yeteneği yeni #1 öncelik. Dijital okuryazarlık, STEAM, soft skills ve yeşil beceriler — kanıta dayalı rehber.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -565,17 +525,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>4 Ekim 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
+              <span><span>12 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Geleceğin Meslekleri: Ebeveynlerin En Çok Sorduğu 8 Soru</span>
-              <span class="en-only">Future Careers: 8 Questions Every Parent Asks, Answered with Data</span>
+              <span>Geleceğin Meslekleri: Ebeveynlerin En Çok Sorduğu 8 Soru</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Doktorluk biter mi? Kodlama öğrenmeli mi? Finans hala iyi mi? Sanat ile para kazanılır mı? 8 soruya veri odaklı, yönlendirici yanıtlar. Sektör bazında otomasyon riski ve kritik beceriler.</span>
-              <span class="en-only">Is medicine dying? Should kids learn coding? Is finance still viable? Can creative fields earn real money? 8 data-backed answers — automation risk by sector, critical skills for every career, curriculum guidance.</span>
+              <span>Doktorluk biter mi? Kodlama öğrenmeli mi? Finans hala iyi mi? Sanat ile para kazanılır mı? 8 soruya veri odaklı, yönlendirici yanıtlar. Sektör bazında otomasyon riski ve kritik beceriler.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -588,17 +546,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>28 Eylül 2026</span>
-              <span><span class="tr-only">14 dk</span><span class="en-only">14 min</span></span>
+              <span><span>14 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Yapay Zekaya Dirençli 65 Meslek: Amerika Kariyer Enstitüsü Araştırması</span>
-              <span class="en-only">65 Jobs Safe from AI: US Career Institute Research</span>
+              <span>Yapay Zekaya Dirençli 65 Meslek: Amerika Kariyer Enstitüsü Araştırması</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">%0 otomasyon riskiyle 65 meslek: Nurse Practitioner %40 büyüme, cerrahlar 239.000 USD+. Duygusal zeka ve insan teması algoritmanın yapamadığı şeyler. Ebeveynler için 5 pratik adım.</span>
-              <span class="en-only">65 jobs with 0% automation risk: Nurse Practitioners growing 40%, surgeons earning $239k+. Emotional intelligence and human connection — what algorithms can't do. 5 practical steps for parents.</span>
+              <span>%0 otomasyon riskiyle 65 meslek: Nurse Practitioner %40 büyüme, cerrahlar 239.000 USD+. Duygusal zeka ve insan teması algoritmanın yapamadığı şeyler. Ebeveynler için 5 pratik adım.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -611,17 +567,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>27 Eylül 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
+              <span><span>12 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Çocuğunuzun Güçlü ve Zayıf Yönlerini Tanımak: Doğal Yetenekler Nerede?</span>
-              <span class="en-only">Knowing Your Child's Strengths and Weaknesses: Where Do Natural Abilities Lie?</span>
+              <span>Çocuğunuzun Güçlü ve Zayıf Yönlerini Tanımak: Doğal Yetenekler Nerede?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">4 bilişsel alanda IRT metodolojisiyle standartlaştırılmış ölçüm: sözel, sayısal, uzamsal ve sözel olmayan akıl yürütme. Okul seçimini temelden değiştiren profil analizi.</span>
-              <span class="en-only">IRT-based measurement across 4 cognitive domains: verbal, quantitative, spatial and non-verbal reasoning. The profile analysis that fundamentally changes school selection.</span>
+              <span>4 bilişsel alanda IRT metodolojisiyle standartlaştırılmış ölçüm: sözel, sayısal, uzamsal ve sözel olmayan akıl yürütme. Okul seçimini temelden değiştiren profil analizi.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -634,17 +588,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>27 Eylül 2026</span>
-              <span><span class="tr-only">8 dk</span><span class="en-only">8 min</span></span>
+              <span><span>8 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai Okul Ücretleri 2026–2027: KHDA ve Müfredada Göre Fiyat Tablosu</span>
-              <span class="en-only">Dubai School Fees 2026–2027: Full Price Table by KHDA Grade</span>
+              <span>Dubai Okul Ücretleri 2026–2027: KHDA ve Müfredada Göre Fiyat Tablosu</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">KHDA Outstanding okullarda 65.000–100.000 AED, Good okullarda 25.000–45.000 AED. IB, British ve Amerikan müfredatına göre fiyat karşılaştırması ve gizli masraflar.</span>
-              <span class="en-only">KHDA Outstanding schools charge AED 65,000–100,000; Good schools AED 25,000–45,000. Full fee table by curriculum and hidden costs breakdown.</span>
+              <span>KHDA Outstanding okullarda 65.000–100.000 AED, Good okullarda 25.000–45.000 AED. IB, British ve Amerikan müfredatına göre fiyat karşılaştırması ve gizli masraflar.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -657,17 +609,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>26 Eylül 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Katar'da Uluslararası Okul Kaydı 2026: Doha Rehberi</span>
-              <span class="en-only">Qatar International School Registration 2026: Doha Guide</span>
+              <span>Katar'da Uluslararası Okul Kaydı 2026: Doha Rehberi</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Doha'daki British, IB ve Amerikan müfredatlı okullar, ücretler, başvuru süreci ve Türk aileler için pratik rehber.</span>
-              <span class="en-only">British, IB and American curriculum schools in Doha, fees, application process and a practical guide for Turkish families.</span>
+              <span>Doha'daki British, IB ve Amerikan müfredatlı okullar, ücretler, başvuru süreci ve Türk aileler için pratik rehber.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -680,17 +630,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>26 Eylül 2026</span>
-              <span><span class="tr-only">8 dk</span><span class="en-only">8 min</span></span>
+              <span><span>8 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai Okul Tatil Tarihleri 2026–2027</span>
-              <span class="en-only">Dubai School Holiday Dates 2026–2027</span>
+              <span>Dubai Okul Tatil Tarihleri 2026–2027</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">3 dönem yapısı, yarı yıl tatilleri, UAE resmi tatilleri, Ramazan etkisi ve Türkiye ziyareti için en iyi pencereler.</span>
-              <span class="en-only">Three-term structure, half-term breaks, UAE public holidays, Ramadan impact and the best windows for visiting Turkey.</span>
+              <span>3 dönem yapısı, yarı yıl tatilleri, UAE resmi tatilleri, Ramazan etkisi ve Türkiye ziyareti için en iyi pencereler.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -703,17 +651,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>24 Eylül 2026</span>
-              <span><span class="tr-only">9 dk</span><span class="en-only">9 min</span></span>
+              <span><span>9 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">KHDA Notu Nedir? Outstanding ile Very Good Farkı</span>
-              <span class="en-only">What Is a KHDA Rating? Outstanding vs Very Good Explained</span>
+              <span>KHDA Notu Nedir? Outstanding ile Very Good Farkı</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">4 denetim kategorisi, okulların yüzde dağılımı ve Outstanding ile Very Good arasındaki ücret ve bekleme listesi farkları.</span>
-              <span class="en-only">4 inspection categories, grade distribution and the fee and waiting-list gap between Outstanding and Very Good schools.</span>
+              <span>4 denetim kategorisi, okulların yüzde dağılımı ve Outstanding ile Very Good arasındaki ücret ve bekleme listesi farkları.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -726,17 +672,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>24 Eylül 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">EAL Nedir? Dubai Uluslararası Okullarında İngilizce Dil Desteği</span>
-              <span class="en-only">What Is EAL? English Language Support in Dubai International Schools</span>
+              <span>EAL Nedir? Dubai Uluslararası Okullarında İngilizce Dil Desteği</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">EAL ile ESL farkı, 3 destek modeli, sosyal dil ile akademik dil zaman çizelgesi ve Türk çocuklar için güçlü ve zayıf yönler.</span>
-              <span class="en-only">EAL vs ESL difference, 3 support models, social vs academic language timelines and strengths and challenges for Turkish children.</span>
+              <span>EAL ile ESL farkı, 3 destek modeli, sosyal dil ile akademik dil zaman çizelgesi ve Türk çocuklar için güçlü ve zayıf yönler.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -749,17 +693,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>23 Eylül 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Okul Kayıt Sezonu Ne Zaman Başlar? 2026–2027 Takvim Rehberi</span>
-              <span class="en-only">When Does Dubai's School Registration Season Open? 2026–2027 Calendar Guide</span>
+              <span>Dubai'de Okul Kayıt Sezonu Ne Zaman Başlar? 2026–2027 Takvim Rehberi</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Dubai okul kayıt sezonu Eylül'de açılır ama popüler KHDA Outstanding okullar için 18 ay öncesinden başvurmanız gerekiyor.</span>
-              <span class="en-only">Dubai's registration season opens in September, but top KHDA Outstanding schools may need 18 months' notice.</span>
+              <span>Dubai okul kayıt sezonu Eylül'de açılır ama popüler KHDA Outstanding okullar için 18 ay öncesinden başvurmanız gerekiyor.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -772,17 +714,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>23 Eylül 2026</span>
-              <span><span class="tr-only">14 dk</span><span class="en-only">14 min</span></span>
+              <span><span>14 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">IB Diploma ile Üniversite Başvurusu: Ülke Ülke Puan Eşikleri 2026</span>
-              <span class="en-only">IB Diploma University Applications 2026: Score Thresholds by Country</span>
+              <span>IB Diploma ile Üniversite Başvurusu: Ülke Ülke Puan Eşikleri 2026</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Oxbridge için 38+, Russell Group için 32–38, Hollanda için 28–32. 6 ülkede IB puan eşikleri, conditional offer rehberi ve YÖK denklik bilgisi.</span>
-              <span class="en-only">Oxbridge needs 38+, Russell Group 32–38, Netherlands 28–32. IB score thresholds for 6 countries, conditional offer guide and Turkish YÖK equivalency.</span>
+              <span>Oxbridge için 38+, Russell Group için 32–38, Hollanda için 28–32. 6 ülkede IB puan eşikleri, conditional offer rehberi ve YÖK denklik bilgisi.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -795,42 +735,19 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>21 Eylül 2026</span>
-              <span><span class="tr-only">11 dk</span><span class="en-only">11 min</span></span>
+              <span><span>11 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">PISA Nedir? PISA 2025 Puanı Nasıl Hesaplanır ve Türkiye Sonuçları</span>
-              <span class="en-only">What Is PISA? Scores, PISA 2025 Results and Your Child's Career</span>
+              <span>PISA Nedir? PISA 2025 Puanı Nasıl Hesaplanır ve Türkiye Sonuçları</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">PISA nedir, nasıl uygulanır, puanlar nasıl hesaplanır? PISA 2025 Türkiye sonuçları ve PISA başarısının iş hayatıyla doğrudan bağlantısı. Deneyimli bir eğitimciden dürüst rehber.</span>
-              <span class="en-only">What is PISA, how are scores calculated, what did Turkey achieve in 2025? And why do PISA skills predict career success? An honest guide from an experienced educator.</span>
+              <span>PISA nedir, nasıl uygulanır, puanlar nasıl hesaplanır? PISA 2025 Türkiye sonuçları ve PISA başarısının iş hayatıyla doğrudan bağlantısı. Deneyimli bir eğitimciden dürüst rehber.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
         <!-- Post: What Is PISA? (EN guide) -->
-        <a href="what-is-pisa/" class="blog-card glass scroll-reveal en-only">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-pisa-640.webp 640w, ../assets/blog/thumb-pisa.webp 800w" src="../assets/blog/thumb-pisa.webp" alt="What Is PISA? 2025 Results, Score Calculation and Career Impact" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🌍</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>21 September 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
-            </div>
-            <div class="blog-card-title">
-              <span class="tr-only">What Is PISA? 2025 Global Results, Score Calculation and Career Impact</span>
-              <span class="en-only">What Is PISA? 2025 Global Results, Score Calculation and Career Impact</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span class="tr-only">760,000 students, 91 countries: what PISA 2025 reveals, how scores are calculated with IRT, where top performers sit — and why PISA skills directly predict career success.</span>
-              <span class="en-only">760,000 students, 91 countries: what PISA 2025 reveals, how scores are calculated with IRT, where top performers sit — and why PISA skills directly predict career success.</span>
-            </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
-          </div>
-        </a>
 
         <!-- Post: Almanya'da Türk Okulu Var Mı? -->
         <a href="almanyada-turk-okulu-var-mi/" class="blog-card glass scroll-reveal">
@@ -841,17 +758,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>14 Eylül 2026</span>
-              <span><span class="tr-only">7 dk</span><span class="en-only">7 min</span></span>
+              <span><span>7 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Almanya'da Türk Okulu Var Mı? (2026 Güncel Rehber)</span>
-              <span class="en-only">Is There a Turkish School in Germany? (2026 Guide)</span>
+              <span>Almanya'da Türk Okulu Var Mı? (2026 Güncel Rehber)</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">MEB müfredatlı Türk okulu yok — ama Maarif Vakfı okulları, konsolosluk Türkçe kursları ve Gymnasium sistemi var. Türk aileler için tam rehber.</span>
-              <span class="en-only">No MEB-curriculum Turkish school exists in Germany — but Maarif Foundation schools, consulate classes and the Gymnasium system do. Full guide for Turkish families.</span>
+              <span>MEB müfredatlı Türk okulu yok — ama Maarif Vakfı okulları, konsolosluk Türkçe kursları ve Gymnasium sistemi var. Türk aileler için tam rehber.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -864,17 +779,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>14 Eylül 2026</span>
-              <span><span class="tr-only">8 dk</span><span class="en-only">8 min</span></span>
+              <span><span>8 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Robert Kolej Ücreti 2026-27: Özel Okul Ücretleri ve Alternatifler</span>
-              <span class="en-only">Robert Kolej Fees 2026-27: Turkey Private School Costs Compared</span>
+              <span>Robert Kolej Ücreti 2026-27: Özel Okul Ücretleri ve Alternatifler</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Robert Kolej 2.488.200 TL, Koç Okulu 1.930.107 TL — Dubai IB okulu ile karşılaştırıldığında tablo ne gösteriyor? Gerçek maliyet analizi.</span>
-              <span class="en-only">Robert Kolej 2,488,200 TL, Koç Okulu 1,930,107 TL — how do they compare against Dubai IB schools? Real cost analysis.</span>
+              <span>Robert Kolej 2.488.200 TL, Koç Okulu 1.930.107 TL — Dubai IB okulu ile karşılaştırıldığında tablo ne gösteriyor? Gerçek maliyet analizi.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -888,21 +801,17 @@
             <div class="blog-card-meta">
               <span>11 Eylül 2026</span>
               <span>
-                <span class="tr-only">13 dk</span>
-                <span class="en-only">13 min</span>
+                <span>13 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">PISA 2025 ve Erken İş Deneyimi: Türk Öğrenciler İçin Eksik Halka</span>
-              <span class="en-only">PISA 2025 and Early Work Experience: The Missing Link for Turkish Students</span>
+              <span>PISA 2025 ve Erken İş Deneyimi: Türk Öğrenciler İçin Eksik Halka</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">%53 devamsızlık, hesaplamalı düşünme açığı ve okul-iş bağının kopukluğu. PISA 2025 verileri erken iş deneyiminin neden şart olduğunu sayısal olarak kanıtlıyor.</span>
-              <span class="en-only">53% truancy, a computational thinking gap and a broken school-work connection. PISA 2025 data proves numerically why early work experience is essential.</span>
+              <span>%53 devamsızlık, hesaplamalı düşünme açığı ve okul-iş bağının kopukluğu. PISA 2025 verileri erken iş deneyiminin neden şart olduğunu sayısal olarak kanıtlıyor.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -918,21 +827,17 @@
             <div class="blog-card-meta">
               <span>10 Eylül 2026</span>
               <span>
-                <span class="tr-only">8 dk</span>
-                <span class="en-only">8 min</span>
+                <span>8 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">CAT4 Sınavı Nedir? Dubai Okullarında Başvuru ve Hazırlık Rehberi</span>
-              <span class="en-only">CAT4 Test Dubai: What It Is, How Schools Use It and How to Prepare</span>
+              <span>CAT4 Sınavı Nedir? Dubai Okullarında Başvuru ve Hazırlık Rehberi</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Dubai'deki IB ve İngiliz müfredatlı okulların çoğu kayıtta CAT4 istiyor. Testin 4 pili, skor yorumu ve 5 kanıta dayalı hazırlık stratejisi bu rehberde.</span>
-              <span class="en-only">Most IB and British-curriculum schools in Dubai require CAT4 for admissions. Here's what the 4 batteries measure, how scores are used and 5 evidence-based prep strategies.</span>
+              <span>Dubai'deki IB ve İngiliz müfredatlı okulların çoğu kayıtta CAT4 istiyor. Testin 4 pili, skor yorumu ve 5 kanıta dayalı hazırlık stratejisi bu rehberde.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -948,21 +853,17 @@
             <div class="blog-card-meta">
               <span>10 Eylül 2026</span>
               <span>
-                <span class="tr-only">9 dk</span>
-                <span class="en-only">9 min</span>
+                <span>9 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">PISA 2025 Türkiye Sonuçları: Rakamlar İyimser Ama Endişe Gerçek</span>
-              <span class="en-only">PISA 2025 Turkey Results: The Numbers Look Better Than They Are</span>
+              <span>PISA 2025 Türkiye Sonuçları: Rakamlar İyimser Ama Endişe Gerçek</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Türkiye 3 alanda ilerledi — ama %53 devamsızlık, küresel liderlerden geride kalan üst performans oranları ve büyüyen eşitsizlik tablo iyimser değil.</span>
-              <span class="en-only">Turkey improved in all 3 PISA subjects — but 53% truancy, top-performer rates far behind global leaders, and widening inequality tell a more unsettling story.</span>
+              <span>Türkiye 3 alanda ilerledi — ama %53 devamsızlık, küresel liderlerden geride kalan üst performans oranları ve büyüyen eşitsizlik tablo iyimser değil.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -978,21 +879,17 @@
             <div class="blog-card-meta">
               <span>11 Eylül 2026</span>
               <span>
-                <span class="tr-only">8 dk</span>
-                <span class="en-only">8 min</span>
+                <span>8 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai Okul Bekleme Listesi: Nasıl Girilir, Ne Zaman Başvurulur?</span>
-              <span class="en-only">Dubai School Waiting List: How to Get On, When to Apply</span>
+              <span>Dubai Okul Bekleme Listesi: Nasıl Girilir, Ne Zaman Başvurulur?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">KHDA Outstanding okullar 12–18 ay önceden dolabiliyor. Bekleme listesine nasıl girilir, hangi belgeler lazım, kabul gelmezse ne yapılır?</span>
-              <span class="en-only">KHDA Outstanding schools fill up 12–18 months in advance. How to get on the waiting list, which documents you need, and what to do if no offer comes.</span>
+              <span>KHDA Outstanding okullar 12–18 ay önceden dolabiliyor. Bekleme listesine nasıl girilir, hangi belgeler lazım, kabul gelmezse ne yapılır?</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1007,21 +904,17 @@
             <div class="blog-card-meta">
               <span>14 Haziran 2026</span>
               <span>
-                <span class="tr-only">6 dk</span>
-                <span class="en-only">6 min</span>
+                <span>6 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Türk Okulu Var Mı? (2026 Güncel Bilgi)</span>
-              <span class="en-only">Is There a Turkish School in Dubai? (2026 Guide)</span>
+              <span>Dubai'de Türk Okulu Var Mı? (2026 Güncel Bilgi)</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Kısa cevap: Hayır — ama 5.000'den fazla Türk öğrenci uluslararası okullarda okuyor. Hangi okul, nasıl seçim, Türkçe nasıl korunur?</span>
-              <span class="en-only">Short answer: No — but 5,000+ Turkish students attend international schools. Which school, how to choose, how to preserve Turkish.</span>
+              <span>Kısa cevap: Hayır — ama 5.000'den fazla Türk öğrenci uluslararası okullarda okuyor. Hangi okul, nasıl seçim, Türkçe nasıl korunur?</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1037,21 +930,17 @@
             <div class="blog-card-meta">
               <span>8 Eylül 2026</span>
               <span>
-                <span class="tr-only">12 dk</span>
-                <span class="en-only">12 min</span>
+                <span>12 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Türkiye'deki Özel Okullardan Dubai Uluslararası Okullarına Geçiş: Kapsamlı Rehber</span>
-              <span class="en-only">From Turkish Private Schools to Dubai International Schools: A Complete Guide</span>
+              <span>Türkiye'deki Özel Okullardan Dubai Uluslararası Okullarına Geçiş: Kapsamlı Rehber</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Belgeler, onay zinciri, CAT4 sınavı ve mülakat hazırlığı: Dubai'deki uluslararası okullara geçişin tüm adımları Edualist'ten.</span>
-              <span class="en-only">Documents, certification chain, CAT4 exam and interview prep: every step of transitioning to Dubai international schools, from Edualist.</span>
+              <span>Belgeler, onay zinciri, CAT4 sınavı ve mülakat hazırlığı: Dubai'deki uluslararası okullara geçişin tüm adımları Edualist'ten.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1067,21 +956,17 @@
             <div class="blog-card-meta">
               <span>3 Eylül 2026</span>
               <span>
-                <span class="tr-only">9 dk</span>
-                <span class="en-only">9 min</span>
+                <span>9 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">International School Nedir? Türk Aileler İçin Eksiksiz Rehber</span>
-              <span class="en-only">What Is an International School? A Complete Guide for Turkish Families</span>
+              <span>International School Nedir? Türk Aileler İçin Eksiksiz Rehber</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">IB, British, Amerikan müfredatları, KHDA/Ofsted denetimleri ve Türk çocukların bu okullarda nasıl başarılı olduğu — Özlem Çimen anlatıyor.</span>
-              <span class="en-only">IB, British, American curricula, KHDA/Ofsted inspections and how Turkish children thrive in international schools — explained by Özlem Çimen.</span>
+              <span>IB, British, Amerikan müfredatları, KHDA/Ofsted denetimleri ve Türk çocukların bu okullarda nasıl başarılı olduğu — Özlem Çimen anlatıyor.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1097,21 +982,17 @@
             <div class="blog-card-meta">
               <span>1 Temmuz 2026</span>
               <span>
-                <span class="tr-only">9 dk</span>
-                <span class="en-only">9 min</span>
+                <span>9 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Eğitim Sistemi Nasıl Çalışır? KHDA, Müfredatlar ve Okul Türleri</span>
-              <span class="en-only">How Does Dubai's Education System Work? KHDA, Curricula and School Types</span>
+              <span>Dubai'de Eğitim Sistemi Nasıl Çalışır? KHDA, Müfredatlar ve Okul Türleri</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Devlet okulu yok, 200+ özel uluslararası okul var. KHDA denetimi nedir, British mi IB mi, ücretler ne kadar? Türk aileler için kapsamlı rehber.</span>
-              <span class="en-only">No government schools, 200+ private international schools. What is KHDA inspection, British or IB, how much do fees cost? A complete guide for Turkish families.</span>
+              <span>Devlet okulu yok, 200+ özel uluslararası okul var. KHDA denetimi nedir, British mi IB mi, ücretler ne kadar? Türk aileler için kapsamlı rehber.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1127,21 +1008,17 @@
             <div class="blog-card-meta">
               <span>1 Temmuz 2026</span>
               <span>
-                <span class="tr-only">8 dk</span>
-                <span class="en-only">8 min</span>
+                <span>8 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'deki Başarılı Türk Öğrenciler Ne Yapıyor? 5–14 Yaş Rehberi</span>
-              <span class="en-only">What Makes Turkish Students Succeed in Dubai? A 5–14 Age Guide</span>
+              <span>Dubai'deki Başarılı Türk Öğrenciler Ne Yapıyor? 5–14 Yaş Rehberi</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Dil engeli, akademik temel ve liderlik. İki anonim vakadan Özlem Çimen'in gözlemlerine — Dubai uluslararası okullarında başarıya giden 5 pratik adım.</span>
-              <span class="en-only">Language barrier, academic foundation and leadership. From two anonymous cases to Özlem Çimen's observations — 5 practical steps to success at Dubai international schools.</span>
+              <span>Dil engeli, akademik temel ve liderlik. İki anonim vakadan Özlem Çimen'in gözlemlerine — Dubai uluslararası okullarında başarıya giden 5 pratik adım.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1157,21 +1034,17 @@
             <div class="blog-card-meta">
               <span>29 Haziran 2026</span>
               <span>
-                <span class="tr-only">11 dk</span>
-                <span class="en-only">11 min</span>
+                <span>11 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">The Anxious Generation Bölüm 1: Dijital Çağda Ergen Ruh Sağlığı</span>
-              <span class="en-only">The Anxious Generation Part 1: Teen Mental Health in the Digital Age</span>
+              <span>The Anxious Generation Bölüm 1: Dijital Çağda Ergen Ruh Sağlığı</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">GEMS DAA okul psikolojik danışmanıyla Jonathan Haidt'i okuyoruz. Z kuşağı neden "Mars'ta" büyüyor ve dijital çağın dört gelişimsel hasarı neler?</span>
-              <span class="en-only">Reading Jonathan Haidt with GEMS DAA's school counsellor. Why is Gen Z growing up "on Mars" and what are the four developmental harms of the phone-centric childhood?</span>
+              <span>GEMS DAA okul psikolojik danışmanıyla Jonathan Haidt'i okuyoruz. Z kuşağı neden "Mars'ta" büyüyor ve dijital çağın dört gelişimsel hasarı neler?</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1187,21 +1060,17 @@
             <div class="blog-card-meta">
               <span>25 Haziran 2026</span>
               <span>
-                <span class="tr-only">12 dk</span>
-                <span class="en-only">12 min</span>
+                <span>12 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Yaşam Maliyeti 2026: Türk Aileler İçin Gerçek Rakamlar</span>
-              <span class="en-only">Cost of Living in Dubai 2026: Real Numbers for Turkish Families</span>
+              <span>Dubai'de Yaşam Maliyeti 2026: Türk Aileler İçin Gerçek Rakamlar</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Kira, okul, market, ulaşım ve sağlık maliyetleri. 3 farklı aile senaryosu ve vergisiz maaş avantajıyla Dubai'de aylık gerçek rakamlar.</span>
-              <span class="en-only">Rent, school, groceries, transport and health costs. Three family scenarios and how Dubai's tax-free salary changes the real monthly budget.</span>
+              <span>Kira, okul, market, ulaşım ve sağlık maliyetleri. 3 farklı aile senaryosu ve vergisiz maaş avantajıyla Dubai'de aylık gerçek rakamlar.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1217,21 +1086,17 @@
             <div class="blog-card-meta">
               <span>23 Haziran 2026</span>
               <span>
-                <span class="tr-only">10 dk</span>
-                <span class="en-only">10 min</span>
+                <span>10 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">İspanya'da Uluslararası Okul: Madrid ve Barselona Rehberi 2026</span>
-              <span class="en-only">International Schools in Spain: Madrid & Barcelona 2026 Guide</span>
+              <span>İspanya'da Uluslararası Okul: Madrid ve Barselona Rehberi 2026</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Madrid, Barselona ve Costa del Sol'da British, IB ve Amerikan müfredatı seçenekleri, ücretler, NIE numarası ve kayıt süreci rehberi.</span>
-              <span class="en-only">British, IB and American curriculum options in Madrid, Barcelona and Costa del Sol — fees, NIE number, and step-by-step enrolment guide.</span>
+              <span>Madrid, Barselona ve Costa del Sol'da British, IB ve Amerikan müfredatı seçenekleri, ücretler, NIE numarası ve kayıt süreci rehberi.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1247,21 +1112,17 @@
             <div class="blog-card-meta">
               <span>23 Haziran 2026</span>
               <span>
-                <span class="tr-only">10 dk</span>
-                <span class="en-only">10 min</span>
+                <span>10 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Hangi Semtte Oturun? Okula Göre Bölge Rehberi 2026</span>
-              <span class="en-only">Which Dubai Neighbourhood? School-by-School Area Guide 2026</span>
+              <span>Dubai'de Hangi Semtte Oturun? Okula Göre Bölge Rehberi 2026</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Jumeirah, JVC, Arabian Ranches, Emirates Hills — KHDA Outstanding okullarına göre semt karşılaştırması, kira aralıkları ve aile önerileri.</span>
-              <span class="en-only">Jumeirah, JVC, Arabian Ranches, Emirates Hills — neighbourhood comparison by KHDA Outstanding schools, rental ranges and family recommendations.</span>
+              <span>Jumeirah, JVC, Arabian Ranches, Emirates Hills — KHDA Outstanding okullarına göre semt karşılaştırması, kira aralıkları ve aile önerileri.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1277,21 +1138,17 @@
             <div class="blog-card-meta">
               <span>23 Haziran 2026</span>
               <span>
-                <span class="tr-only">10 dk</span>
-                <span class="en-only">10 min</span>
+                <span>10 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">İngiltere'de Devlet mi Özel mi? Türk Ailelerin Okul Kararı</span>
-              <span class="en-only">UK State School vs Private School: A Turkish Family's Guide 2026</span>
+              <span>İngiltere'de Devlet mi Özel mi? Türk Ailelerin Okul Kararı</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Ofsted, ücret farkı, grammar school 11+ sınavı ve üniversite çıktısı — İngiltere'de doğru okul tipini seçmek için karar rehberi.</span>
-              <span class="en-only">Ofsted ratings, fee differences, grammar school 11-plus exams and university outcomes — a decision guide for choosing the right school type in the UK.</span>
+              <span>Ofsted, ücret farkı, grammar school 11+ sınavı ve üniversite çıktısı — İngiltere'de doğru okul tipini seçmek için karar rehberi.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1307,21 +1164,17 @@
             <div class="blog-card-meta">
               <span>23 Haziran 2026</span>
               <span>
-                <span class="tr-only">10 dk</span>
-                <span class="en-only">10 min</span>
+                <span>10 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Okul Bursu Var Mı? 2026 Türk Aileler İçin Kapsamlı Rehber</span>
-              <span class="en-only">Scholarships at Dubai International Schools: 2026 Guide</span>
+              <span>Dubai'de Okul Bursu Var Mı? 2026 Türk Aileler İçin Kapsamlı Rehber</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">GEMS, Repton ve Nord Anglia'da akademik, spor ve sanat bursları nasıl alınır? Başvuru koşulları ve şirket eğitim yardımı rehberi.</span>
-              <span class="en-only">Merit, sport and arts bursaries at Dubai's top international schools — how to apply, what schools look for, and the employer education allowance option.</span>
+              <span>GEMS, Repton ve Nord Anglia'da akademik, spor ve sanat bursları nasıl alınır? Başvuru koşulları ve şirket eğitim yardımı rehberi.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1337,21 +1190,17 @@
             <div class="blog-card-meta">
               <span>23 Haziran 2026</span>
               <span>
-                <span class="tr-only">11 dk</span>
-                <span class="en-only">11 min</span>
+                <span>11 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Abu Dhabi'de Uluslararası Okul: ADEK, Ücretler ve 2026 Rehberi</span>
-              <span class="en-only">International Schools in Abu Dhabi: ADEK, Fees & 2026 Guide</span>
+              <span>Abu Dhabi'de Uluslararası Okul: ADEK, Ücretler ve 2026 Rehberi</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">BSAK, Cranleigh, AGS ve Repton Abu Dhabi başta olmak üzere ADEK Outstanding okulları, ücretler ve Dubai'den farkı.</span>
-              <span class="en-only">BSAK, Cranleigh, AGS and Repton Abu Dhabi — ADEK ratings, fee ranges, and how Abu Dhabi compares to Dubai for Turkish families.</span>
+              <span>BSAK, Cranleigh, AGS ve Repton Abu Dhabi başta olmak üzere ADEK Outstanding okulları, ücretler ve Dubai'den farkı.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1367,21 +1216,17 @@
             <div class="blog-card-meta">
               <span>23 Haziran 2026</span>
               <span>
-                <span class="tr-only">11 dk</span>
-                <span class="en-only">11 min</span>
+                <span>11 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Okul Başvurusu Nasıl Yapılır? Adım Adım Kılavuz</span>
-              <span class="en-only">How to Apply to a Dubai International School: Step-by-Step 2026</span>
+              <span>Dubai'de Okul Başvurusu Nasıl Yapılır? Adım Adım Kılavuz</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Başvuru formu, belgeler, değerlendirme günü hazırlığı ve reddedilme yönetimi. Kayıt rehberinden farklı: yalnızca başvuru aşamasına odaklı.</span>
-              <span class="en-only">Application form, required documents, assessment day prep, and what to do if rejected — focused entirely on the application stage.</span>
+              <span>Başvuru formu, belgeler, değerlendirme günü hazırlığı ve reddedilme yönetimi. Kayıt rehberinden farklı: yalnızca başvuru aşamasına odaklı.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1397,21 +1242,17 @@
             <div class="blog-card-meta">
               <span>23 Haziran 2026</span>
               <span>
-                <span class="tr-only">12 dk</span>
-                <span class="en-only">12 min</span>
+                <span>12 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Uluslararası Okul Mülakatında Gerçekten Sorulan Sorular</span>
-              <span class="en-only">Real Questions Asked in International School Interviews</span>
+              <span>Uluslararası Okul Mülakatında Gerçekten Sorulan Sorular</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">İlkokul, ortaokul ve lise için yaş grubuna göre çocuk soruları; ebeveyn görüşmesinde sorulanlar ve her biri için ne söylemek işe yarıyor.</span>
-              <span class="en-only">Student questions by age group (primary, middle, secondary) plus parent meeting questions — with guidance on what works and what to avoid.</span>
+              <span>İlkokul, ortaokul ve lise için yaş grubuna göre çocuk soruları; ebeveyn görüşmesinde sorulanlar ve her biri için ne söylemek işe yarıyor.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1427,21 +1268,17 @@
             <div class="blog-card-meta">
               <span>22 Haziran 2026</span>
               <span>
-                <span class="tr-only">10 dk</span>
-                <span class="en-only">10 min</span>
+                <span>10 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Türkiye'nin En Pahalı Okulları mı, Dubai'nin En İyileri mi? 2026 Ücret ve Kalite Karşılaştırması</span>
-              <span class="en-only">Turkey's Most Expensive Schools vs Dubai's Best: 2026 Fees &amp; Quality Compared</span>
+              <span>Türkiye'nin En Pahalı Okulları mı, Dubai'nin En İyileri mi? 2026 Ücret ve Kalite Karşılaştırması</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Koç Okulu, Robert Kolej ve BIS ücretleri Dubai'nin KHDA Outstanding okullarıyla karşılaştırıldığında ne çıkıyor? 2026-27 gerçek rakamlar ve müfredat analizi.</span>
-              <span class="en-only">Robert Kolej, Koç Okulu vs KHDA Outstanding Dubai schools — real 2026-27 fee comparison, curricula, and university outcomes.</span>
+              <span>Koç Okulu, Robert Kolej ve BIS ücretleri Dubai'nin KHDA Outstanding okullarıyla karşılaştırıldığında ne çıkıyor? 2026-27 gerçek rakamlar ve müfredat analizi.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1457,21 +1294,17 @@
             <div class="blog-card-meta">
               <span>21 Haziran 2026</span>
               <span>
-                <span class="tr-only">8 dk</span>
-                <span class="en-only">8 min</span>
+                <span>8 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Gelecekte Hangi Meslekler Önem Kazanacak? Ebeveynlerin Şimdiden Bilmesi Gerekenler</span>
-              <span class="en-only">Which Jobs Will Matter in the Future? What Parents Need to Know Now</span>
+              <span>Gelecekte Hangi Meslekler Önem Kazanacak? Ebeveynlerin Şimdiden Bilmesi Gerekenler</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Dünya Ekonomik Forumu, McKinsey ve LinkedIn verilerine göre 2030'da önem kazanacak 7 meslek grubu ve çocuğunuzu şimdiden nasıl hazırlayabileceğiniz.</span>
-              <span class="en-only">WEF, McKinsey and LinkedIn data on 7 job categories gaining importance by 2030 — and how to prepare your child now.</span>
+              <span>Dünya Ekonomik Forumu, McKinsey ve LinkedIn verilerine göre 2030'da önem kazanacak 7 meslek grubu ve çocuğunuzu şimdiden nasıl hazırlayabileceğiniz.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1486,21 +1319,17 @@
             <div class="blog-card-meta">
               <span>14 Haziran 2026</span>
               <span>
-                <span class="tr-only">5 dk</span>
-                <span class="en-only">5 min</span>
+                <span>5 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Çocuğunuz Dünyayla Yarışıyor: Dünya Ortalamasındaki Yeri Nerede? Ücretsiz Bir Test Keşfettik</span>
-              <span class="en-only">How Does Your Child Compare to the World? We Found a Free Test</span>
+              <span>Çocuğunuz Dünyayla Yarışıyor: Dünya Ortalamasındaki Yeri Nerede? Ücretsiz Bir Test Keşfettik</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Eduentry, 6-17 yaş arası çocukların akademik seviyesini UK, ABD, PISA ve IB çerçevelerinde ücretsiz olarak ölçüyor.</span>
-              <span class="en-only">Eduentry measures children aged 6–17 against UK, US, PISA and IB frameworks — completely free.</span>
+              <span>Eduentry, 6-17 yaş arası çocukların akademik seviyesini UK, ABD, PISA ve IB çerçevelerinde ücretsiz olarak ölçüyor.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1515,18 +1344,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>12 Haziran 2026</span>
-              <span><span class="tr-only">8 dk</span><span class="en-only">8 min</span></span>
+              <span><span>8 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Türkiye Eğitim Sistemi Neden Yetmiyor?</span>
-              <span class="en-only">Why the Turkish Education System Falls Short: An Expat Mother's Perspective</span>
+              <span>Türkiye Eğitim Sistemi Neden Yetmiyor?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">PISA rakamları, ezber odaklı müfredat, 17 sistem değişikliği ve İngilizce açığı. Yurt dışına taşınan Türk aileler için gerçeklik tespiti ve ne yapılması gerektiği.</span>
-              <span class="en-only">PISA data, rote learning, 17 curriculum changes in 20 years, and the English gap. What Turkish families relocating abroad need to know — and how to bridge it.</span>
+              <span>PISA rakamları, ezber odaklı müfredat, 17 sistem değişikliği ve İngilizce açığı. Yurt dışına taşınan Türk aileler için gerçeklik tespiti ve ne yapılması gerektiği.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1540,18 +1367,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>16 Haziran 2026</span>
-              <span><span class="tr-only">9 dk</span><span class="en-only">9 min</span></span>
+              <span><span>9 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Türkiye Her Yıl 46.000 Çocuğunu Yurt Dışına Gönderiyor</span>
-              <span class="en-only">Turkey Sends 46,000 Children Abroad Every Year</span>
+              <span>Türkiye Her Yıl 46.000 Çocuğunu Yurt Dışına Gönderiyor</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">TÜİK verilerine göre Türkiye'den yılda 46.399 çocuk ve genç yurt dışına göç ediyor. Rakamların, nedenlerin ve yaş gruplarına göre adaptasyon sürecinin arkasındaki gerçek.</span>
-              <span class="en-only">TÜİK data shows 46,399 children and young people leave Turkey every year. The numbers, the reasons, and what age-based adaptation really looks like.</span>
+              <span>TÜİK verilerine göre Türkiye'den yılda 46.399 çocuk ve genç yurt dışına göç ediyor. Rakamların, nedenlerin ve yaş gruplarına göre adaptasyon sürecinin arkasındaki gerçek.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1565,18 +1390,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>11 Haziran 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
+              <span><span>12 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Çocuğum Lisedeyken Yurt Dışına Taşınsak Nasıl Adapte Olur?</span>
-              <span class="en-only">Moving Abroad During High School: Adaptation, Curriculum & University Path</span>
+              <span>Çocuğum Lisedeyken Yurt Dışına Taşınsak Nasıl Adapte Olur?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Lise çağında yurt dışına taşınmanın sosyal ve duygusal boyutu, IB ve AP müfredatlarında doğru zamanlama, üniversite yolculuğuna etkileri ve Edualist'in rehberlik yaklaşımı.</span>
-              <span class="en-only">The social and emotional side of relocating in high school, critical timing in IB and AP curricula, university admissions impact, and how Edualist guides families through it.</span>
+              <span>Lise çağında yurt dışına taşınmanın sosyal ve duygusal boyutu, IB ve AP müfredatlarında doğru zamanlama, üniversite yolculuğuna etkileri ve Edualist'in rehberlik yaklaşımı.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1590,18 +1413,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>10 Haziran 2026</span>
-              <span><span class="tr-only">14 dk</span><span class="en-only">14 min</span></span>
+              <span><span>14 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">BAE'de Uluslararası Okul Seçimi: IB, British, Amerikan Rehberi</span>
-              <span class="en-only">International Schools in the UAE: IB, British & American Guide</span>
+              <span>BAE'de Uluslararası Okul Seçimi: IB, British, Amerikan Rehberi</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">BAE'de 1.600'den fazla uluslararası okul var. IB, British, Amerikan ve Fransız müfredatlarını karşılaştır; ücretleri, başvuru sürecini ve şehir farklılıklarını öğren.</span>
-              <span class="en-only">Over 1,600 international schools in the UAE. Compare IB, British, American and French curricula, fee ranges, admission process and city differences.</span>
+              <span>BAE'de 1.600'den fazla uluslararası okul var. IB, British, Amerikan ve Fransız müfredatlarını karşılaştır; ücretleri, başvuru sürecini ve şehir farklılıklarını öğren.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1614,18 +1435,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>10 Haziran 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
+              <span><span>12 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">"Kızım Sınıfın Zemininde Yatıyordu" — Yanlış Okulu Seçmenin Bedeli</span>
-              <span class="en-only">My Daughter Was Lying on the Classroom Floor — The Cost of Choosing the Wrong School</span>
+              <span>"Kızım Sınıfın Zemininde Yatıyordu" — Yanlış Okulu Seçmenin Bedeli</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Singapur. 4 yaşında. Okul aşığıydı. Sonra her şey değişti. Özlem Çimen'den yanlış okul seçiminin gerçek bedeli ve doğru okulu bulmanın yolu.</span>
-              <span class="en-only">Singapore. Age 4. She loved school. Then everything changed. Özlem Çimen on the real cost of choosing the wrong school — and how to find the right one.</span>
+              <span>Singapur. 4 yaşında. Okul aşığıydı. Sonra her şey değişti. Özlem Çimen'den yanlış okul seçiminin gerçek bedeli ve doğru okulu bulmanın yolu.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1639,18 +1458,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>10 Haziran 2026</span>
-              <span><span class="tr-only">11 dk</span><span class="en-only">11 min</span></span>
+              <span><span>11 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">"Oğlum 3 Yıl Gerideydi" — Müdürün Odasında Nefes Alamadığım Gün</span>
-              <span class="en-only">"My Son's English Was Good" — The Day the Principal Left Me Speechless</span>
+              <span>"Oğlum 3 Yıl Gerideydi" — Müdürün Odasında Nefes Alamadığım Gün</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Türkiye'de sınıfının en iyilerinden biriydi. Müdür "üç yıl geride" dedi. O an her şeyi değiştirdi. Özlem Çimen'den kişisel bir deneyim.</span>
-              <span class="en-only">He was one of the best in his class in Turkey. The principal said "three years behind." That moment changed everything. A personal story from Özlem Çimen.</span>
+              <span>Türkiye'de sınıfının en iyilerinden biriydi. Müdür "üç yıl geride" dedi. O an her şeyi değiştirdi. Özlem Çimen'den kişisel bir deneyim.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1664,18 +1481,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>10 Haziran 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
+              <span><span>12 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Çocuğunuz Yurt Dışında Okumaya Hazır Mı? 5 Boyutlu Değerlendirme</span>
-              <span class="en-only">Is Your Child Ready to Study Abroad? A 5-Dimension Assessment</span>
+              <span>Çocuğunuz Yurt Dışında Okumaya Hazır Mı? 5 Boyutlu Değerlendirme</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Vizeler çıkmadan önce sormanız gereken soru. Duygusal, dil, akademik, sosyal ve aile boyutlarında pratik hazırlık rehberi.</span>
-              <span class="en-only">The question to ask before the visas are booked. Practical readiness guide across emotional, language, academic, social and family dimensions.</span>
+              <span>Vizeler çıkmadan önce sormanız gereken soru. Duygusal, dil, akademik, sosyal ve aile boyutlarında pratik hazırlık rehberi.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1689,18 +1504,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>9 Haziran 2026</span>
-              <span><span class="tr-only">13 dk</span><span class="en-only">13 min</span></span>
+              <span><span>13 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Türk Eğitim Sisteminden Uluslararası Okula Geçiş: Her Ailenin Yaşadığı 7 Zorluk</span>
-              <span class="en-only">From Turkish School to International School: 7 Challenges Every Family Faces</span>
+              <span>Türk Eğitim Sisteminden Uluslararası Okula Geçiş: Her Ailenin Yaşadığı 7 Zorluk</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">MEB'den British veya IB okuluna geçişin gerçek yüzü. Özlem Çimen'den hem annelik hem danışmanlık deneyimiyle pratik rehber.</span>
-              <span class="en-only">The real face of transitioning from the Turkish national curriculum to international school. Practical guide from Özlem Çimen's experience as both a mother and consultant.</span>
+              <span>MEB'den British veya IB okuluna geçişin gerçek yüzü. Özlem Çimen'den hem annelik hem danışmanlık deneyimiyle pratik rehber.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1714,18 +1527,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>8 Haziran 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
+              <span><span>12 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'nin En İyi Uluslararası Okulları: KHDA Outstanding Listesi</span>
-              <span class="en-only">Dubai's Best International Schools: KHDA Outstanding List</span>
+              <span>Dubai'nin En İyi Uluslararası Okulları: KHDA Outstanding Listesi</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">23 Outstanding okul, müfredat karşılaştırması ve Özlem Çimen'den birebir değerlendirmeler. Türk aileler için rehber.</span>
-              <span class="en-only">23 Outstanding-rated schools, curriculum comparison and personal coaching notes from Özlem Çimen for Turkish families.</span>
+              <span>23 Outstanding okul, müfredat karşılaştırması ve Özlem Çimen'den birebir değerlendirmeler. Türk aileler için rehber.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1739,18 +1550,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>7 Haziran 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Uluslararası Okul Mülakatı Nasıl Geçilir?</span>
-              <span class="en-only">How to Pass an International School Interview</span>
+              <span>Uluslararası Okul Mülakatı Nasıl Geçilir?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Yazılı sınav, çocuk mülakatı, ebeveyn görüşmesi — 30 günlük hazırlık planı ve sık sorulan sorulara yanıtlar.</span>
-              <span class="en-only">Written test, child interview, parent meeting — a 30-day preparation plan and answers to the most common questions.</span>
+              <span>Yazılı sınav, çocuk mülakatı, ebeveyn görüşmesi — 30 günlük hazırlık planı ve sık sorulan sorulara yanıtlar.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1764,18 +1573,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>7 Haziran 2026</span>
-              <span><span class="tr-only">9 dk</span><span class="en-only">9 min</span></span>
+              <span><span>9 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Kanada'da Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
-              <span class="en-only">School Enrolment in Canada: Step-by-Step Guide for Turkish Families</span>
+              <span>Kanada'da Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Ontario, BC, Quebec — sistem farklılıkları, devlet vs özel okul, dil bariyeri ve 7 adımlı kayıt süreci.</span>
-              <span class="en-only">Ontario, BC, Quebec — system differences, public vs private school, language barrier and the 7-step registration process.</span>
+              <span>Ontario, BC, Quebec — sistem farklılıkları, devlet vs özel okul, dil bariyeri ve 7 adımlı kayıt süreci.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1789,18 +1596,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>7 Haziran 2026</span>
-              <span><span class="tr-only">11 dk</span><span class="en-only">11 min</span></span>
+              <span><span>11 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Üçüncü Kültür Çocuğu (TCK): Kimlik, Avantajlar ve Zorluklar</span>
-              <span class="en-only">Third Culture Kids (TCK): Identity, Advantages and Challenges</span>
+              <span>Üçüncü Kültür Çocuğu (TCK): Kimlik, Avantajlar ve Zorluklar</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Yurt dışında büyüyen çocuklar neden "hiçbir yere ait değilim" hisseder? Ebeveynler için 5 pratik strateji.</span>
-              <span class="en-only">Why do children raised abroad feel they "don't belong anywhere"? Five practical strategies for parents.</span>
+              <span>Yurt dışında büyüyen çocuklar neden "hiçbir yere ait değilim" hisseder? Ebeveynler için 5 pratik strateji.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1814,18 +1619,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>7 Haziran 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Çocuğumu Yurt Dışında Okutmalı Mıyım?</span>
-              <span class="en-only">Should I Send My Child to School Abroad?</span>
+              <span>Çocuğumu Yurt Dışında Okutmalı Mıyım?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Artılar, eksiler, yaş faktörü ve aile profili — bu kararı vermeden önce bilmeniz gereken her şey.</span>
-              <span class="en-only">Pros, cons, the age factor and family profile assessment — everything you need to know before deciding.</span>
+              <span>Artılar, eksiler, yaş faktörü ve aile profili — bu kararı vermeden önce bilmeniz gereken her şey.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1839,18 +1642,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>7 Haziran 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Yurt Dışı Eğitim Ne Kadara Mal Olur?</span>
-              <span class="en-only">How Much Does International Education Cost?</span>
+              <span>Yurt Dışı Eğitim Ne Kadara Mal Olur?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Dubai, Londra, Berlin, Paris, Amsterdam ve Milano — gerçekçi rakamlarla ülke ülke maliyet karşılaştırması.</span>
-              <span class="en-only">Dubai, London, Berlin, Paris, Amsterdam and Milan — a realistic city-by-city cost comparison.</span>
+              <span>Dubai, Londra, Berlin, Paris, Amsterdam ve Milano — gerçekçi rakamlarla ülke ülke maliyet karşılaştırması.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1864,18 +1665,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>7 Haziran 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
+              <span><span>12 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">IB mi, A-Level mi, Amerikan Sistemi mi?</span>
-              <span class="en-only">IB, A-Level or AP? Curriculum Comparison</span>
+              <span>IB mi, A-Level mi, Amerikan Sistemi mi?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Üç büyük uluslararası müfredat arasındaki gerçek farklar — ve hangi çocuk için hangisi doğru?</span>
-              <span class="en-only">The real differences between the three major international curricula — and which is right for your child.</span>
+              <span>Üç büyük uluslararası müfredat arasındaki gerçek farklar — ve hangi çocuk için hangisi doğru?</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -1890,21 +1689,17 @@
             <div class="blog-card-meta">
               <span>14 Haziran 2026</span>
               <span>
-                <span class="tr-only">7 dk</span>
-                <span class="en-only">7 min</span>
+                <span>7 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">İngilizcesi Yetersiz Çocuk Dubai Okuluna Nasıl Uyum Sağlar?</span>
-              <span class="en-only">How Does a Child with Limited English Adapt to a Dubai School?</span>
+              <span>İngilizcesi Yetersiz Çocuk Dubai Okuluna Nasıl Uyum Sağlar?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">EAL programları nedir, uyum süreci yaşa göre nasıl değişir, okul seçiminde ne sorulmalı ve evde ne yapılabilir?</span>
-              <span class="en-only">What are EAL programmes, how does adaptation vary by age, what to ask at school visits, and what can you do at home?</span>
+              <span>EAL programları nedir, uyum süreci yaşa göre nasıl değişir, okul seçiminde ne sorulmalı ve evde ne yapılabilir?</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1919,21 +1714,17 @@
             <div class="blog-card-meta">
               <span>7 Haziran 2026</span>
               <span>
-                <span class="tr-only">8 dk</span>
-                <span class="en-only">8 min</span>
+                <span>8 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'ye Gelmeden Önce Bilmeniz Gerekenler</span>
-              <span class="en-only">What You Need to Know Before Moving to Dubai</span>
+              <span>Dubai'ye Gelmeden Önce Bilmeniz Gerekenler</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Okul kayıt zamanlaması, gerçek maliyet, müfredat seçimi ve kültürel adaptasyon — Dubai'ye taşınmadan önce 7 kritik gerçek.</span>
-              <span class="en-only">School enrolment timing, true costs, curriculum choice and cultural adaptation — 7 critical things to know before relocating to Dubai.</span>
+              <span>Okul kayıt zamanlaması, gerçek maliyet, müfredat seçimi ve kültürel adaptasyon — Dubai'ye taşınmadan önce 7 kritik gerçek.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1949,21 +1740,17 @@
             <div class="blog-card-meta">
               <span>7 Haziran 2026 · 7 June 2026</span>
               <span>
-                <span class="tr-only">9 dk</span>
-                <span class="en-only">9 min</span>
+                <span>9 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">İngiltere'de Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
-              <span class="en-only">UK School Enrolment: Step-by-Step Guide for Turkish Families</span>
+              <span>İngiltere'de Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">State school, independent school, Ofsted sistemi, 11+ sınavı ve burs fırsatları — İngiltere'de okul seçiminin her boyutu.</span>
-              <span class="en-only">State vs independent school, Ofsted ratings, 11+ exams and scholarship opportunities — every dimension of UK school selection.</span>
+              <span>State school, independent school, Ofsted sistemi, 11+ sınavı ve burs fırsatları — İngiltere'de okul seçiminin her boyutu.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -1978,18 +1765,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>7 Haziran 2026 · 7 June 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Fransa'da Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
-              <span class="en-only">School Enrolment in France: Step-by-Step Guide for Turkish Families</span>
+              <span>Fransa'da Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">École, Collège, Lycée ve Baccalauréat — Fransız okul sistemini bizzat deneyimlemiş bir eğitim koçundan kapsamlı rehber.</span>
-              <span class="en-only">École, Collège, Lycée and Baccalauréat — a comprehensive guide from an education coach who raised her own children in French schools.</span>
+              <span>École, Collège, Lycée ve Baccalauréat — Fransız okul sistemini bizzat deneyimlemiş bir eğitim koçundan kapsamlı rehber.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -2003,18 +1788,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>7 Haziran 2026 · 7 June 2026</span>
-              <span><span class="tr-only">9 dk</span><span class="en-only">9 min</span></span>
+              <span><span>9 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Hollanda'da Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
-              <span class="en-only">School Enrolment in the Netherlands: Step-by-Step Guide for Turkish Families</span>
+              <span>Hollanda'da Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">VWO, HAVO, VMBO sistemi, CITO testi, ISK geçiş programı ve Amsterdam/Den Haag okul seçenekleri.</span>
-              <span class="en-only">VWO, HAVO, VMBO tracks, the CITO test, ISK transition programme and school options in Amsterdam &amp; The Hague.</span>
+              <span>VWO, HAVO, VMBO sistemi, CITO testi, ISK geçiş programı ve Amsterdam/Den Haag okul seçenekleri.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -2028,18 +1811,16 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>7 Haziran 2026 · 7 June 2026</span>
-              <span><span class="tr-only">9 dk</span><span class="en-only">9 min</span></span>
+              <span><span>9 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">İtalya'da Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
-              <span class="en-only">School Enrolment in Italy: Step-by-Step Guide for Turkish Families</span>
+              <span>İtalya'da Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Scuola Primaria'dan Liceo'ya — Codice Fiscale, MIUR başvurusu ve Milano/Roma okul karşılaştırması.</span>
-              <span class="en-only">From Scuola Primaria to Liceo — Codice Fiscale, MIUR enrolment and a Milan vs Rome school comparison.</span>
+              <span>Scuola Primaria'dan Liceo'ya — Codice Fiscale, MIUR başvurusu ve Milano/Roma okul karşılaştırması.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →
+              <span>Devamını Oku</span> →
             </span>
           </div>
         </a>
@@ -2054,21 +1835,17 @@
             <div class="blog-card-meta">
               <span>7 Haziran 2026 · 7 June 2026</span>
               <span>
-                <span class="tr-only">10 dk</span>
-                <span class="en-only">10 min</span>
+                <span>10 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Almanya'da Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
-              <span class="en-only">School Enrolment in Germany: Step-by-Step Guide for Turkish Families</span>
+              <span>Almanya'da Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Gymnasium, Realschule, Gesamtschule — Almanya'nın çok katmanlı sisteminde doğru okulu bulmak, Almanca dil hazırlığı ve 8 adımlı kayıt rehberi.</span>
-              <span class="en-only">Gymnasium, Realschule, Gesamtschule — navigating Germany's layered school system, language preparation and an 8-step enrolment guide.</span>
+              <span>Gymnasium, Realschule, Gesamtschule — Almanya'nın çok katmanlı sisteminde doğru okulu bulmak, Almanca dil hazırlığı ve 8 adımlı kayıt rehberi.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -2084,21 +1861,17 @@
             <div class="blog-card-meta">
               <span>7 Haziran 2026 · 7 June 2026</span>
               <span>
-                <span class="tr-only">8 dk</span>
-                <span class="en-only">8 min</span>
+                <span>8 dk</span>
               </span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
-              <span class="en-only">Dubai School Enrolment: Step-by-Step Guide for Turkish Families</span>
+              <span>Dubai'de Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">KHDA sistemi, başvuru takvimi, gerekli belgeler ve ücret yapısı — kayıt sürecinin her adımı.</span>
-              <span class="en-only">KHDA ratings, application timeline, required documents and fee structures — every step of the enrolment process.</span>
+              <span>KHDA sistemi, başvuru takvimi, gerekli belgeler ve ücret yapısı — kayıt sürecinin her adımı.</span>
             </div>
             <span class="blog-card-readmore">
-              <span class="tr-only">Devamını Oku</span>
-              <span class="en-only">Read More</span>
+              <span>Devamını Oku</span>
               →
             </span>
           </div>
@@ -2114,17 +1887,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>3 Ekim 2026</span>
-              <span><span class="tr-only">8 dk</span><span class="en-only">8 min</span></span>
+              <span><span>8 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Lise Öğrencisi Nasıl İş Deneyimi Edinir? Üniversiteye Fark Yaratan 5 Yol</span>
-              <span class="en-only">How Can a High School Student Gain Work Experience? 5 Ways That Help University Applications</span>
+              <span>Lise Öğrencisi Nasıl İş Deneyimi Edinir? Üniversiteye Fark Yaratan 5 Yol</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Staj, gölgeleme, NGO projesi ve micro-internship: resmi staj imkânı olmadan gerçek iş deneyimi edinmenin 5 somut yolu ve başvuruda nasıl anlatılacağı.</span>
-              <span class="en-only">Job shadowing, NGO projects, freelance work and more: 5 practical routes to real work experience for high school students and how to present them in applications.</span>
+              <span>Staj, gölgeleme, NGO projesi ve micro-internship: resmi staj imkânı olmadan gerçek iş deneyimi edinmenin 5 somut yolu ve başvuruda nasıl anlatılacağı.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2137,17 +1908,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>3 Ekim 2026</span>
-              <span><span class="tr-only">9 dk</span><span class="en-only">9 min</span></span>
+              <span><span>9 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Herkes Piyano Çalıyor — Üniversite Başvurusunda Hangi Aktiviteler Gerçekten Fark Yaratır?</span>
-              <span class="en-only">Everyone Plays Piano — What Activities Do Universities Actually Notice?</span>
+              <span>Herkes Piyano Çalıyor — Üniversite Başvurusunda Hangi Aktiviteler Gerçekten Fark Yaratır?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Derinlik mi, genişlik mi? IB ve Türk lise öğrencileri için yurt dışı üniversiteye gerçekten fark yaratan 5 aktivite türü ve kaçınılması gereken yaygın hatalar.</span>
-              <span class="en-only">Depth vs. breadth: the 5 activity types that genuinely differentiate applicants and the 4 common mistakes that hurt university applications.</span>
+              <span>Derinlik mi, genişlik mi? IB ve Türk lise öğrencileri için yurt dışı üniversiteye gerçekten fark yaratan 5 aktivite türü ve kaçınılması gereken yaygın hatalar.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2160,17 +1929,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>3 Ekim 2026</span>
-              <span><span class="tr-only">8 dk</span><span class="en-only">8 min</span></span>
+              <span><span>8 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Her Yaz Programı Eşit Değil: Üniversiteye Katkısı Olan Programı Nasıl Seçersin?</span>
-              <span class="en-only">Not All Summer Programmes Are Equal: How to Choose One That Actually Helps Your Application</span>
+              <span>Her Yaz Programı Eşit Değil: Üniversiteye Katkısı Olan Programı Nasıl Seçersin?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Aktif görev, somut çıktı ve hard+soft skill dengesi: üniversite başvurusuna gerçekten katkı sağlayan yaz programının 3 kriteri ve kaçınılması gereken boş programlar.</span>
-              <span class="en-only">Active role, tangible output, hard+soft skill balance: the 3 criteria for a summer programme that genuinely strengthens a university application.</span>
+              <span>Aktif görev, somut çıktı ve hard+soft skill dengesi: üniversite başvurusuna gerçekten katkı sağlayan yaz programının 3 kriteri ve kaçınılması gereken boş programlar.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2182,17 +1949,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>1 Ekim 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Türkiye'den Yurt Dışına: Global Üniversitelere Hazırlık Lisede Ne Zaman Başlamalı?</span>
-              <span class="en-only">Preparing for Global Universities: When Should High School Prep Start?</span>
+              <span>Türkiye'den Yurt Dışına: Global Üniversitelere Hazırlık Lisede Ne Zaman Başlamalı?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">ABD, İngiltere ve Avrupa üniversiteleri için 9-12. sınıf yol haritası. Not ortalamasının ötesinde profil inşası ve doğru zamanda doğru adımlar.</span>
-              <span class="en-only">The 9–12 roadmap for US, UK and European universities. What matters beyond GPA, and why timing every step correctly is the decisive factor.</span>
+              <span>ABD, İngiltere ve Avrupa üniversiteleri için 9-12. sınıf yol haritası. Not ortalamasının ötesinde profil inşası ve doğru zamanda doğru adımlar.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2205,17 +1970,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>1 Ekim 2026</span>
-              <span><span class="tr-only">9 dk</span><span class="en-only">9 min</span></span>
+              <span><span>9 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Her Çocuk Aynı Yöntemle Öğrenemez: Farklılaştırılmış Öğretim Nedir?</span>
-              <span class="en-only">Differentiated Instruction: Why Not Every Child Learns the Same Way</span>
+              <span>Her Çocuk Aynı Yöntemle Öğrenemez: Farklılaştırılmış Öğretim Nedir?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Görsel mi, işitsel mi, kinestetik mi? Geleneksel sınıf neden her stile hitap etmez ve akademik koçluk bu farkı nasıl kapatır.</span>
-              <span class="en-only">Visual, auditory, or kinesthetic? Why the traditional classroom fails each type — and how academic coaching fills the gap.</span>
+              <span>Görsel mi, işitsel mi, kinestetik mi? Geleneksel sınıf neden her stile hitap etmez ve akademik koçluk bu farkı nasıl kapatır.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2228,17 +1991,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>1 Ekim 2026</span>
-              <span><span class="tr-only">8 dk</span><span class="en-only">8 min</span></span>
+              <span><span>8 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">LGS Sürecinde "Ders Çalış" Savaşlarını Bitirmenin 3 Yolu</span>
-              <span class="en-only">LGS Prep: 3 Ways to End "Go Study!" Wars at Home</span>
+              <span>LGS Sürecinde "Ders Çalış" Savaşlarını Bitirmenin 3 Yolu</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">"Ders çalış" demek neden ters tepiyor? Psikolojik reaktans, hesap verebilirlik ve dil değişimi ile ev ortamınızı yeniden işlevsel hale getirin.</span>
-              <span class="en-only">Why does telling your child to "study" backfire? Psychological reactance, accountability, and a language shift that rebuilds the home study environment.</span>
+              <span>"Ders çalış" demek neden ters tepiyor? Psikolojik reaktans, hesap verebilirlik ve dil değişimi ile ev ortamınızı yeniden işlevsel hale getirin.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2252,17 +2013,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>1 Ekim 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Başarılı Öğrenciler IB Programında Neden Zorlanıyor?</span>
-              <span class="en-only">Why High-Achieving Students Struggle with the IB</span>
+              <span>Başarılı Öğrenciler IB Programında Neden Zorlanıyor?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">IB zekayı değil, zaman yönetimini test eder. Extended Essay, TOK ve iç değerlendirmelerin Türk öğrencilerde yarattığı zorluklar ve koçluğun farkı.</span>
-              <span class="en-only">The IB tests time management, not intelligence. The specific challenges Turkish students face with Extended Essay, TOK and internal assessments — and how coaching helps.</span>
+              <span>IB zekayı değil, zaman yönetimini test eder. Extended Essay, TOK ve iç değerlendirmelerin Türk öğrencilerde yarattığı zorluklar ve koçluğun farkı.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2275,17 +2034,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>1 Ekim 2026</span>
-              <span><span class="tr-only">7 dk</span><span class="en-only">7 min</span></span>
+              <span><span>7 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Eğitim Koçu Ne Yapar? Özel Öğretmen mi, Koç mu?</span>
-              <span class="en-only">What Does an Education Coach Do? Tutor vs Coach</span>
+              <span>Eğitim Koçu Ne Yapar? Özel Öğretmen mi, Koç mu?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Seanslarda neler olur, hangi durumda koç hangisinde özel öğretmen doğru seçimdir? 5 gerçekçi senaryo ile karar rehberi.</span>
-              <span class="en-only">What actually happens in coaching sessions, and when should you choose a tutor instead? A decision guide with 5 real-life scenarios.</span>
+              <span>Seanslarda neler olur, hangi durumda koç hangisinde özel öğretmen doğru seçimdir? 5 gerçekçi senaryo ile karar rehberi.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2297,17 +2054,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>30 Eylül 2026</span>
-              <span><span class="tr-only">8 dk</span><span class="en-only">8 min</span></span>
+              <span><span>8 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Akademik Koç Nedir? Özel Öğretmen ve Okul Rehberinden Farkı</span>
-              <span class="en-only">What Is an Academic Coach? How It Differs from Tutoring</span>
+              <span>Akademik Koç Nedir? Özel Öğretmen ve Okul Rehberinden Farkı</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Akademik koçluk konu anlatmaz, sistem kurar. IB, A-Level ve expat öğrenciler için fark yaratan destek modeli.</span>
-              <span class="en-only">Academic coaching builds systems, not just subject knowledge. The support model that makes a real difference for IB and expat students.</span>
+              <span>Akademik koçluk konu anlatmaz, sistem kurar. IB, A-Level ve expat öğrenciler için fark yaratan destek modeli.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2320,17 +2075,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>30 Eylül 2026</span>
-              <span><span class="tr-only">9 dk</span><span class="en-only">9 min</span></span>
+              <span><span>9 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">IB'ye Geçişte Akademik Koçluk: İlk 3 Ay Neden Kritiktir?</span>
-              <span class="en-only">Academic Coaching During IB Transition: Why the First 3 Months Matter</span>
+              <span>IB'ye Geçişte Akademik Koçluk: İlk 3 Ay Neden Kritiktir?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">IB'ye geçen öğrenciler iki zorluğu aynı anda yaşar: yeni okul kültürü ve yabancı bir akademik sistem. İlk dönem alışkanlıkları iki yılı şekillendirir.</span>
-              <span class="en-only">Students transitioning to IB face a new school culture and an unfamiliar academic system simultaneously. The habits formed in the first term define the next two years.</span>
+              <span>IB'ye geçen öğrenciler iki zorluğu aynı anda yaşar: yeni okul kültürü ve yabancı bir akademik sistem. İlk dönem alışkanlıkları iki yılı şekillendirir.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2343,17 +2096,15 @@
           <div class="blog-card-body">
             <div class="blog-card-meta">
               <span>30 Eylül 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Expat Çocuklar için Akademik Destek: Aileler için Tam Rehber</span>
-              <span class="en-only">Academic Support for Expat Children in Dubai: A Complete Guide</span>
+              <span>Dubai'de Expat Çocuklar için Akademik Destek: Aileler için Tam Rehber</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Dubai'ye taşınan expat aileler için çocuklarının akademik adaptasyonu: 3 aşama, aile rolü ve koçluğun farkı.</span>
-              <span class="en-only">How expat families in Dubai can support their children's academic adaptation: the 3 stages, the parent role, and how coaching makes the difference.</span>
+              <span>Dubai'ye taşınan expat aileler için çocuklarının akademik adaptasyonu: 3 aşama, aile rolü ve koçluğun farkı.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2365,18 +2116,16 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span class="tr-only">3 Ekim 2026</span><span class="en-only">3 October 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span>3 Ekim 2026</span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Çocuğum Uluslararası Okula Geçiyor: Ailelerin Yaptığı 5 Kritik Hata</span>
-              <span class="en-only">My Child Is Switching to an International School: 5 Mistakes Families Make</span>
+              <span>Çocuğum Uluslararası Okula Geçiyor: Ailelerin Yaptığı 5 Kritik Hata</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Türk eğitiminden uluslararası okula geçişte en sık yapılan 5 hata ve her birinin pratik çözümü.</span>
-              <span class="en-only">The 5 most common mistakes when transitioning from Turkish schooling to an international school — and how to avoid each one.</span>
+              <span>Türk eğitiminden uluslararası okula geçişte en sık yapılan 5 hata ve her birinin pratik çözümü.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2388,18 +2137,16 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span class="tr-only">3 Ekim 2026</span><span class="en-only">3 October 2026</span>
-              <span><span class="tr-only">9 dk</span><span class="en-only">9 min</span></span>
+              <span>3 Ekim 2026</span>
+              <span><span>9 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Özel Ders mi, Akademik Koç mu? Farkı Bilen Ebeveyn Doğru Seçer</span>
-              <span class="en-only">Private Tutor vs Academic Coach: The Difference That Gets Results</span>
+              <span>Özel Ders mi, Akademik Koç mu? Farkı Bilen Ebeveyn Doğru Seçer</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Özel ders içerik öğretir; akademik koçluk sistem kurar. Hangisinin ne zaman daha etkili olduğunu karşılaştırmalı tablo ile açıklıyoruz.</span>
-              <span class="en-only">Tutoring teaches content; coaching builds systems. A comparison table and decision guide for parents.</span>
+              <span>Özel ders içerik öğretir; akademik koçluk sistem kurar. Hangisinin ne zaman daha etkili olduğunu karşılaştırmalı tablo ile açıklıyoruz.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2411,18 +2158,16 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span class="tr-only">3 Ekim 2026</span><span class="en-only">3 October 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
+              <span>3 Ekim 2026</span>
+              <span><span>12 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Çocuğum IB'ye Başlıyor: İlk Yılda Ne Beklemeli, Ne Yapmalı?</span>
-              <span class="en-only">My Child Is Starting IB: What to Expect in Year 1</span>
+              <span>Çocuğum IB'ye Başlıyor: İlk Yılda Ne Beklemeli, Ne Yapmalı?</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">IB DP birinci yıl takvimi, Kasım krizi, Extended Essay ne zaman başlar ve ailenin rolü. Sürprize yer bırakmayan pratik rehber.</span>
-              <span class="en-only">IB DP Year 1 timeline, the November crisis, when to start Extended Essay, and the parent's role. A practical guide with no surprises.</span>
+              <span>IB DP birinci yıl takvimi, Kasım krizi, Extended Essay ne zaman başlar ve ailenin rolü. Sürprize yer bırakmayan pratik rehber.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2434,18 +2179,16 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span class="tr-only">3 Ekim 2026</span><span class="en-only">3 October 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span>3 Ekim 2026</span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Çocuğum Akademik Olarak Geride Kalıyor: Sebebi ve Çözümü</span>
-              <span class="en-only">My Child Is Falling Behind Academically: Causes and Solutions</span>
+              <span>Çocuğum Akademik Olarak Geride Kalıyor: Sebebi ve Çözümü</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Notlar düşüyor, sınıfta geride kalıyor. 4 farklı kök neden ve her biri için farklı bir müdahale gerekiyor. Sebebi bulmadan çözüm olmaz.</span>
-              <span class="en-only">Grades dropping, falling behind in class. Four different root causes — each requiring a different intervention. Find the cause before applying the fix.</span>
+              <span>Notlar düşüyor, sınıfta geride kalıyor. 4 farklı kök neden ve her biri için farklı bir müdahale gerekiyor. Sebebi bulmadan çözüm olmaz.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2456,18 +2199,16 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span class="tr-only">5 Ekim 2026</span><span class="en-only">5 October 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span>5 Ekim 2026</span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Çocuğum Motivasyonunu Kaybetti: 3 Tip, 4 Haftalık Plan</span>
-              <span class="en-only">My Child Lost Motivation: 3 Types and a 4-Week Plan</span>
+              <span>Çocuğum Motivasyonunu Kaybetti: 3 Tip, 4 Haftalık Plan</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Motivasyon kaybı tek tip değil: dışsal, içsel ve tükenme farklı müdahale ister. Sebebi doğru teşhis etmeden yapılan her hamle boşa gider.</span>
-              <span class="en-only">Motivation loss isn't one-size-fits-all: extrinsic, intrinsic, and burnout each need a different approach. Wrong diagnosis, wasted effort.</span>
+              <span>Motivasyon kaybı tek tip değil: dışsal, içsel ve tükenme farklı müdahale ister. Sebebi doğru teşhis etmeden yapılan her hamle boşa gider.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2478,18 +2219,16 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span class="tr-only">5 Ekim 2026</span><span class="en-only">5 October 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span>5 Ekim 2026</span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Çocuğum Sınav Kaygısı Yaşıyor: Sebep ve Çözüm</span>
-              <span class="en-only">My Child Has Exam Anxiety: Causes and Solutions</span>
+              <span>Çocuğum Sınav Kaygısı Yaşıyor: Sebep ve Çözüm</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">3 belirti grubu, 4 aile hatası ve sınav kaygısını gerçekten azaltan yaklaşımlar. Hazırlık sistemi netleştikçe kaygı kendiliğinden düşer.</span>
-              <span class="en-only">Three symptom groups, four parenting mistakes, and approaches that actually reduce exam anxiety. The clearer the study system, the lower the anxiety.</span>
+              <span>3 belirti grubu, 4 aile hatası ve sınav kaygısını gerçekten azaltan yaklaşımlar. Hazırlık sistemi netleştikçe kaygı kendiliğinden düşer.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2500,18 +2239,16 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span class="tr-only">5 Ekim 2026</span><span class="en-only">5 October 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span>5 Ekim 2026</span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Çocuğum Okul Değiştiriyor: 8 Haftalık Geçiş Planı</span>
-              <span class="en-only">My Child Is Changing Schools: 8-Week Transition Plan</span>
+              <span>Çocuğum Okul Değiştiriyor: 8 Haftalık Geçiş Planı</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Okul değişikliği akademik kayıp riski taşır. 8 haftalık yapılandırılmış geçiş planı ile bu riski minimuma indirin.</span>
-              <span class="en-only">School changes carry academic risk. Use this 8-week structured transition plan to minimize disruption and help your child hit the ground running.</span>
+              <span>Okul değişikliği akademik kayıp riski taşır. 8 haftalık yapılandırılmış geçiş planı ile bu riski minimuma indirin.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2522,18 +2259,16 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span class="tr-only">5 Ekim 2026</span><span class="en-only">5 October 2026</span>
-              <span><span class="tr-only">10 dk</span><span class="en-only">10 min</span></span>
+              <span>5 Ekim 2026</span>
+              <span><span>10 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Çocuğum İngilizce Öğrenemiyor: 4 Sebep, Çözüm</span>
-              <span class="en-only">My Child Can't Learn English: 4 Causes and Solutions</span>
+              <span>Çocuğum İngilizce Öğrenemiyor: 4 Sebep, Çözüm</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">İngilizce öğrenmede takılıp kalmak çoğunlukla yöntem değil, motivasyon ve bağlam sorunudur. 4 farklı sebebin her biri için farklı müdahale.</span>
-              <span class="en-only">Being stuck in English is usually a motivation and context problem, not a method problem. Each of the 4 causes needs a different response.</span>
+              <span>İngilizce öğrenmede takılıp kalmak çoğunlukla yöntem değil, motivasyon ve bağlam sorunudur. 4 farklı sebebin her biri için farklı müdahale.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2544,18 +2279,16 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span class="tr-only">8 Ekim 2026</span><span class="en-only">8 October 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
+              <span>8 Ekim 2026</span>
+              <span><span>12 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'de IB Okulu Nasıl Seçilir? Aileler İçin Tam Rehber</span>
-              <span class="en-only">How to Choose an IB School in Dubai: A Complete Family Guide</span>
+              <span>Dubai'de IB Okulu Nasıl Seçilir? Aileler İçin Tam Rehber</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">DIA, GEMS World Academy, Nord Anglia — IB başarı oranları, KHDA notu, ücretler ve bekleme listeleri karşılaştırmalı olarak incelendi.</span>
-              <span class="en-only">DIA, GEMS World Academy, Nord Anglia — IB pass rates, KHDA ratings, fees and waitlists compared in full.</span>
+              <span>DIA, GEMS World Academy, Nord Anglia — IB başarı oranları, KHDA notu, ücretler ve bekleme listeleri karşılaştırmalı olarak incelendi.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2566,18 +2299,16 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span class="tr-only">8 Ekim 2026</span><span class="en-only">8 October 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
+              <span>8 Ekim 2026</span>
+              <span><span>12 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Türkiye'den Dubai'ye Taşınma: Çocuğun Okul Geçişi</span>
-              <span class="en-only">Moving from Turkey to Dubai: Managing Your Child's School Transition</span>
+              <span>Türkiye'den Dubai'ye Taşınma: Çocuğun Okul Geçişi</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">12 aylık taşınma takvimi, belge gereklilikleri, müfredat fark değerlendirmesi ve ilk sömestr destek planı.</span>
-              <span class="en-only">12-month relocation timeline, document requirements, curriculum gap assessment and first-semester support plan.</span>
+              <span>12 aylık taşınma takvimi, belge gereklilikleri, müfredat fark değerlendirmesi ve ilk sömestr destek planı.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2588,18 +2319,16 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span class="tr-only">8 Ekim 2026</span><span class="en-only">8 October 2026</span>
-              <span><span class="tr-only">11 dk</span><span class="en-only">11 min</span></span>
+              <span>8 Ekim 2026</span>
+              <span><span>11 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'de Özel Okul mu, Devlet Okulu mu? Expatlar İçin Gerçekler</span>
-              <span class="en-only">Private vs State School in Dubai: The Truth for Expat Families</span>
+              <span>Dubai'de Özel Okul mu, Devlet Okulu mu? Expatlar İçin Gerçekler</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Dubai devlet okulları expatlara neden kapalı? KHDA derecelendirme sistemi ve ücret bantlarına göre okul seçimi rehberi.</span>
-              <span class="en-only">Why Dubai government schools are closed to expats, the KHDA rating system explained, and how to choose by fee tier.</span>
+              <span>Dubai devlet okulları expatlara neden kapalı? KHDA derecelendirme sistemi ve ücret bantlarına göre okul seçimi rehberi.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2610,18 +2339,16 @@
           </div>
           <div class="blog-card-body">
             <div class="blog-card-meta">
-              <span class="tr-only">8 Ekim 2026</span><span class="en-only">8 October 2026</span>
-              <span><span class="tr-only">12 dk</span><span class="en-only">12 min</span></span>
+              <span>8 Ekim 2026</span>
+              <span><span>12 dk</span></span>
             </div>
             <div class="blog-card-title">
-              <span class="tr-only">Dubai'deki Türk Aileler İçin Okul ve Eğitim Rehberi 2026</span>
-              <span class="en-only">School and Education Guide for Turkish Families in Dubai 2026</span>
+              <span>Dubai'deki Türk Aileler İçin Okul ve Eğitim Rehberi 2026</span>
             </div>
             <div class="blog-card-excerpt">
-              <span class="tr-only">Türk Toplumu'nun okul tercihleri, Türkçe dil korunması stratejileri, üçüncü kültür çocuğu kimliği ve sık yapılan 4 hata.</span>
-              <span class="en-only">Turkish community school choices, Turkish language retention strategies, third culture kid identity and 4 common mistakes.</span>
+              <span>Türk Toplumu'nun okul tercihleri, Türkçe dil korunması stratejileri, üçüncü kültür çocuğu kimliği ve sık yapılan 4 hata.</span>
             </div>
-            <span class="blog-card-readmore"><span class="tr-only">Devamını Oku</span><span class="en-only">Read More</span> →</span>
+            <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
 
@@ -2639,14 +2366,12 @@
         </picture>
         <div class="blog-author-info">
           <p class="blog-author-role">
-            <span class="tr-only">Kurucu & Veli-Öğrenci Koçu</span>
-            <span class="en-only">Founder & Parent-Student Coach</span>
+            <span>Kurucu & Veli-Öğrenci Koçu</span>
           </p>
           <h3>Özlem Çimen</h3>
-          <p class="blog-author-bio tr-only">Eğitimci, iki çocuk annesi ve 20 yılı aşkın deneyime sahip bir veli-öğrenci koçu olarak Türkiye, Myanmar, Azerbaycan ve Dubai'de farklı eğitim sistemleriyle iç içe yaşadım. Bu blogda, kendi deneyimlerimden ve yüzlerce aileye danışmanlık yaptığım süreçlerden öğrendiklerimi paylaşıyorum.</p>
-          <p class="blog-author-bio en-only">As an educator, mother of two and parent-student coach with over 20 years of experience, I have lived within different education systems across Turkey, Myanmar, Azerbaijan and Dubai. In this blog, I share what I've learned from my own journey and from guiding hundreds of families through theirs.</p>
-          <a href="../en/#contact" class="btn btn-primary en-only" style="display:inline-flex;margin-top:0.5rem">Book a Free Session</a>
-          <a href="../tr/#contact" class="btn btn-primary tr-only" style="display:inline-flex;margin-top:0.5rem">Ücretsiz Görüşme Planla</a>
+          <p class="blog-author-bio">Eğitimci, iki çocuk annesi ve 20 yılı aşkın deneyime sahip bir veli-öğrenci koçu olarak Türkiye, Myanmar, Azerbaycan ve Dubai'de farklı eğitim sistemleriyle iç içe yaşadım. Bu blogda, kendi deneyimlerimden ve yüzlerce aileye danışmanlık yaptığım süreçlerden öğrendiklerimi paylaşıyorum.</p>
+          
+          <a href="../tr/#contact" class="btn btn-primary" style="display:inline-flex;margin-top:0.5rem">Ücretsiz Görüşme Planla</a>
         </div>
       </div>
     </div>
@@ -2658,24 +2383,21 @@
       <div class="footer-grid">
         <div class="footer-bio-col">
           <h3>Edualist</h3>
-          <p class="footer-bio-text tr-only">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi, müfredat değerlendirme ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
-          <p class="footer-bio-text en-only">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+          <p class="footer-bio-text">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi, müfredat değerlendirme ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
         </div>
 
         <div class="footer-links-col">
-          <h4 class="tr-only">Hızlı Linkler</h4>
-          <h4 class="en-only">Quick Links</h4>
+          <h4>Hızlı Linkler</h4>
           <ul class="footer-links">
-            <li><a href="/neden-biz/" class="en-only">Why Us?</a><a href="/neden-biz/" class="tr-only">Neden Biz?</a></li>
-            <li><a href="/en/#services" class="en-only">Services</a><a href="/tr/#services" class="tr-only">Hizmetler</a></li>
-            <li><a href="/blog/">Blog <span class="nav-count-badge">84</span></a></li>
-            <li><a href="/uluslararasi-okul-danismanligi/" class="en-only">Book Session</a><a href="/uluslararasi-okul-danismanligi/" class="tr-only">Görüşme Planla</a></li>
+            <li><a href="/neden-biz/">Neden Biz?</a></li>
+            <li><a href="/tr/#services">Hizmetler</a></li>
+            <li><a href="/blog/">Blog <span class="nav-count-badge">83</span></a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/">Görüşme Planla</a></li>
           </ul>
         </div>
 
         <div class="footer-contact-col">
-          <h4 class="tr-only">İletişim</h4>
-          <h4 class="en-only">Contact</h4>
+          <h4>İletişim</h4>
           <ul class="footer-contact-list">
             <li class="footer-contact-item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
@@ -2683,7 +2405,7 @@
             </li>
             <li class="footer-contact-item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
-              <div><span class="tr-only">Dubai, Birleşik Arap Emirlikleri</span><span class="en-only">Dubai, United Arab Emirates</span></div>
+              <div><span>Dubai, Birleşik Arap Emirlikleri</span></div>
             </li>
             <li class="footer-contact-item">
               <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
@@ -2703,7 +2425,7 @@
 
       <div class="footer-bottom">
         <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
-        <div><a href="/gizlilik-politikasi/" class="tr-only" style="color:inherit;opacity:0.7">Gizlilik Politikası</a><a href="/gizlilik-politikasi/" class="en-only" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div><a href="/gizlilik-politikasi/" style="color:inherit;opacity:0.7">Gizlilik Politikası</a></div>
         <div>Designed for Excellence.</div>
       </div>
     </div>
@@ -2790,6 +2512,19 @@
   }
   </script>
 
-  <script src="../app.js" defer></script>
+  <script src="../app.js?v=20261004" defer></script>
+<script>
+  window.setLang = function (l) {
+    if (l === document.documentElement.lang) return;
+    try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+  };
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+    b.classList.toggle('active', l === document.documentElement.lang);
+    if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+  });
+</script>
 </body>
 </html>

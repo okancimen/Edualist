@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.hero-blog-preview{padding:1.5rem 1.75rem}.hero-blog-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}.hero-blog-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.hero-blog-all{font-size:.8rem;color:var(--text-muted);text-decoration:none;transition:color .2s}.hero-blog-all:hover{color:var(--accent)}.hero-blog-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}.hero-blog-item{border-top:1px solid var(--border);padding:.85rem 0}.hero-blog-item:first-child{border-top:none;padding-top:0}.hero-blog-item a{font-size:.92rem;font-weight:500;color:var(--text-primary);text-decoration:none;line-height:1.4;display:block;transition:color .2s}.hero-blog-item a:hover{color:var(--accent)}.hero-blog-item-meta{font-size:.75rem;color:var(--text-muted);margin-top:.2rem}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/blog/dubai-okul-basvuru-nasil-yapilir/assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to Apply to a Dubai School 2026: Step by Step | Edualist</title>
+  <meta name="description" content="The Dubai international school application process: forms, documents, assessment day preparation and what to do if your application is rejected.">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/en/blog/how-to-apply-dubai-school/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-okul-basvuru-nasil-yapilir/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/how-to-apply-dubai-school/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-okul-basvuru-nasil-yapilir/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="How to Apply to a Dubai School 2026: Step by Step">
+  <meta property="og:description" content="The Dubai international school application process: forms, documents, assessment day preparation and what to do if your application is rejected.">
+  <meta property="og:url"         content="https://www.edualist.com/en/blog/how-to-apply-dubai-school/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-basvuru.webp">
+  <meta property="article:published_time" content="2026-06-23">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="How to Apply to a Dubai School 2026: Step by Step">
+  <meta name="twitter:description" content="The Dubai international school application process: forms, documents, assessment day preparation and what to do if your application is rejected.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-basvuru.webp">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "How to Apply to a Dubai International School 2026: Step-by-Step Guide",
+  "description": "The Dubai international school application process: forms, documents, assessment day preparation and what to do if your application is rejected.",
+  "author": {
+    "@type": "Person",
+    "name": "Özlem Çimen",
+    "url": "https://www.edualist.com/en/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edualist",
+    "url": "https://www.edualist.com/en/"
+  },
+  "datePublished": "2026-06-23",
+  "dateModified": "2026-10-03",
+  "wordCount": 1800,
+  "inLanguage": "en",
+  "url": "https://www.edualist.com/en/blog/how-to-apply-dubai-school/",
+  "image": "https://www.edualist.com/assets/blog/thumb-basvuru.webp",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".blog-summary",
+      ".blog-post-title"
+    ]
+  }
+}
+  </script>
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional"></noscript>
+
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="/styles.css?v=13">
+  <link rel="stylesheet" href="/styles.css?v=13" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/styles.css?v=13"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.edualist.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.edualist.com/en/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "How to Apply to a Dubai School 2026: Step by Step",
+      "item": "https://www.edualist.com/en/blog/how-to-apply-dubai-school/"
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What documents are needed to apply to a Dubai international school?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Passport, visa/Emirates ID, transcripts (certified English translation), reference letter (some schools), vaccination record and passport photos."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the Dubai school application fee refundable?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No — AED 500–1,500 is non-refundable. Verify that the school is a genuine fit for your child before submitting."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What happens on the Dubai school assessment day?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Maths + English assessment; for younger children, an observed activity session. It is a placement process, not an elimination test."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should we do if the application is rejected?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Request written feedback, ask to be placed on the waiting list, and review whether a different school type may be a better profile match."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the Dubai school application done online?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes, most schools use online portals — but some prefer in-person document submission at their office."
+      }
+    }
+  ]
+}
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+    <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Dubai Schools</a></li>
+        <li><a href="/en/international-school-consulting/">Consultancy</a></li>
+        <li><a href="/en/academic-coaching/">Coaching</a></li><li><a href="/en/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">55</span></a></li>
+        <li><a href="/en/why-edualist/">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/en/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+<span>Back to Blog</span>
+      </a>
+    </div>
+  </section>
+
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>23 June 2026</span>
+          <span><a href="/en/about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>11 min read</span>
+        </div>
+
+        <div class="blog-summary">
+          <strong><span>Summary</span></strong>
+          <p>A focused guide to the Dubai international school application process — forms, documents, assessment day preparation, and what to do if your application is rejected.</p>
+        </div>
+
+        <!-- TR -->
+
+        <!-- EN body -->
+        <div>
+          <h1 class="blog-post-title">How to Apply to a Dubai International School 2026: Step-by-Step Guide</h1>
+          <div class="blog-post-body">
+
+            <div class="blog-callout" style="background:hsla(43,60%,88%,0.5);border-left:4px solid var(--accent);">
+              <strong>Quick Answer — Dubai School Application Documents:</strong> Passport copy, visa/Emirates ID, last 2 years' transcripts (certified English translation), teacher reference letter (some schools), vaccination record and passport photos. The application fee (AED 500–1,500) is non-refundable — confirm school fit before paying.
+            </div>
+
+            <h2>How to Apply to a Dubai International School</h2>
+
+            <p>Applying to a Dubai international school involves four stages: confirming spaces and the application window, submitting the online form with supporting documents, attending an assessment day (written test and interview), then paying the registration fee after receiving an offer. The process takes 2–6 weeks depending on the school; KHDA Outstanding schools open their application window once a year.</p>
+
+            <p>You've chosen a school, completed the tour, and now you're at the application stage. Mistakes here often have irreversible consequences: non-refundable fees, missed assessment dates, rejected applications. This guide focuses exclusively on the application process — from the form itself to the assessment day, from document preparation to managing a rejection.</p>
+
+            <div class="blog-callout">
+              <strong>Don't confuse this guide with our <a href="/en/blog/dubai-school-registration/">Dubai School Registration Guide</a>:</strong> The registration guide covers the KHDA system, curriculum selection and the general timeline. This guide covers only the application — completing the form, preparing documents and knowing what to expect on assessment day.
+            </div>
+
+            <h2>Before You Apply: 3 Critical Checks</h2>
+
+            <p>Before opening the application form, answer these three questions:</p>
+
+            <p><strong>1. Does the school still have spaces?</strong> — Some schools appear open on their websites but are not accepting applications for that year. Call the admissions office directly and ask: "Do you have spaces for [academic year] entry for Year [X]?"</p>
+
+            <p><strong>2. Is the application window open?</strong> — Oversubscribed KHDA Outstanding schools accept applications only during specific windows. Applications submitted outside these periods are usually placed on a waiting list and not actively assessed.</p>
+
+            <p><strong>3. Is your child's profile a genuine fit for this school?</strong> — Does their English level, academic background and performance align with the school's general profile? A mismatched application wastes time and money for both sides.</p>
+
+            <h2>The Application Form: Key Things to Get Right</h2>
+
+            <p>Most schools use an online application portal. Prepare all documents before opening the form — incomplete submissions are typically dropped from the system without being assessed.</p>
+
+            <p><strong>Previous school information:</strong> Enter the school name, address, years attended and graduation status completely. Write the Turkish school name in both Turkish and English.</p>
+
+            <p><strong>Language proficiency:</strong> Be honest about your child's English level. Writing "Native" and then scoring very low in the assessment weakens the application; writing "developing" or "intermediate" clearly signals the need for EAL support — which is not a disadvantage.</p>
+
+            <p><strong>Personal statement / reason for choosing:</strong> Some schools ask for a short piece of writing on why you chose this school. Rather than generic statements, reference the school's specific programmes, values or approach — this is the single area most likely to distinguish your application from the pile.</p>
+
+            <div class="blog-personal-note">
+              <picture>
+                <source srcset="/assets/founder-avatar-300.webp" type="image/webp">
+                <img src="/assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+              </picture>
+              <div class="blog-personal-note-body">
+                <span class="blog-personal-note-name">Özlem Çimen — Coach's note</span>
+                <p>The most common mistake families make on application forms: trying to present everything as better than it is. The assessment day reveals the reality. What the school needs is an accurate picture of your child — not an inflated profile. An honest and clear application always makes a stronger starting point.</p>
+              </div>
+            </div>
+
+            <h2>Complete Document Checklist</h2>
+
+            <p>Small differences exist between schools, but almost every Dubai international school asks for the following:</p>
+
+            <ol class="blog-steps">
+              <li>
+                <span class="blog-step-num">1</span>
+                <div><strong>Passport copy</strong> — Student and the applying parent. Must have at least 6 months of validity remaining.</div>
+              </li>
+              <li>
+                <span class="blog-step-num">2</span>
+                <div><strong>Visa or Emirates ID copy</strong> — If you haven't yet moved to Dubai, a visa application document or sponsorship letter may be accepted; ask in advance.</div>
+              </li>
+              <li>
+                <span class="blog-step-num">3</span>
+                <div><strong>School transcripts (last 2 years)</strong> — Turkish documents require a notarised English translation. Not a report card copy — official transcript or e-school printout. Use a sworn translator. For the full authentication chain including Transfer Certificate from Turkey, see our <a href="/en/blog/turkey-to-dubai-international-school/">Turkey-to-Dubai school transition guide</a>.</div>
+              </li>
+              <li>
+                <span class="blog-step-num">4</span>
+                <div><strong>Teacher reference letter</strong> — Not all schools require this, but those that do ask for a letter in English on headed school paper. A letter written by your child's class teacher in Turkey is fine — written in Turkish and accompanied by a certified translation.</div>
+              </li>
+              <li>
+                <span class="blog-step-num">5</span>
+                <div><strong>Vaccination record</strong> — Must cover UAE mandatory vaccinations, in English or Arabic. Turkish documents may require an English translation from the health authority.</div>
+              </li>
+              <li>
+                <span class="blog-step-num">6</span>
+                <div><strong>Passport-size photograph</strong> — White background, recent. Digital format (JPEG) is usually accepted.</div>
+              </li>
+              <li>
+                <span class="blog-step-num">7</span>
+                <div><strong>Conduct report</strong> — Some KHDA Outstanding schools ask for a behaviour note or conduct report from the previous school. An email or official letter from the school in Turkey is usually sufficient.</div>
+              </li>
+            </ol>
+
+            <div class="blog-callout">
+              <strong>Practical tip:</strong> Keep digital copies of all documents in a single folder — PDF format, with clear filenames (e.g., "Transcript_2024_25_EN.pdf"). If you're applying to multiple schools, this preparation saves hours of repeated work.
+            </div>
+
+            <h2>Assessment Day: What Actually Happens</h2>
+
+            <p>After reviewing your application, the school typically contacts you within 1–3 weeks to book an assessment appointment. This is a placement process, not an elimination test — the school is deciding which year group and set to put your child in, not whether to reject them. Know this, and tell your child too.</p>
+
+            <p><strong>Maths assessment:</strong> Core concepts from the current year's curriculum. Done on paper or tablet. Usually 30–45 minutes.</p>
+
+            <p><strong>English assessment:</strong> Reading comprehension and a writing task. IB schools may also include a speaking component. Children without English proficiency yet go through an EAL initial assessment instead.</p>
+
+            <p><strong>Observed activity (primary school mainly):</strong> For younger age groups, there is often no written test — instead, children are observed in a classroom setting through play-based, social activities. The goal is to understand their developmental maturity.</p>
+
+            <p><strong>Parent interview:</strong> Some schools hold a short parent meeting (15–20 minutes) on assessment day. Expect questions about your child's strengths, learning style and any specific support needs. Honest, concise answers are always more effective than long explanations.</p>
+
+            <h3>How to prepare your child</h3>
+
+            <p>Intensive cramming the night before usually backfires. Instead, frame it for your child as "a meeting where the school wants to get to know you." Practising their current maths level is sufficient; for English, short daily reading practice up until assessment day is more sustainable than last-minute revision. If you want a more systematic pre-assessment academic evaluation, see our <a href="/en/blog/eduentry-international-assessment/">EduEntry international academic assessment programme</a>.</p>
+
+            <h2>The 72 Hours After an Offer Letter</h2>
+
+            <p>When an offer letter arrives, you typically have 1–2 weeks to complete enrolment and pay the registration fee — and at some schools the window is even shorter. Don't make your final decision on the day the offer arrives, but complete the process within 48–72 hours. Popular schools have waiting lists and can offer your place to another family without notice.</p>
+
+            <p>The registration / enrolment fee (3,000–10,000 AED) is separate from the annual school fee — you are paying only to secure the place, not the whole year.</p>
+
+            <h2>If Your Application Is Rejected</h2>
+
+            <p>Rejection is disappointing, but it is not a closed door — it is a redirection. First, request written feedback from the admissions office — some schools provide it, some don't, but it's worth asking. Then consider:</p>
+
+            <p><strong>Waiting list:</strong> Ask to be placed on the school's waiting list. Some places open up during the year. Keep in touch — a short email or call every two months keeps you visible.</p>
+
+            <p><strong>Review the profile match:</strong> The rejection may be due to curriculum mismatch or language level. Look at schools at the same quality tier but with a different curriculum. A Good-rated school with strong EAL support can sometimes be a far better transition point than an Outstanding school.</p>
+
+            <p><strong>Consultancy support:</strong> The most common problem I see in rejected applications is a profile-school mismatch. Building the right shortlist from the start — through <a href="/en/international-school-consulting/">a consultancy session</a> — makes the entire process far more efficient.</p>
+
+            <div class="blog-faq">
+              <h2>Frequently Asked Questions</h2>
+
+              <div class="faq-item">
+                <h3 class="faq-q">What documents are needed to apply to a Dubai international school?</h3>
+                <p class="faq-a">Passport, visa/Emirates ID, transcripts (certified English translation), reference letter (some schools), vaccination record and passport photos.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">Is the Dubai school application fee refundable?</h3>
+                <p class="faq-a">No — AED 500–1,500 is non-refundable. Verify that the school is a genuine fit for your child before submitting.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">What happens on the Dubai school assessment day?</h3>
+                <p class="faq-a">Maths + English assessment; for younger children, an observed activity session. It is a placement process, not an elimination test.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">What should we do if the application is rejected?</h3>
+                <p class="faq-a">Request written feedback, ask to be placed on the waiting list, and review whether a different school type may be a better profile match.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">Is the Dubai school application done online?</h3>
+                <p class="faq-a">Yes, most schools use online portals — but some prefer in-person document submission at their office.</p>
+              </div>
+            </div>
+
+            
+            <div class="blog-callout" style="margin-top:2rem">
+              <strong>Related guides:</strong><br>
+              <a href="/en/blog/dubai-school-registration/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai School Registration 2026: Step-by-Step Guide →</a><br>
+              <a href="/en/blog/international-school-interview-questions/" style="color:var(--accent,#DBAF2E);font-weight:500;">30+ Real International School Interview Questions 2026 →</a><br>
+              <a href="/en/blog/turkey-to-dubai-international-school/" style="color:var(--accent,#DBAF2E);font-weight:500;">From Turkish Schools to Dubai International Schools: Documents and CAT4 →</a>
+            </div>
+<div class="blog-post-cta glass">
+              <h3>Let's plan your application process together</h3>
+              <p>In a free first session with Özlem Çimen, you can go through your child's profile, school shortlist and application timeline together.</p>
+              <a href="/en/international-school-consulting/" class="btn btn-primary" style="display:inline-flex">Book a Free Session</a>
+              <a href="/en/dubai/" class="btn btn-secondary" style="margin-top:0.5rem;">Our Dubai Consultancy Page →</a>
+            </div>
+
+          </div>
+        </div>
+
+      </article>
+    </div>
+
+    <div class="container" style="padding:0 0 2rem;">
+    </div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>Related Posts</h2>
+      <div class="blog-related-grid">
+        <a href="/en/blog/dubai-school-registration/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai-kayit-sureci.webp" alt="Dubai School Registration 2026: Guide &amp; Checklist" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Dubai School Enrolment: Step-by-Step Guide</span>
+            </div>
+            <div class="blog-related-card-meta">7 June 2026 · 8 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/international-school-interview-questions/" class="blog-related-card">
+          <img src="/assets/blog/thumb-mulakat-sorular.webp" alt="30+ International School Interview Questions 2026" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Real International School Interview Questions</span>
+            </div>
+            <div class="blog-related-card-meta">23 June 2026 · 12 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/how-to-pass-international-school-interview/" class="blog-related-card">
+          <img src="/assets/blog/thumb-mulakat.webp" alt="How to Pass an International School Interview" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>How to Pass an International School Interview</span>
+            </div>
+            <div class="blog-related-card-meta">7 June 2026 · 10 min</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/why-edualist/">Why Us?</a></li>
+            <li><a href="/en/#services">Services</a></li>
+            <li><a href="/en/blog/">Blog <span class="nav-count-badge">55</span></a></li>
+            <li><a href="/en/international-school-consulting/">Book Session</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" target="_blank" rel="noopener noreferrer"
+     class="whatsapp-sticky" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Close">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
+  </div>
+
+    <script>
+    
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+<script>
+  window.setLang = function (l) {
+    if (l === document.documentElement.lang) return;
+    try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+  };
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+    b.classList.toggle('active', l === document.documentElement.lang);
+    if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+  });
+</script>
+</body>
+</html>

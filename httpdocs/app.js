@@ -1,45 +1,24 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ── CRITICAL (runs immediately): lang init + mobile menu ────────────
+  // ── CRITICAL (runs immediately): lang + mobile menu ─────────────────
+  // Each page is a single language (Turkish at the root, English under /en/);
+  // the TR/EN buttons are wired by the inline setLang() script on every page.
 
-  const langSwitcher = document.getElementById("lang-switcher");
-  const langBtns = langSwitcher ? langSwitcher.querySelectorAll(".lang-btn") : [];
-  const html = document.documentElement;
-  const path = window.location.pathname;
-  let currentLang = "tr";
-  currentLang = path.includes("/en/") || path.endsWith("/en") ? "en"
-    : path.includes("/tr/") || path.endsWith("/tr") ? "tr"
-    : localStorage.getItem("edualist_lang") || html.getAttribute("lang") || "tr";
+  const currentLang = document.documentElement.getAttribute("lang") === "en" ? "en" : "tr";
 
   const placeholders = {
     tr: { name: "Örn: Ahmet Yılmaz", phone: "+90 555 123 4567", details: "Çocuğunuzun yaşını, sınıfını ve eğitim geçmişini belirtiniz..." },
     en: { name: "e.g. John Doe", phone: "e.g. +971 50 123 4567", details: "Please share child's age, grade, language background, etc..." }
   };
+  const p = placeholders[currentLang];
+  const fields = ["form-name","form-phone","form-details","webinar-name","webinar-phone"];
+  const vals   = [p.name,    p.phone,    p.details,    p.name,        p.phone       ];
+  fields.forEach((id, i) => { const el = document.getElementById(id); if (el) el.placeholder = vals[i]; });
 
-  function setLang(lang) {
-    if (html.getAttribute("lang") !== lang) html.setAttribute("lang", lang);
-    langBtns.forEach(btn => btn.getAttribute("data-lang") === lang
-      ? btn.classList.add("active") : btn.classList.remove("active"));
-    const p = placeholders[lang];
-    if (!p) return;
-    const fields = ["form-name","form-phone","form-details","webinar-name","webinar-phone"];
-    const vals   = [p.name,    p.phone,    p.details,    p.name,        p.phone       ];
-    fields.forEach((id, i) => { const el = document.getElementById(id); if (el) el.placeholder = vals[i]; });
-  }
-
-  langBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-      const lang = btn.getAttribute("data-lang");
-      localStorage.setItem("edualist_lang", lang);
-      if ((/^\/(tr|en)(\/|$)/.test(path) || path === "/") && lang !== currentLang) {
-        const hash = window.location.hash || "";
-        window.location.href = lang === "en" ? "../en/" + hash : "../tr/" + hash;
-      } else {
-        setLang(lang);
-      }
-    });
-  });
-  setLang(currentLang);
+  const formErrors = {
+    tr: { send: "Mesaj gönderilemedi. Lütfen WhatsApp veya e-posta ile ulaşın.", network: "Bağlantı hatası. Lütfen WhatsApp veya e-posta ile ulaşın." },
+    en: { send: "Your message could not be sent. Please contact us on WhatsApp or by email.", network: "Connection error. Please contact us on WhatsApp or by email." }
+  }[currentLang];
 
   const menuToggle = document.getElementById("menu-toggle");
   const navMenu = document.getElementById("nav-menu");
@@ -123,7 +102,7 @@ document.addEventListener("DOMContentLoaded", () => {
           relocation: document.getElementById("form-relocation").value,
           details: document.getElementById("form-details").value
         };
-        const url = window.location.pathname === "/" ? "/mail.php" : "../mail.php";
+        const url = "/mail.php";
         fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) })
           .then(r => r.json())
           .then(r => {
@@ -139,12 +118,12 @@ document.addEventListener("DOMContentLoaded", () => {
               }
             } else {
               if (submitBtn) submitBtn.disabled = false;
-              alert("Mesaj gönderilemedi. Lütfen WhatsApp veya e-posta ile ulaşın.");
+              alert(formErrors.send);
             }
           })
           .catch(() => {
             if (submitBtn) submitBtn.disabled = false;
-            alert("Bağlantı hatası. Lütfen WhatsApp veya e-posta ile ulaşın.");
+            alert(formErrors.network);
           });
       });
     }
@@ -164,7 +143,7 @@ document.addEventListener("DOMContentLoaded", () => {
           email: document.getElementById("webinar-email").value,
           phone: document.getElementById("webinar-phone").value
         };
-        const url = window.location.pathname === "/" ? "/mail.php" : "../mail.php";
+        const url = "/mail.php";
         fetch(url, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(data) })
           .then(r => r.json())
           .then(r => {
@@ -179,12 +158,12 @@ document.addEventListener("DOMContentLoaded", () => {
               }
             } else {
               if (submitBtn) submitBtn.disabled = false;
-              alert("Mesaj gönderilemedi. Lütfen WhatsApp veya e-posta ile ulaşın.");
+              alert(formErrors.send);
             }
           })
           .catch(() => {
             if (submitBtn) submitBtn.disabled = false;
-            alert("Bağlantı hatası. Lütfen WhatsApp veya e-posta ile ulaşın.");
+            alert(formErrors.network);
           });
       });
     }
