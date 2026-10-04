@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.hero-blog-preview{padding:1.5rem 1.75rem}.hero-blog-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}.hero-blog-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.hero-blog-all{font-size:.8rem;color:var(--text-muted);text-decoration:none;transition:color .2s}.hero-blog-all:hover{color:var(--accent)}.hero-blog-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}.hero-blog-item{border-top:1px solid var(--border);padding:.85rem 0}.hero-blog-item:first-child{border-top:none;padding-top:0}.hero-blog-item a{font-size:.92rem;font-weight:500;color:var(--text-primary);text-decoration:none;line-height:1.4;display:block;transition:color .2s}.hero-blog-item a:hover{color:var(--accent)}.hero-blog-item-meta{font-size:.75rem;color:var(--text-muted);margin-top:.2rem}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/blog/uluslararasi-okul-mulakat-sorulari/assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>30+ International School Interview Questions 2026 | Edualist</title>
+  <meta name="description" content="Real questions from Dubai and UAE international school interviews, by age group and for parents, with guidance on what to say and what to avoid.">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/en/blog/international-school-interview-questions/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/uluslararasi-okul-mulakat-sorulari/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/international-school-interview-questions/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/uluslararasi-okul-mulakat-sorulari/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="30+ International School Interview Questions 2026">
+  <meta property="og:description" content="Real questions from Dubai and UAE international school interviews, by age group and for parents, with guidance on what to say and what to avoid.">
+  <meta property="og:url"         content="https://www.edualist.com/en/blog/international-school-interview-questions/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-mulakat-sorular.webp">
+  <meta property="article:published_time" content="2026-06-23">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="30+ International School Interview Questions 2026">
+  <meta name="twitter:description" content="Real questions from Dubai and UAE international school interviews, by age group and for parents, with guidance on what to say and what to avoid.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-mulakat-sorular.webp">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "30+ Real International School Interview Questions 2026: Child & Parent",
+  "description": "Real questions from Dubai and UAE international school interviews, by age group and for parents, with guidance on what to say and what to avoid.",
+  "author": {
+    "@type": "Person",
+    "name": "Özlem Çimen",
+    "url": "https://www.edualist.com/en/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edualist",
+    "url": "https://www.edualist.com/en/"
+  },
+  "datePublished": "2026-06-23",
+  "dateModified": "2026-10-03",
+  "wordCount": 1800,
+  "inLanguage": "en",
+  "url": "https://www.edualist.com/en/blog/international-school-interview-questions/",
+  "image": "https://www.edualist.com/assets/blog/thumb-mulakat-sorular.webp",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".blog-summary",
+      ".blog-post-title"
+    ]
+  }
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional"></noscript>
+
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="/styles.css?v=13">
+  <link rel="stylesheet" href="/styles.css?v=13" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/styles.css?v=13"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.edualist.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.edualist.com/en/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "30+ International School Interview Questions 2026",
+      "item": "https://www.edualist.com/en/blog/international-school-interview-questions/"
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What kinds of questions are asked in international school interviews?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Questions vary by age: primary-level interviews focus on social and personal questions; middle school adds analytical thinking; secondary school questions assess career vision and global awareness."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What do schools ask at the parent meeting?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Common parent questions: your child's learning style, challenges at the previous school, why you chose this school, and your family's approach to education."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a child with limited English attend an international school interview?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — they go through an EAL (English as an Additional Language) assessment instead. Limited English is not a reason for rejection; it informs the support plan the school creates for your child."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much preparation time is needed for the interview?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2–3 weeks of natural, relaxed conversation for 20–30 minutes a day is sufficient. The goal is not memorisation — it is helping your child feel comfortable expressing themselves."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What should we do if the interview is unsuccessful?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Request feedback from the school, ask to be placed on the waiting list, and look at alternative schools with a good profile match for your child."
+      }
+    }
+  ]
+}
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");
+  </script>
+
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+    <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Dubai Schools</a></li>
+        <li><a href="/en/international-school-consulting/">Consultancy</a></li>
+        <li><a href="/en/academic-coaching/">Coaching</a></li><li><a href="/en/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">55</span></a></li>
+        <li><a href="/en/why-edualist/">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/en/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+<span>Back to Blog</span>
+      </a>
+    </div>
+  </section>
+
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>23 June 2026</span>
+          <span><a href="/en/about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>12 min read</span>
+        </div>
+
+        <div class="blog-summary">
+          <strong><span>Summary</span></strong>
+          <p>Real questions asked in Dubai and UAE international school interviews — by age group for students, plus parent meeting questions — with guidance on what to say and what to avoid.</p>
+        </div>
+
+        <!-- TR -->
+
+        <!-- EN body -->
+        <div>
+          <h1 class="blog-post-title">30+ Real International School Interview Questions 2026: Child &amp; Parent</h1>
+          <div class="blog-post-body">
+
+            <div class="blog-callout" style="background:hsla(43,60%,88%,0.5);border-left:4px solid var(--accent);">
+              <strong>Quick Answer — What Gets Asked in Interviews?</strong> Children: "Tell me about yourself", "What's your favourite subject?", "How does it feel to be somewhere new?" Parents: "How would you describe your child's learning style?", "Why did you choose this school?" Dubai and UAE interviews are placement-focused, not elimination-focused — honest, natural answers beat rehearsed scripts every time.
+            </div>
+
+            <p>We have <a href="/en/blog/how-to-pass-international-school-interview/">another guide covering the general interview preparation framework</a> — a 4-phase, 30-day plan including the parent meeting. This article is its companion: the actual questions that get asked. I have accompanied families to dozens of interviews in Dubai and the UAE; the questions below are drawn directly from those experiences. You cannot memorise every possible question, but knowing the most common ones significantly boosts both your child's and your own confidence.</p>
+
+            <div class="blog-callout">
+              <strong>Remember:</strong> International school interviews in Dubai and the UAE are <em>placement</em>-focused, not elimination-focused. The school is asking questions to understand which year group and which programme your child fits best — not to reject them. Knowing this difference is itself a major form of preparation.
+            </div>
+
+            <h2>Primary School (Ages 5–10) — Child Questions</h2>
+
+            <p>At this age, questions are deliberately kept simple and social. The school is not measuring academic performance — it is observing your child's ability to communicate, express themselves, and demonstrate social maturity.</p>
+
+            <p><strong>"Tell me about yourself. What's your name, how old are you, tell me something about your family."</strong><br>
+            Why it's asked: To see whether the child can speak comfortably and spontaneously. The ideal answer is short, natural and in their own words — even "My name is Elif, I'm 8, I have two brothers" is perfectly sufficient.</p>
+
+            <p><strong>"What do you enjoy most outside school?"</strong><br>
+            Why it's asked: To understand interests and areas of passion — the school may use this to suggest clubs, sports or activities when placing your child. There is no right or wrong answer.</p>
+
+            <p><strong>"How does it feel to be somewhere new?"</strong><br>
+            Why it's asked: To gauge adaptation capacity. A child saying "scary but exciting" or "a bit hard but I'll get used to it" is far more convincing than a rehearsed "very happy."</p>
+
+            <p><strong>"Has there ever been a time at school when you found something hard? What did you do?"</strong><br>
+            Why it's asked: To understand how the child responds to difficulty. Saying "I asked for help / I tried again / I asked my teacher" paints a strong profile.</p>
+
+            <p><strong>"What do you do if you disagree with your best friend?"</strong><br>
+            Why it's asked: To assess conflict resolution style and empathy. A simple answer like "We talk and try to sort it out" meets expectations well.</p>
+
+            <h2>Middle School (Ages 11–14) — Child Questions</h2>
+
+            <p>At this age, questions become more analytical and personal. The school is trying to measure how your child thinks, their self-awareness, and their social consciousness.</p>
+
+            <p><strong>"If you could change the world for one day, what would you do?"</strong><br>
+            This question is not random — the school is looking for alignment between its values and how your child sees the world. What matters is not a "correct" answer but a personal, defensible one. "I'd make sure everyone has clean water, because..." is simple but genuine, and it works.</p>
+
+            <p><strong>"Which subject feels most like you? Why?"</strong><br>
+            Self-awareness is being tested, not academic strength. "Science, because it chases the why and how" or "Literature, because I get to see different perspectives" — these are strong, original answers.</p>
+
+            <p><strong>"Do you prefer teamwork or working alone? Why?"</strong><br>
+            There is no wrong answer. The school wants to hear that your child is aware of their preference and can also adapt to the alternative. A nuanced answer like "I can usually do both, but I tend to..." feels more authentic.</p>
+
+            <p><strong>"Is there something specific you want to learn at this school?"</strong><br>
+            Researching the school's programme in advance and naming something specific — "I saw you have a robotics club, I'd really like to try that" — distinguishes your child's application from others.</p>
+
+            <h2>Secondary School (Ages 15–18) — Child Questions</h2>
+
+            <p>At this level, the school wants to understand your child's career vision, the motivation behind their curriculum choice, and their global awareness. Questions are deeper.</p>
+
+            <p><strong>"Why do you want to do IB / A-Level / AP specifically?"</strong><br>
+            "Because it's prestigious" or "my parents wanted it" are answers to avoid. A strong answer: "I researched that IB provides a strong foundation for applying to universities outside Turkey; I'm genuinely interested in the independent study components like the Extended Essay." Specific, researched, authentic.</p>
+
+            <p><strong>"Pick a global issue and explain what could be done about it."</strong><br>
+            A favourite at IB schools. The topic itself matters less than whether your child can see an issue from multiple angles. Single-track solutions versus "on one hand... on the other..." framing shows more mature thinking.</p>
+
+            <p><strong>"What is your biggest challenge and how do you manage it?"</strong><br>
+            Although it looks like a weakness question, it measures self-awareness and a growth mindset. "I struggle with stress management but I've recently started..." is far stronger than "everything's fine, no challenges."</p>
+
+            <p><strong>"Why did you choose this school and how do you want to contribute here?"</strong><br>
+            A two-part question confirming both that your child has researched the school and that they want to participate actively. Answering with a concrete plan — "I'd like to join the debate club and..." — is effective.</p>
+
+            <div class="blog-personal-note">
+              <picture>
+                <source srcset="/assets/founder-avatar-300.webp" type="image/webp">
+                <img src="/assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+              </picture>
+              <div class="blog-personal-note-body">
+                <span class="blog-personal-note-name">Özlem Çimen — Coach's note</span>
+                <p>The best interview preparation is not question-and-answer drilling — it's talking through these questions with your child at the dinner table in a relaxed way. When you ask "What's hardest for you?" or "What do you like and not like about school?" your child is preparing, and you as a parent are understanding their perspective more deeply. That second gain lasts much longer than the interview itself.</p>
+              </div>
+            </div>
+
+            <h2>Parent Meeting: Questions the School Actually Asks</h2>
+
+            <p>The parent meeting typically lasts 15–30 minutes, either alongside or immediately after the child's assessment. The school's goal is not to evaluate you — it is to understand your child better and see whether your family's values align with the school's.</p>
+
+            <p><strong>"How would you describe your child's learning style?"</strong><br>
+            Academic strengths and weaknesses are not what's being asked — it's about how they learn. Observations like "visual learner," "learns by doing," or "keeps asking questions until they fully understand" are very useful.</p>
+
+            <p><strong>"What challenges did they face at their previous school?"</strong><br>
+            Be honest. Problems that are concealed tend to surface during the assessment or in the first few weeks. The school needs to know what to look out for — they don't want surprises.</p>
+
+            <p><strong>"Why did you choose this school?"</strong><br>
+            Avoid "great reputation" or "everyone sends their children here." Prepare an answer that highlights a specific feature, programme or approach you researched.</p>
+
+            <p><strong>"What is your family's approach to education?"</strong><br>
+            The school wants to understand how involved and supportive the family is. Answers that show balance — "we help with homework but let our child make their own decisions" — are strong.</p>
+
+            <p><strong>"Is there anything else you'd like us to know about your child?"</strong><br>
+            Don't leave this blank. It's your opportunity to speak — use it to highlight a strength, a growth area, or a specific circumstance about your child.</p>
+
+            <h2>Most Common Interview Mistakes</h2>
+
+            <p><strong>Parents steering the child's answers:</strong> Intervening in the interview room shows parental anxiety, not the child's confidence. The admissions team always notices.</p>
+
+            <p><strong>Presenting everything as perfect:</strong> "We had no difficulties, everything was wonderful" does not build trust. Schools prefer a realistic, growth-focused picture.</p>
+
+            <p><strong>Name-dropping other schools:</strong> Mentioning "we also applied to GEMS Wellington" is not always well-received by admissions teams. Focus: why is this school right for you?</p>
+
+            <p><strong>Over-rehearsing your child:</strong> Memorised answers are spotted immediately. IB schools in particular are assessing independent thinking — originality, not formula, is what's measured.</p>
+
+            <div class="blog-faq">
+              <h2>Frequently Asked Questions</h2>
+
+              <div class="faq-item">
+                <h3 class="faq-q">What kinds of questions are asked in international school interviews?</h3>
+                <p class="faq-a">Questions vary by age: primary-level interviews focus on social and personal questions; middle school adds analytical thinking; secondary school questions assess career vision and global awareness.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">What do schools ask at the parent meeting?</h3>
+                <p class="faq-a">Common parent questions: your child's learning style, challenges at the previous school, why you chose this school, and your family's approach to education.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">Can a child with limited English attend an international school interview?</h3>
+                <p class="faq-a">Yes — they go through an EAL (English as an Additional Language) assessment instead. Limited English is not a reason for rejection; it informs the support plan the school creates for your child.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">How much preparation time is needed for the interview?</h3>
+                <p class="faq-a">2–3 weeks of natural, relaxed conversation for 20–30 minutes a day is sufficient. The goal is not memorisation — it is helping your child feel comfortable expressing themselves.</p>
+              </div>
+              <div class="faq-item">
+                <h3 class="faq-q">What should we do if the interview is unsuccessful?</h3>
+                <p class="faq-a">Request feedback from the school, ask to be placed on the waiting list, and look at alternative schools with a good profile match for your child.</p>
+              </div>
+            </div>
+
+            
+            <div class="blog-callout" style="margin-top:2rem">
+              <strong>Related guides:</strong><br>
+              <a href="/en/blog/how-to-apply-dubai-school/" style="color:var(--accent,#DBAF2E);font-weight:500;">How to Apply to a Dubai International School 2026: Step-by-Step →</a><br>
+              <a href="/en/blog/dubai-school-registration/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai School Registration 2026: Documents and Process →</a><br>
+              <a href="/en/blog/dubai-khda-outstanding-schools/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai's Best International Schools 2026: KHDA Outstanding List →</a>
+            </div>
+<div class="blog-post-cta glass">
+              <h3>Let's prepare for the interview together</h3>
+              <p>In a one-to-one preparation session with Özlem Çimen, you can work through likely questions and answer strategies tailored to your child's specific profile.</p>
+              <a href="/en/international-school-consulting/" class="btn btn-primary" style="display:inline-flex">Book a Free Session</a>
+              <a href="/en/dubai/" class="btn btn-secondary" style="margin-top:0.5rem;">Our Dubai Consultancy Page →</a>
+            </div>
+
+          </div>
+        </div>
+
+      </article>
+    </div>
+
+    <div class="container" style="padding:0 0 2rem;">
+    </div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>Related Posts</h2>
+      <div class="blog-related-grid">
+        <a href="/en/blog/how-to-pass-international-school-interview/" class="blog-related-card">
+          <img src="/assets/blog/thumb-mulakat.webp" alt="How to Pass an International School Interview" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>How to Pass an International School Interview</span>
+            </div>
+            <div class="blog-related-card-meta">7 June 2026 · 10 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/how-to-apply-dubai-school/" class="blog-related-card">
+          <img src="/assets/blog/thumb-basvuru.webp" alt="How to Apply to a Dubai School 2026: Step by Step" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>How to Apply to a Dubai School: Step-by-Step</span>
+            </div>
+            <div class="blog-related-card-meta">23 June 2026 · 11 min</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/why-edualist/">Why Us?</a></li>
+            <li><a href="/en/#services">Services</a></li>
+            <li><a href="/en/blog/">Blog <span class="nav-count-badge">55</span></a></li>
+            <li><a href="/en/international-school-consulting/">Book Session</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" target="_blank" rel="noopener noreferrer"
+     class="whatsapp-sticky" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Close">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
+  </div>
+
+    <script>
+    
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+<script>
+  window.setLang = function (l) {
+    if (l === document.documentElement.lang) return;
+    try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+  };
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+    b.classList.toggle('active', l === document.documentElement.lang);
+    if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+  });
+</script>
+</body>
+</html>

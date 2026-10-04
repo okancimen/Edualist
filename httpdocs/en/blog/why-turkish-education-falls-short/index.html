@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.hero-blog-preview{padding:1.5rem 1.75rem}.hero-blog-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}.hero-blog-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.hero-blog-all{font-size:.8rem;color:var(--text-muted);text-decoration:none;transition:color .2s}.hero-blog-all:hover{color:var(--accent)}.hero-blog-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}.hero-blog-item{border-top:1px solid var(--border);padding:.85rem 0}.hero-blog-item:first-child{border-top:none;padding-top:0}.hero-blog-item a{font-size:.92rem;font-weight:500;color:var(--text-primary);text-decoration:none;line-height:1.4;display:block;transition:color .2s}.hero-blog-item a:hover{color:var(--accent)}.hero-blog-item-meta{font-size:.75rem;color:var(--text-muted);margin-top:.2rem}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/blog/turkiye-egitim-sistemi-neden-yetmiyor/assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why the Turkish Education System Falls Short | Edualist</title>
+  <meta name="description" content="PISA rankings, rote learning, frequent curriculum changes and the English gap: a data-driven look at Turkish education from an expat mother.">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/en/blog/why-turkish-education-falls-short/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/turkiye-egitim-sistemi-neden-yetmiyor/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/why-turkish-education-falls-short/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/turkiye-egitim-sistemi-neden-yetmiyor/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="Why the Turkish Education System Falls Short">
+  <meta property="og:description" content="PISA rankings, rote learning, frequent curriculum changes and the English gap: a data-driven look at Turkish education from an expat mother.">
+  <meta property="og:url"         content="https://www.edualist.com/en/blog/why-turkish-education-falls-short/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-turkiye-egitim.webp">
+  <meta property="article:published_time" content="2026-06-12">
+  <meta property="article:modified_time" content="2026-06-16">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Why the Turkish Education System Falls Short">
+  <meta name="twitter:description" content="PISA rankings, rote learning, frequent curriculum changes and the English gap: a data-driven look at Turkish education from an expat mother.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-turkiye-egitim.webp">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Why the Turkish Education System Falls Short: Observations from an Expat Mother",
+  "description": "PISA rankings, rote learning, frequent curriculum changes and the English gap: a data-driven look at Turkish education from an expat mother.",
+  "author": {
+    "@type": "Person",
+    "name": "Özlem Çimen",
+    "url": "https://www.edualist.com/en/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edualist",
+    "url": "https://www.edualist.com/en/"
+  },
+  "datePublished": "2026-06-12",
+  "dateModified": "2026-10-02",
+  "wordCount": 2900,
+  "inLanguage": "en",
+  "url": "https://www.edualist.com/en/blog/why-turkish-education-falls-short/",
+  "image": "https://www.edualist.com/assets/blog/thumb-turkiye-egitim.webp",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      ".blog-summary",
+      ".blog-post-title"
+    ]
+  }
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "https://www.edualist.com/en/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Blog",
+      "item": "https://www.edualist.com/en/blog/"
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "name": "Why the Turkish Education System Falls Short",
+      "item": "https://www.edualist.com/en/blog/why-turkish-education-falls-short/"
+    }
+  ]
+}
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Outfit:wght@400;500;600;700;800&display=optional"></noscript>
+
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="/styles.css?v=7">
+  <link rel="stylesheet" href="/styles.css?v=7" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/styles.css?v=7"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Where does Turkey rank in PISA?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In the 2022 assessment, Turkey ranked clearly below the OECD average in mathematics and reading literacy, out of 81 countries."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How many times has the Ministry of Education curriculum changed?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "More than 17 major overhauls in the past 20 years. These frequent changes create serious instability for both students and teachers."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is moving from Turkish education to an international school difficult?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "It requires serious adjustment, particularly in academic English, critical thinking and project-based learning. Professional consulting significantly eases this transition."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can a Turkish high school diploma get you into a university abroad?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Most target universities require an internationally standardised exam result such as SAT/ACT, A-Level or IB. Options with only a Turkish diploma are quite limited."
+      }
+    }
+  ]
+}
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");
+  </script>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+    <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Dubai Schools</a></li>
+        <li><a href="/en/international-school-consulting/">Consultancy</a></li>
+        <li><a href="/en/academic-coaching/">Coaching</a></li><li><a href="/en/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">55</span></a></li>
+        <li><a href="/en/why-edualist/">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/en/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+<span>Back to Blog</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>12 June 2026</span>
+          <span><a href="/en/about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>10 min read</span>
+        </div>
+
+
+        <div class="blog-summary">
+          <strong><span>Summary</span></strong>
+          <p>A data-driven analysis of why Turkey's education system falls short of global standards — examining PISA rankings, rote-learning culture, frequent curriculum overhauls, and the persistent English language gap.</p>
+        </div>
+        <!-- TR -->
+
+        <!-- EN -->
+        <div class="blog-post-body">
+          <h1 class="blog-post-title">Why the Turkish Education System Falls Short:<br>Observations from an Expat Mother</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">Turkish education system</span>
+            <span class="blog-seo-tag">PISA Turkey results</span>
+            <span class="blog-seo-tag">international school gap</span>
+            <span class="blog-seo-tag">Turkish expat education</span>
+            <span class="blog-seo-tag">rote learning system</span>
+          </div>
+
+          <p>A mother I worked with told me that on her daughter's first day at an international school in America, the teacher asked her a simple question: <em>"What do you think about this?"</em></p>
+
+          <p>The child froze.</p>
+
+          <p>She had spent years as a student in Turkey, trying in every class to find the one correct answer. But "what do you think?" was different. The question caught her completely off guard — because in the Turkish education system, that question is rarely asked.</p>
+
+          <p>When I spoke with the mother, we both noticed the same thing: she believed she had raised her daughter well, but she had unknowingly prepared her for the wrong race.</p>
+
+          <p>I've heard this story countless times. Different cities, different schools — from Dubai, from London, from Singapore. But the same shock, the same moment.</p>
+
+          <p>Today I want to talk about why that shock happens, and why the Turkish education system falls behind international standards — not emotionally, but with data.</p>
+
+          <h2>What Do the PISA Numbers Say?</h2>
+
+          <p>Turkey has participated regularly in the OECD's PISA assessments since 2003. And since 2003, it has never once reached the OECD average in any assessment cycle. Mathematics, science and reading literacy — consistently below average in all three core domains.</p>
+
+          <p>According to the 2022 PISA results, Turkey ranks below 40th out of 81 countries in mathematics. A more concrete statistic: a significant proportion of 15-year-old students in Turkey can't even demonstrate the minimum proficiency level in mathematical literacy. This isn't just a test-score issue — it's an objective indicator of how prepared children actually are for real life.</p>
+
+          <p>So why does this happen? There are five core reasons.</p>
+
+          <h2>1. A Curriculum Built on Memorisation</h2>
+
+          <p>Memorisation still sits at the centre of education in Turkey. Finding the correct answer is valued far more than understanding how you arrived at it. Classroom discussion, critical questioning, being able to say "I think" — these remain a matter of an individual teacher's preference, not something the curriculum is designed around.</p>
+
+          <p>International education systems take a fundamentally different approach. In America, students encounter a method that moves from concrete to pictorial to abstract. Fewer topics, deeper understanding. A child isn't asked to "memorise this formula" but to answer "how — and why — would you solve this problem?"</p>
+
+          <p>The IB (International Baccalaureate) curriculum pushes this even further. Inquiry, reflection and ethical questioning aren't extracurricular add-ons — they're the core of the curriculum.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="/assets/founder-avatar-300.webp" type="image/webp">
+              <img src="/assets/founder-avatar.png" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — A Note from the Field</span>
+              <p>A child I worked with solved a maths problem his own way in his American school and presented it to the class for the first time — and the teacher said "what a great approach," even though the answer was wrong. His mother told me, astonished: "In Turkey, that answer would have cost him points."</p>
+            </div>
+          </div>
+
+          <h2>2. 17 System Overhauls in 20 Years</h2>
+
+          <p>Turkey's education system has undergone 17 major overhauls in the past 20 years. Nine different Ministers of National Education have come and gone. Each minister introduced a new model, a new exam, a new curriculum.</p>
+
+          <p>This instability doesn't just affect parents — it cuts deep into teachers as well. The topics you taught one year disappear from the curriculum the next. The lesson plans you built five years ago are obsolete today. Teacher motivation, professional confidence and long-term learning planning all take the hit from this constant churn.</p>
+
+          <p>Compare this to Finland. Finland's education system consistently ranks at the very top of PISA. Teachers there hold master's degrees, enjoy professional autonomy, and trust the system. Change is slow, deliberate and consistent. In Finland, even the debate over an education reform plays out over a decade-long process.</p>
+
+          <div class="blog-callout">
+            Turkish families who've relocated abroad see this very clearly. What they all tend to say is similar: "Schools here are planning ten years ahead. The system in Turkey sometimes can't even plan next year."
+          </div>
+
+          <h2>3. Exam Pressure Overrides Everything Else</h2>
+
+          <p>In Turkey, a child's school life revolves around specific exams: LGS, YKS. Spending on private tutoring and prep courses to prepare for these exams runs into the billions of lira nationwide. According to TÜİK data, private tutoring and prep-course spending remains the fastest-growing line item in Turkish families' education budgets.</p>
+
+          <p>And the result? Children burn through their weekends, their sleep patterns break down, their curiosity gets ground away. They go to school to pass exams, not to learn.</p>
+
+          <p>Yet in modern education approaches, the exam is a tool, not the goal. Finland has no standardised tests. Assessment is used to track a student's development — not to rank them. The result? Finnish students grow up with less stress and higher learning motivation, and have topped the PISA rankings for years.</p>
+
+          <div class="blog-callout">
+            I see the same striking contrast in international schools in Dubai and London. The children in front of me want to "finish the project," not "study for the exam." The way they engage with education is fundamentally different.
+          </div>
+
+          <h2>4. The English and Global Competency Gap</h2>
+
+          <p>The shock I hear most often from Turkish families who've relocated abroad is this: <em>"My child's English was so much further behind than I thought."</em></p>
+
+          <p>English instruction exists in Turkey — but it's largely passive. Knowing grammar rules is very different from thinking and speaking in that language. The average Turkish high school graduate's active English usage skill, according to the EF English Proficiency Index, lags well behind Europe. Turkey sits in the "low proficiency" category on that index.</p>
+
+          <p>In international schools, English isn't a subject — it's the language of thinking, writing and being. The children of families I work with arrive abroad knowing English but unable to <a href="/blog/oglumun-ingilizcesi-iyiydi/">think in English</a>. They can build an equation in English, but they can't defend an idea in English. Closing this gap takes time — and with the right support, it happens far faster.</p>
+
+          <p>The most critical academic English skills are:</p>
+
+          <ul>
+            <li><strong>Academic writing</strong></li>
+            <li><strong>Argument development</strong></li>
+            <li><strong>Source evaluation</strong></li>
+          </ul>
+
+          <p>None of these are taught systematically in the Turkish curriculum.</p>
+
+          <h2>5. The Socioeconomic Divide Splits Education in Two</h2>
+
+          <p>Which school you attend in Turkey is determined to a large extent by your family's income level. The gap between a state school and a good private school is chasm-sized — in physical infrastructure, in teacher quality, and in the opportunities offered to students.</p>
+
+          <p>OECD data puts a number on this: in Turkey, socioeconomic status affects student achievement at a rate far above the OECD average. In other words, which family you're born into determines what you learn in Turkey. This is an education-equity problem — and at the same time, a global-competitiveness problem.</p>
+
+          <p>In modern education systems — Finland, Canada, New Zealand — this gap is far narrower. State schools are genuinely competitive; the private-school advantage isn't nearly as decisive.</p>
+
+          <h2>It's Not Just Turkey</h2>
+
+          <p>I want to stress an important nuance here. Critiquing the Turkish education system isn't the same as dismissing it entirely. There are genuinely good teachers and genuinely strong schools in Turkey. And the system has made meaningful progress in PISA since 2003 — its starting point was far lower.</p>
+
+          <p>But the pace of progress isn't enough. And for families relocating abroad, or aiming for a global education for their child, the issue is this: the gap with the international system is still wide.</p>
+
+          <p>Knowing this gap, accepting it, and preparing accordingly — that's what turns the transition into a success.</p>
+
+          <h2>Getting Ready for "What Do You Think?"</h2>
+
+          <p>That mother's daughter is now one of the top students at the same school. What made the difference? Managing the transition correctly. The right school, the right academic support, the right adaptation guidance.</p>
+
+          <p>Moving from Turkish education to an international system — especially IB, A-Level or the American curriculum — requires serious preparation. Skipping that preparation and assuming "I'll just find a good school, the child will figure out the rest" is exactly how you end up as that frozen child.</p>
+
+          <p>But with the right support, <a href="/blog/turk-egitim-sisteminden-uluslararasi-okula-gecis/">this transition</a> becomes far smoother and far faster. I've seen it happen, over and over, with dozens of families.</p>
+
+          <p style="margin-top:2rem;">
+            👉 If you're planning to relocate abroad or looking for the right school for your child, <a href="/en/international-school-consulting/" style="color:var(--accent);font-weight:600;">get in touch for a free consultation.</a>
+          </p>
+
+        </div>
+
+        <!-- FAQ -->
+
+        <div class="blog-faq">
+          <h2>The Most Common Questions from Turkish Families</h2>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Where does Turkey rank in PISA?</h3>
+            <p class="faq-a">In the 2022 assessment, Turkey ranked clearly below the OECD average in mathematics and reading literacy, out of 81 countries.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">How many times has the Ministry of Education curriculum changed?</h3>
+            <p class="faq-a">More than 17 major overhauls in the past 20 years. These frequent changes create serious instability for both students and teachers.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Is moving from Turkish education to an international school difficult?</h3>
+            <p class="faq-a">It requires serious adjustment, particularly in academic English, critical thinking and project-based learning. Professional consulting significantly eases this transition.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Can a Turkish high school diploma get you into a university abroad?</h3>
+            <p class="faq-a">Most target universities require an internationally standardised exam result such as SAT/ACT, A-Level or IB. Options with only a Turkish diploma are quite limited.</p>
+          </div>
+        </div>
+
+        <div class="blog-summary" style="margin-top:2rem;">
+          <p>Özlem Çimen is an international education consultant and the founder of Edualist. Based in Dubai, she works with Turkish expat families around the world to make the right school, curriculum and education path decisions for their children.</p>
+        </div>
+
+        </article>
+    </div>
+
+    <div class="container" style="padding:0 0 2rem;">
+    </div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>Related Posts</h2>
+      <div class="blog-related-grid">
+        <a href="/en/blog/ib-vs-a-level-vs-ap/" class="blog-related-card">
+          <img src="/assets/blog/thumb-mufredat.webp" alt="IB vs A-Level vs AP: Which Curriculum to Choose?" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>IB, A-Level & American Curriculum Compared</span>
+            </div>
+            <div class="blog-related-card-meta">7 June 2026 · 11 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/should-my-child-study-abroad/" class="blog-related-card">
+          <img src="/assets/blog/thumb-karar.webp" alt="Should I Send My Child to School Abroad?" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Should I Educate My Child Abroad?</span>
+            </div>
+            <div class="blog-related-card-meta">7 June 2026 · 9 min</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/why-edualist/">Why Us?</a></li>
+            <li><a href="/en/#services">Services</a></li>
+            <li><a href="/en/blog/">Blog <span class="nav-count-badge">55</span></a></li>
+            <li><a href="/en/international-school-consulting/">Book Session</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky WhatsApp -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" target="_blank" rel="noopener noreferrer"
+     class="whatsapp-sticky" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- AI Chatbot Button -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="AI Asistan">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <!-- AI Chatbot Popup -->
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Kapat">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="Edualist AI Asistan"></iframe>
+  </div>
+
+    <script>
+    
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+<script>
+  window.setLang = function (l) {
+    if (l === document.documentElement.lang) return;
+    try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+  };
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+    b.classList.toggle('active', l === document.documentElement.lang);
+    if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+  });
+</script>
+</body>
+</html>

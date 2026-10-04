@@ -12,6 +12,8 @@
   <meta name="keywords" content="çocuğumun potansiyeli nasıl anlaşılır, çocuk akademik değerlendirme, çocuğum neden başarısız, çocuk akademik gelişim rehberi, çocuk okul başarısı, akademik koçluk, çocuk bilişsel değerlendirme, uluslararası akademik değerlendirme">
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
   <link rel="canonical" href="https://www.edualist.com/cocugunuzun-potansiyeli/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/cocugunuzun-potansiyeli/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/cocugunuzun-potansiyeli/">
 
   <meta property="og:type"        content="website">
   <meta property="og:locale"      content="tr_TR">
@@ -277,7 +279,7 @@
         <li><a href="/dubai/">Dubai'de Okul</a></li>
         <li><a href="/uluslararasi-okul-danismanligi/">Danışmanlık</a></li>
         <li><a href="/uluslararasi-akademik-kocluk/">Akademik Koçluk</a></li>
-        <li><a href="/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">84</span></a></li>
+        <li><a href="/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">83</span></a></li>
         <li><a href="/neden-biz/">Hakkımızda</a></li>
       </ul>
       <div class="nav-controls">
@@ -704,5 +706,18 @@
     }, {passive: true});
   </script>
 
+<script>
+  window.setLang = function (l) {
+    if (l === document.documentElement.lang) return;
+    try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+  };
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+    b.classList.toggle('active', l === document.documentElement.lang);
+    if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+  });
+</script>
 </body>
 </html>
