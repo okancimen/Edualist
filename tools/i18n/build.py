@@ -32,6 +32,7 @@ SWITCH_SNIPPET = """<script>
   window.setLang = function (l) {
     if (l === document.documentElement.lang) return;
     try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    document.cookie = 'edualist_lang=' + l + ';path=/;max-age=31536000;samesite=lax';
     var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
     location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
   };

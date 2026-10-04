@@ -44,6 +44,10 @@ ErrorDocument 404 /404.html
   Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Permissions-Policy "geolocation=(), microphone=(), camera=()"
   Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains"
+  # the bare-domain redirect depends on these request headers
+  <If "%{REQUEST_URI} == '/' || %{REQUEST_URI} == '/index.html'">
+    Header always merge Vary "Accept-Language, Cookie"
+  </If>
 </IfModule>
 
 <IfModule mod_rewrite.c>
@@ -67,6 +71,16 @@ ErrorDocument 404 /404.html
   # Canonical: non-www → www (301 permanent)
   RewriteCond %{HTTP_HOST} ^edualist\.com$ [NC]
   RewriteRule ^ https://www.edualist.com%{REQUEST_URI} [R=301,L]
+
+  # Bare domain → language home: the visitor's TR/EN choice (cookie), then
+  # browser language, else Turkish. Replaces the old JavaScript redirect page.
+  RewriteCond %{HTTP_COOKIE} (^|;\s*)edualist_lang=en(;|$)
+  RewriteRule ^(index\.html)?$ /en/ [R=302,L]
+  RewriteCond %{HTTP_COOKIE} (^|;\s*)edualist_lang=tr(;|$)
+  RewriteRule ^(index\.html)?$ /tr/ [R=302,L]
+  RewriteCond %{HTTP:Accept-Language} ^en [NC]
+  RewriteRule ^(index\.html)?$ /en/ [R=302,L]
+  RewriteRule ^(index\.html)?$ /tr/ [R=302,L]
 
   # 404 fix: URL with Turkish ü char → correct slug
   RewriteRule ^blog/uluslararasi-okul-m%C3%BClakata%C4%B1-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakat%C4%B1-nasil-gecilir/ [R=301,L]
