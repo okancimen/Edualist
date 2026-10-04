@@ -382,7 +382,7 @@
       </a>
 
       <a href="/blog/turk-egitim-sisteminden-uluslararasi-okula-gecis/" class="blog-related-card">
-        <img src="../../assets/blog/thumb-turk-uluslararasi-gecis.webp" alt="Türk Eğitim Sisteminden Uluslararası Okula Geçiş" width="400" height="160" loading="lazy">
+        <img src="../../assets/blog/thumb-gecis.webp" alt="Türk Eğitim Sisteminden Uluslararası Okula Geçiş" width="400" height="160" loading="lazy">
         <div class="blog-related-card-body">
           <p class="blog-related-card-title">Türk Eğitim Sisteminden Uluslararası Okula Geçiş</p>
           <p class="blog-related-card-meta">Farklar ve hazırlık rehberi</p>
@@ -390,7 +390,7 @@
       </a>
 
       <a href="/blog/khda-notu-nedir/" class="blog-related-card">
-        <img src="../../assets/blog/thumb-dubai-okul-kayit.webp" alt="KHDA Notu Nedir" width="400" height="160" loading="lazy">
+        <img src="../../assets/blog/thumb-dubai-okul.webp" alt="KHDA Notu Nedir" width="400" height="160" loading="lazy">
         <div class="blog-related-card-body">
           <p class="blog-related-card-title">KHDA Notu Nedir? Outstanding, Very Good, Good Farkı</p>
           <p class="blog-related-card-meta">Dubai okul derecelendirme rehberi</p>
@@ -455,7 +455,7 @@
     <span>EduBot</span>
     <button class="chatbot-popup-close" id="chatbotClose">✕</button>
   </div>
-  <iframe class="chatbot-iframe" src="https://www.edualist.com/edubot/" title="EduBot"></iframe>
+  <iframe class="chatbot-iframe" data-src="https://ai-edualist-com.vercel.app/" title="EduBot"></iframe>
 </div>
 
 <script>
@@ -464,7 +464,7 @@
   if(mt)mt.addEventListener('click',function(){this.classList.toggle('active');nl.classList.toggle('open');});
   window.addEventListener('scroll',function(){document.getElementById('mainNav').classList.toggle('header-scrolled',window.scrollY>50);},{passive:true});
   var cb=document.getElementById('chatbotBtn'),cp=document.getElementById('chatbotPopup'),cc=document.getElementById('chatbotClose');
-  if(cb)cb.addEventListener('click',function(){cp.style.display=cp.style.display==='none'?'block':'none';});
+  if(cb)cb.addEventListener('click',function(){cp.style.display=cp.style.display==='none'?'block':'none';var fr=cp.querySelector('iframe[data-src]');if(fr){fr.src=fr.dataset.src;fr.removeAttribute('data-src');}});
   if(cc)cc.addEventListener('click',function(){cp.style.display='none';});
 </script>
 

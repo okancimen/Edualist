@@ -105,14 +105,26 @@
 
   <nav class="header-nav" id="mainNav">
     <div class="nav-container">
-      <a href="../../" class="nav-logo">Edualist</a>
-      <div class="nav-links">
-        <li><a href="../../hakkimda/">Hakkımda</a></li>
-        <li><a href="../../uluslararasi-akademik-kocluk/">Akademik Koçluk</a></li>
-        <li><a href="../../blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">83</span></a></li>
+      <a href="/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/">Dubai'de Okul</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/">Danışmanlık</a></li>
+        <li><a href="/uluslararasi-akademik-kocluk/">Akademik Koçluk</a></li>
+        <li><a href="/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">83</span></a></li>
+        <li><a href="/neden-biz/">Hakkımızda</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <a href="../../#contact" class="nav-cta">Ücretsiz Görüşme</a>
-      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     </div>
   </nav>
 
@@ -356,7 +368,11 @@
     </div>
   </footer>
 
-  <script src="../../main.js?v=10" defer></script>
+  <script>
+  var mt=document.getElementById('menuToggle')||document.querySelector('#mainNav .nav-toggle'),nl=document.getElementById('navLinks')||document.querySelector('#mainNav .nav-links');
+  if(mt&&nl)mt.addEventListener('click',function(){this.classList.toggle('active');nl.classList.toggle('open');this.setAttribute('aria-expanded',nl.classList.contains('open'));});
+  window.addEventListener('scroll',function(){document.getElementById('mainNav').classList.toggle('header-scrolled',window.scrollY>50);},{passive:true});
+</script>
 <script>
   window.setLang = function (l) {
     if (l === document.documentElement.lang) return;
