@@ -2,3 +2,4 @@ httpdocs/mail-config.php
 .index_state.json
 logs/
 private/
+__pycache__/
