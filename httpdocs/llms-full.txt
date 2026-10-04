@@ -14152,7 +14152,7 @@ Dubai'ye taşınmaya karar verdiniz. Vizeler tamam, ev bulundu, işler ayarland�
 
           Robert Kolej'in 2026-27 yıllık öğrenim ücreti 2.488.200 TL. Bu rakam öğrenim ücretini kapsıyor. Yatakhane, servis ve yemek gibi ek kalemler bu fiyata dahil değil — bunların toplamı aileden aileye değişse de yıllık 500.000-700.000 TL arasında ekstra maliyet anlamına gelebiliyor.
 
-          Robert Kolej 1863'te kurulan, IB Diploma sunan ve üniversite kabul oranlarıyla Türkiye'nin en seçici okulu olmaya devam eden bir kurum. Fiyatın arkasında gerçek bir akademik değer var. Ama bu değerin size ne kadara mal olduğunu görmek için karşılaştırmaya ihtiyaç var.
+          Robert Kolej 1863'te kurulan, kendi özel müfredatıyla Türk ulusal diploması veren ve üniversite kabul oranlarıyla Türkiye'nin en seçici okulu olmaya devam eden bir kurum. Fiyatın arkasında gerçek bir akademik değer var. Ama bu değerin size ne kadara mal olduğunu görmek için karşılaştırmaya ihtiyaç var.
 
           
 
@@ -14170,7 +14170,7 @@ Dubai'ye taşınmaya karar verdiniz. Vizeler tamam, ev bulundu, işler ayarland�
             
             
               British International School2.751.000IB + BritishVar
-              Robert Kolej2.488.200IB DiplomaVar (çok seçici)
+              Robert Kolej2.488.200Ulusal DiplomaVar (çok seçici)
               Alman Lisesi2.007.650Alman AbiturVar
               Koç Okulu1.930.107 + KDVIB DiplomaVar
               Hisar Okulları1.813.636 + KDVIBVar
@@ -14312,7 +14312,7 @@ Dubai'ye taşınmaya karar verdiniz. Vizeler tamam, ev bulundu, işler ayarland�
 
 ## Robert Kolej Fee 2026-27: The Number
 
-          Robert Kolej's annual tuition: 2,488,200 TL — covering tuition only. Boarding, transport and meals add an estimated 500,000–700,000 TL annually for some students. Founded in 1863, fully IB Diploma, and Turkey's most selective school by admission criteria. The price reflects real academic value. But context matters.
+          Robert Kolej's annual tuition: 2,488,200 TL — covering tuition only. Boarding, transport and meals add an estimated 500,000–700,000 TL annually for some students. Founded in 1863, it follows its own rigorous curriculum and awards a Turkish national diploma — Turkey's most selective school by admission criteria. The price reflects real academic value. But context matters.
 
           
 
@@ -14322,7 +14322,7 @@ Dubai'ye taşınmaya karar verdiniz. Vizeler tamam, ev bulundu, işler ayarland�
             SchoolAnnual fee (TL)Curriculum
             
               British International School2,751,000IB + British
-              Robert Kolej2,488,200IB Diploma
+              Robert Kolej2,488,200National Diploma
               Alman Lisesi2,007,650German Abitur
               Koç Okulu1,930,107 + VATIB Diploma
               Hisar Okulları1,813,636 + VATIB
@@ -14794,7 +14794,7 @@ Dubai'ye taşınmaya karar verdiniz. Vizeler tamam, ev bulundu, işler ayarland�
             
               1British International School2.751.000IB + British
               2BIS Okulları2.550.000British
-              3Robert Kolej2.488.200IB Diploma
+              3Robert Kolej2.488.200Ulusal Diploma
               4Alman Lisesi2.007.650Alman Abitur
               5Koç Okulu1.930.107 + KDVIB Diploma
               6Hisar Okulları1.813.636 + KDVIB
@@ -14853,7 +14853,7 @@ Dubai'ye taşınmaya karar verdiniz. Vizeler tamam, ev bulundu, işler ayarland�
           
 
           
-            Karşılaştırmanın özeti: Koç Okulu veya Robert Kolej gibi Türkiye'nin üst sıra IB okullarına ödenen para (2–2.5 milyon TL), Dubai'nin tam IB okulu DIA'yı iki yıl karşılıyor. GEMS Wellington veya Repton gibi British Outstanding okullar için bu oran daha da yüksek.
+            Karşılaştırmanın özeti: Koç Okulu veya Robert Kolej gibi Türkiye'nin en üst segment özel okullarına ödenen para (2–2.5 milyon TL), Dubai'nin tam IB okulu DIA'yı iki yıl karşılıyor. GEMS Wellington veya Repton gibi British Outstanding okullar için bu oran daha da yüksek.
           
 
           
@@ -14882,7 +14882,7 @@ Dubai'ye taşınmaya karar verdiniz. Vizeler tamam, ev bulundu, işler ayarland�
 
                 - Türkçe ana dil eğitimi korunuyor
 
-                - IB Diploma (Robert, Koç, Hisar, ENKA)
+                - IB Diploma seçeneği (Koç, Hisar, ENKA)
 
                 - Güçlü Türkiye iş dünyası alumni ağı
 
@@ -15067,7 +15067,7 @@ Dubai'ye taşınmaya karar verdiniz. Vizeler tamam, ev bulundu, işler ayarland�
 
 ## Dubai'de IB okulu kaç TL'ye denk geliyor?
 
-            DIA (Dubai International Academy) için 80.000–95.000 AED, yani yaklaşık 1.012.000–1.202.000 TL. Türkiye'deki IB okulları (Robert, Koç, Hisar) 1.8–2.5 milyon TL aralığında.
+            DIA (Dubai International Academy) için 80.000–95.000 AED, yani yaklaşık 1.012.000–1.202.000 TL. Türkiye'nin üst segment özel okulları (Robert, Koç, Hisar) 1.8–2.5 milyon TL aralığında.
 
           
 
@@ -15076,7 +15076,7 @@ Dubai'ye taşınmaya karar verdiniz. Vizeler tamam, ev bulundu, işler ayarland�
 
 ## Robert Kolej ile Dubai International Academy arasındaki temel fark nedir?
 
-            Her ikisi de IB Diploma sunuyor. Robert Kolej'in Türk alumni ağı güçlü; DIA'nın 50+ ülkeden uluslararası öğrenci profili ve İngilizce birinci dil ortamı öne çıkıyor. Fiyat açısından DIA, Robert Kolej'in yarısından azı.
+            Robert Kolej Türk ulusal diploması veriyor, DIA ise tam IB Diploma sunuyor. Robert Kolej'in Türk alumni ağı güçlü; DIA'nın 50+ ülkeden uluslararası öğrenci profili ve İngilizce birinci dil ortamı öne çıkıyor. Fiyat açısından DIA, Robert Kolej'in yarısından azı.
 
           
 
@@ -15155,7 +15155,7 @@ Dubai'ye taşınmaya karar verdiniz. Vizeler tamam, ev bulundu, işler ayarland�
             
               1British International School2,751,000IB + British
               2BIS Schools2,550,000British
-              3Robert Kolej2,488,200IB Diploma
+              3Robert Kolej2,488,200National Diploma
               4Alman Lisesi2,007,650German Abitur
               5Koç Okulu1,930,107 + VATIB Diploma
               6Hisar Okulları1,813,636 + VATIB
@@ -15224,7 +15224,7 @@ Dubai'ye taşınmaya karar verdiniz. Vizeler tamam, ev bulundu, işler ayarland�
 
                 - Turkish as first language preserved
 
-                - IB Diploma available (Robert, Koç, Hisar, ENKA)
+                - IB Diploma option (Koç, Hisar, ENKA)
 
                 - Strong Turkish business alumni network
 
@@ -15292,7 +15292,7 @@ Dubai'ye taşınmaya karar verdiniz. Vizeler tamam, ev bulundu, işler ayarland�
             
               
 
-## Do Dubai schools offer the same IB Diploma as Robert Kolej or Koç Okulu?
+## Do Dubai schools offer the same IB Diploma as Koç Okulu?
 
               Yes — the IB Diploma is the same globally-authorised qualification regardless of country. DIA, Repton and several other KHDA Outstanding schools offer the full IB continuum (PYP, MYP, Diploma). The classroom environment is different: Dubai's top schools typically have 40–80 nationalities represented, creating a genuinely international learning context.
 
