@@ -407,7 +407,7 @@
     <div class="blog-related-grid">
 
       <a href="/en/blog/dubai-khda-outstanding-schools/" class="blog-related-card">
-        <img src="/assets/blog/thumb-dubai-en-iyi-okullar.webp" alt="Dubai&#x27;s KHDA Outstanding Schools 2026: Full List" width="400" height="160" loading="lazy">
+        <img src="/assets/blog/thumb-dubai.webp" alt="Dubai&#x27;s KHDA Outstanding Schools 2026: Full List" width="400" height="160" loading="lazy">
         <div class="blog-related-card-body">
           <p class="blog-related-card-title">Best International Schools in Dubai 2026</p>
           <p class="blog-related-card-meta">KHDA Outstanding list</p>
@@ -488,7 +488,7 @@
     <span>EduBot</span>
     <button class="chatbot-popup-close" id="chatbotClose">✕</button>
   </div>
-  <iframe class="chatbot-iframe" src="https://www.edualist.com/edubot/" title="EduBot"></iframe>
+  <iframe class="chatbot-iframe" data-src="https://ai-edualist-com.vercel.app/" title="EduBot"></iframe>
 </div>
 
 <script>
@@ -504,7 +504,7 @@
 
   // Chatbot
   var cb=document.getElementById('chatbotBtn'),cp=document.getElementById('chatbotPopup'),cc=document.getElementById('chatbotClose');
-  if(cb)cb.addEventListener('click',function(){cp.style.display=cp.style.display==='none'?'block':'none';});
+  if(cb)cb.addEventListener('click',function(){cp.style.display=cp.style.display==='none'?'block':'none';var fr=cp.querySelector('iframe[data-src]');if(fr){fr.src=fr.dataset.src;fr.removeAttribute('data-src');}});
   if(cc)cc.addEventListener('click',function(){cp.style.display='none';});
 </script>
 

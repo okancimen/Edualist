@@ -394,7 +394,7 @@
 
 
       <a href="/en/blog/what-is-a-khda-rating/" class="blog-related-card">
-        <img src="/assets/blog/thumb-dubai-okul-kayit.webp" alt="KHDA Notu Nedir" width="400" height="160" loading="lazy">
+        <img src="/assets/blog/thumb-dubai-okul.webp" alt="KHDA Notu Nedir" width="400" height="160" loading="lazy">
         <div class="blog-related-card-body">
           <p class="blog-related-card-title">What Is a KHDA Rating? Outstanding vs Very Good Explained</p>
           <p class="blog-related-card-meta">Dubai school rating guide</p>
@@ -459,7 +459,7 @@
     <span>EduBot</span>
     <button class="chatbot-popup-close" id="chatbotClose">✕</button>
   </div>
-  <iframe class="chatbot-iframe" src="https://www.edualist.com/edubot/" title="EduBot"></iframe>
+  <iframe class="chatbot-iframe" data-src="https://ai-edualist-com.vercel.app/" title="EduBot"></iframe>
 </div>
 
 <script>
@@ -468,7 +468,7 @@
   if(mt)mt.addEventListener('click',function(){this.classList.toggle('active');nl.classList.toggle('open');});
   window.addEventListener('scroll',function(){document.getElementById('mainNav').classList.toggle('header-scrolled',window.scrollY>50);},{passive:true});
   var cb=document.getElementById('chatbotBtn'),cp=document.getElementById('chatbotPopup'),cc=document.getElementById('chatbotClose');
-  if(cb)cb.addEventListener('click',function(){cp.style.display=cp.style.display==='none'?'block':'none';});
+  if(cb)cb.addEventListener('click',function(){cp.style.display=cp.style.display==='none'?'block':'none';var fr=cp.querySelector('iframe[data-src]');if(fr){fr.src=fr.dataset.src;fr.removeAttribute('data-src');}});
   if(cc)cc.addEventListener('click',function(){cp.style.display='none';});
 </script>
 

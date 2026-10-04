@@ -75,6 +75,10 @@ ErrorDocument 404 /404.html
   # Redirect old dubai slug to new Turkish slug (also catches /index.html variant)
   RewriteRule ^blog/dubai-school-guide(/index\.html)?/?$ /blog/dubai-gelmeden-once-bilmeniz-gerekenler/ [R=301,L]
 
+  # Old stub URLs
+  RewriteRule ^ib-dp-koclugu(/index\.html)?/?$ /uluslararasi-akademik-kocluk/ [R=301,L]
+  RewriteRule ^blog/dubai-okul-secimi(/index\.html)?/?$ /blog/dubai-turk-aileler-okul-rehberi/ [R=301,L]
+
   # English-first posts moved under /en/blog/ (Turkish pages stay at /blog/)
   RewriteRule ^blog/what-is-pisa(/index\.html)?/?$ /en/blog/what-is-pisa/ [R=301,L]
   RewriteRule ^blog/dubai-top-schools(/index\.html)?/?$ /en/blog/dubai-top-schools/ [R=301,L]
