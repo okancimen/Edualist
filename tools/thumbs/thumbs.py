@@ -34,7 +34,7 @@ THUMBS = {
     'cocuklar-icin-gelecek-becerileri': ('WEF · BIG 4', 'Geleceğin', '4 Kritik Becerisi', "Çocuğunuzu 2030'a hazırlayın", 'target'),
     'dubai-okul-bekleme-listesi': ('DUBAİ · KAYIT', 'Bekleme', 'Listesi', 'Ne zaman ve nasıl başvurmalı?', 'hourglass'),
     'yurt-disi-universite-hazirlik-lisede': ('ÜNİVERSİTE', 'Yurt Dışı Üniversite', 'Lisede Başlar', '9–12. sınıf yol haritası', 'cap'),
-    'cocugunuzun-guclu-yonleri': ('ÇOCUK GELİŞİMİ', 'Çocuğun', 'Güçlü Yönleri', '30 örnek ve akademik profil', 'star'),
+    'cocugunuzun-guclu-yonleri': ('ÇOCUK GELİŞİMİ', 'Çocuğun Güçlü', 've Zayıf Yönleri', '50 örnek ve veli formu için hazır cümleler', 'star'),
     'dubai-okul-ucretleri-2026': ('DUBAİ · 2026–27', 'Dubai Okul', 'Ücretleri', 'KHDA ve müfredata göre fiyat tablosu', 'coins'),
     'gelecegin-meslekleri-ebeveyn-sorulari': ('KARİYER · 2030', 'Geleceğin', 'Meslekleri', 'Ebeveynlerin 8 sorusu, net yanıtlar', 'briefcase'),
     'khda-notu-nedir': ('DUBAİ · KHDA', 'KHDA Notu', 'Nedir?', 'Outstanding, Very Good, Good farkı', 'medal'),
