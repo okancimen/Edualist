@@ -73,6 +73,8 @@ URLS = [
     "https://www.edualist.com/blog/akademik-koc-nedir/",
     "https://www.edualist.com/tr/",
     "https://www.edualist.com/en/",
+    # IB düzeltmesi — 2026-10-04
+    "https://www.edualist.com/blog/robert-kolej-ucreti-2026/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
