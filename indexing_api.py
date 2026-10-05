@@ -77,8 +77,9 @@ URLS = [
     "https://www.edualist.com/blog/robert-kolej-ucreti-2026/",
     # Geleceğin meslekleri ebeveyn Q&A — 2026-10-04
     "https://www.edualist.com/blog/gelecegin-meslekleri-ebeveyn-sorulari/",
-    # Hakkımda IICS düzeltmesi — 2026-10-05
+    # Hakkımda + Neden Biz IICS düzeltmesi — 2026-10-05
     "https://www.edualist.com/hakkimda/",
+    "https://www.edualist.com/neden-biz/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
