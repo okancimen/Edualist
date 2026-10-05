@@ -112,6 +112,7 @@ URLS = [
     # Yeni blog yazıları — 2026-10-06
     "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
     "https://www.edualist.com/en/blog/childs-real-academic-level/",
+    "https://www.edualist.com/blog/dubai-khda-okul-dereceleri-ucret-karsilastirmasi/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
