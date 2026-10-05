@@ -113,6 +113,7 @@ URLS = [
     "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
     "https://www.edualist.com/en/blog/childs-real-academic-level/",
     "https://www.edualist.com/blog/dubai-khda-okul-dereceleri-ucret-karsilastirmasi/",
+    "https://www.edualist.com/blog/dubai-okul-ucretleri-2026/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
