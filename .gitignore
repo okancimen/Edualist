@@ -3,3 +3,5 @@ httpdocs/mail-config.php
 logs/
 private/
 __pycache__/
+.claude/worktrees/
+.claude/scheduled_tasks.lock
