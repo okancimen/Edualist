@@ -114,6 +114,21 @@ URLS = [
     "https://www.edualist.com/en/blog/jobs-of-the-future/",
     "https://www.edualist.com/en/blog/anxious-generation-teen-mental-health/",
     "https://www.edualist.com/en/blog/turkish-school-in-germany/",
+    # Thin content fix batch 2 — 14 sayfa 1200+ kelimeye genişletildi — 2026-10-07
+    "https://www.edualist.com/blog/akademik-koc-nedir/",
+    "https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/",
+    "https://www.edualist.com/en/blog/before-moving-to-dubai/",
+    "https://www.edualist.com/blog/ogretmen-tembel-dedi/",
+    "https://www.edualist.com/blog/italya-okul-kayit-rehberi/",
+    "https://www.edualist.com/blog/turkiye-ozel-okuldan-dubai-uluslararasi-okula-gecis/",
+    "https://www.edualist.com/en/blog/what-is-an-international-school/",
+    "https://www.edualist.com/en/blog/dubai-education-system/",
+    "https://www.edualist.com/blog/egitim-kocu-ne-yapar/",
+    "https://www.edualist.com/en/blog/qatar-international-schools/",
+    "https://www.edualist.com/blog/uluslararasi-okul-mulakati-nasil-gecilir/",
+    "https://www.edualist.com/en/blog/what-is-an-academic-coach/",
+    "https://www.edualist.com/en/blog/school-enrolment-italy/",
+    "https://www.edualist.com/blog/lgs-surecinde-ders-calis-savaslari/",
     # SEO düzeltmeleri — 2026-10-07
     "https://www.edualist.com/blog/cat4-sinavi-nedir/",
     # Yeni blog yazıları — 2026-10-06
