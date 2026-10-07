@@ -109,6 +109,8 @@ URLS = [
     "https://www.edualist.com/en/blog/what-is-pisa/",
     "https://www.edualist.com/en/blog/why-high-achievers-struggle-with-ib/",
     "https://www.edualist.com/en/blog/why-turkish-education-falls-short/",
+    # SEO düzeltmeleri — 2026-10-07
+    "https://www.edualist.com/blog/cat4-sinavi-nedir/",
     # Yeni blog yazıları — 2026-10-06
     "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
     "https://www.edualist.com/en/blog/childs-real-academic-level/",
