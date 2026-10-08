@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/fonts/outfit-var.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-var.woff2" as="font" type="font/woff2" crossorigin>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic.woff2) format('woff2')}</style>
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.services-grid{grid-template-columns:1fr 1fr}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai British Schools 2026: Top 10 A-Level Rankings &amp; Graduate Success | Edualist</title>
+  <meta name="description" content="Dubai British schools ranked 2026: Dubai College (80–85% A*-A), Jumeirah College, Brighton College — Top 10 compared by A-Level results, GCSE scores and Oxbridge–Russell Group university placements.">
+  <meta name="keywords" content="Dubai British schools, Dubai A-Level schools, Dubai College, Jumeirah College, Brighton College Dubai, best British school Dubai, GCSE Dubai, Sixth Form Dubai, A-Level Dubai, British curriculum Dubai">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/en/blog/dubai-british-schools-a-level/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/dubai-british-schools-a-level/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-british-schools-a-level/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="Dubai British Schools 2026: Top 10 A-Level Rankings &amp; Graduate Success">
+  <meta property="og:description" content="Dubai College (80–85% A*-A), Jumeirah College, Brighton College — Top 10 British schools in Dubai ranked by A-Level results and Oxbridge placements.">
+  <meta property="og:url"         content="https://www.edualist.com/en/blog/dubai-british-schools-a-level/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-ingiliz-okullari-a-level.webp">
+  <meta property="article:published_time" content="2026-10-09">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Dubai British Schools 2026: Top 10 A-Level Rankings">
+  <meta name="twitter:description" content="Dubai College, Jumeirah College, Brighton College — Dubai's Top 10 British schools ranked by A-Level and GCSE results with Oxbridge placement data.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-ingiliz-okullari-a-level.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Dubai British Schools 2026: Top 10 A-Level Rankings and Graduate Success",
+    "description": "Dubai British schools ranked 2026: Dubai College (80–85% A*-A), Jumeirah College, Brighton College — Top 10 compared by A-Level results, GCSE scores and Oxbridge placements.",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen", "jobTitle": "International Education Consultant",
+      "url": "https://www.edualist.com/en/about/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com"
+    },
+    "datePublished": "2026-10-09",
+    "dateModified": "2026-10-09",
+    "wordCount": 2700,
+    "inLanguage": "en",
+    "url": "https://www.edualist.com/en/blog/dubai-british-schools-a-level/",
+    "image": "https://www.edualist.com/assets/blog/thumb-dubai-ingiliz-okullari-a-level.webp",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".blog-summary", ".blog-post-title"]
+    }
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp">
+  <link rel="preload" as="style" href="/en/styles.css?v=14">
+  <link rel="stylesheet" href="/en/styles.css?v=14" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/en/styles.css?v=14"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.edualist.com/en/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/en/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dubai British Schools: Top 10 A-Level and Graduate Success", "item": "https://www.edualist.com/en/blog/dubai-british-schools-a-level/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What curriculum do British schools in Dubai follow?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "British schools in Dubai follow the National Curriculum for England. Students sit GCSE/IGCSE exams at ages 14–16, then move into Sixth Form (Years 12 and 13) where they specialise in 3–4 A-Level subjects. Some schools also offer the IB Diploma Programme or BTEC qualifications alongside A-Level."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which universities can you apply to with A-Levels from Dubai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "A-Levels are accepted by all UK universities, as well as universities in Canada, Australia, Singapore and much of Europe. Dubai College and Jumeirah College graduates consistently win places at Oxford, Cambridge, Imperial College London and other Russell Group institutions. For US Ivy League universities, A-Levels are accepted but AP or IB credentials tend to be more competitive."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the best British school in Dubai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "By academic outcome, Dubai College (DC) sits at the top: with an A*-A rate of 80–85% at A-Level it ranks among the highest-performing British schools outside England. GEMS Jumeirah College, Brighton College Dubai and King's School Al Barsha form a strong second tier."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do GCSE grades matter for A-Level and university entry?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GCSE results form a critical academic profile that influences both Sixth Form entry and university applications. Dubai's leading schools typically require at least five or six grade 7+ (A) results including Maths and English for Sixth Form admission. Strong GCSE grades also support scholarship applications and give universities early evidence of a student's academic potential."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "British curriculum or IB — which is better in Dubai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "If your primary university destination is the UK, Canada or Australia, the A-Level pathway is well-matched and respected. The IB Diploma offers broader global recognition and suits students targeting Europe, the US or a wide range of international universities. For a detailed comparison, see our guide: IB vs A-Level vs AP — Which Curriculum Suits Your Child?"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    window.addEventListener("load",function(){setTimeout(function(){(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");},3000);});
+  </script>
+  <style id="nav-breakpoint">@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Schools in Dubai</a></li>
+        <li><a href="/en/international-school-consulting/">Consulting</a></li>
+        <li><a href="/en/academic-coaching/">Academic Coaching</a></li>
+        <li><a href="/en/blog/" class="nav-blog-highlight">Blog</a></li>
+        <li><a href="/en/why-edualist/">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <div>
+        <div class="blog-post-meta">
+          <span><a href="/en/about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>·</span>
+          <span>9 October 2026</span>
+          <span>·</span>
+          <span>14 min read</span>
+        </div>
+        <h1 class="blog-post-title">Dubai British Schools:<br>Top 10 A-Level Rankings &amp; Graduate Success</h1>
+        <div class="blog-seo-tags">
+          <span class="blog-seo-tag">Dubai British schools 2026</span>
+          <span class="blog-seo-tag">Dubai College A-Level</span>
+          <span class="blog-seo-tag">GCSE Sixth Form Dubai</span>
+          <span class="blog-seo-tag">Oxbridge Russell Group placements</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <a href="/en/blog/" class="blog-back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          <span>Back to Blog</span>
+        </a>
+
+        <div class="blog-summary">
+          <strong>Quick Answer</strong>
+          <p>The British National Curriculum is Dubai's most widely offered education model. <strong>Dubai College (80–85% A*-A)</strong> stands alone at the academic summit; Jumeirah College, Brighton College Dubai and King's School Al Barsha form a strong second tier. Graduates from these schools win places at Oxford, Cambridge, Imperial College and across the Russell Group every year. This guide ranks all 10 schools by GCSE and A-Level outcomes and tells you which school fits which family.</p>
+        </div>
+
+        <div class="blog-post-body">
+
+          <p>The British National Curriculum is offered by more than 50 schools in Dubai — more than any other single curriculum. Students follow a structured pathway from GCSE/IGCSE at 14–16 through to A-Level Sixth Form at 16–18, specialising in 3–4 subjects and earning a qualification that is the direct entry credential for UK universities.</p>
+
+          <p>Yet not all Dubai British schools are equal. The gap in A*-A rates between Dubai College and Horizon International exceeds 40 percentage points. Choosing the right school can mean the difference between an Oxbridge offer and a standard university application — and the admissions timelines begin years before Year 12.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="/assets/founder-avatar-104.webp" type="image/webp">
+              <img src="/assets/founder-avatar-104.jpg" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Adviser's note</span>
+              <p>The data in this article is drawn from KHDA annual reports, schools' published results and my own observations from advising families through the Dubai school selection process. A-Level pass rates vary by year and cohort; the ranges shown here reflect typical performance windows rather than a single year's results.</p>
+            </div>
+          </div>
+
+          <h2>What Is the British National Curriculum and Why Does It Lead to Oxbridge?</h2>
+
+          <p>The British education system follows a linear progression with clear milestone assessments. Each stage builds directly on the last:</p>
+
+          <div class="blog-verdict">
+            <h3>The Pathway: KS3 to Sixth Form</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Key Stage 3 (ages 11–14):</strong> Broad-based curriculum covering sciences, humanities, languages and the arts. Subject choices for GCSE begin to crystallise during this stage.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>GCSE / IGCSE (ages 14–16):</strong> Students sit 8–12 subjects, graded 9–1 (9 being the highest). These grades are the primary filter for Sixth Form entry and form the early academic profile seen by universities and scholarship committees.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Sixth Form / A-Level (ages 16–18):</strong> Deep academic specialisation in 3–4 subjects. The A*–A rate is the headline metric for university admissions and the primary lens through which schools are ranked.</span></div>
+          </div>
+
+          <p>A-Level's depth of specialisation is specifically what Oxford and Cambridge admissions tests and interviews are designed to probe. A typical Oxbridge offer requires A*AA or A*A*A; building the academic profile to meet that threshold requires deliberate planning well before Sixth Form.</p>
+
+          <h2>Dubai A-Level Results: How Do They Compare to the Global Average?</h2>
+
+          <p>Globally, around 27% of A-Level candidates achieve an A or A* grade. Dubai's leading British schools consistently outperform that benchmark; Dubai College's cohort achieves rates three times the global average.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-docs-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Global A-Level Average</th>
+                <th>Dubai Leading Schools</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>A*-A Grade Rate</td>
+                <td>~27%</td>
+                <td><strong>40% – 85%</strong></td>
+              </tr>
+              <tr>
+                <td>GCSE Grade 9-7 (A*-A) Rate</td>
+                <td>~22% – 28%</td>
+                <td><strong>48% – 93%</strong></td>
+              </tr>
+              <tr>
+                <td>Oxbridge / Russell Group Placements</td>
+                <td>Low general rate</td>
+                <td><strong>10–40+ students per year</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Why does the A*-A rate matter?</strong> Oxford and Cambridge typically require A*AA or A*A*A; Imperial College and UCL usually expect AAA–A*AA. Dubai's top-tier British schools produce these results at rates that would be exceptional even within England itself.
+          </div>
+
+          <h2>Which Universities Do Dubai British School Graduates Get Into?</h2>
+
+          <p>The British curriculum feeds directly into the UCAS application system, giving Dubai-educated students a familiar and well-supported entry route into UK higher education. Every year, graduates from Dubai's leading British schools receive offers from:</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Oxbridge:</strong> University of Oxford, University of Cambridge — particularly from Dubai College and Jumeirah College</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Russell Group:</strong> Imperial College London, UCL, LSE, King's College London, University of Edinburgh, University of Warwick, University of Bath</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>North America:</strong> McGill, UBC, University of Toronto; strong A-Level profiles combined with outstanding extracurriculars also reach Columbia, Yale and Stanford</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Australia / Europe:</strong> University of Melbourne, Monash; Amsterdam, Maastricht and Bocconi all accept A-Level qualifications</span></div>
+          </div>
+
+          <p>For a comparison with the IB pathway, see our companion guide: <a href="/en/blog/dubai-ib-schools-graduate-success/">Dubai IB Schools &amp; Graduate Success: Top 10 Ranked 2026</a>.</p>
+
+          <h2>Dubai's Top 10 British Schools: Detailed Profiles</h2>
+
+          <h3>1. Dubai College (DC)</h3>
+          <p>Founded in 1978 as a not-for-profit institution, Dubai College is widely regarded as the most academically selective British school in the Middle East — and among the highest-performing British schools anywhere outside England.</p>
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>A-Level A*-A rate:</strong> 80% – 85% (global average ~27%)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>GCSE grades 9-7 rate:</strong> 88% – 93%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Notable university destinations:</strong> Oxford, Cambridge, Imperial College, Stanford, Yale, Columbia</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Admissions:</strong> The most competitive entry process in the region — written entrance exams in English and Maths plus a formal interview.</span></div>
+          </div>
+
+          <h3>2. Jumeirah College (JC) – GEMS</h3>
+          <p>The flagship secondary school of the GEMS Education Group, Jumeirah College is consistently rated Outstanding by KHDA and operates exclusively as a secondary and Sixth Form school.</p>
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>A-Level A*-A rate:</strong> 60% – 68%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>GCSE grades 9-7 rate:</strong> 70% – 78%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Notable university destinations:</strong> UCL, King's College London, LSE, Cambridge, University of Manchester</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Admissions:</strong> CAT4 cognitive ability assessment, school reports and an academic reference are assessed in detail.</span></div>
+          </div>
+
+          <h3>3. King's School Al Barsha</h3>
+          <p>Part of the King's Education group, King's School Al Barsha has extended its primary-phase Outstanding reputation into secondary and A-Level, backed by modern facilities and a strong academic teaching team.</p>
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>A-Level A*-A rate:</strong> 55% – 62%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>GCSE grades 9-7 rate:</strong> 65% – 72%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Notable university destinations:</strong> Oxford, Imperial College, Edinburgh, Bristol, University of Toronto</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Admissions:</strong> Entrance exam, interview and CAT4 cognitive ability assessment.</span></div>
+          </div>
+
+          <h3>4. Dubai British School (DBS) – Emirates Hills</h3>
+          <p>Operated by the Taaleem Group and rated Outstanding by KHDA, DBS Emirates Hills combines a warm community feel with strong academic rigour and is one of Dubai's most popular British schools.</p>
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>A-Level A*-A rate:</strong> 50% – 58%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>GCSE grades 9-7 rate:</strong> 60% – 68%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Notable university destinations:</strong> Warwick, Exeter, Bath, McGill, University of Melbourne</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Admissions:</strong> Long waiting lists; academic assessment tests and school report review are standard.</span></div>
+          </div>
+
+          <h3>5. Brighton College Dubai</h3>
+          <p>Bringing the academic traditions of one of England's most celebrated independent schools to Dubai, Brighton College Dubai achieves strong A-Level results through small class sizes and a one-to-one academic mentoring model.</p>
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>A-Level A*-A rate:</strong> 55% – 63%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>GCSE grades 9-7 rate:</strong> 68% – 75%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Notable university destinations:</strong> Oxford, Cambridge, LSE, St Andrews, Imperial College</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Admissions:</strong> Academic interview, internal placement assessments and subject-specific aptitude evaluation.</span></div>
+          </div>
+
+          <h3>6. Dubai English Speaking College (DESC)</h3>
+          <p>The secondary campus of the long-established DESS, DESC is based in Academic City and combines strong academic results with exceptional sporting and science facilities — one of the UAE's most successful all-round institutions.</p>
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>A-Level A*-A rate:</strong> 52% – 60%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>GCSE grades 9-7 rate:</strong> 62% – 70%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Notable university destinations:</strong> Loughborough, Exeter, Leeds, Durham, University of Birmingham</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Admissions:</strong> Academic assessment and school report; sports and arts achievements are considered alongside academics.</span></div>
+          </div>
+
+          <h3>7. GEMS Wellington International School (WIS) – Al Sufouh</h3>
+          <p>The flagship of the Wellington brand in Dubai, WIS offers students the flexibility to choose between A-Level and the IB Diploma Programme at Sixth Form after completing IGCSE — a hybrid model that suits families keeping university options open globally.</p>
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>A-Level A*-A rate:</strong> 48% – 56%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>GCSE grades 9-7 rate:</strong> 58% – 66%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Notable university destinations:</strong> UCL, King's College London, NYU, University of Edinburgh</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Admissions:</strong> CAT4 cognitive ability assessment and predicted IGCSE grades.</span></div>
+          </div>
+
+          <h3>8. Dubai British School (DBS) – Jumeirah Park</h3>
+          <p>The most modern campus in the DBS family, Jumeirah Park offers a strong A-Level programme within a STEM-forward, technology-rich learning environment.</p>
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>A-Level A*-A rate:</strong> 45% – 52%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>GCSE grades 9-7 rate:</strong> 55% – 62%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Notable university destinations:</strong> Manchester, Bristol, Nottingham, University of British Columbia</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Admissions:</strong> Placement test and student interview.</span></div>
+          </div>
+
+          <h3>9. Kent College Dubai</h3>
+          <p>Sister school to Kent College Canterbury in England, Kent College Dubai blends traditional British boarding school discipline with A-Level and BTEC vocational pathways — a distinctive combination in the Dubai market.</p>
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>A-Level A*-A rate:</strong> 42% – 50%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>GCSE grades 9-7 rate:</strong> 50% – 58%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Notable university destinations:</strong> Surrey, Newcastle, Cardiff, University of Amsterdam</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Admissions:</strong> General aptitude assessment and personal development interview.</span></div>
+          </div>
+
+          <h3>10. Horizon International School (HIS)</h3>
+          <p>Located in Umm Suqeim, HIS stands out for its boutique school model: personalised A-Level subject tracking and close pastoral guidance that larger schools find difficult to replicate.</p>
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>A-Level A*-A rate:</strong> 40% – 48%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>GCSE grades 9-7 rate:</strong> 48% – 55%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Notable university destinations:</strong> Queen Mary London, Royal Holloway, Heriot-Watt, University of Liverpool</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Admissions:</strong> School report review and pastoral guidance interview.</span></div>
+          </div>
+
+          <h2>Dubai British Schools Comparison Table 2026</h2>
+
+          <div style="overflow-x:auto">
+          <table class="blog-docs-table">
+            <thead>
+              <tr>
+                <th>School</th>
+                <th>Curriculum</th>
+                <th>A*-A A-Level</th>
+                <th>Key University Destinations</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Dubai College (DC)</strong></td>
+                <td>GCSE + A-Level</td>
+                <td><strong>80% – 85%</strong></td>
+                <td>Oxbridge / Ivy League / Imperial</td>
+              </tr>
+              <tr>
+                <td>Jumeirah College (JC)</td>
+                <td>GCSE + A-Level</td>
+                <td>60% – 68%</td>
+                <td>Russell Group (UCL, KCL, LSE)</td>
+              </tr>
+              <tr>
+                <td>Brighton College Dubai</td>
+                <td>GCSE + A-Level</td>
+                <td>55% – 63%</td>
+                <td>Oxford / Cambridge / St Andrews</td>
+              </tr>
+              <tr>
+                <td>King's School Al Barsha</td>
+                <td>GCSE + A-Level</td>
+                <td>55% – 62%</td>
+                <td>Imperial / Edinburgh / Bristol</td>
+              </tr>
+              <tr>
+                <td>DESC (Academic City)</td>
+                <td>GCSE + A-Level / BTEC</td>
+                <td>52% – 60%</td>
+                <td>Loughborough / Exeter / Durham</td>
+              </tr>
+              <tr>
+                <td>DBS Emirates Hills</td>
+                <td>GCSE + A-Level</td>
+                <td>50% – 58%</td>
+                <td>Exeter / Bath / Warwick</td>
+              </tr>
+              <tr>
+                <td>GEMS Wellington (WIS)</td>
+                <td>IGCSE + A-Level / IB</td>
+                <td>48% – 56%</td>
+                <td>UCL / King's / NYU</td>
+              </tr>
+              <tr>
+                <td>DBS Jumeirah Park</td>
+                <td>GCSE + A-Level</td>
+                <td>45% – 52%</td>
+                <td>Manchester / Bristol</td>
+              </tr>
+              <tr>
+                <td>Kent College Dubai</td>
+                <td>GCSE + A-Level / BTEC</td>
+                <td>42% – 50%</td>
+                <td>Surrey / Newcastle</td>
+              </tr>
+              <tr>
+                <td>Horizon International (HIS)</td>
+                <td>GCSE + A-Level</td>
+                <td>40% – 48%</td>
+                <td>Queen Mary / Royal Holloway</td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h2>3 Strategic Advantages of Studying British A-Level in Dubai</h2>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>1. Depth of specialisation for Oxbridge:</strong> Studying 3–4 subjects in depth builds the subject mastery that Oxford and Cambridge interview and admissions tests specifically require. The IB's breadth-first approach develops different strengths — A-Level's depth is a genuine advantage for UK university entry.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>2. GCSE profile as an early credential:</strong> Grade 9–7 GCSE results form part of a student's academic identity well before A-Level — they matter for scholarships, selective programmes and the university contextual data that institutions collect. Dubai's leading schools achieve GCSE grade distributions that exceed England's national averages by a wide margin.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>3. UCAS support infrastructure:</strong> Dubai's top-tier British schools run well-developed university counselling programmes — dedicated advisers, early UCAS preparation and personal statement coaching. This structured support is built into the Sixth Form experience in a way that is less formalised in IB schools targeting a broader range of application systems.</span></div>
+          </div>
+
+          <h2>Is a British School in Dubai the Right Choice? Final Verdict</h2>
+
+          <p>If your primary university destinations are the United Kingdom, Canada or Australia, a Dubai British school provides a direct, well-recognised pathway. Schools such as Dubai College, Jumeirah College and Brighton College Dubai achieve results that compare favourably with England's best state schools — and in some cases rival selective independent schools.</p>
+
+          <p>However, if your child's university ambitions extend across multiple continents, or if the holistic IB philosophy appeals, the IB route deserves equal consideration. See our guide <a href="/en/blog/ib-vs-a-level-vs-ap/">IB vs A-Level vs AP: Which Curriculum Is Right for Your Child?</a> for a detailed side-by-side comparison.</p>
+
+          <p>Selecting the right school involves far more than a league table: school culture, admissions difficulty, location, class size and your family's budget all shape the decision. Working through this with an independent adviser — before waiting lists close and entry tests are scheduled — is almost always the better investment.</p>
+
+          <div class="blog-post-cta glass">
+            <h3>Which Dubai British school fits your child?</h3>
+            <p>Work through the school profiles, entry requirements and your child's academic background with Özlem Çimen in a one-to-one consultation.</p>
+            <a href="/en/international-school-consulting/" class="btn btn-primary" style="display:inline-flex">Book a Free Consultation</a>
+          </div>
+
+        </div>
+
+        <aside class="blog-author-box" style="display:flex;gap:1.1rem;align-items:flex-start;margin:2.5rem 0;padding:1.4rem 1.5rem;border:1px solid var(--border-card,rgba(11,33,58,.08));border-left:3px solid var(--accent,#DBAF2E);border-radius:10px;background:var(--bg-card,rgba(11,33,58,.02))">
+          <picture>
+            <source srcset="/assets/founder-avatar-160.webp" type="image/webp">
+            <img src="/assets/founder-avatar-160.jpg" alt="Özlem Çimen" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)">
+          </picture>
+          <div>
+            <p style="margin:0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Author</p>
+            <p style="margin:.15rem 0 .4rem;font-size:1.1rem;font-weight:700"><a href="/en/about/" style="color:var(--primary,#0b213a);text-decoration:none">Özlem Çimen</a></p>
+            <p style="margin:0;font-size:.95rem;line-height:1.7">International education consultant and founder of Edualist. Over 20 years as a teacher, head of department and school leader at TED Istanbul College, ENKA Schools and IICS; raised her own children across 5 countries in international schools.</p>
+            <p style="margin:.5rem 0 0;font-size:.9rem"><a href="/en/about/" style="color:var(--accent-hover,#b8921f);font-weight:600">About Özlem Çimen →</a></p>
+          </div>
+        </aside>
+
+        <aside class="blog-cluster-box" style="margin:2rem 0;padding:1.4rem 1.5rem;border-radius:10px;background:var(--bg-warm-secondary,#f3efe8)">
+          <p style="margin:0 0 .8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">All guides on this topic</p>
+          <p style="margin:0 0 .9rem;font-size:1.15rem;font-weight:700;color:var(--primary,#0b213a)">British Curriculum, Dubai &amp; University</p>
+          <ul style="margin:0;padding-left:1.1rem;columns:2 260px;column-gap:2rem;line-height:1.6">
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-ib-schools-graduate-success/" style="color:var(--primary,#0b213a)">Dubai IB Schools &amp; Graduate Success: Top 10 Ranked 2026</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/ib-vs-a-level-vs-ap/" style="color:var(--primary,#0b213a)">IB vs A-Level vs AP: Which Curriculum Is Right?</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/ib-diploma-university-requirements/" style="color:var(--primary,#0b213a)">IB Diploma University Requirements by Country</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-top-schools/" style="color:var(--primary,#0b213a)">Top 10 International Schools in Dubai (2026)</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-khda-outstanding-schools/" style="color:var(--primary,#0b213a)">Dubai KHDA Outstanding Schools — Full List</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-school-fees-2026/" style="color:var(--primary,#0b213a)">Dubai School Fees 2026: Complete Guide</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/how-to-apply-dubai-school/" style="color:var(--primary,#0b213a)">How to Apply to a Dubai School: Step-by-Step</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/international-school-interview-questions/" style="color:var(--primary,#0b213a)">International School Interview Questions &amp; Prep</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <div class="blog-faq">
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="faq-item">
+            <h3 class="faq-q">What curriculum do British schools in Dubai follow?</h3>
+            <p class="faq-a">British schools in Dubai follow the National Curriculum for England. Students sit GCSE/IGCSE exams at ages 14–16, then move into Sixth Form (Years 12 and 13) where they specialise in 3–4 A-Level subjects. Some schools also offer the IB Diploma Programme or BTEC qualifications alongside A-Level.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">Which universities can you apply to with A-Levels from Dubai?</h3>
+            <p class="faq-a">A-Levels are accepted by all UK universities, as well as universities in Canada, Australia, Singapore and much of Europe. Dubai College and Jumeirah College graduates consistently win places at Oxford, Cambridge, Imperial College London and other Russell Group institutions. For US Ivy League universities, A-Levels are accepted but AP or IB credentials tend to be more competitive.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">What is the best British school in Dubai?</h3>
+            <p class="faq-a">By academic outcome, Dubai College (DC) sits at the top: with an A*-A rate of 80–85% at A-Level it ranks among the highest-performing British schools anywhere outside England. GEMS Jumeirah College, Brighton College Dubai and King's School Al Barsha form a strong second tier. The "best" school for any individual child depends on their profile, admissions chances and family priorities — not just a league table position.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">Why do GCSE grades matter for A-Level and university entry?</h3>
+            <p class="faq-a">GCSE results form a critical academic profile that influences both Sixth Form entry and university applications. Dubai's leading schools typically require at least five or six grade 7+ (A) results including Maths and English for Sixth Form admission. Strong GCSE grades also support scholarship applications and give universities early evidence of a student's academic potential.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">British curriculum or IB — which is better in Dubai?</h3>
+            <p class="faq-a">If your primary university destination is the UK, Canada or Australia, the A-Level pathway is well-matched and respected. The IB Diploma offers broader global recognition and suits students targeting Europe, the US or a wide range of international universities. For a detailed comparison, see our guide: <a href="/en/blog/ib-vs-a-level-vs-ap/">IB vs A-Level vs AP — Which Curriculum Suits Your Child?</a></p>
+          </div>
+        </div>
+
+        <p>To explore Dubai British schools further, visit our <a href="/en/dubai/">Dubai international schools page</a> or <a href="/en/international-school-consulting/#contact">request a free consultation</a> to review school profiles matched to your child.</p>
+
+      </article>
+    </div>
+
+    <!-- RELATED POSTS -->
+    <section class="blog-related-section">
+      <div class="container">
+        <h2>Related Articles</h2>
+        <div class="blog-related-grid">
+          <a href="/en/blog/dubai-ib-schools-graduate-success/" class="blog-related-card">
+            <img src="/assets/blog/thumb-dubai-ib-okullari-mezun-basarisi.webp" alt="Dubai IB Schools Top 10 Graduate Success" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title"><span>Dubai IB Schools &amp; Graduate Success: Top 10 Ranked 2026</span></div>
+              <div class="blog-related-card-meta">9 October 2026 · 15 min</div>
+            </div>
+          </a>
+          <a href="/en/blog/ib-vs-a-level-vs-ap/" class="blog-related-card">
+            <img src="/assets/blog/thumb-mufredat.webp" alt="IB vs A-Level vs AP curriculum comparison" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title"><span>IB vs A-Level vs AP: Which Curriculum Is Right for Your Child?</span></div>
+              <div class="blog-related-card-meta">7 June 2026 · 12 min</div>
+            </div>
+          </a>
+          <a href="/en/blog/dubai-top-schools/" class="blog-related-card">
+            <img src="/assets/blog/thumb-dubai-top-schools.webp" alt="Top 10 international schools in Dubai 2026" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title"><span>Top 10 International Schools in Dubai (2026) — Expert Picks</span></div>
+              <div class="blog-related-card-meta">28 September 2026 · 10 min</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="padding:0 0 2rem;">
+      <p style="margin:0;padding:1rem 1.25rem;background:hsla(43,60%,92%,0.7);border-left:3px solid var(--accent,#DBAF2E);border-radius:0 6px 6px 0;font-size:0.95rem;line-height:1.8;">
+        <strong>Related Guides:</strong><br>
+        <a href="/en/blog/dubai-ib-schools-graduate-success/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai IB Schools Top 10</a> ·
+        <a href="/en/blog/ib-vs-a-level-vs-ap/" style="color:var(--accent,#DBAF2E);font-weight:500;">IB vs A-Level vs AP</a> ·
+        <a href="/en/blog/dubai-top-schools/" style="color:var(--accent,#DBAF2E);font-weight:500;">Top 10 Dubai International Schools</a> ·
+        <a href="/en/dubai/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai School Consulting</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen guides families through international school selection, curriculum evaluation and relocation transitions with over 20 years of education experience.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/why-edualist/">Why Edualist?</a></li>
+            <li><a href="/en/#services">Services</a></li>
+            <li><a href="/en/blog/">Blog</a></li>
+            <li><a href="/en/international-school-consulting/">Book a Consultation</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener noreferrer">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP STICKY -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- EduBot -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Close">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
+  </div>
+
+  <script>
+    window.setLang = function (l) {
+      if (l === document.documentElement.lang) return;
+      try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+      document.cookie = 'edualist_lang=' + l + ';path=/;max-age=31536000;samesite=lax';
+      var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+      location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+    };
+    document.querySelectorAll('.lang-btn').forEach(function (b) {
+      var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+      b.classList.toggle('active', l === document.documentElement.lang);
+      if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+    });
+  </script>
+  <script src="/en/app.js?v=20261010" defer></script>
+</body>
+</html>

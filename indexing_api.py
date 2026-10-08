@@ -130,6 +130,8 @@ URLS = [
     # Yeni blog yazıları — 2026-10-09
     "https://www.edualist.com/blog/dubai-ib-okullari-mezun-basarisi/",
     "https://www.edualist.com/en/blog/dubai-ib-schools-graduate-success/",
+    "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",
+    "https://www.edualist.com/en/blog/dubai-british-schools-a-level/",
     # Yeni blog yazıları — 2026-10-09 (AP okulları)
     "https://www.edualist.com/blog/dubai-amerikan-mufredat-ap-okullari/",
     "https://www.edualist.com/en/blog/best-ap-schools-dubai/",
