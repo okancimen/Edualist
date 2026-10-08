@@ -221,7 +221,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const link = e.target.closest("a[href]");
         if (!link || !link.classList.contains("btn") || typeof gtag !== "function") return;
         const href = link.getAttribute("href") || "";
-        if (href.includes("#contact") || href.includes("/uluslararasi-okul-danismanligi/") || href.includes("/en/international-school-consulting/")) {
+        if (href.includes("#contact") || href.includes("/uluslararasi-okul-danismanligi/") || href.includes("/en/international-school-consulting/") || href.includes("/uluslararasi-akademik-kocluk/") || href.includes("/en/academic-coaching/")) {
           gtag("event", "blog_cta_click", { event_category: "lead", event_label: slug });
           gtag("event", "conversion", { send_to: "AW-18221941570/YZxyCOLI6cQcEMKG8_BD" });
         } else if (href.includes("/dubai/")) {
