@@ -213,15 +213,15 @@ document.addEventListener("DOMContentLoaded", () => {
       setInterval(tickCountdown, 1000);
     }
 
-    // Blog CTA tracking
-    const blogMatch = window.location.pathname.match(/\/blog\/([^/]+)\//);
+    // Blog CTA tracking (TR: /blog/slug/, EN: /en/blog/slug/)
+    const blogMatch = window.location.pathname.match(/\/(?:en\/)?blog\/([^/]+)\//);
     if (blogMatch) {
       const slug = blogMatch[1];
       document.addEventListener("click", e => {
         const link = e.target.closest("a[href]");
         if (!link || !link.classList.contains("btn") || typeof gtag !== "function") return;
         const href = link.getAttribute("href") || "";
-        if (href.includes("#contact") || href.includes("/uluslararasi-okul-danismanligi/")) {
+        if (href.includes("#contact") || href.includes("/uluslararasi-okul-danismanligi/") || href.includes("/en/international-school-consulting/")) {
           gtag("event", "blog_cta_click", { event_category: "lead", event_label: slug });
           gtag("event", "conversion", { send_to: "AW-18221941570/YZxyCOLI6cQcEMKG8_BD" });
         } else if (href.includes("/dubai/")) {
