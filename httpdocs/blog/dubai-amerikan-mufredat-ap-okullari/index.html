@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25,1,.5,1),transform .8s cubic-bezier(.25,1,.5,1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.services-grid{grid-template-columns:1fr 1fr}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai AP Okulları 2026: En İyi 10 Amerikan Müfredatı Rehberi | Edualist</title>
+  <meta name="description" content="Dubai'de best AP schools: ASD (25+ ders, %90 başarı), GEMS DAA, UAS, DIA dahil Top 10 AP okulu karşılaştırması. AP ders çeşitliliği, sınav başarıları ve Ivy League kabul verileri.">
+  <meta name="keywords" content="Dubai AP okulları, best AP schools Dubai, Dubai Amerikan müfredatı, AP ders Dubai, American School of Dubai, GEMS Dubai American Academy AP, Dubai AP sınav başarısı, Dubai uluslararası okul AP, AP program Dubai 2026">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/blog/dubai-amerikan-mufredat-ap-okullari/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-amerikan-mufredat-ap-okullari/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/best-ap-schools-dubai/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-amerikan-mufredat-ap-okullari/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title"       content="Dubai AP Okulları 2026: En İyi 10 Amerikan Müfredatı Rehberi">
+  <meta property="og:description" content="Dubai'de en iyi 10 AP okulu karşılaştırması. ASD, GEMS DAA, UAS, DIA — AP ders çeşitliliği, sınav başarı oranları ve Ivy League ile Kanada üniversiteleri kabul verileri.">
+  <meta property="og:url"         content="https://www.edualist.com/blog/dubai-amerikan-mufredat-ap-okullari/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-amerikan-mufredat-ap-okullari.webp">
+  <meta property="article:published_time" content="2026-10-09">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Dubai AP Okulları 2026: En İyi 10 Amerikan Müfredatı Rehberi">
+  <meta name="twitter:description" content="ASD (25+ AP), GEMS DAA (20+ AP), UAS, DIA — Dubai'nin en başarılı AP okulları karşılaştırması. Ders çeşitliliği, sınav başarısı ve Ivy League kabul istatistikleri.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-amerikan-mufredat-ap-okullari.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Dubai AP Okulları 2026: En İyi 10 Amerikan Müfredatı Rehberi",
+    "description": "Dubai'de en iyi 10 AP okulu — ASD, GEMS DAA, UAS, DIA dahil AP ders çeşitliliği, sınav başarı oranları ve Ivy League ile Kanada üniversiteleri kabul verileri.",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen", "jobTitle": "Uluslararası Eğitim Danışmanı",
+      "url": "https://www.edualist.com/hakkimda/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com"
+    },
+    "datePublished": "2026-10-09",
+    "dateModified": "2026-10-09",
+    "wordCount": 2800,
+    "inLanguage": "tr",
+    "url": "https://www.edualist.com/blog/dubai-amerikan-mufredat-ap-okullari/",
+    "image": "https://www.edualist.com/assets/blog/thumb-dubai-amerikan-mufredat-ap-okullari.webp",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".blog-summary", ".blog-post-title"]
+    }
+  }
+  </script>
+
+  <link rel="preload" as="image" href="../../assets/hero-bg.webp" type="image/webp">
+  <link rel="preload" as="style" href="../../styles.css?v=14">
+  <link rel="stylesheet" href="../../styles.css?v=14" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../styles.css?v=14"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dubai AP Okulları: En İyi 10 Amerikan Müfredatı Rehberi", "item": "https://www.edualist.com/blog/dubai-amerikan-mufredat-ap-okullari/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "AP (Advanced Placement) nedir ve nasıl çalışır?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AP (Advanced Placement), College Board tarafından yönetilen ve lise öğrencilerine üniversite düzeyinde dersler alma imkânı sunan küresel bir programdır. AP sınavları 1–5 puan üzerinden değerlendirilir; 3, 4 veya 5 alan öğrenciler ABD, Kanada, İngiltere ve Avrupa'nın önde gelen üniversitelerinde ders muafiyeti ve kredi transferi hakkı kazanabilirler. Böylece öğrenciler üniversitede daha az ders alarak mezuniyet süresini kısaltabilir ya da daha ileri düzey derslere erken geçiş yapabilirler."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'deki en iyi AP okulu hangisidir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dubai'de AP ders çeşitliliği ve sınav başarısı açısından öne çıkan okul American School of Dubai'dir (ASD): 25'ten fazla AP dersi ve %88–92 başarı oranıyla bölgenin lideridir. GEMS Dubai American Academy (DAA) 20'den fazla AP dersi ve hem AP hem de IBDP seçeneğiyle ikinci sıraya yerleşmektedir. Universal American School (UAS) ve Dubai International Academy (DIA) de güçlü AP programlarıyla dikkat çeken okullar arasındadır."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AP mi yoksa IB mi tercih edilmeli?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AP ve IB farklı felsefeler sunar: AP, öğrencinin seçtiği belirli alanlarda derinlemesine uzmanlaşmasına olanak tanır; özellikle ABD üniversitelerini hedefleyenler için güçlü bir araçtır. IB ise 6 farklı disiplini kapsayan bütüncül ve araştırma odaklı bir diploma programıdır; küresel üniversitelerde geniş çaplı tanınır. Eğer çocuğunuzun güçlü olduğu alanlar belirginse AP idealdir; geniş akademik yelpaze ve uluslararası tanınırlık öncelikliyse IB daha avantajlıdır. Dubai'de GEMS DAA gibi bazı okullar her iki programı da sunmaktadır."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AP sınavında kaç puan almak gerekiyor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AP sınavları 1–5 arasında puanlanır. 3 puan çoğu üniversite tarafından 'yeterli' kabul edilir ve ders muafiyeti için minimum eşik olarak görülür. 4 ve 5 puanlar üniversite kabul başvurularında güçlü bir akademik profil oluşturur; özellikle 5 puan, ders muafiyetini ve ileri sınıflara geçişi neredeyse her kurumda garantileyebilir. Dubai'nin önde gelen AP okullarında 3 puan ve üzeri başarı oranı dünya ortalaması olan %65'in çok üzerinde seyretmektedir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "AP dersleri ABD dışındaki üniversitelerde de geçerli mi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet, AP kredileri yalnızca ABD'de değil Kanada (Toronto, McGill, UBC), Birleşik Krallık (bazı bölümler) ve Avustralya'nın önde gelen üniversitelerinde de kabul görmektedir. Ancak tanınma politikası üniversiteden üniversiteye ve bölümden bölüme farklılık gösterir; başvurmayı planladığınız kurumların AP kredi politikasını ayrıca kontrol etmek gerekir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai AP okullarına başvuru süreci nasıl işliyor?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dubai'deki AP okullarında başvuru süreçleri okuldan okula farklılaşır. American School of Dubai gibi seçici kurumlarda MAP sınavı, akademik transkript ve kişisel mülakat gereklidir; diplomat/ABD vatandaşı ailelere öncelik tanınabilir. GEMS DAA ve DIA gibi okullarda MAP veya CAT4 değerlendirmesi yapılır. Dunecrest ve GEMS United gibi okullarda bireysel mülakat ile standart bir akademik değerlendirme yeterlidir. Kayıt sezonu genellikle Aralık–Şubat ayları arasında açılır; ön kayıt listelerine mümkün olduğunca erken girilmesi önerilir."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    window.addEventListener("load",function(){setTimeout(function(){(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");},3000);});
+  </script>
+  <style id="nav-breakpoint">@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/">Dubai'de Okul</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/">Danışmanlık</a></li>
+        <li><a href="/uluslararasi-akademik-kocluk/">Akademik Koçluk</a></li>
+        <li><a href="/blog/" class="nav-blog-highlight">Blog</a></li>
+        <li><a href="/neden-biz/">Hakkımızda</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <div>
+        <div class="blog-post-meta">
+          <span><a href="../../hakkimda/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>·</span>
+          <span>9 Ekim 2026</span>
+          <span>·</span>
+          <span>17 dk okuma</span>
+        </div>
+        <h1 class="blog-post-title">Dubai AP Okulları 2026:<br>En İyi 10 Amerikan Müfredatı Rehberi</h1>
+        <div class="blog-seo-tags">
+          <span class="blog-seo-tag">Best AP schools Dubai</span>
+          <span class="blog-seo-tag">Amerikan müfredatı Dubai 2026</span>
+          <span class="blog-seo-tag">AP ders çeşitliliği ve başarı oranları</span>
+          <span class="blog-seo-tag">Dubai AP Ivy League kabul</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <a href="/blog/" class="blog-back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          <span>Blog'a Dön</span>
+        </a>
+
+        <div class="blog-summary">
+          <strong>Kısa Cevap</strong>
+          <p>Dubai'de Amerikan Müfredatı ve Advanced Placement (AP) programı sunan 10'dan fazla seçkin okul bulunmaktadır. <strong>American School of Dubai (ASD)</strong> 25'ten fazla AP dersi ve ~%90 başarı oranıyla bölgenin zirvesinde yer alırken <strong>GEMS Dubai American Academy</strong> hem AP hem de IBDP seçeneği sunmasıyla öne çıkıyor. Bu rehberde AP'nin ne olduğunu, Dubai'nin en iyi AP okullarını ders çeşitliliği, sınav başarısı ve üniversite kabul verileriyle karşılaştırıyor; okul seçim sürecinde dikkat etmeniz gerekenleri paylaşıyoruz.</p>
+        </div>
+
+        <div class="blog-post-body">
+
+          <p>Günümüzde lise eğitimi yalnızca diploma almakla sınırlı değil; çocuğunuzun hangi üniversitelere başvurabileceğini, kaç yıl okuyacağını ve mezun olduğunda hangi işe girmeye uygun olduğunu doğrudan etkileyen stratejik bir karar. Bu bağlamda Advanced Placement (AP) programı, özellikle ABD ve Kanada üniversitelerini hedefleyen aileler için giderek daha merkezi bir rol oynuyor.</p>
+
+          <p>Dubai'nin hızla büyüyen uluslararası eğitim ekosisteminde Amerikan müfredatını ve AP programlarını benimseyen okullar son beş yılda hem sayı hem de kalite açısından kayda değer bir yükseliş yaşadı. Peki bu okullar arasından çocuğunuza en uygun olanı nasıl seçeceksiniz? AP ders kataloğu kalabalık olan bir okul mu daha iyidir, yoksa az ama öz AP seçenekleri sunan, akademik derinliğe odaklanan bir okul mu?</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="../../assets/founder-avatar-104.webp" type="image/webp">
+              <img src="../../assets/founder-avatar-104.jpg" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Danışmanlık notu</span>
+              <p>Bu rehberdeki veriler College Board'un resmi istatistiklerinden, KHDA yıllık raporlarından, okulların kamuya açık bilgi belgelerinden ve ailelerle yürüttüğüm okul seçim süreçlerindeki gözlemlerimden derlendi. AP başarı oranları okuldan okula ve yıldan yıla değişkenlik gösterebilir; buradaki rakamları referans aralığı olarak değerlendirin.</p>
+            </div>
+          </div>
+
+          <h2>AP (Advanced Placement) Nedir? Neden Bu Kadar Önemli?</h2>
+
+          <p>Advanced Placement (AP), College Board tarafından yönetilen ve lise öğrencilerine üniversite düzeyinde dersler alma imkânı sunan uluslararası bir programdır. AP dersleri genellikle 11. ve 12. sınıfta alınır; her dersin sonunda Mayıs ayında yapılan standart bir sınav vardır.</p>
+
+          <p>AP sınavları 1–5 arasında puanlanır:</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>5 Puan — Extremely Well Qualified:</strong> Neredeyse her üniversitede ders muafiyeti ve kredi transferi garantilenebilir.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>4 Puan — Well Qualified:</strong> Çoğu üniversitede ders muafiyeti sağlanır; üniversite kabul başvurularında güçlü bir sinyal verir.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>3 Puan — Qualified:</strong> Minimum eşik; pek çok ABD ve Kanada üniversitesinde kredi saydırılabilir.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>1–2 Puan:</strong> Kredi tanınmaz; ancak öğrencinin o dersi gerçekten üniversite düzeyinde denemiş olması profil için değer taşır.</span></div>
+          </div>
+
+          <div class="blog-callout">
+            <strong>AP'nin stratejik değeri:</strong> Bir öğrenci lise boyunca ortalama 5–8 AP dersi alıp her birinden 4 veya 5 puan alırsa, üniversitede bir sömestr veya hatta bir yıl kazanabilir — bu da on binlerce dolar tasarruf ve erken kariyer başlangıcı anlamına gelir.
+          </div>
+
+          <h2>Dubai'de Amerikan Müfredatı Neden Tercih Ediliyor?</h2>
+
+          <p>Dubai'deki uluslararası okul pazarında IB, A-Level ve Amerikan Müfredatı üç ana müfredat modeli olarak öne çıkıyor. Amerikan Müfredatı (ve AP programı) özellikle şu aileler için cazip:</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>ABD veya Kanada üniversitelerini hedefleyenler:</strong> AP sınavları bu üniversitelerde en yaygın tanınan lise akademik performans göstergelerinden biridir.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Kendi kendini yönlendiren öğrenciler:</strong> IB'den farklı olarak AP, öğrencinin yalnızca ilgi duyduğu alanlarda derinleşmesine izin verir — geniş yükümlülük yoktur.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Diplomatik ve ekspat aileler:</strong> Amerikan okullarının müfredatı, dünyanın farklı ülkelerinde süreklilik sağlar ve taşınma sürecinde akademik kayıpları en aza indirir.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>STEM odaklı öğrenciler:</strong> AP Calculus BC, AP Physics C, AP Computer Science gibi dersler, mühendislik ve fen fakültelerine başvuran öğrenciler için güçlü bir temel oluşturur.</span></div>
+          </div>
+
+          <p>Amerikan müfredatı ile IB arasındaki farkları daha kapsamlı biçimde öğrenmek için <a href="/blog/ib-alevel-amerikan-mufredat-karsilastirma/">IB, A-Level ve AP müfredat karşılaştırmamıza</a> bakabilirsiniz.</p>
+
+          <h2>Dubai'nin En İyi 10 AP Okulu: Detaylı Profiller</h2>
+
+          <h3>1. American School of Dubai (ASD) — Bölgenin AP Lideri</h3>
+
+          <p>1966 yılında kurulan ASD, Dubai'nin en köklü ve kâr amacı gütmeyen (not-for-profit) bağımsız Amerikan okuludur. Saf Amerikan müfredatı ve geniş AP ders kataloğuyla ABD üniversitelerine öğrenci gönderme konusunda bölgenin tartışmasız lideridir. AP Capstone Diploması programını sunan çok az Dubai okulundan biridir: AP Seminar ve AP Research dersleriyle öğrenciler, yalnızca sınav puanı değil araştırma ve sunum becerilerini de belgeleyebilirler.</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Ders Sayısı:</strong> 25+ (AP Calculus BC, AP Physics C, AP Chemistry, AP Biology, AP US History, AP World History, AP Seminar, AP Research dahil)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Sınav Başarısı (3+ Puan):</strong> %88 – %92 (Dünya ortalaması ~%65)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Üniversite Kabulleri:</strong> Harvard, Stanford, MIT, Yale, Princeton, UC Berkeley</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Başvuru:</strong> MAP sınavı, detaylı akademik transkript ve kişisel mülakat; ABD vatandaşı/diplomat ailelere öncelik</span></div>
+          </div>
+
+          <h3>2. GEMS Dubai American Academy (DAA) — AP + IB Seçeneği</h3>
+
+          <p>KHDA denetimlerinde istikrarlı biçimde "Outstanding" (Mükemmel) derecesi alan GEMS Dubai American Academy, hem AP hem de IB Diploma Programı sunmasıyla bölgede benzersiz bir konumdadır. Yapay zeka ve girişimcilik merkezleriyle donatılmış kampüsü, özellikle teknoloji ve iş dünyası odaklı öğrencilerin ilgisini çekiyor. 11. ve 12. sınıfta AP ile IBDP arasında seçim yapmak isteyen aileler için ideal bir yapı sunar.</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Ders Sayısı:</strong> 20+ (Calculus AB/BC, Statistics, Physics, Chemistry, Biology, English Language, Computer Science, Psychology dahil)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Sınav Başarısı (3+ Puan):</strong> %85 – %90</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Üniversite Kabulleri:</strong> Columbia, NYU, Harvard, UCLA, University of Toronto</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Başvuru:</strong> MAP değerlendirmesi ve mülakat süreci</span></div>
+          </div>
+
+          <h3>3. Universal American School (UAS) — Festival City</h3>
+
+          <p>Al-Futtaim Grubu bünyesindeki UAS, AERO (American Education Reaches Overseas) standartlarına uygun bir eğitim anlayışını benimsemektedir. Festival City konumuyla Dubai'nin merkezi aksında yer alan okul, lisenin son iki yılında özellikle Kanada ve ABD üniversitelerine odaklı güçlü bir AP ders kataloğu sunmaktadır. Matematik ve fen bilimlerindeki AP dersleri özellikle güçlüdür.</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Ders Sayısı:</strong> 15+ (Calculus, Statistics, Biology, Chemistry, US History, English Language, Economics dahil)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Sınav Başarısı (3+ Puan):</strong> %80 – %85</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Üniversite Kabulleri:</strong> University of Toronto, McGill, Northeastern University, Boston University</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Başvuru:</strong> Matematik ve İngilizce seviye tespit sınavları ile rehberlik mülakatı</span></div>
+          </div>
+
+          <h3>4. Dubai International Academy (DIA) — Al Barsha</h3>
+
+          <p>Innoventures Education grubuna ait Al Barsha kampüsü, Amerikan müfredatı çerçevesinde AP Capstone Diploması sunmasıyla dikkat çekiyor. AP Seminar ve AP Research dersleri öğrencilere bağımsız araştırma becerisi kazandırırken özellikle İngiltere ve ABD orta-üst sıra üniversitelerine güçlü bir başvuru profili oluşturmaktadır.</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Ders Sayısı:</strong> 18+ (AP Capstone dahil; Calculus, Physics, World History, English Literature, Computer Science)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Sınav Başarısı (3+ Puan):</strong> %82 – %86</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Üniversite Kabulleri:</strong> Purdue University, Michigan State, University of Washington, King's College London</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Başvuru:</strong> CAT4 / MAP sınavları ve geçmiş akademik karneler üzerinden değerlendirme</span></div>
+          </div>
+
+          <h3>5. Dunecrest American School — STEM Odaklı Yükselen Yıldız</h3>
+
+          <p>Elysium Education grubuna ait Dunecrest, modern teknoloji altyapısı ve STEM odaklı eğitim yaklaşımıyla son yıllarda hızla yükselen bir Amerikan okuludur. Makine öğrenmesi, robotik ve veri bilimi temelli kurslarını AP Bilgisayar Bilimleri ve AP Matematik dersleriyle entegre eden okul, özellikle mühendislik ve teknoloji alanlarını hedefleyen öğrenciler için değerli bir ortam sunmaktadır.</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Ders Sayısı:</strong> 14+ (AP Computer Science A, Calculus BC, Statistics, Physics C, Chemistry, Biology)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Sınav Başarısı (3+ Puan):</strong> %78 – %84</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Üniversite Kabulleri:</strong> Georgia Tech, Penn State, University of British Columbia, NYU Abu Dhabi</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Başvuru:</strong> Bireysel mülakat ve standart kabul değerlendirme sınavları</span></div>
+          </div>
+
+          <h3>6. American Academy for Girls (AAG) — STEM Alanında Kadın Liderler</h3>
+
+          <p>Mirdif bölgesinde yer alan American Academy for Girls, kız öğrencilere özel güvenli ve destekleyici bir ortamda Amerikan müfredatı ve AP programı sunuyor. Okul, özellikle STEM alanında kadın liderler yetiştirmeyi misyon olarak benimsemiş; AP Biyoloji, AP Kimya ve AP Bilgisayar Bilimleri Prensipleri gibi dersler ön plana çıkmaktadır.</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Ders Sayısı:</strong> 12+ (Biology, Chemistry, Computer Science Principles, Calculus AB, English Language, Psychology)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Sınav Başarısı (3+ Puan):</strong> %75 – %82</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Üniversite Kabulleri:</strong> UC San Diego, Boston College, University of Manchester, American University of Sharjah</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Başvuru:</strong> İngilizce yeterlilik değerlendirmesi, karne incelemesi ve öğrenci mülakatı</span></div>
+          </div>
+
+          <h3>7. Clarion School Dubai — Proje Odaklı Amerikan Eğitimi</h3>
+
+          <p>Ilerici (progressive) Amerikan eğitim felsefesini benimseyen Clarion, proje tabanlı öğrenme modeliyle AP derslerini bütünleştirir. Sanat, tasarım ve sosyal bilimler odaklı AP derslerini güçlü biçimde sunan okul, özellikle yaratıcı ve eleştirel düşünme becerilerini ön planda tutan bir akademik anlayışı yansıtmaktadır. Portfolyo değerlendirmesinin ağırlıklı rol oynadığı bu ortam, standart sınav formatına uymayan öğrenciler için rahatlatıcı bir alternatif sunuyor.</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Ders Sayısı:</strong> 10+ (Art History, English Literature, US Government &amp; Politics, Psychology, Environmental Science)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Sınav Başarısı (3+ Puan):</strong> %75 – %80</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Üniversite Kabulleri:</strong> Parsons School of Design, Pratt Institute, University of Colorado Boulder</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Başvuru:</strong> Portfolyo sunumu, yaratıcı çalışma örnekleri ve mülakat</span></div>
+          </div>
+
+          <h3>8. GEMS United School — Sports City</h3>
+
+          <p>Dubai Sports City'de yer alan GEMS United, akademiyi spor başarısıyla harmanlayan nadir okullardan biridir. Öğrenci sporcular hem atletik burs başvurularını destekleyen bir spor özgeçmişi oluştururken hem de AP dersleriyle yüksek akademik kredi biriktirebilirler. ABD'deki Division I ve Division II üniversite sporları burs programlarını hedefleyen öğrenciler için oldukça stratejik bir tercih.</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Ders Sayısı:</strong> 14+ (Calculus AB/BC, Statistics, Physics, Biology, English Language, Human Geography, Psychology)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Sınav Başarısı (3+ Puan):</strong> %76 – %82</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Üniversite Kabulleri:</strong> University of Florida, Ohio State, University of Calgary, Arizona State University</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Başvuru:</strong> Spor/akademik özgeçmiş incelemesi ve standart akademik değerlendirme</span></div>
+          </div>
+
+          <h3>9. Mirdif American School — Erişilebilir Amerikan Eğitimi</h3>
+
+          <p>Mirdif ve çevresindeki aileler için Amerikan eğitim standartlarını erişilebilir ücret bantlarında sunan okul, temel bilimler ve sosyal bilimlerde AP seçenekleriyle özellikle BAE üniversitelerine ve bazı ABD kurumlarına hazırlık açısından değerlendirilebilir. Daha küçük sınıf ölçeği öğretmen-öğrenci etkileşimini güçlendirmektedir.</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Ders Sayısı:</strong> 8 – 10 (Biology, US History, English Language, Calculus AB, Psychology)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Sınav Başarısı (3+ Puan):</strong> %70 – %76</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Üniversite Kabulleri:</strong> University of Iowa, Arizona State, Heriot-Watt Dubai, AUD</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Başvuru:</strong> Giriş seviye tespit sınavı ve karne değerlendirmesi</span></div>
+          </div>
+
+          <h3>10. Al Mawakeeb School — Al Garhoud / Barsha</h3>
+
+          <p>AMSI bünyesinde eğitim veren Al Mawakeeb okulları, Amerikan müfredatını bölgesel değerler ve Arapça eğitim ağırlığıyla harmanlar. Lise seviyesinde sunduğu AP yönlendirmeleriyle öğrencilerini hem ABD hem de Orta Doğu'nun önde gelen üniversitelerine — özellikle American University of Beirut (AUB) ve Khalifa University'ye — hazırlar. Arap ailelerin tercih ettiği ve BAE vatandaşlarına yönelik bursların bulunduğu kurumlar arasındadır.</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Ders Sayısı:</strong> 10+ (Calculus AB, Chemistry, Biology, English Language, World History, Psychology)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP Sınav Başarısı (3+ Puan):</strong> %72 – %78</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Üniversite Kabulleri:</strong> American University of Beirut (AUB), AUD, Khalifa University, Purdue</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Başvuru:</strong> Okul içi akademik değerlendirme sınavı ve mülakat</span></div>
+          </div>
+
+          <h2>Top 10 Dubai AP Okulu Karşılaştırma Tablosu 2026</h2>
+
+          <div style="overflow-x:auto">
+          <table class="blog-docs-table">
+            <thead>
+              <tr>
+                <th>Okul Adı</th>
+                <th>Müfredat Modeli</th>
+                <th>AP Ders Sayısı</th>
+                <th>AP Başarı Oranı (3+)</th>
+                <th>Hedef Bölgeler</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>American School of Dubai (ASD)</strong></td><td>Saf Amerikan / AP Capstone</td><td>25+</td><td>~%90</td><td>ABD (Ivy League) / Kanada</td></tr>
+              <tr><td><strong>GEMS Dubai American Academy</strong></td><td>Amerikan + AP / IBDP</td><td>20+</td><td>~%88</td><td>ABD / Kanada / İngiltere</td></tr>
+              <tr><td><strong>Universal American School (UAS)</strong></td><td>AERO Amerikan + AP</td><td>15+</td><td>~%82</td><td>Kanada / ABD</td></tr>
+              <tr><td><strong>DIA Al Barsha</strong></td><td>Amerikan + AP Capstone</td><td>18+</td><td>~%84</td><td>ABD / İngiltere</td></tr>
+              <tr><td><strong>Dunecrest American School</strong></td><td>STEM / AP Odaklı</td><td>14+</td><td>~%80</td><td>ABD / Avrupa</td></tr>
+              <tr><td><strong>American Academy for Girls</strong></td><td>Amerikan (Kız) + AP</td><td>12+</td><td>~%78</td><td>ABD / BAE Üniversiteleri</td></tr>
+              <tr><td><strong>Clarion School Dubai</strong></td><td>Proje Odaklı + AP</td><td>10+</td><td>~%76</td><td>ABD (Sanat &amp; Tasarım)</td></tr>
+              <tr><td><strong>GEMS United School</strong></td><td>Spor &amp; Akademi + AP</td><td>14+</td><td>~%78</td><td>ABD (Spor Bursları) / Kanada</td></tr>
+              <tr><td><strong>Mirdif American School</strong></td><td>Standart Amerikan + AP</td><td>~10</td><td>~%73</td><td>BAE / ABD</td></tr>
+              <tr><td><strong>Al Mawakeeb School</strong></td><td>Bölgesel Amerikan + AP</td><td>10+</td><td>~%75</td><td>Orta Doğu / ABD</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h2>AP Okulu Seçerken Dikkat Edilmesi Gereken 5 Kriter</h2>
+
+          <p>Dubai'de bir AP okulu araştıran ailelerle yürüttüğüm görüşmelerde her zaman aynı soruların döndüğünü gördüm. İşte kararınızı bilendirecek beş temel kriter:</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>1. AP Ders Çeşitliliği ve Derinliği:</strong> Çocuğunuzun ilgilendiği alanlarda (STEM mi? Sosyal Bilimler mi? Sanat mı?) AP ders kataloğu ne kadar zengin? AP Capstone sunuluyor mu?</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>2. AP Sınav Başarı Oranları:</strong> Okulun 3 puan ve üzeri oranı nedir? Dünya ortalaması (~%65) ile nasıl kıyaslanıyor? Bu veriyi okuldan talep etmek hakkınız.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>3. Üniversite Yerleşim Verileri:</strong> Mezunlar hangi ülkelerde, hangi üniversitelerde? ABD üniversiteleri hedefliyorsanız Common App kabullerine bakın.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>4. Okul Kültürü ve Öğretmen Kalitesi:</strong> AP derslerini veren öğretmenlerin College Board sertifikası var mı? Okul AP Teacher Training programlarına yatırım yapıyor mu?</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>5. Kabul Süreci ve Bekleme Listesi:</strong> ASD gibi seçici okullarda bekleme listeleri 1–2 yıla uzayabilir. Alternatif okullara eş zamanlı başvuru yapmak kritik önem taşır.</span></div>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Önemli hatırlatma:</strong> AP başarı oranları genellikle okul tarafından kamuoyuyla paylaşılmaz. Okul ziyareti veya kabul görüşmesi sırasında bu veriyi doğrudan talep etmek hem hakkınız hem de bilinçli bir seçim yapmanın en güvenilir yolu.
+          </div>
+
+          <h2>AP Capstone Diploması: Dubai'de Kim Sunuyor?</h2>
+
+          <p>AP Capstone, AP programının en üst katmanıdır ve yalnızca AP Seminar ve AP Research derslerini başarıyla tamamlayan öğrencilere verilir. Bu diploma, ABD'deki seçici üniversitelerde "araştırma odaklı öğrenci" profilinin en güçlü kanıtlarından biri olarak kabul görmektedir. Dubai'de AP Capstone sunan okul sayısı sınırlıdır: <strong>ASD ve DIA Al Barsha</strong> bu programı aktif olarak sunmaktadır. GEMS DAA da müfredat geliştirme sürecindedir.</p>
+
+          <h2>Dubai AP Okulları vs IB Okulları: Hangisi Doğru?</h2>
+
+          <p>Bu sorunun evrensel bir cevabı yok — ama rehber olarak kullanabileceğiniz bazı temel ayrımlar var:</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>AP tercih edin:</strong> Çocuğunuzun güçlü alanları belirgin ve ABD/Kanada üniversitesini hedefliyorsa; esnek ders yükü isteniyorsa; müfredat değişikliği yaşanma ihtimali varsa.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>IB tercih edin:</strong> Çok yönlü gelişim ve araştırma becerileri ön plandaysa; küresel üniversite seçenekleri (İngiltere, Avrupa, Kanada dahil) açık tutulmak isteniyorsa; Theory of Knowledge gibi bütüncül bileşenler önem taşıyorsa.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Her ikisi de sunan okulu tercih edin:</strong> GEMS DAA gibi hem AP hem IB sunan okullarda çocuğunuz 9–10. sınıfta karar verebilir; bu esneklik özellikle hangi yolu seçeceğinden emin olmayan aileler için büyük avantaj.</span></div>
+          </div>
+
+          <p>Dubai'deki IB okullarının detaylı karşılaştırması için <a href="/blog/dubai-ib-okullari-mezun-basarisi/">Dubai IB Okulları ve Mezunların Küresel Başarısı</a> rehberimizi inceleyebilirsiniz.</p>
+
+          <div class="blog-post-cta glass">
+            <h3>Çocuğunuza hangi Dubai AP okulu uygun?</h3>
+            <p>Okul profilini, akademik güçlü yönlerini ve üniversite hedeflerini kişisel okul karşılaştırma aracımızla birlikte değerlendirin.</p>
+            <a href="/dubai/" class="btn btn-primary" style="display:inline-flex">Dubai Okul Karşılaştırıcıya Git</a>
+          </div>
+
+        </div>
+
+        <aside class="blog-author-box" style="display:flex;gap:1.1rem;align-items:flex-start;margin:2.5rem 0;padding:1.4rem 1.5rem;border:1px solid var(--border-card,rgba(11,33,58,.08));border-left:3px solid var(--accent,#DBAF2E);border-radius:10px;background:var(--bg-card,rgba(11,33,58,.02))">
+          <picture>
+            <source srcset="/assets/founder-avatar-160.webp" type="image/webp">
+            <img src="/assets/founder-avatar-160.jpg" alt="Özlem Çimen" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)">
+          </picture>
+          <div>
+            <p style="margin:0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Yazar</p>
+            <p style="margin:.15rem 0 .4rem;font-size:1.1rem;font-weight:700"><a href="/hakkimda/" style="color:var(--primary,#0b213a);text-decoration:none">Özlem Çimen</a></p>
+            <p style="margin:0;font-size:.95rem;line-height:1.7">Uluslararası eğitim danışmanı ve Edualist'in kurucusu. 20 yılı aşkın süre TED İstanbul Koleji, ENKA Okulları ve IICS'te öğretmen, bölüm başkanı ve yönetici olarak çalıştı; çocuklarını 5 ülkede uluslararası okullarda büyüttü.</p>
+            <p style="margin:.5rem 0 0;font-size:.9rem"><a href="/hakkimda/" style="color:var(--accent-hover,#b8921f);font-weight:600">Özlem Çimen hakkında →</a></p>
+          </div>
+        </aside>
+
+        <aside class="blog-cluster-box" style="margin:2rem 0;padding:1.4rem 1.5rem;border-radius:10px;background:var(--bg-warm-secondary,#f3efe8)">
+          <p style="margin:0 0 .8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Bu konudaki tüm rehberler</p>
+          <p style="margin:0 0 .9rem;font-size:1.15rem;font-weight:700;color:var(--primary,#0b213a)">AP, Amerikan Müfredatı ve Dubai</p>
+          <ul style="margin:0;padding-left:1.1rem;columns:2 260px;column-gap:2rem;line-height:1.6">
+            <li style="break-inside:avoid"><a href="/blog/ib-alevel-amerikan-mufredat-karsilastirma/" style="color:var(--primary,#0b213a)">IB mi, A-Level mi, AP mi? Müfredat Seçimi</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-ib-okullari-mezun-basarisi/" style="color:var(--primary,#0b213a)">Dubai IB Okulları ve Mezunların Başarısı</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-en-iyi-uluslararasi-okullar/" style="color:var(--primary,#0b213a)">Dubai'de En İyi 23 KHDA Outstanding Okul</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-khda-okul-dereceleri-ucret-karsilastirmasi/" style="color:var(--primary,#0b213a)">Dubai KHDA Okul Dereceleri ve Ücret Karşılaştırması</a></li>
+            <li style="break-inside:avoid"><a href="/blog/yurt-disi-universite-hazirlik-lisede/" style="color:var(--primary,#0b213a)">Yurt Dışı Üniversite İçin Lisede Hazırlık</a></li>
+            <li style="break-inside:avoid"><a href="/blog/universitede-fark-yaratan-aktiviteler/" style="color:var(--primary,#0b213a)">Üniversitede Fark Yaratan Aktiviteler</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-okul-ucretleri-2026/" style="color:var(--primary,#0b213a)">Dubai Okul Ücretleri 2026</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-okul-basvuru-nasil-yapilir/" style="color:var(--primary,#0b213a)">Dubai Okul Başvurusu Nasıl Yapılır?</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <div class="blog-faq">
+          <h2>Sık Sorulan Sorular</h2>
+
+          <div class="faq-item">
+            <h3 class="faq-q">AP (Advanced Placement) nedir ve nasıl çalışır?</h3>
+            <p class="faq-a">AP (Advanced Placement), College Board tarafından yönetilen ve lise öğrencilerine üniversite düzeyinde dersler alma imkânı sunan uluslararası bir programdır. Her AP dersinin sonunda Mayıs ayında standart bir sınav yapılır; 1–5 arasında puanlanan bu sınavda 3 puan ve üzeri alanlar ABD, Kanada, İngiltere ve Avrupa'nın önde gelen üniversitelerinde ders muafiyeti ve kredi transferi hakkı kazanabilirler.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">Dubai'deki en iyi AP okulu hangisidir?</h3>
+            <p class="faq-a">AP ders çeşitliliği ve sınav başarısı açısından Dubai'nin en iyi AP okulu American School of Dubai'dir (ASD): 25'ten fazla AP dersi ve %88–92 başarı oranıyla bölgenin lideridir. GEMS Dubai American Academy (DAA) 20'den fazla AP dersi ve hem AP hem IBDP seçeneğiyle ikinci konumdadır. Dubai International Academy (DIA) ve Universal American School (UAS) da güçlü AP programlarıyla öne çıkmaktadır.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">AP mi yoksa IB mi tercih edilmeli?</h3>
+            <p class="faq-a">AP belirli alanlarda derinleşme ve özellikle ABD/Kanada üniversitelerini hedefleyenler için idealdir. IB ise altı disiplini kapsayan bütüncül yapısıyla küresel üniversitelerde daha geniş kabul görmektedir. GEMS DAA gibi her iki programı sunan okullarda 9–10. sınıfta karar vermek mümkündür. Detaylı karşılaştırma için <a href="/blog/ib-alevel-amerikan-mufredat-karsilastirma/">IB vs A-Level vs AP rehberimize</a> bakabilirsiniz.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">AP sınavında kaç puan almak gerekiyor?</h3>
+            <p class="faq-a">AP sınavları 1–5 arasında puanlanır. 3 puan çoğu üniversitede kabul görülen minimum eşiktir. 4 puan güçlü bir akademik profil oluşturur; 5 puan ise neredeyse her kurumda ders muafiyetini garantileyebilir. Dubai'nin önde gelen AP okullarında 3 puan ve üzeri başarı oranı, dünya ortalamasının (%65) belirgin biçimde üzerindedir.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">AP dersleri ABD dışındaki üniversitelerde de geçerli mi?</h3>
+            <p class="faq-a">Evet, AP kredileri Kanada (Toronto, McGill, UBC), İngiltere (bazı bölümler) ve Avustralya'nın önde gelen üniversitelerinde de kabul görmektedir. Ancak tanınma politikası kurumdan kuruma ve bölümden bölüme değişir; başvurmayı planladığınız üniversitenin AP kredi politikasını ayrıca doğrulamanızı öneririm.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">Dubai AP okullarına başvuru süreci nasıl işliyor?</h3>
+            <p class="faq-a">Süreç okuldan okula farklılaşır. ASD gibi seçici okullarda MAP sınavı, akademik transkript ve mülakat gereklidir; diplomat/ABD vatandaşı ailelere öncelik tanınabilir. GEMS DAA ve DIA'da MAP veya CAT4 değerlendirmesi uygulanır. Kayıt sezonu genellikle Aralık–Şubat arasında açılır; bekleme listelerine mümkün olduğunca erken girilmesi kritik önem taşır. Okul seçim sürecinize yardımcı olmamı isterseniz <a href="/dubai/">Dubai okul karşılaştırıcısını</a> kullanabilirsiniz.</p>
+          </div>
+        </div>
+
+        <p>Dubai'deki AP ve Amerikan müfredatı okullarını karşılaştırmak için <a href="/dubai/">Dubai okul rehberi sayfamızı</a> ziyaret edebilir, çocuğunuzun profiline uygun okul seçimi için <a href="/uluslararasi-okul-danismanligi/#contact">ücretsiz bir görüşme talep edebilirsiniz</a>.</p>
+
+      </article>
+    </div>
+
+    <!-- RELATED POSTS -->
+    <section class="blog-related-section">
+      <div class="container">
+        <h2>İlgili Yazılar</h2>
+        <div class="blog-related-grid">
+          <a href="../ib-alevel-amerikan-mufredat-karsilastirma/" class="blog-related-card">
+            <img src="../../assets/blog/thumb-mufredat.webp" alt="IB, A-Level ve AP Müfredat Karşılaştırması" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title"><span>IB mi, A-Level mi, AP mi? Hangi Müfredat Çocuğunuza Uygun?</span></div>
+              <div class="blog-related-card-meta">7 Haziran 2026 · 12 dk</div>
+            </div>
+          </a>
+          <a href="../dubai-ib-okullari-mezun-basarisi/" class="blog-related-card">
+            <img src="../../assets/blog/thumb-dubai-ib-okullari-mezun-basarisi.webp" alt="Dubai IB Okulları ve Mezun Başarısı" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title"><span>Dubai IB Okulları: Top 10 ve Mezunların Küresel Başarısı</span></div>
+              <div class="blog-related-card-meta">9 Ekim 2026 · 16 dk</div>
+            </div>
+          </a>
+          <a href="../dubai-en-iyi-uluslararasi-okullar/" class="blog-related-card">
+            <img src="../../assets/blog/thumb-dubai-okul.webp" alt="Dubai En İyi Uluslararası Okullar" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title"><span>Dubai'de En İyi 23 KHDA Outstanding Okul</span></div>
+              <div class="blog-related-card-meta">10 Haziran 2026 · 15 dk</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="padding:0 0 2rem;">
+      <p style="margin:0;padding:1rem 1.25rem;background:hsla(43,60%,92%,0.7);border-left:3px solid var(--accent,#DBAF2E);border-radius:0 6px 6px 0;font-size:0.95rem;line-height:1.8;">
+        <strong>İlgili Rehberler:</strong><br>
+        <a href="/blog/ib-alevel-amerikan-mufredat-karsilastirma/" style="color:var(--accent,#DBAF2E);font-weight:500;">IB vs A-Level vs AP Karşılaştırma</a> ·
+        <a href="/blog/dubai-ib-okullari-mezun-basarisi/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai IB Okulları</a> ·
+        <a href="/dubai/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai Okul Karşılaştırıcı</a> ·
+        <a href="/blog/dubai-okul-ucretleri-2026/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai Okul Ücretleri 2026</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi, müfredat değerlendirme ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="/neden-biz/">Neden Biz?</a></li>
+            <li><a href="/tr/#services">Hizmetler</a></li>
+            <li><a href="/blog/">Blog</a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/">Görüşme Planla</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>İletişim</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, Birleşik Arap Emirlikleri</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener noreferrer">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
+        <div><a href="/gizlilik-politikasi/" style="color:inherit;opacity:0.7">Gizlilik Politikası</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP STICKY -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Merhaba,%20Daha%20fazla%20bilgi%20almak%20istiyorum" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile yazın" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- EduBot -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Kapat">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
+  </div>
+
+  <script>
+    window.setLang = function (l) {
+      if (l === document.documentElement.lang) return;
+      try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+      document.cookie = 'edualist_lang=' + l + ';path=/;max-age=31536000;samesite=lax';
+      var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+      location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+    };
+    document.querySelectorAll('.lang-btn').forEach(function (b) {
+      var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+      b.classList.toggle('active', l === document.documentElement.lang);
+      if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+    });
+  </script>
+  <script src="../../app.js?v=20261010" defer></script>
+</body>
+</html>
