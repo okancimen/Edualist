@@ -177,6 +177,14 @@ document.addEventListener("DOMContentLoaded", () => {
         const diff = dow >= 3 ? dow - 3 : 7 - (3 - dow);
         return new Date(y, m, last.getDate() - diff);
       }
+      // Track when dialog is shown
+      new MutationObserver((mutations, obs) => {
+        if (dialog.hasAttribute("open")) {
+          if (typeof gtag === "function") gtag("event", "webinar_dialog_open", { event_category: "engagement", event_label: "Webinar Countdown Dialog" });
+          obs.disconnect();
+        }
+      }).observe(dialog, { attributes: true, attributeFilter: ["open"] });
+
       const dialogClose = document.getElementById("dialog-close");
       const dialogCta   = document.getElementById("dialog-cta");
       if (dialogClose) dialogClose.addEventListener("click", () => dialog.close());
@@ -217,6 +225,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const blogMatch = window.location.pathname.match(/\/(?:en\/)?blog\/([^/]+)\//);
     if (blogMatch) {
       const slug = blogMatch[1];
+
+      // Scroll depth: 25 / 50 / 75 / 100% — 75%+ also fires blog_read_complete
+      const article = document.querySelector("article");
+      if (article) {
+        const depthFired = new Set();
+        const onScroll = () => {
+          const rect = article.getBoundingClientRect();
+          const scrolled = Math.max(0, -rect.top + window.innerHeight);
+          const pct = Math.min(100, Math.round(scrolled / article.offsetHeight * 100));
+          [25, 50, 75, 100].forEach(t => {
+            if (pct >= t && !depthFired.has(t)) {
+              depthFired.add(t);
+              if (typeof gtag === "function") {
+                gtag("event", "blog_scroll_depth", { event_category: "engagement", event_label: slug, value: t });
+                if (t === 75) gtag("event", "blog_read_complete", { event_category: "engagement", event_label: slug });
+              }
+            }
+          });
+          if (depthFired.size === 4) window.removeEventListener("scroll", onScroll, { passive: true });
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+      }
       document.addEventListener("click", e => {
         const link = e.target.closest("a[href]");
         if (!link || !link.classList.contains("btn") || typeof gtag !== "function") return;
@@ -226,6 +256,8 @@ document.addEventListener("DOMContentLoaded", () => {
           gtag("event", "conversion", { send_to: "AW-18221941570/YZxyCOLI6cQcEMKG8_BD" });
         } else if (href.includes("/dubai/")) {
           gtag("event", "blog_dubai_cta_click", { event_category: "engagement", event_label: slug });
+        } else if (href.includes("eduentry.com") && href.includes("sample-report")) {
+          gtag("event", "blog_eduentry_sample_report", { event_category: "lead", event_label: slug });
         } else if (href.includes("eduentry.com")) {
           gtag("event", "blog_eduentry_click", { event_category: "engagement", event_label: slug });
         }
@@ -278,6 +310,7 @@ document.addEventListener("DOMContentLoaded", () => {
         btn.classList.add("active");
         const table = bar.nextElementSibling && bar.nextElementSibling.querySelector(".pricing-table");
         if (table) table.classList.toggle("show-pro", btn.dataset.col === "pro");
+        if (typeof gtag === "function") gtag("event", "pricing_tab_click", { event_category: "engagement", event_label: btn.dataset.col || btn.textContent.trim() });
       });
     });
 
