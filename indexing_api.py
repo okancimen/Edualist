@@ -127,6 +127,9 @@ URLS = [
     "https://www.edualist.com/blog/dubai-khda-okul-dereceleri-ucret-karsilastirmasi/",
     "https://www.edualist.com/blog/dubai-okul-ucretleri-2026/",
     "https://www.edualist.com/en/blog/dubai-international-schools-khda-fees-2026/",
+    # Yeni blog yazıları — 2026-10-09
+    "https://www.edualist.com/blog/dubai-ib-okullari-mezun-basarisi/",
+    "https://www.edualist.com/en/blog/dubai-ib-schools-graduate-success/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────

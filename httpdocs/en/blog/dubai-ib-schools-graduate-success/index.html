@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){setTimeout(g,5000);});})();
+  </script>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25,1,.5,1),transform .8s cubic-bezier(.25,1,.5,1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:768px){.section{padding:2.5rem 0}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai IB Schools & Graduate Success: Top 10 Ranked 2026 | Edualist</title>
+  <meta name="description" content="Dubai's best IB schools ranked: JESS, NLCS, NAS, Sunmarke, GEMS DAA compared by average IB score, pass rate and university placements including Harvard, Oxford and Cambridge.">
+  <meta name="keywords" content="Dubai IB schools, best IB schools Dubai, JESS Dubai IB, NLCS Dubai, NAS Dubai IB, Sunmarke IB scores, GEMS World Academy IB, Dubai IB results, KHDA outstanding IB, Dubai IB university placements">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/en/blog/dubai-ib-schools-graduate-success/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/dubai-ib-schools-graduate-success/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-ib-okullari-mezun-basarisi/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-ib-schools-graduate-success/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="Dubai IB Schools & Graduate Success: Top 10 Ranked 2026">
+  <meta property="og:description" content="Dubai's best IB schools ranked by average score, pass rate and university placements. JESS, NLCS, NAS, Sunmarke, GEMS DAA compared with Harvard, Oxford, Cambridge data.">
+  <meta property="og:url"         content="https://www.edualist.com/en/blog/dubai-ib-schools-graduate-success/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-ib-okullari-mezun-basarisi.webp">
+  <meta property="article:published_time" content="2026-10-09">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Dubai IB Schools Ranked 2026: Scores, Pass Rates & University Placements">
+  <meta name="twitter:description" content="JESS (38.0), NLCS (37.0), Sunmarke (36.5) — Dubai's top IB schools compared with Ivy League and Oxbridge acceptance data.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-ib-okullari-mezun-basarisi.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Dubai IB Schools and the Global Success of Their Graduates 2026",
+    "description": "Dubai's best IB schools ranked by average score and university placements. JESS, NLCS, NAS, Sunmarke, GEMS DAA compared with Harvard, Oxford and Cambridge acceptance data.",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen", "jobTitle": "International Education Consultant",
+      "url": "https://www.edualist.com/en/about/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com"
+    },
+    "datePublished": "2026-10-09",
+    "dateModified": "2026-10-09",
+    "wordCount": 2500,
+    "inLanguage": "en",
+    "url": "https://www.edualist.com/en/blog/dubai-ib-schools-graduate-success/",
+    "image": "https://www.edualist.com/assets/blog/thumb-dubai-ib-okullari-mezun-basarisi.webp",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".blog-summary", ".blog-post-title"]
+    }
+  }
+  </script>
+
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp">
+  <link rel="preload" as="style" href="/styles.css?v=14">
+  <link rel="stylesheet" href="/styles.css?v=14" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/styles.css?v=14"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}</style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.edualist.com/en/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/en/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dubai IB Schools and the Global Success of Their Graduates", "item": "https://www.edualist.com/en/blog/dubai-ib-schools-graduate-success/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Why do Dubai IB schools score above the global average?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Several factors drive Dubai's above-average IB results: KHDA's rigorous inspection system continuously pushes schools to improve; the cosmopolitan classroom environment develops genuine international mindedness; selective admissions policies maintain high academic baselines; experienced IB teaching staff deliver quality pedagogy. The high investment levels of Dubai families in education also enrich school resources and extracurricular programmes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Which universities do Dubai IB graduates get into?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Graduates from Dubai's leading IB schools secure places at Oxford, Cambridge, Imperial College, LSE and UCL in the UK; Harvard, MIT, Stanford, Columbia and Yale in the US; and ETH Zurich, Bocconi, McGill and University of Toronto in Europe and Canada. JESS, NLCS and NAS Dubai consistently report notable Oxbridge placement rates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "IB vs A-Level vs AP — which is best in Dubai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "The right choice depends on your child's strengths and university targets. IB suits students seeking a well-rounded, internationally recognised qualification for universities worldwide. A-Level is a strong choice for UK-focused applications. AP works best for US-focused students. Many Dubai schools now offer hybrid models (GCSE + IBDP or AP + IBDP), giving families meaningful flexibility."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much do IB schools cost in Dubai?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "As of 2026, annual tuition at KHDA Outstanding IB schools in Dubai ranges from approximately AED 55,000 to AED 115,000 (roughly USD 15,000–31,000). High-performing schools like JESS, NLCS and NAS sit at the upper end, while Raffles and Dwight are positioned in the mid-range."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I choose the right IB school in Dubai for my child?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Key factors to evaluate: (1) KHDA rating — prioritise Outstanding or Good schools; (2) Average IB score and Diploma pass rate; (3) University placement data — especially for your target country; (4) School culture and language profile vs your child's English level; (5) Admissions requirements — MAP, CAT4 or interview; (6) Location and transport. School visits with an education consultant help families make confident, well-informed decisions."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    window.addEventListener("load",function(){setTimeout(function(){(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");},3000);});
+  </script>
+  <style id="nav-breakpoint">@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Schools in Dubai</a></li>
+        <li><a href="/en/international-school-consulting/">Consulting</a></li>
+        <li><a href="/en/academic-coaching/">Academic Coaching</a></li>
+        <li><a href="/en/blog/" class="nav-blog-highlight">Blog</a></li>
+        <li><a href="/en/why-edualist/">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <div>
+        <div class="blog-post-meta">
+          <span><a href="/en/about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>·</span>
+          <span>9 October 2026</span>
+          <span>·</span>
+          <span>15 min read</span>
+        </div>
+        <h1 class="blog-post-title">Dubai IB Schools and the<br>Global Success of Their Graduates</h1>
+        <div class="blog-seo-tags">
+          <span class="blog-seo-tag">Dubai IB schools 2026</span>
+          <span class="blog-seo-tag">JESS NLCS NAS comparison</span>
+          <span class="blog-seo-tag">IB university placements</span>
+          <span class="blog-seo-tag">KHDA Outstanding IB</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLE -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <a href="/en/blog/" class="blog-back-link">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+          <span>Back to Blog</span>
+        </a>
+
+        <div class="blog-summary">
+          <strong>Quick Answer</strong>
+          <p>Dubai produces IB results far above the global average (~30 points) with 30+ fully authorised IB schools. <strong>JESS (38.0), NLCS (37.0) and Sunmarke (36.5)</strong> lead the pack. Their graduates win places at Harvard, Oxford, Cambridge and MIT every year. This guide covers Dubai's IB ecosystem, school-by-school comparisons and what drives their graduates' global success.</p>
+        </div>
+
+        <div class="blog-post-body">
+
+          <p>In today's global economy, education means far more than completing a curriculum. It's about equipping students with the skills to navigate a complex, uncertain world — not just with knowledge, but with the ability to apply it. The International Baccalaureate (IB) programme has emerged as the gold standard of modern education precisely because it addresses both dimensions.</p>
+
+          <p>Dubai — the Middle East's hub for finance, innovation and culture — holds an exceptional place on the global education map. Schools that earn KHDA (Knowledge and Human Development Authority) "Outstanding" ratings consistently produce IB scores well above world averages, sending their graduates to Harvard, Oxford, Stanford and Cambridge year after year.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="/assets/founder-avatar-104.webp" type="image/webp">
+              <img src="/assets/founder-avatar-104.jpg" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Consultant's note</span>
+              <p>The data in this guide is drawn from IBO's official statistics, KHDA annual reports and my direct observations from supporting families through school selection in Dubai. Scores and placement figures can vary by year and programme; treat these numbers as reference points, not guarantees.</p>
+            </div>
+          </div>
+
+          <h2>1. The IB Diploma Programme — Why It Stands Apart</h2>
+
+          <p>The International Baccalaureate was founded in Geneva in 1968 and is now implemented in over 5,800 schools across 150+ countries. It is not a single-subject exam system; it is a holistic educational philosophy targeting a student's intellectual, emotional and ethical development.</p>
+
+          <p>Three mandatory core components distinguish IBDP from A-Level, AP and other international curricula:</p>
+
+          <div class="blog-verdict">
+            <h3>The IB Core: Three Non-Negotiables</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Theory of Knowledge (TOK):</strong> Asks "How do we know what we know?" — developing critical thinking, evidence evaluation and logical analysis. University admissions officers treat TOK performance as a marker of intellectual maturity.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Extended Essay (EE):</strong> An independent 4,000-word research paper in a chosen subject. Students arrive at university already fluent in academic sourcing, referencing and methodology — skills their peers are still acquiring in Year 1.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Creativity, Activity, Service (CAS):</strong> Requires students to engage in community projects, artistic endeavours and physical development — building the well-rounded profile that top universities actively seek.</span></div>
+          </div>
+
+          <p>The IB Diploma is scored out of 45: 6 subjects × 7 points = 42, plus up to 3 bonus points from EE and TOK. The minimum passing threshold is 24; the global average sits around 30. For official scoring guidelines, visit <a href="https://www.ibo.org" target="_blank" rel="noopener noreferrer">ibo.org</a>.</p>
+
+          <h2>2. Dubai IB Results in Numbers</h2>
+
+          <p>With more than 30 fully authorised or hybrid IB schools, Dubai is one of the most IB-dense cities on earth. Its schools consistently break global performance benchmarks.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-docs-table">
+            <thead>
+              <tr>
+                <th>Metric</th>
+                <th>Global IB Average</th>
+                <th>Dubai Leading Schools</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Average IB Score (out of 45)</td>
+                <td>~30.0</td>
+                <td><strong>34.0 – 38.0</strong></td>
+              </tr>
+              <tr>
+                <td>Diploma Pass Rate</td>
+                <td>~79% – 80%</td>
+                <td><strong>95% – 100%</strong></td>
+              </tr>
+              <tr>
+                <td>Students Scoring 40+</td>
+                <td>~8% – 10%</td>
+                <td><strong>20% – 35%</strong></td>
+              </tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Why does 40+ matter?</strong> Globally, only around 9% of IB students score 40 or above out of 45. At Dubai's leading schools, that figure regularly reaches 30%+ — a statistical outlier that reflects both selective admissions and exceptional teaching.
+          </div>
+
+          <h2>3. Where Dubai IB Graduates Go</h2>
+
+          <p>Analysis of UCAS data and Common Application statistics consistently shows IB students achieving higher acceptance rates than the general applicant pool at top universities. Dubai graduates compound this advantage with a genuinely international profile — built in classrooms where every global issue is debated from 20 different national perspectives.</p>
+
+          <div class="blog-callout">
+            <strong>The IB Pathway:</strong><br>
+            [Primary / PYP] → [Middle School / MYP] → [Sixth Form / IBDP] → [Global Top 50 University]<br>
+            <em>Core pillars: Theory of Knowledge · Extended Essay · CAS Projects</em>
+          </div>
+
+          <h3>Ivy League and Oxbridge Placements</h3>
+
+          <p>Every year, Dubai IB graduates receive offers from:</p>
+
+          <div class="blog-verdict">
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>United Kingdom:</strong> University of Oxford, University of Cambridge, Imperial College London, LSE, UCL</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>United States:</strong> Harvard University, Stanford University, MIT, Columbia University, Yale University, UC Berkeley</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Europe and Canada:</strong> ETH Zurich, University of Toronto, McGill University, Bocconi University</span></div>
+          </div>
+
+          <p>University admissions officers consistently cite three reasons for preferring IB graduates: <strong>time management</strong> — the rigorous IB workload trains students to handle university-level demands from day one; <strong>research literacy</strong> — anyone who has written a 4,000-word EE already knows how to search, cite and structure academic arguments; and <strong>breadth</strong> — IB students are not one-dimensional, they balance languages, sciences, humanities and arts.</p>
+
+          <p>For detailed university score thresholds by country, see our <a href="/en/blog/ib-diploma-university-requirements/">IB Diploma university requirements guide</a>. For a curriculum comparison, read <a href="/en/blog/ib-vs-a-level-vs-ap/">IB vs A-Level vs AP: which is right for your child?</a></p>
+
+          <h2>4. Dubai's Top 10 IB Schools</h2>
+
+          <h3>JESS Arabian Ranches — Highest Average Score in the Region</h3>
+          <p>Jumeirah English Speaking School achieves the highest average IB score in the region at approximately 38.0, combining a strong British academic tradition with the IB's holistic framework. Its selective, interview-based admissions process maintains an exceptionally high academic baseline. Oxbridge placements are a regular outcome for top JESS graduates.</p>
+
+          <h3>NLCS Dubai — Academic Rigour and Oxbridge Focus</h3>
+          <p>North London Collegiate School Dubai is the UAE extension of one of England's most academically selective girls' schools. With an average score of approximately 37.0 and a strong Oxbridge pipeline, NLCS expects genuine intellectual commitment from its students. The teaching culture is highly structured and demanding.</p>
+
+          <h3>Sunmarke School — Flexible Pathway Choices</h3>
+          <p>Sunmarke is one of very few Dubai schools offering both A-Level/BTEC and IBDP under the same roof — a significant advantage for families navigating different career pathways. Its average IB score of ~36.5 and high proportion of 40+ scorers make it one of the strongest academic performers in the city.</p>
+
+          <h3>Nord Anglia School (NAS) Dubai — Global Network with MIT and Juilliard</h3>
+          <p>NAS Dubai is part of the Nord Anglia global network, which runs formal academic partnerships with MIT and the Juilliard School. These collaborations give students access to enrichment programmes in STEM, music and performing arts that are unavailable elsewhere in Dubai. Average IB score: ~36.0.</p>
+
+          <h3>GEMS Dubai American Academy (DAA) — US Ivy League Specialist</h3>
+          <p>GEMS DAA is the only "Outstanding"-rated school in Dubai offering both the American curriculum (AP) and the IB Diploma Programme side by side. Its state-of-the-art campus includes AI and entrepreneurship centres, making it a natural choice for students targeting US and Canadian universities.</p>
+
+          <div class="blog-verdict">
+            <h3>GEMS DAA 2026 Data</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Average IB Score:</strong> 34.0 – 35.5</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Diploma Pass Rate:</strong> 98% – 100%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Students Scoring 40+:</strong> 18% – 23%</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Notable University Placements:</strong> Harvard, MIT, Stanford, Columbia, UC Berkeley, University of Toronto</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Admissions Process:</strong> MAP (Measures of Academic Progress) testing, academic transcript review and student interview</span></div>
+          </div>
+
+          <h3>Dubai International Academy (DIA) Emirates Hills — Full IB Continuum</h3>
+          <p>DIA offers the complete IB continuum from PYP (Primary) through MYP (Middle School) to DP (Diploma), immersing students in IB philosophy from the earliest years. It maintains a consistent average score of ~35.5 across a broad and diverse student body.</p>
+
+          <h3>Repton School Dubai, GEMS World Academy, Raffles and Dwight</h3>
+          <p>Repton brings traditional British boarding-school culture to Dubai with IGCSE and IBDP/A-Level options, offering strong UK university connections. GEMS World Academy stands out for its high-specification science laboratories and technology facilities. Raffles World Academy is known for its inclusive, diverse international community, while Dwight School Dubai differentiates itself through a personalised, individual-development approach to learning.</p>
+
+          <h2>5. Top 10 Dubai IB Schools — Comparison Table</h2>
+
+          <div style="overflow-x:auto">
+          <table class="blog-docs-table">
+            <thead>
+              <tr>
+                <th>School</th>
+                <th>Curriculum Model</th>
+                <th>Avg IB Score</th>
+                <th>Standout Feature</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>JESS Arabian Ranches</strong></td><td>GCSE + IBDP</td><td>~38.0</td><td>Highest regional average score</td></tr>
+              <tr><td><strong>NLCS Dubai</strong></td><td>NLCS + IBDP</td><td>~37.0</td><td>Selective admissions &amp; Oxbridge placements</td></tr>
+              <tr><td><strong>Sunmarke School</strong></td><td>A-Level/BTEC + IBDP</td><td>~36.5</td><td>Flexible pathways &amp; high 40+ rate</td></tr>
+              <tr><td><strong>Nord Anglia (NAS) Dubai</strong></td><td>GCSE + IBDP</td><td>~36.0</td><td>MIT &amp; Juilliard global network</td></tr>
+              <tr><td><strong>GEMS Dubai American Academy</strong></td><td>American + IBDP / AP</td><td>~35.5</td><td>Regional leader for US Ivy League</td></tr>
+              <tr><td><strong>DIA Emirates Hills</strong></td><td>Full IB (PYP-MYP-DP)</td><td>~35.5</td><td>Consistent results across broad intake</td></tr>
+              <tr><td><strong>Repton School Dubai</strong></td><td>IGCSE + IBDP / A-Level</td><td>~35.0</td><td>Traditional British boarding culture</td></tr>
+              <tr><td><strong>GEMS World Academy</strong></td><td>Full IB (PYP-MYP-DP)</td><td>~35.0</td><td>High-spec science labs &amp; technology</td></tr>
+              <tr><td><strong>Raffles World Academy</strong></td><td>Full IB (PYP-MYP-DP)</td><td>~33.5</td><td>Inclusive international community</td></tr>
+              <tr><td><strong>Dwight School Dubai</strong></td><td>Full IB (PYP-MYP-DP)</td><td>~33.0</td><td>Personalised individual development</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h2>6. Strategic Advantages of Studying IB in Dubai</h2>
+
+          <p>Choosing an IB school in Dubai means more than following a Swiss-designed curriculum. Dubai's unique environment layers additional advantages onto the IB framework that are genuinely difficult to replicate elsewhere.</p>
+
+          <h3>Cosmopolitan Classroom Dynamics</h3>
+          <p>Dubai is home to people from over 200 nationalities. When a global issue is debated in an IB classroom, it is seen through the lenses of Indian, British, Turkish, Emirati and American students simultaneously. This is IB's "International-Mindedness" principle lived rather than taught — a distinction that admissions officers at top universities clearly recognise and value.</p>
+
+          <h3>Networking and Internship Opportunities</h3>
+          <p>Dubai hosts the regional headquarters of Google, Microsoft, HSBC, McKinsey and dozens of other global firms. IB schools connect students with these organisations through CAS projects and career events, giving students real internship and professional networking experience during their secondary school years — a resume differentiator in university applications.</p>
+
+          <h3>Language Profile and Global Citizenship</h3>
+          <p>IB Group 2 requires a second language — a requirement Dubai's multilingual environment fulfils organically. Students develop academic English proficiency while acquiring or deepening skills in Arabic, French, Spanish or another language. PISA 2022 data indicates that students educated in multilingual environments demonstrate measurable advantages in problem-solving and language acquisition compared to monolingual peers.</p>
+
+          <h2>Conclusion: A System That Produces Global Leaders</h2>
+
+          <p>Dubai's IB schools offer a model that blends academic excellence with global perspective and character development. IB graduates leave equipped not just with strong exam results, but with the ability to manage complexity, conduct independent research, communicate effectively and take on civic responsibility.</p>
+
+          <p>Choosing the right IB school for your child — weighing school culture, curriculum model, location and admissions requirements — is a decision with long-term consequences. If you are evaluating Dubai's IB schools for your family, we would be glad to review your child's profile and match them to the right school in a <a href="/en/international-school-consulting/">free consultation</a>.</p>
+
+          <div class="blog-post-cta glass">
+            <h3>Which Dubai IB school fits your child?</h3>
+            <p>In a one-to-one session with Özlem Çimen, we'll review your child's academic profile, language background and university targets — and match them to the right school.</p>
+            <a href="/en/international-school-consulting/" class="btn btn-primary" style="display:inline-flex">Book a Free Consultation</a>
+          </div>
+
+        </div>
+
+        <aside class="blog-author-box" style="display:flex;gap:1.1rem;align-items:flex-start;margin:2.5rem 0;padding:1.4rem 1.5rem;border:1px solid var(--border-card,rgba(11,33,58,.08));border-left:3px solid var(--accent,#DBAF2E);border-radius:10px;background:var(--bg-card,rgba(11,33,58,.02))">
+          <picture>
+            <source srcset="/assets/founder-avatar-160.webp" type="image/webp">
+            <img src="/assets/founder-avatar-160.jpg" alt="Özlem Çimen" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)">
+          </picture>
+          <div>
+            <p style="margin:0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Author</p>
+            <p style="margin:.15rem 0 .4rem;font-size:1.1rem;font-weight:700"><a href="/en/about/" style="color:var(--primary,#0b213a);text-decoration:none">Özlem Çimen</a></p>
+            <p style="margin:0;font-size:.95rem;line-height:1.7">International education consultant and founder of Edualist. Over 20 years as teacher, head of department and administrator at TED Istanbul College, ENKA Schools and IICS; raised her own children in international schools across 5 countries.</p>
+            <p style="margin:.5rem 0 0;font-size:.9rem"><a href="/en/about/" style="color:var(--accent-hover,#b8921f);font-weight:600">About Özlem Çimen →</a></p>
+          </div>
+        </aside>
+
+        <aside class="blog-cluster-box" style="margin:2rem 0;padding:1.4rem 1.5rem;border-radius:10px;background:var(--bg-warm-secondary,#f3efe8)">
+          <p style="margin:0 0 .8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">All guides on this topic</p>
+          <p style="margin:0 0 .9rem;font-size:1.15rem;font-weight:700;color:var(--primary,#0b213a)">IB, Dubai & University</p>
+          <ul style="margin:0;padding-left:1.1rem;columns:2 260px;column-gap:2rem;line-height:1.6">
+            <li style="break-inside:avoid"><a href="/en/blog/ib-diploma-university-requirements/" style="color:var(--primary,#0b213a)">IB Diploma University Requirements: Score Thresholds by Country</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/ib-vs-a-level-vs-ap/" style="color:var(--primary,#0b213a)">IB vs A-Level vs AP: Which Curriculum?</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-top-schools/" style="color:var(--primary,#0b213a)">Dubai's Top 23 KHDA Outstanding Schools</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-education-system/" style="color:var(--primary,#0b213a)">Dubai Education System: Complete Parent Guide</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/why-high-achievers-struggle-with-ib/" style="color:var(--primary,#0b213a)">Why High Achievers Struggle with IB</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/what-is-an-international-school/" style="color:var(--primary,#0b213a)">What Is an International School?</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-international-schools-khda-fees-2026/" style="color:var(--primary,#0b213a)">Dubai International Schools: KHDA Ratings &amp; Fees 2026</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/turkey-vs-dubai-school-fees/" style="color:var(--primary,#0b213a)">Turkey vs Dubai School Fees: 2026 Comparison</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ -->
+        <div class="blog-faq">
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Why do Dubai IB schools score above the global average?</h3>
+            <p class="faq-a">Several factors drive Dubai's above-average IB results: KHDA's rigorous inspection framework continuously pushes schools to improve; the cosmopolitan classroom environment develops genuine international mindedness; selective admissions policies maintain high academic baselines; and experienced IB teaching staff deliver quality pedagogy. The high investment levels of Dubai families in education also enrich school resources and extracurricular programmes.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">Which universities do Dubai IB graduates get into?</h3>
+            <p class="faq-a">Graduates from Dubai's leading IB schools secure places at Oxford, Cambridge, Imperial College, LSE and UCL (UK); Harvard, MIT, Stanford, Columbia and Yale (US); and ETH Zurich, Bocconi, McGill and University of Toronto (Europe and Canada). JESS, NLCS and NAS Dubai consistently report notable Oxbridge placement rates.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">IB vs A-Level vs AP — which is best in Dubai?</h3>
+            <p class="faq-a">The right choice depends on your child's strengths and university targets. IB suits students seeking a well-rounded qualification recognised worldwide. A-Level is a strong choice for UK-focused applications. AP works best for US-focused students. Many Dubai schools offer hybrid models (GCSE + IBDP or AP + IBDP), which gives families meaningful flexibility. A consultation with an education specialist helps match the right path to your child's profile.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">How much do IB schools cost in Dubai?</h3>
+            <p class="faq-a">As of 2026, annual tuition at KHDA Outstanding IB schools in Dubai ranges from approximately AED 55,000 to AED 115,000 (roughly USD 15,000–31,000). High-performing schools like JESS, NLCS and NAS sit at the upper end, while Raffles and Dwight are positioned in the mid-range. See our <a href="/en/blog/dubai-international-schools-khda-fees-2026/">Dubai schools KHDA ratings and fees guide</a> for full details.</p>
+          </div>
+          <div class="faq-item">
+            <h3 class="faq-q">How do I choose the right IB school in Dubai for my child?</h3>
+            <p class="faq-a">Key factors: (1) KHDA rating — prioritise Outstanding or Good; (2) Average IB score and Diploma pass rate; (3) University placement data for your target country; (4) School culture and language profile vs your child's English level; (5) Admissions requirements — MAP, CAT4 or interview; (6) Location and transport. School visits with an education consultant help families make well-informed, confident decisions.</p>
+          </div>
+        </div>
+
+        <p>To explore Dubai's international school landscape further, visit our <a href="/en/dubai/">Dubai school consulting page</a> or <a href="/en/international-school-consulting/#contact">request a free consultation</a> to discuss your child's specific profile.</p>
+
+      </article>
+    </div>
+
+    <!-- RELATED POSTS -->
+    <section class="blog-related-section">
+      <div class="container">
+        <h2>Related Articles</h2>
+        <div class="blog-related-grid">
+          <a href="../ib-diploma-university-requirements/" class="blog-related-card">
+            <img src="/assets/blog/thumb-ib-diploma-universite-basvuru.webp" alt="IB Diploma University Requirements" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title"><span>IB Diploma University Requirements: Score Thresholds by Country 2026</span></div>
+              <div class="blog-related-card-meta">23 September 2026 · 14 min</div>
+            </div>
+          </a>
+          <a href="../dubai-top-schools/" class="blog-related-card">
+            <img src="/assets/blog/thumb-dubai-okul.webp" alt="Dubai Top Schools" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title"><span>Dubai's Top 23 KHDA Outstanding International Schools</span></div>
+              <div class="blog-related-card-meta">10 June 2026 · 15 min</div>
+            </div>
+          </a>
+          <a href="../ib-vs-a-level-vs-ap/" class="blog-related-card">
+            <img src="/assets/blog/thumb-mufredat.webp" alt="IB vs A-Level vs AP" loading="lazy" decoding="async" width="800" height="450">
+            <div class="blog-related-card-body">
+              <div class="blog-related-card-title"><span>IB vs A-Level vs AP: Which Curriculum Is Right for Your Child?</span></div>
+              <div class="blog-related-card-meta">7 June 2026 · 12 min</div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <div class="container" style="padding:0 0 2rem;">
+      <p style="margin:0;padding:1rem 1.25rem;background:hsla(43,60%,92%,0.7);border-left:3px solid var(--accent,#DBAF2E);border-radius:0 6px 6px 0;font-size:0.95rem;line-height:1.8;">
+        <strong>Related Guides:</strong><br>
+        <a href="/en/blog/ib-diploma-university-requirements/" style="color:var(--accent,#DBAF2E);font-weight:500;">IB Diploma University Requirements</a> ·
+        <a href="/en/blog/dubai-top-schools/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai's Best IB Schools</a> ·
+        <a href="/en/dubai/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai School Consulting</a> ·
+        <a href="/en/blog/ib-vs-a-level-vs-ap/" style="color:var(--accent,#DBAF2E);font-weight:500;">IB vs A-Level vs AP</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen brings over 20 years of international education experience to help families navigate school selection, curriculum transitions and academic support across the globe.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/why-edualist/">Why Edualist?</a></li>
+            <li><a href="/en/#services">Services</a></li>
+            <li><a href="/en/blog/">Blog</a></li>
+            <li><a href="/en/international-school-consulting/">Book a Consultation</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP STICKY -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- EduBot -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Close">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
+  </div>
+
+  <script>
+    window.setLang = function (l) {
+      if (l === document.documentElement.lang) return;
+      try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+      document.cookie = 'edualist_lang=' + l + ';path=/;max-age=31536000;samesite=lax';
+      var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+      location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+    };
+    document.querySelectorAll('.lang-btn').forEach(function (b) {
+      var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+      b.classList.toggle('active', l === document.documentElement.lang);
+      if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+    });
+  </script>
+  <script src="/app.js?v=20261010" defer></script>
+</body>
+</html>
