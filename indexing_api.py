@@ -135,6 +135,12 @@ URLS = [
     # Yeni blog yazıları — 2026-10-09 (AP okulları)
     "https://www.edualist.com/blog/dubai-amerikan-mufredat-ap-okullari/",
     "https://www.edualist.com/en/blog/best-ap-schools-dubai/",
+    # 2026-10-09 — blog tag filter + CTR optimizasyonu + hakkimda dateModified fix
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    "https://www.edualist.com/blog/robert-kolej-ucreti-2026/",
+    "https://www.edualist.com/hakkimda/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
