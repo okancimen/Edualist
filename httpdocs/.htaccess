@@ -53,6 +53,10 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # non-www + index.html → www canonical (1 hop, before the generic non-www→www rule)
+  RewriteCond %{HTTP_HOST} ^edualist\.com$ [NC]
+  RewriteRule ^(.+)/index\.html$ https://www.edualist.com/$1/ [R=301,L]
+
   # non-www + no trailing slash + no file extension → www + slash (1 hop, prevents 2-redirect chain)
   RewriteCond %{HTTP_HOST} ^edualist\.com$ [NC]
   RewriteCond %{REQUEST_URI} !/$
@@ -81,6 +85,9 @@ ErrorDocument 404 /404.html
   RewriteCond %{HTTP:Accept-Language} ^en [NC]
   RewriteRule ^(index\.html)?$ /en/ [R=302,L]
   RewriteRule ^(index\.html)?$ /tr/ [R=302,L]
+
+  # Strip index.html from all URLs → canonical trailing-slash form
+  RewriteRule ^(.+)/index\.html$ /$1/ [R=301,L]
 
   # 404 fix: URL with Turkish ü char → correct slug
   RewriteRule ^blog/uluslararasi-okul-m%C3%BClakata%C4%B1-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakat%C4%B1-nasil-gecilir/ [R=301,L]
