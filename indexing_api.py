@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
-Google Indexing API — URL submit script
+Google Indexing API + IndexNow — URL submit script
 Kullanım: python3 indexing_api.py
 """
 
 import json
 import sys
+import urllib.request
 from pathlib import Path
 
 try:
@@ -20,6 +21,10 @@ except ImportError:
 # ── Ayarlar ───────────────────────────────────────────────────────────────────
 
 KEY_FILE = Path.home() / "Downloads/aibot-92369-5069a2de1bb0.json"
+
+INDEXNOW_KEY      = "5017990445f8bb07d511f1beeadb647d"
+INDEXNOW_HOST     = "www.edualist.com"
+INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
     # 2026-10-05 kotası dolunca gönderilemeyenler — yarın tekrar dene
@@ -174,6 +179,31 @@ def submit_urls(urls: list[str], key_file: Path) -> None:
 
     print(f"\n{ok} başarılı, {fail} hatalı / toplam {len(urls)} URL")
 
+def submit_indexnow(urls: list[str]) -> None:
+    payload = json.dumps({
+        "host": INDEXNOW_HOST,
+        "key": INDEXNOW_KEY,
+        "keyLocation": f"https://{INDEXNOW_HOST}/{INDEXNOW_KEY}.txt",
+        "urlList": urls,
+    }).encode()
+    req = urllib.request.Request(
+        INDEXNOW_ENDPOINT,
+        data=payload,
+        headers={"Content-Type": "application/json; charset=utf-8"},
+        method="POST",
+    )
+    try:
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            print(f"  IndexNow → HTTP {resp.status} ({len(urls)} URL)")
+    except urllib.error.HTTPError as e:
+        print(f"  IndexNow HATA → HTTP {e.code}: {e.read().decode()}")
+    except Exception as e:
+        print(f"  IndexNow HATA → {e}")
+
+
 if __name__ == "__main__":
     print(f"Google Indexing API — {len(URLS)} URL gönderiliyor...\n")
     submit_urls(URLS, KEY_FILE)
+
+    print(f"\nIndexNow — {len(URLS)} URL gönderiliyor...")
+    submit_indexnow(URLS)
