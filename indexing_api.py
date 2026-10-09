@@ -140,6 +140,8 @@ URLS = [
     # Yeni blog yazıları — 2026-10-09 (AP okulları)
     "https://www.edualist.com/blog/dubai-amerikan-mufredat-ap-okullari/",
     "https://www.edualist.com/en/blog/best-ap-schools-dubai/",
+    # 2026-10-09 — Almanya description CTR fix
+    "https://www.edualist.com/blog/almanyada-turk-okulu-var-mi/",
     # 2026-10-09 — blog tag filter + CTR optimizasyonu + hakkimda dateModified fix
     "https://www.edualist.com/blog/",
     "https://www.edualist.com/en/blog/",
