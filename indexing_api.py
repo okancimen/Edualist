@@ -148,6 +148,9 @@ URLS = [
     "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
     "https://www.edualist.com/blog/robert-kolej-ucreti-2026/",
     "https://www.edualist.com/hakkimda/",
+    # 2026-10-09 — The Anxious Generation Bölüm 2
+    "https://www.edualist.com/blog/anxious-generation-oyun-temelli-cocukluk/",
+    "https://www.edualist.com/blog/anxious-generation-ergen-ruh-sagligi/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
