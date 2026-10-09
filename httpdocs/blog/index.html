@@ -5,7 +5,14 @@
   <!-- Self-hosted fonts (Latin + Turkish subset): no third-party round trip -->
   <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
-  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}<style id="blog-filter-css">
+.blog-filter-bar{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2.5rem}
+.blog-filter-btn{padding:.38rem 1.1rem;border-radius:50px;border:1.5px solid hsla(212,66%,13%,.18);background:transparent;color:var(--primary);font-family:inherit;font-size:.82rem;font-weight:600;cursor:pointer;transition:background .18s,color .18s,border-color .18s;letter-spacing:.02em}
+.blog-filter-btn:hover{border-color:var(--primary);background:hsla(212,66%,13%,.06)}
+.blog-filter-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.blog-card[hidden]{display:none!important}
+</style>
+</style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- LCP image preloads: declared before inline CSS so preload scanner queues them at highest priority -->
@@ -679,10 +686,21 @@
         <span style="display:inline-flex;align-items:center;gap:0.4rem;font-weight:600;font-size:0.9rem;color:#DBAF2E;">İncele →</span>
       </a>
 
+      <div class="blog-filter-bar" id="blogFilterBar" role="group" aria-label="Kategori filtrele">
+        <button class="blog-filter-btn active" data-filter="all">Tümü</button>
+        <button class="blog-filter-btn" data-filter="dubai">Dubai</button>
+        <button class="blog-filter-btn" data-filter="ib">IB</button>
+        <button class="blog-filter-btn" data-filter="ap">AP</button>
+        <button class="blog-filter-btn" data-filter="muefredat">Müfredat</button>
+        <button class="blog-filter-btn" data-filter="okul-secimi">Okul Seçimi</button>
+        <button class="blog-filter-btn" data-filter="akademik-destek">Akademik Destek</button>
+        <button class="blog-filter-btn" data-filter="yurtdisi">Yurt Dışı</button>
+        <button class="blog-filter-btn" data-filter="kariyer">Kariyer</button>
+      </div>
       <div class="blog-grid">
 
         <!-- Post: Dubai İngiliz Okulları Top 10 A-Level Mezun Başarısı -->
-        <a href="dubai-ingiliz-okullari-a-level/" class="blog-card glass scroll-reveal">
+        <a href="dubai-ingiliz-okullari-a-level/" data-tags="dubai muefredat" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai-ingiliz-okullari-a-level.webp" srcset="../assets/blog/thumb-dubai-ingiliz-okullari-a-level.webp 800w" alt="Dubai İngiliz okulları top 10 A-Level mezun başarısı" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇬🇧</span>
@@ -703,7 +721,7 @@
         </a>
 
         <!-- Post: Dubai AP Okulları Top 10 Amerikan Müfredatı -->
-        <a href="dubai-amerikan-mufredat-ap-okullari/" class="blog-card glass scroll-reveal">
+        <a href="dubai-amerikan-mufredat-ap-okullari/" data-tags="dubai ap" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai-amerikan-mufredat-ap-okullari.webp" srcset="../assets/blog/thumb-dubai-amerikan-mufredat-ap-okullari.webp 800w" alt="Dubai AP okulları top 10 Amerikan müfredatı" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎓</span>
@@ -724,7 +742,7 @@
         </a>
 
         <!-- Post: Dubai IB Okulları Top 10 ve Mezun Başarısı -->
-        <a href="dubai-ib-okullari-mezun-basarisi/" class="blog-card glass scroll-reveal">
+        <a href="dubai-ib-okullari-mezun-basarisi/" data-tags="dubai ib" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai-ib-okullari-mezun-basarisi.webp" srcset="../assets/blog/thumb-dubai-ib-okullari-mezun-basarisi.webp 800w" alt="Dubai IB okulları top 10 mezun başarısı" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏆</span>
@@ -745,7 +763,7 @@
         </a>
 
         <!-- Post: WEF ve Big 4 - Çocuklar İçin Gelecek Becerileri -->
-        <a href="cocuklar-icin-gelecek-becerileri/" class="blog-card glass scroll-reveal">
+        <a href="cocuklar-icin-gelecek-becerileri/" data-tags="kariyer" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocuklar-icin-gelecek-becerileri.webp" srcset="../assets/blog/thumb-cocuklar-icin-gelecek-becerileri.webp 800w" alt="WEF Big 4 çocuklar için gelecek becerileri" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📊</span>
@@ -766,7 +784,7 @@
         </a>
 
         <!-- Post: Geleceğin Meslekleri — Ebeveyn Q&A -->
-        <a href="gelecegin-meslekleri-ebeveyn-sorulari/" class="blog-card glass scroll-reveal">
+        <a href="gelecegin-meslekleri-ebeveyn-sorulari/" data-tags="kariyer" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-gelecegin-meslekleri-ebeveyn-sorulari.webp" srcset="../assets/blog/thumb-gelecegin-meslekleri-ebeveyn-sorulari.webp 800w" alt="Geleceğin meslekleri ebeveynlerin soruları" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎯</span>
@@ -787,7 +805,7 @@
         </a>
 
         <!-- Post: Yapay Zekaya Dirençli 65 Meslek -->
-        <a href="yapay-zekaya-direncli-meslekler/" class="blog-card glass scroll-reveal">
+        <a href="yapay-zekaya-direncli-meslekler/" data-tags="kariyer" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-yapay-zekaya-direncli-meslekler.webp" srcset="../assets/blog/thumb-yapay-zekaya-direncli-meslekler.webp 800w" alt="Yapay zekaya dirençli meslekler US Career Institute araştırması" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🤖</span>
@@ -808,7 +826,7 @@
         </a>
 
         <!-- Post: Çocuğunuzun Güçlü Yönleri -->
-        <a href="cocugunuzun-guclu-yonleri/" class="blog-card glass scroll-reveal">
+        <a href="cocugunuzun-guclu-yonleri/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugunuzun-guclu-yonleri.webp" srcset="../assets/blog/thumb-cocugunuzun-guclu-yonleri.webp 800w" alt="Çocuğunuzun güçlü ve zayıf yönleri bilişsel değerlendirme" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🧠</span>
@@ -829,7 +847,7 @@
         </a>
 
         <!-- Post: Dubai Okul Ücretleri 2026 -->
-        <a href="dubai-okul-ucretleri-2026/" class="blog-card glass scroll-reveal">
+        <a href="dubai-okul-ucretleri-2026/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai-okul-ucretleri-2026.webp" srcset="../assets/blog/thumb-dubai-okul-ucretleri-2026.webp 800w" alt="Dubai okul ücretleri 2026-2027 fiyat tablosu" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💰</span>
@@ -850,7 +868,7 @@
         </a>
 
         <!-- Post: Katar Okul Kayıt Rehberi -->
-        <a href="katar-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="katar-okul-kayit-rehberi/" data-tags="yurtdisi okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-katar-okul-kayit-rehberi.webp" srcset="../assets/blog/thumb-katar-okul-kayit-rehberi.webp 800w" alt="Katar uluslararası okul kaydı Doha rehberi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇶🇦</span>
@@ -871,7 +889,7 @@
         </a>
 
         <!-- Post: Dubai Okul Tatil Tarihleri -->
-        <a href="dubai-okul-tatil-tarihleri/" class="blog-card glass scroll-reveal">
+        <a href="dubai-okul-tatil-tarihleri/" data-tags="dubai" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai.webp" srcset="../assets/blog/thumb-dubai.webp 800w" alt="Dubai okul tatil tarihleri 2026-2027" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📅</span>
@@ -892,7 +910,7 @@
         </a>
 
         <!-- Post: KHDA Notu Nedir -->
-        <a href="khda-notu-nedir/" class="blog-card glass scroll-reveal">
+        <a href="khda-notu-nedir/" data-tags="dubai" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-khda-notu-nedir.webp" srcset="../assets/blog/thumb-khda-notu-nedir.webp 800w" alt="KHDA notu nedir, Outstanding ile Very Good farkı" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏆</span>
@@ -913,7 +931,7 @@
         </a>
 
         <!-- Post: EAL Nedir -->
-        <a href="eal-nedir/" class="blog-card glass scroll-reveal">
+        <a href="eal-nedir/" data-tags="dubai muefredat" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-eal-nedir.webp" srcset="../assets/blog/thumb-eal-nedir.webp 800w" alt="EAL nedir, Dubai uluslararası okullarında İngilizce dil desteği" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🗣️</span>
@@ -934,7 +952,7 @@
         </a>
 
         <!-- Post: Dubai Okul Kayıt Sezonu -->
-        <a href="dubai-okul-kayit-sezonu-ne-zaman-baslar/" class="blog-card glass scroll-reveal">
+        <a href="dubai-okul-kayit-sezonu-ne-zaman-baslar/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai-okul-kayit-sezonu-ne-zaman-baslar.webp" srcset="../assets/blog/thumb-dubai-okul-kayit-sezonu-ne-zaman-baslar.webp 800w" alt="Dubai okul kayıt sezonu ne zaman başlar" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📆</span>
@@ -955,7 +973,7 @@
         </a>
 
         <!-- Post: IB Diploma Üniversite Başvurusu -->
-        <a href="ib-diploma-universite-basvuru/" class="blog-card glass scroll-reveal">
+        <a href="ib-diploma-universite-basvuru/" data-tags="ib kariyer" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-ib-diploma-universite-basvuru-640.webp 640w, ../assets/blog/thumb-ib-diploma-universite-basvuru.webp 800w" src="../assets/blog/thumb-ib-diploma-universite-basvuru.webp" alt="IB Diploma ile Üniversite Başvurusu: Puan Eşikleri 2026" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎓</span>
@@ -976,7 +994,7 @@
         </a>
 
         <!-- Post: PISA Nedir? -->
-        <a href="pisa-nedir/" class="blog-card glass scroll-reveal">
+        <a href="pisa-nedir/" data-tags="muefredat" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-pisa-640.webp 640w, ../assets/blog/thumb-pisa.webp 800w" src="../assets/blog/thumb-pisa.webp" alt="PISA Nedir? PISA 2025 Puanı Nasıl Hesaplanır" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📊</span>
@@ -999,7 +1017,7 @@
         <!-- Post: What Is PISA? (EN guide) -->
 
         <!-- Post: Almanya'da Türk Okulu Var Mı? -->
-        <a href="almanyada-turk-okulu-var-mi/" class="blog-card glass scroll-reveal">
+        <a href="almanyada-turk-okulu-var-mi/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-almanyada-turk-okulu-var-mi-640.webp 640w, ../assets/blog/thumb-almanyada-turk-okulu-var-mi.webp 800w" src="../assets/blog/thumb-almanyada-turk-okulu-var-mi.webp" alt="Almanya'da Türk Okulu Var Mı? 2026 Güncel Rehber" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇩🇪</span>
@@ -1020,7 +1038,7 @@
         </a>
 
         <!-- Post: Robert Kolej Ücreti 2026-27 -->
-        <a href="robert-kolej-ucreti-2026/" class="blog-card glass scroll-reveal">
+        <a href="robert-kolej-ucreti-2026/" data-tags="okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-robert-kolej-ucreti-2026-640.webp 640w, ../assets/blog/thumb-robert-kolej-ucreti-2026.webp 800w" src="../assets/blog/thumb-robert-kolej-ucreti-2026.webp" alt="Robert Kolej Ücreti 2026-27 ve Alternatifler" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💰</span>
@@ -1041,7 +1059,7 @@
         </a>
 
         <!-- Post: PISA 2025 + Erken İş Deneyimi -->
-        <a href="pisa-2025-erken-is-deneyimi/" class="blog-card glass scroll-reveal">
+        <a href="pisa-2025-erken-is-deneyimi/" data-tags="muefredat kariyer" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-pisa-2025-erken-is-deneyimi-640.webp 640w, ../assets/blog/thumb-pisa-2025-erken-is-deneyimi.webp 800w" src="../assets/blog/thumb-pisa-2025-erken-is-deneyimi.webp" alt="PISA 2025 ve Erken İş Deneyimi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💼</span>
@@ -1067,7 +1085,7 @@
         </a>
 
         <!-- Post: CAT4 Sınavı Nedir? -->
-        <a href="cat4-sinavi-nedir/" class="blog-card glass scroll-reveal">
+        <a href="cat4-sinavi-nedir/" data-tags="muefredat" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-cat4-sinavi-nedir-640.webp 640w, ../assets/blog/thumb-cat4-sinavi-nedir.webp 800w" src="../assets/blog/thumb-cat4-sinavi-nedir.webp" alt="CAT4 Sınavı Nedir? Dubai Okullarında Başvuru ve Hazırlık Rehberi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🧠</span>
@@ -1093,7 +1111,7 @@
         </a>
 
         <!-- Post: PISA 2025 Türkiye Sonuçları -->
-        <a href="pisa-2025-turkiye-sonuclari/" class="blog-card glass scroll-reveal">
+        <a href="pisa-2025-turkiye-sonuclari/" data-tags="muefredat" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-pisa-2025-turkiye-sonuclari-640.webp 640w, ../assets/blog/thumb-pisa-2025-turkiye-sonuclari.webp 800w" src="../assets/blog/thumb-pisa-2025-turkiye-sonuclari.webp" alt="PISA 2025 Türkiye Sonuçları" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📊</span>
@@ -1119,7 +1137,7 @@
         </a>
 
         <!-- Post: Dubai'de Türk Okulu Var Mı? -->
-        <a href="dubai-okul-bekleme-listesi/" class="blog-card glass scroll-reveal">
+        <a href="dubai-okul-bekleme-listesi/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-dubai-okul-bekleme-listesi-640.webp 640w, ../assets/blog/thumb-dubai-okul-bekleme-listesi.webp 800w" src="../assets/blog/thumb-dubai-okul-bekleme-listesi.webp" alt="Dubai Okul Bekleme Listesi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">⏳</span>
@@ -1144,7 +1162,7 @@
           </div>
         </a>
 
-        <a href="dubai-turk-okulu-var-mi/" class="blog-card glass scroll-reveal">
+        <a href="dubai-turk-okulu-var-mi/" data-tags="dubai" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-dubai-turk-okulu-640.webp 640w, ../assets/blog/thumb-dubai-turk-okulu.webp 800w" src="../assets/blog/thumb-dubai-turk-okulu.webp" alt="Dubai'de Türk Okulu Var Mı?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇹🇷</span>
@@ -1170,7 +1188,7 @@
         </a>
 
         <!-- Post: Türkiye Özel Okuldan Dubai Uluslararası Okula Geçiş -->
-        <a href="turkiye-ozel-okuldan-dubai-uluslararasi-okula-gecis/" class="blog-card glass scroll-reveal">
+        <a href="turkiye-ozel-okuldan-dubai-uluslararasi-okula-gecis/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-turkiye-ozel-okuldan-dubai-uluslararasi-okula-gecis-640.webp 640w, ../assets/blog/thumb-turkiye-ozel-okuldan-dubai-uluslararasi-okula-gecis.webp 800w" src="../assets/blog/thumb-turkiye-ozel-okuldan-dubai-uluslararasi-okula-gecis.webp" alt="Türkiye'deki Özel Okullardan Dubai Uluslararası Okullarına Geçiş: Kapsamlı Rehber" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
@@ -1196,7 +1214,7 @@
         </a>
 
         <!-- Post: International School Nedir? -->
-        <a href="international-school-nedir/" class="blog-card glass scroll-reveal">
+        <a href="international-school-nedir/" data-tags="okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-international-school-nedir-640.webp 640w, ../assets/blog/thumb-international-school-nedir.webp 800w" src="../assets/blog/thumb-international-school-nedir.webp" alt="International School Nedir? Türk Aileler İçin Eksiksiz Rehber" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌍</span>
@@ -1222,7 +1240,7 @@
         </a>
 
         <!-- Post: Dubai'de Eğitim Sistemi -->
-        <a href="dubai-egitim-sistemi/" class="blog-card glass scroll-reveal">
+        <a href="dubai-egitim-sistemi/" data-tags="dubai" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-dubai-egitim-sistemi-640.webp 640w, ../assets/blog/thumb-dubai-egitim-sistemi.webp 800w" src="../assets/blog/thumb-dubai-egitim-sistemi.webp" alt="Dubai'de Eğitim Sistemi — KHDA, Müfredat ve Okul Seçimi Rehberi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏫</span>
@@ -1248,7 +1266,7 @@
         </a>
 
         <!-- Post: Dubai'de Başarılı Türk Öğrenciler -->
-        <a href="dubai-basarili-turk-ogrenciler/" class="blog-card glass scroll-reveal">
+        <a href="dubai-basarili-turk-ogrenciler/" data-tags="dubai" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-dubai-turk-ogrenci-640.webp 640w, ../assets/blog/thumb-dubai-turk-ogrenci.webp 800w" src="../assets/blog/thumb-dubai-turk-ogrenci.webp" alt="Dubai'deki Başarılı Türk Öğrenciler — 5-14 Yaş Rehberi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌟</span>
@@ -1274,7 +1292,7 @@
         </a>
 
         <!-- Post: The Anxious Generation Bölüm 1 -->
-        <a href="anxious-generation-ergen-ruh-sagligi/" class="blog-card glass scroll-reveal">
+        <a href="anxious-generation-ergen-ruh-sagligi/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-anxious-gen-640.webp 640w, ../assets/blog/thumb-anxious-gen.webp 800w" src="../assets/blog/thumb-anxious-gen.webp" alt="The Anxious Generation Bölüm 1 — Dijital Çağda Ergen Ruh Sağlığı ve Kaygılı Nesil" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🧠</span>
@@ -1300,7 +1318,7 @@
         </a>
 
         <!-- Post: Dubai Yaşam Maliyeti 2026 -->
-        <a href="dubai-yasam-maliyeti-2026/" class="blog-card glass scroll-reveal">
+        <a href="dubai-yasam-maliyeti-2026/" data-tags="dubai" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-dubai-yasam-640.webp 640w, ../assets/blog/thumb-dubai-yasam.webp 800w" src="../assets/blog/thumb-dubai-yasam.webp" alt="Dubai'de Yaşam Maliyeti 2026 — Türk Aileler İçin Gerçek Rakamlar" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💰</span>
@@ -1326,7 +1344,7 @@
         </a>
 
         <!-- Post: İspanya'da Uluslararası Okul -->
-        <a href="ispanya-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="ispanya-okul-kayit-rehberi/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-ispanya-640.webp 640w, ../assets/blog/thumb-ispanya.webp 800w" src="../assets/blog/thumb-ispanya.webp" alt="İspanya'da Uluslararası Okul Rehberi 2026" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇪🇸</span>
@@ -1352,7 +1370,7 @@
         </a>
 
         <!-- Post: Dubai Semt Rehberi -->
-        <a href="dubai-semt-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="dubai-semt-rehberi/" data-tags="dubai" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-dubai-semt-640.webp 640w, ../assets/blog/thumb-dubai-semt.webp 800w" src="../assets/blog/thumb-dubai-semt.webp" alt="Dubai Semt Rehberi 2026 — Okula Göre Bölge" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🗺️</span>
@@ -1378,7 +1396,7 @@
         </a>
 
         <!-- Post: İngiltere Devlet vs Özel Okul -->
-        <a href="ingiltere-devlet-ozel-okul/" class="blog-card glass scroll-reveal">
+        <a href="ingiltere-devlet-ozel-okul/" data-tags="muefredat yurtdisi okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-ingiltere-devlet-ozel-640.webp 640w, ../assets/blog/thumb-ingiltere-devlet-ozel.webp 800w" src="../assets/blog/thumb-ingiltere-devlet-ozel.webp" alt="İngiltere Devlet mi Özel mi Okul Rehberi 2026" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏫</span>
@@ -1404,7 +1422,7 @@
         </a>
 
         <!-- Post: Dubai Okul Burs İmkânları -->
-        <a href="dubai-okul-burs-imkanlari/" class="blog-card glass scroll-reveal">
+        <a href="dubai-okul-burs-imkanlari/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-burs-640.webp 640w, ../assets/blog/thumb-burs.webp 800w" src="../assets/blog/thumb-burs.webp" alt="Dubai'de Okul Bursu İmkânları 2026" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎓</span>
@@ -1430,7 +1448,7 @@
         </a>
 
         <!-- Post: Abu Dhabi'de Uluslararası Okul -->
-        <a href="abu-dhabi-uluslararasi-okullar/" class="blog-card glass scroll-reveal">
+        <a href="abu-dhabi-uluslararasi-okullar/" data-tags="yurtdisi okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-abudhabi-640.webp 640w, ../assets/blog/thumb-abudhabi.webp 800w" src="../assets/blog/thumb-abudhabi.webp" alt="Abu Dhabi'de Uluslararası Okul Rehberi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏛</span>
@@ -1456,7 +1474,7 @@
         </a>
 
         <!-- Post: Dubai'de Okul Başvurusu Nasıl Yapılır -->
-        <a href="dubai-okul-basvuru-nasil-yapilir/" class="blog-card glass scroll-reveal">
+        <a href="dubai-okul-basvuru-nasil-yapilir/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-basvuru-640.webp 640w, ../assets/blog/thumb-basvuru.webp 800w" src="../assets/blog/thumb-basvuru.webp" alt="Dubai'de Okul Başvurusu Nasıl Yapılır?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📋</span>
@@ -1482,7 +1500,7 @@
         </a>
 
         <!-- Post: Uluslararası Okul Mülakat Soruları -->
-        <a href="uluslararasi-okul-mulakat-sorulari/" class="blog-card glass scroll-reveal">
+        <a href="uluslararasi-okul-mulakat-sorulari/" data-tags="okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-mulakat-sorular-640.webp 640w, ../assets/blog/thumb-mulakat-sorular.webp 800w" src="../assets/blog/thumb-mulakat-sorular.webp" alt="Uluslararası Okul Mülakat Soruları" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💬</span>
@@ -1508,7 +1526,7 @@
         </a>
 
         <!-- Post: Türkiye vs Dubai Okul Ücreti Karşılaştırması -->
-        <a href="turkiye-dubai-okul-ucreti-karsilastirma/" class="blog-card glass scroll-reveal">
+        <a href="turkiye-dubai-okul-ucreti-karsilastirma/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-turkiye-dubai-okul-640.webp 640w, ../assets/blog/thumb-turkiye-dubai-okul.webp 800w" src="../assets/blog/thumb-turkiye-dubai-okul.webp" alt="Türkiye'nin En Pahalı Okulları vs Dubai'nin En İyileri" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💰</span>
@@ -1534,7 +1552,7 @@
         </a>
 
         <!-- Post: Gelecekte Hangi Meslekler Önem Kazanacak? -->
-        <a href="gelecekte-hangi-meslekler-onem-kazanacak/" class="blog-card glass scroll-reveal">
+        <a href="gelecekte-hangi-meslekler-onem-kazanacak/" data-tags="kariyer" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-meslekler-640.webp 640w, ../assets/blog/thumb-meslekler.webp 800w" src="../assets/blog/thumb-meslekler.webp" alt="Gelecekte Hangi Meslekler Önem Kazanacak?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🚀</span>
@@ -1559,7 +1577,7 @@
           </div>
         </a>
 
-        <a href="eduentry-uluslararasi-akademik-degerlendirme-nedir/" class="blog-card glass scroll-reveal">
+        <a href="eduentry-uluslararasi-akademik-degerlendirme-nedir/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-eduentry-640.webp 640w, ../assets/blog/thumb-eduentry.webp 800w" src="../assets/blog/thumb-eduentry.webp" alt="Eduentry Uluslararası Akademik Değerlendirme" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" loading="lazy" width="800" height="450" decoding="async">
             <span class="blog-card-flag">🌍</span>
@@ -1585,7 +1603,7 @@
         </a>
 
         <!-- Post: Türkiye Eğitim Sistemi Neden Yetmiyor -->
-        <a href="turkiye-egitim-sistemi-neden-yetmiyor/" class="blog-card glass scroll-reveal">
+        <a href="turkiye-egitim-sistemi-neden-yetmiyor/" data-tags="muefredat" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-turkiye-egitim-640.webp 640w, ../assets/blog/thumb-turkiye-egitim.webp 800w" src="../assets/blog/thumb-turkiye-egitim.webp" alt="Türkiye Eğitim Sistemi Neden Yetmiyor?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏫</span>
@@ -1608,7 +1626,7 @@
         </a>
 
         <!-- Post: Türkiye Yılda 46.000 Çocuğunu Yurt Dışına Gönderiyor -->
-        <a href="turkiye-yilda-46000-cocugunu-yurt-disina-gonderiyor/" class="blog-card glass scroll-reveal">
+        <a href="turkiye-yilda-46000-cocugunu-yurt-disina-gonderiyor/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-goc-istatistik-640.webp 640w, ../assets/blog/thumb-goc-istatistik.webp 800w" src="../assets/blog/thumb-goc-istatistik.webp" alt="Türkiye Her Yıl 46.000 Çocuğunu Yurt Dışına Gönderiyor" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">✈️</span>
@@ -1631,7 +1649,7 @@
         </a>
 
         <!-- Post: Lise Yurt Dışı Taşınma Adaptasyon -->
-        <a href="lise-yurt-disi-tasinma-adaptasyon/" class="blog-card glass scroll-reveal">
+        <a href="lise-yurt-disi-tasinma-adaptasyon/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-lise-tasima-640.webp 640w, ../assets/blog/thumb-lise-tasima.webp 800w" src="../assets/blog/thumb-lise-tasima.webp" alt="Çocuğum Lisedeyken Yurt Dışına Taşınsak Nasıl Adapte Olur?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎓</span>
@@ -1654,7 +1672,7 @@
         </a>
 
         <!-- Post: BAE Uluslararası Okul Rehberi -->
-        <a href="bae-uluslararasi-okul-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="bae-uluslararasi-okul-rehberi/" data-tags="dubai yurtdisi okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-bae-okul-640.webp 640w, ../assets/blog/thumb-bae-okul.webp 800w" src="../assets/blog/thumb-bae-okul.webp" alt="BAE'de Uluslararası Okul Seçimi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
@@ -1676,7 +1694,7 @@
           </div>
         </a>
 
-        <a href="kizim-sinifin-zemininde-yatiyordu/" class="blog-card glass scroll-reveal">
+        <a href="kizim-sinifin-zemininde-yatiyordu/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-yanlis-okul-640.webp 640w, ../assets/blog/thumb-yanlis-okul.webp 800w" src="../assets/blog/thumb-yanlis-okul.webp" alt="Kızım Sınıfın Zemininde Yatıyordu — Yanlış Okulu Seçmenin Bedeli" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💔</span>
@@ -1699,7 +1717,7 @@
         </a>
 
         <!-- Post: Oğlumun İngilizcesi İyiydi -->
-        <a href="oglumun-ingilizcesi-iyiydi/" class="blog-card glass scroll-reveal">
+        <a href="oglumun-ingilizcesi-iyiydi/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-ingilizce-640.webp 640w, ../assets/blog/thumb-ingilizce.webp 800w" src="../assets/blog/thumb-ingilizce.webp" alt="Oğlumun İngilizcesi İyiydi — Müdürün Odasında Nefes Alamadığım Gün" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💬</span>
@@ -1722,7 +1740,7 @@
         </a>
 
         <!-- Post: Çocuğunuz Yurt Dışında Okumaya Hazır Mı? -->
-        <a href="cocugunuz-yurt-disinda-okumaya-hazir-mi/" class="blog-card glass scroll-reveal">
+        <a href="cocugunuz-yurt-disinda-okumaya-hazir-mi/" data-tags="yurtdisi okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-hazir-640.webp 640w, ../assets/blog/thumb-hazir.webp 800w" src="../assets/blog/thumb-hazir.webp" alt="Çocuğunuz Yurt Dışında Okumaya Hazır Mı?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">✅</span>
@@ -1745,7 +1763,7 @@
         </a>
 
         <!-- Post: Türk Eğitiminden Uluslararası Okula Geçiş -->
-        <a href="turk-egitim-sisteminden-uluslararasi-okula-gecis/" class="blog-card glass scroll-reveal">
+        <a href="turk-egitim-sisteminden-uluslararasi-okula-gecis/" data-tags="muefredat okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-gecis-640.webp 640w, ../assets/blog/thumb-gecis.webp 800w" src="../assets/blog/thumb-gecis.webp" alt="Türk Eğitim Sisteminden Uluslararası Okula Geçiş" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎓</span>
@@ -1768,7 +1786,7 @@
         </a>
 
         <!-- Post: Dubai En İyi Okullar -->
-        <a href="dubai-en-iyi-uluslararasi-okullar/" class="blog-card glass scroll-reveal">
+        <a href="dubai-en-iyi-uluslararasi-okullar/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-dubai-okul-640.webp 640w, ../assets/blog/thumb-dubai-okul.webp 800w" src="../assets/blog/thumb-dubai-okul.webp" alt="Dubai En İyi Uluslararası Okullar" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏆</span>
@@ -1791,7 +1809,7 @@
         </a>
 
         <!-- Post: Mülakat Rehberi -->
-        <a href="uluslararasi-okul-mulakatı-nasil-gecilir/" class="blog-card glass scroll-reveal">
+        <a href="uluslararasi-okul-mulakatı-nasil-gecilir/" data-tags="okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-mulakat-640.webp 640w, ../assets/blog/thumb-mulakat.webp 800w" src="../assets/blog/thumb-mulakat.webp" alt="Uluslararası Okul Mülakatı" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
@@ -1814,7 +1832,7 @@
         </a>
 
         <!-- Post: Kanada Rehberi -->
-        <a href="kanada-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="kanada-okul-kayit-rehberi/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-kanada-640.webp 640w, ../assets/blog/thumb-kanada.webp 800w" src="../assets/blog/thumb-kanada.webp" alt="Kanada Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇨🇦</span>
@@ -1837,7 +1855,7 @@
         </a>
 
         <!-- Post: TCK Rehberi -->
-        <a href="ucuncu-kultur-cocugu-tck-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="ucuncu-kultur-cocugu-tck-rehberi/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-tck-640.webp 640w, ../assets/blog/thumb-tck.webp 800w" src="../assets/blog/thumb-tck.webp" alt="Üçüncü Kültür Çocuğu TCK" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
@@ -1860,7 +1878,7 @@
         </a>
 
         <!-- Post: Karar Rehberi -->
-        <a href="cocugumu-yurtdisinda-okutmali-miyim/" class="blog-card glass scroll-reveal">
+        <a href="cocugumu-yurtdisinda-okutmali-miyim/" data-tags="yurtdisi okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-karar-640.webp 640w, ../assets/blog/thumb-karar.webp 800w" src="../assets/blog/thumb-karar.webp" alt="Yurt Dışı Eğitim Kararı" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
@@ -1883,7 +1901,7 @@
         </a>
 
         <!-- Post: Maliyet Karşılaştırma -->
-        <a href="yurtdisi-egitim-maliyet-karsilastirma/" class="blog-card glass scroll-reveal">
+        <a href="yurtdisi-egitim-maliyet-karsilastirma/" data-tags="yurtdisi okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-maliyet-640.webp 640w, ../assets/blog/thumb-maliyet.webp 800w" src="../assets/blog/thumb-maliyet.webp" alt="Yurt Dışı Eğitim Maliyeti" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
@@ -1906,7 +1924,7 @@
         </a>
 
         <!-- Post: Müfredat Karşılaştırma -->
-        <a href="ib-alevel-amerikan-mufredat-karsilastirma/" class="blog-card glass scroll-reveal">
+        <a href="ib-alevel-amerikan-mufredat-karsilastirma/" data-tags="ib ap muefredat" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-mufredat-640.webp 640w, ../assets/blog/thumb-mufredat.webp 800w" src="../assets/blog/thumb-mufredat.webp" alt="IB A-Level AP Müfredat Karşılaştırma" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🌐</span>
@@ -1929,7 +1947,7 @@
         </a>
 
 
-        <a href="ingilizcesi-yetersiz-cocuk-dubai-okulu-uyum/" class="blog-card glass scroll-reveal">
+        <a href="ingilizcesi-yetersiz-cocuk-dubai-okulu-uyum/" data-tags="dubai akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-ingilizce-uyum-640.webp 640w, ../assets/blog/thumb-ingilizce-uyum.webp 800w" src="../assets/blog/thumb-ingilizce-uyum.webp" alt="İngilizcesi Yetersiz Çocuk Dubai Okuluna Nasıl Uyum Sağlar?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
@@ -1954,7 +1972,7 @@
           </div>
         </a>
 
-        <a href="dubai-gelmeden-once-bilmeniz-gerekenler/" class="blog-card glass scroll-reveal">
+        <a href="dubai-gelmeden-once-bilmeniz-gerekenler/" data-tags="dubai" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-dubai-once-640.webp 640w, ../assets/blog/thumb-dubai-once.webp 800w" src="../assets/blog/thumb-dubai-once.webp" alt="Dubai'ye Gelmeden Önce Bilmeniz Gerekenler" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
@@ -1980,7 +1998,7 @@
         </a>
 
         <!-- Post 3 -->
-        <a href="ingiltere-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="ingiltere-okul-kayit-rehberi/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-ingiltere-640.webp 640w, ../assets/blog/thumb-ingiltere.webp 800w" src="../assets/blog/thumb-ingiltere.webp" alt="İngiltere Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇬🇧</span>
@@ -2006,7 +2024,7 @@
         </a>
 
         <!-- Post 5 -->
-        <a href="fransa-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="fransa-okul-kayit-rehberi/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-fransa-640.webp 640w, ../assets/blog/thumb-fransa.webp 800w" src="../assets/blog/thumb-fransa.webp" alt="Fransa Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇫🇷</span>
@@ -2029,7 +2047,7 @@
         </a>
 
         <!-- Post 6 -->
-        <a href="hollanda-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="hollanda-okul-kayit-rehberi/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-hollanda-640.webp 640w, ../assets/blog/thumb-hollanda.webp 800w" src="../assets/blog/thumb-hollanda.webp" alt="Hollanda Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇳🇱</span>
@@ -2052,7 +2070,7 @@
         </a>
 
         <!-- Post 7 -->
-        <a href="italya-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="italya-okul-kayit-rehberi/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-italya-640.webp 640w, ../assets/blog/thumb-italya.webp 800w" src="../assets/blog/thumb-italya.webp" alt="İtalya Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇮🇹</span>
@@ -2075,7 +2093,7 @@
         </a>
 
         <!-- Post 4 -->
-        <a href="almanya-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="almanya-okul-kayit-rehberi/" data-tags="yurtdisi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-almanya-640.webp 640w, ../assets/blog/thumb-almanya.webp 800w" src="../assets/blog/thumb-almanya.webp" alt="Almanya Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇩🇪</span>
@@ -2101,7 +2119,7 @@
         </a>
 
         <!-- Post 2 -->
-        <a href="dubai-okul-kayit-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="dubai-okul-kayit-rehberi/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-dubai-kayit-sureci-640.webp 640w, ../assets/blog/thumb-dubai-kayit-sureci.webp 800w" src="../assets/blog/thumb-dubai-kayit-sureci.webp" alt="Dubai Okul Kayıt" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
@@ -2128,7 +2146,7 @@
 
         <!-- Post: Yurt Dışı Üniversiteye Hazırlık -->
         <!-- Post: Lise Öğrencisi Staj İş Deneyimi -->
-        <a href="lise-ogrencisi-staj-is-deneyimi/" class="blog-card glass scroll-reveal">
+        <a href="lise-ogrencisi-staj-is-deneyimi/" data-tags="kariyer" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-lise-ogrencisi-staj-is-deneyimi.webp" alt="Lise Öğrencisi İş Deneyimi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💼</span>
@@ -2149,7 +2167,7 @@
         </a>
 
         <!-- Post: Üniversiteye Fark Yaratan Aktiviteler -->
-        <a href="universitede-fark-yaratan-aktiviteler/" class="blog-card glass scroll-reveal">
+        <a href="universitede-fark-yaratan-aktiviteler/" data-tags="kariyer" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-universitede-fark-yaratan-aktiviteler.webp" alt="Üniversiteye Fark Yaratan Aktiviteler" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏆</span>
@@ -2170,7 +2188,7 @@
         </a>
 
         <!-- Post: Lise Öğrencisi Yaz Programları -->
-        <a href="lise-ogrencisi-yaz-programlari/" class="blog-card glass scroll-reveal">
+        <a href="lise-ogrencisi-yaz-programlari/" data-tags="kariyer" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-lise-ogrencisi-yaz-programlari.webp" alt="Lise Öğrencisi Yaz Programları" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">☀️</span>
@@ -2190,7 +2208,7 @@
           </div>
         </a>
 
-        <a href="yurt-disi-universite-hazirlik-lisede/" class="blog-card glass scroll-reveal">
+        <a href="yurt-disi-universite-hazirlik-lisede/" data-tags="kariyer" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-yurt-disi-universite-hazirlik-lisede.webp" alt="Yurt Dışı Üniversiteye Hazırlık" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎓</span>
@@ -2211,7 +2229,7 @@
         </a>
 
         <!-- Post: Farklılaştırılmış Öğretim Nedir -->
-        <a href="farklilastirilmis-ogretim-nedir/" class="blog-card glass scroll-reveal">
+        <a href="farklilastirilmis-ogretim-nedir/" data-tags="muefredat" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-farklilastirilmis-ogretim-nedir.webp" alt="Farklılaştırılmış Öğretim Nedir?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🧠</span>
@@ -2232,7 +2250,7 @@
         </a>
 
         <!-- Post: LGS Sürecinde Ders Çalış Savaşları -->
-        <a href="lgs-surecinde-ders-calis-savaslari/" class="blog-card glass scroll-reveal">
+        <a href="lgs-surecinde-ders-calis-savaslari/" data-tags="muefredat akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-lgs-surecinde-ders-calis-savaslari.webp" alt="LGS Sürecinde Ders Çalış Savaşlarını Bitirin" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📖</span>
@@ -2254,7 +2272,7 @@
 
         <!-- Post: Akademik Koç Nedir? -->
         <!-- Post: Başarılı Öğrenciler IB'de Neden Zorlanır -->
-        <a href="basarili-ogrenciler-ib-de-neden-zorlanir/" class="blog-card glass scroll-reveal">
+        <a href="basarili-ogrenciler-ib-de-neden-zorlanir/" data-tags="ib akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-basarili-ogrenciler-ib-de-neden-zorlanir.webp" alt="Başarılı Öğrenciler IB'de Neden Zorlanır?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📚</span>
@@ -2275,7 +2293,7 @@
         </a>
 
         <!-- Post: Eğitim Koçu Ne Yapar -->
-        <a href="egitim-kocu-ne-yapar/" class="blog-card glass scroll-reveal">
+        <a href="egitim-kocu-ne-yapar/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-egitim-kocu-ne-yapar.webp" alt="Eğitim Koçu Ne Yapar?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎯</span>
@@ -2295,7 +2313,7 @@
           </div>
         </a>
 
-        <a href="akademik-koc-nedir/" class="blog-card glass scroll-reveal">
+        <a href="akademik-koc-nedir/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-akademik-koc-nedir.webp" alt="Akademik Koç Nedir?" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎓</span>
@@ -2316,7 +2334,7 @@
         </a>
 
         <!-- Post: IB'ye Geçişte Akademik Koçluk -->
-        <a href="ib-gecisinde-akademik-kocluk/" class="blog-card glass scroll-reveal">
+        <a href="ib-gecisinde-akademik-kocluk/" data-tags="ib akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-ib-gecisinde-akademik-kocluk.webp" alt="IB'ye Geçişte Akademik Koçluk" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📘</span>
@@ -2337,7 +2355,7 @@
         </a>
 
         <!-- Post: Dubai Expat Çocuk Akademik Destek -->
-        <a href="dubai-expat-cocuk-akademik-destek/" class="blog-card glass scroll-reveal">
+        <a href="dubai-expat-cocuk-akademik-destek/" data-tags="dubai akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai-expat-cocuk-akademik-destek.webp" alt="Dubai Expat Çocuklar için Akademik Destek" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇦🇪</span>
@@ -2358,7 +2376,7 @@
         </a>
 
         <!-- Post: Çocuğum Uluslararası Okula Geçiyor -->
-        <a href="cocugum-uluslararasi-okula-geciyor/" class="blog-card glass scroll-reveal">
+        <a href="cocugum-uluslararasi-okula-geciyor/" data-tags="okul-secimi akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugum-uluslararasi-okula-geciyor.webp" alt="Çocuğum uluslararası okula geçiyor" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">✈️</span>
@@ -2379,7 +2397,7 @@
         </a>
 
         <!-- Post: Özel Ders mi, Akademik Koç mu? -->
-        <a href="ozel-ders-mi-akademik-koc-mu/" class="blog-card glass scroll-reveal">
+        <a href="ozel-ders-mi-akademik-koc-mu/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-ozel-ders-mi-akademik-koc-mu.webp" alt="Özel ders mi akademik koç mu" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">⚖️</span>
@@ -2400,7 +2418,7 @@
         </a>
 
         <!-- Post: Çocuğum IB'ye Başlıyor -->
-        <a href="cocugum-ib-ye-basliyor/" class="blog-card glass scroll-reveal">
+        <a href="cocugum-ib-ye-basliyor/" data-tags="ib akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugum-ib-ye-basliyor.webp" alt="Çocuğum IB'ye başlıyor ilk yıl" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📗</span>
@@ -2421,7 +2439,7 @@
         </a>
 
         <!-- Post: Çocuğum Akademik Olarak Geride Kalıyor -->
-        <a href="cocugum-akademik-olarak-geride-kaliyor/" class="blog-card glass scroll-reveal">
+        <a href="cocugum-akademik-olarak-geride-kaliyor/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugum-akademik-olarak-geride-kaliyor.webp" alt="Çocuğum akademik olarak geride kalıyor" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📉</span>
@@ -2441,7 +2459,7 @@
           </div>
         </a>
 
-        <a href="cocugum-motivasyonunu-kaybetti/" class="blog-card glass scroll-reveal">
+        <a href="cocugum-motivasyonunu-kaybetti/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugum-motivasyonunu-kaybetti.webp" alt="Çocuğum motivasyonunu kaybetti" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💡</span>
@@ -2461,7 +2479,7 @@
           </div>
         </a>
 
-        <a href="cocugum-sinav-kaygisi-yasiyor/" class="blog-card glass scroll-reveal">
+        <a href="cocugum-sinav-kaygisi-yasiyor/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugum-sinav-kaygisi-yasiyor.webp" alt="Çocuğum sınav kaygısı yaşıyor" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">😰</span>
@@ -2481,7 +2499,7 @@
           </div>
         </a>
 
-        <a href="cocugum-okul-degistiriyor/" class="blog-card glass scroll-reveal">
+        <a href="cocugum-okul-degistiriyor/" data-tags="okul-secimi akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugum-okul-degistiriyor.webp" alt="Çocuğum okul değiştiriyor" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏫</span>
@@ -2501,7 +2519,7 @@
           </div>
         </a>
 
-        <a href="cocugum-ders-calismak-istemiyor/" class="blog-card glass scroll-reveal">
+        <a href="cocugum-ders-calismak-istemiyor/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugum-ders-calismak-istemiyor.webp" alt="Çocuğum ders çalışmak istemiyor" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📚</span>
@@ -2521,7 +2539,7 @@
           </div>
         </a>
 
-        <a href="ogretmen-tembel-dedi/" class="blog-card glass scroll-reveal">
+        <a href="ogretmen-tembel-dedi/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-ogretmen-tembel-dedi.webp" alt="Öğretmeni tembel dedi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💬</span>
@@ -2541,7 +2559,7 @@
           </div>
         </a>
 
-        <a href="cocugum-ingilizce-ogrenemıyor/" class="blog-card glass scroll-reveal">
+        <a href="cocugum-ingilizce-ogrenemıyor/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugum-ingilizce-ogrenemiyor.webp" alt="Çocuğum İngilizce öğrenemiyor" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🗣️</span>
@@ -2561,7 +2579,7 @@
           </div>
         </a>
 
-        <a href="dubai-ib-okul-secimi/" class="blog-card glass scroll-reveal">
+        <a href="dubai-ib-okul-secimi/" data-tags="dubai ib okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai-ib-okul-secimi.webp" alt="Dubai'de IB okul seçimi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🎓</span>
@@ -2581,7 +2599,7 @@
           </div>
         </a>
 
-        <a href="turkiyeden-dubaya-tasima-cocuk-okul/" class="blog-card glass scroll-reveal">
+        <a href="turkiyeden-dubaya-tasima-cocuk-okul/" data-tags="dubai" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-turkiyeden-dubaya-tasima-cocuk-okul.webp" alt="Türkiye'den Dubai'ye taşınma çocuk okul" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">✈️</span>
@@ -2601,7 +2619,7 @@
           </div>
         </a>
 
-        <a href="dubai-ozel-okul-mu-devlet-okulu-mu/" class="blog-card glass scroll-reveal">
+        <a href="dubai-ozel-okul-mu-devlet-okulu-mu/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai-ozel-okul-mu-devlet-okulu-mu.webp" alt="Dubai özel okul devlet okulu karşılaştırma" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏫</span>
@@ -2621,7 +2639,7 @@
           </div>
         </a>
 
-        <a href="dubai-turk-aileler-okul-rehberi/" class="blog-card glass scroll-reveal">
+        <a href="dubai-turk-aileler-okul-rehberi/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai-turk-aileler-okul-rehberi.webp" alt="Dubai Türk aileler okul rehberi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇹🇷</span>
@@ -2641,7 +2659,7 @@
           </div>
         </a>
 
-        <a href="dubai-khda-okul-dereceleri-ucret-karsilastirmasi/" class="blog-card glass scroll-reveal">
+        <a href="dubai-khda-okul-dereceleri-ucret-karsilastirmasi/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai-top-schools.webp" alt="Dubai KHDA okul dereceleri ve ücret karşılaştırması 2026" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🏫</span>
@@ -2661,7 +2679,7 @@
           </div>
         </a>
 
-        <a href="cocugunuzun-gercek-akademik-seviyesi/" class="blog-card glass scroll-reveal">
+        <a href="cocugunuzun-gercek-akademik-seviyesi/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugunuzun-gercek-seviyesi.webp" alt="Çocuğumun gerçek akademik seviyesini nasıl öğrenirim" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">📊</span>
@@ -2855,6 +2873,23 @@
     b.classList.toggle('active', l === document.documentElement.lang);
     if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
   });
+</script>
+<script>
+(function(){
+  var bar=document.getElementById('blogFilterBar');
+  if(!bar)return;
+  var cards=document.querySelectorAll('.blog-card[data-tags]');
+  bar.addEventListener('click',function(e){
+    var btn=e.target.closest('[data-filter]');
+    if(!btn)return;
+    bar.querySelectorAll('.blog-filter-btn').forEach(function(b){b.classList.remove('active');});
+    btn.classList.add('active');
+    var f=btn.dataset.filter;
+    cards.forEach(function(c){
+      c.hidden=f!=='all'&&!(' '+c.dataset.tags+' ').includes(' '+f+' ');
+    });
+  });
+})();
 </script>
 </body>
 </html>
