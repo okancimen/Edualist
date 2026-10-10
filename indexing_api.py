@@ -151,6 +151,11 @@ URLS = [
     # 2026-10-09 — The Anxious Generation Bölüm 2
     "https://www.edualist.com/blog/anxious-generation-oyun-temelli-cocukluk/",
     "https://www.edualist.com/blog/anxious-generation-ergen-ruh-sagligi/",
+    # 2026-10-10 — TR differentiators: coaching, homepage, hakkimda, neden-biz
+    "https://www.edualist.com/uluslararasi-akademik-kocluk/",
+    "https://www.edualist.com/tr/",
+    "https://www.edualist.com/hakkimda/",
+    "https://www.edualist.com/neden-biz/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
