@@ -27,6 +27,12 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-11 SEO keyword güncellemeleri
+    "https://www.edualist.com/uluslararasi-okul-danismanligi/",
+    "https://www.edualist.com/blog/dubai-khda-okul-dereceleri-ucret-karsilastirmasi/",
+    "https://www.edualist.com/blog/cat4-sinavi-nedir/",
+    "https://www.edualist.com/blog/dubai-okul-kayit-rehberi/",
+    "https://www.edualist.com/blog/dubai-okul-ucretleri-2026/",
     # 2026-10-05 kotası dolunca gönderilemeyenler — yarın tekrar dene
     "https://www.edualist.com/blog/dubai-turk-okulu-var-mi/",
     "https://www.edualist.com/blog/farklilastirilmis-ogretim-nedir/",
