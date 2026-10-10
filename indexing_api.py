@@ -156,6 +156,8 @@ URLS = [
     "https://www.edualist.com/tr/",
     "https://www.edualist.com/hakkimda/",
     "https://www.edualist.com/neden-biz/",
+    # 2026-10-10 — cocugunuzun-guclu-yonleri: title/desc CTR fix + eduentry kisilik-degerlendirmesi link
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
