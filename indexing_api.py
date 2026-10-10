@@ -27,6 +27,15 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-11 kritik SEO fixes: sitemap + og:image + title lengths
+    "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",
+    "https://www.edualist.com/en/blog/my-childs-character-strengths/",
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    "https://www.edualist.com/en/blog/dubai-ib-schools-graduate-success/",
+    "https://www.edualist.com/en/blog/child-strengths-and-weaknesses/",
+    "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",
+    "https://www.edualist.com/en/blog/dubai-international-schools-khda-fees-2026/",
+    "https://www.edualist.com/cocugunuzun-potansiyeli/",
     # 2026-10-11 title/desc CTR fixes
     "https://www.edualist.com/blog/anxious-generation-oyun-temelli-cocukluk/",
     "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",

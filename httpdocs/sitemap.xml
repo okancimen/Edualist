@@ -472,6 +472,26 @@
   </url>
 
   <url>
+    <loc>https://www.edualist.com/blog/cocugumun-guclu-yonleri/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugumun-guclu-yonleri/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/my-childs-character-strengths/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/my-childs-character-strengths/"/>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/my-childs-character-strengths/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugumun-guclu-yonleri/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/my-childs-character-strengths/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/my-childs-character-strengths/"/>
+    <lastmod>2026-10-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.edualist.com/blog/cocuklar-icin-gelecek-becerileri/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocuklar-icin-gelecek-becerileri/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/future-skills-for-children/"/>
