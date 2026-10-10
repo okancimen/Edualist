@@ -164,6 +164,14 @@ URLS = [
     "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",
     # 2026-10-11 — my-childs-character-strengths: EN version of cocugumun-guclu-yonleri
     "https://www.edualist.com/en/blog/my-childs-character-strengths/",
+    # 2026-10-11 — SEO internal links: cocugumun-guclu-yonleri + my-childs-character-strengths
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    "https://www.edualist.com/en/blog/child-strengths-and-weaknesses/",
+    "https://www.edualist.com/blog/farklilastirilmis-ogretim-nedir/",
+    "https://www.edualist.com/blog/akademik-koc-nedir/",
+    "https://www.edualist.com/blog/eduentry-uluslararasi-akademik-degerlendirme-nedir/",
+    "https://www.edualist.com/en/blog/what-is-an-academic-coach/",
+    "https://www.edualist.com/en/blog/eduentry-international-assessment/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
