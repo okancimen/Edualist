@@ -158,6 +158,8 @@ URLS = [
     "https://www.edualist.com/neden-biz/",
     # 2026-10-10 — cocugunuzun-guclu-yonleri: title/desc CTR fix + eduentry kisilik-degerlendirmesi link
     "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    # 2026-10-10 — child-strengths-and-weaknesses EN: title/desc CTR fix + personality assessment callout
+    "https://www.edualist.com/en/blog/child-strengths-and-weaknesses/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
