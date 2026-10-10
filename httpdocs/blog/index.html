@@ -13,6 +13,24 @@
 .blog-card[hidden]{display:none!important}
 </style>
 </style>
+<style id="blog-redesign">
+.blog-listing-hero{background:var(--bg-warm-secondary)!important;padding:80px 0 50px!important}
+@media(max-width:640px){.blog-listing-hero{padding:100px 0 40px!important}}
+.blog-hero-text .section-subtitle{text-transform:none!important;letter-spacing:0!important;font-size:.85rem!important;font-weight:500!important;color:var(--text-muted)!important;padding-left:.75rem;border-left:2px solid var(--primary);margin-bottom:1rem!important;display:inline-block}
+.blog-card.glass{background:#fff!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;border:1px solid var(--border-card)!important;border-top:3px solid var(--primary)!important;border-radius:8px!important;box-shadow:none!important}
+.blog-card.glass:hover{transform:none!important;background:var(--bg-warm)!important;box-shadow:var(--shadow-sm)!important}
+.blog-card-readmore{display:none!important}
+.blog-card-flag{display:none!important}
+.blog-filter-btn{border-radius:4px!important}
+.blog-card-featured{grid-column:1/-1!important;flex-direction:row!important}
+.blog-card-featured .blog-card-thumb{width:50%;flex-shrink:0;aspect-ratio:auto!important;min-height:300px}
+.blog-card-featured .blog-card-thumb img{height:100%}
+.blog-card-featured .blog-card-body{padding:2.5rem 2.5rem!important;justify-content:center;gap:1rem!important}
+.blog-card-featured .blog-card-title span{font-size:1.9rem!important;line-height:1.25!important}
+.blog-card-featured .blog-card-excerpt span{font-size:.95rem!important;line-height:1.7!important}
+@media(max-width:768px){.blog-card-featured{flex-direction:column!important;grid-column:unset!important}.blog-card-featured .blog-card-thumb{width:100%;min-height:220px}}
+</style>
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- LCP image preloads: declared before inline CSS so preload scanner queues them at highest priority -->
@@ -699,20 +717,20 @@
       </a>
 
       <div class="blog-filter-bar" id="blogFilterBar" role="group" aria-label="Kategori filtrele">
-        <button class="blog-filter-btn active" data-filter="all">Tümü</button>
-        <button class="blog-filter-btn" data-filter="dubai">Dubai</button>
-        <button class="blog-filter-btn" data-filter="ib">IB</button>
-        <button class="blog-filter-btn" data-filter="ap">AP</button>
-        <button class="blog-filter-btn" data-filter="muefredat">Müfredat</button>
-        <button class="blog-filter-btn" data-filter="okul-secimi">Okul Seçimi</button>
-        <button class="blog-filter-btn" data-filter="akademik-destek">Akademik Destek</button>
-        <button class="blog-filter-btn" data-filter="yurtdisi">Yurt Dışı</button>
-        <button class="blog-filter-btn" data-filter="kariyer">Kariyer</button>
+        <button class="blog-filter-btn active" data-filter="all">Tümü (90)</button>
+        <button class="blog-filter-btn" data-filter="dubai">Dubai (29)</button>
+        <button class="blog-filter-btn" data-filter="ib">IB (7)</button>
+        <button class="blog-filter-btn" data-filter="ap">AP (2)</button>
+        <button class="blog-filter-btn" data-filter="muefredat">Müfredat (12)</button>
+        <button class="blog-filter-btn" data-filter="okul-secimi">Okul Seçimi (27)</button>
+        <button class="blog-filter-btn" data-filter="akademik-destek">Akademik Destek (23)</button>
+        <button class="blog-filter-btn" data-filter="yurtdisi">Yurt Dışı (20)</button>
+        <button class="blog-filter-btn" data-filter="kariyer">Kariyer (10)</button>
       </div>
       <div class="blog-grid">
 
         <!-- Post: Dubai İngiliz Okulları Top 10 A-Level Mezun Başarısı -->
-        <a href="dubai-ingiliz-okullari-a-level/" data-tags="dubai muefredat" class="blog-card glass scroll-reveal">
+        <a href="dubai-ingiliz-okullari-a-level/" data-tags="dubai muefredat" class="blog-card glass scroll-reveal blog-card-featured">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai-ingiliz-okullari-a-level.webp" srcset="../assets/blog/thumb-dubai-ingiliz-okullari-a-level.webp 800w" alt="Dubai İngiliz okulları top 10 A-Level mezun başarısı" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">🇬🇧</span>
