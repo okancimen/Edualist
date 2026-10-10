@@ -162,6 +162,8 @@ URLS = [
     "https://www.edualist.com/en/blog/child-strengths-and-weaknesses/",
     # 2026-10-11 — cocugumun-guclu-yonleri: VIA karakter güçlü yönleri yeni blog yazısı
     "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",
+    # 2026-10-11 — my-childs-character-strengths: EN version of cocugumun-guclu-yonleri
+    "https://www.edualist.com/en/blog/my-childs-character-strengths/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
