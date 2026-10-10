@@ -160,6 +160,8 @@ URLS = [
     "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
     # 2026-10-10 — child-strengths-and-weaknesses EN: title/desc CTR fix + personality assessment callout
     "https://www.edualist.com/en/blog/child-strengths-and-weaknesses/",
+    # 2026-10-11 — cocugumun-guclu-yonleri: VIA karakter güçlü yönleri yeni blog yazısı
+    "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
