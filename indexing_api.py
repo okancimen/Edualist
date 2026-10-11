@@ -198,6 +198,13 @@ URLS = [
     "https://www.edualist.com/blog/eduentry-uluslararasi-akademik-degerlendirme-nedir/",
     "https://www.edualist.com/en/blog/what-is-an-academic-coach/",
     "https://www.edualist.com/en/blog/eduentry-international-assessment/",
+    # 2026-10-11 — schema.org fixes: .service-title cssSelector + instructor→CourseInstance
+    "https://www.edualist.com/tr/",
+    "https://www.edualist.com/en/",
+    # 2026-10-11 — "best schools in dubai" SEO fixes: title/H1/desc/internal links
+    "https://www.edualist.com/en/blog/dubai-top-schools/",
+    "https://www.edualist.com/en/blog/dubai-international-schools-khda-fees-2026/",
+    "https://www.edualist.com/en/dubai/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
