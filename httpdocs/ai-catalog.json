@@ -1,5 +1,4 @@
 {
-  "$schema": "https://spec.ard.dev/v1/catalog.json",
   "specVersion": "1.0",
   "host": {
     "displayName": "Edualist",
@@ -12,18 +11,30 @@
       "identifier": "urn:air:edualist.com:content:llms-txt",
       "displayName": "LLMs Content Index",
       "description": "Structured plain-text index of Edualist's content optimised for LLMs.",
-      "type": "text/plain",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "url": "https://www.edualist.com/llms.txt",
       "tags": ["llms", "index", "content"],
+      "representativeQueries": [
+        "What services does Edualist offer for international school placement?",
+        "Who is Özlem Çimen and what is her background?",
+        "How does Edualist help Turkish families moving to Dubai?",
+        "What are Edualist's consulting package prices?"
+      ],
       "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
       "identifier": "urn:air:edualist.com:content:llms-full-txt",
       "displayName": "LLMs Full Article Text",
       "description": "Full article text of all Edualist blog posts and pages for LLM retrieval.",
-      "type": "text/plain",
+      "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "url": "https://www.edualist.com/llms-full.txt",
-      "tags": ["llms", "full-text", "blog", "content"],
+      "tags": ["llms", "full-text", "blog"],
+      "representativeQueries": [
+        "What are the best international schools in Dubai for Turkish students?",
+        "How do I prepare my child for a school transition abroad?",
+        "What is the CAT4 test and how does it affect school admissions in Dubai?",
+        "What British curriculum schools are available in Dubai?"
+      ],
       "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
@@ -33,6 +44,10 @@
       "type": "application/xml",
       "url": "https://www.edualist.com/sitemap.xml",
       "tags": ["sitemap", "navigation"],
+      "representativeQueries": [
+        "What pages are available on edualist.com?",
+        "What is the full list of Edualist blog articles?"
+      ],
       "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
@@ -42,6 +57,11 @@
       "type": "text/html",
       "url": "https://www.edualist.com/en/international-school-consulting",
       "tags": ["services", "school-consulting", "en"],
+      "representativeQueries": [
+        "How much does Edualist's school placement service cost?",
+        "What does the 30-day school placement package include?",
+        "How does Edualist help with school admissions in Dubai?"
+      ],
       "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
@@ -51,6 +71,11 @@
       "type": "text/html",
       "url": "https://www.edualist.com/uluslararasi-okul-danismanligi",
       "tags": ["services", "school-consulting", "tr"],
+      "representativeQueries": [
+        "Dubai'deki okul yerleştirme danışmanlığının ücreti nedir?",
+        "Uluslararası okul danışmanlığı paketi neler içeriyor?",
+        "Yurt dışında okul seçiminde nasıl yardım alınır?"
+      ],
       "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
@@ -60,6 +85,11 @@
       "type": "text/html",
       "url": "https://www.edualist.com/en/academic-coaching",
       "tags": ["services", "coaching", "en"],
+      "representativeQueries": [
+        "What academic coaching does Edualist offer students?",
+        "How does Edualist help students adapt to a new international school?",
+        "What does the student coaching programme cover?"
+      ],
       "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
@@ -69,6 +99,10 @@
       "type": "text/html",
       "url": "https://www.edualist.com/uluslararasi-akademik-kocluk",
       "tags": ["services", "coaching", "tr"],
+      "representativeQueries": [
+        "Akademik koçluk hizmeti nedir ve neler içeriyor?",
+        "Öğrencilerin yeni okul sistemine uyumuna nasıl yardımcı olunuyor?"
+      ],
       "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
@@ -78,6 +112,11 @@
       "type": "text/html",
       "url": "https://www.edualist.com/en/about",
       "tags": ["about", "founder", "en"],
+      "representativeQueries": [
+        "What is Özlem Çimen's background in international education?",
+        "How many years of experience does the Edualist founder have?",
+        "What schools has Özlem Çimen worked at?"
+      ],
       "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
@@ -86,7 +125,12 @@
       "description": "Guide to international school options, curricula, and admissions in Dubai.",
       "type": "text/html",
       "url": "https://www.edualist.com/en/dubai",
-      "tags": ["dubai", "guide", "schools", "en"],
+      "tags": ["dubai", "schools", "guide", "en"],
+      "representativeQueries": [
+        "Which international schools are available in Dubai?",
+        "What curricula do Dubai international schools offer?",
+        "How do school admissions work in Dubai for expat families?"
+      ],
       "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
@@ -96,6 +140,11 @@
       "type": "text/html",
       "url": "https://www.edualist.com/en/blog",
       "tags": ["blog", "articles", "en"],
+      "representativeQueries": [
+        "What articles does Edualist have about Dubai school admissions?",
+        "What blog posts cover student wellbeing and school transitions?",
+        "Where can I read about international school life for expat children?"
+      ],
       "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
@@ -105,6 +154,11 @@
       "type": "text/html",
       "url": "https://www.edualist.com/tr",
       "tags": ["blog", "articles", "tr"],
+      "representativeQueries": [
+        "Uluslararası okullar hakkında Türkçe makaleler nelerdir?",
+        "Dubai eğitimi hakkında Türkçe blog yazıları nerede bulunur?",
+        "Yurt dışına taşınan Türk ailelere yönelik hangi içerikler var?"
+      ],
       "updatedAt": "2026-10-11T00:00:00Z"
     }
   ]
