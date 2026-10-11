@@ -27,6 +27,8 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-12 CTA eklendi: kisilik-degerlendirmesi
+    "https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/",
     # 2026-10-11 kritik SEO fixes: sitemap + og:image + title lengths
     "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",
     "https://www.edualist.com/en/blog/my-childs-character-strengths/",
