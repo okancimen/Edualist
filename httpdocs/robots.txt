@@ -51,3 +51,4 @@ Allow: /
 Sitemap: https://www.edualist.com/sitemap.xml
 # LLM content index: https://www.edualist.com/llms.txt
 # LLM full articles: https://www.edualist.com/llms-full.txt
+# AI resource catalog: https://www.edualist.com/ai-catalog.json
