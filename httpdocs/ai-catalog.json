@@ -1,101 +1,111 @@
 {
   "$schema": "https://spec.ard.dev/v1/catalog.json",
-  "version": "1.0",
-  "name": "Edualist",
-  "description": "International school consulting and parent-student coaching for Turkish families relocating abroad, founded by Özlem Çimen in Dubai.",
-  "url": "https://www.edualist.com",
-  "logo": "https://www.edualist.com/assets/img/logo.png",
-  "contact": {
-    "name": "Özlem Çimen",
-    "email": "ozlem@edualist.com",
-    "url": "https://www.edualist.com/en/about"
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Edualist",
+    "identifier": "did:web:edualist.com",
+    "documentationUrl": "https://www.edualist.com/en/about",
+    "logoUrl": "https://www.edualist.com/assets/img/logo.png"
   },
-  "language": ["tr", "en"],
-  "resources": [
+  "entries": [
     {
-      "name": "llms.txt",
+      "identifier": "urn:air:edualist.com:content:llms-txt",
+      "displayName": "LLMs Content Index",
       "description": "Structured plain-text index of Edualist's content optimised for LLMs.",
+      "type": "text/plain",
       "url": "https://www.edualist.com/llms.txt",
-      "type": "content",
-      "format": "text/plain"
+      "tags": ["llms", "index", "content"],
+      "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
-      "name": "llms-full.txt",
+      "identifier": "urn:air:edualist.com:content:llms-full-txt",
+      "displayName": "LLMs Full Article Text",
       "description": "Full article text of all Edualist blog posts and pages for LLM retrieval.",
+      "type": "text/plain",
       "url": "https://www.edualist.com/llms-full.txt",
-      "type": "content",
-      "format": "text/plain"
+      "tags": ["llms", "full-text", "blog", "content"],
+      "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
-      "name": "Sitemap",
+      "identifier": "urn:air:edualist.com:content:sitemap",
+      "displayName": "Sitemap",
       "description": "XML sitemap listing all pages on edualist.com.",
+      "type": "application/xml",
       "url": "https://www.edualist.com/sitemap.xml",
-      "type": "content",
-      "format": "application/xml"
+      "tags": ["sitemap", "navigation"],
+      "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
-      "name": "International School Consulting (EN)",
+      "identifier": "urn:air:edualist.com:content:international-school-consulting-en",
+      "displayName": "International School Consulting (EN)",
       "description": "Service page describing school placement and consulting packages for families moving abroad.",
+      "type": "text/html",
       "url": "https://www.edualist.com/en/international-school-consulting",
-      "type": "content",
-      "format": "text/html",
-      "language": "en"
+      "tags": ["services", "school-consulting", "en"],
+      "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
-      "name": "Uluslararası Okul Danışmanlığı (TR)",
+      "identifier": "urn:air:edualist.com:content:uluslararasi-okul-danismanligi",
+      "displayName": "Uluslararası Okul Danışmanlığı (TR)",
       "description": "Yurt dışına taşınan aileler için okul yerleştirme ve danışmanlık hizmetlerini açıklayan sayfa.",
+      "type": "text/html",
       "url": "https://www.edualist.com/uluslararasi-okul-danismanligi",
-      "type": "content",
-      "format": "text/html",
-      "language": "tr"
+      "tags": ["services", "school-consulting", "tr"],
+      "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
-      "name": "Academic Coaching (EN)",
+      "identifier": "urn:air:edualist.com:content:academic-coaching-en",
+      "displayName": "Academic Coaching (EN)",
       "description": "Parent-student academic coaching service for international school transitions.",
+      "type": "text/html",
       "url": "https://www.edualist.com/en/academic-coaching",
-      "type": "content",
-      "format": "text/html",
-      "language": "en"
+      "tags": ["services", "coaching", "en"],
+      "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
-      "name": "Uluslararası Akademik Koçluk (TR)",
+      "identifier": "urn:air:edualist.com:content:uluslararasi-akademik-kocluk",
+      "displayName": "Uluslararası Akademik Koçluk (TR)",
       "description": "Uluslararası okul geçişlerinde ebeveyn-öğrenci akademik koçluk hizmeti.",
+      "type": "text/html",
       "url": "https://www.edualist.com/uluslararasi-akademik-kocluk",
-      "type": "content",
-      "format": "text/html",
-      "language": "tr"
+      "tags": ["services", "coaching", "tr"],
+      "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
-      "name": "About Özlem Çimen (EN)",
+      "identifier": "urn:air:edualist.com:content:about-en",
+      "displayName": "About Özlem Çimen (EN)",
       "description": "Founder biography: 20+ years in international education, expat mother, Dubai-based consultant.",
+      "type": "text/html",
       "url": "https://www.edualist.com/en/about",
-      "type": "content",
-      "format": "text/html",
-      "language": "en"
+      "tags": ["about", "founder", "en"],
+      "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
-      "name": "Dubai International Schools Guide (EN)",
+      "identifier": "urn:air:edualist.com:content:dubai-guide-en",
+      "displayName": "Dubai International Schools Guide (EN)",
       "description": "Guide to international school options, curricula, and admissions in Dubai.",
+      "type": "text/html",
       "url": "https://www.edualist.com/en/dubai",
-      "type": "content",
-      "format": "text/html",
-      "language": "en"
+      "tags": ["dubai", "guide", "schools", "en"],
+      "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
-      "name": "Blog (EN)",
+      "identifier": "urn:air:edualist.com:content:blog-en",
+      "displayName": "Blog (EN)",
       "description": "English-language articles on international schools, school transitions, Dubai education, and student wellbeing.",
+      "type": "text/html",
       "url": "https://www.edualist.com/en/blog",
-      "type": "content",
-      "format": "text/html",
-      "language": "en"
+      "tags": ["blog", "articles", "en"],
+      "updatedAt": "2026-10-11T00:00:00Z"
     },
     {
-      "name": "Blog (TR)",
+      "identifier": "urn:air:edualist.com:content:blog-tr",
+      "displayName": "Blog (TR)",
       "description": "Uluslararası okullar, okul geçişleri, Dubai eğitimi ve öğrenci refahı üzerine Türkçe makaleler.",
+      "type": "text/html",
       "url": "https://www.edualist.com/tr",
-      "type": "content",
-      "format": "text/html",
-      "language": "tr"
+      "tags": ["blog", "articles", "tr"],
+      "updatedAt": "2026-10-11T00:00:00Z"
     }
   ]
 }
