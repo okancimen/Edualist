@@ -30,6 +30,8 @@ URLS = [
     # 2026-10-12 içerik genişletme: Türk aileler + şehir bazında bilgi eklendi
     "https://www.edualist.com/blog/hollanda-okul-kayit-rehberi/",
     "https://www.edualist.com/blog/ispanya-okul-kayit-rehberi/",
+    # 2026-10-12 Discovered not indexed — API kuyruğuna eklendi
+    "https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/",
     # 2026-10-12 hreflang x-default fix + sitemap'e eklendi + .htaccess 404 fix
     "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",
     "https://www.edualist.com/en/blog/my-childs-character-strengths/",
