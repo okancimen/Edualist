@@ -27,6 +27,14 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-12 içerik genişletme: Türk aileler + şehir bazında bilgi eklendi
+    "https://www.edualist.com/blog/hollanda-okul-kayit-rehberi/",
+    "https://www.edualist.com/blog/ispanya-okul-kayit-rehberi/",
+    # 2026-10-12 hreflang x-default fix + sitemap'e eklendi + .htaccess 404 fix
+    "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",
+    "https://www.edualist.com/en/blog/my-childs-character-strengths/",
+    "https://www.edualist.com/blog/anxious-generation-oyun-temelli-cocukluk/",
+    "https://www.edualist.com/blog/uluslararasi-okul-mulakati-nasil-gecilir/",
     # 2026-10-12 CTA eklendi: kisilik-degerlendirmesi
     "https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/",
     # 2026-10-11 kritik SEO fixes: sitemap + og:image + title lengths
