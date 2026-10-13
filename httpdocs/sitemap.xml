@@ -3,6 +3,15 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/"/>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.edualist.com/tr/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/tr/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/"/>
