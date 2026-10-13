@@ -92,6 +92,8 @@ ErrorDocument 404 /404.html
   # 404 fix: URL with Turkish ü char → correct slug
   RewriteRule ^blog/uluslararasi-okul-m%C3%BClakata%C4%B1-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakati-nasil-gecilir/ [R=301,L]
   RewriteRule ^blog/uluslararasi-okul-m%C3%BClakat%C4%B1-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakati-nasil-gecilir/ [R=301,L]
+  # 404 fix: indexed slug with dotless ı (ogrenemıyor) → correct slug (ogrenemiyor)
+  RewriteRule ^blog/cocugum-ingilizce-ogrenem%C4%B1yor/?$ /blog/cocugum-ingilizce-ogrenemiyor/ [R=301,L]
 
   # Redirect old dubai slug to new Turkish slug (also catches /index.html variant)
   RewriteRule ^blog/dubai-school-guide(/index\.html)?/?$ /blog/dubai-gelmeden-once-bilmeniz-gerekenler/ [R=301,L]

@@ -27,6 +27,9 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-13 iç link: cocugunuzun → cocugumun (VIA) + .htaccess typo-slug 301 fix
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",
     # 2026-10-12 içerik genişletme: Türk aileler + şehir bazında bilgi eklendi
     "https://www.edualist.com/blog/hollanda-okul-kayit-rehberi/",
     "https://www.edualist.com/blog/ispanya-okul-kayit-rehberi/",
@@ -217,6 +220,11 @@ URLS = [
     "https://www.edualist.com/en/blog/dubai-top-schools/",
     "https://www.edualist.com/en/blog/dubai-international-schools-khda-fees-2026/",
     "https://www.edualist.com/en/dubai/",
+    # 2026-10-12 — GSC "Crawled - currently not indexed" kuyruğu
+    "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",
+    "https://www.edualist.com/en/blog/dubai-british-schools-a-level/",
+    "https://www.edualist.com/blog/hollanda-okul-kayit-rehberi/",
+    "https://www.edualist.com/blog/ispanya-okul-kayit-rehberi/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
