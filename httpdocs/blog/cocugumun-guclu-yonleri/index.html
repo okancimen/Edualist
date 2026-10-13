@@ -320,6 +320,79 @@
             <li><strong>Maneviyat:</strong> Anlam ve amaç sorusuyla ilgilenir; "neden buradayız, hayatın amacı ne?" sorularını içten sorar.</li>
           </ul>
 
+          <style>
+          .kp-report{margin:2.75rem 0;border:1px solid var(--border-card);border-radius:var(--radius-lg);overflow:hidden;background:#fff;box-shadow:var(--shadow-md)}
+          .kp-report-head{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;padding:1rem 1.5rem;background:var(--primary);color:#fff}
+          .kp-badge{font-size:.68rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--primary);background:var(--accent);padding:.25rem .6rem;border-radius:50px}
+          .kp-report-head strong{font-family:var(--font-serif);font-size:1.15rem;font-weight:600}
+          .kp-report-head em{font-style:normal;font-size:.85rem;opacity:.75;margin-left:auto}
+          .kp-body{display:grid;grid-template-columns:230px 1fr;gap:1.75rem;padding:1.5rem}
+          @media(max-width:600px){.kp-body{grid-template-columns:1fr;gap:1.25rem}}
+          .kp-chart{margin:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+          .kp-chart svg{width:100%;max-width:240px;height:auto}
+          .kp-chart figcaption{font-size:.76rem;color:var(--text-muted);margin-top:.5rem;text-align:center}
+          .kp-col h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.06em;color:var(--accent);font-weight:700;margin:0 0 .75rem}
+          .kp-strength{margin-bottom:.65rem}
+          .kp-strength-top{display:flex;justify-content:space-between;align-items:baseline;font-size:.92rem;color:var(--primary);font-weight:600;margin-bottom:.25rem}
+          .kp-strength-top small{color:var(--text-muted);font-weight:500;font-size:.78rem}
+          .kp-bar{height:6px;border-radius:50px;background:hsla(212,66%,13%,.08);overflow:hidden}
+          .kp-bar>i{display:block;height:100%;border-radius:50px;background:var(--accent)}
+          .kp-growth{margin:1rem 0 0}
+          .kp-growth span{display:inline-block;font-size:.8rem;color:var(--text-muted);background:hsla(212,66%,13%,.04);border:1px solid var(--border-card);padding:.25rem .65rem;border-radius:50px;margin:.25rem .3rem 0 0}
+          .kp-cta{display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:1.1rem 1.5rem;background:var(--bg-warm-secondary);border-top:1px solid var(--border-card)}
+          .kp-cta p{margin:0;font-size:.93rem;color:var(--text-dark)}
+          .kp-cta .btn{white-space:nowrap}
+          </style>
+          <div class="kp-report">
+            <div class="kp-report-head">
+              <span class="kp-badge">Örnek Rapor</span>
+              <strong>Eduentry Kişilik Profili</strong>
+              <em>Zeynep · 9 yaş</em>
+            </div>
+            <div class="kp-body">
+              <figure class="kp-chart">
+                <svg viewBox="-18 -2 236 206" role="img" aria-label="Örnek VIA karakter profili radar grafiği">
+                  <polygon points="100,30 160.6,65 160.6,135 100,170 39.4,135 39.4,65" fill="none" stroke="rgba(11,33,58,.14)"/>
+                  <polygon points="100,53.3 140.4,76.7 140.4,123.3 100,146.7 59.6,123.3 59.6,76.7" fill="none" stroke="rgba(11,33,58,.11)"/>
+                  <polygon points="100,76.7 120.2,88.3 120.2,111.7 100,123.3 79.8,111.7 79.8,88.3" fill="none" stroke="rgba(11,33,58,.09)"/>
+                  <g stroke="rgba(11,33,58,.1)">
+                    <line x1="100" y1="100" x2="100" y2="30"/><line x1="100" y1="100" x2="160.6" y2="65"/><line x1="100" y1="100" x2="160.6" y2="135"/>
+                    <line x1="100" y1="100" x2="100" y2="170"/><line x1="100" y1="100" x2="39.4" y2="135"/><line x1="100" y1="100" x2="39.4" y2="65"/>
+                  </g>
+                  <polygon points="100,37 133,81 151,130 100,142 70,118 54,74" fill="rgba(219,175,46,.28)" stroke="hsl(43,60%,52%)" stroke-width="2" stroke-linejoin="round"/>
+                  <g fill="hsl(43,60%,52%)">
+                    <circle cx="100" cy="37" r="3"/><circle cx="133" cy="81" r="3"/><circle cx="151" cy="130" r="3"/><circle cx="100" cy="142" r="3"/><circle cx="70" cy="118" r="3"/><circle cx="54" cy="74" r="3"/>
+                  </g>
+                  <g fill="hsl(215,15%,32%)" font-size="9" font-family="sans-serif">
+                    <text x="100" y="20" text-anchor="middle">Bilgelik</text>
+                    <text x="166" y="63" text-anchor="start">Cesaret</text>
+                    <text x="166" y="140" text-anchor="start">İnsanlık</text>
+                    <text x="100" y="188" text-anchor="middle">Adalet</text>
+                    <text x="34" y="140" text-anchor="end">Ölçülülük</text>
+                    <text x="34" y="63" text-anchor="end">Aşkınlık</text>
+                  </g>
+                </svg>
+                <figcaption>24 karakter gücünün 6 erdem altında görünümü (örnek)</figcaption>
+              </figure>
+              <div class="kp-col">
+                <h4>İmza Güçlü Yönleri · İlk 5</h4>
+                <div class="kp-strength"><div class="kp-strength-top"><span>Merak</span><small>Bilgelik</small></div><div class="kp-bar"><i style="width:92%"></i></div></div>
+                <div class="kp-strength"><div class="kp-strength-top"><span>Sevgi</span><small>İnsanlık</small></div><div class="kp-bar"><i style="width:88%"></i></div></div>
+                <div class="kp-strength"><div class="kp-strength-top"><span>Yaratıcılık</span><small>Bilgelik</small></div><div class="kp-bar"><i style="width:85%"></i></div></div>
+                <div class="kp-strength"><div class="kp-strength-top"><span>Umut</span><small>Aşkınlık</small></div><div class="kp-bar"><i style="width:78%"></i></div></div>
+                <div class="kp-strength"><div class="kp-strength-top"><span>Nezaket</span><small>İnsanlık</small></div><div class="kp-bar"><i style="width:74%"></i></div></div>
+                <div class="kp-growth">
+                  <h4>Gelişime Açık Alanlar</h4>
+                  <span>Öz-denetim</span><span>Sebat</span><span>Liderlik</span>
+                </div>
+              </div>
+            </div>
+            <div class="kp-cta">
+              <p>Çocuğunuzun imza güçlü yönleri de tam olarak böyle bir profille görünür.</p>
+              <a href="https://eduentry.com/tr/kisilik-ornek-rapor" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Örnek Raporu Görüntüle</a>
+            </div>
+          </div>
+
           <h2>Çocuğumun En Güçlü Yönlerini Nasıl Keşfedebilirim?</h2>
 
           <p>İmza güçlü yönleri — kişinin en baskın 3–5 karakter özelliği — üç yöntemin birleşimiyle en güvenilir biçimde ortaya çıkar:</p>
