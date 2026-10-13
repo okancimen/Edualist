@@ -30,6 +30,9 @@ URLS = [
     # 2026-10-14 yeni yazılar: özgüvensiz/çekingen + telefon/ekran bağımlılığı (+ iç linkler)
     "https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/",
     "https://www.edualist.com/blog/cocugum-telefona-ekrana-bagimli/",
+    # 2026-10-14 EN sürümleri
+    "https://www.edualist.com/en/blog/shy-and-insecure-child/",
+    "https://www.edualist.com/en/blog/child-screen-phone-addiction/",
     "https://www.edualist.com/blog/cocugum-motivasyonunu-kaybetti/",
     "https://www.edualist.com/blog/anxious-generation-oyun-temelli-cocukluk/",
     # 2026-10-13 iç link: cocugunuzun → cocugumun (VIA) + .htaccess typo-slug 301 fix

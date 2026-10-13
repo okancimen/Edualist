@@ -5,6 +5,17 @@
   <url>
     <loc>https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/shy-and-insecure-child/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/"/>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/shy-and-insecure-child/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/shy-and-insecure-child/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/"/>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
@@ -14,6 +25,17 @@
   <url>
     <loc>https://www.edualist.com/blog/cocugum-telefona-ekrana-bagimli/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-telefona-ekrana-bagimli/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/child-screen-phone-addiction/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-telefona-ekrana-bagimli/"/>
+    <lastmod>2026-10-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/child-screen-phone-addiction/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-telefona-ekrana-bagimli/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/child-screen-phone-addiction/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-telefona-ekrana-bagimli/"/>
     <lastmod>2026-10-14</lastmod>
     <changefreq>monthly</changefreq>
