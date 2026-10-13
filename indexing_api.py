@@ -27,9 +27,11 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
-    # 2026-10-14 yeni yazı: çocuğum özgüvensiz ve çekingen (+ motivasyon iç link)
+    # 2026-10-14 yeni yazılar: özgüvensiz/çekingen + telefon/ekran bağımlılığı (+ iç linkler)
     "https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/",
+    "https://www.edualist.com/blog/cocugum-telefona-ekrana-bagimli/",
     "https://www.edualist.com/blog/cocugum-motivasyonunu-kaybetti/",
+    "https://www.edualist.com/blog/anxious-generation-oyun-temelli-cocukluk/",
     # 2026-10-13 iç link: cocugunuzun → cocugumun (VIA) + .htaccess typo-slug 301 fix
     "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
     "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",
