@@ -27,6 +27,9 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-15 testimonial carousel hizalama düzeltmesi (ana sayfalar)
+    "https://www.edualist.com/tr/",
+    "https://www.edualist.com/en/",
     # 2026-10-14 yeni EN çevirileri (5 yazı — en yüksek öncelik)
     "https://www.edualist.com/en/blog/child-wont-study/",
     "https://www.edualist.com/en/blog/child-exam-anxiety/",
