@@ -27,6 +27,10 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-14 HowTo şeması eklendi (EN how-to yazıları)
+    "https://www.edualist.com/en/blog/how-to-apply-dubai-school/",
+    "https://www.edualist.com/en/blog/how-to-pass-international-school-interview/",
+    "https://www.edualist.com/en/blog/cat4-test-dubai/",
     # 2026-10-14 bu oturumda eklenen/değişen sayfalar (Google kota sıfırlanınca öncelikli)
     "https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/",
     "https://www.edualist.com/blog/cocugum-telefona-ekrana-bagimli/",
