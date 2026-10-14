@@ -27,21 +27,25 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
-    # 2026-10-14 HowTo şeması eklendi (EN how-to yazıları)
-    "https://www.edualist.com/en/blog/how-to-apply-dubai-school/",
-    "https://www.edualist.com/en/blog/how-to-pass-international-school-interview/",
-    "https://www.edualist.com/en/blog/cat4-test-dubai/",
-    # 2026-10-14 bu oturumda eklenen/değişen sayfalar (Google kota sıfırlanınca öncelikli)
+    # 2026-10-14 yeni EN çevirileri (5 yazı — en yüksek öncelik)
+    "https://www.edualist.com/en/blog/child-wont-study/",
+    "https://www.edualist.com/en/blog/child-exam-anxiety/",
+    "https://www.edualist.com/en/blog/child-lost-motivation/",
+    "https://www.edualist.com/en/blog/third-culture-kids-guide/",
+    "https://www.edualist.com/en/blog/teen-moving-abroad-adjustment/",
+    # 2026-10-14 iç bağlantı/hreflang güncellenen sayfalar
+    "https://www.edualist.com/en/blog/anxious-generation-teen-mental-health/",
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/blog/cocugum-ders-calismak-istemiyor/",
+    "https://www.edualist.com/blog/cocugum-sinav-kaygisi-yasiyor/",
+    "https://www.edualist.com/blog/cocugum-motivasyonunu-kaybetti/",
+    "https://www.edualist.com/blog/ucuncu-kultur-cocugu-tck-rehberi/",
+    "https://www.edualist.com/blog/lise-yurt-disi-tasinma-adaptasyon/",
+    # 2026-10-14 title/meta kısaltılan yazılar
     "https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/",
     "https://www.edualist.com/blog/cocugum-telefona-ekrana-bagimli/",
     "https://www.edualist.com/en/blog/shy-and-insecure-child/",
     "https://www.edualist.com/en/blog/child-screen-phone-addiction/",
-    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
-    "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",
-    "https://www.edualist.com/blog/cocugum-motivasyonunu-kaybetti/",
-    "https://www.edualist.com/blog/anxious-generation-oyun-temelli-cocukluk/",
-    "https://www.edualist.com/blog/",
-    "https://www.edualist.com/en/blog/",
 ]
 
 # ──────────────────────────────────────────────────────────────────────────────
