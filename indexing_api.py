@@ -27,6 +27,23 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-15 İspanya — içerik önemli ölçüde zenginleştirildi (GSC not-indexed sorunu)
+    "https://www.edualist.com/blog/ispanya-okul-kayit-rehberi/",
+    # 2026-10-15 Dubai A-Level sayfalarına iç bağlantı eklendi (GSC not-indexed sorunu)
+    "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",
+    "https://www.edualist.com/en/blog/dubai-british-schools-a-level/",
+    # 2026-10-15 iç bağlantı güncellenen kaynak sayfalar (TR)
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
+    "https://www.edualist.com/blog/dubai-egitim-sistemi/",
+    "https://www.edualist.com/blog/dubai-amerikan-mufredat-ap-okullari/",
+    "https://www.edualist.com/blog/dubai-ib-okul-secimi/",
+    "https://www.edualist.com/blog/dubai-ozel-okul-mu-devlet-okulu-mu/",
+    # 2026-10-15 iç bağlantı güncellenen kaynak sayfalar (EN)
+    "https://www.edualist.com/en/blog/dubai-top-schools/",
+    "https://www.edualist.com/en/blog/dubai-international-schools-khda-fees-2026/",
+    "https://www.edualist.com/en/blog/dubai-education-system/",
+    # 2026-10-15 sitemap güncellendi (Holland EN lastmod düzeltmesi)
+    "https://www.edualist.com/sitemap.xml",
     # 2026-10-15 testimonial carousel hizalama düzeltmesi (ana sayfalar)
     "https://www.edualist.com/tr/",
     "https://www.edualist.com/en/",
