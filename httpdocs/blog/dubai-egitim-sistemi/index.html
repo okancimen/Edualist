@@ -355,14 +355,17 @@
                 }, {passive: true});
               });
 
-              // iframe focus alınca scroll konumunu kaydet
-              var savedY = 0;
+              // savedY: her zaman en güncel kullanıcı scroll pozisyonunu tutar
+              var savedY = window.scrollY;
               iw.addEventListener('focus', function(){ savedY = window.scrollY; });
 
-              // iframe focus'tayken programatik scroll olursa geri al
+              // iframe focus'tayken:
+              //   - kullanıcı scroll ediyorsa → savedY güncelle (izin ver)
+              //   - programatik scroll ise (bot yanıtı / scrollIntoView) → geri al
               window.addEventListener('scroll', function(){
-                if(document.activeElement === iw && !userScrolling){
-                  window.scrollTo(0, savedY);
+                if(document.activeElement === iw){
+                  if(userScrolling){ savedY = window.scrollY; }
+                  else { window.scrollTo(0, savedY); }
                 }
               });
             })();
