@@ -27,6 +27,17 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-15 SEO: servis sayfalarına blog küme bölümü + dubai-top-10-okullari yeni yazı
+    "https://www.edualist.com/blog/dubai-top-10-okullari/",
+    "https://www.edualist.com/en/blog/dubai-top-schools/",
+    "https://www.edualist.com/uluslararasi-okul-danismanligi/",
+    "https://www.edualist.com/uluslararasi-akademik-kocluk/",
+    "https://www.edualist.com/sitemap.xml",
+    # 2026-10-15 GSC "Discovered - not indexed" (N/A last crawled) — crawl önceliği artırıldı
+    "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
+    "https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/",
+    "https://www.edualist.com/en/blog/dubai-school-fees-2026/",
+    "https://www.edualist.com/gizlilik-politikasi/",
     # 2026-10-15 Footer: badge sayısı, bio metni, CTA etiketleri tüm sayfalarda güncellendi
     "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",
     "https://www.edualist.com/en/blog/dubai-british-schools-a-level/",
