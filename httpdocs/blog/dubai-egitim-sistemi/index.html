@@ -338,20 +338,32 @@
             (function(){
               var iw = document.getElementById('edubot-inline');
               if(!iw) return;
+
+              // Lazy load
               if('IntersectionObserver' in window){
                 var obs = new IntersectionObserver(function(e){ if(e[0].isIntersecting){ iw.src=iw.dataset.src; obs.disconnect(); } },{rootMargin:'200px'});
                 obs.observe(iw);
               } else { iw.src=iw.dataset.src; }
-              // Enter tuşu iframe focus'tayken parent sayfayı scroll ettirmesin
-              window.addEventListener('keydown', function(e){
-                if((e.key==='Enter'||e.keyCode===13) && document.activeElement===iw){
-                  e.preventDefault();
+
+              // Kullanıcının bilinçli scroll'unu (wheel/touch) takip et
+              var userScrolling = false;
+              ['wheel','touchmove','touchstart'].forEach(function(evt){
+                window.addEventListener(evt, function(){
+                  userScrolling = true;
+                  clearTimeout(window._uwt);
+                  window._uwt = setTimeout(function(){ userScrolling = false; }, 500);
+                }, {passive: true});
+              });
+
+              // iframe focus alınca scroll konumunu kaydet
+              var savedY = 0;
+              iw.addEventListener('focus', function(){ savedY = window.scrollY; });
+
+              // iframe focus'tayken programatik scroll olursa geri al
+              window.addEventListener('scroll', function(){
+                if(document.activeElement === iw && !userScrolling){
+                  window.scrollTo(0, savedY);
                 }
-              }, true);
-              // iframe'e focus geldiğinde scroll-into-view'ı engelle
-              iw.addEventListener('focus', function(){
-                var y = window.scrollY;
-                setTimeout(function(){ window.scrollTo(0, y); }, 0);
               });
             })();
           </script>
