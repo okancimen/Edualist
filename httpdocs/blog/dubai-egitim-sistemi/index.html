@@ -342,6 +342,17 @@
                 var obs = new IntersectionObserver(function(e){ if(e[0].isIntersecting){ iw.src=iw.dataset.src; obs.disconnect(); } },{rootMargin:'200px'});
                 obs.observe(iw);
               } else { iw.src=iw.dataset.src; }
+              // Enter tuşu iframe focus'tayken parent sayfayı scroll ettirmesin
+              window.addEventListener('keydown', function(e){
+                if((e.key==='Enter'||e.keyCode===13) && document.activeElement===iw){
+                  e.preventDefault();
+                }
+              }, true);
+              // iframe'e focus geldiğinde scroll-into-view'ı engelle
+              iw.addEventListener('focus', function(){
+                var y = window.scrollY;
+                setTimeout(function(){ window.scrollTo(0, y); }, 0);
+              });
             })();
           </script>
 
