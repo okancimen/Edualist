@@ -27,6 +27,13 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-15 Footer: badge sayısı, bio metni, CTA etiketleri tüm sayfalarda güncellendi
+    "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",
+    "https://www.edualist.com/en/blog/dubai-british-schools-a-level/",
+    "https://www.edualist.com/en/blog/best-ap-schools-dubai/",
+    "https://www.edualist.com/en/blog/dubai-international-schools-khda-fees-2026/",
+    "https://www.edualist.com/en/blog/dubai-ib-schools-graduate-success/",
+    "https://www.edualist.com/en/blog/childs-real-academic-level/",
     # 2026-10-15 İspanya — içerik önemli ölçüde zenginleştirildi (GSC not-indexed sorunu)
     "https://www.edualist.com/blog/ispanya-okul-kayit-rehberi/",
     # 2026-10-15 Dubai A-Level sayfalarına iç bağlantı eklendi (GSC not-indexed sorunu)
