@@ -345,27 +345,30 @@
                 obs.observe(iw);
               } else { iw.src=iw.dataset.src; }
 
-              // Kullanıcının bilinçli scroll'unu (wheel/touch) takip et
+              // Kullanıcının bilinçli scroll'unu takip et
               var userScrolling = false;
-              ['wheel','touchmove','touchstart'].forEach(function(evt){
+              ['wheel','touchmove'].forEach(function(evt){
                 window.addEventListener(evt, function(){
                   userScrolling = true;
                   clearTimeout(window._uwt);
-                  window._uwt = setTimeout(function(){ userScrolling = false; }, 500);
+                  window._uwt = setTimeout(function(){ userScrolling = false; }, 400);
                 }, {passive: true});
               });
 
-              // savedY: her zaman en güncel kullanıcı scroll pozisyonunu tutar
+              // savedY: focus öncesinde bile güncellenir — asla 0'da kalmaz
               var savedY = window.scrollY;
-              iw.addEventListener('focus', function(){ savedY = window.scrollY; });
+              var restoring = false;
 
-              // iframe focus'tayken:
-              //   - kullanıcı scroll ediyorsa → savedY güncelle (izin ver)
-              //   - programatik scroll ise (bot yanıtı / scrollIntoView) → geri al
               window.addEventListener('scroll', function(){
-                if(document.activeElement === iw){
-                  if(userScrolling){ savedY = window.scrollY; }
-                  else { window.scrollTo(0, savedY); }
+                if(restoring) return; // kendi scrollTo'muzun tetiklediği event'i yoksay
+                if(document.activeElement === iw && !userScrolling){
+                  // programatik scroll (bot yanıtı / scrollIntoView) → geri al
+                  restoring = true;
+                  window.scrollTo(0, savedY);
+                  setTimeout(function(){ restoring = false; }, 50);
+                } else {
+                  // kullanıcı scroll ediyor → konumu daima güncelle
+                  savedY = window.scrollY;
                 }
               });
             })();
