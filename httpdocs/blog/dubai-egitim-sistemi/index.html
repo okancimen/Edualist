@@ -338,39 +338,10 @@
             (function(){
               var iw = document.getElementById('edubot-inline');
               if(!iw) return;
-
-              // Lazy load
               if('IntersectionObserver' in window){
                 var obs = new IntersectionObserver(function(e){ if(e[0].isIntersecting){ iw.src=iw.dataset.src; obs.disconnect(); } },{rootMargin:'200px'});
                 obs.observe(iw);
               } else { iw.src=iw.dataset.src; }
-
-              // Kullanıcının bilinçli scroll'unu takip et
-              var userScrolling = false;
-              ['wheel','touchmove'].forEach(function(evt){
-                window.addEventListener(evt, function(){
-                  userScrolling = true;
-                  clearTimeout(window._uwt);
-                  window._uwt = setTimeout(function(){ userScrolling = false; }, 400);
-                }, {passive: true});
-              });
-
-              // savedY: focus öncesinde bile güncellenir — asla 0'da kalmaz
-              var savedY = window.scrollY;
-              var restoring = false;
-
-              window.addEventListener('scroll', function(){
-                if(restoring) return; // kendi scrollTo'muzun tetiklediği event'i yoksay
-                if(document.activeElement === iw && !userScrolling){
-                  // programatik scroll (bot yanıtı / scrollIntoView) → geri al
-                  restoring = true;
-                  window.scrollTo(0, savedY);
-                  setTimeout(function(){ restoring = false; }, 50);
-                } else {
-                  // kullanıcı scroll ediyor → konumu daima güncelle
-                  savedY = window.scrollY;
-                }
-              });
             })();
           </script>
 
