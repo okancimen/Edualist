@@ -89,8 +89,10 @@ ErrorDocument 404 /404.html
   # Strip index.html from all URLs → canonical trailing-slash form
   RewriteRule ^(.+)/index\.html$ /$1/ [R=301,L]
 
-  # 404 fix: URL with Turkish ü char → correct slug
-  RewriteRule ^blog/uluslararasi-okul-m%C3%BClakata%C4%B1-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakati-nasil-gecilir/ [R=301,L]
+  # 404 fix: URL with Turkish ü/ı chars → correct slug
+  # Apache 2.4+ decodes URL before matching, so Unicode form is required
+  RewriteRule ^blog/uluslararasi-okul-mülakatı-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakati-nasil-gecilir/ [R=301,L]
+  # Fallback: URL-encoded form for older Apache or proxies that pass encoded path
   RewriteRule ^blog/uluslararasi-okul-m%C3%BClakat%C4%B1-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakati-nasil-gecilir/ [R=301,L]
   # 404 fix: indexed slug with dotless ı (ogrenemıyor) → correct slug (ogrenemiyor)
   RewriteRule ^blog/cocugum-ingilizce-ogrenem%C4%B1yor/?$ /blog/cocugum-ingilizce-ogrenemiyor/ [R=301,L]

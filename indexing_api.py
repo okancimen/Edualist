@@ -27,6 +27,17 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-16 GSC coverage fix — redirect/404 sorunu olan URL'lerin hedefleri + düzeltilen sayfa
+    "https://www.edualist.com/blog/uluslararasi-okul-mulakati-nasil-gecilir/",  # 404 (mülakatı) → doğru slug
+    "https://www.edualist.com/en/blog/what-is-pisa/",                           # /blog/what-is-pisa/ redirect hedefi
+    "https://www.edualist.com/blog/dubai-gelmeden-once-bilmeniz-gerekenler/",   # /blog/dubai-school-guide/ redirect hedefi
+    "https://www.edualist.com/blog/ucuncu-kultur-cocugu-tck-rehberi/",          # /index.html suffix redirect hedefi
+    "https://www.edualist.com/blog/ib-diploma-universite-basvuru/",             # redirect error hedefi
+    "https://www.edualist.com/blog/turkiye-dubai-okul-ucreti-karsilastirma/",   # no-trailing-slash redirect hedefi
+    "https://www.edualist.com/uluslararasi-akademik-kocluk/",                   # /index.html redirect hedefi
+    # 2026-10-16 EduBot widget eklendi
+    "https://www.edualist.com/blog/ib-alevel-amerikan-mufredat-karsilastirma/",
+    "https://www.edualist.com/blog/dubai-egitim-sistemi/",
     # 2026-10-15 SEO: servis sayfalarına blog küme bölümü + dubai-top-10-okullari yeni yazı
     "https://www.edualist.com/blog/dubai-top-10-okullari/",
     "https://www.edualist.com/en/blog/dubai-top-schools/",
