@@ -27,7 +27,7 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
-    # 2026-10-17 PageSpeed fix — GTM load trigger removed (182 pages) + carousel reflow fix (TR+EN homepages)
+    # 2026-10-17 PageSpeed fix — GTM load trigger (182 pages) + carousel reflow + non-composited animations (styles.css)
     "https://www.edualist.com/tr/",
     "https://www.edualist.com/en/",
     # 2026-10-17 EN translations (3 posts) + TR hreflang updates
