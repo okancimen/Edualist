@@ -27,6 +27,16 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-17 PageSpeed fix — GTM load trigger removed (182 pages) + carousel reflow fix (TR+EN homepages)
+    "https://www.edualist.com/tr/",
+    "https://www.edualist.com/en/",
+    # 2026-10-17 EN translations (3 posts) + TR hreflang updates
+    "https://www.edualist.com/en/blog/tutoring-vs-academic-coaching/",
+    "https://www.edualist.com/en/blog/academic-coaching-for-ib/",
+    "https://www.edualist.com/en/blog/child-falling-behind-at-school/",
+    "https://www.edualist.com/blog/ozel-ders-mi-akademik-koc-mu/",
+    "https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/",
+    "https://www.edualist.com/blog/cocugum-akademik-olarak-geride-kaliyor/",
     # 2026-10-16 GSC coverage fix — redirect/404 sorunu olan URL'lerin hedefleri + düzeltilen sayfa
     "https://www.edualist.com/blog/uluslararasi-okul-mulakati-nasil-gecilir/",  # 404 (mülakatı) → doğru slug
     "https://www.edualist.com/en/blog/what-is-pisa/",                           # /blog/what-is-pisa/ redirect hedefi

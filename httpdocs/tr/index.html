@@ -3,7 +3,7 @@
 <head>
   <!-- Google Analytics -->
   <script>
-    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=AW-18221941570';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});window.addEventListener('load',function(){g();});})();
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=AW-18221941570';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});})();
   </script>
   <meta charset="UTF-8">
   <!-- Self-hosted fonts (Latin + Turkish subset): no third-party round trip -->
@@ -699,10 +699,12 @@
             }
           }
 
+          var cachedStep = 0;
+          function updateStep(){ cachedStep = cards.length > 1 ? (cards[1].offsetLeft - cards[0].offsetLeft) : cards[0].offsetWidth; }
+
           function goTo(idx) {
             current = Math.max(0, Math.min(idx, maxIndex()));
-            var step = cards.length > 1 ? (cards[1].offsetLeft - cards[0].offsetLeft) : cards[0].offsetWidth;
-            track.style.transform = 'translateX(-' + (current * step) + 'px)';
+            track.style.transform = 'translateX(-' + (current * cachedStep) + 'px)';
             prevBtn.disabled = current === 0;
             nextBtn.disabled = current >= maxIndex();
             dotsEl.querySelectorAll('.carousel-dot').forEach(function(d, i){ d.classList.toggle('active', i === current); });
@@ -710,8 +712,9 @@
 
           prevBtn.addEventListener('click', function(){ goTo(current - 1); });
           nextBtn.addEventListener('click', function(){ goTo(current + 1); });
-          window.addEventListener('resize', function(){ buildDots(); goTo(current); });
+          window.addEventListener('resize', function(){ buildDots(); updateStep(); goTo(current); });
           buildDots();
+          updateStep();
           goTo(0);
         })();
       </script>

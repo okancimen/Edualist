@@ -413,8 +413,9 @@
   <url>
     <loc>https://www.edualist.com/blog/cocugum-akademik-olarak-geride-kaliyor/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-akademik-olarak-geride-kaliyor/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/child-falling-behind-at-school/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-akademik-olarak-geride-kaliyor/"/>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1082,8 +1083,9 @@
   <url>
     <loc>https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/academic-coaching-for-ib/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/"/>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
@@ -1313,8 +1315,9 @@
   <url>
     <loc>https://www.edualist.com/blog/ozel-ders-mi-akademik-koc-mu/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/ozel-ders-mi-akademik-koc-mu/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/tutoring-vs-academic-coaching/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/ozel-ders-mi-akademik-koc-mu/"/>
-    <lastmod>2026-10-03</lastmod>
+    <lastmod>2026-10-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
@@ -1750,4 +1753,35 @@
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/tutoring-vs-academic-coaching/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/ozel-ders-mi-akademik-koc-mu/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/tutoring-vs-academic-coaching/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/ozel-ders-mi-akademik-koc-mu/"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/academic-coaching-for-ib/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/academic-coaching-for-ib/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/child-falling-behind-at-school/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-akademik-olarak-geride-kaliyor/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/child-falling-behind-at-school/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-akademik-olarak-geride-kaliyor/"/>
+    <lastmod>2026-10-17</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
