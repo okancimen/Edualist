@@ -27,6 +27,11 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-17 content fixes: school-holidays date table moved up, cocugunuzun-guclu-yonleri coaching CTA, dubai-semt-rehberi tables, khda-outstanding HTML fix
+    "https://www.edualist.com/en/blog/dubai-school-holidays/",
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    "https://www.edualist.com/blog/dubai-semt-rehberi/",
+    "https://www.edualist.com/en/blog/dubai-khda-outstanding-schools/",
     # 2026-10-17 PageSpeed fix — GTM load trigger (182 pages) + carousel reflow + non-composited animations (styles.css)
     "https://www.edualist.com/tr/",
     "https://www.edualist.com/en/",

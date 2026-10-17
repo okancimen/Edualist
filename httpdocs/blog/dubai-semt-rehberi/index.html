@@ -12,9 +12,9 @@
   <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
   <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.hero-blog-preview{padding:1.5rem 1.75rem}.hero-blog-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:1rem}.hero-blog-label{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}.hero-blog-all{font-size:.8rem;color:var(--text-muted);text-decoration:none;transition:color .2s}.hero-blog-all:hover{color:var(--accent)}.hero-blog-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:0}.hero-blog-item{border-top:1px solid var(--border);padding:.85rem 0}.hero-blog-item:first-child{border-top:none;padding-top:0}.hero-blog-item a{font-size:.92rem;font-weight:500;color:var(--text-primary);text-decoration:none;line-height:1.4;display:block;transition:color .2s}.hero-blog-item a:hover{color:var(--accent)}.hero-blog-item-meta{font-size:.75rem;color:var(--text-muted);margin-top:.2rem}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dubai Semt Rehberi 2026: Okula Göre Ev Seçimi | Edualist</title>
-  <meta name="description" content="Dubai'de ev seçerken okul bölgesini nasıl planlarsınız? Marina, JVC, Downtown ve Jumeirah karşılaştırması: bütçe, okula ulaşım ve semt seçimi rehberi.">
-  <meta name="keywords" content="dubai semt rehberi, dubai ev seçimi okul bölgesi, dubai marina okul, jvc okul yakınlığı, dubai jumeirah okul, downtown dubai okul, dubai expat bölge seçimi, dubai kira okul bütçe">
+  <title>Dubai'de Hangi Semtte Hangi Okul Var? JBR, Marina, JVC, Arabian Ranches, Downtown 2026 | Edualist</title>
+  <meta name="description" content="Dubai'de JBR, Marina, JVC, Arabian Ranches ve Downtown'da hangi okullar var? KHDA Outstanding okullar, ücretler, müfredat, kademe ve servis bilgisi — semt bazında tam rehber.">
+  <meta name="keywords" content="dubai semt rehberi, dubai okul bölgesi, jbr hangi okul, dubai marina okul, jvc hangi okullar var, arabian ranches okul, downtown dubai okul, jumeirah okul, dubai expat bölge seçimi, dubai okul ücretleri semt">
   <meta name="author" content="Özlem Çimen – Edualist">
   <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
   <link rel="canonical" href="https://www.edualist.com/blog/dubai-semt-rehberi/">
@@ -28,23 +28,23 @@
   <meta property="og:type"        content="article">
   <meta property="og:locale"       content="tr_TR">
   <meta property="og:locale:alternate" content="en_US">
-  <meta property="og:title"       content="Planning School Districts When Choosing a Home in Dubai 2026 | Edualist">
-  <meta property="og:description" content="How to match your neighbourhood choice to your school: Marina, JVC, Downtown compared. Budget formula, step-by-step planning, and school bus routes explained.">
+  <meta property="og:title"       content="Which Schools Are in JBR, Marina, JVC, Arabian Ranches, Downtown Dubai? 2026 | Edualist">
+  <meta property="og:description" content="KHDA Outstanding schools by Dubai neighbourhood: JBR, Marina, JVC, Arabian Ranches, Downtown. Fees, curriculum, year groups, and bus service — the complete area-by-area guide.">
   <meta property="og:url"         content="https://www.edualist.com/blog/dubai-semt-rehberi/">
   <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-semt.webp">
   <meta property="article:published_time" content="2026-06-23">
   <meta property="article:author" content="Özlem Çimen">
   <meta name="twitter:card"        content="summary_large_image">
-  <meta name="twitter:title"       content="Dubai'de Ev Seçerken Okul Bölgelerini Doğru Planlamak 2026 | Edualist">
-  <meta name="twitter:description" content="Marina, JVC ve Downtown'ı okul erişimi açısından karşılaştırıyoruz. Bütçe formülü, doğru karar sırası ve servis güzergahı rehberi.">
+  <meta name="twitter:title"       content="Dubai'de Hangi Semtte Hangi Okul Var? JBR, Marina, JVC, Arabian Ranches, Downtown 2026 | Edualist">
+  <meta name="twitter:description" content="JBR, Marina, JVC, Arabian Ranches ve Downtown'da KHDA Outstanding okullar: ücretler, müfredat, kademe ve servis bilgisi. Semt bazında tam rehber.">
   <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-semt.webp">
 
   <script type="application/ld+json">
   {
   "@context": "https://schema.org",
   "@type": "BlogPosting",
-  "headline": "Dubai'de Hangi Semtte Oturun? Okula Göre Bölge Rehberi 2026",
-  "description": "Dubai'de nerede oturmalısınız? Jumeirah, JVC, Arabian Ranches ve Emirates Hills bölgelerinin KHDA Outstanding okullarına göre karşılaştırması, kira aralıkları ve aile tipleri için öneriler.",
+  "headline": "Dubai'de Hangi Semtte Hangi Okul Var? JBR, Marina, JVC, Arabian Ranches, Downtown 2026",
+  "description": "Dubai'de JBR, Marina, JVC, Arabian Ranches ve Downtown'da hangi KHDA Outstanding okullar var? Ücretler, müfredat, kademe ve servis bilgisiyle semt bazında tam rehber.",
   "author": {
     "@type": "Person",
     "name": "Özlem Çimen", "jobTitle": "Uluslararası Eğitim Danışmanı",
@@ -56,8 +56,8 @@
     "url": "https://www.edualist.com"
   },
   "datePublished": "2026-06-23T00:00:00+00:00",
-  "dateModified": "2026-10-03T00:00:00+00:00",
-  "wordCount": 3200,
+  "dateModified": "2026-10-17T00:00:00+00:00",
+  "wordCount": 4800,
   "inLanguage": "tr",
   "url": "https://www.edualist.com/blog/dubai-semt-rehberi/",
   "image": "https://www.edualist.com/assets/blog/thumb-dubai-semt.webp",
@@ -81,7 +81,7 @@
     "itemListElement": [
       { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/" },
       { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
-      { "@type": "ListItem", "position": 3, "name": "Dubai'de Hangi Semtte Oturun? Okula Göre Bölge Rehberi 2026", "item": "https://www.edualist.com/blog/dubai-semt-rehberi/" }
+      { "@type": "ListItem", "position": 3, "name": "Dubai'de Hangi Semtte Hangi Okul Var? JBR, Marina, JVC, Arabian Ranches, Downtown 2026", "item": "https://www.edualist.com/blog/dubai-semt-rehberi/" }
     ]
   }
   </script>
@@ -184,25 +184,26 @@
           <span>23 Haziran 2026</span>
           <span><a href="../../hakkimda/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
           <span>18 dakika okuma</span>
-          <span>Güncellendi: 3 Ekim 2026</span>
+          <span>Güncellendi: 17 Ekim 2026</span>
         </div>
 
         <div class="blog-summary">
           <strong><span>Özet</span></strong>
-          <p>Dubai'de ev seçerken okul bölgelerini nasıl planlarsınız? Marina, JVC ve Downtown'ı okul erişimi ve bütçe açısından karşılaştırıyoruz; doğru karar sırası ve kira + okul ücreti formülünü anlatıyoruz.</p>
+          <p>Dubai'de JBR, Marina, JVC, Arabian Ranches ve Downtown'da hangi KHDA Outstanding okullar var? Her bölgenin okullarını müfredat, ücret, kademe ve servis güzergahıyla karşılaştırıyor; kira + okul ücreti planlamasını anlatıyoruz.</p>
         </div>
 
         <!-- TR -->
         <div>
-          <h1 class="blog-post-title">Dubai'de Ev Seçerken Okul Bölgelerini Doğru Planlamak: Marina, JVC, Downtown 2026</h1>
+          <h1 class="blog-post-title">Dubai'de Hangi Semtte Hangi Okul Var? JBR, Marina, JVC, Arabian Ranches, Downtown 2026</h1>
 
           <div class="blog-seo-tags">
             <span class="blog-seo-tag">Dubai semt rehberi</span>
-            <span class="blog-seo-tag">Dubai okul bölgesi</span>
+            <span class="blog-seo-tag">JBR hangi okul</span>
             <span class="blog-seo-tag">Dubai Marina okul</span>
-            <span class="blog-seo-tag">JVC okul yakınlığı</span>
-            <span class="blog-seo-tag">Jumeirah okul</span>
+            <span class="blog-seo-tag">JVC hangi okullar var</span>
+            <span class="blog-seo-tag">Arabian Ranches okul</span>
             <span class="blog-seo-tag">Downtown Dubai okul</span>
+            <span class="blog-seo-tag">Jumeirah okul</span>
           </div>
 
           <div class="blog-post-body">
@@ -255,6 +256,22 @@
             <p><strong>Artıları:</strong> Okul yakınlığı, plaj erişimi, alışveriş (Mall of the Emirates, Boxpark), güçlü expat topluluk.<br>
             <strong>Eksileri:</strong> Bütçe aileler için pahalı, trafik yönetimi zorlu.</p>
 
+            <div class="blog-cost-table" style="overflow-x:auto;margin:1.25rem 0 .5rem">
+              <p style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.6rem">Bu Bölgedeki KHDA Outstanding Okullar</p>
+              <table>
+                <thead>
+                  <tr><th>Okul</th><th>Müfredat</th><th>Kademe</th><th>Tahmini Yıllık Ücret (AED)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>JESS Umm Suqeim</td><td>British NC</td><td>FS1–Y13</td><td>47.000–76.000</td></tr>
+                  <tr><td>Horizons English School</td><td>British NC</td><td>FS1–Y13</td><td>43.000–68.000</td></tr>
+                  <tr><td>Safa Community School</td><td>British NC</td><td>FS1–Y13</td><td>38.000–58.000</td></tr>
+                  <tr><td>Dubai English Speaking School (DESS)</td><td>British NC</td><td>FS1–Y6</td><td>35.000–48.000</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:1.5rem"><em>Ücretler 2025–26 KHDA onaylı aralıklardır; yıl grubuna göre değişir. Kesin rakam için okul admissions ofisiyle iletişime geçin.</em></p>
+
             <h3>2. Emirates Hills / Al Barsha — IB ve Seçkin British Okul Ailelerine</h3>
 
             <p>Dubai'nin en prestijli villa bölgelerinden Emirates Hills; Dubai International Academy (DIA) gibi tam IB müfredatı sunan Outstanding okulun tam eşiğinde. Kings School Al Barsha ve Dubai British School Emirates Hills da bu bölgeye 10 dakika içinde ulaşılabilir.</p>
@@ -266,6 +283,21 @@
             <p><strong>Artıları:</strong> Üst segment okullara yakınlık, sakin villa hayatı (EH), Al Barsha'da uygun fiyat.<br>
             <strong>Eksileri:</strong> Emirates Hills çok pahalı; Metro bağlantısı zayıf.</p>
 
+            <div class="blog-cost-table" style="overflow-x:auto;margin:1.25rem 0 .5rem">
+              <p style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.6rem">Bu Bölgedeki / Yakınındaki KHDA Outstanding Okullar</p>
+              <table>
+                <thead>
+                  <tr><th>Okul</th><th>Müfredat</th><th>Kademe</th><th>Tahmini Yıllık Ücret (AED)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Dubai International Academy (DIA)</td><td>Tam IB (PYP / MYP / DP)</td><td>FS1–DP (3–19 yaş)</td><td>58.000–95.000</td></tr>
+                  <tr><td>Kings School Al Barsha</td><td>British NC</td><td>FS1–Y6</td><td>45.000–62.000</td></tr>
+                  <tr><td>Dubai British School Emirates Hills (DBSEH)</td><td>British NC</td><td>FS1–Y11</td><td>42.000–68.000</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:1.5rem"><em>DIA, Dubai'nin tam IB müfredatı sunan en prestijli okullarından biri. Kings Al Barsha yalnızca ilkokul kademesini kapsıyor — lise için paralel planlama gerekiyor.</em></p>
+
             <h3>3. JVC / Jumeirah Village Circle ve Jumeirah Park</h3>
 
             <p>Dubai'nin hızla büyüyen orta segment konut bölgesi. Nord Anglia International School ve Dubai British School Jumeirah Park bu bölgenin lider okulları. JVC, son birkaç yılda çocuklu ailelerin en çok tercih ettiği bölgeler arasına girdi: yeni yapılar, uygun fiyatlar ve artan altyapı.</p>
@@ -275,6 +307,20 @@
             <p><strong>Artıları:</strong> Uygun-orta fiyat aralığı, yeni yapılar, Nord Anglia ve DBSJP yakınlığı, gelişen altyapı.<br>
             <strong>Eksileri:</strong> Metro yok, alışveriş seçenekleri sınırlı (gelişiyor).</p>
 
+            <div class="blog-cost-table" style="overflow-x:auto;margin:1.25rem 0 .5rem">
+              <p style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.6rem">Bu Bölgedeki KHDA Outstanding Okullar</p>
+              <table>
+                <thead>
+                  <tr><th>Okul</th><th>Müfredat</th><th>Kademe</th><th>Tahmini Yıllık Ücret (AED)</th><th>Servis Kapsamı</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Nord Anglia International School (NAIS)</td><td>British NC + üst kademelerde IB</td><td>FS1–Y13</td><td>47.000–89.000</td><td>Marina / JBR dahil geniş hat</td></tr>
+                  <tr><td>Dubai British School Jumeirah Park (DBSJP)</td><td>British NC</td><td>FS1–Y11</td><td>38.000–65.000</td><td>JVC, Al Barsha, Marina güzergahı</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:1.5rem"><em>Her iki okul da Marina, JBR ve Al Barsha dahil geniş bir servis ağı sunuyor. Marina'da oturup bu okullara göndermek planlıyorsanız, kayıt öncesinde güzergah listesini mutlaka isteyin.</em></p>
+
             <h3>4. Arabian Ranches / Dubailand — Bahçeli Villa Arayanlar</h3>
 
             <p>Şehir merkezinden uzak ama kendine has bir topluluk duygusu olan bu bölge; JESS Arabian Ranches ve Victory Heights Primary School gibi güçlü okullarla çocuklu aileler için cazip bir seçenek. Geniş bahçeli villa arayanlar için Dubai'nin en uygun fiyatlı konut alanlarından biri.</p>
@@ -282,6 +328,21 @@
             <p><strong>Kira aralığı:</strong> 3+1 villa 130.000–200.000 AED/yıl</p>
             <p><strong>Artıları:</strong> Düşük yoğunluklu yaşam, geniş yeşil alan, JESS AR kalitesi, uygun villa fiyatları.<br>
             <strong>Eksileri:</strong> Şehir merkezine uzak (SZR'ye 30–40 dk), metro yok, lise kademesi için seçenek daha sınırlı.</p>
+
+            <div class="blog-cost-table" style="overflow-x:auto;margin:1.25rem 0 .5rem">
+              <p style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.6rem">Bu Bölgedeki KHDA Outstanding Okullar</p>
+              <table>
+                <thead>
+                  <tr><th>Okul</th><th>Müfredat</th><th>Kademe</th><th>Tahmini Yıllık Ücret (AED)</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>JESS Arabian Ranches Junior School</td><td>British NC</td><td>FS1–Y6</td><td>40.000–52.000</td></tr>
+                  <tr><td>JESS Arabian Ranches Senior School</td><td>British NC / IGCSE / A-Level</td><td>Y7–Y13</td><td>54.000–72.000</td></tr>
+                  <tr><td>Victory Heights Primary School</td><td>British NC</td><td>FS1–Y6</td><td>38.000–50.000</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:1.5rem"><em>Her üç okul da topluluk içinde; yürüme veya 5 dakika sürüş mesafesinde. Lise kademesi için JESS AR Senior en yakın seçenek; ötesi için şehre erişim planı yapılması gerekiyor.</em></p>
 
             <h3>5. Deira / Mirdif — Bütçe Odaklı Aileler için</h3>
 
@@ -294,7 +355,23 @@
 
             <h3>6. Downtown / Business Bay / DIFC — Okul Mesafesi Uzun</h3>
 
-            <p>Dubai'nin iş merkezi bölgesi: konutlar lüks, ulaşım Metro ile mükemmel. Ancak bu bölgede KHDA Outstanding okul yok. En yakın seçenekler (Jumeirah, Al Barsha) trafikle 25–40 dakika uzakta. Çocukları okul çağında olan aileler için ideal bölge değil, işyerine yakınlık zorunluluğu yoksa.</p>
+            <p>Dubai'nin iş merkezi bölgesi: konutlar lüks, ulaşım Metro ile mükemmel. Ancak bu bölgede KHDA Outstanding okul bulunmuyor. Bölgeye en yakın seçenekler şunlar:</p>
+
+            <div class="blog-cost-table" style="overflow-x:auto;margin:1rem 0 .5rem">
+              <p style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.6rem">Downtown / Business Bay'e En Yakın Okullar</p>
+              <table>
+                <thead>
+                  <tr><th>Okul</th><th>KHDA</th><th>Müfredat</th><th>Kademe</th><th>Tahmini Mesafe</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Hartland International School</td><td>Very Good</td><td>British NC</td><td>FS1–Y13</td><td>Sobha Hartland — 10–15 dk</td></tr>
+                  <tr><td>Swiss International Scientific School (SISS)</td><td>Outstanding</td><td>IB + İsviçre müfredatı</td><td>FS–Y13 (3–18 yaş)</td><td>Healthcare City — 15–20 dk</td></tr>
+                  <tr><td>GEMS Wellington (Bur Dubai)</td><td>Outstanding</td><td>British NC</td><td>FS1–Y13</td><td>Bur Dubai — 20–30 dk</td></tr>
+                  <tr><td>Kings Al Barsha / DIA Emirates Hills</td><td>Outstanding</td><td>British / IB</td><td>FS1–Y13</td><td>Al Barsha — 25–40 dk</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:1.5rem"><em>İş yeri Downtown'da olan aileler için Hartland ve SISS görece yakın seçenekler. Outstanding hedefleniyorsa SISS veya Bur Dubai'deki GEMS Wellington değerlendirilebilir. İş yeri Downtown'da değilse Jumeirah veya Al Barsha çok daha avantajlı.</em></p>
 
             <p><strong>Kira aralığı:</strong> 1+1 daire 100.000–160.000 AED/yıl · 3+1 daire 170.000–280.000 AED/yıl</p>
 
@@ -302,14 +379,23 @@
 
             <p>Dubai Marina ve JBR, şehre yeni gelen Türk ailelerin ilk aklına gelen bölgeler. Türkçe konuşan komşular, Türk market ve restoranlar, deniz manzarası ve Metro bağlantısı bu bölgeyi gerçekten cazip kılıyor. Pek çok aile, tanıdıklarının tavsiyesiyle ya da şehri daha görmeden doğrudan Marina veya JBR'a yöneliyor.</p>
 
-            <p>Ancak okul planlaması açısından kritik bir nokta: <strong>bu bölgede KHDA Outstanding okul bulunmuyor.</strong> Sabah trafiğinde hedef okula ulaşım süreleri:</p>
+            <p>Ancak okul planlaması açısından kritik bir nokta: <strong>bu bölgede KHDA Outstanding okul bulunmuyor.</strong> Marina'dan ulaşılabilecek en yakın Outstanding okullar ve sabah trafiğindeki sürüş süreleri:</p>
 
-            <ul style="margin:0.75rem 0 1rem 1.5rem;line-height:2">
-              <li>Nord Anglia International School (JVC) — 20–35 dakika</li>
-              <li>Dubai British School Jumeirah Park — 20–30 dakika</li>
-              <li>Kings School Al Barsha / DIA Emirates Hills — 25–40 dakika</li>
-              <li>JESS Umm Suqeim / Horizons English School — 35–50 dakika</li>
-            </ul>
+            <div class="blog-cost-table" style="overflow-x:auto;margin:1rem 0 .5rem">
+              <p style="font-size:.78rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:.6rem">Marina / JBR'dan Ulaşılabilen KHDA Outstanding Okullar</p>
+              <table>
+                <thead>
+                  <tr><th>Okul</th><th>Müfredat</th><th>Kademe</th><th>Tahmini Ücret (AED)</th><th>Sabah Trafiğinde Süre</th><th>Servis</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Nord Anglia International School (NAIS)</td><td>British NC + IB</td><td>FS1–Y13</td><td>47.000–89.000</td><td>20–30 dk</td><td>Evet — Marina/JBR hattı var</td></tr>
+                  <tr><td>Dubai British School Jumeirah Park (DBSJP)</td><td>British NC</td><td>FS1–Y11</td><td>38.000–65.000</td><td>20–30 dk</td><td>Evet — Marina güzergahı</td></tr>
+                  <tr><td>Kings School Al Barsha</td><td>British NC</td><td>FS1–Y6</td><td>45.000–62.000</td><td>25–35 dk</td><td>Sınırlı — doğrulanması gerekiyor</td></tr>
+                  <tr><td>JESS Umm Suqeim</td><td>British NC</td><td>FS1–Y13</td><td>47.000–76.000</td><td>35–50 dk</td><td>Servis güzergahı değişken</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <p style="font-size:.85rem;color:var(--text-muted);margin-bottom:1.5rem"><em>Servis güzergahları yıllara göre değişebilir. Kayıt öncesinde ilgili okulun admissions ofisinden Marina/JBR için aktif güzergah listesi mutlaka alınmalı.</em></p>
 
             <p><strong>Kira aralığı — Dubai Marina / JBR (2025–26):</strong> 1+1 daire 90.000–140.000 AED/yıl · 2+1 daire 130.000–200.000 AED/yıl</p>
             <p><strong>Artıları:</strong> En güçlü Türk topluluğu, Metro erişimi, sahil ve plaj, yoğun sosyal yaşam, uluslararası alışveriş ve restoran seçenekleri.<br>
