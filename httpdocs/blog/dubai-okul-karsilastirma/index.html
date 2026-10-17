@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});})();
+  </script>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai'de Hangi Okul Daha İyi? Repton, GEMS, Nord Anglia, JESS 2026 | Edualist</title>
+  <meta name="description" content="Repton, GEMS Wellington, Nord Anglia ve JESS'i Türk aile bakışıyla karşılaştırdık. KHDA dereceleri, müfredatlar, ücretler ve her okulun hangi çocuğa uyduğu — 2026.">
+  <meta name="keywords" content="repton dubai nasıl, gems wellington dubai, nord anglia dubai, jess dubai okul, dubai okul karşılaştırma, repton mi gems mi, dubai hangi okul daha iyi, repton dubai türkçe, nord anglia dubai türkçe, jess okul dubai, gems wellington türkçe, dubai okul seçimi, repton school dubai inceleme, gems wellington international school inceleme, nord anglia international school dubai inceleme, dubai uluslararası okul karşılaştırma 2026">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/blog/dubai-okul-karsilastirma/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-okul-karsilastirma/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-okul-karsilastirma/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="ai-catalog" type="application/json" href="/ai-catalog.json" title="AI Resource Catalog">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="tr_TR">
+  <meta property="og:title"       content="Repton, GEMS, Nord Anglia, JESS: Dubai'de Hangi Okul Daha İyi? 2026 Karşılaştırması">
+  <meta property="og:description" content="Dubai'nin en çok sorulan 4 okulunu Türk aile perspektifinden inceledik. KHDA dereceleri, müfredatlar, ücretler ve hangi okul hangi çocuğa uyuyor.">
+  <meta property="og:url"         content="https://www.edualist.com/blog/dubai-okul-karsilastirma/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-okul.webp">
+  <meta property="article:published_time" content="2026-10-17">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Repton, GEMS, Nord Anglia, JESS: Dubai'de Hangi Okul Daha İyi?">
+  <meta name="twitter:description" content="Dubai'nin en çok sorulan 4 okulunu Türk aile perspektifinden karşılaştırdık. KHDA, müfredat, ücret ve profil eşleşmesi.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-okul.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Dubai'de Hangi Okul Daha İyi? Repton, GEMS Wellington, Nord Anglia, JESS ve DIA Karşılaştırması 2026",
+    "description": "Repton, GEMS Wellington, Nord Anglia, JESS ve DIA'yı Türk aile bakışıyla karşılaştıran rehber. KHDA dereceleri, müfredatlar, ücret aralıkları ve her okulun hangi öğrenci profiline uyduğu.",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen", "jobTitle": "Uluslararası Eğitim Danışmanı",
+      "url": "https://www.edualist.com/hakkimda/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com"
+    },
+    "datePublished": "2026-10-17T00:00:00+00:00",
+    "dateModified": "2026-10-17T00:00:00+00:00",
+    "wordCount": 3100,
+    "inLanguage": "tr",
+    "url": "https://www.edualist.com/blog/dubai-okul-karsilastirma/",
+    "image": "https://www.edualist.com/assets/blog/thumb-dubai-okul.webp",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".blog-summary", ".blog-post-title"]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Repton, GEMS, Nord Anglia, JESS Karşılaştırması", "item": "https://www.edualist.com/blog/dubai-okul-karsilastirma/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Repton Dubai nasıl bir okul?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Repton Dubai, İngiltere'nin 450 yıllık köklü Repton School'unun Dubai şubesidir. KHDA Outstanding dereceli, British müfredatı (GCSE + A-Level), Nad Al Sheba kampüsünde. Küçük sınıf yapısı ve akademik disipliniyle tanınır. Yıllık ücret 55.000–85.000 AED aralığında. Akademik odaklı, İngiltere veya Commonwealth üniversitesini hedefleyen aileler için güçlü bir tercih."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "GEMS Wellington Dubai nasıl bir okul?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "GEMS Wellington International School, Dubai'nin en büyük ve en prestijli British okul kampüslerinden biridir. KHDA Outstanding dereceli, Al Sufouh'ta yer alır. EYFS'ten Year 13'e geniş kampüs, zengin ekstra müfredat ve yüksek IGCSE/A-Level sonuçları. Yıllık ücret 57.000–98.000 AED. Çok uluslu yapısıyla tanınır; birçok farklı milletten öğrenci barındırır."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Nord Anglia International School Dubai nasıl?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Nord Anglia International School Dubai, Jumeirah Park'ta yer alan KHDA Outstanding dereceli bir okuldur. British IGCSE + IB Diploma seçeneği sunar. MIT, UNICEF ve Juilliard iş birlikleriyle proje ve sanat ağırlıklı bir müfredat anlayışı var. Yıllık ücret 50.000–92.000 AED. Sadece akademik değil bütünsel gelişimi önemseyen aileler için ideal."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "JESS Dubai nasıl bir okul?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "JESS (Jumeirah English Speaking School), Dubai'nin en köklü British okullarından biridir. Umm Suqeim ve Arabian Ranches olmak üzere iki kampüsü de KHDA Outstanding dereceli. EYFS'ten Year 13'e kesintisiz eğitim. Türk aileler arasında en çok tercih edilen okulların başında gelir. Yıllık ücret 48.000–78.000 AED. Bekleme listesi uzun — erkenden başvurun."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Repton mu GEMS Wellington mi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "İkisi de KHDA Outstanding ve British müfredatı. Repton daha küçük ve akademik disiplin odaklı; GEMS Wellington daha büyük, daha kozmopolit ve ekstra müfredat açısından daha zengin. Repton, İngiltere üniversitesi hedefleyen ve birebir ilgi isteyen aileler için; GEMS Wellington, geniş kampüs ve çok uluslu ortamı tercih edenler için öne çıkar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'deki en iyi IB okulu hangisi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Dubai'deki en prestijli tam IB okulu Dubai International Academy (DIA) Emirates Hills'tir — PYP, MYP ve Diploma programlarının üçünü de sunar ve KHDA Outstanding dereceli. Nord Anglia da IGCSE sonrası IB Diploma seçeneği sunuyor. IB hedefi kesin ve bütçe esnekse DIA birinci tercih olmalı."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    window.addEventListener("load",function(){setTimeout(function(){(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");},5000);});
+  </script>
+
+  <link rel="preload" as="image" href="../../assets/hero-bg.webp" type="image/webp">
+  <link rel="preload" as="style" href="../../styles.css?v=15">
+  <link rel="stylesheet" href="../../styles.css?v=15" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../styles.css?v=15"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}</style>
+  <style id="nav-breakpoint">@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/tr/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/">Dubai'de Okul</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/">Danışmanlık</a></li>
+        <li><a href="/uluslararasi-akademik-kocluk/">Akademik Koçluk</a></li>
+        <li><a href="/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">93</span></a></li>
+        <li><a href="/neden-biz/">Hakkımızda</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn active" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span>Blog'a Dön</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>17 Ekim 2026</span>
+          <span><a href="../../hakkimda/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>14 dakika okuma</span>
+        </div>
+
+        <div class="blog-summary">
+          <strong>Özet</strong>
+          <p>Dubai'nin en çok sorulan dört okulu — Repton, GEMS Wellington, Nord Anglia ve JESS — Türk aile perspektifinden yan yana. Her okulun KHDA derecesi, müfredatı, ücret aralığı ve en önemlisi hangi çocuk profiline uyduğu. Okul adını duymuşsunuzdur; bu yazı neyin doğru olduğunu anlamanıza yardımcı olacak.</p>
+        </div>
+
+        <div class="blog-post-body">
+          <h1 class="blog-post-title">Dubai'de Hangi Okul Daha İyi? Repton, GEMS, Nord Anglia, JESS ve DIA Karşılaştırması 2026</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">Repton Dubai nasıl</span>
+            <span class="blog-seo-tag">GEMS Wellington Dubai</span>
+            <span class="blog-seo-tag">Nord Anglia Dubai</span>
+            <span class="blog-seo-tag">JESS Dubai okul</span>
+            <span class="blog-seo-tag">Dubai okul karşılaştırma 2026</span>
+            <span class="blog-seo-tag">Repton mi GEMS mi</span>
+            <span class="blog-seo-tag">Dubai hangi okul daha iyi</span>
+          </div>
+
+          <p>Dubai'ye taşınmaya karar veren her Türk ailenin bir noktada şu soruyu sorduğunu biliyorum: <em>"Repton iyi mi, yoksa GEMS mi? Nord Anglia'yı duyduk ama JESS daha mı iyi?"</em> Bu isimler WhatsApp gruplarında, expat toplantılarında, tanıdık tavsiyelerinde sürekli çıkıyor. Ama Türkçe kaynak neredeyse yok.</p>
+
+          <p>Bu yazıda Dubai'nin en sık sorulan dört okulunu — Repton, GEMS Wellington, Nord Anglia ve JESS — ve IB için öne çıkan DIA'yı Türk aile gözüyle karşılaştırıyorum. Yıllar içinde bu okulları ziyaret ettim, mezunlarıyla çalıştım ve ailelerden onlarca geri bildirim aldım. Buradaki değerlendirmeler resmi KHDA verilerine dayanıyor ve kişisel gözlemlerimle destekleniyor.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="../../assets/founder-avatar-104.webp" type="image/webp">
+              <img src="../../assets/founder-avatar-104.webp" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Koçtan not</span>
+              <p>Çocuğumu hem Nord Anglia'ya hem de DAA'ya kaydettirdim — iki farklı aşamada, iki farklı nedenle. Bu deneyim bana şunu öğretti: iyi okul her ailenin listesinde farklı bir okul olabilir. Bu yazıdaki amacım size "en iyi" okulu söylemek değil, hangi okulun hangi aileye uyduğunu netleştirmek.</p>
+            </div>
+          </div>
+
+          <div class="blog-callout" style="background:hsla(43,60%,88%,0.5);border-left:4px solid var(--accent);">
+            <strong>Hızlı özet:</strong> Repton, GEMS Wellington, Nord Anglia, JESS ve DIA'nın tamamı KHDA Outstanding dereceli. Fark müfredatta, kampüs kültüründe, lokasyonda ve çocuk profilinde. Aşağıda okul okul ayrıntılar var.
+          </div>
+
+          <h2>Karşılaştırma Tablosu: 5 Okul Yan Yana</h2>
+
+          <div class="blog-verdict">
+            <h3>Repton, GEMS, Nord Anglia, JESS, DIA — 2026 Özeti</h3>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Repton Dubai</div>
+              <div class="blog-verdict-val">Outstanding · British (GCSE + A-Level) · 55K–85K AED · Nad Al Sheba · Küçük sınıf, akademik disiplin</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">GEMS Wellington Int'l</div>
+              <div class="blog-verdict-val">Outstanding · British (GCSE + A-Level) · 57K–98K AED · Al Sufouh · Büyük kampüs, çok uluslu</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Nord Anglia Dubai</div>
+              <div class="blog-verdict-val">Outstanding · British + IB Diploma · 50K–92K AED · Jumeirah Park · Sanat, proje, bütünsel gelişim</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">JESS (Umm Suqeim)</div>
+              <div class="blog-verdict-val">Outstanding · British (EYFS–Year 13) · 48K–78K AED · Umm Suqeim · Köklü, Türk aileler arasında en yaygın</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">DIA Emirates Hills</div>
+              <div class="blog-verdict-val">Outstanding · Tam IB (PYP+MYP+DP) · 65K–95K AED · Emirates Hills · Global okul, araştırma odaklı</div>
+            </div>
+          </div>
+
+          <div class="blog-summary">
+            <strong>Bu yazıda:</strong> Her okulun ayrıntılı profili · Güçlü yönler ve dikkat noktaları · Hangi aile profili hangi okula uyuyor · Sık sorulan sorular (Repton mu GEMS mi? Nord Anglia mı JESS mi?)
+          </div>
+
+          <h2>Repton School Dubai — Detaylı Değerlendirme</h2>
+
+          <p>Repton Dubai, İngiltere'nin 1557 yılında kurulan Repton School'unun Dubai ayağıdır. Yani adın arkasında 450 yılı aşkın bir İngiliz eğitim geleneği var. Bu geçmiş, okulun akademik kültürüne de yansıyor: yapılandırılmış müfredat, güçlü öğrenci-öğretmen ilişkisi ve sonuç odaklı öğrenme ortamı.</p>
+
+          <h3>KHDA Derecesi ve Akademik Performans</h3>
+          <p>KHDA Outstanding. A-Level ve IGCSE sonuçları Dubai ortalamasının üzerinde. Oxbridge dahil İngiltere'nin önde gelen üniversitelerine yerleşim oranı yüksek.</p>
+
+          <h3>Müfredat</h3>
+          <p>Saf British National Curriculum — EYFS, KS1, KS2, KS3, GCSE ve A-Level. IB seçeneği yok. Hedefi İngiltere veya Commonwealth üniversitesi olan aileler için ideal zemin.</p>
+
+          <h3>Ücret Aralığı (2026)</h3>
+          <p>Foundation/FS1: ~55.000 AED · Primary ortalaması: ~65.000 AED · Secondary: ~78.000–85.000 AED. Kayıt ücreti ve üniforma bu rakama dahil değil.</p>
+
+          <h3>Kampüs ve Lokasyon</h3>
+          <p>Nad Al Sheba'da, Al Meydan yakınında geniş ve modern kampüs. Servis ağı kapsamlı — JVC, Motor City, Dubai Hills ve Downtown'dan servis var. Marina veya JBR'dan uzak; yaklaşık 30–40 dakika.</p>
+
+          <h3>Türk Aileler İçin Değerlendirme</h3>
+          <p>Repton'daki Türk öğrenci oranı düşük ama öğrenciler hızla uyum sağlıyor. EAL (English as an Additional Language) desteği var. Okul, İngiltere'ye üniversite gönderen aileler için birinci sınıf bir seçenek. Küçük sınıf yapısı sayesinde öğretmenler her öğrenciyi tanıyor — bu Türk ailelerden sıkça duyduğum bir artı.</p>
+
+          <div class="blog-callout">
+            <strong>Kimler için?</strong> İngiltere veya Commonwealth üniversitesi hedefleyen, akademik disiplin isteyen, birebir ilgiyi önemseyen ve Marina/JBR dışında bir semtte oturan aileler.
+          </div>
+
+          <h2>GEMS Wellington International School — Detaylı Değerlendirme</h2>
+
+          <p>GEMS Wellington Dubai'nin en tanınan British okul markası. Al Sufouh'taki kampüs, büyüklüğü ve olanakları bakımından Dubai'deki okulların en iyilerinden biri. Öğrenci profili son derece çeşitli — 100'den fazla farklı milletten öğrenci var.</p>
+
+          <h3>KHDA Derecesi ve Akademik Performans</h3>
+          <p>KHDA Outstanding. IGCSE ve A-Level sonuçları güçlü. Hem İngiltere hem de global üniversitelere güçlü yerleşim geçmişi. GEMS grubu içinde Wellington, en yüksek akademik kalite standardını temsil ediyor.</p>
+
+          <h3>Müfredat</h3>
+          <p>British National Curriculum (EYFS → A-Level). IB yok. Geniş seçmeli ders yelpazesi özellikle secondary kademede belirginleşiyor. Sanat, müzik, spor ve teknoloji programları kapsamlı.</p>
+
+          <h3>Ücret Aralığı (2026)</h3>
+          <p>FS1/2: ~57.000 AED · Primary ortalaması: ~72.000 AED · Secondary: ~88.000–98.000 AED. Dubai'deki en yüksek British okul ücretlerinden biri. İşveren eğitim yardımı olan aileler için genellikle karşılanabilir seviyede.</p>
+
+          <h3>Kampüs ve Lokasyon</h3>
+          <p>Al Sufouh — Dubai Marina, JBR ve Palm Jumeirah'a yakın. Bu bölgelerde oturan aileler için coğrafi avantajlı. Büyük spor tesisleri, olimpik havuz, geniş oyun alanları.</p>
+
+          <h3>Türk Aileler İçin Değerlendirme</h3>
+          <p>Türk öğrenci oranı Repton'dan biraz daha yüksek. Çok uluslu ortam çocukların uluslararası sosyal ağ kurmasını kolaylaştırıyor. Okul büyük olduğu için bazı aileler "anonim" hissedebiliyor — birebir ilgi isteyen aileler için bu bir dezavantaj. EAL desteği iyi ama büyük sınıf yapısında dikkat gerekebilir.</p>
+
+          <div class="blog-callout">
+            <strong>Kimler için?</strong> Marina/JBR/Palm bölgesinde oturan, büyük ve canlı kampüs isteyen, çok uluslu ortamı değerli bulan ve geniş ekstra müfredat öncelik olan aileler.
+          </div>
+
+          <div class="blog-post-cta glass" style="margin:2rem 0">
+            <h3>Repton mu, GEMS mi — çocuğunuz için hangisi doğru?</h3>
+            <p>Okul listesini daraltmak ve başvuru takvimi oluşturmak için ücretsiz görüşme planlayın.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary" style="display:inline-flex">Ücretsiz Görüşme Planla</a>
+          </div>
+
+          <h2>Nord Anglia International School Dubai — Detaylı Değerlendirme</h2>
+
+          <p>Nord Anglia, 30'dan fazla ülkede okulu olan küresel bir eğitim zinciri. Dubai şubesi Jumeirah Park'ta, görece yeni ve modern bir kampüste. Sadece akademik sonuçlarla değil, eğitim felsefesiyle de öne çıkıyor.</p>
+
+          <h3>KHDA Derecesi ve Akademik Performans</h3>
+          <p>KHDA Outstanding. IGCSE sonuçları güçlü. IB Diploma sonuçları da yüksek — 40+ puan alan mezunlar oluyor. MIT ve Juilliard iş birlikleri sayesinde bilim-teknoloji ve sanat alanında zengin proje programları sunuyor.</p>
+
+          <h3>Müfredat</h3>
+          <p>Primary ve secondary'de British IGCSE; ardından seçimli IB Diploma Programme. A-Level yok. IB hedefleyen ama tam IB okulu (PYP'ten başlayan) istemeyenler için iyi bir denge noktası.</p>
+
+          <h3>Ücret Aralığı (2026)</h3>
+          <p>FS1/2: ~50.000 AED · Primary ortalaması: ~68.000 AED · Secondary: ~80.000–92.000 AED. Benzer kalibredeki okullarla rekabetçi. Servis ücretleri kampüs konumu nedeniyle bazı semtlerden eklenebilir.</p>
+
+          <h3>Kampüs ve Lokasyon</h3>
+          <p>Jumeirah Park — JVC, Motor City ve Sports City'ye yakın. Marina'dan yaklaşık 15–20 dakika. Kampüs yeni, temiz ve açık alan olanakları iyi. Sınıf büyüklükleri görece küçük.</p>
+
+          <h3>Türk Aileler İçin Değerlendirme</h3>
+          <p>Nord Anglia'nın güçlü yanı, sadece ders notuna bakmıyor olması. Müzik, drama, spor, bilim projeleri — bütünsel bir gelişim vurgusu var. Türk aileler arasında giderek daha çok bilinen bir okul. Jumeirah Park ve JVC'de oturanlar için lojistik olarak çok rahat. IB yapmak isteyenler için güvenilir bir yol sunuyor.</p>
+
+          <div class="blog-callout">
+            <strong>Kimler için?</strong> Bütünsel gelişimi (sanat, spor, proje) akademik sonuç kadar önemseyen, IB Diploma yapmayı düşünen, JVC veya Jumeirah Park bölgesinde oturan aileler.
+          </div>
+
+          <h2>JESS — Jumeirah English Speaking School</h2>
+
+          <p>JESS, Dubai'nin en köklü British okullarından biri. 1975'te kurulan okul, hem Umm Suqeim hem de Arabian Ranches kampüsleriyle iki ayrı lokasyonda hizmet veriyor. Her iki kampüs de KHDA Outstanding dereceli.</p>
+
+          <h3>KHDA Derecesi ve Akademik Performans</h3>
+          <p>Her iki kampüs Outstanding. IGCSE ve A-Level sonuçları Dubai ortalamasının belirgin üzerinde. Mezunların önemli bir bölümü Birleşik Krallık'ta okula yerleşiyor.</p>
+
+          <h3>Müfredat</h3>
+          <p>Saf British National Curriculum — EYFS, KS1, KS2, KS3, GCSE, A-Level. IB yok. Umm Suqeim secondary için primary'den doğal bir devam sağlıyor.</p>
+
+          <h3>Ücret Aralığı (2026)</h3>
+          <p>FS1: ~48.000 AED · Primary ortalaması: ~60.000 AED · Secondary: ~72.000–78.000 AED. Dubai'deki Outstanding okullar arasında görece uygun fiyat-kalite dengesi sunuyor.</p>
+
+          <h3>Kampüs ve Lokasyon</h3>
+          <p>Umm Suqeim kampüsü Jumeirah koridorunda, Kite Beach yakınında. Şehir merkezine ve Marina'ya eşit mesafede. Sınıf büyüklükleri orta (25–28 öğrenci). Arabian Ranches kampüsü o bölgede oturan aileler için ideal.</p>
+
+          <h3>Türk Aileler İçin Değerlendirme</h3>
+          <p>JESS, Türk ailelerin en sık söylediği okul adlarından biri. Bunun iki nedeni var: köklü güvenilirliği ve Türk expat topluluğuyla örtüşen lokasyonu (Jumeirah, Umm Suqeim). EAL desteği iyi. Bekleme listesi Dubai'nin en uzunlarından — bazı sınıflar için 2–3 yıl bekleme olabiliyor. <strong>Erken başvurun.</strong></p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="../../assets/founder-avatar-104.webp" type="image/webp">
+              <img src="../../assets/founder-avatar-104.webp" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Koçtan not</span>
+              <p>JESS için çok ailede şunu gördüm: okul adı o kadar çok duyulmuş ki herkes birinci tercih olarak yazıyor. Bekleme listesi uzun, kontenjan sınırlı. Sonuç: JESS reddedilince panik. Mutlaka ikinci ve üçüncü tercihle de başvurun — Horizons, Safa Community School veya GEMS Wellington gibi seçenekler JESS kadar iyi olabilir.</p>
+            </div>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Kimler için?</strong> Jumeirah veya Umm Suqeim bölgesinde oturan, köklü British okulunu tercih eden, uygun fiyat-kalite dengesi arayan aileler — ama bekleme listesine erkenden girin.
+          </div>
+
+          <h2>DIA Emirates Hills — IB'yi Ciddiye Alanlar İçin</h2>
+
+          <p>Dubai International Academy (DIA) Emirates Hills, Dubai'nin en prestijli tam IB okuludur. PYP (ilkokul), MYP (ortaokul) ve Diploma Programme (lise) üçünü de aynı çatı altında sunuyor — bu Dubai'de nadir. IB hedefliyseniz ve bütçeniz uygunsa birinci tercih olmalı.</p>
+
+          <h3>KHDA Derecesi ve Ücretler</h3>
+          <p>Outstanding. IB Diploma ortalama puanı Dubai'nin en yükseklerinden. Ücretler: FS1 ~65.000 AED, Primary ortalama ~78.000 AED, Diploma ~90.000–95.000 AED.</p>
+
+          <h3>Türk Aileler İçin Değerlendirme</h3>
+          <p>Türk öğrenci oranı diğer okullara kıyasla daha yüksek — bu hem sosyal ortamı kolaylaştırıyor hem de Türk aile ağı güçlü. Global üniversite başvurusunda — özellikle Hollanda, Almanya, Kanada — IB Diploma çok değerli. Türkiye üniversite hedefi olan aileler de IB Diploma ile başvurabilir.</p>
+
+          <div class="blog-callout">
+            <strong>Kimler için?</strong> IB Diploma hedefleyen, global üniversite yolunu planlayan, Emirates Hills veya Al Barsha bölgesinde oturan ve bütçe esnekliği olan aileler.
+          </div>
+
+          <h2>Hangi Okul Hangi Aileye Uyuyor?</h2>
+
+          <div class="blog-verdict">
+            <h3>Profil → Okul Eşleştirmesi</h3>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">İngiltere üniversitesi, disiplin odaklı</div>
+              <div class="blog-verdict-val">Repton Dubai veya Dubai College</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Büyük kampüs, çok uluslu ortam, Marina/JBR</div>
+              <div class="blog-verdict-val">GEMS Wellington International</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Bütünsel gelişim + IB Diploma yolu</div>
+              <div class="blog-verdict-val">Nord Anglia International School</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Köklü British, Jumeirah bölgesi</div>
+              <div class="blog-verdict-val">JESS Umm Suqeim</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Tam IB (PYP'ten Diploma'ya), global okul</div>
+              <div class="blog-verdict-val">DIA Emirates Hills</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">Arabian Ranches bölgesi</div>
+              <div class="blog-verdict-val">JESS Arabian Ranches</div>
+            </div>
+            <div class="blog-verdict-row">
+              <div class="blog-verdict-dot"></div>
+              <div class="blog-verdict-label">JVC veya Jumeirah Park bölgesi</div>
+              <div class="blog-verdict-val">Nord Anglia veya Dubai British School JP</div>
+            </div>
+          </div>
+
+          <h2>Sık Sorulan Karşılaştırmalar</h2>
+
+          <h3>Repton mu, GEMS Wellington mi?</h3>
+          <p>İkisi de Outstanding ve British. Repton daha küçük, daha akademik disiplinli ve İngiltere geleneğine daha yakın. GEMS Wellington daha büyük, daha kozmopolit, ekstra müfredat açısından çok daha zengin. Repton birebir ilgi ve odaklı akademik gelişim için; GEMS Wellington geniş kampüs ve çok uluslu deneyim için öne çıkar. Bölge de belirleyici: Nad Al Sheba'da mı oturuyorsunuz, yoksa Marina'da mı?</p>
+
+          <h3>Nord Anglia mı, JESS mi?</h3>
+          <p>İkisi de Outstanding. JESS daha köklü ve Türk aileler arasında daha yaygın bilinir; ama bekleme listesi çok uzun. Nord Anglia daha yeni, IB seçeneği var ve sanat-proje odaklı yaklaşımıyla farklılaşıyor. JVC veya Jumeirah Park'ta oturuyorsanız Nord Anglia lojistik açıdan çok daha rahat. Umm Suqeim veya Jumeirah'taysan JESS doğal tercih oluyor.</p>
+
+          <h3>JESS mi, DIA mı?</h3>
+          <p>Müfredat farkı belirleyici: JESS British (A-Level), DIA tam IB. Çocuğunuzun üniversite hedefi ne? İngiltere veya Avustralya ise JESS daha uygun; global (Hollanda, Kanada, Almanya, ABD) veya Türkiye-Boğaziçi hedefli bir IB profili istiyorsanız DIA kesinlikle düşünülmeli.</p>
+
+          <h2>Başvuru Zamanlaması: Erkenden Başlayın</h2>
+
+          <p>Bu beş okulun tamamında bekleme listeleri var. Özellikle JESS ve DIA'da talep, kontenjanın çok üzerinde. Genel kural:</p>
+
+          <ul style="margin:0.5rem 0 1.25rem 1.5rem;color:var(--text-dark);font-size:1.05rem;line-height:2;">
+            <li>Dubai'ye taşınma tarihiniz 2 yıldan uzunsa — hemen liste kaydı açın</li>
+            <li>1 yıl içinde taşınacaksanız — birden fazla okula eş zamanlı başvurun</li>
+            <li>Her okulun başvuru formunu ve gerekli belgeleri ayrı ayrı takip edin</li>
+            <li>Okul turu talep edin — çocuğunuzu yanınızda götürün</li>
+          </ul>
+
+          <p>Başvuru takvimi ve belge hazırlığı için <a href="/blog/dubai-okul-basvuru-nasil-yapilir/">Dubai'de okul başvurusu nasıl yapılır</a> rehberimize bakın. Bekleme listesi stratejisi için <a href="/blog/dubai-okul-bekleme-listesi/">Dubai okul bekleme listesi rehberi</a> detaylı bilgi sunuyor.</p>
+
+          <div class="blog-callout">
+            <strong>Müfredat karşılaştırması:</strong> IB mi, A-Level mi, Amerikan mı — hangi müfredat çocuğunuza uygun ve hangi üniversite kapısını açıyor? <a href="/blog/ib-alevel-amerikan-mufredat-karsilastirma/">Detaylı müfredat karşılaştırması için bu rehbere bakın.</a>
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Hangi okul çocuğunuza uyuyor — birlikte netleştirelim</h3>
+            <p>Repton, GEMS, Nord Anglia, JESS, DIA veya başka bir okul — çocuğunuzun profilini, müfredat hedefini ve başvuru takvimini Özlem Çimen ile birebir görüşmede ele alın.</p>
+            <div class="cta-btn-row">
+              <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary">Ücretsiz Görüşme Planla</a>
+              <a href="/dubai/" class="btn btn-secondary">Dubai Okul Danışmanlığı →</a>
+            </div>
+          </div>
+
+          <aside class="blog-author-box" style="display:flex;gap:1.1rem;align-items:flex-start;margin:2.5rem 0;padding:1.4rem 1.5rem;border:1px solid var(--border-card,rgba(11,33,58,.08));border-left:3px solid var(--accent,#DBAF2E);border-radius:10px;background:var(--bg-card,rgba(11,33,58,.02))">
+            <picture>
+              <source srcset="/assets/founder-avatar-160.webp" type="image/webp">
+              <img src="/assets/founder-avatar-160.webp" alt="Özlem Çimen" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)">
+            </picture>
+            <div>
+              <p style="margin:0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Yazar</p>
+              <p style="margin:.15rem 0 .4rem;font-size:1.1rem;font-weight:700"><a href="/hakkimda/" style="color:var(--primary,#0b213a);text-decoration:none">Özlem Çimen</a></p>
+              <p style="margin:0;font-size:.95rem;line-height:1.7">Uluslararası eğitim danışmanı ve Edualist'in kurucusu. 20 yılı aşkın süre TED İstanbul Koleji, ENKA Okulları ve IICS'te öğretmen, bölüm başkanı ve yönetici olarak çalıştı; çocuklarını 5 ülkede uluslararası okullarda büyüttü.</p>
+              <p style="margin:.5rem 0 0;font-size:.9rem"><a href="/hakkimda/" style="color:var(--accent-hover,#b8921f);font-weight:600">Özlem Çimen hakkında →</a></p>
+            </div>
+          </aside>
+
+          <aside class="blog-cluster-box" style="margin:2rem 0;padding:1.4rem 1.5rem;border-radius:10px;background:var(--bg-warm-secondary,#f3efe8)">
+            <p style="margin:0 0 .8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Bu konudaki tüm rehberler</p>
+            <p style="margin:0 0 .9rem;font-size:1.15rem;font-weight:700;color:var(--primary,#0b213a)">Dubai'de Okul</p>
+            <ul style="margin:0;padding-left:1.1rem;columns:2 260px;column-gap:2rem;line-height:1.6">
+              <li style="break-inside:avoid"><a href="/blog/dubai-en-iyi-uluslararasi-okullar/" style="color:var(--primary,#0b213a)">Dubai'de En İyi 10 Okul: KHDA Outstanding Listesi</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-semt-rehberi/" style="color:var(--primary,#0b213a)">Dubai'de Hangi Semtte Hangi Okul Var?</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-egitim-sistemi/" style="color:var(--primary,#0b213a)">Dubai'de Eğitim Sistemi Nasıl İşler?</a></li>
+              <li style="break-inside:avoid"><a href="/blog/khda-notu-nedir/" style="color:var(--primary,#0b213a)">KHDA Notu Nedir?</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-ib-okul-secimi/" style="color:var(--primary,#0b213a)">Dubai'de IB Okulu Nasıl Seçilir?</a></li>
+              <li style="break-inside:avoid"><a href="/blog/ib-alevel-amerikan-mufredat-karsilastirma/" style="color:var(--primary,#0b213a)">IB, A-Level ve Amerikan Müfredatı Karşılaştırması</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-okul-basvuru-nasil-yapilir/" style="color:var(--primary,#0b213a)">Dubai'de Okul Başvurusu Nasıl Yapılır?</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-okul-bekleme-listesi/" style="color:var(--primary,#0b213a)">Dubai Okul Bekleme Listesi Rehberi</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-okul-ucretleri-2026/" style="color:var(--primary,#0b213a)">Dubai Okul Ücretleri 2026</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-turk-aileler-okul-rehberi/" style="color:var(--primary,#0b213a)">Dubai'deki Türk Aileler İçin Okul Rehberi</a></li>
+            </ul>
+          </aside>
+
+          <div class="blog-faq">
+            <h2>Sık Sorulan Sorular</h2>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Repton Dubai nasıl bir okul?</h3>
+              <p class="faq-a">Repton Dubai, İngiltere'nin 450 yıllık köklü Repton School'unun Dubai şubesidir. KHDA Outstanding dereceli, British müfredatı (GCSE + A-Level), Nad Al Sheba kampüsünde. Küçük sınıf yapısı ve akademik disipliniyle tanınır. Yıllık ücret 55.000–85.000 AED aralığında. Akademik odaklı, İngiltere veya Commonwealth üniversitesini hedefleyen aileler için güçlü bir tercih.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">GEMS Wellington Dubai nasıl bir okul?</h3>
+              <p class="faq-a">GEMS Wellington International School, Al Sufouh'ta KHDA Outstanding dereceli büyük bir British kampüs. EYFS'ten Year 13'e geniş ekstra müfredat, çok uluslu öğrenci profili. Yıllık ücret 57.000–98.000 AED. Marina ve JBR bölgesinde oturan aileler için coğrafi avantajlı.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Nord Anglia International School Dubai nasıl?</h3>
+              <p class="faq-a">Jumeirah Park'ta KHDA Outstanding dereceli okul. British IGCSE + IB Diploma seçeneği, MIT ve Juilliard iş birlikleriyle sanat ve bilim ağırlıklı müfredat. Yıllık ücret 50.000–92.000 AED. Bütünsel gelişimi önemseyen aileler ve IB Diploma düşünenler için ideal.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">JESS Dubai nasıl bir okul?</h3>
+              <p class="faq-a">JESS (Jumeirah English Speaking School), 1975'ten bu yana Dubai'nin en köklü British okullarından biri. Umm Suqeim ve Arabian Ranches kampüslerinin ikisi de Outstanding. Türk aileler arasında en sık adı geçen okul. Yıllık ücret 48.000–78.000 AED. Bekleme listesi uzun — erkenden başvurun.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Repton mu, GEMS Wellington mi tercih edilmeli?</h3>
+              <p class="faq-a">İkisi de Outstanding ve British müfredatlı. Repton daha küçük, daha akademik disiplinli; GEMS Wellington daha büyük, daha kozmopolit. Repton İngiltere üniversitesi ve birebir ilgi için; GEMS Wellington büyük kampüs ve çok uluslu deneyim için öne çıkar. Lokasyon da belirleyici: Nad Al Sheba bölgesi Repton'a, Marina/JBR bölgesi GEMS'e yakın.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Dubai'deki en iyi IB okulu hangisi?</h3>
+              <p class="faq-a">Tam IB (PYP + MYP + Diploma) için Dubai'nin birinci tercihi <strong>DIA Emirates Hills</strong>. KHDA Outstanding dereceli, IB puan ortalaması Dubai'nin en yükseği. Nord Anglia da IGCSE sonrası IB Diploma sunuyor. IB hedefi kesin ve bütçe uygunsa DIA birinci seçenek olmalı.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </article>
+    </div>
+
+    <div class="container" style="padding:0 0 2rem;">
+      <p style="margin:0;padding:1rem 1.25rem;background:hsla(43,60%,92%,0.7);border-left:3px solid var(--accent,#DBAF2E);border-radius:0 6px 6px 0;font-size:0.95rem;line-height:1.8;">
+        Bu yazı hakkında görüş veya soru için: <a href="mailto:ozlem@edualist.com" style="color:var(--accent-hover,#b8921f);font-weight:600">ozlem@edualist.com</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer style="background:var(--primary);color:var(--text-light);padding:3rem 0 2rem">
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:2rem;justify-content:space-between;align-items:flex-start">
+      <div>
+        <div class="logo" style="margin-bottom:1rem">
+          <div class="logo-icon">E</div>
+          <span class="logo-text" style="color:var(--text-light)">Edualist</span>
+        </div>
+        <p style="font-size:.9rem;opacity:.7;max-width:280px;line-height:1.6">Dubai'de ve dünyada uluslararası okul danışmanlığı ve akademik koçluk.</p>
+      </div>
+      <div style="display:flex;gap:3rem;flex-wrap:wrap">
+        <div>
+          <p style="font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;opacity:.5;margin-bottom:.75rem">Hizmetler</p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem">
+            <li><a href="/uluslararasi-okul-danismanligi/" style="color:var(--text-light);opacity:.8;font-size:.9rem">Okul Danışmanlığı</a></li>
+            <li><a href="/uluslararasi-akademik-kocluk/" style="color:var(--text-light);opacity:.8;font-size:.9rem">Akademik Koçluk</a></li>
+            <li><a href="/dubai/" style="color:var(--text-light);opacity:.8;font-size:.9rem">Dubai'de Okul</a></li>
+          </ul>
+        </div>
+        <div>
+          <p style="font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;opacity:.5;margin-bottom:.75rem">Blog</p>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:.5rem">
+            <li><a href="/blog/dubai-en-iyi-uluslararasi-okullar/" style="color:var(--text-light);opacity:.8;font-size:.9rem">En İyi Dubai Okulları</a></li>
+            <li><a href="/blog/dubai-semt-rehberi/" style="color:var(--text-light);opacity:.8;font-size:.9rem">Semt Rehberi</a></li>
+            <li><a href="/blog/" style="color:var(--text-light);opacity:.8;font-size:.9rem">Tüm Yazılar →</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top:2rem;padding-top:1.5rem;border-top:1px solid rgba(255,255,255,.1);display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem">
+      <p style="font-size:.8rem;opacity:.5">© 2026 Edualist. Tüm hakları saklıdır.</p>
+      <a href="/gizlilik-politikasi/" style="font-size:.8rem;opacity:.5;color:var(--text-light)">Gizlilik Politikası</a>
+    </div>
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.getElementById('langTR').classList.toggle('active', lang === 'tr');
+      document.getElementById('langEN').classList.toggle('active', lang === 'en');
+    }
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (menuToggle) {
+      menuToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('open');
+        this.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+      });
+    }
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', function() {
+      nav.classList.toggle('header-scrolled', window.scrollY > 50);
+    }, {passive: true});
+  </script>
+
+</body>
+</html>

@@ -27,6 +27,10 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-17 new post: Repton vs GEMS vs Nord Anglia vs JESS comparison + inbound link updates
+    "https://www.edualist.com/blog/dubai-okul-karsilastirma/",
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
+    "https://www.edualist.com/blog/dubai-turk-aileler-okul-rehberi/",
     # 2026-10-17 content fixes: school-holidays date table moved up, cocugunuzun-guclu-yonleri coaching CTA, dubai-semt-rehberi tables, khda-outstanding HTML fix
     "https://www.edualist.com/en/blog/dubai-school-holidays/",
     "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
