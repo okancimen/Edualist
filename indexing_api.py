@@ -27,7 +27,11 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
-    # 2026-10-18 AI indexing files updated (llms.txt + llms-full.txt)
+    # 2026-10-18 yeni yazı: dubai-okul-basvuru-takvimi-2027 + inbound link güncellemeleri
+    "https://www.edualist.com/blog/dubai-okul-basvuru-takvimi-2027/",
+    "https://www.edualist.com/blog/dubai-okul-kayit-rehberi/",
+    "https://www.edualist.com/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/",
+    "https://www.edualist.com/blog/",
     "https://www.edualist.com/llms.txt",
     "https://www.edualist.com/llms-full.txt",
     # 2026-10-18 meta/H1 fixes — title trimmed, desc trimmed, H1 spacing fixed
