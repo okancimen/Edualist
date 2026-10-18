@@ -27,6 +27,8 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-19 yeni yazı: dubai-okul-seciminde-5-hata + görseller
+    "https://www.edualist.com/blog/dubai-okul-seciminde-5-hata/",
     # 2026-10-18 yeni yazı: dubai-okul-basvuru-takvimi-2027 + inbound link güncellemeleri
     "https://www.edualist.com/blog/dubai-okul-basvuru-takvimi-2027/",
     "https://www.edualist.com/blog/dubai-okul-kayit-rehberi/",
