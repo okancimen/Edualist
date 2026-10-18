@@ -27,6 +27,9 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-19 GSC crawled-not-indexed fix — Oct 7'den beri recrawl yok; Oct 12-15 güncellemeleri görmedi
+    "https://www.edualist.com/blog/hollanda-okul-kayit-rehberi/",
+    "https://www.edualist.com/en/blog/school-enrolment-netherlands/",
     # 2026-10-19 GSC redirect error fix — .htaccess Oct 16'dan beri 1-hop; yeniden crawl zorunlu
     "https://edualist.com/uluslararasi-akademik-kocluk/index.html",
     "https://edualist.com/blog/",
