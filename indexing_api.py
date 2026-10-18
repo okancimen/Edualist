@@ -27,6 +27,9 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-18 AI indexing files updated (llms.txt + llms-full.txt)
+    "https://www.edualist.com/llms.txt",
+    "https://www.edualist.com/llms-full.txt",
     # 2026-10-18 meta/H1 fixes — title trimmed, desc trimmed, H1 spacing fixed
     "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",
     "https://www.edualist.com/blog/khda-notu-nedir/",
