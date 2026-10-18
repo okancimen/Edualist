@@ -27,6 +27,34 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-18 meta/H1 fixes — title trimmed, desc trimmed, H1 spacing fixed
+    "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",
+    "https://www.edualist.com/blog/khda-notu-nedir/",
+    "https://www.edualist.com/blog/ib-diploma-universite-basvuru/",
+    "https://www.edualist.com/blog/basarili-ogrenciler-ib-de-neden-zorlanir/",
+    "https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/",
+    "https://www.edualist.com/blog/egitim-kocu-ne-yapar/",
+    "https://www.edualist.com/blog/dubai-okul-karsilastirma/",
+    "https://www.edualist.com/blog/dubai-semt-rehberi/",
+    "https://www.edualist.com/blog/kizim-sinifin-zemininde-yatiyordu/",
+    "https://www.edualist.com/blog/lgs-surecinde-ders-calis-savaslari/",
+    # 2026-10-18 inbound link additions — 1-3 view blog posts boosted via cluster box edits
+    "https://www.edualist.com/blog/dubai-top-10-okullari/",
+    "https://www.edualist.com/blog/dubai-ib-okullari-mezun-basarisi/",
+    "https://www.edualist.com/blog/dubai-gelmeden-once-bilmeniz-gerekenler/",
+    "https://www.edualist.com/blog/dubai-okul-karsilastirma/",
+    "https://www.edualist.com/blog/dubai-semt-rehberi/",
+    "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",
+    "https://www.edualist.com/blog/cocugum-ozguvensiz-ve-cekingen/",
+    "https://www.edualist.com/blog/cocugum-telefona-ekrana-bagimli/",
+    # 2026-10-18 source pages updated (cluster boxes)
+    "https://www.edualist.com/blog/dubai-egitim-sistemi/",
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
+    "https://www.edualist.com/blog/dubai-okul-kayit-rehberi/",
+    "https://www.edualist.com/blog/ib-alevel-amerikan-mufredat-karsilastirma/",
+    "https://www.edualist.com/blog/dubai-okul-ucretleri-2026/",
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    "https://www.edualist.com/blog/anxious-generation-oyun-temelli-cocukluk/",
     # 2026-10-17 new post: Repton vs GEMS vs Nord Anglia vs JESS comparison + inbound link updates
     "https://www.edualist.com/blog/dubai-okul-karsilastirma/",
     "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
