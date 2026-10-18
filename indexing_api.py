@@ -27,6 +27,13 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-19 GSC redirect error fix — .htaccess Oct 16'dan beri 1-hop; yeniden crawl zorunlu
+    "https://edualist.com/uluslararasi-akademik-kocluk/index.html",
+    "https://edualist.com/blog/",
+    "https://edualist.com/blog/ib-diploma-universite-basvuru/",
+    "https://edualist.com/blog/turkiye-dubai-okul-ucreti-karsilastirma",
+    # 2026-10-19 sitemap'e eklenen 3 yeni yazı
+    "https://www.edualist.com/sitemap.xml",
     # 2026-10-19 yeni yazı: dubai-okul-seciminde-5-hata + görseller
     "https://www.edualist.com/blog/dubai-okul-seciminde-5-hata/",
     # 2026-10-18 yeni yazı: dubai-okul-basvuru-takvimi-2027 + inbound link güncellemeleri
