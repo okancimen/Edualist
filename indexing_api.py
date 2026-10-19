@@ -27,9 +27,12 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-20 Yeni yazı: dubai-maaslar-2026 + internal link güncellemeleri
+    "https://www.edualist.com/blog/dubai-maaslar-2026/",
+    "https://www.edualist.com/blog/dubai-yasam-maliyeti-2026/",
+    "https://www.edualist.com/blog/dubai-gelmeden-once-bilmeniz-gerekenler/",
     # 2026-10-20 GSC CTR optimizasyonu: dubai-okul-ucretleri + dubai-yasam-maliyeti
     "https://www.edualist.com/blog/dubai-okul-ucretleri-2026/",
-    "https://www.edualist.com/blog/dubai-yasam-maliyeti-2026/",
     # 2026-10-20 GSC CTR optimizasyonu: title/meta + internal link iyileştirmeleri
     "https://www.edualist.com/blog/robert-kolej-ucreti-2026/",
     "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",

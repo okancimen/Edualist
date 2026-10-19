@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});})();
+  </script>
+  <meta charset="UTF-8">
+  <!-- Self-hosted fonts (Latin + Turkish subset): no third-party round trip -->
+  <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai'de Maaşlar 2026: Mühendislik ve IT Sektörü Ücret Rehberi | Edualist</title>
+  <meta name="description" content="Dubai'de mühendis ve yazılımcı maaşı ne kadar? Sıfır gelir vergisiyle net kazanç, Türkiye karşılaştırması ve 4 kişilik aile için geçim hesabı. 2026 güncel rakamlar.">
+  <meta name="keywords" content="dubai maaşlar 2026, dubai mühendis maaşı, dubai yazılımcı maaşı, dubai it maaşı, dubai inşaat mühendisi maaşı, dubai net maaş hesap, dubai vergisiz maaş, dubai türk mühendis maaşı, dubai asgari geçim ücreti, dubai aile bütçesi, dubai maaş türkiye karşılaştırma, dubai çalışma maaşı, dubai expat maaş 2026, dubai minimum salary family, dubai engineer salary 2026, dubai software developer salary, dubai construction salary, dubai zero tax salary comparison">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/blog/dubai-maaslar-2026/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-maaslar-2026/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-maaslar-2026/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="ai-catalog" type="application/json" href="/ai-catalog.json" title="AI Resource Catalog">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="tr_TR">
+  <meta property="og:title"       content="Dubai'de Maaşlar 2026: Mühendislik ve IT Sektörü Ücret Rehberi">
+  <meta property="og:description" content="Dubai'de mühendis ve yazılımcı maaşı ne kadar? Sıfır gelir vergisiyle net kazanç, Türkiye karşılaştırması ve 4 kişilik aile için geçim hesabı.">
+  <meta property="og:url"         content="https://www.edualist.com/blog/dubai-maaslar-2026/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-yasam.webp">
+  <meta property="article:published_time" content="2026-10-20">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Dubai Salaries 2026: Engineering & IT Pay Guide for Turkish Expats">
+  <meta name="twitter:description" content="How much do engineers and developers earn in Dubai? Zero income tax, Türkiye comparison and minimum salary needed for a family of four — 2026 figures.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-yasam.webp">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Dubai'de Maaşlar 2026: Mühendislik ve IT Sektörü Ücret Rehberi",
+  "description": "Dubai'de mühendis ve yazılımcı maaşları, sıfır gelir vergisi avantajı, Türkiye karşılaştırması ve 4 kişilik aile için minimum geçim ücreti hesabı. 2026 güncel rakamlar.",
+  "author": {
+    "@type": "Person",
+    "name": "Özlem Çimen", "jobTitle": "Uluslararası Eğitim Danışmanı",
+    "url": "https://www.edualist.com/hakkimda/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edualist",
+    "url": "https://www.edualist.com"
+  },
+  "datePublished": "2026-10-20T00:00:00+00:00",
+  "dateModified": "2026-10-20T00:00:00+00:00",
+  "wordCount": 3200,
+  "inLanguage": "tr",
+  "url": "https://www.edualist.com/blog/dubai-maaslar-2026/",
+  "image": "https://www.edualist.com/assets/blog/thumb-dubai-yasam.webp",
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [".blog-summary", ".blog-post-title"]
+  }
+}
+  </script>
+
+  <link rel="preload" as="image" href="../../assets/hero-bg.webp" type="image/webp">
+  <link rel="preload" as="style" href="../../styles.css?v=15">
+  <link rel="stylesheet" href="../../styles.css?v=15" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../styles.css?v=15"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}.whatsapp-sticky{position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:#25d366;color:#fff;text-decoration:none;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(37,211,102,.45);font-size:.95rem;font-weight:600;transition:transform .2s ease,box-shadow .2s ease}.whatsapp-sticky:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(37,211,102,.55)}.whatsapp-sticky svg{flex-shrink:0}.chatbot-btn{position:fixed;bottom:1.75rem;left:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:var(--primary);color:#fff;border:none;cursor:pointer;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(11,33,58,.4);font-size:.95rem;font-weight:600;font-family:inherit;transition:transform .2s ease,box-shadow .2s ease}.chatbot-btn:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(11,33,58,.55)}.chatbot-btn svg{flex-shrink:0}.chatbot-popup{position:fixed;bottom:5.5rem;left:1.75rem;z-index:9998;width:418px;height:540px;background:#fff;border-radius:16px;box-shadow:0 12px 48px rgba(11,33,58,.25);display:flex;flex-direction:column;overflow:hidden;animation:chatbot-pop-in .2s ease}.chatbot-popup[hidden]{display:none!important}.chatbot-popup-header{display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem;background:var(--primary);color:#fff;font-weight:600;font-size:.9rem;flex-shrink:0}.chatbot-popup-close{background:0 0;border:none;color:#fff;cursor:pointer;font-size:1.1rem;padding:.1rem .35rem;line-height:1;border-radius:4px;opacity:.75;transition:opacity .15s,background .15s}.chatbot-popup-close:hover{opacity:1;background:rgba(255,255,255,.15)}.chatbot-iframe{flex:1;width:100%;border:none}@keyframes chatbot-pop-in{from{opacity:0;transform:scale(.93) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}@media (max-width:480px){.whatsapp-sticky{padding:.85rem;border-radius:50%}.whatsapp-sticky-label{display:none}.chatbot-btn{padding:.85rem;border-radius:50%}.chatbot-btn-label{display:none}.chatbot-popup{left:.75rem;right:.75rem;width:auto;bottom:5rem;height:72vh}}</style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dubai'de Maaşlar 2026", "item": "https://www.edualist.com/blog/dubai-maaslar-2026/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Dubai'de mühendis maaşı ne kadar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026 itibarıyla Dubai'de mühendis maaşları deneyim ve uzmanlık alanına göre 8.000–30.000 AED/ay arasında değişmektedir. Orta seviye (5–8 yıl deneyimli) inşaat veya proje mühendisi 12.000–18.000 AED, kıdemli mühendis veya proje müdürü 18.000–28.000 AED, yönetici seviye 25.000–40.000 AED almaktadır. 1 AED ≈ 12,65 TL kuruyla bu rakamlar aylık 101.000–506.000 TL net kazanca karşılık gelir; üstelik gelir vergisi yoktur."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dubai'de yazılımcı maaşı ne kadar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dubai'de IT ve yazılım geliştirici maaşları 2026'da junior düzey için 7.000–12.000 AED, mid-level için 13.000–22.000 AED, senior/lead seviyesinde 22.000–40.000 AED arasındadır. Yapay zeka, cloud (AWS/Azure/GCP) ve siber güvenlik gibi alanlarda talep yüksek olup premiumlu maaşlar ödenmektedir. Tüm bu rakamlar vergiden muaftır."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dubai'de 4 kişilik aileyi geçindirmek için minimum maaş ne olmalı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "2026 verilerine göre 2 çocuklu bir aile için Dubai'de rahat yaşayabilmek adına minimum 22.000–28.000 AED/ay net maaş önerilir. Bu rakam; 3+1 daire kirası (10.000–14.000 AED/ay), iki çocuk KHDA Good okul ücreti taksiti (4.000–6.000 AED/ay) ve temel yaşam giderleri (market, ulaşım, sağlık sigortası ~7.000–9.000 AED/ay) toplamına dayanmaktadır. KHDA Outstanding okul tercihinde bu tavan 35.000 AED'e çıkar."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dubai'deki sıfır gelir vergisi ne kadar avantaj sağlıyor?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Türkiye'de 100.000 TL brüt maaştan SGK + vergi kesintisi sonrası yaklaşık 65.000–68.000 TL net kalır (yaklaşık %32–35 vergi yükü). Dubai'de aynı TL değerine denk gelen 7.905 AED maaş tamamen net gelirinizdir. Pratik sonuç: Türkiye'deki brüt maaşınıza eşdeğer bir Dubai maaşı, net olarak %47–54 daha fazla satın alma gücü sağlayabilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Dubai'de Türk mühendis ve IT profesyonellerine iş bulmak kolay mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Dubai'de inşaat, altyapı ve gayrimenkul sektörü büyük olup Türk mühendislere talep mevcuttur. IT sektöründe ise fintech, e-ticaret ve telekomünikasyon şirketleri uluslararası yazılımcı arıyor. LinkedIn, Bayt.com ve GulfTalent başlıca iş arama platformlarıdır. Çoğu pozisyon için geçerli özgeçmiş + İngilizce yeterliliği yeterlidir; Türk mühendislik diplomaları genellikle tanınır."
+      }
+    }
+  ]
+}
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    window.addEventListener("load",function(){setTimeout(function(){(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");},5000);});
+  </script>
+
+  <style id="nav-breakpoint">@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+    <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/tr/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/">Dubai'de Okul</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/">Danışmanlık</a></li>
+        <li><a href="/uluslararasi-akademik-kocluk/">Akademik Koçluk</a></li><li><a href="/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">93</span></a></li>
+        <li><a href="/neden-biz/">Hakkımızda</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span>Blog'a Dön</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>20 Ekim 2026</span>
+          <span><a href="../../hakkimda/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>10 dakika okuma</span>
+        </div>
+
+        <div class="blog-post-body">
+
+          <h1 class="blog-post-title">Dubai'de Maaşlar 2026: Mühendislik ve IT Sektörü Ücret Rehberi</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">Dubai maaşlar 2026</span>
+            <span class="blog-seo-tag">Dubai mühendis maaşı</span>
+            <span class="blog-seo-tag">Dubai IT yazılım maaşı</span>
+            <span class="blog-seo-tag">Dubai vergisiz maaş</span>
+            <span class="blog-seo-tag">Dubai aile geçim ücreti</span>
+          </div>
+
+          <div class="blog-summary">
+            <strong>Özet</strong>
+            <p>Dubai'ye taşınmayı düşünen Türk mühendis ve IT profesyonellerinin en sık sorduğu soru: "Maaşım ne kadar olmalı?" Bu yazıda mühendislik/inşaat ve teknoloji/IT sektörü için 2026 maaş bantlarını, sıfır gelir vergisinin gerçek avantajını ve 4 kişilik bir aile için minimum geçim ücretini somut rakamlarla aktarıyorum. Kısa cevap: orta-kıdemli bir mühendis veya mid-level yazılımcı için 15.000–22.000 AED/ay maaş, çocuklu bir aile için Dubai'de rahat bir yaşamı mümkün kılıyor.</p>
+          </div>
+
+          <p>"Dubai'de maaşlar iyi ama yaşam maliyeti de yüksek" deniyor. Bu doğru — ama tablo düşündüğünüzden çok daha nüanslı. Sıfır gelir vergisi hesaba katıldığında, Dubai'deki brüt ve net maaş aynıdır; Türkiye'de ise brüt maaşınızın %30–35'i kesilmektedir.</p>
+
+          <p>Bu yazıda iki soruyu yanıtlıyorum: Dubai'de mühendis veya yazılımcı olarak ne kadar kazanabilirsiniz? Ve bu maaşla çocuklu bir aileyi geçindirebilir misiniz?</p>
+
+          <div class="blog-callout">
+            <strong>Kur notu:</strong> Bu yazıda 1 AED = 12,65 TL kuru kullanılmıştır (Ekim 2026 yaklaşık ortalama). Maaş rakamları piyasa araştırmasına dayanmaktadır; bireysel teklifler iş sektörü, şirket büyüklüğü ve müzakere gücüne göre önemli ölçüde farklılaşabilir.
+          </div>
+
+          <h2>1. Neden Maaşı Brüt Değil Net Olarak Düşünmelisiniz?</h2>
+
+          <p>Türkiye'de 100.000 TL brüt maaş alıyorsanız, SGK işçi payı (%14) ve gelir vergisi (%15–27 dilimi) kesintileri sonrası elinize geçen net tutar yaklaşık 65.000–68.000 TL'dir. Yani brüt maaşınızın yaklaşık %32–35'i devlete gitmektedir.</p>
+
+          <p>Dubai'de bireysel gelir vergisi <strong>yoktur</strong>. Maaş teklifinizin tamamı net gelirinizdir. Bu şu anlama gelir: Türkiye'deki 100.000 TL brüt maaşınıza gerçek anlamda denk gelen Dubai maaşı, yalnızca net eşdeğeri olan ~65.000–68.000 TL değerinde bir AED maaşıdır — yaklaşık 5.140–5.375 AED/ay.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Senaryo</th>
+                <th>Brüt Maaş</th>
+                <th>Net Maaş</th>
+                <th>Net (TL karşılığı)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Türkiye — 100k TL brüt</td><td>100.000 TL</td><td>~66.500 TL</td><td>66.500 TL</td></tr>
+              <tr><td>Dubai — 5.256 AED</td><td>5.256 AED</td><td>5.256 AED (vergisiz)</td><td>66.500 TL</td></tr>
+              <tr><td>Türkiye — 200k TL brüt</td><td>200.000 TL</td><td>~128.000 TL</td><td>128.000 TL</td></tr>
+              <tr><td>Dubai — 10.119 AED</td><td>10.119 AED</td><td>10.119 AED (vergisiz)</td><td>128.000 TL</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Pratik sonuç: <strong>Türkiye brüt maaşınızın yaklaşık %47–54 üzerinde bir AED teklifi aldığınızda, aynı satın alma gücüne ulaşırsınız.</strong> Bu eşiği aşan her AED sizi Türkiye'deki yaşam standardınızın gerçek anlamda üstüne taşıyor.</p>
+
+          <h2>2. Mühendislik ve İnşaat Sektörü Maaşları</h2>
+
+          <p>Dubai'de altyapı, gayrimenkul ve enerji projeleri büyük ölçekli olmayı sürdürüyor. Türk mühendisler özellikle inşaat yönetimi, proje mühendisliği ve tasarım alanlarında talep görüyor.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Pozisyon</th>
+                <th>Deneyim</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior İnşaat/İnşaat Müh.</td><td>0–3 yıl</td><td>5.000–8.000</td><td>63.000–101.000</td></tr>
+              <tr><td>Orta Seviye Proje Müh.</td><td>4–7 yıl</td><td>10.000–16.000</td><td>127.000–202.000</td></tr>
+              <tr><td>Kıdemli Mühendis / Proje Yöneticisi</td><td>8–12 yıl</td><td>16.000–26.000</td><td>202.000–329.000</td></tr>
+              <tr><td>Baş Mühendis / Direktör</td><td>12+ yıl</td><td>25.000–40.000+</td><td>316.000–506.000+</td></tr>
+              <tr><td>Elektrik / Mekanik Müh. (MEP)</td><td>5–10 yıl</td><td>12.000–20.000</td><td>152.000–253.000</td></tr>
+              <tr><td>Yapı Denetim / HSE Uzmanı</td><td>5–8 yıl</td><td>10.000–17.000</td><td>127.000–215.000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Pakete dahil olan ekstralar:</strong> Çoğu mühendislik firması maaşa ek olarak konut yardımı (housing allowance) ve ulaşım yardımı sunar. Bu ödenekler aylık 2.000–5.000 AED değerinde olabilir ve vergi dışıdır. Maaş müzakeresi yaparken mutlaka tüm paketi (all-in) değerlendirin.
+          </div>
+
+          <h2>3. Teknoloji ve IT Sektörü Maaşları</h2>
+
+          <p>Dubai, bölgenin teknoloji merkezi olma hedefiyle fintech, e-ticaret, telekomünikasyon ve yapay zeka şirketlerine ev sahipliği yapıyor. Yabancı teknoloji şirketlerinin bölgesel ofisleri de burada yoğunlaşmış durumda.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Pozisyon / Alan</th>
+                <th>Deneyim</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior Yazılım Geliştirici</td><td>0–2 yıl</td><td>6.000–10.000</td><td>76.000–127.000</td></tr>
+              <tr><td>Mid-Level Backend/Full-Stack</td><td>3–6 yıl</td><td>13.000–20.000</td><td>164.000–253.000</td></tr>
+              <tr><td>Senior Yazılımcı / Tech Lead</td><td>6–10 yıl</td><td>20.000–35.000</td><td>253.000–443.000</td></tr>
+              <tr><td>DevOps / Cloud Mühendisi</td><td>4–8 yıl</td><td>15.000–28.000</td><td>190.000–354.000</td></tr>
+              <tr><td>Veri Bilimci / AI/ML Uzmanı</td><td>3–7 yıl</td><td>18.000–35.000</td><td>228.000–443.000</td></tr>
+              <tr><td>Siber Güvenlik Uzmanı</td><td>4–8 yıl</td><td>16.000–30.000</td><td>202.000–380.000</td></tr>
+              <tr><td>IT Proje Yöneticisi (PMO)</td><td>5–10 yıl</td><td>15.000–25.000</td><td>190.000–316.000</td></tr>
+              <tr><td>Ürün Müdürü (Product Manager)</td><td>4–8 yıl</td><td>18.000–32.000</td><td>228.000–405.000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Yüksek talep gören alanlar: <strong>yapay zeka/ML, bulut altyapısı (AWS, Azure, GCP), siber güvenlik ve fintech geliştirme.</strong> Bu uzmanlıklarda piyasa maaşların üst bandına yakın teklifler almak mümkün.</p>
+
+          <h2>4. Çocuklu Bir Aile İçin Minimum Geçim Ücreti Ne Olmalı?</h2>
+
+          <p>Maaş rakamlarına baktıktan sonra asıl soru şu: "Bu maaşla çocuklarımı KHDA standartlarında okutabilir, makul bir semtte kiralık dairede oturabilir ve rahat yaşayabilir miyim?"</p>
+
+          <p>Bunun için <a href="../dubai-yasam-maliyeti-2026/">Dubai yaşam maliyeti analizimizden</a> elde edilen rakamları üç senaryo olarak bir araya getiriyorum:</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Senaryo</th>
+                <th>Semt / Okul</th>
+                <th>Aylık Gider (AED)</th>
+                <th>Gereken Min. Maaş</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Ekonomik</strong></td><td>JVC/DSO · KHDA Good okul</td><td>18.000–22.000</td><td>22.000–26.000 AED</td><td>278.000–329.000</td></tr>
+              <tr><td><strong>Orta Segment</strong></td><td>Motor City/JLT · KHDA Very Good</td><td>24.000–30.000</td><td>28.000–34.000 AED</td><td>354.000–430.000</td></tr>
+              <tr><td><strong>Konforlu</strong></td><td>Arabian Ranches · KHDA Outstanding</td><td>32.000–42.000</td><td>36.000–46.000 AED</td><td>455.000–582.000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p><em>Senaryo 2 çocuklu, 4 kişilik aile içindir. Gider kalemi: kira, okul (2 çocuk), market, ulaşım (1 araç), sağlık sigortası, DEWA ve temel sosyal giderler.</em></p>
+
+          <p>Pratik sonuç: <strong>Mid-level bir mühendis veya yazılımcı (12.000–20.000 AED/ay), eşinin de çalışması durumunda birlikte ekonomik veya orta segment senaryoda rahatça yaşayabilir.</strong> Kıdemli pozisyonlarda (18.000–28.000 AED/ay) tek maaşla orta segment senaryo erişilebilir hale gelir.</p>
+
+          <div class="blog-callout">
+            <strong>Tek maaşlı aile için kritik eşik:</strong> 2 çocuklu bir ailede tek çalışanın Dubai'de orta segment yaşamı sürdürebilmesi için <strong>minimum 28.000–32.000 AED/ay</strong> önerilir. Bu, kıdemli mühendis veya senior yazılımcı seviyesine denk gelmektedir.
+          </div>
+
+          <h2>5. Gider Dağılımı: Para Nereye Gidiyor?</h2>
+
+          <p>Ekonomik ve orta segment senaryo için tipik bir aylık gider tablosu:</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Kalem</th>
+                <th>Ekonomik (AED/ay)</th>
+                <th>Orta Segment (AED/ay)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Kira (2 çocuklu aile, 3+1)</td><td>7.500–9.500</td><td>10.000–14.000</td></tr>
+              <tr><td>Okul (2 çocuk, yıllık taksit)</td><td>3.000–4.500</td><td>5.000–8.000</td></tr>
+              <tr><td>Market ve dışarı yemek</td><td>2.000–3.000</td><td>3.000–4.500</td></tr>
+              <tr><td>Ulaşım (araç kredi + benzin)</td><td>1.800–2.500</td><td>2.500–4.000</td></tr>
+              <tr><td>Sağlık sigortası (aile)</td><td>700–1.200</td><td>1.000–2.000</td></tr>
+              <tr><td>DEWA (elektrik + su)</td><td>600–900</td><td>900–1.500</td></tr>
+              <tr><td>İnternet + cep</td><td>300–500</td><td>400–600</td></tr>
+              <tr><td>Sosyal / aktivite</td><td>800–1.500</td><td>1.500–3.000</td></tr>
+              <tr><td><strong>Toplam</strong></td><td><strong>16.700–23.600</strong></td><td><strong>24.300–37.600</strong></td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h2>6. Sıfır Verginin Gerçek Etkisi: Sayılarla</h2>
+
+          <p>Somut bir örnek üzerinden gidelim. Türkiye'de 250.000 TL brüt maaş alan kıdemli bir yazılımcının Dubai eşdeğerine bakalım:</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th>Türkiye</th>
+                <th>Dubai</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Brüt maaş</td><td>250.000 TL</td><td>19.763 AED</td></tr>
+              <tr><td>Vergi / SGK kesintisi</td><td>~83.000 TL (%33)</td><td>0</td></tr>
+              <tr><td>Net maaş</td><td>~167.000 TL</td><td>19.763 AED (≈250.000 TL)</td></tr>
+              <tr><td>Gerçek satın alma gücü farkı</td><td>–</td><td>+%50 daha fazla</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Tablo, maaş artışı olmaksızın yalnızca konuma göre yaşam standardının nasıl değişebileceğini gösteriyor. Dubai'de benzer veya daha yüksek bir maaş teklifi alırsanız, fark katlanarak büyür.</p>
+
+          <h2>7. İş Bulmak: Sektör ve Platform Rehberi</h2>
+
+          <p>Dubai'de iş aramak için en etkili kanallar:</p>
+
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:1.9">
+            <li><strong>LinkedIn:</strong> Uluslararası şirketler ve büyük kurumsal işverenler için birincil platform. "Dubai" + pozisyon başlığı araması yapın.</li>
+            <li><strong>Bayt.com:</strong> MENA bölgesinin en büyük iş platformu; mühendislik ve IT ilanları bol.</li>
+            <li><strong>GulfTalent:</strong> Mühendislik, inşaat ve teknik roller için uzman platform.</li>
+            <li><strong>Naukrigulf.com:</strong> Geniş ilan veritabanı; junior ve mid-level pozisyonlara uygun.</li>
+            <li><strong>Şirket siteleri:</strong> Emaar, DAMAC, Aldar, Etisalat, du, Emirates NBD gibi büyük şirketlerin kariyer sayfaları.</li>
+          </ul>
+
+          <div class="blog-callout">
+            <strong>Türk mühendisler için avantajlar:</strong> Dubai'deki inşaat ve altyapı sektörü Türk müteahhit firmaların bölgesel uzantılarına ev sahipliği yapıyor. STFA, Limak ve TAV bölgede aktif; Türk mühendis referansları bu şirketlerde kapı açabiliyor. IT sektöründe ise dilden bağımsız kod becerisi öne çıkıyor.
+          </div>
+
+          <h2>8. 3 Gerçek Senaryo: Dubai'ye Geçiş Bütçesi</h2>
+
+          <h3>Senaryo A — Orta Seviye Mühendis, 2 Çocuk</h3>
+          <p>Proje mühendisi, 6 yıl deneyim, maaş: 14.000 AED + 2.500 AED konut yardımı = <strong>16.500 AED net/ay.</strong> Eşi çalışmıyor. JVC'de 3+1 daire (8.500 AED/ay), iki çocuk KHDA Good okul (3.500 AED/ay taksit), temel giderler (5.500 AED/ay) → Toplam ~17.500 AED/ay. Küçük açık var; eşin part-time işiyle veya okul burs başvurusuyla dengelenebilir.</p>
+
+          <h3>Senaryo B — Senior Yazılımcı, 2 Çocuk</h3>
+          <p>Backend developer, 8 yıl deneyim, maaş: 22.000 AED net/ay. Eşi yarı zamanlı uzaktan çalışıyor, +5.000 AED/ay. Toplam hane geliri: <strong>27.000 AED/ay.</strong> Motor City'de 3+1 daire (11.000 AED/ay), iki çocuk KHDA Very Good okul (6.500 AED/ay taksit), giderler (7.500 AED/ay) → Toplam 25.000 AED/ay. <strong>2.000 AED/ay tasarruf mümkün.</strong></p>
+
+          <h3>Senaryo C — Kıdemli Müh./IT Müdürü, 2 Çocuk</h3>
+          <p>Proje müdürü veya IT direktörü, 12+ yıl deneyim, maaş: 30.000 AED net/ay. Tek maaş. Arabian Ranches'ta 3+1 villa (14.000 AED/ay), iki çocuk KHDA Outstanding (9.000 AED/ay taksit), giderler (9.000 AED/ay) → Toplam 32.000 AED/ay. Küçük açık veya denge; konut yardımı eklenirse fazla kalır.</p>
+
+          <div class="blog-verdict" style="background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)">
+            <strong>Sonuç:</strong> Dubai'de mühendis veya IT profesyoneli olarak mid-level ve üzeri pozisyonda çalışmak, 2 çocuklu bir aileyi iyi bir okulla ve rahat bir semtte geçindirmeye yeter — koşul: gerçekçi senaryo planlaması yapmak. Eş geliri ya da konut yardımı denklemi büyük ölçüde değiştirir. <a href="../dubai-yasam-maliyeti-2026/">Dubai yaşam maliyeti rehberimizde</a> tüm gider kalemlerini detaylı bulabilirsiniz.
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Maaş teklifinizi birlikte değerlendirelim</h3>
+            <p>Dubai'den aldığınız iş teklifi yeterli mi? Aile bütçenizi, çocuklarınızın okul seçeneklerini ve taşınma maliyetlerini birlikte hesaplayalım.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary">Ücretsiz Görüşme Planla</a>
+          </div>
+
+        </div>
+
+        <!-- AUTHOR BOX -->
+        <aside class="blog-author-box" style="display:flex;gap:1.1rem;align-items:flex-start;margin:2.5rem 0;padding:1.4rem 1.5rem;border:1px solid var(--border-card,rgba(11,33,58,.08));border-left:3px solid var(--accent,#DBAF2E);border-radius:10px;background:var(--bg-card,rgba(11,33,58,.02))">
+          <picture>
+            <source srcset="/assets/founder-avatar-160.webp" type="image/webp">
+            <img src="/assets/founder-avatar-160.webp" alt="Özlem Çimen" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)">
+          </picture>
+          <div>
+            <p style="margin:0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Yazar</p>
+            <p style="margin:.15rem 0 .4rem;font-size:1.1rem;font-weight:700"><a href="/hakkimda/" style="color:var(--primary,#0b213a);text-decoration:none">Özlem Çimen</a></p>
+            <p style="margin:0;font-size:.95rem;line-height:1.7">Uluslararası eğitim danışmanı ve Edualist'in kurucusu. 20 yılı aşkın süre TED İstanbul Koleji, ENKA Okulları ve IICS'te öğretmen, bölüm başkanı ve yönetici olarak çalıştı; çocuklarını 5 ülkede uluslararası okullarda büyüttü.</p>
+            <p style="margin:.5rem 0 0;font-size:.9rem"><a href="/hakkimda/" style="color:var(--accent-hover,#b8921f);font-weight:600">Özlem Çimen hakkında →</a></p>
+          </div>
+        </aside>
+
+        <!-- CLUSTER BOX -->
+        <aside class="blog-cluster-box" style="margin:2rem 0;padding:1.4rem 1.5rem;border-radius:10px;background:var(--bg-warm-secondary,#f3efe8)">
+          <p style="margin:0 0 .8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Bu konudaki tüm rehberler</p>
+          <p style="margin:0 0 .9rem;font-size:1.15rem;font-weight:700;color:var(--primary,#0b213a)">Dubai'de Yaşam ve Maliyetler</p>
+          <ul style="margin:0;padding-left:1.1rem;columns:2 260px;column-gap:2rem;line-height:1.6">
+            <li style="break-inside:avoid"><a href="/blog/dubai-yasam-maliyeti-2026/" style="color:var(--primary,#0b213a)">Dubai'de Yaşam Maliyeti 2026: Gerçek Rakamlar</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-okul-ucretleri-2026/" style="color:var(--primary,#0b213a)">Dubai Okul Fiyatları 2026–27: Tam Ücret Tablosu</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-gelmeden-once-bilmeniz-gerekenler/" style="color:var(--primary,#0b213a)">Dubai'ye Gelmeden Önce Bilmeniz Gerekenler</a></li>
+            <li style="break-inside:avoid"><a href="/blog/robert-kolej-ucreti-2026/" style="color:var(--primary,#0b213a)">Robert Koleji Ücreti 2026: Türkiye–Dubai Karşılaştırması</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-semt-rehberi/" style="color:var(--primary,#0b213a)">Dubai'de Hangi Semtte Oturun? Semt Rehberi</a></li>
+          </ul>
+        </aside>
+
+        <!-- FAQ RENDERED -->
+        <div class="blog-faq">
+          <h2>Sık Sorulan Sorular</h2>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Dubai'de mühendis maaşı ne kadar?</h3>
+            <p class="faq-a">2026'da orta seviye (5–8 yıl) proje mühendisi 12.000–18.000 AED/ay, kıdemli mühendis veya proje müdürü 18.000–28.000 AED/ay almaktadır. 1 AED ≈ 12,65 TL ile bu rakamlar aylık 152.000–354.000 TL net kazanca karşılık gelir — vergiden muaf.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Dubai'de yazılımcı maaşı ne kadar?</h3>
+            <p class="faq-a">Mid-level backend/full-stack geliştirici 13.000–20.000 AED/ay, senior yazılımcı veya tech lead 20.000–35.000 AED/ay almaktadır. AI/ML ve bulut uzmanlıklarında üst bandına yakın teklifler alınabiliyor. Tüm rakamlar vergisizdir.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Dubai'de 4 kişilik aileyi geçindirmek için minimum maaş ne olmalı?</h3>
+            <p class="faq-a">2 çocuklu aile için ekonomik senaryo (JVC, KHDA Good okul) minimum 22.000–26.000 AED/ay, orta segment (JLT, KHDA Very Good) 28.000–34.000 AED/ay gerektirir. Tek çalışan hanede kıdemli pozisyon önerilir; çift çalışma durumunda orta segment rahatça karşılanır.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Dubai'deki sıfır gelir vergisi ne kadar avantaj sağlıyor?</h3>
+            <p class="faq-a">Türkiye'de 250.000 TL brüt maaştan ~83.000 TL vergi + SGK gider; net ~167.000 TL kalır. Dubai'de aynı TL değerine denk 19.763 AED tamamen net. Bu, yalnızca konum değişikliğiyle %50 daha fazla satın alma gücü demektir.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Dubai'de Türk mühendis ve IT profesyonellerine iş bulmak kolay mı?</h3>
+            <p class="faq-a">Mühendislik için LinkedIn, GulfTalent ve Türk müteahhit şirketlerinin kariyer sayfaları (STFA, Limak, TAV) etkili. IT sektöründe Bayt.com ve Naukrigulf de kullanılıyor. Çoğu pozisyon için özgeçmiş + İngilizce yeterliliği yeterlidir.</p>
+          </div>
+        </div>
+
+      </article>
+    </div>
+
+    <div class="container" style="padding:0 0 2rem;"></div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>İlgili Yazılar</h2>
+      <div class="blog-related-grid">
+        <a href="../dubai-yasam-maliyeti-2026/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-yasam.webp" alt="Dubai Yaşam Maliyeti 2026" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Dubai'de Yaşam Maliyeti 2026: Kira, Okul ve Gerçek Rakamlar</span>
+            </div>
+            <div class="blog-related-card-meta">25 Haziran 2026 · 12 dk</div>
+          </div>
+        </a>
+        <a href="../dubai-okul-ucretleri-2026/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-okul-ucretleri-2026.webp" alt="Dubai Okul Ücretleri 2026" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Dubai Okul Fiyatları 2026–27: Tam Ücret Tablosu</span>
+            </div>
+            <div class="blog-related-card-meta">20 Haziran 2026 · 10 dk</div>
+          </div>
+        </a>
+        <a href="../dubai-gelmeden-once-bilmeniz-gerekenler/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-once.webp" alt="Dubai'ye Gelmeden Önce Bilmeniz Gerekenler" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Dubai'ye Gelmeden Önce Bilmeniz Gerekenler</span>
+            </div>
+            <div class="blog-related-card-meta">15 Haziran 2026 · 11 dk</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi, müfredat değerlendirme ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="/neden-biz/">Neden Biz?</a></li>
+            <li><a href="/tr/#services">Hizmetler</a></li>
+            <li><a href="/blog/">Blog <span class="nav-count-badge">93</span></a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/">Görüşme Planla</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>İletişim</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, Birleşik Arap Emirlikleri</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener noreferrer">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
+        <div><a href="/gizlilik-politikasi/" style="color:inherit;opacity:0.7">Gizlilik Politikası</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP STICKY -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Merhaba,%20Daha%20fazla%20bilgi%20almak%20istiyorum" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile yazın" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- AI Chatbot Button -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="AI Asistan">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <!-- AI Chatbot Popup -->
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Kapat">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="Edualist AI Asistan"></iframe>
+  </div>
+
+    <script>
+
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+<script>
+  window.setLang = function (l) {
+    if (l === document.documentElement.lang) return;
+    try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+    document.cookie = 'edualist_lang=' + l + ';path=/;max-age=31536000;samesite=lax';
+    var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+    location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+  };
+  document.querySelectorAll('.lang-btn').forEach(function (b) {
+    var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+    b.classList.toggle('active', l === document.documentElement.lang);
+    if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+  });
+</script>
+</body>
+</html>
