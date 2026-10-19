@@ -27,6 +27,16 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-19 yeni yazı: dubai-lise-secimi + inbound link eklemeleri
+    "https://www.edualist.com/blog/dubai-lise-secimi/",
+    "https://www.edualist.com/sitemap.xml",
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/blog/dubai-ib-okul-secimi/",
+    "https://www.edualist.com/blog/lise-yurt-disi-tasinma-adaptasyon/",
+    # 2026-10-19 "lise" keyword patch — meta desc, keywords, H2'lere lise terimi eklendi
+    "https://www.edualist.com/blog/dubai-top-10-okullari/",
+    "https://www.edualist.com/blog/dubai-okul-karsilastirma/",
+    "https://www.edualist.com/okul-ucretleri-karsilastirma/",
     # 2026-10-19 GSC crawled-not-indexed fix — Oct 7'den beri recrawl yok; Oct 12-15 güncellemeleri görmedi
     "https://www.edualist.com/blog/hollanda-okul-kayit-rehberi/",
     "https://www.edualist.com/en/blog/school-enrolment-netherlands/",
