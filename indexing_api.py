@@ -27,6 +27,8 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-19 EduEntry CTA: universitede-fark-yaratan-aktiviteler
+    "https://www.edualist.com/blog/universitede-fark-yaratan-aktiviteler/",
     # 2026-10-19 yeni yazı: dubai-lise-secimi + inbound link eklemeleri
     "https://www.edualist.com/blog/dubai-lise-secimi/",
     "https://www.edualist.com/sitemap.xml",
