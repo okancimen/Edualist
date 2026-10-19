@@ -27,6 +27,18 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-20 GSC CTR optimizasyonu: title/meta + internal link iyileştirmeleri
+    "https://www.edualist.com/blog/robert-kolej-ucreti-2026/",
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    "https://www.edualist.com/blog/international-school-nedir/",
+    "https://www.edualist.com/blog/eal-nedir/",
+    "https://www.edualist.com/blog/dubai-turk-okulu-var-mi/",
+    "https://www.edualist.com/blog/dubai-egitim-sistemi/",
+    "https://www.edualist.com/blog/dubai-top-10-okullari/",
+    "https://www.edualist.com/blog/dubai-khda-okul-dereceleri-ucret-karsilastirmasi/",
+    "https://www.edualist.com/blog/dubai-ozel-okul-mu-devlet-okulu-mu/",
+    "https://www.edualist.com/blog/turkiye-ozel-okuldan-dubai-uluslararasi-okula-gecis/",
+    "https://www.edualist.com/blog/dubai-gelmeden-once-bilmeniz-gerekenler/",
     # 2026-10-19 EduEntry CTA: universitede-fark-yaratan-aktiviteler
     "https://www.edualist.com/blog/universitede-fark-yaratan-aktiviteler/",
     # 2026-10-19 yeni yazı: dubai-lise-secimi + inbound link eklemeleri
