@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});})();
+  </script>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}@supports ((animation-timeline:scroll()) and (animation-range:0% 100%)){@keyframes shrinkHeader{to{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}}.header-nav{animation:shrinkHeader auto linear both;animation-timeline:scroll(block root);animation-range:0px 100px}}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}}@media (max-width:768px){.menu-toggle{display:flex}.nav-controls .btn{display:none}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}.blog-related-section{padding:3rem 0;background:var(--bg-warm-secondary)}.blog-related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:1.5rem}.blog-related-card{border-radius:var(--radius-md);overflow:hidden;background:#fff;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:var(--transition-fast)}.blog-related-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}.blog-related-card img{width:100%;aspect-ratio:16/9;object-fit:cover}.blog-related-card-body{padding:1rem 1.25rem}.blog-related-card-title{font-weight:600;font-size:.95rem;color:var(--primary);margin-bottom:.3rem}.blog-related-card-meta{font-size:.8rem;color:var(--text-muted)}.footer{padding:4rem 0 2rem;background:var(--primary);color:var(--text-light)}.footer h3,.footer h4{color:var(--text-light)}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}.footer-bio-text{font-size:.9rem;opacity:.75;line-height:1.7;margin-top:.5rem}.footer-links{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-top:.5rem}.footer-links a{font-size:.9rem;opacity:.75;transition:opacity .2s}.footer-links a:hover{opacity:1}.footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:.75rem;margin-top:.5rem}.footer-contact-item{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem;opacity:.75}.footer-contact-item a{color:inherit;transition:opacity .2s}.footer-contact-item a:hover{opacity:1}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.85rem;opacity:.6;flex-wrap:wrap;gap:.5rem}.faq-item{margin-bottom:1.25rem;padding:1.5rem 1.75rem;background:var(--bg-warm-secondary);border-radius:var(--radius-md)}.faq-q{font-size:1.05rem;font-weight:700;color:var(--primary);margin-bottom:.5rem}.faq-a{font-size:.95rem;line-height:1.75;color:var(--text-dark)}.blog-faq h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 1.25rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.whatsapp-sticky{position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:#25d366;color:#fff;text-decoration:none;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(37,211,102,.45);font-size:.95rem;font-weight:600;transition:transform .2s ease,box-shadow .2s ease}.whatsapp-sticky svg{flex-shrink:0}.chatbot-btn{position:fixed;bottom:1.75rem;left:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:var(--primary);color:#fff;border:none;cursor:pointer;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(11,33,58,.4);font-size:.95rem;font-weight:600;font-family:inherit;transition:transform .2s ease,box-shadow .2s ease}.chatbot-btn svg{flex-shrink:0}.chatbot-popup{position:fixed;bottom:5.5rem;left:1.75rem;z-index:9998;width:418px;height:540px;background:#fff;border-radius:16px;box-shadow:0 12px 48px rgba(11,33,58,.25);display:flex;flex-direction:column;overflow:hidden}.chatbot-popup[hidden]{display:none!important}.chatbot-popup-header{display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem;background:var(--primary);color:#fff;font-weight:600;font-size:.9rem;flex-shrink:0}.chatbot-popup-close{background:0 0;border:none;color:#fff;cursor:pointer;font-size:1.1rem;padding:.1rem .35rem;line-height:1;border-radius:4px;opacity:.75}.chatbot-iframe{flex:1;width:100%;border:none}@media(max-width:480px){.whatsapp-sticky{padding:.85rem;border-radius:50%}.whatsapp-sticky-label{display:none}.chatbot-btn{padding:.85rem;border-radius:50%}.chatbot-btn-label{display:none}.chatbot-popup{left:.75rem;right:.75rem;width:auto;bottom:5rem;height:72vh}}@media(max-width:768px){.blog-related-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr;gap:2rem}}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai Salaries 2026: Engineering & IT Pay Guide | Edualist</title>
+  <meta name="description" content="How much do engineers and software developers earn in Dubai? Zero income tax, Turkey comparison and minimum salary needed for a family of four — 2026 figures.">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/en/blog/dubai-salaries-2026/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-maaslar-2026/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/dubai-salaries-2026/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-maaslar-2026/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="ai-catalog" type="application/json" href="/ai-catalog.json" title="AI Resource Catalog">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="Dubai Salaries 2026: Engineering & IT Pay Guide">
+  <meta property="og:description" content="How much do engineers and software developers earn in Dubai? Zero income tax, Turkey comparison and minimum salary to support a family of four — 2026 figures.">
+  <meta property="og:url"         content="https://www.edualist.com/en/blog/dubai-salaries-2026/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-maaslar.webp">
+  <meta property="article:published_time" content="2026-10-20">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Dubai Salaries 2026: Engineering & IT Pay Guide">
+  <meta name="twitter:description" content="How much do engineers and software developers earn in Dubai? Zero income tax, Turkey comparison and minimum salary to support a family of four.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-maaslar.webp">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Dubai Salaries 2026: Engineering & IT Pay Guide",
+  "description": "Engineering, construction and IT/software developer salaries in Dubai 2026 — zero income tax advantage, Turkey net pay comparison and minimum monthly income for a family of four.",
+  "author": {
+    "@type": "Person",
+    "name": "Özlem Çimen", "jobTitle": "International Education Consultant",
+    "url": "https://www.edualist.com/en/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edualist",
+    "url": "https://www.edualist.com/en/"
+  },
+  "datePublished": "2026-10-20T00:00:00+00:00",
+  "dateModified": "2026-10-20T00:00:00+00:00",
+  "wordCount": 2800,
+  "inLanguage": "en",
+  "url": "https://www.edualist.com/en/blog/dubai-salaries-2026/",
+  "image": "https://www.edualist.com/assets/blog/thumb-dubai-maaslar.webp"
+}
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.edualist.com/en/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/en/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dubai Salaries 2026", "item": "https://www.edualist.com/en/blog/dubai-salaries-2026/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "How much does an engineer earn in Dubai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In 2026, mid-level engineers (5–8 years' experience) earn 12,000–18,000 AED/month, senior engineers and project managers 18,000–28,000 AED/month, and director-level 25,000–40,000 AED+. All figures are net — Dubai has zero personal income tax."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does a software developer earn in Dubai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Mid-level backend or full-stack developers earn 13,000–20,000 AED/month, senior developers and tech leads 20,000–35,000 AED/month. AI/ML and cloud specialists command the upper end. All figures are tax-free."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What salary do you need to live comfortably with a family of four in Dubai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "For a two-child family: budget scenario (JVC, KHDA Good school) requires 22,000–26,000 AED/month; mid-range (JLT, KHDA Very Good) 28,000–34,000 AED/month; comfortable (Arabian Ranches, KHDA Outstanding) 36,000–46,000 AED/month. With both spouses working, mid-range is comfortably achievable at mid-level salaries."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does zero income tax save in Dubai vs Turkey?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In Turkey, roughly 32–35% of gross salary is lost to income tax and social security. A 250,000 TL gross salary nets ~167,000 TL. The equivalent Dubai salary of 18,315 AED is received in full. That is around 50% more purchasing power from the same nominal gross — purely from the zero-tax policy."
+      }
+    }
+  ]
+}
+  </script>
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    window.addEventListener("load",function(){setTimeout(function(){(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");},5000);});
+  </script>
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp">
+  <link rel="preload" as="style" href="/styles.css?v=15">
+  <link rel="stylesheet" href="/styles.css?v=15" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/styles.css?v=15"></noscript>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Dubai Schools</a></li>
+        <li><a href="/en/international-school-consulting/">Consultancy</a></li>
+        <li><a href="/en/academic-coaching/">Coaching</a></li>
+        <li><a href="/en/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">68</span></a></li>
+        <li><a href="/en/why-edualist/">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/en/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span>Back to Blog</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>20 October 2026</span>
+          <span><a href="/en/about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>10 min read</span>
+        </div>
+
+        <div class="blog-post-body">
+
+          <h1 class="blog-post-title">Dubai Salaries 2026: Engineering & IT Pay Guide</h1>
+
+          <div class="blog-summary">
+            <strong>Summary</strong>
+            <p>How much can engineers and IT professionals earn in Dubai — and is it enough for a family? This guide covers 2026 salary ranges for engineering/construction and technology/IT, the real maths of zero income tax, and the minimum monthly income needed to support a two-child household comfortably. Short answer: a mid-to-senior engineer or developer earning 15,000–22,000 AED/month can live well in Dubai with two children at a good school.</p>
+          </div>
+
+          <p>"Dubai pays well, but it costs a lot too." True — but the picture is more nuanced than that. Zero personal income tax means every dirham of your salary is yours. In Turkey, roughly 32–35% of gross pay is deducted before it reaches your account.</p>
+
+          <p>This guide answers two questions: what can engineers and developers realistically earn in Dubai, and can that salary support a family with children in school?</p>
+
+          <div class="blog-callout">
+            <strong>Exchange rate note:</strong> All AED figures are gross = net (no income tax). TL equivalents use 1 AED = 13.65 TL (October 2026 approximate). Salary ranges are market benchmarks; individual offers vary by sector, company size and negotiation.
+          </div>
+
+          <h2>1. Why Think Net, Not Gross?</h2>
+
+          <p>In Turkey, a 100,000 TL gross salary yields roughly 65,000–68,000 TL net after employee social security (14%) and income tax (15–27% bracket). About 32–35% goes to the state.</p>
+
+          <p>In Dubai there is <strong>no personal income tax</strong>. Your offer letter figure is your take-home pay. This means: to match a 100,000 TL Turkish gross salary in real purchasing power, you only need the net equivalent — roughly 66,500 TL worth of AED, or about 4,872 AED/month.</p>
+
+          <p><strong>Any Dubai offer above that threshold puts you ahead.</strong> Most mid-level engineering and IT roles land well above it.</p>
+
+          <h2>2. Engineering & Construction Salaries</h2>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Experience</th>
+                <th>Salary (AED/month)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Graduate / Junior Engineer</td><td>0–3 yrs</td><td>5,000–8,000</td></tr>
+              <tr><td>Project Engineer (mid-level)</td><td>4–7 yrs</td><td>10,000–16,000</td></tr>
+              <tr><td>Senior Engineer / Project Manager</td><td>8–12 yrs</td><td>16,000–26,000</td></tr>
+              <tr><td>Principal Engineer / Director</td><td>12+ yrs</td><td>25,000–40,000+</td></tr>
+              <tr><td>MEP (Mechanical/Electrical) Engineer</td><td>5–10 yrs</td><td>12,000–20,000</td></tr>
+              <tr><td>Site Inspector / HSE Specialist</td><td>5–8 yrs</td><td>10,000–17,000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Package extras:</strong> Most engineering firms add a housing allowance (2,000–5,000 AED/month) and a transport allowance on top of the base salary. Always negotiate the all-in package, not just the base.
+          </div>
+
+          <h2>3. Technology & IT Salaries</h2>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Experience</th>
+                <th>Salary (AED/month)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior Software Developer</td><td>0–2 yrs</td><td>6,000–10,000</td></tr>
+              <tr><td>Mid-level Backend / Full-Stack</td><td>3–6 yrs</td><td>13,000–20,000</td></tr>
+              <tr><td>Senior Developer / Tech Lead</td><td>6–10 yrs</td><td>20,000–35,000</td></tr>
+              <tr><td>DevOps / Cloud Engineer</td><td>4–8 yrs</td><td>15,000–28,000</td></tr>
+              <tr><td>Data Scientist / AI-ML Engineer</td><td>3–7 yrs</td><td>18,000–35,000</td></tr>
+              <tr><td>Cybersecurity Specialist</td><td>4–8 yrs</td><td>16,000–30,000</td></tr>
+              <tr><td>IT Project Manager (PMO)</td><td>5–10 yrs</td><td>15,000–25,000</td></tr>
+              <tr><td>Product Manager</td><td>4–8 yrs</td><td>18,000–32,000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Highest demand in 2026: <strong>AI/ML, cloud infrastructure (AWS/Azure/GCP), cybersecurity and fintech development.</strong> These specialisations typically attract offers at the upper end of the ranges above.</p>
+
+          <h2>4. Minimum Salary for a Family of Four</h2>
+
+          <p>Salary ranges in hand, the real question: can you school your children properly, live in a decent area and not be financially stressed?</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Scenario</th>
+                <th>Area / School</th>
+                <th>Monthly Spend (AED)</th>
+                <th>Recommended Min. Salary</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><strong>Budget</strong></td><td>JVC/DSO · KHDA Good</td><td>18,000–22,000</td><td>22,000–26,000 AED</td></tr>
+              <tr><td><strong>Mid-range</strong></td><td>Motor City/JLT · KHDA Very Good</td><td>24,000–30,000</td><td>28,000–34,000 AED</td></tr>
+              <tr><td><strong>Comfortable</strong></td><td>Arabian Ranches · KHDA Outstanding</td><td>32,000–42,000</td><td>36,000–46,000 AED</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p><em>Based on a two-child, four-person household. Monthly spend covers rent, school fees for two children, groceries, one car, health insurance, utilities and basic social activities.</em></p>
+
+          <p>Practical upshot: <strong>a mid-level engineer or developer (12,000–20,000 AED/month) can comfortably afford the budget or mid-range scenario when both spouses work.</strong> At senior level (18,000–28,000 AED/month), a single income covers the mid-range scenario.</p>
+
+          <h2>5. The Zero-Tax Advantage: By the Numbers</h2>
+
+          <p>Concrete example — a senior software developer earning the equivalent of 250,000 TL gross in Turkey:</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr><th></th><th>Turkey</th><th>Dubai</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Gross salary</td><td>250,000 TL</td><td>18,315 AED</td></tr>
+              <tr><td>Tax / social security</td><td>~83,000 TL (~33%)</td><td>0</td></tr>
+              <tr><td>Net take-home</td><td>~167,000 TL</td><td>18,315 AED (≈250,000 TL)</td></tr>
+              <tr><td>Real purchasing power gain</td><td>–</td><td>+~50%</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>The table shows what happens with zero salary increase — only a change of location. Any Dubai salary above this equivalent threshold compounds the advantage further.</p>
+
+          <h2>6. Finding Work: Platforms and Sectors</h2>
+
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:1.9">
+            <li><strong>LinkedIn</strong> — primary channel for international companies and large corporates. Search "Dubai" + job title.</li>
+            <li><strong>Bayt.com</strong> — MENA's largest job platform; strong engineering and IT inventory.</li>
+            <li><strong>GulfTalent</strong> — specialist platform for engineering, construction and technical roles.</li>
+            <li><strong>Naukrigulf.com</strong> — broad listing database; well-suited to junior and mid-level roles.</li>
+            <li><strong>Company career pages</strong> — Emaar, DAMAC, Aldar, Etisalat, du, Emirates NBD and other large employers.</li>
+          </ul>
+
+          <div class="blog-callout">
+            <strong>For engineers specifically:</strong> Turkish contractors such as STFA, Limak and TAV operate in the region. A Turkish engineering reference can open doors at these firms. For IT roles, code skills are language-agnostic — a strong GitHub profile and English proficiency are what matter.
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Let's evaluate your offer together</h3>
+            <p>Is the Dubai job offer on the table enough for your family? We can calculate your personalised budget, school options and relocation costs.</p>
+            <a href="/en/international-school-consulting/" class="btn btn-primary">Book a Free Consultation</a>
+          </div>
+
+        </div>
+
+        <!-- AUTHOR BOX -->
+        <aside style="display:flex;gap:1.1rem;align-items:flex-start;margin:2.5rem 0;padding:1.4rem 1.5rem;border:1px solid rgba(11,33,58,.08);border-left:3px solid var(--accent,#DBAF2E);border-radius:10px;background:rgba(11,33,58,.02)">
+          <picture>
+            <source srcset="/assets/founder-avatar-160.webp" type="image/webp">
+            <img src="/assets/founder-avatar-160.webp" alt="Özlem Çimen" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)">
+          </picture>
+          <div>
+            <p style="margin:0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Author</p>
+            <p style="margin:.15rem 0 .4rem;font-size:1.1rem;font-weight:700"><a href="/en/about/" style="color:var(--primary,#0b213a);text-decoration:none">Özlem Çimen</a></p>
+            <p style="margin:0;font-size:.95rem;line-height:1.7">International education consultant and founder of Edualist. Former teacher, department head and administrator at TED Istanbul College, ENKA Schools and IICS over 20+ years. Raised her own children at international schools across 5 countries.</p>
+            <p style="margin:.5rem 0 0;font-size:.9rem"><a href="/en/about/" style="color:var(--accent-hover,#b8921f);font-weight:600">About Özlem Çimen →</a></p>
+          </div>
+        </aside>
+
+        <!-- FAQ -->
+        <div class="blog-faq">
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="faq-item">
+            <h3 class="faq-q">How much does an engineer earn in Dubai?</h3>
+            <p class="faq-a">In 2026, a mid-level project engineer earns 12,000–18,000 AED/month and a senior engineer or PM 18,000–28,000 AED/month. All figures are net — no income tax in Dubai.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">How much does a software developer earn in Dubai?</h3>
+            <p class="faq-a">Mid-level backend/full-stack: 13,000–20,000 AED/month. Senior developer or tech lead: 20,000–35,000 AED/month. AI/ML and cloud specialists attract the upper end. All tax-free.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">What salary do you need to live comfortably with a family of four in Dubai?</h3>
+            <p class="faq-a">Budget scenario (JVC, KHDA Good school): 22,000–26,000 AED/month. Mid-range (JLT, KHDA Very Good): 28,000–34,000 AED/month. With both partners working, mid-range is achievable at mid-level salaries.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">How much does zero income tax save compared with Turkey?</h3>
+            <p class="faq-a">Turkey deducts ~33% of gross in taxes and social security. A 250,000 TL gross salary nets ~167,000 TL. The equivalent Dubai salary (18,315 AED) is received in full — roughly 50% more purchasing power with no other change.</p>
+          </div>
+        </div>
+
+      </article>
+    </div>
+    <div class="container" style="padding:0 0 2rem;"></div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>Related Articles</h2>
+      <div class="blog-related-grid">
+        <a href="/en/blog/dubai-cost-of-living-2026/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai-yasam.webp" alt="Cost of Living in Dubai 2026" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title"><span>Cost of Living in Dubai 2026: Real Family Numbers</span></div>
+            <div class="blog-related-card-meta">25 June 2026 · 12 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/before-moving-to-dubai/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai-once.webp" alt="Before Moving to Dubai" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title"><span>7 Things to Know Before Moving to Dubai</span></div>
+            <div class="blog-related-card-meta">15 June 2026 · 11 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/dubai-international-schools-khda-fees-2026/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai-okul-ucretleri-2026.webp" alt="Dubai School Fees 2026" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title"><span>Dubai School Fees 2026–27: Full Fee Table</span></div>
+            <div class="blog-related-card-meta">20 June 2026 · 10 min</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen has over 20 years of education experience guiding families through international school selection, curriculum evaluation and transition.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/why-edualist/">Why Edualist?</a></li>
+            <li><a href="/en/#services">Services</a></li>
+            <li><a href="/en/blog/">Blog <span class="nav-count-badge">68</span></a></li>
+            <li><a href="/en/international-school-consulting/">Book a Consultation</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP STICKY -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+  <script>
+    window.setLang = function (l) {
+      if (l === document.documentElement.lang) return;
+      try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+      document.cookie = 'edualist_lang=' + l + ';path=/;max-age=31536000;samesite=lax';
+      var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+      location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+    };
+    document.querySelectorAll('.lang-btn').forEach(function (b) {
+      var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+      b.classList.toggle('active', l === document.documentElement.lang);
+      if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+    });
+  </script>
+</body>
+</html>

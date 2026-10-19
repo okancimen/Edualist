@@ -27,7 +27,8 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
-    # 2026-10-20 Yeni yazı: dubai-maaslar-2026 + internal link güncellemeleri
+    # 2026-10-20 Yeni yazı: dubai-maaslar-2026 + EN sürümü
+    "https://www.edualist.com/en/blog/dubai-salaries-2026/",
     "https://www.edualist.com/blog/dubai-maaslar-2026/",
     "https://www.edualist.com/blog/dubai-yasam-maliyeti-2026/",
     "https://www.edualist.com/blog/dubai-gelmeden-once-bilmeniz-gerekenler/",
