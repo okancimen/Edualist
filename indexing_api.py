@@ -27,6 +27,11 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-22 EN assessment hub + nav fix + EN blog redesign
+    "https://www.edualist.com/en/your-childs-potential/",
+    "https://www.edualist.com/cocugunuzun-potansiyeli/",
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/blog/",
     # 2026-10-20 Yeni yazı: ingilterede-turk-okulu, isvicre, abd okul kayıt rehberleri
     "https://www.edualist.com/blog/ingilterede-turk-okulu-var-mi/",
     "https://www.edualist.com/blog/isvicre-okul-kayit-rehberi/",
