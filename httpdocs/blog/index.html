@@ -29,6 +29,7 @@
 .blog-card-featured .blog-card-title span{font-size:1.9rem!important;line-height:1.25!important}
 .blog-card-featured .blog-card-excerpt span{font-size:.95rem!important;line-height:1.7!important}
 @media(max-width:768px){.blog-card-featured{flex-direction:column!important;grid-column:unset!important}.blog-card-featured .blog-card-thumb{width:100%;min-height:220px}}
+.topic-nav-card:hover{border-color:var(--primary)!important;background:hsla(212,66%,13%,.05)!important;box-shadow:0 4px 16px hsla(212,66%,13%,.1)!important;transform:translateY(-2px)}
 </style>
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -714,19 +715,19 @@
   <nav id="topic-nav" aria-label="Konu seçimi" style="background:#fff;border-top:1px solid hsla(212,66%,13%,.07);border-bottom:1px solid hsla(212,66%,13%,.07);padding:1.25rem 0;">
     <div class="container">
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;">
-        <a data-topic="dubai" href="#blog-grid" style="display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem .75rem;border:1.5px solid hsla(212,66%,13%,.1);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .18s,background .18s,box-shadow .18s;">
+        <a data-topic="dubai" href="#blog-grid" class="topic-nav-card" style="transition:border-color .18s,background .18s,box-shadow .18s,transform .18s;display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem .75rem;border:1.5px solid hsla(212,66%,13%,.1);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .18s,background .18s,box-shadow .18s;">
           <strong style="font-size:.88rem;color:var(--primary);text-align:center;">Dubai</strong>
           <span style="font-size:.72rem;color:var(--text-muted);">29 rehber</span>
         </a>
-        <a data-topic="muefredat" href="#blog-grid" style="display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem .75rem;border:1.5px solid hsla(212,66%,13%,.1);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .18s,background .18s,box-shadow .18s;">
+        <a data-topic="muefredat" href="#blog-grid" class="topic-nav-card" style="transition:border-color .18s,background .18s,box-shadow .18s,transform .18s;display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem .75rem;border:1.5px solid hsla(212,66%,13%,.1);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .18s,background .18s,box-shadow .18s;">
           <strong style="font-size:.88rem;color:var(--primary);text-align:center;">Müfredat & IB</strong>
           <span style="font-size:.72rem;color:var(--text-muted);">IB · AP · A-Level</span>
         </a>
-        <a data-topic="akademik-destek" href="#blog-grid" style="display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem .75rem;border:1.5px solid hsla(212,66%,13%,.1);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .18s,background .18s,box-shadow .18s;">
+        <a data-topic="akademik-destek" href="#blog-grid" class="topic-nav-card" style="transition:border-color .18s,background .18s,box-shadow .18s,transform .18s;display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem .75rem;border:1.5px solid hsla(212,66%,13%,.1);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .18s,background .18s,box-shadow .18s;">
           <strong style="font-size:.88rem;color:var(--primary);text-align:center;">Akademik Destek</strong>
           <span style="font-size:.72rem;color:var(--text-muted);">25 rehber</span>
         </a>
-        <a data-topic="yurtdisi" href="#blog-grid" style="display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem .75rem;border:1.5px solid hsla(212,66%,13%,.1);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .18s,background .18s,box-shadow .18s;">
+        <a data-topic="yurtdisi" href="#blog-grid" class="topic-nav-card" style="transition:border-color .18s,background .18s,box-shadow .18s,transform .18s;display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem .75rem;border:1.5px solid hsla(212,66%,13%,.1);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .18s,background .18s,box-shadow .18s;">
           <strong style="font-size:.88rem;color:var(--primary);text-align:center;">Yurt Dışı</strong>
           <span style="font-size:.72rem;color:var(--text-muted);">20 rehber</span>
         </a>
