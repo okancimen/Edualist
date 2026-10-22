@@ -701,7 +701,7 @@
         </span>
         <h1 class="section-title" style="color:var(--primary)"><span>Dubai, Yurt Dışı ve Uluslararası Okul Rehberleri</span></h1>
         <p class="section-desc">
-          <span>Çocuğumun akademik gelişimi için ne yapmalıyım? Uluslararası okul seçimi, IB geçişi, akademik koçluk ve değerlendirme hakkında 80+ bağımsız rehber.</span>
+          <span>Çocuğumun akademik gelişimi için ne yapmalıyım? Uluslararası okul seçimi, IB geçişi, akademik koçluk ve değerlendirme hakkında 101 bağımsız rehber.</span>
         </p>
         <p style="margin-top:1rem">
           <a href="/cocugunuzun-potansiyeli/" style="display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-weight:600;font-size:.95rem;">📖 Tüm konularda tek rehber: Çocuğunuzun Akademik Gelişimi →</a>
@@ -710,15 +710,37 @@
     </div>
   </section>
 
+  <!-- TOPIC NAVIGATOR -->
+  <nav id="topic-nav" aria-label="Konu seçimi" style="background:#fff;border-top:1px solid hsla(212,66%,13%,.07);border-bottom:1px solid hsla(212,66%,13%,.07);padding:1.25rem 0;">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;">
+        <a data-topic="dubai" href="#blog-grid" style="display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem .75rem;border:1.5px solid hsla(212,66%,13%,.1);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .18s,background .18s,box-shadow .18s;">
+          <span style="font-size:1.6rem;line-height:1;">📍</span>
+          <strong style="font-size:.88rem;color:var(--primary);text-align:center;">Dubai</strong>
+          <span style="font-size:.72rem;color:var(--text-muted);">29 rehber</span>
+        </a>
+        <a data-topic="muefredat" href="#blog-grid" style="display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem .75rem;border:1.5px solid hsla(212,66%,13%,.1);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .18s,background .18s,box-shadow .18s;">
+          <span style="font-size:1.6rem;line-height:1;">📚</span>
+          <strong style="font-size:.88rem;color:var(--primary);text-align:center;">Müfredat & IB</strong>
+          <span style="font-size:.72rem;color:var(--text-muted);">IB · AP · A-Level</span>
+        </a>
+        <a data-topic="akademik-destek" href="#blog-grid" style="display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem .75rem;border:1.5px solid hsla(212,66%,13%,.1);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .18s,background .18s,box-shadow .18s;">
+          <span style="font-size:1.6rem;line-height:1;">🎯</span>
+          <strong style="font-size:.88rem;color:var(--primary);text-align:center;">Akademik Destek</strong>
+          <span style="font-size:.72rem;color:var(--text-muted);">25 rehber</span>
+        </a>
+        <a data-topic="yurtdisi" href="#blog-grid" style="display:flex;flex-direction:column;align-items:center;gap:.4rem;padding:1rem .75rem;border:1.5px solid hsla(212,66%,13%,.1);border-radius:10px;text-decoration:none;color:inherit;transition:border-color .18s,background .18s,box-shadow .18s;">
+          <span style="font-size:1.6rem;line-height:1;">🌍</span>
+          <strong style="font-size:.88rem;color:var(--primary);text-align:center;">Yurt Dışı</strong>
+          <span style="font-size:.72rem;color:var(--text-muted);">20 rehber</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
   <!-- BLOG GRID -->
   <section class="blog-listing-section">
     <div class="container">
-      <h2 style="text-align:center;margin-bottom:1.5rem;font-size:var(--font-xl)">Tüm Blog Yazıları</h2>
-
-      <p style="max-width:720px;margin:0 auto 2.5rem;text-align:center;line-height:1.9;font-size:1.05rem;color:var(--text-muted)">
-        Çocuğumun akademik gelişimi için ne yapmalıyım — Dubai'de okul seçiminden IB geçişine, akademik koçluktan uluslararası değerlendirmeye kadar 101 bağımsız rehber. Her yazı, Özlem Çimen'in 20+ yıllık eğitim deneyimi ve 5 ülkede expatriyat annelik deneyiminden doğmuştur. Okul seçimi, müfredat karşılaştırması, çocuğumun neden başarısız olduğu, özel ders mi akademik koç mu sorusu — yanıtları burada bulabilirsiniz.
-      </p>
-
       <!-- EN ÇOK OKUNAN -->
       <div style="background:hsla(212,66%,13%,.04);border:1px solid hsla(212,66%,13%,.1);border-radius:10px;padding:1.25rem 1.5rem;margin-bottom:2.5rem;">
         <p style="font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);margin:0 0 .9rem 0;">Bu ay en çok okunan</p>
@@ -751,6 +773,10 @@
         </div>
       </div>
 
+      <div style="margin-bottom:1.25rem;position:relative;">
+        <input id="blogSearch" type="search" placeholder="Başlıkta ara… (örn. GEMS, IB, okul seçimi)" autocomplete="off" style="width:100%;padding:.65rem 1rem .65rem 2.5rem;font-family:inherit;font-size:.95rem;border:1.5px solid hsla(212,66%,13%,.18);border-radius:8px;background:#fff;color:var(--primary);outline:none;appearance:none;" aria-label="Blog yazılarında ara">
+        <svg style="position:absolute;left:.75rem;top:50%;transform:translateY(-50%);pointer-events:none;opacity:.4;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
       <div class="blog-filter-bar" id="blogFilterBar" role="group" aria-label="Kategori filtrele">
         <button class="blog-filter-btn active" data-filter="all">Tümü (101)</button>
         <button class="blog-filter-btn" data-filter="dubai">Dubai (29)</button>
@@ -762,7 +788,31 @@
         <button class="blog-filter-btn" data-filter="yurtdisi">Yurt Dışı (20)</button>
         <button class="blog-filter-btn" data-filter="kariyer">Kariyer (10)</button>
       </div>
-      <div class="blog-grid">
+      <div class="blog-grid" id="blog-grid">
+        <a href="dubai-egitim-sistemi/" data-tags="dubai" class="blog-card glass blog-card-featured">
+          <div class="blog-card-thumb">
+            <img srcset="../assets/blog/thumb-dubai-egitim-sistemi-640.webp 640w, ../assets/blog/thumb-dubai-egitim-sistemi.webp 800w" src="../assets/blog/thumb-dubai-egitim-sistemi.webp" alt="Dubai'de Eğitim Sistemi — KHDA, Müfredat ve Okul Seçimi Rehberi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
+            <span class="blog-card-flag">🏫</span>
+          </div>
+          <div class="blog-card-body">
+            <div class="blog-card-meta">
+              <span>1 Temmuz 2026</span>
+              <span>
+                <span>9 dk</span>
+              </span>
+            </div>
+            <div class="blog-card-title">
+              <span>Dubai'de Eğitim Sistemi Nasıl Çalışır? KHDA, Müfredatlar ve Okul Türleri</span>
+            </div>
+            <div class="blog-card-excerpt">
+              <span>Devlet okulu yok, 200+ özel uluslararası okul var. KHDA denetimi nedir, British mi IB mi, ücretler ne kadar? Türk aileler için kapsamlı rehber.</span>
+            </div>
+            <span class="blog-card-readmore">
+              <span>Devamını Oku</span>
+              →
+            </span>
+          </div>
+        </a>
         <a href="cocugum-ozguvensiz-ve-cekingen/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugunuzun-guclu-yonleri.webp" srcset="../assets/blog/thumb-cocugunuzun-guclu-yonleri-640.webp 640w, ../assets/blog/thumb-cocugunuzun-guclu-yonleri.webp 800w" alt="Çocuğum özgüvensiz ve çekingen: güçlü yönlerle özgüven inşası" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
@@ -877,7 +927,7 @@
             <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
-        <a href="cocugumun-guclu-yonleri/" data-tags="akademik-destek" class="blog-card glass scroll-reveal blog-card-featured">
+        <a href="cocugumun-guclu-yonleri/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugunuzun-guclu-yonleri.webp" srcset="../assets/blog/thumb-cocugunuzun-guclu-yonleri-640.webp 640w, ../assets/blog/thumb-cocugunuzun-guclu-yonleri.webp 800w" alt="Çocuğumun güçlü yönleri VIA karakter profili ve 24 örnek" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
             <span class="blog-card-flag">💛</span>
@@ -1032,6 +1082,8 @@
             </div>
           </div>
         </a>
+
+        <div class="blog-cta-banner" style="grid-column:1/-1;background:var(--primary);color:#fff;border-radius:12px;padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin:.25rem 0;"><p style="margin:0;font-size:1rem;font-weight:600;line-height:1.5;">Dubai'ye taşınıyorsunuz ve doğru okulu seçmek istiyorsunuz?</p><a href="/tr/#contact" style="display:inline-block;background:var(--accent);color:var(--primary);padding:.6rem 1.4rem;border-radius:8px;font-weight:700;text-decoration:none;white-space:nowrap;font-size:.9rem;">Ücretsiz görüşme planla →</a></div>
         <a href="turkiyeden-dubaya-tasima-cocuk-okul/" data-tags="dubai" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-turkiyeden-dubaya-tasima-cocuk-okul.webp" alt="Türkiye'den Dubai'ye taşınma çocuk okul" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
@@ -1317,6 +1369,8 @@
             <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
+
+        <div class="blog-cta-banner" style="grid-column:1/-1;background:var(--primary);color:#fff;border-radius:12px;padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin:.25rem 0;"><p style="margin:0;font-size:1rem;font-weight:600;line-height:1.5;">IB, A-Level mi, AP mi? Çocuğunuz için doğru müfredatı birlikte bulalım.</p><a href="/tr/#contact" style="display:inline-block;background:var(--accent);color:var(--primary);padding:.6rem 1.4rem;border-radius:8px;font-weight:700;text-decoration:none;white-space:nowrap;font-size:.9rem;">Ücretsiz görüşme planla →</a></div>
         <a href="cocugum-ib-ye-basliyor/" data-tags="ib akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugum-ib-ye-basliyor.webp" alt="Çocuğum IB'ye başlıyor ilk yıl" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
@@ -1602,6 +1656,8 @@
             <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
+
+        <div class="blog-cta-banner" style="grid-column:1/-1;background:var(--primary);color:#fff;border-radius:12px;padding:1.5rem 2rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem;margin:.25rem 0;"><p style="margin:0;font-size:1rem;font-weight:600;line-height:1.5;">Çocuğunuzun akademik potansiyelini ölçmek ister misiniz?</p><a href="/cocugunuzun-potansiyeli/" style="display:inline-block;background:var(--accent);color:var(--primary);padding:.6rem 1.4rem;border-radius:8px;font-weight:700;text-decoration:none;white-space:nowrap;font-size:.9rem;">Değerlendirmeyi başlat →</a></div>
         <a href="dubai-okul-ucretleri-2026/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-dubai-okul-ucretleri-2026.webp" srcset="../assets/blog/thumb-dubai-okul-ucretleri-2026.webp 800w" alt="Dubai okul ücretleri 2026-2027 fiyat tablosu" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
@@ -1934,30 +1990,6 @@
               <span>Robert Kolej 2.488.200 TL, Koç Okulu 1.930.107 TL — Dubai IB okulu ile karşılaştırıldığında tablo ne gösteriyor? Gerçek maliyet analizi.</span>
             </div>
             <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
-          </div>
-        </a>
-        <a href="dubai-egitim-sistemi/" data-tags="dubai" class="blog-card glass scroll-reveal">
-          <div class="blog-card-thumb">
-            <img srcset="../assets/blog/thumb-dubai-egitim-sistemi-640.webp 640w, ../assets/blog/thumb-dubai-egitim-sistemi.webp 800w" src="../assets/blog/thumb-dubai-egitim-sistemi.webp" alt="Dubai'de Eğitim Sistemi — KHDA, Müfredat ve Okul Seçimi Rehberi" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
-            <span class="blog-card-flag">🏫</span>
-          </div>
-          <div class="blog-card-body">
-            <div class="blog-card-meta">
-              <span>1 Temmuz 2026</span>
-              <span>
-                <span>9 dk</span>
-              </span>
-            </div>
-            <div class="blog-card-title">
-              <span>Dubai'de Eğitim Sistemi Nasıl Çalışır? KHDA, Müfredatlar ve Okul Türleri</span>
-            </div>
-            <div class="blog-card-excerpt">
-              <span>Devlet okulu yok, 200+ özel uluslararası okul var. KHDA denetimi nedir, British mi IB mi, ücretler ne kadar? Türk aileler için kapsamlı rehber.</span>
-            </div>
-            <span class="blog-card-readmore">
-              <span>Devamını Oku</span>
-              →
-            </span>
           </div>
         </a>
         <a href="dubai-basarili-turk-ogrenciler/" data-tags="dubai" class="blog-card glass scroll-reveal">
@@ -3036,17 +3068,51 @@
 (function(){
   var bar=document.getElementById('blogFilterBar');
   if(!bar)return;
-  var cards=document.querySelectorAll('.blog-card[data-tags]');
+  var cards=Array.from(document.querySelectorAll('.blog-card[data-tags]'));
+  var ctaBanners=Array.from(document.querySelectorAll('.blog-cta-banner'));
+  var searchInput=document.getElementById('blogSearch');
+  var activeFilter='all';
+  var searchTerm='';
+
+  function applyFilters(){
+    var isDefault=activeFilter==='all'&&!searchTerm;
+    ctaBanners.forEach(function(b){b.hidden=!isDefault;});
+    cards.forEach(function(c){
+      var tagOk=activeFilter==='all'||(' '+c.dataset.tags+' ').includes(' '+activeFilter+' ');
+      var searchOk=!searchTerm||(c.querySelector('.blog-card-title span')||{textContent:''}).textContent.toLowerCase().includes(searchTerm);
+      c.hidden=!(tagOk&&searchOk);
+    });
+  }
+
   bar.addEventListener('click',function(e){
     var btn=e.target.closest('[data-filter]');
     if(!btn)return;
     bar.querySelectorAll('.blog-filter-btn').forEach(function(b){b.classList.remove('active');});
     btn.classList.add('active');
-    var f=btn.dataset.filter;
-    cards.forEach(function(c){
-      c.hidden=f!=='all'&&!(' '+c.dataset.tags+' ').includes(' '+f+' ');
+    activeFilter=btn.dataset.filter;
+    applyFilters();
+  });
+
+  document.querySelectorAll('[data-topic]').forEach(function(el){
+    el.addEventListener('click',function(e){
+      e.preventDefault();
+      var f=el.dataset.topic;
+      bar.querySelectorAll('.blog-filter-btn').forEach(function(b){
+        b.classList.toggle('active',b.dataset.filter===f);
+      });
+      activeFilter=f;
+      applyFilters();
+      var grid=document.getElementById('blog-grid');
+      if(grid)grid.scrollIntoView({behavior:'smooth',block:'start'});
     });
   });
+
+  if(searchInput){
+    searchInput.addEventListener('input',function(){
+      searchTerm=this.value.trim().toLowerCase();
+      applyFilters();
+    });
+  }
 })();
 </script>
 </body>
