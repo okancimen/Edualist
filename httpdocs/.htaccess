@@ -103,6 +103,8 @@ ErrorDocument 404 /404.html
   # Old stub URLs
   RewriteRule ^ib-dp-koclugu(/index\.html)?/?$ /uluslararasi-akademik-kocluk/ [R=301,L]
   RewriteRule ^blog/dubai-okul-secimi(/index\.html)?/?$ /blog/dubai-turk-aileler-okul-rehberi/ [R=301,L]
+  RewriteRule ^blog/ib-alevel/?$ /blog/ib-alevel-amerikan-mufredat-karsilastirma/ [R=301,L]
+  RewriteRule ^blog/dubai-okul-karsilastirma(/index\.html)?/?$ /blog/dubai-top-10-okullari/ [R=301,L]
 
   # English-first posts moved under /en/blog/ (Turkish pages stay at /blog/)
   RewriteRule ^blog/what-is-pisa(/index\.html)?/?$ /en/blog/what-is-pisa/ [R=301,L]
