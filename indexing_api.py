@@ -30,6 +30,13 @@ URLS = [
     # 2026-10-23 JESS Dubai review — TR + EN
     "https://www.edualist.com/blog/jess-dubai-incelemesi/",
     "https://www.edualist.com/en/blog/jess-dubai-review/",
+    # 2026-10-23 Kings' School Dubai review — TR + EN; blog listings updated
+    "https://www.edualist.com/blog/kings-school-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/kings-school-dubai-review/",
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/blog/dubai-top-10-okullari/",
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
     # 2026-10-23 Dubai College review — TR + EN; A-Level + GEMS Wellington + Repton updated with inbound links
     "https://www.edualist.com/blog/dubai-college-incelemesi/",
     "https://www.edualist.com/en/blog/dubai-college-review/",
