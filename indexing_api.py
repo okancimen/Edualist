@@ -27,6 +27,9 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-23 GEMS Wellington review — TR + EN
+    "https://www.edualist.com/blog/gems-wellington-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/gems-wellington-dubai-review/",
     # 2026-10-22 EN assessment hub + nav fix + EN blog redesign
     "https://www.edualist.com/en/your-childs-potential/",
     "https://www.edualist.com/cocugunuzun-potansiyeli/",
