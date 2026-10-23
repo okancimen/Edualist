@@ -27,6 +27,17 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-23 JESS Dubai review — TR + EN
+    "https://www.edualist.com/blog/jess-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/jess-dubai-review/",
+    # 2026-10-23 Dubai College review — TR + EN; A-Level + GEMS Wellington + Repton updated with inbound links
+    "https://www.edualist.com/blog/dubai-college-incelemesi/",
+    "https://www.edualist.com/en/blog/dubai-college-review/",
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",
+    "https://www.edualist.com/blog/gems-wellington-dubai-incelemesi/",
+    "https://www.edualist.com/blog/repton-school-dubai-incelemesi/",
+    "https://www.edualist.com/blog/",
     # 2026-10-23 Repton School Dubai review — TR + EN
     "https://www.edualist.com/blog/repton-school-dubai-incelemesi/",
     "https://www.edualist.com/en/blog/repton-school-dubai-review/",
