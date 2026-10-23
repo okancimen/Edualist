@@ -429,6 +429,14 @@
 
           <p>Puan dağılımı TrustIndex verilerine göre şöyle: 5 yıldız %56 (70 değerlendirme), 1 yıldız %32 (40 değerlendirme). Bu ikili kutuplaşma dikkat çekici — hem güçlü hayranları hem de ciddi şikayetleri olan bir okul tablosu ortaya çıkıyor.</p>
 
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:1.25rem;flex-wrap:wrap;margin:2rem 0;padding:1.25rem 1.5rem;background:var(--primary,hsl(212,66%,13%));border-radius:12px;color:#fff">
+            <div style="flex:1;min-width:200px">
+              <p style="margin:0 0 .3rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent,#DBAF2E);font-weight:700">Okul seçiminde kararsız mısınız?</p>
+              <p style="margin:0;font-size:1rem;font-weight:600;line-height:1.4">GEMS Wellington çocuğunuza uygun mu? Birlikte bakalım.</p>
+            </div>
+            <a href="/uluslararasi-okul-danismanligi/" style="display:inline-flex;align-items:center;gap:.4rem;background:var(--accent,#DBAF2E);color:var(--primary,hsl(212,66%,13%));font-weight:700;padding:.75rem 1.5rem;border-radius:8px;white-space:nowrap;font-size:.95rem;text-decoration:none">Ücretsiz Görüşme Al →</a>
+          </div>
+
           <h2>Koçluk Perspektifi: Kimin İçin Doğru Tercih?</h2>
 
           <p>GEMS Wellington'ı tavsiye ettiğim aileler şu profili taşıyor: <strong>büyük ve hareketli bir okul ortamında gelişen</strong>, çok yönlü ders ve klüp seçeneğini değerlendiren, akademik açıdan hazır ve İngilizce seviyesi en azından temel düzeyde olan çocuklar. Sahne sanatları, müzik veya spor konusunda yetenekli ya da istekli çocuklar için kampüs özellikle güçlü bir platform.</p>
@@ -683,6 +691,21 @@
     <span class="whatsapp-sticky-label">WhatsApp</span>
   </a>
 
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Kapat">&#x2715;</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
+  </div>
+
   <script>
     const toggle = document.getElementById('menuToggle');
     const navLinks = document.getElementById('navLinks');
@@ -690,6 +713,15 @@
       const open = navLinks.classList.toggle('open');
       toggle.classList.toggle('active', open);
       toggle.setAttribute('aria-expanded', open);
+    });
+    document.getElementById('chatbot-btn').addEventListener('click', () => {
+      const popup = document.getElementById('chatbot-popup');
+      const iframe = popup.querySelector('iframe');
+      if (iframe.dataset.src) { iframe.src = iframe.dataset.src; delete iframe.dataset.src; }
+      popup.hidden = !popup.hidden;
+    });
+    document.getElementById('chatbot-close').addEventListener('click', () => {
+      document.getElementById('chatbot-popup').hidden = true;
     });
     window.setLang = function(l) {
       if (l === document.documentElement.lang) return;
