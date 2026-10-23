@@ -27,6 +27,11 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-24 GEMS Dubai American Academy (DAA) review — TR + EN
+    "https://www.edualist.com/blog/gems-dubai-american-academy-incelemesi/",
+    "https://www.edualist.com/en/blog/gems-dubai-american-academy-review/",
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/en/blog/",
     # 2026-10-23 JESS Dubai review — TR + EN
     "https://www.edualist.com/blog/jess-dubai-incelemesi/",
     "https://www.edualist.com/en/blog/jess-dubai-review/",
