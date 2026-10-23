@@ -27,6 +27,9 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-23 Repton School Dubai review — TR + EN
+    "https://www.edualist.com/blog/repton-school-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/repton-school-dubai-review/",
     # 2026-10-23 GEMS Wellington review — TR + EN
     "https://www.edualist.com/blog/gems-wellington-dubai-incelemesi/",
     "https://www.edualist.com/en/blog/gems-wellington-dubai-review/",
