@@ -27,6 +27,8 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-24 SEO fix: title/meta rewrite for dubai-egitim-sistemi ("de" eki eklendi)
+    "https://www.edualist.com/blog/dubai-egitim-sistemi/",
     # 2026-10-24 CTR fix: title/meta rewrite for cocugunuzun-guclu-yonleri (3rd-person phrasing)
     "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
     # 2026-10-24 Fix broken x-default hreflang on 7 EN blog pages — re-push affected URLs
