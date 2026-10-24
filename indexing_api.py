@@ -27,6 +27,13 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-24 Nord Anglia International School Dubai review — TR + EN; blog listings, sitemap, llms updated
+    "https://www.edualist.com/blog/nord-anglia-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/nord-anglia-dubai-review/",
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/blog/dubai-top-10-okullari/",
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
     # 2026-10-24 Dubai International Academy review — TR + EN; IB okul secimi, GEMS Wellington, Repton, Dubai College updated with inbound links
     "https://www.edualist.com/blog/dubai-international-academy-incelemesi/",
     "https://www.edualist.com/en/blog/dubai-international-academy-review/",
