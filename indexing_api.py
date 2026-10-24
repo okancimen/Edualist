@@ -27,6 +27,16 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-24 Fix broken x-default hreflang on 7 EN blog pages — re-push affected URLs
+    "https://www.edualist.com/en/blog/childs-real-academic-level/",
+    "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
+    "https://www.edualist.com/en/blog/dubai-international-schools-khda-fees-2026/",
+    "https://www.edualist.com/blog/dubai-khda-okul-dereceleri-ucret-karsilastirmasi/",
+    "https://www.edualist.com/en/blog/best-ap-schools-dubai/",
+    "https://www.edualist.com/en/blog/dubai-college-review/",
+    "https://www.edualist.com/en/blog/dubai-ib-schools-graduate-success/",
+    "https://www.edualist.com/en/blog/dubai-british-schools-a-level/",
+    "https://www.edualist.com/en/blog/gems-wellington-dubai-review/",
     # 2026-10-24 Dubai British School + Sunmarke School TR + EN reviews; blog listings, sitemap, llms, internal links updated
     "https://www.edualist.com/blog/dubai-british-school-incelemesi/",
     "https://www.edualist.com/en/blog/dubai-british-school-review/",
