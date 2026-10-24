@@ -27,6 +27,13 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-24 Brighton College Dubai review — TR + EN; blog listings, sitemap, llms updated
+    "https://www.edualist.com/blog/brighton-college-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/brighton-college-dubai-review/",
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/blog/dubai-top-10-okullari/",
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
     # 2026-10-24 Re-push Discovered-not-indexed URLs: crawl queue priority boost
     "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
     "https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/",
