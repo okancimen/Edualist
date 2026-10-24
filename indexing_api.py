@@ -27,6 +27,16 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-24 Safa Community School + Jumeirah College Dubai reviews — TR + EN; blog listings, sitemap, llms updated
+    "https://www.edualist.com/blog/jumeirah-college-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/jumeirah-college-dubai-review/",
+    "https://www.edualist.com/blog/safa-community-school-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/safa-community-school-dubai-review/",
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/blog/dubai-top-10-okullari/",
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
+    "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",
     # 2026-10-24 Nord Anglia International School Dubai review — TR + EN; blog listings, sitemap, llms updated
     "https://www.edualist.com/blog/nord-anglia-dubai-incelemesi/",
     "https://www.edualist.com/en/blog/nord-anglia-dubai-review/",
