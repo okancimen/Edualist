@@ -27,6 +27,12 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-24 Re-push Discovered-not-indexed URLs: crawl queue priority boost
+    "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
+    "https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/",
+    "https://www.edualist.com/en/blog/dubai-international-schools-khda-fees-2026/",
+    "https://www.edualist.com/en/blog/dubai-school-fees-2026/",
+    "https://www.edualist.com/gizlilik-politikasi/",
     # 2026-10-24 Safa Community School + Jumeirah College Dubai reviews — TR + EN; blog listings, sitemap, llms updated
     "https://www.edualist.com/blog/jumeirah-college-dubai-incelemesi/",
     "https://www.edualist.com/en/blog/jumeirah-college-dubai-review/",
