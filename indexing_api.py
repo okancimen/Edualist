@@ -27,6 +27,17 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-24 Dubai British School + Sunmarke School TR + EN reviews; blog listings, sitemap, llms, internal links updated
+    "https://www.edualist.com/blog/dubai-british-school-incelemesi/",
+    "https://www.edualist.com/en/blog/dubai-british-school-review/",
+    "https://www.edualist.com/blog/sunmarke-school-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/sunmarke-school-dubai-review/",
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/blog/dubai-college-incelemesi/",
+    "https://www.edualist.com/blog/repton-school-dubai-incelemesi/",
+    "https://www.edualist.com/blog/gems-wellington-dubai-incelemesi/",
+    "https://www.edualist.com/blog/dubai-international-academy-incelemesi/",
     # 2026-10-24 Brighton College Dubai review — TR + EN; blog listings, sitemap, llms updated
     "https://www.edualist.com/blog/brighton-college-dubai-incelemesi/",
     "https://www.edualist.com/en/blog/brighton-college-dubai-review/",
