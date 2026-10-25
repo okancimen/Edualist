@@ -27,6 +27,11 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-25 GEMS Founders School Dubai incelemesi — TR + EN; blog listings, sitemap, llms güncellendi
+    "https://www.edualist.com/blog/gems-founders-school-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/gems-founders-school-dubai-review/",
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/en/blog/",
     # 2026-10-24 SEO fix: title/meta rewrite for dubai-egitim-sistemi ("de" eki eklendi)
     "https://www.edualist.com/blog/dubai-egitim-sistemi/",
     # 2026-10-24 CTR fix: title/meta rewrite for cocugunuzun-guclu-yonleri (3rd-person phrasing)
