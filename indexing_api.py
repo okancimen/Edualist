@@ -27,6 +27,9 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-25 Paket seçim CTA eklendi: kayit-rehberi + basvuru-nasil-yapilir
+    "https://www.edualist.com/blog/dubai-okul-kayit-rehberi/",
+    "https://www.edualist.com/blog/dubai-okul-basvuru-nasil-yapilir/",
     # 2026-10-25 EduBot mid-page CTA eklendi: dubai-okul-ucretleri-2026
     "https://www.edualist.com/blog/dubai-okul-ucretleri-2026/",
     # 2026-10-25 GEMS Founders School Dubai incelemesi — TR + EN; blog listings, sitemap, llms güncellendi
