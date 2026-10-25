@@ -27,6 +27,11 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-25 Dubai'de Türk Okulu Arayanlar — TR + EN; blog listings, sitemap, llms güncellendi
+    "https://www.edualist.com/blog/dubai-turk-okulu-arayanlara/",
+    "https://www.edualist.com/en/blog/searching-for-turkish-school-dubai/",
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/en/blog/",
     # 2026-10-25 GEMS Jumeirah Primary School Dubai incelemesi — TR + EN; blog listings, sitemap, llms güncellendi
     "https://www.edualist.com/blog/gems-jumeirah-primary-school-dubai-incelemesi/",
     "https://www.edualist.com/en/blog/gems-jumeirah-primary-school-dubai-review/",

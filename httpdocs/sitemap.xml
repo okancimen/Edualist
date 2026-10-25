@@ -199,6 +199,26 @@
   </url>
 
   <url>
+    <loc>https://www.edualist.com/blog/dubai-turk-okulu-arayanlara/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-turk-okulu-arayanlara/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/searching-for-turkish-school-dubai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-turk-okulu-arayanlara/"/>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/searching-for-turkish-school-dubai/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/searching-for-turkish-school-dubai/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-turk-okulu-arayanlara/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/searching-for-turkish-school-dubai/"/>
+    <lastmod>2026-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.edualist.com/blog/gems-wellington-dubai-incelemesi/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/gems-wellington-dubai-incelemesi/"/>
     <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/gems-wellington-dubai-review/"/>
