@@ -37,16 +37,16 @@ SCHOOLS = {
         'sub': 'KHDA Outstanding · 12 yıl üst üste · IB + A-Level',
     },
     'kings-school-dubai-incelemesi': {
-        'logo_url': None,
-        'initials': "K'S",
+        'logo_url': 'https://kings-edu.com/wp-content/themes/kingsgroup/images/kings-school-logo.png',
+        'logo_bg': 'white',
         'kicker': "DUBAİ · İNGİLİZ OKULU",
         't1': "Kings' School",
         't2': 'Dubai İncelemesi 2026',
         'sub': 'KHDA Outstanding · British GCSE + A-Level',
     },
     'dubai-college-incelemesi': {
-        'logo_url': None,
-        'initials': 'DC',
+        'logo_url': 'https://resources.finalsite.net/images/v1652716294/dubaicollegeorg/amcb6n0brpwff0h8r4ql/DubaiCollege.svg',
+        'logo_bg': 'dark',
         'kicker': 'DUBAİ · A-LEVEL',
         't1': 'Dubai College',
         't2': 'İncelemesi 2026',
@@ -109,8 +109,8 @@ SCHOOLS = {
         'sub': 'KHDA Outstanding (ilk denetimde) · A-Level · MBR City',
     },
     'dubai-british-school-incelemesi': {
-        'logo_url': None,
-        'initials': 'DBS',
+        'logo_url': 'https://www.dubaibritishschool.ae/wp-content/uploads/2024/09/Emirates-hills-updated.svg',
+        'logo_bg': 'dark',
         'kicker': 'DUBAİ · İNGİLİZ OKULU',
         't1': 'Dubai British',
         't2': 'School İncelemesi 2026',
@@ -147,26 +147,35 @@ HEADERS = {
     'Accept': '*/*',
 }
 
+HEADERS_CURL = {
+    'User-Agent': 'curl/7.88.0',
+    'Accept': '*/*',
+}
+
 CTX = ssl.create_default_context()
 CTX.check_hostname = False
 CTX.verify_mode = ssl.CERT_NONE
 
 
 def fetch_logo(url):
-    req = urllib.request.Request(url, headers=HEADERS)
-    resp = urllib.request.urlopen(req, context=CTX, timeout=15)
-    data = resp.read()
-    ct = resp.headers.get('Content-Type', 'image/png').split(';')[0].strip()
-    # Normalise mime
-    if 'svg' in ct:
-        ct = 'image/svg+xml'
-    elif 'webp' in ct:
-        ct = 'image/webp'
-    elif 'png' in ct:
-        ct = 'image/png'
-    elif 'jpeg' in ct or 'jpg' in ct:
-        ct = 'image/jpeg'
-    return data, ct
+    for headers in (HEADERS, HEADERS_CURL):
+        try:
+            req = urllib.request.Request(url, headers=headers)
+            resp = urllib.request.urlopen(req, context=CTX, timeout=15)
+            data = resp.read()
+            ct = resp.headers.get('Content-Type', 'image/png').split(';')[0].strip()
+            if 'svg' in ct:
+                ct = 'image/svg+xml'
+            elif 'webp' in ct:
+                ct = 'image/webp'
+            elif 'png' in ct:
+                ct = 'image/png'
+            elif 'jpeg' in ct or 'jpg' in ct:
+                ct = 'image/jpeg'
+            return data, ct
+        except Exception:
+            pass
+    raise RuntimeError(f'Could not fetch {url}')
 
 
 def stars(seed, n=55):
