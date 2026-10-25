@@ -27,6 +27,11 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-25 GEMS Jumeirah Primary School Dubai incelemesi — TR + EN; blog listings, sitemap, llms güncellendi
+    "https://www.edualist.com/blog/gems-jumeirah-primary-school-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/gems-jumeirah-primary-school-dubai-review/",
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/en/blog/",
     # 2026-10-25 Kapsamlı Paket mülakat simülasyonu CTA eklendi: cat4 + mulakat posts
     "https://www.edualist.com/blog/cat4-sinavi-nedir/",
     "https://www.edualist.com/blog/uluslararasi-okul-mulakat-sorulari/",
