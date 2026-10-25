@@ -27,6 +27,10 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-25 Kapsamlı Paket mülakat simülasyonu CTA eklendi: cat4 + mulakat posts
+    "https://www.edualist.com/blog/cat4-sinavi-nedir/",
+    "https://www.edualist.com/blog/uluslararasi-okul-mulakat-sorulari/",
+    "https://www.edualist.com/blog/uluslararasi-okul-mulakati-nasil-gecilir/",
     # 2026-10-25 Paket seçim CTA eklendi: kayit-rehberi + basvuru-nasil-yapilir
     "https://www.edualist.com/blog/dubai-okul-kayit-rehberi/",
     "https://www.edualist.com/blog/dubai-okul-basvuru-nasil-yapilir/",
