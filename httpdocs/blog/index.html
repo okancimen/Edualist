@@ -11,6 +11,11 @@
 .blog-filter-btn:hover{border-color:var(--primary);background:hsla(212,66%,13%,.06)}
 .blog-filter-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
 .blog-card[hidden]{display:none!important}
+.blog-section-divider{grid-column:1/-1;padding:2.25rem 0 1.25rem;border-top:1px solid hsla(212,66%,13%,.1);margin-top:.5rem}
+.blog-section-divider:first-child{border-top:none;padding-top:.25rem;margin-top:0}
+.blog-section-divider h2{font-family:var(--font-serif);font-size:1.65rem;color:var(--primary);font-weight:600;margin-bottom:.3rem}
+.blog-section-divider p{font-size:.88rem;color:var(--text-muted)}
+.blog-section-divider[hidden]{display:none!important}
 </style>
 </style>
 <style id="blog-redesign">
@@ -810,6 +815,10 @@
             </span>
           </div>
         </a>
+        <div class="blog-section-divider" data-section-divider>
+          <h2>🏫 Okul İncelemeleri</h2>
+          <p>15 Dubai uluslararası okulu için bağımsız inceleme — KHDA, ücretler ve koçluk notları</p>
+        </div>
         <a href="jumeirah-college-dubai-incelemesi/" data-tags="dubai okul-secimi" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img srcset="../assets/blog/thumb-jumeirah-college-dubai-incelemesi-640.webp 640w, ../assets/blog/thumb-jumeirah-college-dubai-incelemesi.webp 800w" src="../assets/blog/thumb-jumeirah-college-dubai-incelemesi.webp" alt="Jumeirah College Dubai İncelemesi 2026" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
@@ -1114,6 +1123,10 @@
             <span class="blog-card-readmore"><span>Devamını Oku</span> →</span>
           </div>
         </a>
+        <div class="blog-section-divider" data-section-divider>
+          <h2>📚 Diğer Yazılar</h2>
+          <p>Akademik koçluk, müfredat rehberleri, yurt dışı okul seçimi ve kariyer konularında makaleler</p>
+        </div>
         <a href="cocugum-ozguvensiz-ve-cekingen/" data-tags="akademik-destek" class="blog-card glass scroll-reveal">
           <div class="blog-card-thumb">
             <img src="../assets/blog/thumb-cocugunuzun-guclu-yonleri.webp" srcset="../assets/blog/thumb-cocugunuzun-guclu-yonleri-640.webp 640w, ../assets/blog/thumb-cocugunuzun-guclu-yonleri.webp 800w" alt="Çocuğum özgüvensiz ve çekingen: güçlü yönlerle özgüven inşası" loading="lazy" decoding="async" sizes="(max-width: 640px) calc(100vw - 2rem), (max-width: 1024px) calc(50vw - 3rem), 400px" width="800" height="450">
@@ -3371,6 +3384,7 @@
   if(!bar)return;
   var cards=Array.from(document.querySelectorAll('.blog-card[data-tags]'));
   var ctaBanners=Array.from(document.querySelectorAll('.blog-cta-banner'));
+  var dividers=Array.from(document.querySelectorAll('[data-section-divider]'));
   var searchInput=document.getElementById('blogSearch');
   var activeFilter='all';
   var searchTerm='';
@@ -3378,6 +3392,7 @@
   function applyFilters(){
     var isDefault=activeFilter==='all'&&!searchTerm;
     ctaBanners.forEach(function(b){b.hidden=!isDefault;});
+    dividers.forEach(function(d){d.hidden=!isDefault;});
     cards.forEach(function(c){
       var tagOk=activeFilter==='all'||(' '+c.dataset.tags+' ').includes(' '+activeFilter+' ');
       var searchOk=!searchTerm||(c.querySelector('.blog-card-title span')||{textContent:''}).textContent.toLowerCase().includes(searchTerm);
