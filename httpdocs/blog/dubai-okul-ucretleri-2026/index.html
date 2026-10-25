@@ -408,6 +408,15 @@
           </div>
           <p style="font-size:.8rem;color:var(--text-muted,#888);margin-top:.5rem">*Okul ücretleri sınıf seviyesine (Primary / Secondary / Sixth Form) göre değişiklik göstermektedir.</p>
 
+          <!-- EduBot mid-page CTA -->
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:1.25rem;flex-wrap:wrap;margin:2rem 0;padding:1.25rem 1.5rem;background:var(--primary,hsl(212,66%,13%));border-radius:12px;color:#fff">
+            <div style="flex:1;min-width:200px">
+              <p style="margin:0 0 .3rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent,#DBAF2E);font-weight:700">Bütçenize en uygun okullar hangileri?</p>
+              <p style="margin:0;font-size:1rem;font-weight:600;line-height:1.4">Bölgenizi ve bütçenizi girin — EduBot sizi anında filtrelesin.</p>
+            </div>
+            <button id="edubot-cta-fees" onclick="(function(){var popup=document.getElementById('chatbot-popup');var iframe=popup.querySelector('iframe');if(iframe.dataset.src){iframe.src=iframe.dataset.src;delete iframe.dataset.src;}popup.hidden=false;document.getElementById('chatbot-btn').classList.add('active');})()" style="display:inline-flex;align-items:center;gap:.4rem;background:var(--accent,#DBAF2E);color:var(--primary,hsl(212,66%,13%));font-weight:700;padding:.75rem 1.5rem;border-radius:8px;white-space:nowrap;font-size:.95rem;border:none;cursor:pointer">EduBot'u Aç →</button>
+          </div>
+
           <h2>Müfredatlara Göre Ücret Karşılaştırması: IB vs British vs Amerikan vs Hint</h2>
 
           <p>Müfredat seçimi, okul ücretini belirleyen en kritik faktörlerden biridir. Aşağıda her müfredatın tipik fiyat bandı, avantajları ve örnek okullar özetlenmiştir.</p>
