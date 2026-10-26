@@ -42,7 +42,7 @@
     "@type": "BlogPosting",
     "headline": "GEMS Founders School Dubai Review 2026: Fees, KHDA Rating & Parent Reviews",
     "description": "Comprehensive review of GEMS Founders School Dubai: American curriculum, KHDA Good rating, estimated fees AED 25,000–55,000, AP courses, open enrolment policy, parent reviews and coaching notes for expat families.",
-    "author": { "@type": "Person", "name": "Özlem Çimen", "jobTitle": "International Education Consultant", "url": "https://www.edualist.com/neden-biz/" },
+    "author": { "@type": "Person", "name": "Özlem Çimen", "jobTitle": "International Education Consultant", "url": "https://www.edualist.com/en/about/" },
     "publisher": { "@type": "Organization", "name": "Edualist", "url": "https://www.edualist.com", "logo": {"@type": "ImageObject", "url": "https://www.edualist.com/assets/favicon.svg"} },
     "datePublished": "2026-10-25T00:00:00+04:00",
     "dateModified": "2026-10-25T00:00:00+04:00",
@@ -397,47 +397,17 @@
     </div>
   </footer>
 
-  <!-- CHATBOT -->
-  <button class="chatbot-btn" id="chatbotBtn" aria-label="Chat with EduBot">
-    <img src="/assets/edubot-avatar.svg" alt="EduBot" width="44" height="44">
-  </button>
-  <div class="chatbot-popup" id="chatbotPopup" hidden>
-    <div class="chatbot-popup-header">
-      <span>EduBot</span>
-      <button class="chatbot-close" id="chatbotClose" aria-label="Close">×</button>
-    </div>
-    <iframe id="chatbotFrame" title="EduBot" loading="lazy"></iframe>
-  </div>
-  <script>
-    const toggle = document.getElementById('menuToggle');
-    const navLinks = document.getElementById('navLinks');
-    toggle.addEventListener('click', () => { const open = navLinks.classList.toggle('open'); toggle.classList.toggle('active', open); toggle.setAttribute('aria-expanded', open); });
-    window.setLang = function(l) {
-      if (l === document.documentElement.lang) return;
-      try { localStorage.setItem('edualist_lang', l); } catch(e) {}
-      document.cookie = 'edualist_lang=' + l + ';path=/;max-age=31536000;samesite=lax';
-      var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
-      location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
-    };
-    document.querySelectorAll('.lang-btn').forEach(function(b) {
-      var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
-      b.classList.toggle('active', l === document.documentElement.lang);
-      if (b.hasAttribute('data-lang')) b.addEventListener('click', function() { setLang(l); });
-    });
-  </script>
-  <script>
-    (function(){
-      var btn=document.getElementById('chatbotBtn'),
-          popup=document.getElementById('chatbotPopup'),
-          close=document.getElementById('chatbotClose'),
-          frame=document.getElementById('chatbotFrame'),
-          loaded=false;
-      function open(){popup.hidden=false;if(!loaded){frame.src='https://ai-edualist-com.vercel.app/';loaded=true;}}
-      btn.addEventListener('click',function(){if(popup.hidden){open();}else{popup.hidden=true;}});
-      close.addEventListener('click',function(){popup.hidden=true;});
-    })();
-  </script>
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20to%20get%20more%20information" target="_blank" rel="noopener noreferrer" class="whatsapp-sticky" aria-label="Chat on WhatsApp"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/></svg><span class="whatsapp-sticky-label">WhatsApp</span></a>
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26"><path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/></svg><span class="chatbot-btn-label">EduBot</span></button>
+  <div class="chatbot-popup" id="chatbot-popup" hidden><div class="chatbot-popup-header"><span>EduBot</span><button class="chatbot-popup-close" id="chatbot-close" aria-label="Close">&#x2715;</button></div><iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe></div>
 
-  <script src="/assets/app.js" defer></script>
+  <script>
+    const toggle=document.getElementById('menuToggle'),navLinks=document.getElementById('navLinks');
+    toggle.addEventListener('click',()=>{const open=navLinks.classList.toggle('open');toggle.classList.toggle('active',open);toggle.setAttribute('aria-expanded',open);});
+    document.getElementById('chatbot-btn').addEventListener('click',()=>{const popup=document.getElementById('chatbot-popup');const iframe=popup.querySelector('iframe');if(iframe.dataset.src){iframe.src=iframe.dataset.src;delete iframe.dataset.src;}popup.hidden=!popup.hidden;});
+    document.getElementById('chatbot-close').addEventListener('click',()=>{document.getElementById('chatbot-popup').hidden=true;});
+    window.setLang=function(l){if(l===document.documentElement.lang)return;try{localStorage.setItem('edualist_lang',l);}catch(e){}document.cookie='edualist_lang='+l+';path=/;max-age=31536000;samesite=lax';var alt=document.querySelector('link[rel="alternate"][hreflang="'+l+'"]');location.href=alt?new URL(alt.getAttribute('href'),location.href).pathname:'/'+l+'/';};
+    document.querySelectorAll('.lang-btn').forEach(function(b){var l=b.getAttribute('data-lang')||(b.id==='langEN'?'en':b.id==='langTR'?'tr':'');b.classList.toggle('active',l===document.documentElement.lang);if(b.hasAttribute('data-lang'))b.addEventListener('click',function(){setLang(l);});});
+  </script>
 </body>
 </html>

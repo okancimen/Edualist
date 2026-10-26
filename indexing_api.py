@@ -24,7 +24,11 @@ KEY_FILE = Path.home() / "Downloads/aibot-92369-5069a2de1bb0.json"
 
 INDEXNOW_KEY      = "5017990445f8bb07d511f1beeadb647d"
 INDEXNOW_HOST     = "www.edualist.com"
-INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
+INDEXNOW_ENDPOINTS = [
+    "https://api.indexnow.org/indexnow",
+    "https://www.bing.com/indexnow",
+    "https://yandex.com/indexnow",
+]
 
 URLS = [
     # 2026-10-26 American School of Dubai incelemesi — TR + EN; blog listings, sitemap, llms güncellendi
@@ -212,10 +216,10 @@ URLS = [
     "https://www.edualist.com/blog/hollanda-okul-kayit-rehberi/",
     "https://www.edualist.com/en/blog/school-enrolment-netherlands/",
     # 2026-10-19 GSC redirect error fix — .htaccess Oct 16'dan beri 1-hop; yeniden crawl zorunlu
-    "https://edualist.com/uluslararasi-akademik-kocluk/index.html",
-    "https://edualist.com/blog/",
-    "https://edualist.com/blog/ib-diploma-universite-basvuru/",
-    "https://edualist.com/blog/turkiye-dubai-okul-ucreti-karsilastirma",
+    "https://www.edualist.com/uluslararasi-akademik-kocluk/",
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/blog/ib-diploma-universite-basvuru/",
+    "https://www.edualist.com/blog/turkiye-dubai-okul-ucreti-karsilastirma/",
     # 2026-10-19 sitemap'e eklenen 3 yeni yazı
     "https://www.edualist.com/sitemap.xml",
     # 2026-10-19 yeni yazı: dubai-okul-seciminde-5-hata + görseller
@@ -376,25 +380,29 @@ def submit_urls(urls: list[str], key_file: Path) -> None:
     print(f"\n{ok} başarılı, {fail} hatalı / toplam {len(urls)} URL")
 
 def submit_indexnow(urls: list[str]) -> None:
-    payload = json.dumps({
-        "host": INDEXNOW_HOST,
-        "key": INDEXNOW_KEY,
-        "keyLocation": f"https://{INDEXNOW_HOST}/{INDEXNOW_KEY}.txt",
-        "urlList": urls,
-    }).encode()
-    req = urllib.request.Request(
-        INDEXNOW_ENDPOINT,
-        data=payload,
-        headers={"Content-Type": "application/json; charset=utf-8"},
-        method="POST",
-    )
-    try:
-        with urllib.request.urlopen(req, timeout=15) as resp:
-            print(f"  IndexNow → HTTP {resp.status} ({len(urls)} URL)")
-    except urllib.error.HTTPError as e:
-        print(f"  IndexNow HATA → HTTP {e.code}: {e.read().decode()}")
-    except Exception as e:
-        print(f"  IndexNow HATA → {e}")
+    for endpoint in INDEXNOW_ENDPOINTS:
+        name = endpoint.split("/")[2]
+        # Yandex rejects non-HTML URLs (e.g. .txt files)
+        batch = [u for u in urls if not u.endswith(".txt")] if "yandex" in endpoint else urls
+        payload = json.dumps({
+            "host": INDEXNOW_HOST,
+            "key": INDEXNOW_KEY,
+            "keyLocation": f"https://{INDEXNOW_HOST}/{INDEXNOW_KEY}.txt",
+            "urlList": batch,
+        }).encode()
+        req = urllib.request.Request(
+            endpoint,
+            data=payload,
+            headers={"Content-Type": "application/json; charset=utf-8"},
+            method="POST",
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                print(f"  IndexNow [{name}] → HTTP {resp.status} ({len(batch)} URL)")
+        except urllib.error.HTTPError as e:
+            print(f"  IndexNow [{name}] HATA → HTTP {e.code}: {e.read().decode()}")
+        except Exception as e:
+            print(f"  IndexNow [{name}] HATA → {e}")
 
 
 if __name__ == "__main__":
