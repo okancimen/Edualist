@@ -67,43 +67,38 @@
   </script>
 
   <link rel="stylesheet" href="/assets/style.css">
+  <style id="nav-breakpoint">@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
 </head>
 <body>
 
-  <!-- NAV -->
-  <nav class="site-nav" id="siteNav">
-    <div class="nav-inner">
-      <a href="/en/" class="nav-logo" aria-label="Edualist Home">
-        <img src="/assets/logo.svg" alt="Edualist" width="120" height="32" loading="eager">
-      </a>
-      <ul class="nav-links">
-        <li><a href="/en/your-childs-potential/">Assessment</a></li>
-        <li><a href="/en/how-we-work/">How We Work</a></li>
-        <li><a href="/en/blog/" class="active">Blog <span class="nav-count-badge">76</span></a></li>
-        <li><a href="/en/contact/" class="nav-cta-link">Contact</a></li>
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo"><div class="logo-icon">E</div><span class="logo-text">Edualist</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Schools in Dubai</a></li>
+        <li><a href="/en/international-school-consulting/">Consulting</a></li>
+        <li><a href="/en/academic-coaching/">Academic Coaching</a></li>
+        <li><a href="/en/blog/" class="nav-blog-highlight">Blog</a></li>
+        <li><a href="/en/about/">About</a></li>
       </ul>
-      <button class="nav-hamburger" aria-label="Menu" aria-expanded="false">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-    <div class="nav-mobile-menu" hidden>
-      <ul>
-        <li><a href="/en/your-childs-potential/">Assessment</a></li>
-        <li><a href="/en/how-we-work/">How We Work</a></li>
-        <li><a href="/en/blog/">Blog</a></li>
-        <li><a href="/en/contact/">Contact</a></li>
-      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
     </div>
   </nav>
 
   <!-- HERO -->
   <section class="blog-post-hero">
     <div class="container">
-      <nav class="breadcrumb" aria-label="Breadcrumb">
-        <ol>
+      <nav class="blog-breadcrumb" aria-label="breadcrumb">
+        <ol class="blog-breadcrumb-list">
           <li><a href="/en/">Home</a></li>
           <li><a href="/en/blog/">Blog</a></li>
-          <li aria-current="page">GEMS Founders School Dubai Review</li>
+          <li><span>GEMS Founders School Dubai Review</span></li>
         </ol>
       </nav>
       <div class="blog-post-meta-top">
@@ -394,6 +389,23 @@
     </div>
     <iframe id="chatbotFrame" title="EduBot" loading="lazy"></iframe>
   </div>
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => { const open = navLinks.classList.toggle('open'); toggle.classList.toggle('active', open); toggle.setAttribute('aria-expanded', open); });
+    window.setLang = function(l) {
+      if (l === document.documentElement.lang) return;
+      try { localStorage.setItem('edualist_lang', l); } catch(e) {}
+      document.cookie = 'edualist_lang=' + l + ';path=/;max-age=31536000;samesite=lax';
+      var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+      location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+    };
+    document.querySelectorAll('.lang-btn').forEach(function(b) {
+      var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+      b.classList.toggle('active', l === document.documentElement.lang);
+      if (b.hasAttribute('data-lang')) b.addEventListener('click', function() { setLang(l); });
+    });
+  </script>
   <script>
     (function(){
       var btn=document.getElementById('chatbotBtn'),
