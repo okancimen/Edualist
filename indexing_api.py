@@ -27,6 +27,9 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-26 GA iyileştirmeleri — bounce fix, conversion CTA, retention WhatsApp CTA
+    "https://www.edualist.com/en/blog/dubai-top-schools/",
+    "https://www.edualist.com/en/international-school-consulting/",
     # 2026-10-26 yüksek bounce sayfaları iyileştirildi — okul inceleme linkleri + reviews box eklendi
     "https://www.edualist.com/en/blog/dubai-khda-outstanding-schools/",
     "https://www.edualist.com/blog/ib-alevel-amerikan-mufredat-karsilastirma/",
