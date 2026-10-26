@@ -48,6 +48,24 @@ Allow: /
 User-agent: iaskspider
 Allow: /
 
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+User-agent: TimpiBot
+Allow: /
+
+User-agent: PetalBot
+Allow: /
+
 Sitemap: https://www.edualist.com/sitemap.xml
 # LLM content index: https://www.edualist.com/llms.txt
 # LLM full articles: https://www.edualist.com/llms-full.txt
