@@ -31,6 +31,13 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-10-27 4 new EN blog posts: hidden costs, Y6→Y7 transition, CAT4 practice, boarding guide; sitemap, EN blog listing, llms updated
+    "https://www.edualist.com/en/blog/dubai-school-hidden-costs/",
+    "https://www.edualist.com/en/blog/year-6-to-year-7-transition-dubai/",
+    "https://www.edualist.com/en/blog/cat4-practice-test-sample-questions/",
+    "https://www.edualist.com/en/blog/dubai-boarding-schools-guide/",
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/sitemap.xml",
     # 2026-10-26 American School of Dubai incelemesi — TR + EN; blog listings, sitemap, llms güncellendi
     "https://www.edualist.com/blog/american-school-of-dubai-incelemesi/",
     "https://www.edualist.com/en/blog/american-school-of-dubai-review/",
