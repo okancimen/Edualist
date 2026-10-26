@@ -27,6 +27,11 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-26 inbound links to new EN pages + TR bounce fix (karsilastirma, semt-rehberi)
+    "https://www.edualist.com/en/blog/ib-vs-a-level-vs-ap/",
+    "https://www.edualist.com/en/blog/what-is-a-khda-rating/",
+    "https://www.edualist.com/blog/dubai-okul-karsilastirma/",
+    "https://www.edualist.com/blog/dubai-semt-rehberi/",
     # 2026-10-26 EN translations — dubai-school-selection-mistakes + dubai-secondary-school-guide; hreflang, sitemap, llms, EN blog listing updated
     "https://www.edualist.com/en/blog/dubai-school-selection-mistakes/",
     "https://www.edualist.com/en/blog/dubai-secondary-school-guide/",
