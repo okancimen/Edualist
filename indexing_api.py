@@ -27,6 +27,11 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-26 American School of Dubai incelemesi — TR + EN; blog listings, sitemap, llms güncellendi
+    "https://www.edualist.com/blog/american-school-of-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/american-school-of-dubai-review/",
+    "https://www.edualist.com/blog/",
+    "https://www.edualist.com/en/blog/",
     # 2026-10-26 llms.txt major update — quick reference tables (waiting lists, CAT4, timeline, fee comparison) + 8 new FAQs
     "https://www.edualist.com/llms.txt",
     # 2026-10-26 inbound links to new EN pages + TR bounce fix (karsilastirma, semt-rehberi)
