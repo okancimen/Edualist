@@ -27,6 +27,12 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-26 EN translations — dubai-school-selection-mistakes + dubai-secondary-school-guide; hreflang, sitemap, llms, EN blog listing updated
+    "https://www.edualist.com/en/blog/dubai-school-selection-mistakes/",
+    "https://www.edualist.com/en/blog/dubai-secondary-school-guide/",
+    "https://www.edualist.com/blog/dubai-okul-seciminde-5-hata/",
+    "https://www.edualist.com/blog/dubai-lise-secimi/",
+    "https://www.edualist.com/en/blog/",
     # 2026-10-26 GA iyileştirmeleri — bounce fix, conversion CTA, retention WhatsApp CTA
     "https://www.edualist.com/en/blog/dubai-top-schools/",
     "https://www.edualist.com/en/international-school-consulting/",

@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});})();
+  </script>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-secondary{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-secondary:hover{background-color:var(--primary);color:var(--text-light)}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem,4vw,2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}.blog-seo-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:2rem}.blog-seo-tag{background:rgba(219,175,46,.12);color:var(--accent-hover);font-size:.75rem;font-weight:600;padding:.2rem .65rem;border-radius:999px;border:1px solid rgba(219,175,46,.2)}.blog-post-cta{padding:2rem 2.5rem;border-radius:var(--radius-md);margin:2.5rem 0}.blog-post-cta h3{font-family:var(--font-serif);font-size:1.4rem;margin-bottom:.75rem}.blog-post-cta p{font-size:.95rem;color:var(--text-muted);margin-bottom:1.25rem;line-height:1.7}.cta-btn-row{display:flex;flex-wrap:wrap;gap:.75rem}.blog-related-section{background:var(--bg-warm-secondary);padding:3rem 0}.blog-related-section h2{font-family:var(--font-serif);font-size:1.8rem;color:var(--primary);margin-bottom:1.75rem}.blog-related-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.5rem}.blog-related-card{display:block;border-radius:var(--radius-md);overflow:hidden;background:white;box-shadow:var(--shadow-sm);transition:var(--transition-smooth)}.blog-related-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-md)}.blog-related-card img{width:100%;height:160px;object-fit:cover}.blog-related-card-body{padding:1rem}.blog-related-card-title{font-weight:600;font-size:.95rem;color:var(--primary);margin-bottom:.25rem;line-height:1.4}.blog-related-card-meta{font-size:.8rem;color:var(--text-muted)}.blog-faq{margin:2rem 0}.blog-faq h2{font-family:var(--font-serif);font-size:1.65rem;font-weight:700;color:var(--primary);margin-bottom:1.25rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.faq-item{margin-bottom:1.25rem;padding-bottom:1.25rem;border-bottom:1px solid rgba(11,33,58,.07)}.faq-q{font-size:1rem;font-weight:700;color:var(--primary);margin-bottom:.5rem}.faq-a{font-size:.95rem;line-height:1.75;color:var(--text-dark)}.mistake-hook{font-size:.9rem;color:var(--text-muted);margin-top:-.5rem;margin-bottom:1.5rem}.mistake-hook a{color:var(--accent-hover);font-weight:600}.footer{background:var(--primary);color:var(--text-light);padding:3rem 0 1.5rem}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem}.footer-bio-col h3{font-family:var(--font-serif);font-size:1.5rem;margin-bottom:.75rem;color:var(--accent)}.footer-bio-text{font-size:.9rem;opacity:.7;line-height:1.65;max-width:320px}.footer-links-col h4,.footer-contact-col h4{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;opacity:.5;margin-bottom:.75rem}.footer-links{list-style:none}.footer-links li{margin-bottom:.5rem}.footer-links a{opacity:.8;font-size:.9rem;transition:opacity .2s}.footer-links a:hover{opacity:1;color:var(--accent)}.footer-contact-list{list-style:none}.footer-contact-item{display:flex;gap:.6rem;align-items:flex-start;margin-bottom:.6rem;font-size:.9rem;opacity:.8}.footer-contact-item svg{flex-shrink:0;margin-top:2px;opacity:.6}.footer-contact-item a{color:inherit;transition:opacity .2s}.footer-contact-item a:hover{opacity:1;color:var(--accent)}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.25rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.75rem;font-size:.8rem;opacity:.5}.whatsapp-sticky{position:fixed;bottom:2rem;right:2rem;z-index:900;display:flex;align-items:center;gap:.5rem;background:#25D366;color:#fff;padding:.65rem 1.1rem .65rem .8rem;border-radius:50px;box-shadow:0 4px 16px rgba(37,211,102,.4);text-decoration:none;font-weight:600;font-size:.85rem;transition:transform .2s,box-shadow .2s}.whatsapp-sticky:hover{transform:translateY(-2px);box-shadow:0 6px 20px rgba(37,211,102,.5)}.whatsapp-sticky-label{white-space:nowrap}.chatbot-btn{position:fixed;bottom:2rem;right:10rem;z-index:900;display:flex;align-items:center;gap:.5rem;background:var(--primary);color:var(--accent);padding:.65rem 1.1rem .65rem .8rem;border-radius:50px;box-shadow:var(--shadow-md);border:1px solid rgba(219,175,46,.3);cursor:pointer;font-weight:600;font-size:.85rem;transition:transform .2s,box-shadow .2s}.chatbot-btn:hover{transform:translateY(-2px)}.chatbot-btn-label{white-space:nowrap}.chatbot-popup{position:fixed;bottom:5.5rem;right:2rem;z-index:901;width:380px;max-width:calc(100vw - 2rem);height:520px;border-radius:var(--radius-md);overflow:hidden;box-shadow:var(--shadow-lg);border:1px solid rgba(11,33,58,.1)}.chatbot-popup-header{background:var(--primary);color:var(--text-light);padding:.75rem 1rem;display:flex;justify-content:space-between;align-items:center;font-weight:600}.chatbot-popup-close{background:0 0;border:none;color:var(--text-light);cursor:pointer;font-size:1.1rem}.chatbot-iframe{width:100%;height:calc(100% - 44px);border:none}@media(max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media(max-width:768px){.footer-grid{grid-template-columns:1fr;gap:2rem}.chatbot-btn{display:none}}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>5 Mistakes Expat Families Make Choosing a Dubai School | Edualist</title>
+  <meta name="description" content="Applying too late, trusting WhatsApp groups, ignoring curriculum — these 5 school-selection mistakes cost Dubai expat families months of stress. Avoid them with a clear action plan.">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/en/blog/dubai-school-selection-mistakes/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-okul-seciminde-5-hata/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/dubai-school-selection-mistakes/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-school-selection-mistakes/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="ai-catalog" type="application/json" href="/ai-catalog.json" title="AI Resource Catalog">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="5 Mistakes Expat Families Make Choosing a Dubai School">
+  <meta property="og:description" content="Applying too late, trusting WhatsApp groups, ignoring curriculum — these 5 school-selection mistakes cost Dubai expat families months of stress. Avoid them with a clear action plan.">
+  <meta property="og:url"         content="https://www.edualist.com/en/blog/dubai-school-selection-mistakes/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-okul-seciminde-5-hata.webp">
+  <meta property="article:published_time" content="2026-10-18">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="5 Mistakes Expat Families Make Choosing a Dubai School">
+  <meta name="twitter:description" content="Applying too late, trusting WhatsApp groups, ignoring curriculum — these 5 school-selection mistakes cost Dubai expat families months of stress.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-okul-seciminde-5-hata.webp">
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "5 Mistakes Expat Families Make When Choosing a Dubai School",
+  "description": "Applying too late, trusting WhatsApp groups, ignoring curriculum — these 5 school-selection mistakes cost Dubai expat families months of stress. Avoid them with a clear action plan.",
+  "author": {
+    "@type": "Person",
+    "name": "Özlem Çimen",
+    "jobTitle": "International Education Consultant",
+    "url": "https://www.edualist.com/en/about/"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Edualist",
+    "url": "https://www.edualist.com/en/"
+  },
+  "datePublished": "2026-10-18T00:00:00+00:00",
+  "dateModified": "2026-10-26T00:00:00+00:00",
+  "wordCount": 2100,
+  "inLanguage": "en",
+  "url": "https://www.edualist.com/en/blog/dubai-school-selection-mistakes/",
+  "image": "https://www.edualist.com/assets/blog/thumb-dubai-okul-seciminde-5-hata.webp"
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What is the most common mistake when choosing a school in Dubai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Applying too late. KHDA Outstanding schools have 12–24 month waiting lists — JESS, DIA, Repton, GEMS Wellington all have the same picture. Starting your search only after you arrive in Dubai almost guarantees you'll begin at a Very Good or Good school and spend years on a waiting list for your preferred option."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Is a KHDA Outstanding rating enough to choose a school?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "No. A KHDA Outstanding rating tells you the school performs well across inspection categories — but not whether it fits your child. EAL support quality, class sizes, teacher turnover, extracurricular breadth, and campus culture are not visible in KHDA reports. Outstanding + right fit for your child = the right school."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "IB, A-Level or American curriculum — which should I choose?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "IB requires analytical thinking, self-management and project-based learning — skills the Turkish national curriculum doesn't directly develop, so the transition can be hard. A-Level is subject-focused and deep — ideal for children targeting UK or Commonwealth universities who prefer concentrating on a few subjects. American AP requires a broad course load and the SAT. The choice should be driven by your child's learning style, university target and English level."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Why does location matter so much when choosing a Dubai school?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Many families in Dubai pick a school and then look for a home — a costly mistake. The distance between school and home can mean 45–90 minutes of daily commuting for your child. DIA in Emirates Hills means an 80-minute round trip from JBR. Make your school shortlist first, then research neighbourhoods within 15–20 minutes of those schools."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "How do I build a proper school shortlist for Dubai?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "5 steps: (1) Define your child's academic profile and learning style. (2) Choose a curriculum: IB, A-Level or American. (3) Decide your neighbourhood and maximum acceptable commute. (4) Filter with KHDA Outstanding or Very Good + curriculum + location. (5) Apply to 3–5 schools in parallel — never rely on a single school."
+      }
+    }
+  ]
+}
+  </script>
+
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.edualist.com/en/" },
+    { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/en/blog/" },
+    { "@type": "ListItem", "position": 3, "name": "5 Mistakes Expat Families Make Choosing a Dubai School", "item": "https://www.edualist.com/en/blog/dubai-school-selection-mistakes/" }
+  ]
+}
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    window.addEventListener("load",function(){setTimeout(function(){(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");},5000);});
+  </script>
+
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp">
+  <link rel="preload" as="style" href="/styles.css?v=15">
+  <link rel="stylesheet" href="/styles.css?v=15" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/styles.css?v=15"></noscript>
+  <style id="nav-breakpoint">@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Dubai Schools</a></li>
+        <li><a href="/en/international-school-consulting/">Consultancy</a></li>
+        <li><a href="/en/academic-coaching/">Coaching</a></li>
+        <li><a href="/en/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">69</span></a></li>
+        <li><a href="/en/why-edualist/">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn active" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/en/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span>Back to Blog</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>18 October 2026</span>
+          <span><a href="/en/about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>9 min read</span>
+        </div>
+
+        <div class="blog-summary">
+          <strong>Summary</strong>
+          <p>Families relocating to Dubai from abroad make the same five school-selection mistakes, over and over. I hear them in almost every consulting call — usually after the damage is done. This guide names each mistake clearly and gives you a concrete action step to avoid it.</p>
+        </div>
+
+        <div class="blog-post-body">
+          <h1 class="blog-post-title">5 Mistakes Expat Families Make<br>When Choosing a Dubai School</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">Dubai school selection mistakes</span>
+            <span class="blog-seo-tag">how to choose an international school in Dubai</span>
+            <span class="blog-seo-tag">KHDA school selection criteria</span>
+            <span class="blog-seo-tag">Dubai school application tips</span>
+            <span class="blog-seo-tag">expat families Dubai school guide</span>
+          </div>
+
+          <p>Over the years I have worked with hundreds of families. Families relocating to Dubai from Turkey, Europe, the US and beyond. And I hear the same mistakes — from families who have never met each other — over and over again.</p>
+
+          <p>I am not writing this to judge anyone. These mistakes are understandable: nobody gives you a manual on the Dubai school system before you arrive. But some are avoidable, and avoiding them makes an enormous difference.</p>
+
+          <div class="blog-callout" style="background:hsla(43,60%,88%,0.5);border-left:4px solid var(--accent);">
+            <strong>Quick list:</strong> (1) Applying "once we arrive" &nbsp;·&nbsp; (2) Choosing by WhatsApp group consensus &nbsp;·&nbsp; (3) Treating the KHDA rating as the only criterion &nbsp;·&nbsp; (4) Skipping the curriculum decision &nbsp;·&nbsp; (5) Making location an afterthought
+          </div>
+
+          <h2>Mistake 1 — Applying "Once We Arrive"</h2>
+
+          <p>I hear some version of this sentence at least once a week. The family has decided to move to Dubai, signed a work contract, sorted out the apartment — and school research is in the "we'll handle it when we get there" pile.</p>
+
+          <p>KHDA Outstanding schools have waiting lists of 12 to 24 months. JESS, DIA, Repton, GEMS Wellington — the picture is the same across all of them. If you say "we'll sort it when we arrive," your child will almost certainly start at a Very Good or Good school, and will then wait years on a list for the Outstanding school you actually want.</p>
+
+          <p><strong>Action step:</strong> Start researching schools not on the day you decide to move, but in the same <em>month</em> you decide to move. If you are relocating in eight months, you may already be too late for Outstanding schools — but you are still in good time for Very Good ones.</p>
+
+          <p class="mistake-hook">Dealing with this now: <a href="/en/blog/dubai-school-waiting-list/">How Dubai school waiting lists work — and how to navigate them →</a></p>
+
+          <h2>Mistake 2 — Choosing by WhatsApp Group Consensus</h2>
+
+          <p>The expat community in Dubai is active and generous. WhatsApp groups, Facebook pages, Instagram comments — everyone is asking for and giving school recommendations. And usually the same handful of names come up: "JESS is wonderful," "DIA is amazing," "check out Nord Anglia."</p>
+
+          <p>These recommendations are not wrong. But they can mislead you. The family recommending a school has a child with a different profile, a different learning style and different university ambitions than yours. "It worked brilliantly for us" guarantees nothing for your child.</p>
+
+          <p>Beyond that, certain schools become disproportionately popular within specific expat communities. When a school is the top choice of many families from the same background, its waiting list grows disproportionately — and it becomes a place everyone wants but fewer people can actually access.</p>
+
+          <p><strong>Action step:</strong> Listen to recommendations, but build your own shortlist. Start from your child: their learning style, strengths, English level and university goals. Then filter schools against that profile. Community pressure is noise; profile match is signal.</p>
+
+          <p class="mistake-hook">Next step: <a href="/en/blog/dubai-top-schools/">Dubai's top international schools — ranked and compared →</a></p>
+
+          <h2>Mistake 3 — Treating the KHDA Rating as the Only Criterion</h2>
+
+          <p>KHDA Outstanding = good school. That is true. But KHDA Outstanding = right school for my child. That is not true.</p>
+
+          <p>KHDA inspections look at four categories: student achievement, quality of teaching, curriculum and personal development, leadership. These matter. But they do not answer questions like:</p>
+
+          <ul style="padding-left:1.4rem;margin:.75rem 0 1.25rem;line-height:2.1">
+            <li>How strong is the EAL (English as an Additional Language) support? — Critical for families relocating from non-English speaking countries.</li>
+            <li>What are the class sizes? How much one-to-one attention does a student get?</li>
+            <li>Is teacher turnover high? (Outstanding rating but a different teacher every year)</li>
+            <li>Does the campus culture match your child's personality?</li>
+            <li>Does the extracurricular offering support your child's actual interests?</li>
+          </ul>
+
+          <p>Read the KHDA report — but understand that the rating is not the whole picture.</p>
+
+          <p><strong>Action step:</strong> Read the full inspection reports on the KHDA website. Pay particular attention to the "Areas for improvement" section. Attend open days and ask directly about EAL provision, class sizes and teacher stability.</p>
+
+          <p class="mistake-hook">For context: <a href="/en/blog/what-is-a-khda-rating/">What a KHDA rating actually means — from Outstanding to Good →</a></p>
+
+          <h2>Mistake 4 — Skipping the Curriculum Decision</h2>
+
+          <p>"International school" immediately brings to mind English-language education. That is accurate — but it is not enough. Dubai has three main curriculum systems: IB, A-Level and American AP. The difference between them is not just content — it is a fundamentally different way of thinking.</p>
+
+          <p><strong>IB (International Baccalaureate):</strong> Analytical thinking, self-management, project-based learning. Inquiry, not memorisation, is at the centre. Students coming from highly exam-focused national systems often experience a genuine systemic shock in Year 1 of IB. Extended Essay, Theory of Knowledge, simultaneous Internal Assessments — serious preparation is essential before starting.</p>
+
+          <p><strong>A-Level:</strong> Fewer subjects, much deeper. Students concentrate on 3–4 subjects over two years. Ideal for children targeting UK and Commonwealth universities who have decided on a field early. It can feel more familiar at first glance, but the question styles are very different.</p>
+
+          <p><strong>American AP:</strong> A broad course load, a continuous assessment cycle and SAT/ACT requirements. Best for students targeting US universities.</p>
+
+          <p><strong>Action step:</strong> Choose the curriculum first, then build your school shortlist. University ambitions and learning style should drive this decision — not the school name.</p>
+
+          <p class="mistake-hook">Deep dive: <a href="/en/blog/ib-vs-a-level-vs-ap/">IB vs A-Level vs American AP — full curriculum comparison →</a></p>
+
+          <h2>Mistake 5 — Making Location an Afterthought</h2>
+
+          <p>The family chooses a school, then looks for a home. This sequence is a major problem in Dubai.</p>
+
+          <p>Dubai's Outstanding schools are scattered across the city: DIA is in Emirates Hills, JESS is in Umm Suqeim, Repton is in Nad Al Sheba, GEMS Wellington is in Al Sufouh, Nord Anglia is in Jumeirah Park. A poor neighbourhood choice means 40–60 minutes of commuting for your child every day. Both ways. Five days a week.</p>
+
+          <p>Most families who realise this mistake realise it after signing a lease.</p>
+
+          <p><strong>Action step:</strong> Finalise your school shortlist <em>before</em> you look for a home. Then research neighbourhoods within 15–20 minutes of those schools. School and home decisions must be made together.</p>
+
+          <p style="font-size:.9rem;color:var(--text-muted);margin-top:-.5rem;margin-bottom:1.5rem">School-to-neighbourhood guide: <a href="/en/blog/dubai-neighbourhood-school-guide/" style="color:var(--accent-hover);font-weight:600">Which Dubai neighbourhood puts which school within reach? →</a></p>
+
+          <!-- MID-ARTICLE CTA -->
+          <div style="margin:2.5rem 0;padding:1.75rem 2rem;background:var(--primary);border-radius:var(--radius-md);color:var(--text-light)">
+            <p style="font-size:1rem;font-weight:600;margin-bottom:.5rem;color:var(--accent)">Recognise one of these mistakes?</p>
+            <p style="font-size:.95rem;opacity:.85;margin-bottom:1.25rem;line-height:1.7">We can build the right school shortlist together — based on your child's profile, your family's location plan and your budget. The first 30 minutes are free, whether you are pre-application or mid-process.</p>
+            <a href="/en/international-school-consulting/#iletisim" style="display:inline-block;padding:.75rem 1.5rem;background:var(--accent);color:var(--primary);font-weight:700;border-radius:var(--radius-sm);font-size:.95rem">Book a Free First Session →</a>
+          </div>
+
+          <h2>A 5-Step Framework for Getting It Right</h2>
+
+          <p>Here is a clear process to put against each of those mistakes:</p>
+
+          <ol style="padding-left:1.4rem;line-height:2.3">
+            <li><strong>Define your child's profile.</strong> Academic strengths, learning style, EAL need, university goals. Do not skip this step.</li>
+            <li><strong>Choose the curriculum.</strong> IB, A-Level or American — this decision comes before any school name.</li>
+            <li><strong>Fix your neighbourhood and maximum commute.</strong> If 20 minutes is your limit, establish that clearly from the start.</li>
+            <li><strong>Filter with KHDA Outstanding + curriculum + location to get 5–7 schools.</strong> Read the full KHDA reports, attend open days.</li>
+            <li><strong>Apply to all of them in parallel.</strong> Never rely on a single school. Apply to Outstanding schools as early as possible; Very Good and Good schools 6–9 months ahead.</li>
+          </ol>
+
+          <aside class="blog-cluster-box" style="margin:2rem 0;padding:1.4rem 1.5rem;border-radius:10px;background:var(--bg-warm-secondary,#f3efe8)">
+            <p style="margin:0 0 .8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">All guides on this topic</p>
+            <p style="margin:0 0 .9rem;font-size:1.15rem;font-weight:700;color:var(--primary,#0b213a)">Choosing a School in Dubai</p>
+            <ul style="margin:0;padding-left:1.1rem;columns:2 260px;column-gap:2rem;line-height:1.6">
+              <li style="break-inside:avoid"><a href="/en/blog/dubai-top-schools/" style="color:var(--primary,#0b213a)">Dubai's Top 10 International Schools 2026</a></li>
+              <li style="break-inside:avoid"><a href="/en/blog/dubai-khda-outstanding-schools/" style="color:var(--primary,#0b213a)">All KHDA Outstanding Schools in Dubai</a></li>
+              <li style="break-inside:avoid"><a href="/en/blog/dubai-school-registration/" style="color:var(--primary,#0b213a)">Dubai School Registration: Step-by-Step</a></li>
+              <li style="break-inside:avoid"><a href="/en/blog/what-is-a-khda-rating/" style="color:var(--primary,#0b213a)">What Is a KHDA Rating? Outstanding to Good</a></li>
+              <li style="break-inside:avoid"><a href="/en/blog/ib-vs-a-level-vs-ap/" style="color:var(--primary,#0b213a)">IB vs A-Level vs American AP Compared</a></li>
+              <li style="break-inside:avoid"><a href="/en/blog/dubai-neighbourhood-school-guide/" style="color:var(--primary,#0b213a)">Which School in Which Neighbourhood?</a></li>
+              <li style="break-inside:avoid"><a href="/en/blog/dubai-school-waiting-list/" style="color:var(--primary,#0b213a)">Dubai School Waiting List Guide</a></li>
+              <li style="break-inside:avoid"><a href="/en/blog/dubai-school-fees-2026/" style="color:var(--primary,#0b213a)">Dubai School Fees 2026 — Full Table</a></li>
+              <li style="break-inside:avoid"><a href="/en/blog/dubai-education-system/" style="color:var(--primary,#0b213a)">How Dubai's Education System Works</a></li>
+              <li style="break-inside:avoid"><a href="/en/blog/before-moving-to-dubai/" style="color:var(--primary,#0b213a)">What to Know Before Moving to Dubai</a></li>
+            </ul>
+          </aside>
+
+          <div class="blog-faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <div class="faq-item">
+              <h3 class="faq-q">What is the most common mistake when choosing a school in Dubai?</h3>
+              <p class="faq-a">Applying too late. KHDA Outstanding schools have 12–24 month waiting lists — JESS, DIA, Repton, GEMS Wellington all face the same situation. Starting your search only after arrival almost guarantees you will begin at a Very Good or Good school while waiting years for your preferred Outstanding option.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Is a KHDA Outstanding rating enough to choose a school?</h3>
+              <p class="faq-a">No. KHDA Outstanding tells you the school performs well across inspection categories — but not whether it fits your child. EAL support quality, class sizes, teacher turnover and campus culture are not visible in KHDA reports. Outstanding + right fit for your child = the right school.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">IB, A-Level or American curriculum — which should I choose?</h3>
+              <p class="faq-a">IB requires analytical thinking and self-management — skills that highly structured national curriculums don't always build directly, so the transition can be demanding. A-Level is subject-focused and deep — ideal for children targeting UK or Commonwealth universities. American AP requires a broad course load and SAT/ACT. The choice should be driven by your child's learning style, university target and English level.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Why does location matter so much when choosing a Dubai school?</h3>
+              <p class="faq-a">A poor neighbourhood choice means 40–60 minutes of daily commuting for your child. DIA in Emirates Hills can mean an 80-minute daily round trip from JBR. Make your school shortlist first, then research neighbourhoods within 15–20 minutes of those schools. School and home decisions must be made together.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Which schools do expat families in Dubai most commonly choose?</h3>
+              <p class="faq-a">JESS, Nord Anglia, DIA and Repton are the most frequently mentioned names in expat communities. But this is partly a herd effect. Profile match, application timing and location should come before community pressure when building your shortlist.</p>
+            </div>
+          </div>
+
+          <!-- END CTA -->
+          <div style="margin:2.5rem 0 1rem;padding:1.75rem 2rem;background:hsla(43,60%,92%,0.6);border-radius:var(--radius-md);border:1px solid hsla(43,60%,52%,.25)">
+            <p style="font-size:1rem;font-weight:700;margin-bottom:.5rem;color:var(--primary)">Want to avoid all five mistakes in one conversation?</p>
+            <p style="font-size:.93rem;color:var(--text-muted);margin-bottom:1.25rem;line-height:1.7">I build a personalised school shortlist based on your child's profile, your family's location plan and budget. We plan application timing, curriculum choice and required documents together. The first 30 minutes are free.</p>
+            <a href="/en/international-school-consulting/#iletisim" style="display:inline-block;padding:.75rem 1.5rem;background:var(--primary);color:var(--text-light);font-weight:600;border-radius:var(--radius-sm);font-size:.95rem">Book a Free Discovery Session →</a>
+          </div>
+
+          <!-- WhatsApp CTA -->
+          <div style="margin:2rem 0;padding:1.25rem 1.5rem;border-radius:10px;background:hsla(142,50%,96%,0.8);border:1px solid hsla(142,40%,75%,0.5);display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#25D366" width="36" height="36" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/></svg>
+            <div style="flex:1;min-width:200px">
+              <p style="margin:0 0 .25rem;font-weight:700;font-size:.95rem;color:var(--primary)">Get Dubai school updates on WhatsApp</p>
+              <p style="margin:0;font-size:.88rem;color:var(--text-muted);line-height:1.5">New school reviews, fee changes, registration deadlines — straight to your WhatsApp.</p>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hi%2C%20I%27d%20like%20to%20receive%20Dubai%20school%20updates" target="_blank" rel="noopener" style="display:inline-block;padding:.65rem 1.25rem;background:#25D366;color:#fff;font-weight:700;border-radius:8px;font-size:.9rem;white-space:nowrap">Subscribe →</a>
+          </div>
+
+          <aside class="blog-author-box" style="display:flex;gap:1.1rem;align-items:flex-start;margin:2.5rem 0;padding:1.4rem 1.5rem;border:1px solid var(--border-card,rgba(11,33,58,.08));border-left:3px solid var(--accent,#DBAF2E);border-radius:10px;background:var(--bg-card,rgba(11,33,58,.02))">
+            <picture>
+              <source srcset="/assets/founder-avatar-160.webp" type="image/webp">
+              <img src="/assets/founder-avatar-160.webp" alt="Özlem Çimen" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)">
+            </picture>
+            <div>
+              <p style="margin:0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Author</p>
+              <p style="margin:.15rem 0 .4rem;font-size:1.1rem;font-weight:700"><a href="/en/about/" style="color:var(--primary,#0b213a);text-decoration:none">Özlem Çimen</a></p>
+              <p style="margin:0;font-size:.95rem;line-height:1.7">International education consultant and founder of Edualist. Over 20 years as a teacher, department head and administrator at TED İstanbul College, ENKA Schools and IICS; raised her own children in international schools across 5 countries.</p>
+              <p style="margin:.5rem 0 0;font-size:.9rem"><a href="/en/about/" style="color:var(--accent-hover,#b8921f);font-weight:600">About Özlem Çimen →</a></p>
+            </div>
+          </aside>
+
+        </div>
+
+      </article>
+    </div>
+
+    <div class="container" style="padding:0 0 2rem;">
+      <p style="margin:0;padding:1rem 1.25rem;background:hsla(43,60%,92%,0.7);border-left:3px solid var(--accent,#DBAF2E);border-radius:0 6px 6px 0;font-size:0.95rem;line-height:1.8;">
+        Questions or comments about this article: <a href="mailto:ozlem@edualist.com" style="color:var(--accent-hover,#b8921f);font-weight:600">ozlem@edualist.com</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- RELATED ARTICLES -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>Related Guides</h2>
+      <div class="blog-related-grid">
+        <a href="/en/blog/dubai-top-schools/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai-top-okullar.webp" alt="Dubai's Top International Schools 2026" width="800" height="450" loading="lazy" decoding="async">
+          <div class="blog-related-card-body">
+            <p class="blog-related-card-title">Dubai's Top International Schools 2026</p>
+            <p class="blog-related-card-meta">Ranking, curricula, fees</p>
+          </div>
+        </a>
+        <a href="/en/blog/dubai-school-registration/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai-kayit-sureci.webp" alt="Dubai School Registration: Step-by-Step" width="800" height="450" loading="lazy" decoding="async">
+          <div class="blog-related-card-body">
+            <p class="blog-related-card-title">Dubai School Registration: Step-by-Step</p>
+            <p class="blog-related-card-meta">Process, documents, timeline</p>
+          </div>
+        </a>
+        <a href="/en/blog/ib-vs-a-level-vs-ap/" class="blog-related-card">
+          <img src="/assets/blog/thumb-mufredat.webp" alt="IB vs A-Level vs American AP" width="800" height="450" loading="lazy" decoding="async">
+          <div class="blog-related-card-body">
+            <p class="blog-related-card-title">IB vs A-Level vs American AP</p>
+            <p class="blog-related-card-meta">Full curriculum comparison</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen guides families through international school selection, curriculum evaluation and student adaptation with over 20 years of education experience.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/why-edualist/">Why Us?</a></li>
+            <li><a href="/en/#services">Services</a></li>
+            <li><a href="/en/blog/">Blog</a></li>
+            <li><a href="/en/international-school-consulting/">Book Session</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, United Arab Emirates</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky WhatsApp -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information%20about%20Dubai%20school%20selection" target="_blank" rel="noopener noreferrer"
+     class="whatsapp-sticky" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- AI Chatbot Button -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Close">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
+  </div>
+
+  <script>
+    function setLang(lang) {
+      document.documentElement.lang = lang;
+      document.getElementById('langTR').classList.toggle('active', lang === 'tr');
+      document.getElementById('langEN').classList.toggle('active', lang === 'en');
+    }
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    if (menuToggle) {
+      menuToggle.addEventListener('click', function() {
+        this.classList.toggle('active');
+        navLinks.classList.toggle('open');
+        this.setAttribute('aria-expanded', navLinks.classList.contains('open'));
+      });
+    }
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', function() {
+      nav.classList.toggle('header-scrolled', window.scrollY > 50);
+    }, {passive: true});
+    document.getElementById('chatbot-btn').addEventListener('click', () => {
+      const popup = document.getElementById('chatbot-popup');
+      const isHidden = popup.hidden;
+      popup.hidden = !isHidden;
+      if (isHidden) {
+        const iframe = popup.querySelector('iframe[data-src]');
+        if (iframe) { iframe.src = iframe.dataset.src; iframe.removeAttribute('data-src'); }
+      }
+    });
+    document.getElementById('chatbot-close').addEventListener('click', () => {
+      document.getElementById('chatbot-popup').hidden = true;
+    });
+  </script>
+
+</body>
+</html>
