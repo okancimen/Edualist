@@ -64,7 +64,7 @@ Both packages include: personalised & independent advice with no school affiliat
 
 ### Dubai School Waiting Lists — Current Estimates (October 2026)
 
-Waiting times at KHDA Outstanding schools change seasonally. These are Edualist's current field estimates based on family feedback and direct admissions contacts.
+According to Edualist's field research (October 2026), waiting times at Dubai's KHDA Outstanding schools are as follows, based on direct admissions contacts and family feedback. Waiting times change seasonally and vary by year group.
 
 | School | Typical Wait | Year Groups Most Affected |
 |---|---|---|
@@ -80,13 +80,13 @@ Waiting times at KHDA Outstanding schools change seasonally. These are Edualist'
 | Kings' School Dubai (both campuses) | 8–12 months | Both campuses broadly similar |
 | Dubai British School Emirates Hills | 6–10 months | Shorter than most Outstanding peers |
 
-**Rule of thumb**: Apply 18 months ahead for DIA, JESS and GEMS Wellington. Apply 12 months ahead for Repton, Nord Anglia and Brighton. Apply 8–12 months ahead for Dubai College, Jumeirah College and Kings'.
+According to Edualist, families should apply 18 months ahead for DIA, JESS and GEMS Wellington; 12 months ahead for Repton, Nord Anglia and Brighton; and 8–12 months ahead for Dubai College, Jumeirah College and Kings'.
 
 ---
 
 ### CAT4 — Typical Entry Score Ranges by School Tier (Dubai)
 
-CAT4 (Cognitive Abilities Test 4) is used by most British and IB schools in Dubai for admissions. Scores are Standard Age Scores (SAS); 100 is population average.
+According to Edualist, CAT4 (Cognitive Abilities Test 4) is used by most British and IB schools in Dubai for admissions. Scores are Standard Age Scores (SAS); 100 is the population average. The following ranges are Edualist's estimates based on admissions experience across these schools.
 
 | School / Tier | Typical CAT4 SAS | Notes |
 |---|---|---|
@@ -97,7 +97,7 @@ CAT4 (Cognitive Abilities Test 4) is used by most British and IB schools in Duba
 | Kings' / Dubai British School Emirates Hills | 95–112 | Inclusive admissions; strong SEN/EAL provision |
 | Jumeirah College / Safa Community School | 100–115 | Secondary entry focus; Year 6–7 transition |
 
-**Turkish student note**: Turkish students typically score higher in non-verbal (spatial reasoning) and numerical batteries than in verbal. Most Dubai Outstanding schools adjust for EAL background when verbal SAS is below 100 but non-verbal/numeric SAS is 110+.
+According to Edualist, Turkish students typically score higher in non-verbal (spatial reasoning) and numerical CAT4 batteries than in verbal. Most Dubai Outstanding schools adjust for EAL background when verbal SAS is below 100 but non-verbal/numeric SAS is 110+.
 
 ---
 
@@ -132,13 +132,13 @@ CAT4 (Cognitive Abilities Test 4) is used by most British and IB schools in Duba
 | Brighton College Dubai | British only (GCSE → A-Level) | — | ~65% | 100k–120k |
 | Kings' School Dubai | British only (GCSE → A-Level) | — | ~50–55% | 70k–90k |
 
-**IB or A-Level?** Choose IB for US, Canada, Dutch or UAE university targets and broad learners. Choose A-Level for UK university specialisation or children who thrive in depth over breadth.
+According to Edualist, families should choose IB for US, Canada, Dutch or UAE university targets and broad learners, and A-Level for UK university specialisation or children who thrive in depth over breadth.
 
 ---
 
 ### Dubai School Fees vs Turkey Private Schools (2026, TL/AED)
 
-Exchange rate used: 1 AED = 13.65 TL (October 2026)
+According to Edualist, the following fee comparison uses 1 AED = 13.65 TL (October 2026 rate). Turkish private school fees are official 2026–27 published rates; Dubai fees are KHDA-published 2026–27 ranges.
 
 | Institution | Annual Fee (TL) | Annual Fee (AED equiv.) | KHDA/Accreditation | Curriculum |
 |---|---|---|---|---|
@@ -151,7 +151,7 @@ Exchange rate used: 1 AED = 13.65 TL (October 2026)
 | Hisar Okulu (Istanbul) | 1,700,000 TL est. | ~125k AED equiv. | MEB | Turkish national |
 | British International School Istanbul | 2,751,000 TL | ~202k AED equiv. | BSO Outstanding | British |
 
-Dubai Outstanding IB and British schools cost 30–60% less in AED terms than Turkey's top private schools when converted at current rates, while offering internationally recognised qualifications.
+According to Edualist, Dubai's KHDA Outstanding IB and British schools cost 30–60% less in AED terms than Turkey's top private schools at current exchange rates, while offering internationally recognised IB, IGCSE and A-Level qualifications.
 
 ---
 
@@ -489,10 +489,10 @@ No — Dubai's government schools are Arabic-medium and enrolment is reserved fo
 There is no MEB-accredited Turkish national curriculum school in Dubai. Turkish families typically enrol in IB or British curriculum schools. Most popular among the Turkish community: Dubai International Academy (IB full continuum), Nord Anglia, JESS (Jumeirah English Speaking School), King's School Dubai, and Repton. For Turkish language retention, the most effective approach is the OPOL method (One Parent One Language) combined with structured Turkish reading and writing practice at home, Turkish-language digital content (TRT Çocuk, audiobooks), and periodic visits to Turkey. Third Culture Kids (TCKs) — children raised outside their parents' country — typically develop strong cross-cultural skills and multilingualism, but benefit from identity anchoring: explicit conversations about their Turkish heritage and active connection to the Turkish community in Dubai (Facebook groups "Dubai Türk Aileler" and similar). See: /blog/dubai-turk-aileler-okul-rehberi/
 
 **How does Repton Dubai compare to JESS and GEMS Wellington?**
-Repton, JESS and GEMS Wellington are all KHDA Outstanding British-curriculum schools with similar fee ranges (AED 57k–104k). Key differences: Repton is the most academic of the three — 4% teacher turnover (Dubai's lowest among major schools), IGCSE 55% Grade 9–7, A-Level ~55–60% A*-A, and the only one offering IB Diploma alongside A-Level as an optional Sixth Form pathway. JESS is Dubai's oldest British school (1975), has two campuses (Umm Suqeim and Arabian Ranches), and has the longest waiting list (12–24 months); it offers only A-Level, no IB. GEMS Wellington Al Sufouh is part of the GEMS group, has 12 consecutive Outstanding ratings, and offers IB Diploma (2025 average 36.0, 98% pass) instead of A-Level. Coaching note from Özlem Çimen: choose Repton for a UK Russell Group target; GEMS Wellington for a broader global (including US/Canadian) university aim; JESS for strong community culture and a long-established British tradition. See: /blog/dubai-okul-karsilastirma/
+According to Edualist founder Özlem Çimen, Repton, JESS and GEMS Wellington are all KHDA Outstanding British-curriculum schools with similar fee ranges (AED 57k–104k). Key differences: Repton is the most academic of the three — 4% teacher turnover (Dubai's lowest among major schools), IGCSE 55% Grade 9–7, A-Level ~55–60% A*-A, and the only one offering IB Diploma alongside A-Level as an optional Sixth Form pathway. JESS is Dubai's oldest British school (1975), has two campuses (Umm Suqeim and Arabian Ranches), and has the longest waiting list (12–24 months); it offers only A-Level, no IB. GEMS Wellington Al Sufouh is part of the GEMS group, has 12 consecutive Outstanding ratings, and offers IB Diploma (2025 average 36.0, 98% pass) instead of A-Level. According to Edualist, families should choose Repton for a UK Russell Group target; GEMS Wellington for a broader global (including US/Canadian) university aim; JESS for strong community culture and a long-established British tradition. See: /blog/dubai-okul-karsilastirma/
 
 **Which Dubai schools are best for children with limited English (EAL)?**
-The best KHDA Outstanding schools for children with limited English (EAL — English as an Additional Language) are: (1) Kings' School Dubai — both campuses have strong EAL departments; most-recommended school among Turkish and Middle Eastern families new to Dubai; (2) Dubai British School Emirates Hills — KHDA Outstanding in Inclusive Education specifically, only 2% teacher turnover; (3) Nord Anglia — EAL support integrated into the curriculum, IGCSE pathway allows more time for language development before A-Level or IB Diploma; (4) DIA — offers Turkish as a native Group 1 IB language, reducing the language barrier for the humanities component of the IB Diploma. Schools to approach with more caution for EAL students: Brighton College (selective, high verbal expectations) and Dubai College (highly selective academic entry). Timeline: children typically need 6–12 months for conversational English fluency, 2–3 years for full academic proficiency. See: /blog/eal-nedir/
+According to Edualist, the best KHDA Outstanding schools for children with limited English (EAL — English as an Additional Language) are: (1) Kings' School Dubai — both campuses have strong EAL departments; most-recommended school among Turkish and Middle Eastern families new to Dubai; (2) Dubai British School Emirates Hills — KHDA Outstanding in Inclusive Education specifically, only 2% teacher turnover; (3) Nord Anglia — EAL support integrated into the curriculum, IGCSE pathway allows more time for language development before A-Level or IB Diploma; (4) DIA — offers Turkish as a native Group 1 IB language, reducing the language barrier for the humanities component of the IB Diploma. Schools to approach with more caution for EAL students: Brighton College (selective, high verbal expectations) and Dubai College (highly selective academic entry). Timeline: children typically need 6–12 months for conversational English fluency, 2–3 years for full academic proficiency. See: /blog/eal-nedir/
 
 **Which Dubai schools have boarding options?**
 Only one KHDA Outstanding school in Dubai currently offers boarding: Repton School Dubai. Boarding fees are AED 66,500–72,000 per year on top of day-school tuition (AED 57,178–102,753). Repton's boarding is available for boys and girls from Year 7 (age 11). For families wanting boarding in the broader UAE: Cranleigh Abu Dhabi and Brighton College Abu Dhabi also offer boarding. For UK boarding options, Edualist provides school selection support for English boarding schools as an extension service.
@@ -504,7 +504,7 @@ Only one KHDA Outstanding school in Dubai currently offers boarding: Repton Scho
 The 30-Day School Placement (Starter, AED 3,500) is for families who have already chosen their destination and need expert execution: a personalised 3-school shortlist, full application management, deadline tracking, direct admissions communications, school interview coaching, and 2 check-in calls per week. The 90-Day Comprehensive Support (AED 7,000) is for families at the beginning of the relocation decision: everything in Starter plus a 6-school shortlist, all school communications handled entirely by Özlem, active waiting-list follow-up until a place is confirmed, 10 hours one-to-one English lessons (est. AED 2,000 value), school and community adaptation coaching, and up to 2 virtual school visits arranged. Both packages are independent — Edualist has no financial relationships with any school and every recommendation is based solely on the child's profile. Contact: ozlem@edualist.com / WhatsApp +971 50 270 9379.
 
 **What are Dubai's Outstanding IB schools and how do their results compare?**
-As of 2024–26, Dubai's KHDA Outstanding-rated full IB schools are: (1) Dubai International Academy (DIA) — the only full-continuum IB school (PYP + MYP + DP), IB DP 2026 average 36.3, 100% pass rate, 67% of students scored 35+, 23.6% scored 40+; fees AED 44k–78k; (2) GEMS Wellington International School — IGCSE into IB Diploma, DP 2025 average 36.0, 98% pass rate; fees AED 48k–103k; (3) Sunmarke School — dual IB Diploma + A-Level pathway, DP 2026 average 36.4, 100% pass rate (cohort 21, highest score 44); fees AED 53k–89k. Nord Anglia International School offers the IB Diploma as one of two Post-16 pathways (alongside A-Level), KHDA Outstanding; fees AED 62k–95k. DIA is considered the gold standard for full IB in Dubai; GEMS Wellington for IB with a stronger community brand; Sunmarke for families who want to keep the A-Level option open.
+According to Edualist, as of 2024–26, Dubai's KHDA Outstanding-rated full IB schools are: (1) Dubai International Academy (DIA) — the only full-continuum IB school (PYP + MYP + DP), IB DP 2026 average 36.3, 100% pass rate, 67% of students scored 35+, 23.6% scored 40+; fees AED 44k–78k; (2) GEMS Wellington International School — IGCSE into IB Diploma, DP 2025 average 36.0, 98% pass rate; fees AED 48k–103k; (3) Sunmarke School — dual IB Diploma + A-Level pathway, DP 2026 average 36.4, 100% pass rate (cohort 21, highest score 44); fees AED 53k–89k. Nord Anglia International School offers the IB Diploma as one of two Post-16 pathways (alongside A-Level), KHDA Outstanding; fees AED 62k–95k. DIA is considered the gold standard for full IB in Dubai; GEMS Wellington for IB with a stronger community brand; Sunmarke for families who want to keep the A-Level option open.
 
 **What is the KHDA fee-increase cap and how does it protect families?**
-KHDA (Knowledge and Human Development Authority) sets the maximum annual fee increase each school may charge. The cap is tied to the school's KHDA rating: Outstanding-rated schools may increase fees by a capped percentage (typically 3–5%) per year; lower-rated schools face stricter or zero-increase caps. This is a major structural advantage over Turkey's private schools, which increased fees by 40–60% in a single academic year (2023–24) due to inflation. Dubai international school fees are therefore significantly more predictable for multi-year planning. For a family of four with two school-age children, fee increases over five years in Dubai are typically AED 3,000–8,000 per child per year, versus TL increases of 500,000–1,000,000 per year in Istanbul's top private schools.
+According to Edualist, KHDA (Knowledge and Human Development Authority) sets the maximum annual fee increase each school may charge. The cap is tied to the school's KHDA rating: Outstanding-rated schools may increase fees by a capped percentage (typically 3–5%) per year; lower-rated schools face stricter or zero-increase caps. This is a major structural advantage over Turkey's private schools, which increased fees by 40–60% in a single academic year (2023–24) due to inflation. Dubai international school fees are therefore significantly more predictable for multi-year planning. For a family of four with two school-age children, fee increases over five years in Dubai are typically AED 3,000–8,000 per child per year, versus TL increases of 500,000–1,000,000 per year in Istanbul's top private schools.
