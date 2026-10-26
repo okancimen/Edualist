@@ -982,7 +982,7 @@
           children: document.getElementById('c-children').value,
           details: document.getElementById('c-details').value
         };
-        fetch('../mail.php', {
+        fetch('/mail.php', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)

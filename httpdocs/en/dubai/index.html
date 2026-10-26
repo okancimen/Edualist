@@ -788,6 +788,27 @@
             <span class="dubai-guide-link">Read the Guide →</span>
           </a>
 
+          <a href="/en/blog/dubai-school-hidden-costs/" class="dubai-guide-card scroll-reveal">
+            <span class="dubai-guide-tag">Costs</span>
+            <h3>Dubai School Hidden Costs 2026</h3>
+            <p>Uniform, bus, trips, registration and exam fees add AED 8,000–20,000 beyond tuition. Full breakdown by school tier.</p>
+            <span class="dubai-guide-link">Read the Guide →</span>
+          </a>
+
+          <a href="/en/blog/year-6-to-year-7-transition-dubai/" class="dubai-guide-card scroll-reveal">
+            <span class="dubai-guide-tag">Year 7 Entry</span>
+            <h3>Year 6 to Year 7 Dubai: Secondary School Transition</h3>
+            <p>Application timeline, which secondary schools accept Year 7 entries, CAT4 requirements and how to prepare.</p>
+            <span class="dubai-guide-link">Read the Guide →</span>
+          </a>
+
+          <a href="/en/blog/dubai-boarding-schools-guide/" class="dubai-guide-card scroll-reveal">
+            <span class="dubai-guide-tag">Boarding</span>
+            <h3>Dubai Boarding Schools Guide 2026</h3>
+            <p>Only two Dubai schools offer boarding. Repton costs, UAE alternatives and when UK boarding makes more sense.</p>
+            <span class="dubai-guide-link">Read the Guide →</span>
+          </a>
+
         </div>
       </div>
     </section>
@@ -930,7 +951,7 @@
           children: document.getElementById('d-children').value,
           details: document.getElementById('d-details').value
         };
-        fetch('../mail.php', {
+        fetch('/mail.php', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(data)
