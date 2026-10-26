@@ -27,6 +27,8 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-26 llms.txt major update — quick reference tables (waiting lists, CAT4, timeline, fee comparison) + 8 new FAQs
+    "https://www.edualist.com/llms.txt",
     # 2026-10-26 inbound links to new EN pages + TR bounce fix (karsilastirma, semt-rehberi)
     "https://www.edualist.com/en/blog/ib-vs-a-level-vs-ap/",
     "https://www.edualist.com/en/blog/what-is-a-khda-rating/",
