@@ -27,6 +27,9 @@ INDEXNOW_HOST     = "www.edualist.com"
 INDEXNOW_ENDPOINT = "https://api.indexnow.org/indexnow"
 
 URLS = [
+    # 2026-10-26 yüksek bounce sayfaları iyileştirildi — okul inceleme linkleri + reviews box eklendi
+    "https://www.edualist.com/en/blog/dubai-khda-outstanding-schools/",
+    "https://www.edualist.com/blog/ib-alevel-amerikan-mufredat-karsilastirma/",
     # 2026-10-26 llms.txt yeniden yazıldı — bölümler, [TR]/[EN] etiketleri, okul hızlı referans tablosu, 4 eksik EN inceleme eklendi
     "https://www.edualist.com/llms.txt",
     # 2026-10-25 Dubai'de Türk Okulu Arayanlar — TR + EN; blog listings, sitemap, llms güncellendi
