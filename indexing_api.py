@@ -31,6 +31,13 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-10-27 2 new EN posts: dubai-school-application-timeline-2027 + dubai-private-vs-government-school; hreflang updated on TR counterparts; sitemap, llms, ai-catalog updated
+    "https://www.edualist.com/en/blog/dubai-school-application-timeline-2027/",
+    "https://www.edualist.com/en/blog/dubai-private-vs-government-school/",
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/sitemap.xml",
+    "https://www.edualist.com/blog/dubai-okul-basvuru-takvimi-2027/",
+    "https://www.edualist.com/blog/dubai-ozel-okul-mu-devlet-okulu-mu/",
     # 2026-10-27 SEO fixes: alt tags, filter counts, internal links updated on 7 EN posts + ai-catalog; hub page already committed
     "https://www.edualist.com/en/blog/",
     "https://www.edualist.com/en/blog/cat4-test-dubai/",

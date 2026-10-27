@@ -148,6 +148,36 @@
       "updatedAt": "2026-10-26T00:00:00Z"
     },
     {
+      "identifier": "urn:air:edualist.com:content:dubai-school-application-timeline-2027",
+      "displayName": "Dubai School Application Timeline 2027",
+      "description": "When to apply for September 2027 and 2028 entry at JESS, DIA, Repton, GEMS Wellington and Nord Anglia — timeline by school type, required documents, and three critical application mistakes.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-school-application-timeline-2027/",
+      "tags": ["dubai", "school-selection", "admissions", "en"],
+      "representativeQueries": [
+        "When should I apply to a Dubai school for September 2027?",
+        "How long is the JESS Dubai waitlist?",
+        "Is it too late to apply to DIA Emirates Hills?",
+        "What documents do I need for a Dubai school application?"
+      ],
+      "updatedAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-private-vs-government-school",
+      "displayName": "Dubai Private School vs Government School",
+      "description": "Why expat families in Dubai cannot access government schools; private school fee bands by KHDA rating, hidden costs, employer education allowances and curriculum guide.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-private-vs-government-school/",
+      "tags": ["dubai", "school-selection", "costs", "en"],
+      "representativeQueries": [
+        "Can expat families use government schools in Dubai?",
+        "How much do private schools in Dubai cost?",
+        "What is the cheapest KHDA Outstanding school in Dubai?",
+        "What is the KHDA rating system?"
+      ],
+      "updatedAt": "2026-10-27T00:00:00Z"
+    },
+    {
       "identifier": "urn:air:edualist.com:content:dubai-school-hidden-costs",
       "displayName": "Dubai School Hidden Costs 2026",
       "description": "Full breakdown of Dubai school costs beyond tuition: registration, uniform, bus, trips, exam fees and ECAs — adds AED 8,000–20,000 per year.",

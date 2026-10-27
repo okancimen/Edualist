@@ -2265,4 +2265,24 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.edualist.com/en/blog/dubai-school-application-timeline-2027/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/dubai-school-application-timeline-2027/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-okul-basvuru-takvimi-2027/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-school-application-timeline-2027/"/>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/dubai-private-vs-government-school/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/dubai-private-vs-government-school/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-ozel-okul-mu-devlet-okulu-mu/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-private-vs-government-school/"/>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>
