@@ -31,6 +31,8 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-10-27 EN blog listing: 640w srcset for 2 thumbnails (PageSpeed image delivery fix)
+    "https://www.edualist.com/en/blog/",
     # 2026-10-27 hreflang x-default fixes (3 EN pages), content improvements (intro + blog-summary), dateModified updates (6 pages), dubai-education-system added to llms-full.txt + ai-catalog.json
     "https://www.edualist.com/en/blog/dubai-khda-outstanding-schools/",
     "https://www.edualist.com/en/blog/dubai-school-holidays/",
