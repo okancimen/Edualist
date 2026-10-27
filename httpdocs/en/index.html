@@ -7,7 +7,6 @@
   </script>
   <meta charset="UTF-8">
   <!-- Preconnect for ad tracking (saves ~300ms LCP per PSI) -->
-  <link rel="preconnect" href="https://ad.doubleclick.net" crossorigin>
   <!-- Self-hosted fonts (Latin + Turkish subset): no third-party round trip -->
   <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
@@ -708,8 +707,7 @@
           nextBtn.addEventListener('click', function(){ goTo(current + 1); });
           window.addEventListener('resize', function(){ buildDots(); updateStep(); goTo(current); });
           buildDots();
-          updateStep();
-          goTo(0);
+          requestAnimationFrame(function(){ updateStep(); goTo(0); });
         })();
       </script>
     </div>

@@ -53,6 +53,30 @@ ErrorDocument 404 /404.html
 <IfModule mod_rewrite.c>
   RewriteEngine On
 
+  # Single-hop: https + non-www bare root → www + language (avoids 2-hop chain)
+  RewriteCond %{HTTPS} on
+  RewriteCond %{HTTP_HOST} ^edualist\.com$ [NC]
+  RewriteCond %{REQUEST_URI} ^(/index\.html)?/?$
+  RewriteCond %{HTTP_COOKIE} (^|;\s*)edualist_lang=en(;|$)
+  RewriteRule ^ https://www.edualist.com/en/ [R=302,L]
+
+  RewriteCond %{HTTPS} on
+  RewriteCond %{HTTP_HOST} ^edualist\.com$ [NC]
+  RewriteCond %{REQUEST_URI} ^(/index\.html)?/?$
+  RewriteCond %{HTTP_COOKIE} (^|;\s*)edualist_lang=tr(;|$)
+  RewriteRule ^ https://www.edualist.com/tr/ [R=302,L]
+
+  RewriteCond %{HTTPS} on
+  RewriteCond %{HTTP_HOST} ^edualist\.com$ [NC]
+  RewriteCond %{REQUEST_URI} ^(/index\.html)?/?$
+  RewriteCond %{HTTP:Accept-Language} ^en [NC]
+  RewriteRule ^ https://www.edualist.com/en/ [R=302,L]
+
+  RewriteCond %{HTTPS} on
+  RewriteCond %{HTTP_HOST} ^edualist\.com$ [NC]
+  RewriteCond %{REQUEST_URI} ^(/index\.html)?/?$
+  RewriteRule ^ https://www.edualist.com/tr/ [R=302,L]
+
   # non-www + index.html → www canonical (1 hop, before the generic non-www→www rule)
   RewriteCond %{HTTP_HOST} ^edualist\.com$ [NC]
   RewriteRule ^(.+)/index\.html$ https://www.edualist.com/$1/ [R=301,L]
