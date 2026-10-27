@@ -31,6 +31,17 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-10-28 Low-impression merge + reframe: 3 redirects, 2 merge targets enhanced, 7 pages reframed (Groups 1–3)
+    "https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/",
+    "https://www.edualist.com/blog/abu-dhabi-uluslararasi-okullar/",
+    "https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/",
+    "https://www.edualist.com/blog/egitim-kocu-ne-yapar/",
+    "https://www.edualist.com/blog/yurtdisi-egitim-maliyet-karsilastirma/",
+    "https://www.edualist.com/blog/dubai-okul-kayit-rehberi/",
+    "https://www.edualist.com/blog/dubai-ozel-okul-mu-devlet-okulu-mu/",
+    "https://www.edualist.com/blog/dubai-okul-burs-imkanlari/",
+    "https://www.edualist.com/blog/turkiyeden-dubaya-tasima-cocuk-okul/",
+    "https://www.edualist.com/sitemap.xml",
     # 2026-10-28 CTR optimisation: title + meta description rewrite on 20 high-impression pages + H1 fix on 2 TR pages
     "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
     "https://www.edualist.com/blog/hollanda-okul-kayit-rehberi/",
