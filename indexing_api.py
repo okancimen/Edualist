@@ -31,6 +31,31 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-10-28 CTR optimisation: title + meta description rewrite on 20 high-impression pages + H1 fix on 2 TR pages
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    "https://www.edualist.com/blog/hollanda-okul-kayit-rehberi/",
+    "https://www.edualist.com/blog/international-school-nedir/",
+    "https://www.edualist.com/blog/robert-kolej-ucreti-2026/",
+    "https://www.edualist.com/en/blog/abu-dhabi-international-schools/",
+    "https://www.edualist.com/en/blog/ai-proof-jobs/",
+    "https://www.edualist.com/en/blog/cat4-test-dubai/",
+    "https://www.edualist.com/en/blog/dubai-cost-of-living-2026/",
+    "https://www.edualist.com/en/blog/dubai-ib-schools-graduate-success/",
+    "https://www.edualist.com/en/blog/dubai-school-fees-2026/",
+    "https://www.edualist.com/en/blog/dubai-school-holidays/",
+    "https://www.edualist.com/en/blog/dubai-school-registration-season/",
+    "https://www.edualist.com/en/blog/dubai-school-registration/",
+    "https://www.edualist.com/en/blog/dubai-school-scholarships/",
+    "https://www.edualist.com/en/blog/dubai-top-schools/",
+    "https://www.edualist.com/en/blog/how-to-apply-dubai-school/",
+    "https://www.edualist.com/en/blog/ib-diploma-university-requirements/",
+    "https://www.edualist.com/en/blog/ib-vs-a-level-vs-ap/",
+    "https://www.edualist.com/en/blog/school-enrolment-italy/",
+    "https://www.edualist.com/en/blog/what-is-a-khda-rating/",
+    # 2026-10-27 sitemap fix: added /en/your-childs-potential/ + hreflang EN to cocugunuzun-potansiyeli
+    "https://www.edualist.com/en/your-childs-potential/",
+    "https://www.edualist.com/cocugunuzun-potansiyeli/",
+    "https://www.edualist.com/sitemap.xml",
     # 2026-10-27 hreflang x-default fix on 12 EN blog pages + sitemap.xml (19 blocks); | Edualist suffix removed from 57 titles > 60 chars
     "https://www.edualist.com/en/blog/academic-support-expat-child-dubai/",
     "https://www.edualist.com/en/blog/american-school-of-dubai-review/",
@@ -256,8 +281,6 @@ URLS = [
     "https://www.edualist.com/blog/gems-wellington-dubai-incelemesi/",
     "https://www.edualist.com/en/blog/gems-wellington-dubai-review/",
     # 2026-10-22 EN assessment hub + nav fix + EN blog redesign
-    "https://www.edualist.com/en/your-childs-potential/",
-    "https://www.edualist.com/cocugunuzun-potansiyeli/",
     "https://www.edualist.com/en/blog/",
     "https://www.edualist.com/blog/",
     # 2026-10-20 Yeni yazı: ingilterede-turk-okulu, isvicre, abd okul kayıt rehberleri
