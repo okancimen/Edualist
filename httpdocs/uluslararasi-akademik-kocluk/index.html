@@ -841,9 +841,12 @@
 
     window.addEventListener('resize', function(){ buildDots(); goTo(current); });
 
-    buildDots();
-    goTo(0);
-    startAuto();
+    requestAnimationFrame(function(){
+      perView = getPerView();
+      buildDots();
+      goTo(0);
+      startAuto();
+    });
   })();
   </script>
 
