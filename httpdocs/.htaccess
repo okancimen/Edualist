@@ -100,6 +100,18 @@ ErrorDocument 404 /404.html
   # Redirect old dubai slug to new Turkish slug (also catches /index.html variant)
   RewriteRule ^blog/dubai-school-guide(/index\.html)?/?$ /blog/dubai-gelmeden-once-bilmeniz-gerekenler/ [R=301,L]
 
+  # GSC 404 fixes (Oct 2026)
+  RewriteRule ^en/school-advisory(/index\.html)?/?$ /en/international-school-consulting/ [R=301,L]
+  RewriteRule ^en/dubai-schools(/index\.html)?/?$ /en/dubai/ [R=301,L]
+  RewriteRule ^en/blog/ib-vs-a-level-dubai(/index\.html)?/?$ /en/blog/ib-vs-a-level-vs-ap/ [R=301,L]
+  RewriteRule ^en/blog/dubai-outstanding-schools(/index\.html)?/?$ /en/blog/dubai-khda-outstanding-schools/ [R=301,L]
+  RewriteRule ^en/blog/dubai-ib-schools-results(/index\.html)?/?$ /en/blog/dubai-ib-schools-graduate-success/ [R=301,L]
+  RewriteRule ^en/blog/dubai-school-application-guide(/index\.html)?/?$ /en/blog/how-to-apply-dubai-school/ [R=301,L]
+  RewriteRule ^en/blog/dubai-top-10-schools(/index\.html)?/?$ /en/blog/dubai-top-schools/ [R=301,L]
+  # /akademik-koçluk/ — Unicode and percent-encoded forms
+  RewriteRule ^akademik-ko%C3%A7luk(/index\.html)?/?$ /uluslararasi-akademik-kocluk/ [R=301,L]
+  RewriteRule ^akademik-koçluk(/index\.html)?/?$ /uluslararasi-akademik-kocluk/ [R=301,L]
+
   # Old stub URLs
   RewriteRule ^ib-dp-koclugu(/index\.html)?/?$ /uluslararasi-akademik-kocluk/ [R=301,L]
   RewriteRule ^blog/dubai-okul-secimi(/index\.html)?/?$ /blog/dubai-turk-aileler-okul-rehberi/ [R=301,L]
