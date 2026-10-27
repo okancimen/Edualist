@@ -31,6 +31,12 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-10-28 EN counterparts: 3 redirects, 2 merge targets enhanced, 2 reframes
+    "https://www.edualist.com/en/blog/ai-proof-jobs/",
+    "https://www.edualist.com/en/blog/abu-dhabi-international-schools/",
+    "https://www.edualist.com/en/blog/what-does-an-education-coach-do/",
+    "https://www.edualist.com/en/blog/international-education-cost/",
+    "https://www.edualist.com/sitemap.xml",
     # 2026-10-28 Low-impression merge + reframe: 3 redirects, 2 merge targets enhanced, 7 pages reframed (Groups 1–3)
     "https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/",
     "https://www.edualist.com/blog/abu-dhabi-uluslararasi-okullar/",

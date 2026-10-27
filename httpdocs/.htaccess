@@ -152,10 +152,13 @@ ErrorDocument 404 /404.html
   RewriteRule ^blog/en/?$ /en/ [R=301,L]
   RewriteRule ^blog/tr/?$ /tr/ [R=301,L]
 
-  # 2026-10-28 Merge: low-impression duplicate pages consolidated
+  # 2026-10-28 Merge: low-impression duplicate pages consolidated (TR + EN)
   RewriteRule ^blog/gelecekte-hangi-meslekler-onem-kazanacak(/index\.html)?/?$ /blog/yapay-zekaya-direncli-meslekler/ [R=301,L]
   RewriteRule ^blog/cocuklar-icin-gelecek-becerileri(/index\.html)?/?$ /blog/yapay-zekaya-direncli-meslekler/ [R=301,L]
   RewriteRule ^blog/bae-uluslararasi-okul-rehberi(/index\.html)?/?$ /blog/abu-dhabi-uluslararasi-okullar/ [R=301,L]
+  RewriteRule ^en/blog/jobs-of-the-future(/index\.html)?/?$ /en/blog/ai-proof-jobs/ [R=301,L]
+  RewriteRule ^en/blog/future-skills-for-children(/index\.html)?/?$ /en/blog/ai-proof-jobs/ [R=301,L]
+  RewriteRule ^en/blog/uae-international-school-guide(/index\.html)?/?$ /en/blog/abu-dhabi-international-schools/ [R=301,L]
 
   # Serve WebP if browser supports it and file exists
   RewriteCond %{HTTP_ACCEPT} image/webp
