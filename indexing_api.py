@@ -31,6 +31,12 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-10-27 footer fix on 5 pages (site-footer → footer class): gems-founders EN/TR, gems-jumeirah-primary EN/TR, dubai-boarding-schools-guide EN
+    "https://www.edualist.com/en/blog/gems-founders-school-dubai-review/",
+    "https://www.edualist.com/en/blog/gems-jumeirah-primary-school-dubai-review/",
+    "https://www.edualist.com/en/blog/dubai-boarding-schools-guide/",
+    "https://www.edualist.com/blog/gems-founders-school-dubai-incelemesi/",
+    "https://www.edualist.com/blog/gems-jumeirah-primary-school-dubai-incelemesi/",
     # 2026-10-27 2 new EN posts: dubai-school-application-timeline-2027 + dubai-private-vs-government-school; hreflang updated on TR counterparts; sitemap, llms, ai-catalog updated
     "https://www.edualist.com/en/blog/dubai-school-application-timeline-2027/",
     "https://www.edualist.com/en/blog/dubai-private-vs-government-school/",
