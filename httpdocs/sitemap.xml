@@ -2285,4 +2285,44 @@
     <priority>0.8</priority>
   </url>
 
+  <url>
+    <loc>https://www.edualist.com/en/blog/dubai-school-comparison/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/dubai-school-comparison/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-okul-karsilastirma/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-school-comparison/"/>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/dubai-ib-school-selection/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/dubai-ib-school-selection/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-ib-okul-secimi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-ib-school-selection/"/>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/academic-support-expat-child-dubai/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/academic-support-expat-child-dubai/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/academic-support-expat-child-dubai/"/>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/child-starting-international-school-dubai/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/child-starting-international-school-dubai/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-uluslararasi-okula-geciyor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/child-starting-international-school-dubai/"/>
+    <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
 </urlset>

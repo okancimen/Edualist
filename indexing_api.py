@@ -37,6 +37,17 @@ URLS = [
     "https://www.edualist.com/en/blog/dubai-boarding-schools-guide/",
     "https://www.edualist.com/blog/gems-founders-school-dubai-incelemesi/",
     "https://www.edualist.com/blog/gems-jumeirah-primary-school-dubai-incelemesi/",
+    # 2026-10-27 4 new EN posts: dubai-school-comparison, dubai-ib-school-selection, academic-support-expat-child-dubai, child-starting-international-school-dubai; hreflang on 4 TR counterparts; sitemap, llms, ai-catalog updated
+    "https://www.edualist.com/en/blog/dubai-school-comparison/",
+    "https://www.edualist.com/en/blog/dubai-ib-school-selection/",
+    "https://www.edualist.com/en/blog/academic-support-expat-child-dubai/",
+    "https://www.edualist.com/en/blog/child-starting-international-school-dubai/",
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/sitemap.xml",
+    "https://www.edualist.com/blog/dubai-okul-karsilastirma/",
+    "https://www.edualist.com/blog/dubai-ib-okul-secimi/",
+    "https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/",
+    "https://www.edualist.com/blog/cocugum-uluslararasi-okula-geciyor/",
     # 2026-10-27 2 new EN posts: dubai-school-application-timeline-2027 + dubai-private-vs-government-school; hreflang updated on TR counterparts; sitemap, llms, ai-catalog updated
     "https://www.edualist.com/en/blog/dubai-school-application-timeline-2027/",
     "https://www.edualist.com/en/blog/dubai-private-vs-government-school/",

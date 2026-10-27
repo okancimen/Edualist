@@ -178,6 +178,66 @@
       "updatedAt": "2026-10-27T00:00:00Z"
     },
     {
+      "identifier": "urn:air:edualist.com:content:dubai-school-comparison",
+      "displayName": "Dubai School Comparison 2026: Repton vs GEMS Wellington vs Nord Anglia vs JESS vs DIA",
+      "description": "Five Outstanding KHDA schools compared side by side on fees (AED 48k–98k), curriculum, location, waitlists and best-fit family profiles, with a profile-to-school matching table.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-school-comparison/",
+      "tags": ["dubai", "school-selection", "comparison", "en"],
+      "representativeQueries": [
+        "Which is better Repton or GEMS Wellington Dubai?",
+        "What are the best Outstanding KHDA schools in Dubai?",
+        "Which Dubai school is best for the IB Diploma?",
+        "Compare Repton GEMS Wellington Nord Anglia JESS DIA Dubai fees"
+      ],
+      "updatedAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-ib-school-selection",
+      "displayName": "Choosing an IB School in Dubai: 2026 Guide",
+      "description": "Six Dubai IB schools compared on Diploma pass rates, fees and waitlists — from full-continuum schools like DIA (96–98% pass rate) to partial-IB options — with IB vs A-Level decision framework.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-ib-school-selection/",
+      "tags": ["dubai", "school-selection", "ib", "en"],
+      "representativeQueries": [
+        "Which Dubai school has the best IB Diploma results?",
+        "What is the difference between IB PYP MYP and Diploma in Dubai?",
+        "Can Turkish be studied in the IB Diploma in Dubai?",
+        "How long is the waitlist for DIA Emirates Hills?"
+      ],
+      "updatedAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:academic-support-expat-child-dubai",
+      "displayName": "Academic Support for Expat Children in Dubai: Parent's Guide",
+      "description": "How expat children adapt academically to Dubai international schools: curriculum gaps, three adaptation stages, weekly family support routines and when to start professional coaching (IB Extended Essay, TOK, IAs).",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/academic-support-expat-child-dubai/",
+      "tags": ["dubai", "academic-support", "coaching", "en"],
+      "representativeQueries": [
+        "How do expat children adapt to Dubai international schools?",
+        "What is academic coaching for IB students in Dubai?",
+        "How long does academic adaptation take for expat children in Dubai?",
+        "Is Turkish-language academic coaching available in Dubai?"
+      ],
+      "updatedAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:child-starting-international-school-dubai",
+      "displayName": "5 Critical Mistakes When Starting an International School",
+      "description": "The five mistakes families make in international school transitions — treating it as logistics, assuming English suffices, skipping academic assessment, importing old success metrics, leaving first year unsupported — with a practical first-term checklist.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/child-starting-international-school-dubai/",
+      "tags": ["academic-support", "international", "transition", "en"],
+      "representativeQueries": [
+        "How do I prepare my child for an international school transition?",
+        "What mistakes do families make when moving to an international school?",
+        "When should academic coaching start for an international school transition?",
+        "Is English level enough to succeed in an international school in Dubai?"
+      ],
+      "updatedAt": "2026-10-27T00:00:00Z"
+    },
+    {
       "identifier": "urn:air:edualist.com:content:dubai-school-hidden-costs",
       "displayName": "Dubai School Hidden Costs 2026",
       "description": "Full breakdown of Dubai school costs beyond tuition: registration, uniform, bus, trips, exam fees and ECAs — adds AED 8,000–20,000 per year.",
