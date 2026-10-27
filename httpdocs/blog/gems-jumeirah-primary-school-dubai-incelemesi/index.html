@@ -165,8 +165,8 @@
           </p>
 
           <h2>Hızlı Bakış</h2>
-          <div class="table-wrapper">
-            <table>
+          <div style="overflow-x:auto">
+            <table class="school-table">
               <thead><tr><th>Özellik</th><th>GEMS Jumeirah Primary School</th></tr></thead>
               <tbody>
                 <tr><td>Müfredat</td><td>İngiliz Ulusal Müfredatı (British National Curriculum)</td></tr>
@@ -190,8 +190,8 @@
           </p>
 
           <h2>KHDA Denetim Sonuçları</h2>
-          <div class="table-wrapper">
-            <table>
+          <div style="overflow-x:auto">
+            <table class="school-table">
               <thead><tr><th>Alan</th><th>KHDA Değerlendirmesi</th></tr></thead>
               <tbody>
                 <tr><td>Genel Not</td><td>Outstanding (Mükemmel)</td></tr>
@@ -228,8 +228,8 @@
           </p>
 
           <h2>Tahmini Ücretler 2026–2027</h2>
-          <div class="table-wrapper">
-            <table>
+          <div style="overflow-x:auto">
+            <table class="school-table">
               <thead><tr><th>Kademe</th><th>Tahmini AED / Yıl</th><th>Tahmini TL (×13,65)</th></tr></thead>
               <tbody>
                 <tr><td>FS1 – FS2</td><td>~42.000 – 44.000</td><td>~573.000 – 601.000 TL</td></tr>
@@ -254,20 +254,20 @@
           </ul>
 
           <!-- MID-PAGE CTA -->
-          <div class="mid-cta-bar">
-            <div class="mid-cta-text">
-              <strong>Year 6 Sonrası Hangi Ortaokul?</strong>
-              <span>GEMS Jumeirah Primary'den sonraki adımı — JESS, Kings' School veya Brighton — birlikte planlayalım.</span>
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:1.25rem;flex-wrap:wrap;margin:2rem 0;padding:1.25rem 1.5rem;background:var(--primary,hsl(212,66%,13%));border-radius:12px;color:#fff">
+            <div style="flex:1;min-width:200px">
+              <p style="margin:0 0 .3rem;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent,#DBAF2E);font-weight:700">Ortaokul Geçiş Planlaması</p>
+              <p style="margin:0;font-size:1rem;font-weight:600;line-height:1.4">Year 6 sonrası JESS, Kings' School veya Brighton — birlikte planlayalım.</p>
             </div>
-            <a href="/iletisim/" class="btn btn-accent">Ücretsiz Görüşme</a>
+            <a href="/uluslararasi-okul-danismanligi/" style="display:inline-flex;align-items:center;gap:.4rem;background:var(--accent,#DBAF2E);color:var(--primary,hsl(212,66%,13%));font-weight:700;padding:.75rem 1.5rem;border-radius:8px;white-space:nowrap;font-size:.95rem;text-decoration:none">Ücretsiz Görüşme Planla →</a>
           </div>
 
           <h2>Year 6 Sonrası: Ortaokul Geçişi</h2>
           <p>
             GEMS Jumeirah Primary'nin en kritik pratik özelliği şudur: okul Year 6'da biter. Bu, ailenin Year 5 itibarıyla — en geç — bir ortaokul planı yapması gerektiği anlamına gelir. Dubai'deki İngiliz müfredatlı ortaokullar arasında en çok tercih edilen seçenekler şunlardır:
           </p>
-          <div class="table-wrapper">
-            <table>
+          <div style="overflow-x:auto">
+            <table class="school-table">
               <thead><tr><th>Okul</th><th>KHDA</th><th>Kademe</th><th>Tahmini AED/Yıl</th></tr></thead>
               <tbody>
                 <tr><td><a href="/blog/jess-dubai-incelemesi/">JESS Dubai</a></td><td>Outstanding</td><td>Year 1–13</td><td>~52.000–80.000</td></tr>
@@ -282,41 +282,59 @@
           </p>
 
           <h2>Veli Yorumları: Güçlü Yönler ve Dikkat Noktaları</h2>
-          <p>
-            Çeşitli platformlardan derlenen veli yorumları (WhichSchoolAdvisor, SchoolsCompared, Expatforum) genel olarak <strong>4.3–4.5/5</strong> civarında bir memnuniyet oranına işaret etmektedir.
-          </p>
-          <p><strong>Sıkça övülen yönler:</strong></p>
-          <ul>
-            <li>Sıcak, destekleyici okul kültürü — özellikle küçük yaşlar için güvenli ortam</li>
-            <li>Güçlü EYFS uygulaması; erken okuryazarlık ve sosyal gelişime önem verilmesi</li>
-            <li>Nitelikli ve deneyimli öğretmen kadrosu</li>
-            <li>GEMS altyapısının sağladığı kaynak zenginliği (tesisler, teknoloji, kütüphane)</li>
-            <li>Aktif veliler topluluğu ve şeffaf iletişim</li>
-          </ul>
-          <p><strong>Sıkça dile getirilen endişeler:</strong></p>
-          <ul>
-            <li>Sadece ilkokul olması nedeniyle Year 6'da zorunlu okul değişikliği</li>
-            <li>Popüler sınıflarda bekleme listesi süresi</li>
-            <li>Ücretlerin Dubai ortalamasının üzerinde olması</li>
-          </ul>
+          <p>Çeşitli platformlardan derlenen veli yorumları (WhichSchoolAdvisor, SchoolsCompared, Expatforum) genel olarak <strong>4.3–4.5/5</strong> civarında bir memnuniyet oranına işaret etmektedir.</p>
+          <div class="verdict-grid">
+            <div class="verdict-box verdict-pros">
+              <strong>Sıkça Övülen Yönler</strong>
+              <ul>
+                <li>Sıcak, destekleyici okul kültürü — özellikle küçük yaşlar için güvenli ortam</li>
+                <li>Güçlü EYFS uygulaması; erken okuryazarlık ve sosyal gelişim</li>
+                <li>Nitelikli ve deneyimli öğretmen kadrosu</li>
+                <li>GEMS altyapısının sağladığı kaynak zenginliği</li>
+                <li>Aktif veliler topluluğu ve şeffaf iletişim</li>
+              </ul>
+            </div>
+            <div class="verdict-box verdict-cons">
+              <strong>Sıkça Dile Getirilen Endişeler</strong>
+              <ul>
+                <li>Year 6'da zorunlu okul değişikliği — erken planlama gerektirir</li>
+                <li>Popüler sınıflarda bekleme listesi süresi</li>
+                <li>Ücretlerin Dubai ortalamasının üzerinde olması</li>
+              </ul>
+            </div>
+          </div>
 
-          <h2>Türk Aileler İçin Değerlendirme</h2>
-          <p>
-            GEMS Jumeirah Primary School, Dubai'ye çocuğunu ilkokul çağında (4–11 yaş) getiren Türk aileler için güçlü bir seçenektir. KHDA Outstanding notu, İngiliz müfredatının yapısal sağlamlığı ve GEMS'in operasyonel güvencesi birlikte değerlendirildiğinde okul, kaliteli bir başlangıç noktası sunar.
-          </p>
-          <p>
-            Ancak göz önünde bulundurulması gereken bazı önemli noktalar vardır:
-          </p>
-          <ul>
-            <li><strong>İngilizce adaptasyon:</strong> Türkçe eğitimden gelen çocuklar için EAL desteği kritik öneme sahiptir. Okul bu desteği sağlasa da ilk dönem yoğun ev desteği gerekebilir.</li>
-            <li><strong>Year 6 geçiş planı:</strong> Ortaokul araştırması ve başvurusunu Year 4–5'te başlatmak süreci kolaylaştırır.</li>
-            <li><strong>Üniversite yolu:</strong> İngiliz müfredatı — GCSE ve A-Level üzerinden — İngiltere, BAE ve uluslararası üniversitelere kapı açar. Türkiye YKS ile uyum sınırlıdır.</li>
-            <li><strong>Uzun vadeli planlama:</strong> Çocuğunuz Year 6'yı bitirdiğinde ailenin Dubai'de kalıp kalmayacağı, ortaokul seçimini doğrudan etkiler.</li>
-          </ul>
+          <h2>Koçun Notu</h2>
+          <div class="blog-personal-note" style="display:flex;gap:1rem;align-items:flex-start;margin:2rem 0;padding:1.25rem 1.4rem;background:hsla(212,66%,13%,0.03);border-radius:10px;border-left:3px solid var(--accent,#DBAF2E)">
+            <picture><img src="/assets/founder-avatar-104.webp" alt="Özlem Çimen" width="52" height="52" loading="lazy" decoding="async" style="border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)"></picture>
+            <div>
+              <span style="font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Özlem Çimen — Koçun notu</span>
+              <p style="margin:.4rem 0 0;line-height:1.7;font-size:.95rem">GEMS Jumeirah Primary, Dubai'ye ilkokul çağında çocuğunu getiren Türk aileler için güçlü bir seçenektir. Outstanding notu ve GEMS güvencesi sağlam bir başlangıç noktası sunar. Ama ailelerle her görüşmede tekrarladığım bir şey var: ortaokul araştırması ve bekleme listesi başvurusunu Year 4'te başlatın — Year 6'yı beklemek yerine. JESS Dubai, Kings' School ve Brighton College'ın bekleme listeleri uzundur. Ayrıca İngiliz müfredatı Türkiye YKS ile sınırlı uyum taşır; hedef Türkiye üniversiteleriyse bunu şimdiden değerlendirmeniz gerekir.</p>
+            </div>
+          </div>
+          <div class="verdict-grid">
+            <div class="verdict-box verdict-pros">
+              <strong>Uygun Profiller</strong>
+              <ul>
+                <li>Dubai'ye ilkokul çağında (4–11 yaş) gelen aileler</li>
+                <li>Outstanding İngiliz ilkokul eğitimi isteyenler</li>
+                <li>Güçlü EYFS temeli önceliklendirenler</li>
+                <li>İngiltere / BAE / uluslararası üniversite yolunu planlayanlar</li>
+              </ul>
+            </div>
+            <div class="verdict-box verdict-cons">
+              <strong>Daha Az Uygun Durumlar</strong>
+              <ul>
+                <li>Dubai'de Year 13'e kadar tek okulda kalmak isteyenler (Wellington daha uygun)</li>
+                <li>IB Diploma veya A-Level aynı okulda isteyenler</li>
+                <li>Year 6 geçişini şimdiden planlayamayacak aileler</li>
+              </ul>
+            </div>
+          </div>
 
           <h2>GEMS Jumeirah Primary mi, GEMS Wellington mu?</h2>
-          <div class="table-wrapper">
-            <table>
+          <div style="overflow-x:auto">
+            <table class="school-table">
               <thead><tr><th>Kriter</th><th>GEMS Jumeirah Primary</th><th>GEMS Wellington International</th></tr></thead>
               <tbody>
                 <tr><td>KHDA Notu</td><td>Outstanding</td><td>Outstanding</td></tr>
@@ -332,28 +350,30 @@
             Uzun vadede Dubai'de kalmayı ve çocuğunuzu Year 13'e kadar aynı okulda tutmayı hedefliyorsanız <a href="/blog/gems-wellington-dubai-incelemesi/">GEMS Wellington International School</a> daha az lojistik karmaşıklık sunar. Bununla birlikte, GEMS Jumeirah Primary'nin güçlü ilkokul deneyimi ve ardından seçilecek farklı bir ortaokul da tutarlı bir eğitim yolu oluşturabilir.
           </p>
 
-          <h2>Sıkça Sorulan Sorular</h2>
-          <div class="faq-list">
-            <details>
-              <summary>GEMS Jumeirah Primary School Dubai'nin KHDA notu nedir?</summary>
-              <p>Okul, KHDA denetimlerinde "Outstanding" (Mükemmel) olarak değerlendirilmiştir. Güncel denetim raporu için KHDA resmi web sitesini kontrol edin.</p>
-            </details>
-            <details>
-              <summary>GEMS Jumeirah Primary School ücretleri ne kadar?</summary>
-              <p>Tahmini 2026–27 yıllık ücretleri AED 42.000–52.000 arasındadır (≈ 573.000–710.000 TL). Kesin ücretler için okul veya KHDA ücret listesiyle teyit edin.</p>
-            </details>
-            <details>
-              <summary>Okul sadece ilkokul mu?</summary>
-              <p>Evet. GEMS Jumeirah Primary School FS1 (4 yaş) ile Year 6 (11 yaş) arasındaki kademeleri kapsar. Year 6 sonrasında ayrı bir ortaokula geçiş gerekir. Geçiş planını Year 4–5'te başlatmanız önerilir.</p>
-            </details>
-            <details>
-              <summary>Kabul ne kadar zor? Bekleme listesi var mı?</summary>
-              <p>KHDA Outstanding derecesiyle yüksek talep gören okul için erken başvuru kritik önem taşır. FS1–FS2'de değerlendirme yapılmaz; üst sınıflarda okul kayıtları ve kısa bir gözlem istenebilir. Popüler kademelerde bekleme listesiyle karşılaşılabilir.</p>
-            </details>
-            <details>
-              <summary>GEMS Jumeirah Primary mi, GEMS Wellington mi seçmeliyim?</summary>
-              <p>Çocuğunuzu Year 13'e kadar aynı okulda tutmak istiyorsanız Wellington daha az lojistik karmaşıklık sunar. Sadece ilkokul için Jumeirah Primary, Outstanding kalite ve nispeten daha uygun ücretiyle güçlü bir seçenektir. Wellington'da IB Diploma ve A-Level seçeneği mevcuttur.</p>
-            </details>
+          <div class="blog-faq">
+            <h2>Sıkça Sorulan Sorular</h2>
+            <div class="faq-item"><h3 class="faq-q">GEMS Jumeirah Primary School Dubai'nin KHDA notu nedir?</h3><p class="faq-a">Okul, KHDA denetimlerinde "Outstanding" (Mükemmel) olarak değerlendirilmiştir. Güncel denetim raporu için KHDA resmi web sitesini kontrol edin.</p></div>
+            <div class="faq-item"><h3 class="faq-q">GEMS Jumeirah Primary School ücretleri ne kadar?</h3><p class="faq-a">Tahmini 2026–27 yıllık ücretleri AED 42.000–52.000 arasındadır (≈ 573.000–710.000 TL). Kesin ücretler için okul veya KHDA ücret listesiyle teyit edin.</p></div>
+            <div class="faq-item"><h3 class="faq-q">Okul sadece ilkokul mu?</h3><p class="faq-a">Evet. FS1 (4 yaş) ile Year 6 (11 yaş) arasındaki kademeleri kapsar. Year 6 sonrasında ayrı bir ortaokula geçiş gerekir. Geçiş planını Year 4–5'te başlatın.</p></div>
+            <div class="faq-item"><h3 class="faq-q">Kabul ne kadar zor? Bekleme listesi var mı?</h3><p class="faq-a">Yüksek talep nedeniyle erken başvuru kritiktir. FS1–FS2'de değerlendirme yapılmaz; üst sınıflarda okul kayıtları ve kısa bir gözlem istenebilir. Popüler kademelerde bekleme listesiyle karşılaşılabilir.</p></div>
+            <div class="faq-item"><h3 class="faq-q">GEMS Jumeirah Primary mi, GEMS Wellington mi seçmeliyim?</h3><p class="faq-a">Year 13'e kadar aynı okulda kalmak isteyenler için Wellington daha az geçiş karmaşıklığı sunar. Sadece ilkokul için Jumeirah Primary, Outstanding kalite ve daha uygun ücretiyle güçlü bir seçenektir.</p></div>
+          </div>
+
+          <aside class="blog-author-box" style="display:flex;gap:1.1rem;align-items:flex-start;margin:2.5rem 0;padding:1.4rem 1.5rem;border:1px solid var(--border-card,rgba(11,33,58,.08));border-left:3px solid var(--accent,#DBAF2E);border-radius:10px;background:var(--bg-card,rgba(11,33,58,.02))">
+            <picture><img src="/assets/founder-avatar-160.webp" alt="Özlem Çimen" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)"></picture>
+            <div>
+              <p style="margin:0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Yazar</p>
+              <p style="margin:.15rem 0 .4rem;font-size:1.1rem;font-weight:700"><a href="/neden-biz/" style="color:var(--primary,#0b213a);text-decoration:none">Özlem Çimen</a></p>
+              <p style="margin:0;font-size:.95rem;line-height:1.7">Edualist'in kurucusu ve uluslararası eğitim danışmanı. Öğretmenlikten okul yöneticiliğine uzanan 20+ yıllık deneyimi; beş farklı ülkede çocuklarını okutmuş bir expat anne.</p>
+              <p style="margin:.5rem 0 0;font-size:.9rem"><a href="/neden-biz/" style="color:var(--accent-hover,#b8921f);font-weight:600">Özlem Çimen hakkında →</a></p>
+            </div>
+          </aside>
+
+          <div class="blog-post-cta glass">
+            <h3>Year 6 Geçişini Planlamaya Hazır mısınız?</h3>
+            <p>Dubai'de ortaokul başvuruları rekabetçidir. Ücretsiz danışma görüşmesiyle GEMS Jumeirah Primary'den sonraki en uygun yolu birlikte belirleyelim.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary">Ücretsiz Görüşme Planla</a>
+            <a href="/dubai/" class="btn btn-secondary" style="margin-top:0.5rem;">Dubai Danışmanlık Sayfamız →</a>
           </div>
 
         </article>
