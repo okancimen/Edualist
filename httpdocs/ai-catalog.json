@@ -208,6 +208,22 @@
       "updatedAt": "2026-10-27T00:00:00Z"
     },
     {
+      "identifier": "urn:air:edualist.com:content:dubai-education-system",
+      "displayName": "Dubai Education System 2026: KHDA, Curricula & School Guide",
+      "description": "How Dubai's school system works: government schools for UAE nationals only, 200+ KHDA-inspected private international schools for expats. Covers KHDA ratings, five curriculum types (British, IB, American, Indian, French), grade equivalency table by age, annual fee ranges and registration timelines.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-education-system/",
+      "tags": ["dubai", "education-system", "khda", "curriculum", "en"],
+      "representativeQueries": [
+        "How does the Dubai education system work?",
+        "What is KHDA and how does it rate Dubai schools?",
+        "Which curriculum is best for expat families in Dubai?",
+        "How much do Dubai international schools cost?",
+        "Can expat children attend government schools in Dubai?"
+      ],
+      "updatedAt": "2026-10-27T00:00:00Z"
+    },
+    {
       "identifier": "urn:air:edualist.com:content:academic-support-expat-child-dubai",
       "displayName": "Academic Support for Expat Children in Dubai: Parent's Guide",
       "description": "How expat children adapt academically to Dubai international schools: curriculum gaps, three adaptation stages, weekly family support routines and when to start professional coaching (IB Extended Essay, TOK, IAs).",

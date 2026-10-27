@@ -31,6 +31,13 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-10-27 hreflang x-default fixes (3 EN pages), content improvements (intro + blog-summary), dateModified updates (6 pages), dubai-education-system added to llms-full.txt + ai-catalog.json
+    "https://www.edualist.com/en/blog/dubai-khda-outstanding-schools/",
+    "https://www.edualist.com/en/blog/dubai-school-holidays/",
+    "https://www.edualist.com/en/blog/dubai-education-system/",
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    "https://www.edualist.com/blog/fransa-okul-kayit-rehberi/",
+    "https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/",
     # 2026-10-27 footer fix on 5 pages (site-footer → footer class): gems-founders EN/TR, gems-jumeirah-primary EN/TR, dubai-boarding-schools-guide EN
     "https://www.edualist.com/en/blog/gems-founders-school-dubai-review/",
     "https://www.edualist.com/en/blog/gems-jumeirah-primary-school-dubai-review/",
