@@ -31,6 +31,38 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-10-27 hreflang x-default fix on 12 EN blog pages + sitemap.xml (19 blocks); | Edualist suffix removed from 57 titles > 60 chars
+    "https://www.edualist.com/en/blog/academic-support-expat-child-dubai/",
+    "https://www.edualist.com/en/blog/american-school-of-dubai-review/",
+    "https://www.edualist.com/en/blog/child-starting-international-school-dubai/",
+    "https://www.edualist.com/en/blog/dubai-education-system/",
+    "https://www.edualist.com/en/blog/dubai-ib-school-selection/",
+    "https://www.edualist.com/en/blog/dubai-khda-outstanding-schools/",
+    "https://www.edualist.com/en/blog/dubai-private-vs-government-school/",
+    "https://www.edualist.com/en/blog/dubai-school-application-timeline-2027/",
+    "https://www.edualist.com/en/blog/dubai-school-comparison/",
+    "https://www.edualist.com/en/blog/dubai-school-holidays/",
+    "https://www.edualist.com/en/blog/dubai-school-selection-mistakes/",
+    "https://www.edualist.com/en/blog/dubai-secondary-school-guide/",
+    "https://www.edualist.com/sitemap.xml",
+    "https://www.edualist.com/blog/american-school-of-dubai-incelemesi/",
+    "https://www.edualist.com/blog/anxious-generation-oyun-temelli-cocukluk/",
+    "https://www.edualist.com/blog/brighton-college-dubai-incelemesi/",
+    "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
+    "https://www.edualist.com/blog/dubai-amerikan-mufredat-ap-okullari/",
+    "https://www.edualist.com/blog/dubai-british-school-incelemesi/",
+    "https://www.edualist.com/blog/dubai-college-incelemesi/",
+    "https://www.edualist.com/blog/dubai-egitim-sistemi/",
+    "https://www.edualist.com/blog/dubai-okul-karsilastirma/",
+    "https://www.edualist.com/blog/dubai-turk-okulu-arayanlara/",
+    "https://www.edualist.com/blog/gems-jumeirah-primary-school-dubai-incelemesi/",
+    "https://www.edualist.com/blog/gems-wellington-dubai-incelemesi/",
+    "https://www.edualist.com/blog/jess-dubai-incelemesi/",
+    "https://www.edualist.com/blog/jumeirah-college-dubai-incelemesi/",
+    "https://www.edualist.com/blog/kings-school-dubai-incelemesi/",
+    "https://www.edualist.com/blog/nord-anglia-dubai-incelemesi/",
+    "https://www.edualist.com/blog/repton-school-dubai-incelemesi/",
+    "https://www.edualist.com/blog/sunmarke-school-dubai-incelemesi/",
     # 2026-10-27 TR blog listing: load-more pagination (24 cards initially, 94 hidden) — PageSpeed DOM size fix
     "https://www.edualist.com/blog/",
     # 2026-10-27 EN blog listing: 640w srcset for 2 thumbnails (PageSpeed image delivery fix)
