@@ -31,6 +31,15 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-10-27 SEO fixes: alt tags, filter counts, internal links updated on 7 EN posts + ai-catalog; hub page already committed
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/en/blog/cat4-test-dubai/",
+    "https://www.edualist.com/en/blog/dubai-school-fees-2026/",
+    "https://www.edualist.com/en/blog/dubai-school-hidden-costs/",
+    "https://www.edualist.com/en/blog/dubai-secondary-school-guide/",
+    "https://www.edualist.com/en/blog/gems-jumeirah-primary-school-dubai-review/",
+    "https://www.edualist.com/en/blog/how-to-apply-dubai-school/",
+    "https://www.edualist.com/en/blog/repton-school-dubai-review/",
     # 2026-10-27 4 new EN blog posts: hidden costs, Y6→Y7 transition, CAT4 practice, boarding guide; sitemap, EN blog listing, llms updated
     "https://www.edualist.com/en/blog/dubai-school-hidden-costs/",
     "https://www.edualist.com/en/blog/year-6-to-year-7-transition-dubai/",

@@ -148,6 +148,66 @@
       "updatedAt": "2026-10-26T00:00:00Z"
     },
     {
+      "identifier": "urn:air:edualist.com:content:dubai-school-hidden-costs",
+      "displayName": "Dubai School Hidden Costs 2026",
+      "description": "Full breakdown of Dubai school costs beyond tuition: registration, uniform, bus, trips, exam fees and ECAs — adds AED 8,000–20,000 per year.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-school-hidden-costs/",
+      "tags": ["dubai", "costs", "school-fees", "en"],
+      "representativeQueries": [
+        "What are the hidden costs of Dubai schools?",
+        "How much does school uniform cost in Dubai?",
+        "What is the total annual cost of a Dubai international school?",
+        "Are school bus fees included in Dubai school fees?"
+      ],
+      "updatedAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:year-6-to-year-7-transition-dubai",
+      "displayName": "Year 6 to Year 7 Dubai: Secondary School Transition Guide",
+      "description": "Complete guide to moving from primary to secondary school in Dubai: application timeline, which secondary schools accept Year 7 entries, CAT4 requirements.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/year-6-to-year-7-transition-dubai/",
+      "tags": ["dubai", "school-selection", "transition", "en"],
+      "representativeQueries": [
+        "When should I apply for secondary school in Dubai?",
+        "Which Dubai secondary schools accept Year 7 entry?",
+        "What CAT4 score is needed for secondary school in Dubai?",
+        "How does the Year 6 to Year 7 transition work in Dubai?"
+      ],
+      "updatedAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:cat4-practice-test-sample-questions",
+      "displayName": "CAT4 Practice Test 2026: Sample Questions by Battery",
+      "description": "CAT4 sample questions for all 4 batteries — Verbal, Quantitative, Non-Verbal and Spatial Reasoning — with answers and scoring guide.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/cat4-practice-test-sample-questions/",
+      "tags": ["academic-support", "cat4", "dubai", "en"],
+      "representativeQueries": [
+        "What are sample CAT4 test questions?",
+        "How do I prepare my child for the CAT4 test?",
+        "What CAT4 score do Dubai schools require for Year 7?",
+        "What is the difference between CAT4 batteries?"
+      ],
+      "updatedAt": "2026-10-27T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-boarding-schools-guide",
+      "displayName": "Dubai Boarding Schools Guide 2026",
+      "description": "Guide to boarding schools in Dubai and the UAE: Repton boarding fees (AED 66,500–72,000/year), Abu Dhabi alternatives, and when UK boarding makes sense.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-boarding-schools-guide/",
+      "tags": ["dubai", "school-selection", "boarding", "en"],
+      "representativeQueries": [
+        "Which Dubai schools offer boarding?",
+        "How much does Repton boarding cost in Dubai?",
+        "Are there boarding schools in Dubai for expat families?",
+        "Should I choose Dubai boarding or UK boarding for my child?"
+      ],
+      "updatedAt": "2026-10-27T00:00:00Z"
+    },
+    {
       "identifier": "urn:air:edualist.com:content:blog-tr",
       "displayName": "Blog (TR)",
       "description": "Uluslararası okullar, okul geçişleri, Dubai eğitimi ve öğrenci refahı üzerine Türkçe makaleler.",
