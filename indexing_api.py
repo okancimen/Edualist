@@ -31,6 +31,13 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-10-28 GSC CTR + content improvements on 6 low-ranking pages + KHDA anchor text refresh (29 files)
+    "https://www.edualist.com/okul-ucretleri-karsilastirma/",
+    "https://www.edualist.com/en/blog/best-ap-schools-dubai/",
+    "https://www.edualist.com/en/blog/dubai-british-schools-a-level/",
+    "https://www.edualist.com/en/blog/dubai-education-system/",
+    "https://www.edualist.com/en/blog/dubai-khda-outstanding-schools/",
+    "https://www.edualist.com/en/blog/dubai-top-schools/",
     # 2026-10-28 EN counterparts: 3 redirects, 2 merge targets enhanced, 2 reframes
     "https://www.edualist.com/en/blog/ai-proof-jobs/",
     "https://www.edualist.com/en/blog/abu-dhabi-international-schools/",
