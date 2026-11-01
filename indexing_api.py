@@ -31,6 +31,8 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-11-01 new blog post: finans/muhasebe/hukuk maaşlar
+    "https://www.edualist.com/blog/dubai-maaslar-finans-muhasebe-hukuk/",
     # 2026-11-01 add missing URLs from recent SEO batch
     "https://www.edualist.com/en/blog/dubai-ib-schools-results/",
     "https://www.edualist.com/en/blog/dubai-outstanding-schools/",
