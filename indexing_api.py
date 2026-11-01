@@ -31,6 +31,14 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-11-01 add missing URLs from recent SEO batch
+    "https://www.edualist.com/en/blog/dubai-ib-schools-results/",
+    "https://www.edualist.com/en/blog/dubai-outstanding-schools/",
+    "https://www.edualist.com/en/blog/dubai-school-application-guide/",
+    "https://www.edualist.com/en/blog/dubai-top-10-schools/",
+    "https://www.edualist.com/en/blog/ib-vs-a-level-dubai/",
+    "https://www.edualist.com/en/dubai-schools/",
+    "https://www.edualist.com/en/school-advisory/",
     # 2026-10-28 GSC CTR + content improvements on 6 low-ranking pages + KHDA anchor text refresh (29 files)
     "https://www.edualist.com/okul-ucretleri-karsilastirma/",
     "https://www.edualist.com/en/blog/best-ap-schools-dubai/",
