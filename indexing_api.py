@@ -31,6 +31,8 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-11-03 differentiate dubai-en-iyi to fix cannibalization with dubai-top-10
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
     # 2026-11-03 restore original titles to recover lost impressions
     "https://www.edualist.com/en/blog/dubai-top-schools/",
     "https://www.edualist.com/blog/robert-kolej-ucreti-2026/",
