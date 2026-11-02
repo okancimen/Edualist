@@ -31,6 +31,10 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-11-03 CTR title fixes: holiday dates, IB scores, CAT4
+    "https://www.edualist.com/en/blog/dubai-school-holidays/",
+    "https://www.edualist.com/en/blog/ib-diploma-university-requirements/",
+    "https://www.edualist.com/en/blog/cat4-test-dubai/",
     # 2026-11-03 differentiate dubai-en-iyi to fix cannibalization with dubai-top-10
     "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
     # 2026-11-03 restore original titles to recover lost impressions
