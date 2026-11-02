@@ -33,6 +33,8 @@ INDEXNOW_ENDPOINTS = [
 URLS = [
     # 2026-11-03 restore original titles to recover lost impressions
     "https://www.edualist.com/en/blog/dubai-top-schools/",
+    "https://www.edualist.com/blog/robert-kolej-ucreti-2026/",
+    "https://www.edualist.com/dubai/",
     "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
     # 2026-11-02 inbound links added to 9 pages
     "https://www.edualist.com/blog/dubai-yasam-maliyeti-2026/",
