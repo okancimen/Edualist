@@ -31,6 +31,16 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-11-02 inbound links added to 9 pages
+    "https://www.edualist.com/blog/dubai-yasam-maliyeti-2026/",
+    "https://www.edualist.com/blog/dubai-gelmeden-once-bilmeniz-gerekenler/",
+    "https://www.edualist.com/blog/dubai-okul-ucretleri-2026/",
+    "https://www.edualist.com/blog/turkiye-dubai-okul-ucreti-karsilastirma/",
+    "https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/",
+    "https://www.edualist.com/en/blog/dubai-cost-of-living-2026/",
+    "https://www.edualist.com/en/blog/before-moving-to-dubai/",
+    "https://www.edualist.com/en/blog/dubai-school-fees-2026/",
+    "https://www.edualist.com/en/blog/turkey-vs-dubai-school-fees/",
     # 2026-11-02 new EN post: dubai-finance-accounting-legal-salaries + updated pages
     "https://www.edualist.com/en/blog/dubai-finance-accounting-legal-salaries/",
     "https://www.edualist.com/blog/dubai-maaslar-finans-muhasebe-hukuk/",
