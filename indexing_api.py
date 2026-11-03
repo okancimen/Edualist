@@ -31,6 +31,9 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-11-04 academic coach: add "koç öğretmen" keyword, remove Dubai framing from generic page
+    "https://www.edualist.com/blog/akademik-koc-nedir/",
+    "https://www.edualist.com/blog/egitim-kocu-ne-yapar/",
     # 2026-11-03 restore "Dubai'de" locative + keywords stripped by Oct 27 title-trim commit
     "https://www.edualist.com/blog/dubai-egitim-sistemi/",
     "https://www.edualist.com/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/",
