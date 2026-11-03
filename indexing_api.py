@@ -31,6 +31,10 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-11-03 restore "Dubai'de" locative + keywords stripped by Oct 27 title-trim commit
+    "https://www.edualist.com/blog/dubai-egitim-sistemi/",
+    "https://www.edualist.com/blog/dubai-okul-kayit-sezonu-ne-zaman-baslar/",
+    "https://www.edualist.com/blog/dubai-yasam-maliyeti-2026/",
     # 2026-11-03 CTR title fixes: holiday dates, IB scores, CAT4
     "https://www.edualist.com/en/blog/dubai-school-holidays/",
     "https://www.edualist.com/en/blog/ib-diploma-university-requirements/",
