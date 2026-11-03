@@ -31,6 +31,10 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-11-04 CTR: remove jargon from titles, match actual search queries
+    "https://www.edualist.com/en/blog/my-childs-character-strengths/",
+    "https://www.edualist.com/en/blog/what-is-eal/",
+    "https://www.edualist.com/blog/cocugumun-guclu-yonleri/",
     # 2026-11-04 academic coach: add "koç öğretmen" keyword, remove Dubai framing from generic page
     "https://www.edualist.com/blog/akademik-koc-nedir/",
     "https://www.edualist.com/blog/egitim-kocu-ne-yapar/",
