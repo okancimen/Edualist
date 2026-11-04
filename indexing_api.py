@@ -32,6 +32,9 @@ INDEXNOW_ENDPOINTS = [
 
 URLS = [
     # ── Yeni eklenen / son değişenler — her zaman başta ──────────────────────
+    # 2026-11-04 Cross-links: all 3 maaslar posts now fully interlinked (body text + related posts)
+    "https://www.edualist.com/blog/dubai-maaslar-2026/",
+    "https://www.edualist.com/blog/dubai-maaslar-finans-muhasebe-hukuk/",
     # 2026-11-04 New post: Otelcilik, Turizm ve Havacılık maaşları + blog listing + sitemap
     "https://www.edualist.com/blog/dubai-maaslar-otelcilik-turizm-havayollari/",
     "https://www.edualist.com/blog/",
