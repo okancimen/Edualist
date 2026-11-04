@@ -31,6 +31,11 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # 2026-11-04 CTR fixes: "Çocuğumun"→"Çocukların", holiday description improved
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    "https://www.edualist.com/en/blog/dubai-school-holidays/",
+    # 2026-11-04 title fix: match exact query "dubai okul başvurusu nasıl yapılır"
+    "https://www.edualist.com/blog/dubai-okul-basvuru-nasil-yapilir/",
     # 2026-11-04 CTR: remove jargon from titles, match actual search queries
     "https://www.edualist.com/en/blog/my-childs-character-strengths/",
     "https://www.edualist.com/en/blog/what-is-eal/",
