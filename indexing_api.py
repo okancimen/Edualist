@@ -32,6 +32,9 @@ INDEXNOW_ENDPOINTS = [
 
 URLS = [
     # ── Yeni eklenen / son değişenler — her zaman başta ──────────────────────
+    # 2026-11-04 New post: Otelcilik, Turizm ve Havacılık maaşları + blog listing + sitemap
+    "https://www.edualist.com/blog/dubai-maaslar-otelcilik-turizm-havayollari/",
+    "https://www.edualist.com/blog/",
     # 2026-11-04 EN internal links: hub links to 4 school reviews + IB cross-links
     "https://www.edualist.com/en/blog/gems-founders-school-dubai-review/",
     "https://www.edualist.com/en/blog/gems-jumeirah-primary-school-dubai-review/",
