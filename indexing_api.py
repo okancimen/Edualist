@@ -32,6 +32,12 @@ INDEXNOW_ENDPOINTS = [
 
 URLS = [
     # ── Yeni eklenen / son değişenler — her zaman başta ──────────────────────
+    # 2026-11-04 EN internal links: hub links to 4 school reviews + IB cross-links
+    "https://www.edualist.com/en/blog/gems-founders-school-dubai-review/",
+    "https://www.edualist.com/en/blog/gems-jumeirah-primary-school-dubai-review/",
+    "https://www.edualist.com/en/blog/jumeirah-college-dubai-review/",
+    "https://www.edualist.com/en/blog/safa-community-school-dubai-review/",
+    "https://www.edualist.com/en/blog/dubai-ib-school-selection/",
     # 2026-11-04 CTR fixes: "Çocuğumun"→"Çocukların", holiday description improved
     "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
     "https://www.edualist.com/en/blog/dubai-school-holidays/",
