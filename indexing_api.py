@@ -35,6 +35,7 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
     "https://www.edualist.com/blog/dubai-okul-yil-grubu-kayit-yasi/",
+    "https://www.edualist.com/en/blog/dubai-school-year-groups/",
     "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
     "https://www.edualist.com/en/blog/childs-real-academic-level/",
     "https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/",
