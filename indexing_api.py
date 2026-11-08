@@ -34,6 +34,17 @@ URLS = [
     # ── Yeni eklenen / son değişenler — BURAYA EKLE, en fazla ~150 URL ──────────
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
+    "https://www.edualist.com/en/blog/dubai-international-schools-khda-fees-2026/",
+    "https://www.edualist.com/blog/dubai-british-school-incelemesi/",
+    "https://www.edualist.com/blog/brighton-college-dubai-incelemesi/",
+    "https://www.edualist.com/blog/sunmarke-school-dubai-incelemesi/",
+    "https://www.edualist.com/blog/jumeirah-college-dubai-incelemesi/",
+    "https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/",
+    "https://www.edualist.com/blog/turkiye-dubai-okul-ucreti-karsilastirma/",
+    "https://www.edualist.com/en/blog/dubai-education-system/",
+    "https://www.edualist.com/blog/ib-gecisinde-akademik-kocluk/",
+    "https://www.edualist.com/blog/turkiye-ozel-okuldan-dubai-uluslararasi-okula-gecis/",
     "https://www.edualist.com/blog/dubai-okul-yil-grubu-kayit-yasi/",
     "https://www.edualist.com/en/blog/dubai-school-year-groups/",
     "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
