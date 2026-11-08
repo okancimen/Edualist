@@ -560,15 +560,6 @@
     <priority>0.7</priority>
   </url>
 
-  <url>
-    <loc>https://www.edualist.com/gizlilik-politikasi/</loc>
-    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/gizlilik-politikasi/"/>
-    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/privacy-policy/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/gizlilik-politikasi/"/>
-    <lastmod>2026-09-19</lastmod>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
 
   <url>
     <loc>https://www.edualist.com/en/privacy-policy/</loc>
@@ -2223,7 +2214,8 @@
   <url>
     <loc>https://www.edualist.com/en/blog/dubai-school-hidden-costs/</loc>
     <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/dubai-school-hidden-costs/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-school-hidden-costs/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-okul-gizli-maliyetler/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-okul-gizli-maliyetler/"/>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2232,7 +2224,8 @@
   <url>
     <loc>https://www.edualist.com/en/blog/year-6-to-year-7-transition-dubai/</loc>
     <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/year-6-to-year-7-transition-dubai/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/year-6-to-year-7-transition-dubai/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-ilkokul-ortaokul-gecisi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-ilkokul-ortaokul-gecisi/"/>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2241,7 +2234,8 @@
   <url>
     <loc>https://www.edualist.com/en/blog/cat4-practice-test-sample-questions/</loc>
     <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/cat4-practice-test-sample-questions/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/cat4-practice-test-sample-questions/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cat4-ornek-sorular/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cat4-ornek-sorular/"/>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2250,7 +2244,8 @@
   <url>
     <loc>https://www.edualist.com/en/blog/dubai-boarding-schools-guide/</loc>
     <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/dubai-boarding-schools-guide/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-boarding-schools-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-yatili-okul-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-yatili-okul-rehberi/"/>
     <lastmod>2026-10-27</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -2312,6 +2307,46 @@
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-uluslararasi-okula-geciyor/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-uluslararasi-okula-geciyor/"/>
     <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/cat4-ornek-sorular/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cat4-ornek-sorular/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/cat4-practice-test-sample-questions/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cat4-ornek-sorular/"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/dubai-okul-gizli-maliyetler/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-okul-gizli-maliyetler/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/dubai-school-hidden-costs/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-okul-gizli-maliyetler/"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/dubai-ilkokul-ortaokul-gecisi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-ilkokul-ortaokul-gecisi/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/year-6-to-year-7-transition-dubai/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-ilkokul-ortaokul-gecisi/"/>
+    <lastmod>2026-11-08</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/blog/dubai-yatili-okul-rehberi/</loc>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-yatili-okul-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/dubai-boarding-schools-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-yatili-okul-rehberi/"/>
+    <lastmod>2026-11-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
