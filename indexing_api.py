@@ -32,6 +32,8 @@ INDEXNOW_ENDPOINTS = [
 
 URLS = [
     # ── Yeni eklenen / son değişenler — buraya ekle ───────────────────────────
+    "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
+    "https://www.edualist.com/en/blog/childs-real-academic-level/",
     "https://www.edualist.com/blog/dubai-okul-tatil-tarihleri/",
     "https://www.edualist.com/blog/cat4-ornek-sorular/",
     "https://www.edualist.com/blog/dubai-okul-gizli-maliyetler/",
@@ -111,8 +113,6 @@ URLS = [
     "https://www.edualist.com/blog/cat4-sinavi-nedir/",
     "https://www.edualist.com/en/blog/cat4-test-dubai/",
     "https://www.edualist.com/en/blog/cat4-practice-test-sample-questions/",
-    "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
-    "https://www.edualist.com/en/blog/childs-real-academic-level/",
     "https://www.edualist.com/blog/eduentry-uluslararasi-akademik-degerlendirme-nedir/",
     "https://www.edualist.com/en/blog/eduentry-international-assessment/",
 
