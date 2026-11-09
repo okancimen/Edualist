@@ -34,6 +34,20 @@ URLS = [
     # ── Yeni eklenen / son değişenler — BURAYA EKLE, en fazla ~150 URL ──────────
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
+
+    # Nov 2026 — CTR fixes + content upgrades (page-2 push campaign)
+    "https://www.edualist.com/en/blog/ib-diploma-university-requirements/",
+    "https://www.edualist.com/en/blog/ai-proof-jobs/",
+    "https://www.edualist.com/blog/international-school-nedir/",
+    "https://www.edualist.com/en/blog/dubai-british-schools-a-level/",
+    "https://www.edualist.com/en/blog/dubai-school-holidays/",
+    "https://www.edualist.com/blog/cocugunuzun-guclu-yonleri/",
+    "https://www.edualist.com/blog/robert-kolej-ucreti-2026/",
+    "https://www.edualist.com/en/blog/cat4-test-dubai/",
+    "https://www.edualist.com/blog/dubai-egitim-sistemi/",
+    "https://www.edualist.com/en/blog/my-childs-character-strengths/",
+    "https://www.edualist.com/blog/dubai-yasam-maliyeti-2026/",
+
     "https://www.edualist.com/blog/dubai-mi-abu-dhabi-mi-yasam-maliyeti/",
     "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
     "https://www.edualist.com/en/blog/dubai-international-schools-khda-fees-2026/",
