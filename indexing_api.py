@@ -34,6 +34,7 @@ URLS = [
     # ── Yeni eklenen / son değişenler — BURAYA EKLE, en fazla ~150 URL ──────────
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
+    "https://www.edualist.com/blog/dubai-mi-abu-dhabi-mi-yasam-maliyeti/",
     "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
     "https://www.edualist.com/en/blog/dubai-international-schools-khda-fees-2026/",
     "https://www.edualist.com/blog/dubai-british-school-incelemesi/",

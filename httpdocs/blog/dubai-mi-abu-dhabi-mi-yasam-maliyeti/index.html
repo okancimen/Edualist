@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});})();
+  </script>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}@keyframes fadeIn{from{opacity:0;transform:translateY(4px)}to{opacity:1;transform:translateY(0)}}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.section-bg-alt{background-color:var(--bg-warm-secondary)}.section-title-wrapper{text-align:center;margin-bottom:4rem;max-width:700px;margin-left:auto;margin-right:auto}.section-subtitle{font-size:1rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent);font-weight:600;margin-bottom:.75rem;display:block}.section-title{font-size:3rem;margin-bottom:1.5rem;font-weight:600}.section-desc{font-size:1.15rem;color:var(--text-muted)}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.glass-dark{background:rgba(11,33,58,.85);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.08);color:var(--text-light)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.btn-outline-white{background-color:transparent;color:var(--text-light);border-color:var(--text-light)}.btn-outline-white:hover{background-color:var(--text-light);color:var(--primary);transform:translateY(-2px)}.btn-text{padding:.5rem 0;background:0 0;border:none;color:var(--primary);font-weight:600;cursor:pointer;position:relative;display:inline-flex;align-items:center;gap:.35rem}.btn-text::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transform-origin:right;transition:transform .3s ease}.btn-text:hover{color:var(--accent)}.btn-text:hover::after{transform:scaleX(1);transform-origin:left}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (prefers-reduced-motion:no-preference){@supports ((animation-timeline:view()) and (animation-range:entry)){@keyframes revealUp{from{opacity:0;transform:translateY(40px)}}.scroll-reveal{animation:revealUp auto linear both;animation-timeline:view();animation-range:entry 10% cover 40%;will-change:transform,opacity}}}.reveal-init{opacity:0;transform:translateY(30px);will-change:transform,opacity;transition:opacity .8s cubic-bezier(.25, 1, .5, 1),transform .8s cubic-bezier(.25, 1, .5, 1)}.reveal-active{opacity:1;transform:translateY(0)}@media (max-width:1024px){.hero h1{font-size:3.2rem}.services-grid{grid-template-columns:1fr 1fr}.service-card:last-child{grid-column:span 2}.booking-grid,.webinar-grid{grid-template-columns:1fr;gap:3rem}.footer-grid{grid-template-columns:1fr 1fr;gap:3rem}.footer-bio-col{grid-column:span 2}}@media (max-width:768px){.section{padding:2.5rem 0}.section-title{font-size:2.25rem}.hero{min-height:auto;padding:140px 0 60px 0}.hero-grid{grid-template-columns:1fr;gap:3rem}.hero h1{font-size:2.5rem}.hero-visual{justify-content:center}.why-grid{grid-template-columns:1fr;gap:3rem}.about-grid{grid-template-columns:1fr;gap:3rem}.about-image{height:350px}.services-grid{grid-template-columns:1fr}.service-card:last-child{grid-column:span 1}.form-group-grid{grid-template-columns:1fr}.form-group.full-width{grid-column:span 1}.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}@media (max-width:480px){.hero-ctas{flex-direction:column;align-items:stretch}.why-badge-list{grid-template-columns:1fr;gap:1rem}.booking-form-wrap{padding:1.5rem}.footer-grid{grid-template-columns:1fr}.footer-bio-col{grid-column:span 1}.footer-bottom{flex-direction:column;gap:1rem;text-align:center}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai mi, Abu Dhabi mi? 2026 Yaşam Maliyeti Karşılaştırması | Edualist</title>
+  <meta name="description" content="Dubai ve Abu Dhabi yaşam maliyeti 2026: kira, okul ücretleri, ulaşım ve aylık aile bütçesi karşılaştırması. Türk aileler için hangi şehir daha uygun?">
+  <meta name="keywords" content="dubai abu dhabi yaşam maliyeti karşılaştırma, dubai mı abu dhabi mi, abu dhabi kira fiyatları 2026, abu dhabi okul ücretleri, dubai abu dhabi fark, abu dhabi türk aileler, abu dhabi adek outstanding okul, dubai abu dhabi hangisi daha ucuz, emirlikler yaşam maliyeti 2026">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/blog/dubai-mi-abu-dhabi-mi-yasam-maliyeti/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-mi-abu-dhabi-mi-yasam-maliyeti/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-mi-abu-dhabi-mi-yasam-maliyeti/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="ai-catalog" type="application/json" href="/ai-catalog.json" title="AI Resource Catalog">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="tr_TR">
+  <meta property="og:title"       content="Dubai mi, Abu Dhabi mi? 2026 Yaşam Maliyeti ve Aile Bütçesi Karşılaştırması">
+  <meta property="og:description" content="Kira, okul ücretleri, ulaşım ve günlük harcamalar: iki şehrin gerçek maliyeti Türk aileler için yan yana. Abu Dhabi yaklaşık %14 daha ucuz — ama asıl soru bu değil.">
+  <meta property="og:url"         content="https://www.edualist.com/blog/dubai-mi-abu-dhabi-mi-yasam-maliyeti/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-maliyet.webp">
+  <meta property="article:published_time" content="2026-11-09">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Dubai mi, Abu Dhabi mi? 2026 Yaşam Maliyeti ve Aile Bütçesi Karşılaştırması">
+  <meta name="twitter:description" content="Kira, okul ücretleri, ulaşım ve günlük harcamalar: iki şehrin gerçek maliyeti Türk aileler için yan yana.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-maliyet.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Dubai mi, Abu Dhabi mi? 2026 Yaşam Maliyeti ve Aile Bütçesi Karşılaştırması",
+    "description": "Dubai ve Abu Dhabi yaşam maliyeti 2026: kira, okul ücretleri, ulaşım ve aylık aile bütçesi yan yana. Türk aileler için hangi şehir daha uygun?",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen", "jobTitle": "Uluslararası Eğitim Danışmanı",
+      "url": "https://www.edualist.com/hakkimda/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com", "logo": {"@type": "ImageObject", "url": "https://www.edualist.com/assets/favicon.svg"}
+    },
+    "datePublished": "2026-11-09T00:00:00+00:00",
+    "dateModified": "2026-11-09T00:00:00+00:00",
+    "wordCount": 2200,
+    "inLanguage": "tr",
+    "url": "https://www.edualist.com/blog/dubai-mi-abu-dhabi-mi-yasam-maliyeti/",
+    "image": "https://www.edualist.com/assets/blog/thumb-maliyet.webp",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".blog-summary", ".blog-post-title"]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dubai mi, Abu Dhabi mi? 2026 Yaşam Maliyeti Karşılaştırması", "item": "https://www.edualist.com/blog/dubai-mi-abu-dhabi-mi-yasam-maliyeti/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Dubai mi, Abu Dhabi mi daha pahalı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "2026 verilerine göre Abu Dhabi, Dubai'ye kıyasla yaklaşık %14 daha ucuz. İki çocuklu bir aile için aylık fark ortalama 4.000 AED civarındadır (yılda ~48.000 AED). Kira ve okul ücretleri her iki şehirde de en büyük gider kalemleridir; ancak Abu Dhabi'de her ikisi de kayda değer ölçüde daha düşük."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Abu Dhabi ile Dubai arası commute mümkün mü?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Teknik olarak mümkün ama pratikte çok yorucu. Abu Dhabi ile Dubai arasındaki mesafe yaklaşık 140 km; trafik koşullarına göre tek yön 90–130 dakika sürmektedir. İşi Dubai'de olan birinin Abu Dhabi'de oturması veya tam tersi uzun vadede sürdürülemez. İki şehir arasında gidip gelmek yerine işin olduğu şehirde yaşamak önerilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Abu Dhabi'deki okul ücretleri Dubai'ye göre nasıl?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Abu Dhabi'de ADEK Outstanding dereceli okulların yıllık ücretleri 38.000–78.000 AED aralığında değişir. Dubai'de KHDA Outstanding okullarının ücreti genellikle 45.000–95.000 AED arasındadır. Benzer akademik profil için Abu Dhabi, Dubai'ye kıyasla ortalama %15–20 daha uygun. Abu Dhabi'de okul sayısı daha az olmakla birlikte kaliteli seçenekler mevcuttur."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Abu Dhabi'de Türk aileler için hangi bölge önerilir?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Khalifa City ve Al Reef, uluslararası aileler için en çok önerilen bölgelerdir. Orta-büyük daireler Dubai'ye kıyasla çok daha uygun fiyatlıdır. Saadiyat Island lüks segment için tercih edilir. Al Mushrif ve Al Khalidiyah şehir merkezine yakın, fiyat-kalite dengesi iyi bölgelerdir. Türk topluluk yoğunluğu Dubai'deki kadar güçlü değildir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Çocuklu bir aile için Dubai mi, Abu Dhabi mi daha uygun?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bu sorunun cevabı büyük ölçüde işin nerede olduğuna bağlıdır. İşi Abu Dhabi'deyse Abu Dhabi kesinlikle daha avantajlı: hem daha ucuz hem de commute yok. İşi Dubai'deyse Dubai tercih edilmeli; uzak yerleşmek günde 3–4 saat yola harcamak demektir. Türk topluluk, okul seçeneği sayısı ve uçuş bağlantısı açısından Dubai öne çıkar. Bütçe sıkıntısı varsa Abu Dhabi anlamlı bir tasarruf sağlar."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    window.addEventListener("load",function(){setTimeout(function(){(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");},5000);});
+  </script>
+  <style id="nav-breakpoint">@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
+
+  <link rel="preload" as="image" href="../../assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="../../styles.css?v=15">
+  <link rel="stylesheet" href="../../styles.css?v=15" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../styles.css?v=15"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}.whatsapp-sticky{position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:#25d366;color:#fff;text-decoration:none;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(37,211,102,.45);font-size:.95rem;font-weight:600;transition:transform .2s ease,box-shadow .2s ease}.whatsapp-sticky:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(37,211,102,.55)}.whatsapp-sticky svg{flex-shrink:0}.chatbot-btn{position:fixed;bottom:1.75rem;left:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:var(--primary);color:#fff;border:none;cursor:pointer;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(11,33,58,.4);font-size:.95rem;font-weight:600;font-family:inherit;transition:transform .2s ease,box-shadow .2s ease}.chatbot-btn:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(11,33,58,.55)}.chatbot-btn svg{flex-shrink:0}.chatbot-popup{position:fixed;bottom:5.5rem;left:1.75rem;z-index:9998;width:418px;height:540px;background:#fff;border-radius:16px;box-shadow:0 12px 48px rgba(11,33,58,.25);display:flex;flex-direction:column;overflow:hidden;animation:chatbot-pop-in .2s ease}.chatbot-popup[hidden]{display:none!important}.chatbot-popup-header{display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem;background:var(--primary);color:#fff;font-weight:600;font-size:.9rem;flex-shrink:0}.chatbot-popup-close{background:0 0;border:none;color:#fff;cursor:pointer;font-size:1.1rem;padding:.1rem .35rem;line-height:1;border-radius:4px;opacity:.75;transition:opacity .15s,background .15s}.chatbot-popup-close:hover{opacity:1;background:rgba(255,255,255,.15)}.chatbot-iframe{flex:1;width:100%;border:none}@keyframes chatbot-pop-in{from{opacity:0;transform:scale(.93) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}@media (max-width:480px){.whatsapp-sticky{padding:.85rem;border-radius:50%}.whatsapp-sticky-label{display:none}.chatbot-btn{padding:.85rem;border-radius:50%}.chatbot-btn-label{display:none}.chatbot-popup{left:.75rem;right:.75rem;width:auto;bottom:5rem;height:72vh}}</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/tr/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/">Dubai'de Okul</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/">Danışmanlık</a></li>
+        <li><a href="/uluslararasi-akademik-kocluk/">Akademik Koçluk</a></li>
+        <li><a href="/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">110</span></a></li>
+        <li><a href="/neden-biz/">Hakkımızda</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn active" id="langTR" onclick="setLang('tr')">TR</button>
+          <button class="lang-btn" id="langEN" onclick="setLang('en')">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Menüyü aç">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span>Blog'a Dön</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>9 Kasım 2026</span>
+          <span><a href="../../hakkimda/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>12 dakika okuma</span>
+        </div>
+
+        <div class="blog-post-body">
+
+          <h1 class="blog-post-title">Dubai mi, Abu Dhabi mi? 2026 Yaşam Maliyeti ve Aile Bütçesi Karşılaştırması</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">Dubai Abu Dhabi karşılaştırma</span>
+            <span class="blog-seo-tag">Abu Dhabi yaşam maliyeti 2026</span>
+            <span class="blog-seo-tag">Dubai mi Abu Dhabi mi</span>
+            <span class="blog-seo-tag">Abu Dhabi kira fiyatları</span>
+            <span class="blog-seo-tag">ADEK okul ücretleri</span>
+          </div>
+
+          <div class="blog-summary">
+            <strong>Özet</strong>
+            <p>2026 Property Finder ve Bayut verilerine göre Abu Dhabi, Dubai'ye kıyasla iki çocuklu bir aile için aylık ortalama <strong>4.000 AED (~%14) daha ucuz</strong>. Kira ve okul ücretleri her iki şehirde de bütçenin büyük bölümünü oluşturuyor; ancak Abu Dhabi'de her iki kalem de kayda değer ölçüde daha düşük. Peki bu fark tek başına Abu Dhabi'yi daha iyi bir seçenek yapar mı? Cevap tamamen işinizin nerede olduğuna bağlı.</p>
+          </div>
+
+          <p>BAE'ye taşınmayı değerlendiren Türk ailelerin önünde iki ana seçenek var: Dubai ve Abu Dhabi. İkisi de aynı ülkede, ikisi de Türk ailelere sıcak, ikisi de uluslararası okul seçeneği sunuyor. Ama bütçe farkı gerçek ve göz ardı edilemeyecek kadar büyük.</p>
+
+          <p>Bu yazıda kira, okul ücretleri, ulaşım ve günlük harcamaları gerçek 2026 verileriyle yan yana koydum. Tabloların ötesinde, hangi ailenin hangi şehri tercih etmesi gerektiğini de somutlaştırmaya çalıştım.</p>
+
+          <div class="blog-callout">
+            <strong>Veri kaynağı:</strong> Kira verileri Property Finder ve Bayut Kasım 2026 listelerine dayanmaktadır. Okul ücretleri KHDA ve ADEK resmi açıklamalarından alınmıştır. Tüm rakamlar AED cinsindendir; TL karşılığı verilmemiştir.
+          </div>
+
+          <h2>Hızlı Özet: İki Şehir Yan Yana</h2>
+
+          <div class="blog-verdict">
+            <h3>Dubai vs Abu Dhabi — 2026 Temel Karşılaştırma</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Nüfus:</strong> Dubai ~3,8 milyon · Abu Dhabi ~1,8 milyon</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Türk topluluk:</strong> Dubai çok güçlü · Abu Dhabi sınırlı</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Uluslararası okul sayısı:</strong> Dubai 200+ (23 KHDA Outstanding) · Abu Dhabi 100+ (10–12 ADEK Outstanding)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Genel yaşam maliyeti:</strong> Dubai daha pahalı (~%14)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>İstanbul ve Türk şehirlerine uçuş:</strong> Dubai daha fazla direkt sefer</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>İki şehir arası mesafe:</strong> ~140 km, trafik ile 90–130 dakika</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Para birimi:</strong> Her ikisi de AED (aynı kur)</span></div>
+          </div>
+
+          <h2>Kira ve Konut Maliyeti</h2>
+
+          <p>Kira, her iki şehirde de bütçenin en büyük kalemi. Aşağıdaki tablo 2026 yılı Property Finder ve Bayut medyan değerlerine dayanmaktadır. Merkezi ve orta kalite bölgeler esas alınmıştır — Dubai'de JVC, Discovery Gardens, Mirdif; Abu Dhabi'de Khalifa City, Al Reef, Al Mushrif.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Daire Tipi</th>
+                <th>Dubai (AED/yıl)</th>
+                <th>Abu Dhabi (AED/yıl)</th>
+                <th>Fark</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1+1 (merkezi/orta bölge)</td><td>68.000–90.000</td><td>52.000–72.000</td><td>Abu Dhabi ~%20 ucuz</td></tr>
+              <tr><td>2+1</td><td>90.000–130.000</td><td>72.000–105.000</td><td>Abu Dhabi ~%18 ucuz</td></tr>
+              <tr><td>3+1 / küçük villa</td><td>140.000–200.000</td><td>108.000–160.000</td><td>Abu Dhabi ~%20 ucuz</td></tr>
+              <tr><td>4BR villa</td><td>180.000–280.000</td><td>145.000–225.000</td><td>Abu Dhabi ~%17 ucuz</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Lüks bölgeler (Dubai Marina, Downtown, Palm Jumeirah; Abu Dhabi Saadiyat Island, Yas Island) her iki şehirde de bu rakamların 1,5–2 katına çıkabilir.</p>
+
+          <div class="blog-callout">
+            <strong>Pratik not:</strong> Abu Dhabi'de orta-büyük bir daire için Dubai'deki eşdeğerine kıyasla yılda 20.000–35.000 AED tasarruf etmek mümkün. Bu fark, tek çocuk için yıllık okul ücretinin önemli bir kısmını karşılar.
+          </div>
+
+          <h2>Okul Ücretleri: KHDA (Dubai) ve ADEK (Abu Dhabi)</h2>
+
+          <p>Dubai'de okulları <a href="../dubai-en-iyi-uluslararasi-okullar/" style="color:var(--accent);border-bottom:1px solid rgba(219,175,46,0.4)">KHDA (Knowledge and Human Development Authority)</a> denetler ve derecelendirir. Abu Dhabi'de ise ADEK (Abu Dhabi Department of Education and Knowledge) aynı görevi üstlenir. Her iki kurumun da "Outstanding" derecesi en yüksek kalite notudur.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Okul</th>
+                <th>Şehir</th>
+                <th>Derece</th>
+                <th>Yıllık Ücret (AED)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Dubai International Academy (DIA)</td><td>Dubai</td><td>KHDA Outstanding</td><td>80.000–95.000</td></tr>
+              <tr><td>Repton School Dubai</td><td>Dubai</td><td>KHDA Outstanding</td><td>65.000–82.000</td></tr>
+              <tr><td>GEMS Wellington Int'l</td><td>Dubai</td><td>KHDA Outstanding</td><td>55.000–80.000</td></tr>
+              <tr><td>Nord Anglia Int'l School Dubai</td><td>Dubai</td><td>KHDA Outstanding</td><td>60.000–85.000</td></tr>
+              <tr><td>Kings' School Dubai</td><td>Dubai</td><td>KHDA Outstanding</td><td>48.000–65.000</td></tr>
+              <tr><td>Cranleigh Abu Dhabi</td><td>Abu Dhabi</td><td>ADEK Outstanding</td><td>55.000–78.000</td></tr>
+              <tr><td>Repton Abu Dhabi</td><td>Abu Dhabi</td><td>ADEK Outstanding</td><td>45.000–68.000</td></tr>
+              <tr><td>GEMS World Academy Abu Dhabi</td><td>Abu Dhabi</td><td>ADEK Outstanding</td><td>48.000–70.000</td></tr>
+              <tr><td>British School Al Khubairat</td><td>Abu Dhabi</td><td>ADEK Outstanding</td><td>38.000–55.000</td></tr>
+              <tr><td>Raha International School</td><td>Abu Dhabi</td><td>ADEK Very Good</td><td>38.000–55.000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Dubai'de <a href="../dubai-en-iyi-uluslararasi-okullar/" style="color:var(--accent);border-bottom:1px solid rgba(219,175,46,0.4)">23 KHDA Outstanding okul</a> varken Abu Dhabi'de bu sayı 10–12 civarında. Seçenek sayısı ve çeşitliliği Dubai'de belirgin şekilde daha fazla.</p>
+
+          <div class="blog-callout">
+            <strong>Önemli fark:</strong> Abu Dhabi'deki ADEK Outstanding okullarının üst sınırı Dubai'deki eşdeğerlerine kıyasla genellikle %15–20 daha düşük. İki çocuk için bu fark yılda 20.000–30.000 AED'ye ulaşabilir.
+          </div>
+
+          <h2>Ulaşım Giderleri</h2>
+
+          <p>Dubai'de metro, tram ve otobüs ağı görece gelişmiş; birçok expat metro hattı yakın bölgelerde oturarak araç masraflarını azaltabiliyor. Abu Dhabi'de toplu taşıma seçenekleri çok daha kısıtlı; neredeyse her aile en az bir araç sahibi olmak zorunda.</p>
+
+          <div class="blog-verdict">
+            <h3>Aylık Ulaşım Maliyeti (Yaklaşık)</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Yakıt (1 araç, ortalama kullanım):</strong> Dubai ~700 AED · Abu Dhabi ~850 AED</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Araç sigortası (aylık):</strong> Her iki şehirde ~350–500 AED</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Okul servisi (çocuk başı):</strong> Dubai ~600–900 AED/ay · Abu Dhabi benzer</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Salik / köprü ücreti:</strong> Dubai 4–16 AED/geçiş · Abu Dhabi yok</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>İkinci araç ihtiyacı:</strong> Dubai'de metro ile azaltılabilir · Abu Dhabi'de genellikle şart</span></div>
+          </div>
+
+          <p>Toplu taşıma avantajı nedeniyle Dubai'de tek araçla idare edilebilen aileler, Abu Dhabi'de ikinci araç almak zorunda kalabilir. Bu durum Abu Dhabi'nin kira avantajını kısmen dengeleyebilir.</p>
+
+          <h2>Market ve Günlük Harcamalar</h2>
+
+          <p>Her iki şehirde de market fiyatları büyük ölçüde benzer; Carrefour, Spinneys ve Lulu Hypermarket her iki şehirde de yaygın. Dışarıda yemek fiyatları Abu Dhabi'de hafif daha düşük.</p>
+
+          <div class="blog-verdict">
+            <h3>Aylık Market ve Harcama Karşılaştırması (4 kişilik aile)</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Haftalık market (4 kişi):</strong> Dubai ~650–750 AED · Abu Dhabi ~600–700 AED</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Dışarıda yemek (ayda 8–10 kez):</strong> Dubai ~2.000 AED · Abu Dhabi ~1.700 AED</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>DEWA / ADDC faturası (klima dahil):</strong> Dubai ~700–900 AED · Abu Dhabi ~800–1.000 AED</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>İnternet + telefon:</strong> Her iki şehirde ~350–450 AED/ay</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Eğlence / aktivite:</strong> Dubai ~1.500 AED · Abu Dhabi ~1.200 AED</span></div>
+          </div>
+
+          <p>ADDC (Abu Dhabi Distribution Company) elektrik tarifeleri DEWA'ya kıyasla hafif daha yüksek olabilir; özellikle büyük klima kullanımında fark hissedilebilir.</p>
+
+          <h2>Aylık Toplam: Örnek Aile Bütçesi (2 Yetişkin, 2 Çocuk)</h2>
+
+          <p>Orta-büyük daire, iki çocuk için orta segment Outstanding okul (Dubai'de ortalama 65.000 AED/yıl, Abu Dhabi'de 55.000 AED/yıl), bir araç. Kira ve okul ücretleri aylığa çevrilmiştir.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Gider Kalemi</th>
+                <th>Dubai (AED/ay)</th>
+                <th>Abu Dhabi (AED/ay)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Kira (2+1, orta bölge)</td><td>9.500</td><td>7.500</td></tr>
+              <tr><td>İki çocuk okul ücreti (aylık)</td><td>10.800</td><td>9.200</td></tr>
+              <tr><td>Araç (yakıt + bakım + sigorta)</td><td>1.800</td><td>2.100</td></tr>
+              <tr><td>Market (haftalık 700 × 4,3)</td><td>2.500</td><td>2.300</td></tr>
+              <tr><td>Faturalar (elektrik, internet)</td><td>800</td><td>900</td></tr>
+              <tr><td>Dışarıda yemek</td><td>2.000</td><td>1.700</td></tr>
+              <tr><td>Eğlence / diğer</td><td>1.500</td><td>1.200</td></tr>
+              <tr style="font-weight:700;background:hsla(43,60%,95%,.6)"><td><strong>Aylık Toplam</strong></td><td><strong>~28.900 AED</strong></td><td><strong>~24.900 AED</strong></td></tr>
+              <tr style="font-weight:700"><td><strong>Yıllık Toplam</strong></td><td><strong>~346.800 AED</strong></td><td><strong>~298.800 AED</strong></td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p><strong>Fark: ~4.000 AED/ay, ~48.000 AED/yıl (%14 Abu Dhabi lehine).</strong></p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="../../assets/founder-avatar-104.webp" type="image/webp">
+              <img src="../../assets/founder-avatar-104.webp" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Koçtan not</span>
+              <p>Yılda 48.000 AED fark küçümsenemez — bu rakam, üçüncü bir çocuğun okul ücretinin büyük bölümünü karşılar. Ama bu farkın gerçek anlamı tamamen işin nerede olduğuna bağlı. İşi Abu Dhabi'de olan biri için bu karar kolay: hem daha ucuz hem de commute yok. İşi Dubai'de olan biri için ise her sabah 90–120 dakika trafik enerjisinin ve zamanın nasıl bir bedelini öder — onu da hesaba katmak gerek.</p>
+            </div>
+          </div>
+
+          <h2>Dubai mi, Abu Dhabi mi? Türk Aileler İçin Karar Rehberi</h2>
+
+          <div class="blog-verdict">
+            <h3>Dubai'yi Tercih Edin — Eğer:</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>İşiniz Dubai'deyse (commute'u ortadan kaldırır, günde 3–4 saat kazanırsınız)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Türk toplulukla güçlü sosyal bağ kurmanız önemliyse (Dubai'de çok daha kalabalık Türk expat topluluğu var)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Çocuklarınız için daha fazla okul seçeneği istiyorsanız (23 KHDA Outstanding okul)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Türkiye'ye sık seyahat ediyorsanız (Dubai'den daha fazla direkt ve charter sefer)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Çocuğunuz spesifik bir müfredatta (IB, British) okumayı hedefliyorsa ve seçenek çeşitliliği önemliyse</span></div>
+          </div>
+
+          <div class="blog-verdict">
+            <h3>Abu Dhabi'yi Tercih Edin — Eğer:</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>İşiniz Abu Dhabi'deyse (hem daha ucuz hem de commute yok — açık ara en mantıklı seçenek)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Bütçe gerçekten sıkıysa ve yılda 40.000–50.000 AED fark belirleyiciyse</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Daha sakin ve daha az kalabalık bir ortam arıyorsanız</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Hükümet / kamu sektöründe çalışıyorsanız (Abu Dhabi devlet kurumları yoğun)</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span>Çocuğunuz için Cranleigh, Repton Abu Dhabi veya British School Al Khubairat gibi spesifik bir okul hedefleniyorsa</span></div>
+          </div>
+
+          <div class="blog-callout">
+            <strong>En riskli seçenek:</strong> İşi Dubai'de olup Abu Dhabi'ye yerleşmek — ya da tam tersi. İki şehir arası 90–130 dakikalık günlük yolculuk uzun vadede hem fiziksel hem finansal yük oluşturur. İşin olduğu şehirde yaşamak, bütçe farkını çoğu zaman fazlasıyla telafi eder.
+          </div>
+
+          <aside class="blog-author-box" style="display:flex;gap:1.1rem;align-items:flex-start;margin:2.5rem 0;padding:1.4rem 1.5rem;border:1px solid var(--border-card,rgba(11,33,58,.08));border-left:3px solid var(--accent,#DBAF2E);border-radius:10px;background:var(--bg-card,rgba(11,33,58,.02))">
+            <picture>
+              <source srcset="/assets/founder-avatar-160.webp" type="image/webp">
+              <img src="/assets/founder-avatar-160.webp" alt="Özlem Çimen" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)">
+            </picture>
+            <div>
+              <p style="margin:0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Yazar</p>
+              <p style="margin:.15rem 0 .4rem;font-size:1.1rem;font-weight:700"><a href="/hakkimda/" style="color:var(--primary,#0b213a);text-decoration:none">Özlem Çimen</a></p>
+              <p style="margin:0;font-size:.95rem;line-height:1.7">Uluslararası eğitim danışmanı ve Edualist'in kurucusu. 20 yılı aşkın süre TED İstanbul Koleji, ENKA Okulları ve IICS'te öğretmen, bölüm başkanı ve yönetici olarak çalıştı; çocuklarını 5 ülkede uluslararası okullarda büyüttü.</p>
+              <p style="margin:.5rem 0 0;font-size:.9rem"><a href="/hakkimda/" style="color:var(--accent-hover,#b8921f);font-weight:600">Özlem Çimen hakkında →</a></p>
+            </div>
+          </aside>
+
+          <aside class="blog-cluster-box" style="margin:2rem 0;padding:1.4rem 1.5rem;border-radius:10px;background:var(--bg-warm-secondary,#f3efe8)">
+            <p style="margin:0 0 .8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Bu konudaki tüm rehberler</p>
+            <p style="margin:0 0 .9rem;font-size:1.15rem;font-weight:700;color:var(--primary,#0b213a)">BAE Şehir ve Yaşam Maliyeti</p>
+            <ul style="margin:0;padding-left:1.1rem;columns:2 260px;column-gap:2rem;line-height:1.6">
+              <li style="break-inside:avoid"><a href="/blog/dubai-yasam-maliyeti-2026/" style="color:var(--primary,#0b213a)">Dubai Yaşam Maliyeti 2026: Gerçek Rakamlar</a></li>
+              <li style="break-inside:avoid"><a href="/blog/abu-dhabi-uluslararasi-okullar/" style="color:var(--primary,#0b213a)">Abu Dhabi Uluslararası Okul Rehberi 2026</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-en-iyi-uluslararasi-okullar/" style="color:var(--primary,#0b213a)">Dubai'deki En İyi Okullar: KHDA Listesi</a></li>
+              <li style="break-inside:avoid"><a href="/blog/turkiye-dubai-okul-ucreti-karsilastirma/" style="color:var(--primary,#0b213a)">Türkiye vs Dubai Okul Ücretleri 2026</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-okul-ucretleri-2026/" style="color:var(--primary,#0b213a)">Dubai Okul Ücretleri 2026 Fiyat Tablosu</a></li>
+              <li style="break-inside:avoid"><a href="/blog/yurtdisi-egitim-maliyet-karsilastirma/" style="color:var(--primary,#0b213a)">Yurt Dışı Eğitim Maliyeti: 6 Ülke Kıyası</a></li>
+            </ul>
+          </aside>
+
+          <div class="blog-faq">
+            <h2>Sıkça Sorulan Sorular</h2>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Dubai mi, Abu Dhabi mi daha pahalı?</h3>
+              <p class="faq-a">2026 verilerine göre Dubai yaklaşık %14 daha pahalı. İki çocuklu bir aile için aylık fark ortalama 4.000 AED civarındadır. Kira ve okul ücretleri her iki şehirde de bütçenin büyük bölümünü oluşturuyor; Abu Dhabi her iki kalemde de kayda değer daha uygun.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Abu Dhabi ile Dubai arası commute mümkün mü?</h3>
+              <p class="faq-a">Teknik olarak mümkün ama pratikte çok yorucu. Yaklaşık 140 km olan mesafe trafik ile 90–130 dakika sürer. Uzun vadede hem fiziksel hem finansal yük oluşturur; işin olduğu şehirde yaşamak önerilir.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Abu Dhabi okul ücretleri Dubai'ye göre nasıl?</h3>
+              <p class="faq-a">ADEK Outstanding okullar 38.000–78.000 AED aralığında; KHDA Outstanding Dubai okulları genellikle 45.000–95.000 AED. Benzer akademik profil için Abu Dhabi %15–20 daha uygun. Ancak seçenek sayısı çok daha az: Dubai'de 23 KHDA Outstanding okul, Abu Dhabi'de 10–12 ADEK Outstanding okul var.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Abu Dhabi'de Türk aileler için hangi bölge önerilir?</h3>
+              <p class="faq-a">Khalifa City ve Al Reef uluslararası aileler için en çok önerilen bölgeler. Fiyat-kalite dengesi iyi, uluslararası okullara erişim kolay. Lüks segment için Saadiyat Island. Türk topluluk yoğunluğu Dubai'deki kadar güçlü değil.</p>
+            </div>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Çocuklu bir aile için Dubai mi, Abu Dhabi mi daha uygun?</h3>
+              <p class="faq-a">İşi Abu Dhabi'deyse Abu Dhabi kesinlikle daha avantajlı: hem daha ucuz hem de commute yok. İşi Dubai'deyse Dubai tercih edilmeli; uzak yerleşmek günde 3–4 saat yola harcamak demektir. Türk topluluk ve okul seçeneği çeşitliliği açısından Dubai öne çıkar.</p>
+            </div>
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Dubai mi, Abu Dhabi mi? Bu soruyu birlikte yanıtlayalım.</h3>
+            <p>Çocuğunuzun okul gereksinimleri, ailenizin bütçesi ve iş lokasyonunuza göre en doğru kararı vermek için Özlem Çimen ile ücretsiz görüşme planlayabilirsiniz.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary" style="display:inline-flex">Ücretsiz Görüşme Planla</a>
+            <a href="../dubai-en-iyi-uluslararasi-okullar/" class="btn btn-secondary" style="margin-top:0.5rem;">Dubai Okul Rehberi →</a>
+          </div>
+
+        </div>
+
+      </article>
+    </div>
+
+    <div class="container" style="padding:0 0 2rem;">
+      <p style="margin:0;padding:1rem 1.25rem;background:hsla(43,60%,92%,0.7);border-left:3px solid var(--accent,#DBAF2E);border-radius:0 6px 6px 0;font-size:0.95rem;line-height:1.8;">
+        <strong>İlgili Rehberler:</strong><br>
+        <a href="/blog/abu-dhabi-uluslararasi-okullar/" style="color:var(--accent,#DBAF2E);font-weight:500;">Abu Dhabi Uluslararası Okul Rehberi</a> &nbsp;·&nbsp;
+        <a href="/blog/dubai-en-iyi-uluslararasi-okullar/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai'deki En İyi Okullar</a> &nbsp;·&nbsp;
+        <a href="/blog/turkiye-dubai-okul-ucreti-karsilastirma/" style="color:var(--accent,#DBAF2E);font-weight:500;">Türkiye vs Dubai Okul Ücretleri</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>İlgili Yazılar</h2>
+      <div class="blog-related-grid">
+        <a href="../abu-dhabi-uluslararasi-okullar/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-abudhabi.webp" alt="Abu Dhabi Uluslararası Okul Rehberi" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Abu Dhabi Uluslararası Okul Rehberi 2026</span>
+            </div>
+            <div class="blog-related-card-meta">Ekim 2026 · 11 dk</div>
+          </div>
+        </a>
+        <a href="../turkiye-dubai-okul-ucreti-karsilastirma/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-turkiye-dubai-okul.webp" alt="Türkiye vs Dubai Okul Ücretleri" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Türkiye'nin En Pahalı Okulları mı, Dubai'nin En İyileri mi?</span>
+            </div>
+            <div class="blog-related-card-meta">Haziran 2026 · 10 dk</div>
+          </div>
+        </a>
+        <a href="../dubai-en-iyi-uluslararasi-okullar/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-okul.webp" alt="Dubai'deki En İyi Uluslararası Okullar" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">
+              <span>Dubai'deki En İyi Okullar: KHDA Listesi 2026</span>
+            </div>
+            <div class="blog-related-card-meta">Haziran 2026 · 12 dk</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi, müfredat değerlendirme ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="/neden-biz/">Neden Biz?</a></li>
+            <li><a href="/tr/#services">Hizmetler</a></li>
+            <li><a href="/blog/">Blog <span class="nav-count-badge">110</span></a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/">Görüşme Planla</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>İletişim</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, Birleşik Arap Emirlikleri</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener noreferrer">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
+        <div><a href="/gizlilik-politikasi/" style="color:inherit;opacity:0.7">Gizlilik Politikası</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP STICKY -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Merhaba,%20Daha%20fazla%20bilgi%20almak%20istiyorum" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile yazın" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- AI Chatbot Button -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="AI Asistan">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <!-- AI Chatbot Popup -->
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Kapat">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="Edualist AI Asistan"></iframe>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+  <script>
+    window.setLang = function (l) {
+      if (l === document.documentElement.lang) return;
+      try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+      document.cookie = 'edualist_lang=' + l + ';path=/;max-age=31536000;samesite=lax';
+      var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+      location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+    };
+    document.querySelectorAll('.lang-btn').forEach(function (b) {
+      var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+      b.classList.toggle('active', l === document.documentElement.lang);
+      if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+    });
+  </script>
+</body>
+</html>
