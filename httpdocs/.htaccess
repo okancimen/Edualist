@@ -116,6 +116,7 @@ ErrorDocument 404 /404.html
   # GA traffic hitting root path instead of /blog/ path
   RewriteRule ^uluslararasi-okul-mulakati-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakati-nasil-gecilir/ [R=301,L]
   RewriteRule ^lise-ogrencisi-staj-is-deneyimi/?$ /blog/lise-ogrencisi-staj-is-deneyimi/ [R=301,L]
+  RewriteRule ^dubai-international-academy-incelemesi/?$ /blog/dubai-international-academy-incelemesi/ [R=301,L]
 
   # 404 fix: URL with Turkish ü/ı chars → correct slug
   # Apache 2.4+ decodes URL before matching, so Unicode form is required
