@@ -113,6 +113,9 @@ ErrorDocument 404 /404.html
   # Strip index.html from all URLs → canonical trailing-slash form
   RewriteRule ^(.+)/index\.html$ /$1/ [R=301,L]
 
+  # GA traffic hitting root path instead of /blog/ path
+  RewriteRule ^uluslararasi-okul-mulakati-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakati-nasil-gecilir/ [R=301,L]
+
   # 404 fix: URL with Turkish ü/ı chars → correct slug
   # Apache 2.4+ decodes URL before matching, so Unicode form is required
   RewriteRule ^blog/uluslararasi-okul-mülakatı-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakati-nasil-gecilir/ [R=301,L]
