@@ -81,6 +81,8 @@ URLS = [
     "https://www.edualist.com/en/blog/dubai-finance-accounting-legal-salaries/",
     "https://www.edualist.com/blog/dubai-maaslar-otelcilik-turizm-havayollari/",
     "https://www.edualist.com/en/blog/dubai-hospitality-tourism-aviation-salaries/",
+    "https://www.edualist.com/blog/dubai-maaslar-saglik/",
+    "https://www.edualist.com/blog/dubai-maaslar-insaat-mimarlik/",
 
     # ── Core site pages (service pages + listings — always keep) ─────────────
     "https://www.edualist.com/dubai/",

@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});})();
+  </script>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}.blog-seo-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.75rem}.blog-seo-tag{background:hsla(43,60%,52%,.1);color:var(--primary);font-size:.78rem;font-weight:500;padding:.25rem .7rem;border-radius:50px;border:1px solid hsla(43,60%,52%,.2)}.blog-post-cta{padding:2rem 2.5rem;border-radius:var(--radius-lg);margin:2.5rem 0}.blog-post-cta h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:700;color:var(--primary);margin-bottom:.6rem}.blog-post-cta p{color:var(--text-muted);margin-bottom:1.25rem;font-size:.97rem}.blog-faq{margin:2.5rem 0}.blog-faq h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;margin-bottom:1.5rem}.faq-item{border-bottom:1px solid hsla(212,66%,13%,.08);padding:1.1rem 0}.faq-q{font-size:1rem;font-weight:600;color:var(--primary);margin-bottom:.5rem}.faq-a{font-size:.93rem;color:var(--text-muted);line-height:1.7}.blog-related-section{padding:3rem 0 4rem;background:var(--bg-warm-secondary)}.blog-related-section h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;color:var(--primary);margin-bottom:2rem;text-align:center}.blog-related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}@media (max-width:900px){.blog-related-grid{grid-template-columns:1fr 1fr}}@media (max-width:600px){.blog-related-grid{grid-template-columns:1fr}}.blog-related-card{display:block;border-radius:var(--radius-md);overflow:hidden;background:#fff;box-shadow:var(--shadow-sm);transition:var(--transition-smooth)}.blog-related-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}.blog-related-card img{width:100%;height:160px;object-fit:cover}.blog-related-card-body{padding:1rem}.blog-related-card-title{font-size:.95rem;font-weight:600;color:var(--primary);line-height:1.4;margin-bottom:.4rem}.blog-related-card-meta{font-size:.78rem;color:var(--text-muted)}.footer{background:var(--primary);color:var(--text-light);padding:4rem 0 2rem}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}@media (max-width:768px){.footer-grid{grid-template-columns:1fr;gap:2rem}}.footer-bio-col h3{font-family:var(--font-serif);font-size:1.6rem;font-weight:600;margin-bottom:1rem;color:var(--text-light)}.footer-bio-text{font-size:.92rem;color:rgba(255,255,255,.7);line-height:1.7}.footer-links-col h4,.footer-contact-col h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;font-weight:600;color:var(--accent);margin-bottom:1rem}.footer-links{list-style:none;display:flex;flex-direction:column;gap:.6rem}.footer-links a{font-size:.9rem;color:rgba(255,255,255,.75);transition:color .2s}.footer-links a:hover{color:var(--accent)}.footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}.footer-contact-item{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem;color:rgba(255,255,255,.75)}.footer-contact-item svg{flex-shrink:0;stroke:var(--accent);margin-top:.1rem}.footer-contact-item a{color:rgba(255,255,255,.75)}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:rgba(255,255,255,.5);flex-wrap:wrap;gap:.75rem}@media (max-width:768px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai'de Sağlık Sektörü Maaşları 2026 | Edualist</title>
+  <meta name="description" content="Dubai'de doktor, hemşire, diş hekimi ve eczacı maaşları ne kadar? DHA lisans süreci, sertifika etkileri, Türkiye karşılaştırması ve aile bütçesi senaryoları.">
+  <meta name="keywords" content="dubai doktor maaşı 2026, dubai hemşire maaşı, dubai diş hekimi maaşı, dubai eczacı maaşı, DHA lisansı türk doktor, dubai sağlık sektörü maaşı, dubai uzman doktor maaşı, dubai konsültan doktor maaşı, dubai fizyoterapist maaşı, dubai dha exam, türk doktor dubai, dubai tıp maaşı, dubai sağlık iş ilanı, dubai nurse salary, dubai doctor salary, dubai pharmacist salary">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/blog/dubai-maaslar-saglik/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-maaslar-saglik/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-maaslar-saglik/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="ai-catalog" type="application/json" href="/ai-catalog.json" title="AI Resource Catalog">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"      content="tr_TR">
+  <meta property="og:title"       content="Dubai'de Sağlık Sektörü Maaşları 2026 | Doktor, Hemşire, Eczacı">
+  <meta property="og:description" content="Dubai'de doktor, hemşire, diş hekimi ve eczacı maaşları ne kadar? DHA lisans süreci, sertifika etkileri, Türkiye karşılaştırması ve aile bütçesi senaryoları.">
+  <meta property="og:url"         content="https://www.edualist.com/blog/dubai-maaslar-saglik/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-maaslar-saglik.webp">
+  <meta property="article:published_time" content="2026-11-14">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Dubai Healthcare Salaries 2026: Doctor, Nurse, Pharmacist">
+  <meta name="twitter:description" content="Doctor, nurse, dentist and pharmacist salaries in Dubai 2026 — DHA licensing for Turkish professionals, certification premiums and Turkey comparison.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-maaslar-saglik.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Dubai'de Sağlık Sektörü Maaşları 2026",
+    "description": "Dubai'de doktor, hemşire, diş hekimi, eczacı ve diğer sağlık profesyonellerinin maaş bantları, DHA lisans süreci, sertifika etkileri ve Türkiye karşılaştırması.",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen", "jobTitle": "Uluslararası Eğitim Danışmanı",
+      "url": "https://www.edualist.com/hakkimda/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com", "logo": {"@type": "ImageObject", "url": "https://www.edualist.com/assets/favicon.svg"}
+    },
+    "datePublished": "2026-11-14T00:00:00+00:00",
+    "dateModified": "2026-11-14T00:00:00+00:00",
+    "wordCount": 3300,
+    "inLanguage": "tr",
+    "url": "https://www.edualist.com/blog/dubai-maaslar-saglik/",
+    "image": "https://www.edualist.com/assets/blog/thumb-dubai-maaslar-saglik.webp",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".blog-summary", ".blog-post-title"]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Dubai'de doktor maaşı ne kadar?",
+        "acceptedAnswer": {"@type": "Answer", "text": "2026 itibarıyla Dubai'de pratisyen hekim (GP) 18.000–45.000 AED/ay, uzman doktor 35.000–70.000 AED/ay, konsültan doktor ise 65.000–120.000 AED/ay+ kazanmaktadır. 1 AED ≈ 13,65 TL ile orta seviye uzman doktor 478.000–955.000 TL net (gelir vergisiz) elde etmektedir. Ücret deneyim, uzmanlık alanı ve hastane türüne (kamu / özel zincir) göre önemli ölçüde değişir."}
+      },
+      {
+        "@type": "Question",
+        "name": "Türk doktorlar Dubai'de çalışabilir mi?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Evet. Dubai'de çalışmak için Dubai Health Authority (DHA) veya federal MOH lisansı zorunludur. Türkiye'den alınan tıp diploması Dataflow süreci üzerinden doğrulanır, ardından DHA mesleki yeterlilik sınavı (Prometric) geçilir. Tüm süreç 3–9 ay sürebilir; sınav bölümleri İngilizce'dir. Lisanslı ve deneyimli Türk hekimler Dubai'de güçlü iş bulma şansına sahiptir."}
+      },
+      {
+        "@type": "Question",
+        "name": "DHA lisansı almak ne kadar sürer ve maliyeti nedir?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Dataflow doğrulama (3–5 ay) + DHA başvurusu + Prometric sınavı dahil toplam süreç 4–9 ay arasında değişmektedir. Toplam maliyet diploma doğrulama, başvuru ücretleri ve sınav harcıyla birlikte yaklaşık 2.000–5.000 AED arasındadır. Birçok özel hastane adayın lisans masraflarını tazminata dahil ederek karşılıyor; sözleşme müzakerelerinde bu kalemi sormayı unutmayın."}
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'de hemşire maaşı ne kadar?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Dubai'de staff nurse (0–3 yıl) 5.000–9.000 AED/ay, kıdemli hemşire 9.000–14.000 AED/ay, charge/head nurse 14.000–22.000 AED/ay, nurse practitioner ise 20.000–35.000 AED/ay kazanmaktadır. DHA hemşire lisansı zorunludur. Konut ödeneği paket içinde sunulduğunda fiili gelir 2.000–4.000 AED daha yüksek olabilir."}
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'de eczacı maaşı ne kadar?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Dubai'de junior eczacı 8.000–13.000 AED/ay, kıdemli eczacı 13.000–22.000 AED/ay, klinik eczacı 18.000–28.000 AED/ay ve eczane direktörü / baş eczacı 25.000–40.000 AED/ay kazanmaktadır. DHA eczacı lisansı gereklidir. Zincir eczaneler (Aster, Life Pharmacy, Boots) ve hastane eczaneleri en yaygın işverenlerdir."}
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dubai Sağlık Sektörü Maaşları 2026", "item": "https://www.edualist.com/blog/dubai-maaslar-saglik/" }
+    ]
+  }
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    window.addEventListener("load",function(){setTimeout(function(){(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");},5000);});
+  </script>
+
+  <style id="nav-breakpoint">@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
+
+  <link rel="preload" as="image" href="../../assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="../../styles.css?v=15">
+  <link rel="stylesheet" href="../../styles.css?v=15" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../styles.css?v=15"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-cost-table{width:100%;border-collapse:collapse;font-size:.88rem;margin:1.5rem 0}.blog-cost-table th{background:var(--primary);color:#fff;padding:.65rem 1rem;text-align:left;font-weight:600;font-size:.82rem}.blog-cost-table td{padding:.55rem 1rem;border-bottom:1px solid hsla(212,66%,13%,.07)}.blog-cost-table tr:nth-child(even) td{background:hsla(212,66%,13%,.02)}.blog-cost-table tr:hover td{background:hsla(43,60%,52%,.07)}.blog-cost-table td:first-child{font-weight:600;color:var(--primary)}.cert-badge{display:inline-block;background:var(--primary);color:var(--accent);font-size:.72rem;font-weight:700;padding:.15rem .55rem;border-radius:4px;letter-spacing:.04em;margin-right:.3rem}.whatsapp-sticky{position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:#25d366;color:#fff;text-decoration:none;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(37,211,102,.45);font-size:.95rem;font-weight:600;transition:transform .2s ease,box-shadow .2s ease}.whatsapp-sticky:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(37,211,102,.55)}.whatsapp-sticky svg{flex-shrink:0}.chatbot-btn{position:fixed;bottom:1.75rem;left:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:var(--primary);color:#fff;border:none;cursor:pointer;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(11,33,58,.4);font-size:.95rem;font-weight:600;font-family:inherit;transition:transform .2s ease,box-shadow .2s ease}.chatbot-btn:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(11,33,58,.55)}.chatbot-btn svg{flex-shrink:0}.chatbot-popup{position:fixed;bottom:5.5rem;left:1.75rem;z-index:9998;width:418px;height:540px;background:#fff;border-radius:16px;box-shadow:0 12px 48px rgba(11,33,58,.25);display:flex;flex-direction:column;overflow:hidden;animation:chatbot-pop-in .2s ease}.chatbot-popup[hidden]{display:none!important}.chatbot-popup-header{display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem;background:var(--primary);color:#fff;font-weight:600;font-size:.9rem;flex-shrink:0}.chatbot-popup-close{background:0 0;border:none;color:#fff;cursor:pointer;font-size:1.1rem;padding:.1rem .35rem;line-height:1;border-radius:4px;opacity:.75;transition:opacity .15s,background .15s}.chatbot-popup-close:hover{opacity:1;background:rgba(255,255,255,.15)}.chatbot-iframe{flex:1;width:100%;border:none}@keyframes chatbot-pop-in{from{opacity:0;transform:scale(.93) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}@media (max-width:480px){.whatsapp-sticky{padding:.85rem;border-radius:50%}.whatsapp-sticky-label{display:none}.chatbot-btn{padding:.85rem;border-radius:50%}.chatbot-btn-label{display:none}.chatbot-popup{left:.75rem;right:.75rem;width:auto;bottom:5rem;height:72vh}}</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/tr/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/">Dubai'de Okul</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/">Danışmanlık</a></li>
+        <li><a href="/uluslararasi-akademik-kocluk/">Akademik Koçluk</a></li>
+        <li><a href="/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">112</span></a></li>
+        <li><a href="/neden-biz/">Hakkımızda</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn active" id="langTR">TR</button>
+          <button class="lang-btn" id="langEN">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Menüyü aç">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span>Blog'a Dön</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>14 Kasım 2026</span>
+          <span><a href="../../hakkimda/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>12 dakika okuma</span>
+        </div>
+
+        <div class="blog-post-body">
+
+          <h1 class="blog-post-title">Dubai'de Maaşlar 2026: Sağlık Sektörü Ücret Rehberi</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">Dubai doktor maaşı 2026</span>
+            <span class="blog-seo-tag">Dubai hemşire maaşı</span>
+            <span class="blog-seo-tag">DHA lisansı Türk doktor</span>
+            <span class="blog-seo-tag">Dubai diş hekimi maaşı</span>
+            <span class="blog-seo-tag">Dubai eczacı maaşı</span>
+            <span class="blog-seo-tag">Dubai sağlık sektörü</span>
+          </div>
+
+          <p>Dubai'de pratisyen hekim 18.000–45.000 AED/ay, uzman doktor 35.000–70.000 AED/ay, konsültan doktor 65.000–120.000+ AED/ay, kıdemli hemşire 9.000–22.000 AED/ay ve klinik eczacı 18.000–28.000 AED/ay kazanmaktadır. Tüm maaşlar gelir vergisizdir — Türkiye'deki brüt-net farkı burada yoktur. DHA (Dubai Health Authority) lisansı her meslek için zorunludur; Türk diplomaları Dataflow doğrulama sürecinden geçirilir.</p>
+
+          <div class="blog-summary">
+            <strong>Bu yazıda:</strong> Doktor, hemşire, diş hekimi, eczacı ve diğer sağlık profesyonellerinin maaş bantları · DHA lisans süreci Türk hekimler için adım adım · Sertifikaların (ACLS, MRCP, FRCR) maaşa etkisi · Büyük işverenler · Türkiye ile karşılaştırma · Aile bütçesi senaryoları
+          </div>
+
+          <p>Dubai'de sağlık sektörü, 2026 itibarıyla yaklaşık 20 milyar USD büyüklüğe ulaşmış ve büyümeye devam eden bir pazar. UAE'nin sağlıkta yerli insan kaynağını artırmaya odaklanmasına karşın yabancı uzman ihtiyacı sürmektedir — çünkü Dubai'nin nüfusunun yaklaşık %90'ı expat. Bu ortamda deneyimli Türk hekimler, hemşireler ve eczacılar için somut fırsatlar var.</p>
+
+          <p>Bu yazıda üç soruyu yanıtlıyorum: Dubai'de sağlık sektöründe ne kadar kazanabilirsiniz? DHA lisansı almak Türk profesyoneller için nasıl bir süreç? Ve bu maaşla çocuklu bir aile Dubai'de nasıl bir hayat sürebilir?</p>
+
+          <div class="blog-callout">
+            <strong>Kur notu:</strong> Bu yazıda 1 AED = 13,65 TL kuru kullanılmıştır (Kasım 2026 yaklaşık ortalama). Maaş rakamları piyasa araştırmasına dayanmaktadır; bireysel teklifler uzmanlık, deneyim, hastane türü ve müzakere gücüne göre farklılaşır. Tüm Dubai maaşları gelir vergisizdir.
+          </div>
+
+          <h2>Dubai'de Doktor Maaşı Ne Kadar?</h2>
+
+          <p>Dubai'de hekimlik maaşları uzmanlık alanı ve hastane türüne göre büyük farklılık gösterir. Kamu hastaneleri (DHA işletmeli) ile özel zincirler (Mediclinic, Aster, American Hospital) arasında %20–40 prim açığı olabilir. Konsültan kademedeki doktorlar Türkiye'deki karşılaştırmalarda en çarpıcı fark yaratan gruptur.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Pozisyon</th>
+                <th>Deneyim</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Pratisyen Hekim (GP) — Junior</td><td>0–3 yıl</td><td>18.000–28.000</td><td>246.000–382.000</td></tr>
+              <tr><td>Pratisyen Hekim (GP) — Mid</td><td>3–7 yıl</td><td>28.000–45.000</td><td>382.000–614.000</td></tr>
+              <tr><td>Pratisyen Hekim (GP) — Senior</td><td>7+ yıl</td><td>40.000–60.000</td><td>546.000–819.000</td></tr>
+              <tr><td>Uzman Doktor (Specialist)</td><td>5–10 yıl</td><td>35.000–70.000</td><td>478.000–955.000</td></tr>
+              <tr><td>Konsültan Doktor (Consultant)</td><td>12+ yıl</td><td>65.000–120.000+</td><td>887.000–1.638.000+</td></tr>
+              <tr><td>Acil Tıp Uzmanı</td><td>4–10 yıl</td><td>30.000–55.000</td><td>410.000–751.000</td></tr>
+              <tr><td>Yoğun Bakım Uzmanı (ICU)</td><td>5–12 yıl</td><td>40.000–75.000</td><td>546.000–1.024.000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Özel vs. kamu farkı:</strong> DHA işletmeli kamu hastanelerinde (Rashid, Dubai Hospital) maaş paketi genellikle konut, ulaşım ve sağlık sigortası ödenekleriyle desteklenir; baz maaş özel sektörün hafif altında olsa da toplam paket rekabetçidir. Özel zincir hastanelerde (King's College, Mediclinic) baz maaş daha yüksek olabilir ancak ödenek yapısı farklılaşır. Her iki senaryo için "all-in" paket üzerinden değerlendirme yapın.
+          </div>
+
+          <h3>Uzmanlık alanına göre maaş farkı</h3>
+          <p>Ortopedi, kardiyoloji ve nöroloji uzmanları talep yoğunluğu nedeniyle üst bantlara oturur. Dermatoloji ve estetik cerrahi özel klinik ortamında çok daha yüksek kazanç potansiyeline sahiptir; ancak bu pozisyonlar lisans gereklilikleri açısından daha kısıtlıdır. Psikiyatri ve aile hekimliği ise stabil, orta-üst bant maaşlarla yapısal açıdan en istikrarlı alanlardır.</p>
+
+          <h2>Dubai'de Hemşire Maaşı Ne Kadar?</h2>
+
+          <p>Hemşirelik Dubai'de yabancı profesyoneller için en erişilebilir sağlık kariyerlerinden biri. DHA hemşire lisansı, İngilizce yeterlilik ve tanınan bir okul diplomasıyla süreç başlatılabilir. Konut ödeneği paketlere sıklıkla dahil edildiğinden görünen baz maaşın ötesinde toplam gelir değerlendirilmeli.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Pozisyon</th>
+                <th>Deneyim</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Staff Nurse (Genel Hemşire)</td><td>0–3 yıl</td><td>5.000–9.000</td><td>68.000–123.000</td></tr>
+              <tr><td>Kıdemli Hemşire (Senior Staff Nurse)</td><td>3–7 yıl</td><td>9.000–14.000</td><td>123.000–191.000</td></tr>
+              <tr><td>Charge Nurse / Sorumlu Hemşire</td><td>7–12 yıl</td><td>14.000–22.000</td><td>191.000–300.000</td></tr>
+              <tr><td>Nurse Practitioner (NP)</td><td>5+ yıl + master</td><td>20.000–35.000</td><td>273.000–478.000</td></tr>
+              <tr><td>Klinik Hemşire Uzmanı (CNS)</td><td>7+ yıl</td><td>18.000–30.000</td><td>246.000–410.000</td></tr>
+              <tr><td>Hemşirelik Müdürü</td><td>12+ yıl</td><td>25.000–42.000</td><td>341.000–573.000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Konut ödeneği hesaba katıldığında:</strong> 5 yıldızlı veya büyük özel hastanelerde hemşirelere yılda 20.000–40.000 AED konut ödeneği ayrı kalem olarak sunulabiliyor. Staff nurse için bu aylık 1.700–3.300 AED ek gelir anlamına geliyor — net paketi önemli ölçüde yükseltiyor.
+          </div>
+
+          <h2>Dubai'de Diş Hekimi ve Eczacı Maaşı Ne Kadar?</h2>
+
+          <h3>Diş Hekimleri</h3>
+          <p>Dubai'nin lüks dental klinik ekosistemi, diş hekimlerine Türkiye'nin çok üzerinde kazanç imkânı sunuyor. Implantoloji, ortodonti ve estetik diş hekimliği özellikle yüksek talepli alanlardır. Özel kliniklerde uygulama hacmine bağlı performans primi de yaygındır.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Pozisyon</th>
+                <th>Deneyim</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>GP Diş Hekimi (Junior)</td><td>0–4 yıl</td><td>15.000–25.000</td><td>205.000–341.000</td></tr>
+              <tr><td>GP Diş Hekimi (Mid–Senior)</td><td>4–9 yıl</td><td>25.000–42.000</td><td>341.000–573.000</td></tr>
+              <tr><td>Ortodontist</td><td>5+ yıl</td><td>35.000–65.000</td><td>478.000–887.000</td></tr>
+              <tr><td>İmplantoloji / Oral Cerrahi</td><td>5+ yıl</td><td>40.000–75.000</td><td>546.000–1.024.000</td></tr>
+              <tr><td>Diş Klinik Direktörü</td><td>12+ yıl</td><td>55.000–90.000+</td><td>751.000–1.228.000+</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h3>Eczacılar</h3>
+          <p>Dubai'de eczacılık sektörü zincir eczaneler (Aster Pharmacy, Life Pharmacy, Boots UAE) ve hastane eczaneleri olarak ikiye ayrılır. Hastane eczaneleri genellikle daha yüksek baz maaş sunarken zincir eczaneler konum ve çalışma saati esnekliği açısından avantajlı olabilir.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Pozisyon</th>
+                <th>Deneyim</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior Eczacı</td><td>0–3 yıl</td><td>8.000–13.000</td><td>109.000–177.000</td></tr>
+              <tr><td>Kıdemli Eczacı</td><td>3–7 yıl</td><td>13.000–22.000</td><td>177.000–300.000</td></tr>
+              <tr><td>Klinik Eczacı</td><td>5–10 yıl</td><td>18.000–28.000</td><td>246.000–382.000</td></tr>
+              <tr><td>Baş Eczacı / Eczane Direktörü</td><td>10+ yıl</td><td>25.000–40.000</td><td>341.000–546.000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h2>Diğer Sağlık Meslekleri: Fizyoterapist, Radyolog, Diyetisyen</h2>
+
+          <p>Doktor ve hemşirenin ötesinde Dubai sağlık sektörü fizyoterapist, radyoloji teknisyeni, diyetisyen ve psikolog gibi meslek gruplarına da güçlü talep üretiyor. Bu gruplar DHA veya MOH lisansı gerektiriyor.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Meslek</th>
+                <th>Seviye</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Fizyoterapist (Junior)</td><td>0–3 yıl</td><td>7.000–12.000</td><td>95.000–164.000</td></tr>
+              <tr><td>Fizyoterapist (Senior)</td><td>5+ yıl</td><td>12.000–22.000</td><td>164.000–300.000</td></tr>
+              <tr><td>Radyoloji Teknisyeni</td><td>2–8 yıl</td><td>7.000–15.000</td><td>95.000–205.000</td></tr>
+              <tr><td>Tıbbi Görüntüleme Uzmanı (Radiolog)</td><td>8+ yıl</td><td>40.000–75.000</td><td>546.000–1.024.000</td></tr>
+              <tr><td>Diyetisyen / Beslenme Uzmanı</td><td>2–8 yıl</td><td>8.000–18.000</td><td>109.000–246.000</td></tr>
+              <tr><td>Klinik Psikolog</td><td>5–12 yıl</td><td>15.000–32.000</td><td>205.000–437.000</td></tr>
+              <tr><td>Sağlık Yöneticisi (Mid)</td><td>5–10 yıl</td><td>12.000–25.000</td><td>164.000–341.000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h2>DHA Lisansı Nedir ve Nasıl Alınır?</h2>
+
+          <p>Dubai'de herhangi bir sağlık mesleğini icra etmek için Dubai Health Authority (DHA) lisansı zorunludur. Federal düzeyde ise MOH (Ministry of Health and Prevention) lisansı tüm BAE emirliklerinde geçerlidir. Abu Dhabi'de çalışmak isteyenler DOH (Department of Health Abu Dhabi) lisansına ihtiyaç duyar.</p>
+
+          <div class="blog-callout" style="background:hsla(212,66%,13%,0.04);border-left:3px solid var(--primary,#0b213a)">
+            <strong>Türk hekimler için adım adım DHA süreci:</strong>
+            <ol style="margin:.6rem 0 0 1.2rem;line-height:2.1">
+              <li><strong>Dataflow doğrulama:</strong> Türkiye'deki tıp fakültesi diploması ve uzmanlık belgesi Dataflow üzerinden doğrulatılır. Süre: 3–5 ay. Ücret: ~700–1.200 AED.</li>
+              <li><strong>DHA başvurusu:</strong> Dubai Muhim platformu üzerinden online başvuru. Gerekli belgeler: pasaport, diploma, Dataflow raporu, deneyim belgesi, iyi hal belgesi.</li>
+              <li><strong>Prometric sınavı:</strong> Mesleki yeterlilik sınavı İngilizce yapılır. Türkiye'deki Prometric merkezlerinden veya Dubai'de girilebilir. Çalışma süresi: ortalama 2–4 ay.</li>
+              <li><strong>Lisans onayı ve Visa:</strong> Sınav geçildikten sonra işveren vizayı bağlar; lisans 2 yıllık olarak düzenlenir.</li>
+            </ol>
+          </div>
+
+          <p>Toplam süre 4–9 ay arasında değişmektedir. Toplam maliyet (Dataflow + başvuru + sınav) yaklaşık 2.000–5.000 AED'dir. İyi haber: birçok özel hastane adayın lisans masraflarını karşılıyor ya da ücretleri maaşa mahsup ediyor — sözleşme müzakerelerinde bu kalemi sormayı unutmayın.</p>
+
+          <div class="blog-callout">
+            <strong>Prometric sınavı zorunlu mu?</strong> Her meslek için gereklilik farklıdır. GP ve uzmanlık dallarının büyük çoğunluğunda evet, zorunludur. Bazı konsültan pozisyonlarında üst düzey uluslararası sertifikalar (MRCP, FRCS, FRCR) sınavdan muafiyet sağlayabilir. Hemşireler için DHA hemşire lisansı ayrı bir süreçtir.
+          </div>
+
+          <h2>Sertifikalar Dubai Sağlık Maaşını Ne Kadar Artırıyor?</h2>
+
+          <p>Sağlık sektöründe sertifikasyon hem lisans gerekliliğini kolaylaştırır hem de doğrudan maaş primine yansır. Aşağıdaki tablo en yaygın sertifikaların etkisini özetlemektedir.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Sertifika</th>
+                <th>Alan</th>
+                <th>Maaş Etkisi</th>
+                <th>Notlar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="cert-badge">MRCP</span></td><td>İç Hastalıkları / Kardiyoloji</td><td>+%25–35</td><td>Konsültan kademesi için fiilen zorunlu</td></tr>
+              <tr><td><span class="cert-badge">FRCS</span></td><td>Genel Cerrahi</td><td>+%25–40</td><td>Üst kademe cerrahi pozisyonlarda şart</td></tr>
+              <tr><td><span class="cert-badge">FRCR</span></td><td>Radyoloji</td><td>+%20–35</td><td>Konsültan radyolog için standart beklenti</td></tr>
+              <tr><td><span class="cert-badge">ACLS</span></td><td>Acil / Yoğun Bakım</td><td>+%10–15</td><td>Acil serviste temel gereklilik</td></tr>
+              <tr><td><span class="cert-badge">PALS</span></td><td>Pediatri</td><td>+%12–18</td><td>Pediatri uzmanları için zorunlu</td></tr>
+              <tr><td><span class="cert-badge">BLS</span></td><td>Tüm Meslekler</td><td>Temel şart</td><td>Lisans için genellikle ön koşul</td></tr>
+              <tr><td><span class="cert-badge">FRCOphth</span></td><td>Göz Hastalıkları</td><td>+%20–30</td><td>Moorfields gibi uzman hastanelerde şart</td></tr>
+              <tr><td><span class="cert-badge">MRCOG</span></td><td>Kadın Doğum</td><td>+%20–35</td><td>Kıdemli OB-GYN rollerinde beklenti</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Türkiye'de yapılan uzmanlık eğitimi ve alınan Türk uzmanlık belgesi (TUS) DHA/MOH tarafından tanınır; ancak maaş bantlarının üst ucuna ulaşmak için İngilizce kaynaklı uluslararası bir fellowship veya sertifika ciddi avantaj sağlar.</p>
+
+          <div class="blog-post-cta glass" style="margin:2rem 0">
+            <h3>Dubai'ye taşınmayı düşünüyor musunuz?</h3>
+            <p>Maaş teklifinizi aile bütçenizle ve çocuklarınızın okul seçenekleriyle birlikte değerlendirin.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary" style="display:inline-flex">Ücretsiz Görüşme Planla</a>
+          </div>
+
+          <h2>Dubai'de Büyük Sağlık İşverenleri Kimler?</h2>
+
+          <p>Dubai'nin sağlık ekosistemi kamu ve özel sektör olmak üzere iki katmandan oluşur. İşveren seçimi maaş, lisans desteği ve kariyer gelişimi açısından kritiktir.</p>
+
+          <h3>Kamu hastaneleri (DHA işletmeli)</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>Dubai Hospital:</strong> DHA'nın en büyük hastanesi; 650+ yatak, geniş uzmanlık portföyü.</li>
+            <li><strong>Rashid Hospital:</strong> Travma ve acil merkezi; acil tıp hekimleri için güçlü ortam.</li>
+            <li><strong>Latifa Hospital:</strong> Kadın doğum ve çocuk sağlığı odaklı.</li>
+            <li><strong>Al Wasl Hospital:</strong> Obstetri ve jinekoloji merkezi.</li>
+          </ul>
+
+          <h3>Özel sağlık zincirleri</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>Mediclinic Middle East:</strong> İsviçre kökenli; Dubai ve Abu Dhabi'de 10+ hastane, güçlü maaş paketleri.</li>
+            <li><strong>Aster DM Healthcare:</strong> Hindistan kökenli büyük zincir; geniş klinik ağı ve kariyer gelişim programları.</li>
+            <li><strong>American Hospital Dubai:</strong> JCI akreditasyonlu; en rekabetçi maaş paketleri arasında.</li>
+            <li><strong>King's College Hospital Dubai:</strong> İngiliz standartları; konsültan pozisyonları için tercih edilen adreslerden biri.</li>
+            <li><strong>Moorfields Eye Hospital Dubai:</strong> Göz hastalıkları uzmanları için dünyaca tanınan ortam.</li>
+            <li><strong>NMC Healthcare:</strong> Geniş poliklinik ağı; pratisyen hekimler ve uzmanlar için çok sayıda açık pozisyon.</li>
+            <li><strong>Saudi German Hospitals Group:</strong> Bölgesel zincir; pratisyen ve uzman pozisyonlarda aktif işe alım.</li>
+          </ul>
+
+          <h2>Dubai ve Türkiye'de Sağlık Maaşları: Karşılaştırma</h2>
+
+          <p>Karşılaştırmayı yaparken Türkiye'deki brüt-net farkını hesaba katmak şarttır. Türkiye'de hekim maaşı üzerindeki toplam yük (%33–38 SGK + gelir vergisi) fiili geliri önemli ölçüde düşürür. Dubai'de bu kesinti yoktur.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Meslek / Seviye</th>
+                <th>Türkiye Net (TL/ay)</th>
+                <th>Dubai Net (AED/ay)</th>
+                <th>Dubai Net (TL/ay)</th>
+                <th>Yaklaşık Fark</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>GP Doktor (Mid)</td><td>60.000–100.000</td><td>28.000–45.000</td><td>382.000–614.000</td><td>5–7 kat</td></tr>
+              <tr><td>Uzman Doktor</td><td>100.000–200.000</td><td>35.000–70.000</td><td>478.000–955.000</td><td>4–6 kat</td></tr>
+              <tr><td>Konsültan Doktor</td><td>150.000–300.000</td><td>65.000–120.000+</td><td>887.000–1.638.000+</td><td>4–6 kat</td></tr>
+              <tr><td>Hemşire (Kıdemli)</td><td>35.000–55.000</td><td>9.000–14.000</td><td>123.000–191.000</td><td>3–4 kat</td></tr>
+              <tr><td>Eczacı (Mid)</td><td>45.000–70.000</td><td>13.000–22.000</td><td>177.000–300.000</td><td>3–5 kat</td></tr>
+              <tr><td>Diş Hekimi (GP)</td><td>60.000–120.000</td><td>25.000–42.000</td><td>341.000–573.000</td><td>4–6 kat</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>Tablonun ötesinde Dubai'de bir avantaj daha var: Dubai'de kazandığınız AED, Türkiye'ye gönderim yapıldığında kur farkı da yüksek liranın aşındırıcı etkisine karşı bir koruma sağlar.</p>
+
+          <h2>Bu Maaşla Aile Bütçesi Ne Görünür?</h2>
+
+          <h3>Senaryo A — Uzman Doktor, 2 Çocuk</h3>
+          <p>Ortopedi uzmanı, 8 yıl deneyim, maaş: 45.000 AED/ay + konut ödeneği (5.000 AED/ay dahil paket). Eşi çalışmıyor. Jumeirah'da 3+1 villa tipi daire (18.000 AED/ay), iki çocuk KHDA Outstanding okul (9.000 AED/ay taksit), giderler (10.000 AED/ay) → Toplam ~37.000 AED/ay. <strong>Aylık 8.000 AED tasarruf mümkün.</strong> Premium yaşam standardı, düzenli Türkiye uçuşu ve birikim eş zamanlı yürütülebilir.</p>
+
+          <h3>Senaryo B — Kıdemli Hemşire, 2 Çocuk</h3>
+          <p>Charge nurse, 9 yıl deneyim, maaş: 18.000 AED/ay + konut ödeneği 2.500 AED = <strong>20.500 AED net/ay.</strong> Eşi uzaktan çalışıyor, +6.000 AED/ay. Toplam hane: 26.500 AED/ay. Discovery Gardens'da 3+1 daire (10.000 AED/ay), iki çocuk KHDA Good okul (5.000 AED/ay taksit), giderler (7.500 AED/ay) → Toplam 22.500 AED/ay. <strong>4.000 AED/ay tasarruf.</strong></p>
+
+          <h3>Senaryo C — GP Diş Hekimi, 1 Çocuk</h3>
+          <p>GP diş hekimi, 5 yıl deneyim, maaş: 30.000 AED/ay + performans primi ~5.000 AED ortalama = <strong>35.000 AED/ay.</strong> Eşi çalışmıyor. JVC'de 2+1 daire (9.500 AED/ay), bir çocuk KHDA Very Good okul (3.500 AED/ay), giderler (6.000 AED/ay) → Toplam 19.000 AED/ay. <strong>16.000 AED/ay birikim — güçlü.</strong></p>
+
+          <h2>Dubai'de Sağlık İşi Nasıl Bulunur?</h2>
+
+          <h3>Platformlar ve kanallar</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>DHA Jobs Portal (jobs.dha.gov.ae):</strong> Kamu sektörü pozisyonları için resmi başvuru kanalı.</li>
+            <li><strong>LinkedIn:</strong> "Dubai doctor", "DHA specialist" veya "Dubai nurse" aramaları; büyük özel hastanelerin HR profilleri takip edilebilir.</li>
+            <li><strong>Bayt.com:</strong> MENA bölgesinin en büyük iş platformu; sağlık ilanları için "Healthcare / Medical" kategorisi.</li>
+            <li><strong>GulfTalent:</strong> Orta-üst kademe sağlık pozisyonları için uzman platform.</li>
+            <li><strong>Hastane kariyer sayfaları:</strong> Mediclinic, Aster, American Hospital, NMC'nin kendi kariyer portalları aktif açık pozisyonlar listeler.</li>
+            <li><strong>Sağlık işe alım ajansları:</strong> G&H Recruitment, Charterhouse, Greenfield Global — sağlık sektörüne özel ajanslar maaş müzakeresi ve DHA lisans sürecinde yönlendirme sunabilir.</li>
+          </ul>
+
+          <div class="blog-callout">
+            <strong>Türk hekimler için pratik öneri:</strong> Dubai'deki Türk doktor topluluğu — başta internist ve cerrahlar — LinkedIn ve WhatsApp grupları üzerinden aktif bir ağ oluşturmuş durumda. Bu ağlara erişmek hem iş ilanlarını erkenden öğrenmek hem de DHA sürecinde deneyim aktarımı almak için değerlidir. Türk Tabipleri Birliği'nin Dubai kolu da bağlantı için başlangıç noktası olabilir.
+          </div>
+
+          <div class="blog-faq">
+            <h2>Sık Sorulan Sorular</h2>
+
+            <div class="faq-item">
+              <div class="faq-q">Dubai'de doktor maaşı ne kadar?</div>
+              <div class="faq-a">Pratisyen hekim 18.000–45.000 AED/ay, uzman doktor 35.000–70.000 AED/ay, konsültan doktor 65.000–120.000+ AED/ay kazanmaktadır. Tüm rakamlar gelir vergisizdir; bireysel teklifler uzmanlık alanı ve hastane türüne göre farklılaşır.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Türk doktorlar Dubai'de çalışabilir mi?</div>
+              <div class="faq-a">Evet. Dubai Health Authority (DHA) veya MOH lisansı zorunludur. Türk tıp diploması Dataflow doğrulamasından geçirilir, ardından Prometric mesleki yeterlilik sınavı geçilir. Toplam süreç 4–9 ay sürebilir; sınav İngilizce'dir.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">DHA lisansı ne kadar sürer?</div>
+              <div class="faq-a">Dataflow doğrulama 3–5 ay, başvuru ve sınav süreci 1–3 ay olmak üzere toplam 4–9 ay. Maliyet yaklaşık 2.000–5.000 AED. Birçok özel hastane adayın lisans masraflarını karşılıyor; sözleşmede bu kalemi sormayı unutmayın.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Dubai'de hemşire maaşı ne kadar?</div>
+              <div class="faq-a">Staff nurse 5.000–9.000 AED/ay, kıdemli hemşire 9.000–14.000 AED/ay, charge nurse 14.000–22.000 AED/ay, nurse practitioner 20.000–35.000 AED/ay. Konut ödeneği paketlere dahil edildiğinde fiili gelir 2.000–4.000 AED daha yüksek olabilir.</div>
+            </div>
+            <div class="faq-item">
+              <div class="faq-q">Dubai'de eczacı maaşı ne kadar?</div>
+              <div class="faq-a">Junior eczacı 8.000–13.000 AED/ay, kıdemli eczacı 13.000–22.000 AED/ay, klinik eczacı 18.000–28.000 AED/ay ve baş eczacı 25.000–40.000 AED/ay. Zincir eczaneler ve hastane eczaneleri en yaygın işverenlerdir.</div>
+            </div>
+          </div>
+
+          <p>Sağlık sektöründe Dubai'ye taşınmayı düşünüyorsanız maaş paketini tek başına değil, okul masrafları ve yaşam maliyetiyle birlikte değerlendirin. <a href="/blog/dubai-maaslar-2026/" style="color:var(--accent)">Mühendislik ve IT maaşları rehberimize</a>, <a href="/blog/dubai-maaslar-finans-muhasebe-hukuk/" style="color:var(--accent)">finans ve hukuk rehberimize</a> ve <a href="/blog/dubai-yasam-maliyeti-2026/" style="color:var(--accent)">Dubai yaşam maliyeti analizimize</a> de göz atabilirsiniz.</p>
+
+        </div><!-- .blog-post-body -->
+
+        <aside class="blog-cluster-box" style="margin:2rem 0;padding:1.4rem 1.5rem;border-radius:10px;background:var(--bg-warm-secondary,#f3efe8)">
+          <p style="margin:0 0 .8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Bu konudaki tüm rehberler</p>
+          <p style="margin:0 0 .9rem;font-size:1.15rem;font-weight:700;color:var(--primary,#0b213a)">Dubai'de Yaşam ve Maaşlar</p>
+          <ul style="margin:0;padding-left:1.1rem;columns:2 260px;column-gap:2rem;line-height:1.6">
+            <li style="break-inside:avoid"><a href="/blog/dubai-maaslar-2026/" style="color:var(--primary,#0b213a)">Dubai'de Maaşlar 2026: Mühendislik ve IT Rehberi</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-maaslar-finans-muhasebe-hukuk/" style="color:var(--primary,#0b213a)">Dubai Maaşlar: Finans, Muhasebe ve Hukuk</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-maaslar-otelcilik-turizm-havayollari/" style="color:var(--primary,#0b213a)">Dubai Maaşlar: Otelcilik, Turizm ve Havacılık</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-maaslar-insaat-mimarlik/" style="color:var(--primary,#0b213a)">Dubai Maaşlar: İnşaat ve Mimarlık Sektörü</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-yasam-maliyeti-2026/" style="color:var(--primary,#0b213a)">Dubai'de Yaşam Maliyeti 2026: Gerçek Rakamlar</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-okul-ucretleri-2026/" style="color:var(--primary,#0b213a)">Dubai Okul Fiyatları 2026–27: Tam Ücret Tablosu</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-semt-rehberi/" style="color:var(--primary,#0b213a)">Dubai'de Hangi Semtte Oturun? Semt Rehberi</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-gelmeden-once-bilmeniz-gerekenler/" style="color:var(--primary,#0b213a)">Dubai'ye Gelmeden Önce Bilmeniz Gerekenler</a></li>
+          </ul>
+        </aside>
+
+      </article>
+    </div>
+    <div class="container" style="padding:0 0 2rem;"></div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>İlgili Yazılar</h2>
+      <div class="blog-related-grid">
+        <a href="../dubai-maaslar-2026/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-maaslar.webp" alt="Dubai Maaşlar 2026 Mühendislik IT" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">Dubai'de Maaşlar 2026: Mühendislik ve IT Sektörü Rehberi</div>
+            <div class="blog-related-card-meta">20 Ekim 2026 · 10 dk</div>
+          </div>
+        </a>
+        <a href="../dubai-maaslar-insaat-mimarlik/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-maaslar-insaat.webp" alt="Dubai İnşaat Mimarlık Maaşları" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">Dubai'de Maaşlar: İnşaat ve Mimarlık Sektörü</div>
+            <div class="blog-related-card-meta">14 Kasım 2026 · 12 dk</div>
+          </div>
+        </a>
+        <a href="../dubai-yasam-maliyeti-2026/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-maaslar.webp" alt="Dubai Yaşam Maliyeti 2026" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">Dubai'de Yaşam Maliyeti 2026: Kira, Okul ve Gerçek Rakamlar</div>
+            <div class="blog-related-card-meta">25 Haziran 2026 · 12 dk</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi, müfredat değerlendirme ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="/neden-biz/">Neden Biz?</a></li>
+            <li><a href="/tr/#services">Hizmetler</a></li>
+            <li><a href="/blog/">Blog <span class="nav-count-badge">112</span></a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/">Görüşme Planla</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>İletişim</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, Birleşik Arap Emirlikleri</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener noreferrer">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
+        <div><a href="/gizlilik-politikasi/" style="color:inherit;opacity:0.7">Gizlilik Politikası</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP STICKY -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Merhaba,%20Daha%20fazla%20bilgi%20almak%20istiyorum" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile yazın" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- AI Chatbot Button -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="AI Asistan">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+    <span class="chatbot-btn-label">AI Asistan</span>
+  </button>
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>Edualist AI Asistan</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Kapat">✕</button>
+    </div>
+    <iframe class="chatbot-iframe" src="https://eduentry.com/tr/chat-widget" title="Edualist AI Asistan" loading="lazy"></iframe>
+  </div>
+
+  <script src="../../main.js?v=8" defer></script>
+</body>
+</html>
