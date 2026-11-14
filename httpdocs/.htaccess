@@ -205,6 +205,12 @@ ErrorDocument 404 /404.html
   RewriteRule ^en/blog/future-skills-for-children(/index\.html)?/?$ /en/blog/ai-proof-jobs/ [R=301,L]
   RewriteRule ^en/blog/uae-international-school-guide(/index\.html)?/?$ /en/blog/abu-dhabi-international-schools/ [R=301,L]
 
+  # www + no trailing slash + no file extension → add trailing slash (explicit, not mod_dir dependent)
+  RewriteCond %{HTTP_HOST} ^www\.edualist\.com$ [NC]
+  RewriteCond %{REQUEST_URI} !/$
+  RewriteCond %{REQUEST_URI} !\.[a-zA-Z0-9]{1,6}$
+  RewriteRule ^(.+)$ https://www.edualist.com/$1/ [R=301,L]
+
   # Serve WebP if browser supports it and file exists
   RewriteCond %{HTTP_ACCEPT} image/webp
   RewriteCond %{REQUEST_FILENAME} \.(png|jpg|jpeg)$
