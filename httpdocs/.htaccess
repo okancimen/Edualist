@@ -113,12 +113,40 @@ ErrorDocument 404 /404.html
   # Strip index.html from all URLs → canonical trailing-slash form
   RewriteRule ^(.+)/index\.html$ /$1/ [R=301,L]
 
-  # GA traffic hitting root path instead of /blog/ path
+  # GA traffic hitting root path instead of /blog/ path (Nov 2026 — 31 404s)
   RewriteRule ^uluslararasi-okul-mulakati-nasil-gecilir/?$ /blog/uluslararasi-okul-mulakati-nasil-gecilir/ [R=301,L]
   RewriteRule ^lise-ogrencisi-staj-is-deneyimi/?$ /blog/lise-ogrencisi-staj-is-deneyimi/ [R=301,L]
   RewriteRule ^dubai-international-academy-incelemesi/?$ /blog/dubai-international-academy-incelemesi/ [R=301,L]
   RewriteRule ^dubai-turk-aileler-okul-rehberi/?$ /blog/dubai-turk-aileler-okul-rehberi/ [R=301,L]
   RewriteRule ^dubai-egitim-sistemi/?$ /blog/dubai-egitim-sistemi/ [R=301,L]
+  RewriteRule ^lise-yurt-disi-tasinma-adaptasyon/?$ /blog/lise-yurt-disi-tasinma-adaptasyon/ [R=301,L]
+  RewriteRule ^abd-okul-kayit-rehberi/?$ /blog/abd-okul-kayit-rehberi/ [R=301,L]
+  RewriteRule ^anxious-generation-ergen-ruh-sagligi/?$ /blog/anxious-generation-ergen-ruh-sagligi/ [R=301,L]
+  RewriteRule ^anxious-generation-oyun-temelli-cocukluk/?$ /blog/anxious-generation-oyun-temelli-cocukluk/ [R=301,L]
+  RewriteRule ^bae-uluslararasi-okul-rehberi/?$ /blog/bae-uluslararasi-okul-rehberi/ [R=301,L]
+  RewriteRule ^cocugum-ders-calismak-istemiyor/?$ /blog/cocugum-ders-calismak-istemiyor/ [R=301,L]
+  RewriteRule ^cocugum-ingilizce-ogrenemiyor/?$ /blog/cocugum-ingilizce-ogrenemiyor/ [R=301,L]
+  RewriteRule ^cocugum-telefona-ekrana-bagimli/?$ /blog/cocugum-telefona-ekrana-bagimli/ [R=301,L]
+  RewriteRule ^dubai-en-iyi-uluslararasi-okullar/?$ /blog/dubai-en-iyi-uluslararasi-okullar/ [R=301,L]
+  RewriteRule ^dubai-okul-kayit-rehberi/?$ /blog/dubai-okul-kayit-rehberi/ [R=301,L]
+  RewriteRule ^gems-dubai-american-academy-incelemesi/?$ /blog/gems-dubai-american-academy-incelemesi/ [R=301,L]
+  RewriteRule ^gems-jumeirah-primary-school-dubai-incelemesi/?$ /blog/gems-jumeirah-primary-school-dubai-incelemesi/ [R=301,L]
+  RewriteRule ^ingilterede-turk-okulu-var-mi/?$ /blog/ingilterede-turk-okulu-var-mi/ [R=301,L]
+  RewriteRule ^international-school-nedir/?$ /blog/international-school-nedir/ [R=301,L]
+  RewriteRule ^ispanya-okul-kayit-rehberi/?$ /blog/ispanya-okul-kayit-rehberi/ [R=301,L]
+  RewriteRule ^isvicre-okul-kayit-rehberi/?$ /blog/isvicre-okul-kayit-rehberi/ [R=301,L]
+  RewriteRule ^italya-okul-kayit-rehberi/?$ /blog/italya-okul-kayit-rehberi/ [R=301,L]
+  RewriteRule ^kanada-okul-kayit-rehberi/?$ /blog/kanada-okul-kayit-rehberi/ [R=301,L]
+  RewriteRule ^kings-school-dubai-incelemesi/?$ /blog/kings-school-dubai-incelemesi/ [R=301,L]
+  RewriteRule ^kizim-sinifin-zemininde-yatiyordu/?$ /blog/kizim-sinifin-zemininde-yatiyordu/ [R=301,L]
+  RewriteRule ^lise-ogrencisi-yaz-programlari/?$ /blog/lise-ogrencisi-yaz-programlari/ [R=301,L]
+  RewriteRule ^ogretmen-tembel-dedi/?$ /blog/ogretmen-tembel-dedi/ [R=301,L]
+  RewriteRule ^turk-egitim-sisteminden-uluslararasi-okula-gecis/?$ /blog/turk-egitim-sisteminden-uluslararasi-okula-gecis/ [R=301,L]
+  RewriteRule ^yapay-zekaya-direncli-meslekler/?$ /blog/yapay-zekaya-direncli-meslekler/ [R=301,L]
+  RewriteRule ^yurtdisi-egitim-maliyet-karsilastirma/?$ /blog/yurtdisi-egitim-maliyet-karsilastirma/ [R=301,L]
+  RewriteRule ^dubai-british-school-incelemesi/?$ /blog/dubai-british-school-incelemesi/ [R=301,L]
+  # Stray colon appended to blog URL
+  RewriteRule ^blog/cocugum-ders-calismak-istemiyor/:/?$ /blog/cocugum-ders-calismak-istemiyor/ [R=301,L]
 
   # 404 fix: URL with Turkish ü/ı chars → correct slug
   # Apache 2.4+ decodes URL before matching, so Unicode form is required
