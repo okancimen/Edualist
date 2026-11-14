@@ -34,6 +34,12 @@ URLS = [
     # ── Yeni eklenen / son değişenler — BURAYA EKLE, en fazla ~150 URL ──────────
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
+
+    # Nov 2026 — 3 new EN pages + cross-link updates on 3 EN salary pages
+    "https://www.edualist.com/en/blog/dubai-healthcare-salaries/",
+    "https://www.edualist.com/en/blog/dubai-construction-architecture-salaries/",
+    "https://www.edualist.com/en/blog/dubai-vs-abu-dhabi-cost-of-living/",
+
     "https://www.edualist.com/blog/dubai-gcse-nedir/",
 
     # Nov 2026 — CTR fixes + content upgrades (page-2 push campaign)

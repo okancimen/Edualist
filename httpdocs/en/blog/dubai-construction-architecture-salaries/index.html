@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});})();
+  </script>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex;background-color:rgba(11,33,58,.06);padding:4px;border-radius:50px;border:1px solid rgba(11,33,58,.08)}.lang-btn{background:0 0;border:none;padding:6px 14px;font-size:.85rem;font-weight:600;color:var(--primary);opacity:.6;cursor:pointer;border-radius:50px;transition:var(--transition-fast)}.lang-btn.active{background-color:var(--primary);color:var(--text-light);opacity:1;box-shadow:var(--shadow-sm)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}}@media (max-width:768px){.menu-toggle{display:flex}.nav-controls .btn{display:none}}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}.blog-seo-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.75rem}.blog-seo-tag{background:hsla(43,60%,52%,.1);color:var(--primary);font-size:.78rem;font-weight:500;padding:.25rem .7rem;border-radius:50px;border:1px solid hsla(43,60%,52%,.2)}.blog-post-cta{padding:2rem 2.5rem;border-radius:var(--radius-lg);margin:2.5rem 0}.blog-post-cta h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:700;color:var(--primary);margin-bottom:.6rem}.blog-post-cta p{color:var(--text-muted);margin-bottom:1.25rem;font-size:.97rem}.blog-faq{margin:2.5rem 0}.faq-item{margin-bottom:1.25rem;padding:1.5rem 1.75rem;background:var(--bg-warm-secondary);border-radius:var(--radius-md)}.faq-q{font-size:1.05rem;font-weight:700;color:var(--primary);margin-bottom:.5rem}.faq-a{font-size:.95rem;line-height:1.75;color:var(--text-dark)}.blog-faq h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 1.25rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-related-section{padding:3rem 0;background:var(--bg-warm-secondary)}.blog-related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:1.5rem}.blog-related-card{border-radius:var(--radius-md);overflow:hidden;background:#fff;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:var(--transition-fast)}.blog-related-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}.blog-related-card img{width:100%;aspect-ratio:16/9;object-fit:cover}.blog-related-card-body{padding:1rem 1.25rem}.blog-related-card-title{font-weight:600;font-size:.95rem;color:var(--primary);margin-bottom:.3rem}.blog-related-card-meta{font-size:.8rem;color:var(--text-muted)}.footer{padding:4rem 0 2rem;background:var(--primary);color:var(--text-light)}.footer h3,.footer h4{color:var(--text-light)}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}.footer-bio-text{font-size:.9rem;opacity:.75;line-height:1.7;margin-top:.5rem}.footer-links{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-top:.5rem}.footer-links a{font-size:.9rem;opacity:.75;transition:opacity .2s}.footer-links a:hover{opacity:1}.footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:.75rem;margin-top:.5rem}.footer-contact-item{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem;opacity:.75}.footer-contact-item a{color:inherit;transition:opacity .2s}.footer-contact-item a:hover{opacity:1}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.85rem;opacity:.6;flex-wrap:wrap;gap:.5rem}.blog-cost-table{width:100%;border-collapse:collapse;font-size:.88rem;margin:1.5rem 0}.blog-cost-table th{background:var(--primary);color:#fff;padding:.65rem 1rem;text-align:left;font-weight:600;font-size:.82rem}.blog-cost-table td{padding:.55rem 1rem;border-bottom:1px solid hsla(212,66%,13%,.07)}.blog-cost-table tr:nth-child(even) td{background:hsla(212,66%,13%,.02)}.blog-cost-table tr:hover td{background:hsla(43,60%,52%,.07)}.blog-cost-table td:first-child{font-weight:600;color:var(--primary)}.cert-badge{display:inline-block;background:var(--primary);color:var(--accent);font-size:.72rem;font-weight:700;padding:.15rem .55rem;border-radius:4px;letter-spacing:.04em;margin-right:.3rem}.whatsapp-sticky{position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:#25d366;color:#fff;text-decoration:none;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(37,211,102,.45);font-size:.95rem;font-weight:600;transition:transform .2s ease,box-shadow .2s ease}.whatsapp-sticky svg{flex-shrink:0}.chatbot-btn{position:fixed;bottom:1.75rem;left:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:var(--primary);color:#fff;border:none;cursor:pointer;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(11,33,58,.4);font-size:.95rem;font-weight:600;font-family:inherit;transition:transform .2s ease,box-shadow .2s ease}.chatbot-btn svg{flex-shrink:0}.chatbot-popup{position:fixed;bottom:5.5rem;left:1.75rem;z-index:9998;width:418px;height:540px;background:#fff;border-radius:16px;box-shadow:0 12px 48px rgba(11,33,58,.25);display:flex;flex-direction:column;overflow:hidden}.chatbot-popup[hidden]{display:none!important}.chatbot-popup-header{display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem;background:var(--primary);color:#fff;font-weight:600;font-size:.9rem;flex-shrink:0}.chatbot-popup-close{background:0 0;border:none;color:#fff;cursor:pointer;font-size:1.1rem;padding:.1rem .35rem;line-height:1;border-radius:4px;opacity:.75}.chatbot-iframe{flex:1;width:100%;border:none}@media(max-width:480px){.whatsapp-sticky{padding:.85rem;border-radius:50%}.whatsapp-sticky-label{display:none}.chatbot-btn{padding:.85rem;border-radius:50%}.chatbot-btn-label{display:none}.chatbot-popup{left:.75rem;right:.75rem;width:auto;bottom:5rem;height:72vh}}@media(max-width:768px){.blog-related-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr;gap:2rem}}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai Construction & Architecture Salaries 2026: PM, Architect, QS & BIM Pay | Edualist</title>
+  <meta name="description" content="Complete 2026 guide to construction and architecture salaries in Dubai — project manager 20,000–50,000 AED/month, architect 12,000–70,000+ AED, QS 12,000–70,000+ AED. PMP/MRICS premium, major employers and Turkey salary comparison included.">
+  <meta name="keywords" content="dubai construction salary 2026, dubai architect salary, dubai project manager salary, dubai quantity surveyor salary, dubai BIM specialist salary, dubai civil engineer salary, PMP Dubai salary, MRICS Dubai salary, LEED Dubai salary, dubai construction jobs 2026, dubai MEP engineer salary">
+  <meta name="author" content="Ozlem Cimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/en/blog/dubai-construction-architecture-salaries/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-maaslar-insaat-mimarlik/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/dubai-construction-architecture-salaries/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-construction-architecture-salaries/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="ai-catalog" type="application/json" href="/ai-catalog.json" title="AI Resource Catalog">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"      content="en_US">
+  <meta property="og:locale:alternate" content="tr_TR">
+  <meta property="og:title"       content="Dubai Construction &amp; Architecture Salaries 2026: PM, Architect, QS &amp; BIM Pay">
+  <meta property="og:description" content="Up-to-date construction and architecture salary guide for Dubai 2026 — project manager, architect, quantity surveyor, BIM specialist and civil engineer pay bands, plus PMP/MRICS premium analysis.">
+  <meta property="og:url"         content="https://www.edualist.com/en/blog/dubai-construction-architecture-salaries/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-maaslar-insaat.webp">
+  <meta property="article:published_time" content="2026-11-14">
+  <meta property="article:author" content="Ozlem Cimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Dubai Construction &amp; Architecture Salaries 2026: PM, Architect, QS &amp; BIM Pay">
+  <meta name="twitter:description" content="Project manager 20,000–50,000 AED, architect 12,000–70,000+ AED, QS 12,000–70,000+ AED — complete Dubai construction salary guide 2026 with PMP and MRICS premium.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-maaslar-insaat.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Dubai Construction & Architecture Salaries 2026: PM, Architect, QS & BIM Pay",
+    "description": "Complete salary guide for construction and architecture professionals in Dubai 2026 — project manager, architect, quantity surveyor, BIM specialist, civil engineer pay bands, PMP/MRICS premium and Turkey salary comparison.",
+    "author": {
+      "@type": "Person",
+      "name": "Ozlem Cimen", "jobTitle": "International Education Consultant",
+      "url": "https://www.edualist.com/en/about/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com/en/", "logo": {"@type": "ImageObject", "url": "https://www.edualist.com/assets/favicon.svg"}
+    },
+    "datePublished": "2026-11-14T00:00:00+00:00",
+    "dateModified": "2026-11-14T00:00:00+00:00",
+    "wordCount": 3200,
+    "inLanguage": "en",
+    "url": "https://www.edualist.com/en/blog/dubai-construction-architecture-salaries/",
+    "image": "https://www.edualist.com/assets/blog/thumb-dubai-maaslar-insaat.webp",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".blog-summary", ".blog-post-title"]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How much does a construction professional earn in Dubai?",
+        "acceptedAnswer": {"@type": "Answer", "text": "In 2026, a mid-level construction engineer earns 10,000–18,000 AED/month in Dubai, a senior engineer 18,000–30,000 AED/month. A project manager earns 20,000–35,000 AED/month and a senior project director 45,000–80,000+ AED/month. All salaries are net — Dubai has zero personal income tax."}
+      },
+      {
+        "@type": "Question",
+        "name": "How much does an architect earn in Dubai?",
+        "acceptedAnswer": {"@type": "Answer", "text": "A mid-level architect (3–7 years experience) earns 12,000–20,000 AED/month in Dubai 2026, a senior architect 18,000–32,000 AED/month, and a design director 40,000–70,000+ AED/month. UAE-licensed architects (DM Engineering Registration) qualify for the upper bands. All figures are tax-free."}
+      },
+      {
+        "@type": "Question",
+        "name": "How much does a Quantity Surveyor (QS) earn in Dubai?",
+        "acceptedAnswer": {"@type": "Answer", "text": "A mid-level QS earns 12,000–20,000 AED/month in Dubai 2026, a senior QS or commercial manager 20,000–35,000 AED/month. The MRICS designation (Royal Institution of Chartered Surveyors) is near-essential at senior levels and can boost salary by 25–40%. Junior QS starts at 7,000–12,000 AED/month."}
+      },
+      {
+        "@type": "Question",
+        "name": "How much does PMP certification increase salary in Dubai?",
+        "acceptedAnswer": {"@type": "Answer", "text": "PMP certification increases project manager salaries by 25–35% in Dubai's construction sector. A non-certified PM earns 15,000–22,000 AED/month while a PMP-certified PM with the same experience commands 20,000–35,000 AED/month. Major employers such as ALEC, Emaar and DAMAC often list PMP as a requirement or strong preference for PM roles."}
+      },
+      {
+        "@type": "Question",
+        "name": "Can Turkish construction professionals find jobs in Dubai?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Yes. Turkish contractors Kalyon, Limak and Kolin have active offices in Dubai and prefer bilingual Turkish-English technical staff. International firms such as ALEC, Atkins and Emaar also hire Turkish engineers, architects and project managers. English technical proficiency and international project experience are the key requirements."}
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.edualist.com/en/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/en/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dubai Construction & Architecture Salaries 2026", "item": "https://www.edualist.com/en/blog/dubai-construction-architecture-salaries/" }
+    ]
+  }
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    window.addEventListener("load",function(){setTimeout(function(){(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");},5000);});
+  </script>
+
+  <link rel="preload" as="image" href="/assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="/styles.css?v=15">
+  <link rel="stylesheet" href="/styles.css?v=15" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="/styles.css?v=15"></noscript>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/en/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/en/dubai/">Schools in Dubai</a></li>
+        <li><a href="/en/school-advisory/">School Advisory</a></li>
+        <li><a href="/en/academic-coaching/">Academic Coaching</a></li>
+        <li><a href="/en/blog/" class="nav-blog-highlight">Blog</a></li>
+        <li><a href="/en/why-edualist/">About</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" id="langTR" onclick="location.href='/blog/dubai-maaslar-insaat-mimarlik/'">TR</button>
+          <button class="lang-btn active" id="langEN">EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/en/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span>Back to Blog</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>14 November 2026</span>
+          <span><a href="/en/about/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Ozlem Cimen</a></span>
+          <span>12 min read</span>
+        </div>
+
+        <div class="blog-post-body">
+
+          <h1 class="blog-post-title">Dubai Construction &amp; Architecture Salaries 2026: PM, Architect, QS &amp; BIM Specialist Pay Guide</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">Dubai construction salary 2026</span>
+            <span class="blog-seo-tag">Dubai architect salary</span>
+            <span class="blog-seo-tag">Dubai project manager salary</span>
+            <span class="blog-seo-tag">Dubai QS salary</span>
+            <span class="blog-seo-tag">Dubai BIM specialist</span>
+            <span class="blog-seo-tag">PMP MRICS Dubai</span>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Quick Answer:</strong> In Dubai 2026, a mid-level construction engineer earns <strong>10,000–18,000 AED/month</strong>, a project manager <strong>20,000–35,000 AED/month</strong>, a senior architect <strong>18,000–32,000 AED/month</strong>, and an MRICS-certified QS <strong>20,000–35,000 AED/month</strong>. All figures are net — Dubai has zero personal income tax. PMP or MRICS certification can increase salary by 25–40% at the same experience level.
+          </div>
+
+          <div class="blog-summary">
+            <strong>In this guide:</strong> Project manager, architect, civil engineer, QS and BIM specialist salary bands · Impact of PMP, MRICS and LEED certifications · Major employers in Dubai · Salary comparison with Turkey · Family budget scenarios
+          </div>
+
+          <p>In our <a href="/en/blog/dubai-salaries-2026/" style="color:var(--accent)">Dubai Salaries 2026 main guide</a> we covered engineering and IT. <a href="/en/blog/dubai-finance-accounting-legal-salaries/" style="color:var(--accent)">Our second guide</a> covered finance, accounting and legal. This is the fourth in the series: construction and architecture.</p>
+
+          <p>Dubai's construction sector is one of MENA's most active markets in 2026, both by volume and employment. Palm Jebel Ali Phase 2, Dubai Creek Harbour completion, Expo City transformation and Dubai Urban Master Plan 2040 infrastructure investments keep demand for project managers, architects, civil engineers and QS professionals consistently high.</p>
+
+          <div class="blog-callout">
+            <strong>Exchange rate note:</strong> 1 AED ≈ 13.65 TL (November 2026 approximate average). All Dubai salaries are net — there is no personal income tax in the UAE. Salary bands are sourced from LinkedIn, Bayt.com and industry salary reports; individual offers vary by experience, company size and negotiation.
+          </div>
+
+          <h2>Project Manager Salaries in Dubai 2026</h2>
+
+          <p>Construction project management is one of Dubai's most demanded and best-paid technical disciplines. Major developers (Emaar, DAMAC, Meraas, Nakheel) and public infrastructure projects (RTA, Dubai Municipality) constantly require PM staff.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Experience</th>
+                <th>Salary (AED/month)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior / Assistant PM</td><td>0–3 years</td><td>8,000–14,000</td></tr>
+              <tr><td>Project Manager (Mid-level)</td><td>4–8 years</td><td>20,000–35,000</td></tr>
+              <tr><td>Senior Project Manager</td><td>8–13 years</td><td>30,000–50,000</td></tr>
+              <tr><td>Project Director</td><td>13+ years</td><td>45,000–80,000+</td></tr>
+              <tr><td>Programme / Portfolio Manager</td><td>12+ years</td><td>50,000–90,000+</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong>PMP impact:</strong> <span class="cert-badge">PMP</span> certification increases mid and senior PM salaries by <strong>25–35%</strong>. A non-certified PM earns 15,000–22,000 AED/month; a PMP-certified PM with the same experience commands 20,000–35,000 AED/month. Major employers including ALEC, Khansaheb and Emaar frequently list PMP as a requirement or strong preference for PM roles.
+          </div>
+
+          <div class="blog-post-cta glass" style="margin:2rem 0">
+            <h3>Planning a move to Dubai?</h3>
+            <p>Evaluate your salary offer alongside your family budget and your children's school options.</p>
+            <a href="/en/school-advisory/" class="btn btn-primary" style="display:inline-flex">Book a Free Consultation</a>
+          </div>
+
+          <h2>Architect Salaries in Dubai 2026</h2>
+
+          <p>Dubai's architecture sector operates in two tiers: international design firms (Gensler, HOK, Woods Bagot, Zaha Hadid Architects' Dubai offices) and local/regional architecture practices. International firms pay more while local firms may offer faster career progression.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Experience</th>
+                <th>Salary (AED/month)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior Architect</td><td>0–3 years</td><td>7,000–12,000</td></tr>
+              <tr><td>Mid-level Architect</td><td>3–7 years</td><td>12,000–20,000</td></tr>
+              <tr><td>Senior Architect</td><td>7–12 years</td><td>18,000–32,000</td></tr>
+              <tr><td>Principal Architect / Project Architect</td><td>10–15 years</td><td>28,000–48,000</td></tr>
+              <tr><td>Design Director</td><td>15+ years</td><td>40,000–70,000+</td></tr>
+              <tr><td>Interior Designer (mid-level)</td><td>2–8 years</td><td>7,000–18,000</td></tr>
+              <tr><td>Senior Interior Designer</td><td>8+ years</td><td>18,000–35,000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong>UAE architect registration:</strong> An architecture degree from outside the UAE is not automatically recognised in Dubai. Dubai Municipality Engineering Registration or UAE ESMA (Emirates Authority for Standardization and Metrology) registration is required to sign off projects independently. Working within a firm without registration is permitted; working under a licensed architect sponsor is common practice. Obtaining UAE registration significantly increases earnings potential.
+          </div>
+
+          <h2>Civil Engineer Salaries in Dubai 2026</h2>
+
+          <p>Three main engineering disciplines generate the most employment in Dubai: civil/structural, mechanical-electrical-plumbing (MEP) and geotechnical/infrastructure. The gap between site and office design engineers widens with experience.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Experience</th>
+                <th>Salary (AED/month)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior Engineer (Civil/Structural)</td><td>0–3 years</td><td>6,000–10,000</td></tr>
+              <tr><td>Mid-level Engineer</td><td>3–7 years</td><td>10,000–18,000</td></tr>
+              <tr><td>Senior Engineer</td><td>7–12 years</td><td>18,000–30,000</td></tr>
+              <tr><td>Principal Engineer / Technical Director</td><td>12+ years</td><td>30,000–55,000+</td></tr>
+              <tr><td>Site Engineer</td><td>2–6 years</td><td>7,000–14,000</td></tr>
+              <tr><td>Construction Manager</td><td>8–15 years</td><td>22,000–42,000</td></tr>
+              <tr><td>MEP Engineer (mid-level)</td><td>3–8 years</td><td>10,000–18,000</td></tr>
+              <tr><td>MEP Coordinator / Director</td><td>10+ years</td><td>22,000–40,000</td></tr>
+              <tr><td>HSE Manager</td><td>5–10 years</td><td>12,000–22,000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Site allowance:</strong> Some Dubai firms add a site allowance of 10–20% on top of base salary for site-based or remote location assignments. Particularly for projects outside Dubai (Sharjah, Abu Dhabi or camps), this addition can meaningfully increase total compensation.
+          </div>
+
+          <h2>Quantity Surveyor (QS) Salaries in Dubai 2026</h2>
+
+          <p>Quantity surveying is one of Dubai's most demanded and best-compensated construction disciplines. When cost control and commercial management (contract management) combine on major projects, the QS role becomes critical. MRICS certification has become near the gold standard in this field.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Experience</th>
+                <th>Salary (AED/month)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior QS</td><td>0–3 years</td><td>7,000–12,000</td></tr>
+              <tr><td>Mid-level QS</td><td>3–7 years</td><td>12,000–20,000</td></tr>
+              <tr><td>Senior QS</td><td>7–12 years</td><td>20,000–32,000</td></tr>
+              <tr><td>Commercial Manager</td><td>10–15 years</td><td>28,000–45,000</td></tr>
+              <tr><td>Commercial Director</td><td>15+ years</td><td>40,000–70,000+</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p><span class="cert-badge">MRICS</span> (Royal Institution of Chartered Surveyors) certification boosts senior QS salaries by <strong>25–40%</strong>. Starting the RICS AssocRICS or MRICS process before relocating to Dubai provides a significant advantage in job search and negotiation. Turner &amp; Townsend, Faithful+Gould and Arcadis specifically seek MRICS candidates.</p>
+
+          <h2>BIM Specialist Salaries in Dubai 2026</h2>
+
+          <p>Building Information Modelling (BIM) is now mandatory on major projects in Dubai. Dubai Municipality has required BIM on certain project types since 2021, which has noticeably increased demand for BIM coordinators, BIM managers and VDC (Virtual Design &amp; Construction) specialists.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Role</th>
+                <th>Experience</th>
+                <th>Salary (AED/month)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>BIM Coordinator (Junior)</td><td>1–4 years</td><td>8,000–13,000</td></tr>
+              <tr><td>BIM Coordinator (Mid)</td><td>4–7 years</td><td>12,000–18,000</td></tr>
+              <tr><td>BIM Manager</td><td>6–10 years</td><td>18,000–28,000</td></tr>
+              <tr><td>VDC / Digital Delivery Manager</td><td>8–12 years</td><td>22,000–38,000</td></tr>
+              <tr><td>BIM Director</td><td>12+ years</td><td>35,000–60,000+</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Revit + BIM360:</strong> Autodesk Revit proficiency is baseline; BIM360/ACC (Autodesk Construction Cloud) management is now a differentiator at senior levels. Candidates familiar with the ISO 19650 standard are sought-after at Dubai's major contractors and consultancies. BIM experience gained at large architecture firms transfers directly.
+          </div>
+
+          <h2>How PMP, MRICS and LEED Certifications Affect Dubai Salaries</h2>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Certification</th>
+                <th>Discipline</th>
+                <th>Salary Impact</th>
+                <th>Notes</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="cert-badge">PMP</span> Project Management Professional</td><td>Project Management</td><td>+25–35%</td><td>De facto requirement for PM roles</td></tr>
+              <tr><td><span class="cert-badge">MRICS</span> Member of RICS</td><td>QS / Commercial</td><td>+25–40%</td><td>Gold standard for senior QS</td></tr>
+              <tr><td><span class="cert-badge">LEED AP</span></td><td>Architecture / MEP</td><td>+10–20%</td><td>Demand growing for sustainable projects</td></tr>
+              <tr><td><span class="cert-badge">UAE DM</span> Engineer Registration</td><td>Engineering</td><td>Required for upper bands</td><td>Needed for project sign-off rights</td></tr>
+              <tr><td><span class="cert-badge">ISO 19650</span> BIM</td><td>BIM / Digital</td><td>+10–20%</td><td>Preferred on major project tenders</td></tr>
+              <tr><td><span class="cert-badge">MSc / MBA</span></td><td>Project / Commercial</td><td>Decisive at director level</td><td>Technical + management combination valued</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h2>Major Employers in Dubai's Construction Sector</h2>
+
+          <h3>Contractors</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>ALEC:</strong> Dubai-based, one of the largest general contractors; Expo City and Palm projects.</li>
+            <li><strong>Khansaheb:</strong> Mid-sized; MEP and civil construction projects.</li>
+            <li><strong>Drake &amp; Scull International:</strong> Established name in MEP and project management.</li>
+            <li><strong>Turkish contractors (Kalyon, Limak, Kolin):</strong> Active across MENA; prefer bilingual Turkish-English technical staff.</li>
+          </ul>
+
+          <h3>Developers</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>Emaar Properties:</strong> Dubai's largest residential and commercial developer — Burj Khalifa, Dubai Creek Harbour.</li>
+            <li><strong>DAMAC Properties:</strong> Luxury residential; large project management and engineering headcount.</li>
+            <li><strong>Meraas / Dubai Holding:</strong> Mixed-use developments and public realm projects.</li>
+            <li><strong>Nakheel:</strong> Palm projects and waterfront development.</li>
+          </ul>
+
+          <h3>Consultancies &amp; Engineering Firms</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>Atkins (SNC-Lavalin):</strong> Infrastructure and design; large headcount.</li>
+            <li><strong>WSP, Arcadis, AECOM:</strong> Engineering consultancy; international project experience recognised.</li>
+            <li><strong>Turner &amp; Townsend:</strong> QS and project management consultancy; natural target for MRICS holders.</li>
+          </ul>
+
+          <h2>Dubai vs Turkey: Construction Salary Comparison</h2>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Profile</th>
+                <th>Turkey (net TL/month)</th>
+                <th>Dubai (net AED/month)</th>
+                <th>Multiplier</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Mid-level Civil Engineer</td><td>60,000–100,000</td><td>12,000–18,000</td><td>2–3×</td></tr>
+              <tr><td>Mid-level Architect</td><td>50,000–90,000</td><td>12,000–20,000</td><td>2–4×</td></tr>
+              <tr><td>Project Manager (Mid)</td><td>80,000–150,000</td><td>20,000–35,000</td><td>2–4×</td></tr>
+              <tr><td>Senior QS</td><td>70,000–130,000</td><td>20,000–32,000</td><td>3–5×</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p style="font-size:.82rem;color:var(--text-muted)">Turkey figures are approximate net salaries; they vary significantly by sector and company size. Dubai figures are tax-free net amounts.</p>
+
+          <h2>Family Budget Scenarios for Construction Professionals</h2>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Profile</th>
+                <th>Salary</th>
+                <th>Scenario (family of 4)</th>
+                <th>Assessment</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Mid-level Engineer / Architect (single income)</td><td>14,000 AED</td><td>Economy (JVC, KHDA Good school)</td><td>Balanced; limited savings</td></tr>
+              <tr><td>Senior Engineer / QS (single income)</td><td>22,000 AED</td><td>Mid-segment (Motor City, Very Good school)</td><td>Comfortable; ~2,500 AED/month savings</td></tr>
+              <tr><td>PM (PMP, 8+ years)</td><td>30,000 AED</td><td>Comfortable (Arabian Ranches, Outstanding school)</td><td>Strong savings; flexible school choice</td></tr>
+              <tr><td>Project Director / MRICS QS</td><td>50,000+ AED</td><td>Premium</td><td>Villa, Outstanding school, high savings</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p style="font-size:.82rem;color:var(--text-muted)">Scenarios are for a 2-adult, 2-child family. School choice is the single biggest variable in a Dubai family budget — see our <a href="/en/blog/dubai-school-fees-2026/" style="color:var(--accent)">Dubai school fees guide</a> for detailed figures.</p>
+
+          <h2>How to Find a Construction Job in Dubai</h2>
+
+          <h3>General Platforms</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>LinkedIn:</strong> Primary platform for mid and senior roles; "construction Dubai" + position title search is effective.</li>
+            <li><strong>Bayt.com:</strong> MENA's largest job board; strong construction category.</li>
+            <li><strong>GulfTalent:</strong> Strong for engineering and construction positions.</li>
+          </ul>
+
+          <h3>Specialist Channels</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>RICS Careers (rics.org/careers):</strong> QS and commercial roles; dedicated listings for MRICS candidates.</li>
+            <li><strong>PMI Job Board:</strong> PM positions; for PMP holders.</li>
+            <li><strong>Hays UAE, Michael Page UAE:</strong> Recruitment firms for senior construction and architecture roles.</li>
+            <li><strong>Company career pages:</strong> Emaar (careers.emaar.com), ALEC, DAMAC — large developers and contractors hire directly.</li>
+          </ul>
+
+          <div class="blog-callout">
+            <strong>Turkish construction network:</strong> Turkish contractors Kalyon, Limak and Kolin have local offices in Dubai. These firms prefer bilingual Turkish-English technical staff for active MENA projects. Connecting with these firms in Turkey before relocating provides a much smoother transition than starting cold in a new market.
+          </div>
+
+          <div style="background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)">
+            <strong>Summary:</strong> Dubai's construction and architecture sector offers tax-free salaries 2–5× those available in Turkey. A mid-level engineer or architect at 12,000–18,000 AED/month can sustain a family of four economically but sustainably. At senior PM, MRICS QS or project director level, savings and premium school choice run in parallel. The decisive difference is certification: PMP, MRICS or UAE engineer registration effectively removes the salary ceiling. See our <a href="/en/blog/dubai-healthcare-salaries/" style="color:var(--accent)">Dubai Healthcare Salaries guide</a> for the medical sector.
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Evaluate your salary offer with us</h3>
+            <p>Is the construction or architecture offer you've received from Dubai enough? Let's calculate it alongside your family budget and your children's school options.</p>
+            <a href="/en/school-advisory/" class="btn btn-primary">Book a Free Consultation</a>
+          </div>
+
+        </div>
+
+        <!-- DATA DISCLAIMER -->
+        <div style="margin:2rem 0;padding:1.1rem 1.4rem;background:rgba(11,33,58,.03);border:1px solid rgba(11,33,58,.08);border-radius:var(--radius-sm);font-size:.82rem;line-height:1.75;color:var(--text-muted)">
+          <strong style="color:var(--primary);display:block;margin-bottom:.4rem">Data Sources &amp; Disclaimer</strong>
+          Salary ranges are compiled from 2026 job listings on LinkedIn, Bayt.com and GulfTalent; Hays UAE, Michael Page UAE and Turner &amp; Townsend annual salary guides; and regional salary research from RICS and PMI. All AED/TL conversions use the November 2026 approximate rate (1 AED ≈ 13.65 TL). This content is for informational purposes only and does not constitute career advice.
+        </div>
+
+        <!-- FAQ -->
+        <div class="blog-faq">
+          <h2>Frequently Asked Questions</h2>
+
+          <div class="faq-item">
+            <p class="faq-q">How much does a construction professional earn in Dubai?</p>
+            <p class="faq-a">In 2026, a mid-level construction engineer earns 10,000–18,000 AED/month in Dubai, a senior engineer 18,000–30,000 AED/month. A project manager earns 20,000–35,000 AED/month and a senior project director 45,000–80,000+ AED/month. All salaries are net — Dubai has zero personal income tax.</p>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-q">How much does an architect earn in Dubai?</p>
+            <p class="faq-a">A mid-level architect (3–7 years) earns 12,000–20,000 AED/month, a senior architect 18,000–32,000 AED/month, a principal architect or design director 30,000–55,000 AED/month in Dubai 2026. UAE engineer registration is important for reaching the upper band. All figures are tax-free.</p>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-q">How much does a Quantity Surveyor earn in Dubai?</p>
+            <p class="faq-a">A mid-level QS earns 12,000–20,000 AED/month, a senior QS 20,000–32,000 AED/month, and a commercial manager 28,000–45,000 AED/month in Dubai 2026. MRICS certification is near-essential at senior levels and boosts salary by 25–40%. Junior QS starts at 7,000–12,000 AED/month.</p>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-q">How much does PMP certification increase salary in Dubai?</p>
+            <p class="faq-a">PMP certification increases PM salaries by 25–35% in Dubai's construction sector. A non-certified PM earns 15,000–22,000 AED/month while a PMP-certified PM with the same experience commands 20,000–35,000 AED/month. ALEC, Emaar and DAMAC often list PMP as a requirement or strong preference for PM roles.</p>
+          </div>
+
+          <div class="faq-item">
+            <p class="faq-q">Can Turkish construction professionals find jobs in Dubai?</p>
+            <p class="faq-a">Yes. Turkish contractors Kalyon, Limak and Kolin have active Dubai offices and prefer bilingual Turkish-English technical staff. International firms such as ALEC, Atkins and Emaar also hire Turkish engineers, architects and project managers. English technical proficiency and international project experience are the key requirements.</p>
+          </div>
+        </div>
+
+        <!-- AUTHOR BOX -->
+        <aside style="display:flex;gap:1.1rem;align-items:flex-start;margin:2.5rem 0;padding:1.4rem 1.5rem;border:1px solid var(--border-card,rgba(11,33,58,.08));border-left:3px solid var(--accent,#DBAF2E);border-radius:10px;background:var(--bg-card,rgba(11,33,58,.02))">
+          <picture>
+            <source srcset="/assets/founder-avatar-160.webp" type="image/webp">
+            <img src="/assets/founder-avatar-160.webp" alt="Ozlem Cimen" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)">
+          </picture>
+          <div>
+            <p style="margin:0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Author</p>
+            <p style="margin:.15rem 0 .4rem;font-size:1.1rem;font-weight:700"><a href="/en/about/" style="color:var(--primary,#0b213a);text-decoration:none">Ozlem Cimen</a></p>
+            <p style="margin:0;font-size:.95rem;line-height:1.7">International education consultant and founder of Edualist. Over 20 years as a teacher, department head and administrator at TED Istanbul College, ENKA Schools and IICS; raised her children in international schools across 5 countries.</p>
+            <p style="margin:.5rem 0 0;font-size:.9rem"><a href="/en/about/" style="color:var(--accent-hover,#b8921f);font-weight:600">About Ozlem Cimen →</a></p>
+          </div>
+        </aside>
+
+        <!-- CLUSTER BOX -->
+        <aside style="margin:2rem 0;padding:1.4rem 1.5rem;border-radius:10px;background:var(--bg-warm-secondary,#f3efe8)">
+          <p style="margin:0 0 .8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">All guides in this series</p>
+          <p style="margin:0 0 .9rem;font-size:1.15rem;font-weight:700;color:var(--primary,#0b213a)">Dubai Salaries &amp; Cost of Living</p>
+          <ul style="margin:0;padding-left:1.1rem;columns:2 260px;column-gap:2rem;line-height:1.6">
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-salaries-2026/" style="color:var(--primary,#0b213a)">Dubai Salaries 2026: Engineering &amp; IT Guide</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-finance-accounting-legal-salaries/" style="color:var(--primary,#0b213a)">Dubai Salaries: Finance, Accounting &amp; Legal</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-hospitality-tourism-aviation-salaries/" style="color:var(--primary,#0b213a)">Dubai Salaries: Hospitality, Tourism &amp; Aviation</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-healthcare-salaries/" style="color:var(--primary,#0b213a)">Dubai Salaries: Healthcare Sector</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-vs-abu-dhabi-cost-of-living/" style="color:var(--primary,#0b213a)">Dubai vs Abu Dhabi: Cost of Living 2026</a></li>
+            <li style="break-inside:avoid"><a href="/en/blog/dubai-cost-of-living-2026/" style="color:var(--primary,#0b213a)">Dubai Cost of Living 2026: Real Numbers</a></li>
+          </ul>
+        </aside>
+
+      </article>
+    </div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2 style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;color:var(--primary);margin-bottom:1.5rem">Related Guides</h2>
+      <div class="blog-related-grid">
+        <a href="/en/blog/dubai-salaries-2026/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai-maaslar.webp" alt="Dubai Salaries 2026 Engineering IT" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">Dubai Salaries 2026: Engineering &amp; IT Sector Guide</div>
+            <div class="blog-related-card-meta">October 2026 · 10 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/dubai-healthcare-salaries/" class="blog-related-card">
+          <img src="/assets/blog/thumb-dubai-maaslar-saglik.webp" alt="Dubai Healthcare Salaries 2026" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">Dubai Healthcare Salaries 2026: Doctor, Nurse &amp; Dentist Pay</div>
+            <div class="blog-related-card-meta">November 2026 · 12 min</div>
+          </div>
+        </a>
+        <a href="/en/blog/dubai-vs-abu-dhabi-cost-of-living/" class="blog-related-card">
+          <img src="/assets/blog/thumb-maliyet.webp" alt="Dubai vs Abu Dhabi Cost of Living 2026" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">Dubai vs Abu Dhabi: Cost of Living &amp; Family Budget 2026</div>
+            <div class="blog-related-card-meta">November 2026 · 12 min</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Ozlem Cimen guides families through international school selection, curriculum evaluation and transition processes — drawing on over 20 years of experience in international education.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="/en/why-edualist/">Why Edualist?</a></li>
+            <li><a href="/en/school-advisory/">School Advisory</a></li>
+            <li><a href="/en/blog/">Blog</a></li>
+            <li><a href="/en/school-advisory/">Book a Consultation</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>Contact</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div>Dubai, United Arab Emirates</div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. All Rights Reserved.</div>
+        <div><a href="/en/privacy-policy/" style="color:inherit;opacity:0.7">Privacy Policy</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP STICKY -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Hello,%20I%20would%20like%20more%20information" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- AI Chatbot -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="AI Assistant">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+    <span class="chatbot-btn-label">AI Assistant</span>
+  </button>
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>Edualist AI Assistant</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Close">✕</button>
+    </div>
+    <iframe class="chatbot-iframe" src="https://eduentry.com/en/chat-widget" title="Edualist AI Assistant" loading="lazy"></iframe>
+  </div>
+
+  <script>
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('header-scrolled', window.scrollY > 50); }, { passive: true });
+    document.getElementById('menuToggle').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    const chatBtn = document.getElementById('chatbot-btn');
+    const chatPopup = document.getElementById('chatbot-popup');
+    const chatClose = document.getElementById('chatbot-close');
+    if (chatBtn && chatPopup) {
+      chatBtn.addEventListener('click', () => { chatPopup.hidden = !chatPopup.hidden; });
+      chatClose.addEventListener('click', () => { chatPopup.hidden = true; });
+    }
+  </script>
+
+</body>
+</html>

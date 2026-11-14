@@ -419,31 +419,61 @@
     },
     {
       "identifier": "urn:air:edualist.com:content:dubai-healthcare-salaries",
-      "displayName": "Dubai Healthcare Salaries 2026",
-      "description": "Healthcare salaries in Dubai 2026: GP 18,000–45,000 AED/month, specialist physician 35,000–70,000 AED, consultant 65,000–120,000+ AED, nurse 5,000–35,000 AED, dentist 15,000–90,000+ AED, pharmacist 8,000–40,000 AED. DHA licensing process for Turkish doctors.",
+      "displayName": "Dubai Healthcare Salaries 2026 (EN)",
+      "description": "Healthcare salaries in Dubai 2026: GP 18,000–45,000 AED/month, specialist physician 35,000–70,000 AED, consultant 65,000–120,000+ AED, nurse 5,000–35,000 AED, dentist 15,000–90,000+ AED, pharmacist 8,000–40,000 AED. DHA licensing process and Turkey salary comparison.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-healthcare-salaries/",
+      "tags": ["dubai", "salaries", "healthcare", "en"],
+      "representativeQueries": [
+        "How much does a doctor earn in Dubai?",
+        "What is a nurse salary in Dubai?",
+        "How much does a dentist earn in Dubai?",
+        "What is the DHA license process for foreign doctors in Dubai?"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-maaslar-saglik",
+      "displayName": "Dubai Sağlık Sektörü Maaşları 2026 (TR)",
+      "description": "Dubai'de sağlık sektörü maaşları 2026: pratisyen hekim 18.000–45.000 AED/ay, uzman hekim 35.000–70.000 AED, konsültan 65.000–120.000+ AED, hemşire 5.000–35.000 AED, diş hekimi 15.000–90.000+ AED. DHA lisans süreci ve Türkiye karşılaştırması.",
       "type": "text/html",
       "url": "https://www.edualist.com/blog/dubai-maaslar-saglik/",
       "tags": ["dubai", "salaries", "healthcare", "tr"],
       "representativeQueries": [
         "Dubai'de doktor maaşı ne kadar?",
-        "How much does a doctor earn in Dubai?",
-        "What is a nurse salary in Dubai?",
-        "How much does a dentist earn in Dubai?"
+        "Dubai'de hemşire maaşı ne kadar?",
+        "Dubai'de diş hekimi maaşı ne kadar?",
+        "DHA lisansı nasıl alınır?"
       ],
       "updatedAt": "2026-11-14T00:00:00Z"
     },
     {
       "identifier": "urn:air:edualist.com:content:dubai-vs-abu-dhabi",
-      "displayName": "Dubai vs Abu Dhabi 2026: Family Living Cost Comparison",
-      "description": "Dubai vs Abu Dhabi living cost comparison 2026: monthly family budget (Dubai ~28,900 AED vs Abu Dhabi ~24,900 AED, ~14% cheaper), KHDA vs ADEK school ratings, school fees comparison, decision guide for Turkish families.",
+      "displayName": "Dubai vs Abu Dhabi 2026: Cost of Living Comparison (EN)",
+      "description": "Dubai vs Abu Dhabi living cost comparison 2026: monthly family budget (Dubai ~28,900 AED vs Abu Dhabi ~24,900 AED, ~14% cheaper), KHDA vs ADEK school ratings, school fees comparison, decision guide for expat families.",
       "type": "text/html",
-      "url": "https://www.edualist.com/blog/dubai-mi-abu-dhabi-mi-yasam-maliyeti/",
-      "tags": ["dubai", "abu-dhabi", "comparison", "living-cost", "tr"],
+      "url": "https://www.edualist.com/en/blog/dubai-vs-abu-dhabi-cost-of-living/",
+      "tags": ["dubai", "abu-dhabi", "comparison", "living-cost", "en"],
       "representativeQueries": [
         "Is Dubai or Abu Dhabi better for expat families?",
         "Is Abu Dhabi cheaper than Dubai?",
         "How do Abu Dhabi school fees compare to Dubai?",
         "Dubai vs Abu Dhabi living costs for a family of four"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-mi-abu-dhabi-mi",
+      "displayName": "Dubai mi Abu Dhabi mi? 2026 Yaşam Maliyeti Karşılaştırması (TR)",
+      "description": "Dubai ve Abu Dhabi yaşam maliyeti karşılaştırması 2026: aylık aile bütçesi (Dubai ~28.900 AED vs Abu Dhabi ~24.900 AED, ~%14 ucuz), KHDA ve ADEK okul dereceleri, okul ücreti karşılaştırması, karar rehberi.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/blog/dubai-mi-abu-dhabi-mi-yasam-maliyeti/",
+      "tags": ["dubai", "abu-dhabi", "comparison", "living-cost", "tr"],
+      "representativeQueries": [
+        "Dubai mı Abu Dhabi mi daha pahalı?",
+        "Abu Dhabi Dubai'ye göre ne kadar ucuz?",
+        "Abu Dhabi okul ücretleri Dubai'ye göre nasıl?",
+        "Dubai ve Abu Dhabi kira fiyatları 2026"
       ],
       "updatedAt": "2026-11-14T00:00:00Z"
     },
@@ -474,6 +504,186 @@
         "How do Robert Kolej fees compare to Dubai international schools?",
         "Is international education in Dubai affordable for Turkish families?",
         "Turkey vs Dubai school cost comparison 2026"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-construction-architecture-salaries",
+      "displayName": "Dubai Construction & Architecture Salaries 2026 (EN)",
+      "description": "Construction and architecture salaries in Dubai 2026: project manager 20,000–50,000 AED/month, architect 12,000–70,000+ AED, quantity surveyor 12,000–70,000+ AED, BIM specialist 8,000–60,000+ AED. PMP +25–35%, MRICS +25–40% premium analysis.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-construction-architecture-salaries/",
+      "tags": ["dubai", "salaries", "construction", "architecture", "en"],
+      "representativeQueries": [
+        "How much does a project manager earn in Dubai?",
+        "What is a quantity surveyor salary in Dubai?",
+        "How much does an architect earn in Dubai?",
+        "Does PMP certification increase salary in Dubai?"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-maaslar-insaat-mimarlik",
+      "displayName": "Dubai İnşaat ve Mimarlık Maaşları 2026 (TR)",
+      "description": "Dubai'de inşaat ve mimarlık sektörü maaşları 2026: proje yöneticisi 20.000–50.000 AED/ay, mimar 12.000–70.000+ AED, QS 12.000–70.000+ AED, BIM uzmanı 8.000–60.000+ AED. PMP ve MRICS sertifika etkileri.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/blog/dubai-maaslar-insaat-mimarlik/",
+      "tags": ["dubai", "salaries", "construction", "architecture", "tr"],
+      "representativeQueries": [
+        "Dubai'de inşaat mühendisi maaşı ne kadar?",
+        "Dubai'de proje yöneticisi maaşı ne kadar?",
+        "Dubai'de mimar maaşı ne kadar?",
+        "PMP sertifikası Dubai maaşını ne kadar artırıyor?"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-finance-accounting-legal-salaries",
+      "displayName": "Dubai Finance, Accounting & Legal Salaries 2026 (EN)",
+      "description": "Finance, accounting and legal salaries in Dubai 2026: CFO 55,000–110,000 AED/month, finance manager 25,000–55,000 AED, senior accountant 15,000–28,000 AED, lawyer 25,000–80,000 AED. CFA/ACCA/CPA premium analysis.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-finance-accounting-legal-salaries/",
+      "tags": ["dubai", "salaries", "finance", "accounting", "legal", "en"],
+      "representativeQueries": [
+        "How much does a finance manager earn in Dubai?",
+        "What is an accountant salary in Dubai?",
+        "How much do lawyers earn in Dubai?",
+        "Does CFA certification increase salary in Dubai?"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-maaslar-finans-muhasebe-hukuk",
+      "displayName": "Dubai Finans, Muhasebe ve Hukuk Maaşları 2026 (TR)",
+      "description": "Dubai'de finans, muhasebe ve hukuk sektörü maaşları 2026: CFO 55.000–110.000 AED/ay, finans müdürü 25.000–55.000 AED, kıdemli muhasebeci 15.000–28.000 AED, avukat 25.000–80.000 AED. CFA/ACCA/CPA etkileri.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/blog/dubai-maaslar-finans-muhasebe-hukuk/",
+      "tags": ["dubai", "salaries", "finance", "accounting", "legal", "tr"],
+      "representativeQueries": [
+        "Dubai'de finans müdürü maaşı ne kadar?",
+        "Dubai'de muhasebeci maaşı ne kadar?",
+        "Dubai'de avukat maaşı ne kadar?",
+        "CFA sertifikası Dubai maaşını ne kadar artırıyor?"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-hospitality-tourism-aviation-salaries",
+      "displayName": "Dubai Hospitality, Tourism & Aviation Salaries 2026 (EN)",
+      "description": "Hospitality, tourism and aviation salaries in Dubai 2026: hotel general manager 55,000–120,000 AED/month, F&B manager 20,000–40,000 AED, Emirates cabin crew 7,000–14,000 AED plus allowances, pilot 55,000–100,000+ AED.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-hospitality-tourism-aviation-salaries/",
+      "tags": ["dubai", "salaries", "hospitality", "tourism", "aviation", "en"],
+      "representativeQueries": [
+        "How much does a hotel manager earn in Dubai?",
+        "What is Emirates cabin crew salary?",
+        "How much do pilots earn in Dubai?",
+        "What is a restaurant manager salary in Dubai?"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-maaslar-otelcilik-turizm-havayollari",
+      "displayName": "Dubai Otelcilik, Turizm ve Havacılık Maaşları 2026 (TR)",
+      "description": "Dubai'de otelcilik, turizm ve havacılık sektörü maaşları 2026: otel genel müdürü 55.000–120.000 AED/ay, F&B müdürü 20.000–40.000 AED, Emirates kabin memuru 7.000–14.000 AED, pilot 55.000–100.000+ AED.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/blog/dubai-maaslar-otelcilik-turizm-havayollari/",
+      "tags": ["dubai", "salaries", "hospitality", "tourism", "aviation", "tr"],
+      "representativeQueries": [
+        "Dubai'de otel müdürü maaşı ne kadar?",
+        "Emirates kabin memuru maaşı ne kadar?",
+        "Dubai'de pilot maaşı ne kadar?",
+        "Dubai'de turizm sektörü maaşları 2026"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:school-enrolment-germany",
+      "displayName": "Germany School Enrolment Guide 2026 (EN)",
+      "description": "How to enrol children in German schools: state school registration, international school options, Gymnasium entry, language requirements and timelines for expat families.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/school-enrolment-germany/",
+      "tags": ["germany", "school-enrolment", "en"],
+      "representativeQueries": [
+        "How do I enrol my child in a German school?",
+        "What are the best international schools in Germany?",
+        "How does the German school system work for expat children?",
+        "What language level is needed to enter a German Gymnasium?"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:almanya-okul-kayit-rehberi",
+      "displayName": "Almanya Okul Kayıt Rehberi 2026 (TR)",
+      "description": "Almanya'da çocukları okula kaydettirme rehberi: devlet okulu kayıt süreci, uluslararası okul seçenekleri, Gymnasium girişi, dil gereksinimleri ve süreçler.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/blog/almanya-okul-kayit-rehberi/",
+      "tags": ["germany", "school-enrolment", "tr"],
+      "representativeQueries": [
+        "Almanya'da okula nasıl kaydolunur?",
+        "Almanya'daki uluslararası okullar nelerdir?",
+        "Almanya'da devlet okulu ücretsiz mi?",
+        "Almanya'da Gymnasium'a nasıl girilir?"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:school-enrolment-netherlands",
+      "displayName": "Netherlands School Enrolment Guide 2026 (EN)",
+      "description": "How to enrol children in Dutch schools: international schools, Dutch state schools, the Netherlands' three-tier system (VMBO/HAVO/VWO), and practical guide for expat families.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/school-enrolment-netherlands/",
+      "tags": ["netherlands", "school-enrolment", "en"],
+      "representativeQueries": [
+        "How do I enrol my child in a Dutch school?",
+        "What are the best international schools in the Netherlands?",
+        "How does the Dutch school system work for expats?",
+        "What is the difference between HAVO and VWO in Netherlands?"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:hollanda-okul-kayit-rehberi",
+      "displayName": "Hollanda Okul Kayıt Rehberi 2026 (TR)",
+      "description": "Hollanda'da okula kayıt rehberi: uluslararası okullar, Hollanda devlet okulları, üç kademeli sistem (VMBO/HAVO/VWO) ve süreçler hakkında Türk aileler için pratik rehber.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/blog/hollanda-okul-kayit-rehberi/",
+      "tags": ["netherlands", "school-enrolment", "tr"],
+      "representativeQueries": [
+        "Hollanda'da okula nasıl kaydolunur?",
+        "Hollanda'daki uluslararası okullar nelerdir?",
+        "HAVO ve VWO arasındaki fark nedir?",
+        "Hollanda'da okul sistemi nasıl çalışır?"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:uk-school-enrolment",
+      "displayName": "UK School Enrolment Guide 2026 (EN)",
+      "description": "How to enrol children in UK schools: state school admissions via local authority, independent school applications, GCSEs and A-Levels, and practical guide for expat families moving to the United Kingdom.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/uk-school-enrolment/",
+      "tags": ["uk", "school-enrolment", "en"],
+      "representativeQueries": [
+        "How do I enrol my child in a UK school?",
+        "How does the UK school system work for expat families?",
+        "What is the difference between state and independent schools in the UK?",
+        "How do UK school applications work for Year 7 entry?"
+      ],
+      "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:ingiltere-okul-kayit-rehberi",
+      "displayName": "İngiltere Okul Kayıt Rehberi 2026 (TR)",
+      "description": "İngiltere'de okula kayıt rehberi: yerel yönetim üzerinden devlet okulu başvurusu, bağımsız okul başvuruları, GCSE ve A-Level sistemi, Birleşik Krallık'a taşınan aileler için pratik rehber.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/blog/ingiltere-okul-kayit-rehberi/",
+      "tags": ["uk", "school-enrolment", "tr"],
+      "representativeQueries": [
+        "İngiltere'de okula nasıl kaydolunur?",
+        "İngiltere okul sistemi nasıl çalışır?",
+        "İngiltere devlet ve özel okulları arasındaki fark nedir?",
+        "İngiltere'de Year 7 başvurusu nasıl yapılır?"
       ],
       "updatedAt": "2026-11-14T00:00:00Z"
     }
