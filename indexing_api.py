@@ -35,6 +35,10 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Nov 2026 — CTR fix: eal-nedir + ib-vs-a-level-vs-ap title/meta updates
+    "https://www.edualist.com/blog/eal-nedir/",
+    "https://www.edualist.com/en/blog/ib-vs-a-level-vs-ap/",
+
     # Nov 2026 — Internal linking: related-section cluster fix + 96 pages with new in-text links
     # CAT4 + child academic support cluster (related sections restructured)
     "https://www.edualist.com/blog/cat4-sinavi-nedir/",
