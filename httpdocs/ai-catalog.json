@@ -686,6 +686,23 @@
         "İngiltere'de Year 7 başvurusu nasıl yapılır?"
       ],
       "updatedAt": "2026-11-14T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:abu-dhabi-okul-ucretleri-2026-2027",
+      "displayName": "Abu Dhabi Okul Ücretleri 2026-2027: ADEK Notlu Top 15 Okul (TR)",
+      "description": "Abu Dhabi uluslararası okul ücretleri 2026-27: 20,000–103,000 AED. ADEK Outstanding 12 okul dahil top 15 — Cranleigh (69,670–103,260 AED), ACS, Nord Anglia, BISAD, Repton (63,351–80,960 AED), Brighton College, BSAK (45,560–74,560 AED), Aldar network (Muna/Yasmina/Bateen/Pearl), Canadian Int'l, Aspen Heights, ADIS, Merryland. ADEK Irtiqa'a framework, enrollment process, hidden costs, Dubai vs Abu Dhabi school comparison.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/blog/abu-dhabi-okul-ucretleri-2026-2027/",
+      "tags": ["abu-dhabi", "school-fees", "adek", "tr"],
+      "representativeQueries": [
+        "Abu Dhabi'de okul ücreti ne kadar?",
+        "Abu Dhabi ADEK Outstanding okullar hangileri?",
+        "Cranleigh Abu Dhabi ücret 2026",
+        "BSAK BISAD Repton Abu Dhabi ücretleri",
+        "Aldar Academies okul ücretleri",
+        "Abu Dhabi ile Dubai okul kalitesi karşılaştırması"
+      ],
+      "updatedAt": "2026-11-16T00:00:00Z"
     }
   ]
 }
