@@ -35,6 +35,26 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Nov 2026 — Internal linking: related-section cluster fix + 96 pages with new in-text links
+    # CAT4 + child academic support cluster (related sections restructured)
+    "https://www.edualist.com/blog/cat4-sinavi-nedir/",
+    "https://www.edualist.com/blog/cat4-ornek-sorular/",
+    "https://www.edualist.com/blog/cocugum-sinav-kaygisi-yasiyor/",
+    "https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/",
+    "https://www.edualist.com/blog/cocugum-ingilizce-ogrenemiyor/",
+    "https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/",
+    # High-traffic pages that gained new in-text links
+    "https://www.edualist.com/blog/dubai-top-10-okullari/",
+    "https://www.edualist.com/blog/dubai-ib-okullari-mezun-basarisi/",
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
+    "https://www.edualist.com/blog/dubai-okul-ucretleri-2026/",
+    "https://www.edualist.com/blog/dubai-ilkokul-ortaokul-gecisi/",
+    "https://www.edualist.com/blog/cocugunuzun-gercek-akademik-seviyesi/",
+    "https://www.edualist.com/blog/dubai-okul-kayit-rehberi/",
+    "https://www.edualist.com/blog/dubai-turk-aileler-okul-rehberi/",
+    "https://www.edualist.com/blog/international-school-nedir/",
+    "https://www.edualist.com/blog/eal-nedir/",
+
     # Nov 2026 — GSC 404 fix destinations (re-crawl after redirect rules deployed)
     "https://www.edualist.com/blog/ingilizcesi-yetersiz-cocuk-dubai-okulu-uyum/",
     "https://www.edualist.com/en/blog/ib-vs-a-level-vs-ap/",
