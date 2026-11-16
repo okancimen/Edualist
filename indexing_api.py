@@ -35,6 +35,15 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Nov 2026 — SEO CTR fix: title/meta/OG/twitter updated for 7 high-impression low-CTR pages
+    "https://www.edualist.com/en/blog/dubai-school-holidays/",
+    "https://www.edualist.com/blog/robert-kolej-ucreti-2026/",
+    "https://www.edualist.com/en/blog/cat4-test-dubai/",
+    "https://www.edualist.com/blog/international-school-nedir/",
+    "https://www.edualist.com/en/blog/what-is-eal/",
+    "https://www.edualist.com/en/blog/ib-diploma-university-requirements/",
+    "https://www.edualist.com/en/blog/repton-school-dubai-review/",
+
     # Nov 2026 — Grup 2 visibility fix: title/meta/OG/content update for 10 low-ranking pages
     "https://www.edualist.com/blog/pisa-2025-turkiye-sonuclari/",
     "https://www.edualist.com/blog/pisa-2025-erken-is-deneyimi/",
