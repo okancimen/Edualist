@@ -35,6 +35,13 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Nov 2026 — CTR fix: 5 blog title/meta/OG update (GSC CTR 0% despite impressions)
+    "https://www.edualist.com/blog/dubai-turk-aileler-okul-rehberi/",
+    "https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/",
+    "https://www.edualist.com/blog/turkiyeden-dubaya-tasima-cocuk-okul/",
+    "https://www.edualist.com/blog/dubai-gelmeden-once-bilmeniz-gerekenler/",
+    "https://www.edualist.com/blog/lgs-surecinde-ders-calis-savaslari/",
+
     # Nov 2026 — CTR fix: eal-nedir + ib-vs-a-level-vs-ap title/meta updates
     "https://www.edualist.com/blog/eal-nedir/",
     "https://www.edualist.com/en/blog/ib-vs-a-level-vs-ap/",
