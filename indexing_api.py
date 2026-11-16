@@ -35,6 +35,21 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Nov 2026 — Grup 2 visibility fix: title/meta/OG/content update for 10 low-ranking pages
+    "https://www.edualist.com/blog/pisa-2025-turkiye-sonuclari/",
+    "https://www.edualist.com/blog/pisa-2025-erken-is-deneyimi/",
+    "https://www.edualist.com/blog/cocugum-ib-ye-basliyor/",
+    "https://www.edualist.com/blog/cocuklar-icin-gelecek-becerileri/",
+    "https://www.edualist.com/blog/gems-jumeirah-primary-school-dubai-incelemesi/",
+    "https://www.edualist.com/blog/nord-anglia-dubai-incelemesi/",
+    "https://www.edualist.com/blog/dubai-ilkokul-ortaokul-gecisi/",
+    "https://www.edualist.com/blog/dubai-okul-karsilastirma/",
+    "https://www.edualist.com/blog/cocugum-uluslararasi-okula-geciyor/",
+    "https://www.edualist.com/blog/dubai-international-academy-incelemesi/",
+
+    # Nov 2026 — New post: Abu Dhabi okul ücretleri 2026-2027 (Top 15 ADEK guide)
+    "https://www.edualist.com/blog/abu-dhabi-okul-ucretleri-2026-2027/",
+
     # Nov 2026 — CTR fix: 5 blog title/meta/OG update (GSC CTR 0% despite impressions)
     "https://www.edualist.com/blog/dubai-turk-aileler-okul-rehberi/",
     "https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/",
