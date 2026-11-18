@@ -958,6 +958,7 @@
   <url>
     <loc>https://www.edualist.com/blog/cocugum-ingilizce-ogrenemiyor/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-ingilizce-ogrenemiyor/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/my-child-cant-learn-english/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-ingilizce-ogrenemiyor/"/>
     <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -977,6 +978,7 @@
   <url>
     <loc>https://www.edualist.com/blog/cocugum-okul-degistiriyor/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-okul-degistiriyor/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/my-child-is-changing-schools/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-okul-degistiriyor/"/>
     <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -1025,6 +1027,7 @@
   <url>
     <loc>https://www.edualist.com/blog/cocugunuz-yurt-disinda-okumaya-hazir-mi/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugunuz-yurt-disinda-okumaya-hazir-mi/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/is-your-child-ready-for-international-school/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugunuz-yurt-disinda-okumaya-hazir-mi/"/>
     <lastmod>2026-10-03</lastmod>
     <changefreq>monthly</changefreq>
@@ -1361,6 +1364,7 @@
   <url>
     <loc>https://www.edualist.com/blog/dubai-turk-aileler-okul-rehberi/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-turk-aileler-okul-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/turkish-families-dubai-school-guide/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-turk-aileler-okul-rehberi/"/>
     <lastmod>2026-10-04</lastmod>
     <changefreq>monthly</changefreq>
@@ -1802,6 +1806,7 @@
   <url>
     <loc>https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/my-sons-english-was-good-enough/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/"/>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -2058,6 +2063,7 @@
   <url>
     <loc>https://www.edualist.com/blog/universitede-fark-yaratan-aktiviteler/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/universitede-fark-yaratan-aktiviteler/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/extracurricular-activities-university-application/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/universitede-fark-yaratan-aktiviteler/"/>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -2087,6 +2093,7 @@
   <url>
     <loc>https://www.edualist.com/blog/yurt-disi-universite-hazirlik-lisede/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/yurt-disi-universite-hazirlik-lisede/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/international-university-preparation-high-school/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/yurt-disi-universite-hazirlik-lisede/"/>
     <lastmod>2026-10-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -2405,6 +2412,76 @@
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-uluslararasi-okula-geciyor/"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-uluslararasi-okula-geciyor/"/>
     <lastmod>2026-10-27</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/my-child-cant-learn-english/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/my-child-cant-learn-english/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-ingilizce-ogrenemiyor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-ingilizce-ogrenemiyor/"/>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/my-child-is-changing-schools/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/my-child-is-changing-schools/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugum-okul-degistiriyor/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugum-okul-degistiriyor/"/>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/is-your-child-ready-for-international-school/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/is-your-child-ready-for-international-school/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/cocugunuz-yurt-disinda-okumaya-hazir-mi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/cocugunuz-yurt-disinda-okumaya-hazir-mi/"/>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/turkish-families-dubai-school-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/turkish-families-dubai-school-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-turk-aileler-okul-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-turk-aileler-okul-rehberi/"/>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/my-sons-english-was-good-enough/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/my-sons-english-was-good-enough/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/"/>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/extracurricular-activities-university-application/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/extracurricular-activities-university-application/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/universitede-fark-yaratan-aktiviteler/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/universitede-fark-yaratan-aktiviteler/"/>
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/international-university-preparation-high-school/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/international-university-preparation-high-school/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/yurt-disi-universite-hazirlik-lisede/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/yurt-disi-universite-hazirlik-lisede/"/>
+    <lastmod>2026-11-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>

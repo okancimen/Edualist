@@ -31,9 +31,30 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # Kasım 2026 — 7 EN çevirisi
+    "https://www.edualist.com/en/blog/my-child-cant-learn-english/",
+    "https://www.edualist.com/en/blog/my-child-is-changing-schools/",
+    "https://www.edualist.com/en/blog/is-your-child-ready-for-international-school/",
+    "https://www.edualist.com/en/blog/turkish-families-dubai-school-guide/",
+    "https://www.edualist.com/en/blog/my-sons-english-was-good-enough/",
+    "https://www.edualist.com/en/blog/extracurricular-activities-university-application/",
+    "https://www.edualist.com/en/blog/international-university-preparation-high-school/",
     # ── Yeni eklenen / son değişenler — BURAYA EKLE, en fazla ~150 URL ──────────
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
+
+    # Nov 2026 — GSC "Discovered not indexed" push: 11 EN blog pages never crawled
+    "https://www.edualist.com/en/blog/academic-support-expat-child-dubai/",
+    "https://www.edualist.com/en/blog/cat4-practice-test-sample-questions/",
+    "https://www.edualist.com/en/blog/child-starting-international-school-dubai/",
+    "https://www.edualist.com/en/blog/dubai-school-application-timeline-2027/",
+    "https://www.edualist.com/en/blog/dubai-school-comparison/",
+    "https://www.edualist.com/en/blog/dubai-school-hidden-costs/",
+    "https://www.edualist.com/en/blog/dubai-school-selection-mistakes/",
+    "https://www.edualist.com/en/blog/dubai-secondary-school-guide/",
+    "https://www.edualist.com/en/blog/gems-founders-school-dubai-review/",
+    "https://www.edualist.com/en/blog/searching-for-turkish-school-dubai/",
+    "https://www.edualist.com/en/blog/year-6-to-year-7-transition-dubai/",
 
     # Nov 2026 — SEO CTR fix: title/meta/OG/twitter updated for 7 high-impression low-CTR pages
     "https://www.edualist.com/en/blog/dubai-school-holidays/",
