@@ -210,6 +210,14 @@ ErrorDocument 404 /404.html
   RewriteRule ^en/blog/future-skills-for-children(/index\.html)?/?$ /en/blog/ai-proof-jobs/ [R=301,L]
   RewriteRule ^en/blog/uae-international-school-guide(/index\.html)?/?$ /en/blog/abu-dhabi-international-schools/ [R=301,L]
 
+  # Catch-all: bare /{slug}/ → /blog/{slug}/ when that blog directory exists on disk.
+  # Covers all current and future TR blog posts without individual rules.
+  # Must come before the trailing-slash rule so it fires first.
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  RewriteCond %{DOCUMENT_ROOT}/blog%{REQUEST_URI} -d
+  RewriteRule ^([^/]+)/?$ /blog/$1/ [R=301,L]
+
   # www + no trailing slash + no file extension → add trailing slash (explicit, not mod_dir dependent)
   RewriteCond %{HTTP_HOST} ^www\.edualist\.com$ [NC]
   RewriteCond %{REQUEST_URI} !/$
