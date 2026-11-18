@@ -140,6 +140,32 @@ SCHOOLS = {
         't2': 'Primary İncelemesi 2026',
         'sub': 'KHDA Outstanding · FS1–Year 6 · AED 42k–52k',
     },
+    'dess-desc-dubai-incelemesi': {
+        'logo_url': None,
+        'initials': 'DD',
+        'logo_bg': 'dark',
+        'kicker': 'DUBAİ · İNGİLİZ OKULU',
+        't1': 'DESS & DESC',
+        't2': 'Dubai İncelemesi 2026',
+        'sub': 'KHDA Outstanding · Topluluk Vakfı · AED 23k–58k',
+    },
+    'gems-world-academy-dubai-incelemesi': {
+        'logo_url': 'https://www.gemseducation.com/-/media/project/gems/corporate/_generic-content-images/gems-logo-navy-rgb.svg',
+        'logo_bg': 'white',
+        'kicker': 'DUBAİ · IB OKULU',
+        't1': 'GEMS World Academy',
+        't2': 'Dubai İncelemesi 2026',
+        'sub': 'KHDA Outstanding · Tam IB · AED 55k–105k',
+    },
+    'raffles-world-academy-dubai-incelemesi': {
+        'logo_url': None,
+        'initials': 'RWA',
+        'logo_bg': 'dark',
+        'kicker': 'DUBAİ · IB OKULU',
+        't1': 'Raffles World',
+        't2': 'Academy İncelemesi 2026',
+        'sub': 'KHDA Outstanding · Tam IB · Umm Suqeim 3',
+    },
 }
 
 HEADERS = {
