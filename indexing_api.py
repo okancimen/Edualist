@@ -31,6 +31,8 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # Kasım 2026 — TR yapay-zekaya-direncli-meslekler: tam 65 meslek tablosu eklendi
+    "https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/",
     # Kasım 2026 — 7 EN çevirisi
     "https://www.edualist.com/en/blog/my-child-cant-learn-english/",
     "https://www.edualist.com/en/blog/my-child-is-changing-schools/",
