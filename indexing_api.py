@@ -45,6 +45,14 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Kasım 2026 — 6 yeni okul incelemesi (DESS/DESC, GEMS World Academy, Raffles World Academy)
+    "https://www.edualist.com/blog/dess-desc-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/dess-desc-dubai-review/",
+    "https://www.edualist.com/blog/gems-world-academy-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/gems-world-academy-dubai-review/",
+    "https://www.edualist.com/blog/raffles-world-academy-dubai-incelemesi/",
+    "https://www.edualist.com/en/blog/raffles-world-academy-dubai-review/",
+
     # Nov 2026 — GSC "Discovered not indexed" push: 11 EN blog pages never crawled
     "https://www.edualist.com/en/blog/academic-support-expat-child-dubai/",
     "https://www.edualist.com/en/blog/cat4-practice-test-sample-questions/",
