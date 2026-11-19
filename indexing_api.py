@@ -45,6 +45,10 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Kasım 2026 — Yeni post: Dubai okul kaydı belgeleri rehberi (apostil, TC, Emirates ID, KHDA sözleşmesi)
+    "https://www.edualist.com/blog/dubai-okul-kaydi-apostil-rehberi/",
+    "https://www.edualist.com/en/blog/dubai-school-enrollment-documents-guide/",
+
     # Kasım 2026 — 6 yeni okul incelemesi (DESS/DESC, GEMS World Academy, Raffles World Academy)
     "https://www.edualist.com/blog/dess-desc-dubai-incelemesi/",
     "https://www.edualist.com/en/blog/dess-desc-dubai-review/",
