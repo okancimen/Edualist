@@ -45,6 +45,13 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Kasım 2026 — Page 3 iç link yapısı: 3 hedef sayfaya 9 inline body link eklendi
+    "https://www.edualist.com/en/blog/dubai-top-schools/",
+    "https://www.edualist.com/en/blog/dubai-khda-outstanding-schools/",
+    "https://www.edualist.com/en/blog/dubai-school-scholarships/",
+    "https://www.edualist.com/en/blog/cat4-test-dubai/",
+    "https://www.edualist.com/en/blog/international-school-interview-questions/",
+
     # Kasım 2026 — Medium-term SERP: title 2026→2026-27, meta desc güncellendi (3 EN sayfa)
     "https://www.edualist.com/en/blog/dubai-british-schools-a-level/",
     "https://www.edualist.com/en/blog/ib-diploma-university-requirements/",
