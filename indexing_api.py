@@ -45,6 +45,15 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Kasım 2026 — GA bounce fix: EN ana sayfa header güncellendi + 6 sayfaya iç link eklendi
+    "https://www.edualist.com/en/",
+    "https://www.edualist.com/en/blog/dubai-khda-outstanding-schools/",
+    "https://www.edualist.com/en/blog/my-childs-character-strengths/",
+    "https://www.edualist.com/en/blog/dubai-education-system/",
+    "https://www.edualist.com/en/blog/international-education-cost/",
+    "https://www.edualist.com/blog/anxious-generation-oyun-temelli-cocukluk/",
+    "https://www.edualist.com/en/blog/dubai-top-schools/",
+
     # Kasım 2026 — İç link eklendi: dubai-gcse-nedir + fransa bounce fix (3 inline link)
     "https://www.edualist.com/blog/dubai-gcse-nedir/",
     "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",

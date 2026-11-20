@@ -166,6 +166,9 @@ ErrorDocument 404 /404.html
   # Redirect old dubai slug to new Turkish slug (also catches /index.html variant)
   RewriteRule ^blog/dubai-school-guide(/index\.html)?/?$ /blog/dubai-gelmeden-once-bilmeniz-gerekenler/ [R=301,L]
 
+  # GSC 404 fix: typo slug anxous → anxious (Nov 2026)
+  RewriteRule ^en/blog/anxous(/index\.html)?/?$ /en/blog/anxious-generation-teen-mental-health/ [R=301,L]
+
   # GSC 404 fixes (Oct 2026)
   RewriteRule ^en/school-advisory(/index\.html)?/?$ /en/international-school-consulting/ [R=301,L]
   RewriteRule ^en/dubai-schools(/index\.html)?/?$ /en/dubai/ [R=301,L]
