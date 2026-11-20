@@ -45,6 +45,13 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Kasım 2026 — İç link eklendi: dubai-gcse-nedir + fransa bounce fix (3 inline link)
+    "https://www.edualist.com/blog/dubai-gcse-nedir/",
+    "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",
+    "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
+    "https://www.edualist.com/blog/dubai-top-10-okullari/",
+    "https://www.edualist.com/blog/fransa-okul-kayit-rehberi/",
+
     # Kasım 2026 — Yeni post: Dubai okul kaydı belgeleri rehberi (apostil, TC, Emirates ID, KHDA sözleşmesi)
     "https://www.edualist.com/blog/dubai-okul-kaydi-apostil-rehberi/",
     "https://www.edualist.com/en/blog/dubai-school-enrollment-documents-guide/",
