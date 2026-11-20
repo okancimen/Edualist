@@ -45,6 +45,11 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Kasım 2026 — Medium-term SERP: title 2026→2026-27, meta desc güncellendi (3 EN sayfa)
+    "https://www.edualist.com/en/blog/dubai-british-schools-a-level/",
+    "https://www.edualist.com/en/blog/ib-diploma-university-requirements/",
+    "https://www.edualist.com/en/blog/what-is-eal/",
+
     # Kasım 2026 — GA bounce fix: EN ana sayfa header güncellendi + 6 sayfaya iç link eklendi
     "https://www.edualist.com/en/",
     "https://www.edualist.com/en/blog/dubai-khda-outstanding-schools/",
