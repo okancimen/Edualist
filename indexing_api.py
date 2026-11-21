@@ -45,6 +45,12 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Kasım 2026 — YENİ: dubai-maaslar-yazilim-teknoloji (developer/DevOps/data/siber güvenlik maaş rehberi)
+    "https://www.edualist.com/blog/dubai-maaslar-yazilim-teknoloji/",
+    # Kasım 2026 — repton: JSON-LD headline yıl düzeltmesi (2026→2027), dateModified güncellendi
+    "https://www.edualist.com/blog/repton-school-dubai-incelemesi/",
+    # Kasım 2026 — dubai-egitim-sistemi: truncated meta açıklaması düzeltildi
+    "https://www.edualist.com/blog/dubai-egitim-sistemi/",
     # Kasım 2026 — dubai-school-holidays: JSON-LD yıl düzeltmesi (2027-28→2026-27), meta desc güncellendi
     "https://www.edualist.com/en/blog/dubai-school-holidays/",
 

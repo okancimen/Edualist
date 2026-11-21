@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});})();
+  </script>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex}.lang-btn{background:transparent;border:1px solid rgba(11,33,58,.15);padding:5px 11px;font-size:.9rem;font-weight:600;color:var(--primary);cursor:pointer;border-radius:var(--radius-sm);transition:var(--transition-fast);display:flex;align-items:center;gap:4px}.lang-btn:hover{background:rgba(11,33,58,.07);border-color:rgba(11,33,58,.3)}html[lang=tr] .lang-btn[data-lang=tr]{display:none!important}html[lang=en] .lang-btn[data-lang=en]{display:none!important}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}.blog-seo-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.75rem}.blog-seo-tag{background:hsla(43,60%,52%,.1);color:var(--primary);font-size:.78rem;font-weight:500;padding:.25rem .7rem;border-radius:50px;border:1px solid hsla(43,60%,52%,.2)}.blog-post-cta{padding:2rem 2.5rem;border-radius:var(--radius-lg);margin:2.5rem 0}.blog-post-cta h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:700;color:var(--primary);margin-bottom:.6rem}.blog-post-cta p{color:var(--text-muted);margin-bottom:1.25rem;font-size:.97rem}.blog-faq{margin:2.5rem 0}.blog-faq h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;margin-bottom:1.5rem}.faq-item{border-bottom:1px solid hsla(212,66%,13%,.08);padding:1.1rem 0}.faq-q{font-size:1rem;font-weight:600;color:var(--primary);margin-bottom:.5rem}.faq-a{font-size:.93rem;color:var(--text-muted);line-height:1.7}.blog-related-section{padding:3rem 0 4rem;background:var(--bg-warm-secondary)}.blog-related-section h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:2rem;color:var(--primary);margin-bottom:2rem;text-align:center}.blog-related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}@media (max-width:900px){.blog-related-grid{grid-template-columns:1fr 1fr}}@media (max-width:600px){.blog-related-grid{grid-template-columns:1fr}}.blog-related-card{display:block;border-radius:var(--radius-md);overflow:hidden;background:#fff;box-shadow:var(--shadow-sm);transition:var(--transition-smooth)}.blog-related-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}.blog-related-card img{width:100%;height:160px;object-fit:cover}.blog-related-card-body{padding:1rem}.blog-related-card-title{font-size:.95rem;font-weight:600;color:var(--primary);line-height:1.4;margin-bottom:.4rem}.blog-related-card-meta{font-size:.78rem;color:var(--text-muted)}.footer{background:var(--primary);color:var(--text-light);padding:4rem 0 2rem}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}@media (max-width:768px){.footer-grid{grid-template-columns:1fr;gap:2rem}}.footer-bio-col h3{font-family:var(--font-serif);font-size:1.6rem;font-weight:600;margin-bottom:1rem;color:var(--text-light)}.footer-bio-text{font-size:.92rem;color:rgba(255,255,255,.7);line-height:1.7}.footer-links-col h4,.footer-contact-col h4{font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;font-weight:600;color:var(--accent);margin-bottom:1rem}.footer-links{list-style:none;display:flex;flex-direction:column;gap:.6rem}.footer-links a{font-size:.9rem;color:rgba(255,255,255,.75);transition:color .2s}.footer-links a:hover{color:var(--accent)}.footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}.footer-contact-item{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem;color:rgba(255,255,255,.75)}.footer-contact-item svg{flex-shrink:0;stroke:var(--accent);margin-top:.1rem}.footer-contact-item a{color:rgba(255,255,255,.75)}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.82rem;color:rgba(255,255,255,.5);flex-wrap:wrap;gap:.75rem}@media (max-width:768px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai'de Yazılım ve Teknoloji Maaşları 2026-27 | Edualist</title>
+  <meta name="description" content="Dubai'de yazılım maaşları: Junior developer 7–11k AED, senior 18–28k AED, DevOps 15–22k AED, data scientist 15–24k AED. TL karşılıkları, AWS/GCP etkisi ve Türkiye karşılaştırması.">
+  <meta name="keywords" content="dubai yazılım maaşı 2026, dubai developer maaşı, dubai software engineer salary, dubai IT maaşı, dubai DevOps maaşı, dubai data scientist maaşı, dubai siber güvenlik maaşı, dubai tech lead maaşı, dubai CTO maaşı, dubai AWS maaşı, dubai cloud mühendisi, dubai yazılım mühendisi, dubai mühendis maaşı teknoloji, dubai teknoloji maaşları">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/blog/dubai-maaslar-yazilim-teknoloji/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-maaslar-yazilim-teknoloji/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-maaslar-yazilim-teknoloji/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="ai-catalog" type="application/json" href="/ai-catalog.json" title="AI Resource Catalog">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"      content="tr_TR">
+  <meta property="og:title"       content="Dubai'de Yazılım ve Teknoloji Maaşları 2026-27 | Developer, DevOps, Data, Siber Güvenlik">
+  <meta property="og:description" content="Dubai'de yazılım maaşları: Junior developer 7–11k AED, senior 18–28k AED, DevOps 15–22k AED, data scientist 15–24k AED. TL karşılıkları, AWS/GCP etkisi ve Türkiye karşılaştırması.">
+  <meta property="og:url"         content="https://www.edualist.com/blog/dubai-maaslar-yazilim-teknoloji/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-maaslar.webp">
+  <meta property="article:published_time" content="2026-11-21">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Dubai Software &amp; Technology Salaries 2026-27">
+  <meta name="twitter:description" content="Junior developer 7–11k AED, senior 18–28k AED, DevOps 15–22k AED, data scientist 15–24k AED. TL equivalents, AWS/GCP premium and Turkey comparison — all tax-free.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-maaslar.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Dubai'de Yazılım ve Teknoloji Maaşları 2026-27",
+    "description": "Dubai'de yazılım ve teknoloji sektöründe developer, DevOps, data scientist, siber güvenlik uzmanı ve tech lead maaş bantları, bulut sertifikası etkileri ve Türkiye karşılaştırması.",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen", "jobTitle": "Uluslararası Eğitim Danışmanı",
+      "url": "https://www.edualist.com/hakkimda/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com", "logo": {"@type": "ImageObject", "url": "https://www.edualist.com/assets/favicon.svg"}
+    },
+    "datePublished": "2026-11-21T00:00:00+00:00",
+    "dateModified": "2026-11-21T00:00:00+00:00",
+    "wordCount": 3400,
+    "inLanguage": "tr",
+    "url": "https://www.edualist.com/blog/dubai-maaslar-yazilim-teknoloji/",
+    "image": "https://www.edualist.com/assets/blog/thumb-dubai-maaslar.webp",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".blog-summary", ".blog-post-title"]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Dubai'de yazılım mühendisi maaşı ne kadar?",
+        "acceptedAnswer": {"@type": "Answer", "text": "2026-27 itibarıyla Dubai'de junior yazılım geliştirici 7.000–11.000 AED/ay, orta seviye (3–5 yıl) 12.000–18.000 AED/ay, kıdemli geliştirici (6+ yıl) 18.000–28.000 AED/ay kazanmaktadır. 1 AED ≈ 13,65 TL ile orta seviye developer 163.000–246.000 TL net gelir elde eder — vergisiz. Tech lead ve principal engineer bandı 25.000–38.000 AED/ay'a ulaşmaktadır."}
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'de DevOps mühendisi maaşı ne kadar?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Dubai'de orta seviye DevOps / Cloud mühendisi (3–6 yıl) 15.000–22.000 AED/ay, kıdemli 22.000–35.000 AED/ay kazanmaktadır. AWS Certified Solutions Architect veya Google Cloud Professional sertifikası bu bandın üst ucuna ulaşmak için güçlü bir katalizördür. Tüm rakamlar gelir vergisizdir."}
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'de data scientist maaşı ne kadar?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Dubai'de orta seviye veri bilimcisi (3–6 yıl) 15.000–24.000 AED/ay, kıdemli veri bilimcisi ve ML mühendisi 25.000–40.000 AED/ay alıyor. Yapay zeka ve büyük veri projeleri arttıkça talep yüksek; G42, Careem ve DIFC fintech şirketleri bu profil için en çok iş çıkaran kurumlar."}
+      },
+      {
+        "@type": "Question",
+        "name": "AWS sertifikası Dubai maaşını ne kadar artırıyor?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Dubai'de AWS Certified Solutions Architect sertifikası cloud/DevOps rollerinde maaşı %10–20 artırıyor; bu genellikle 1.500–3.000 AED/ay ek gelir anlamına geliyor. Google Cloud Professional ve Azure Solutions Architect benzer etki yaratıyor. CISSP (siber güvenlik) ise güvenlik rollerinde %15–25 artış sağlayabiliyor."}
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'de Türk yazılımcılar iş bulabilir mi?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Evet. Dubai'nin teknoloji sektörü hızla büyüyor ve İngilizce bilen deneyimli Türk geliştiricilere güçlü talep var. LinkedIn, Bayt.com ve GulfTalent aktif platformlar. Careem, Noon ve DIFC fintechleri iyi başlangıç noktaları. Türkiye'de startup veya büyük ölçekli teknoloji şirketlerinde (Trendyol, Hepsiburada, Getir gibi) edinilen ürün geliştirme deneyimi Dubai işverenlerince olumlu karşılanıyor."}
+      }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dubai Yazılım ve Teknoloji Maaşları 2026-27", "item": "https://www.edualist.com/blog/dubai-maaslar-yazilim-teknoloji/" }
+    ]
+  }
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    window.addEventListener("load",function(){setTimeout(function(){(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");},5000);});
+  </script>
+
+  <style id="nav-breakpoint">@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
+
+  <link rel="preload" as="image" href="../../assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="../../styles.css?v=16">
+  <link rel="stylesheet" href="../../styles.css?v=16" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../styles.css?v=16"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-cost-table{width:100%;border-collapse:collapse;font-size:.88rem;margin:1.5rem 0}.blog-cost-table th{background:var(--primary);color:#fff;padding:.65rem 1rem;text-align:left;font-weight:600;font-size:.82rem}.blog-cost-table td{padding:.55rem 1rem;border-bottom:1px solid hsla(212,66%,13%,.07)}.blog-cost-table tr:nth-child(even) td{background:hsla(212,66%,13%,.02)}.blog-cost-table tr:hover td{background:hsla(43,60%,52%,.07)}.blog-cost-table td:first-child{font-weight:600;color:var(--primary)}.cert-badge{display:inline-block;background:var(--primary);color:var(--accent);font-size:.72rem;font-weight:700;padding:.15rem .55rem;border-radius:4px;letter-spacing:.04em;margin-right:.3rem}.whatsapp-sticky{position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:#25d366;color:#fff;text-decoration:none;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(37,211,102,.45);font-size:.95rem;font-weight:600;transition:transform .2s ease,box-shadow .2s ease}.whatsapp-sticky:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(37,211,102,.55)}.whatsapp-sticky svg{flex-shrink:0}.chatbot-btn{position:fixed;bottom:1.75rem;left:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:var(--primary);color:#fff;border:none;cursor:pointer;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(11,33,58,.4);font-size:.95rem;font-weight:600;font-family:inherit;transition:transform .2s ease,box-shadow .2s ease}.chatbot-btn:hover{transform:translateY(-3px);box-shadow:0 8px 28px rgba(11,33,58,.55)}.chatbot-btn svg{flex-shrink:0}.chatbot-popup{position:fixed;bottom:5.5rem;left:1.75rem;z-index:9998;width:418px;height:540px;background:#fff;border-radius:16px;box-shadow:0 12px 48px rgba(11,33,58,.25);display:flex;flex-direction:column;overflow:hidden;animation:chatbot-pop-in .2s ease}.chatbot-popup[hidden]{display:none!important}.chatbot-popup-header{display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem;background:var(--primary);color:#fff;font-weight:600;font-size:.9rem;flex-shrink:0}.chatbot-popup-close{background:0 0;border:none;color:#fff;cursor:pointer;font-size:1.1rem;padding:.1rem .35rem;line-height:1;border-radius:4px;opacity:.75;transition:opacity .15s,background .15s}.chatbot-popup-close:hover{opacity:1;background:rgba(255,255,255,.15)}.chatbot-iframe{flex:1;width:100%;border:none}@keyframes chatbot-pop-in{from{opacity:0;transform:scale(.93) translateY(10px)}to{opacity:1;transform:scale(1) translateY(0)}}@media (max-width:480px){.whatsapp-sticky{padding:.85rem;border-radius:50%}.whatsapp-sticky-label{display:none}.chatbot-btn{padding:.85rem;border-radius:50%}.chatbot-btn-label{display:none}.chatbot-popup{left:.75rem;right:.75rem;width:auto;bottom:5rem;height:72vh}}</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/tr/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/">Dubai'de Okul</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/">Danışmanlık</a></li>
+        <li><a href="/uluslararasi-akademik-kocluk/">Akademik Koçluk</a></li>
+        <li><a href="/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">114</span></a></li>
+        <li><a href="/neden-biz/">Hakkımızda</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn active" id="langTR">🇹🇷 TR</button>
+          <button class="lang-btn" id="langEN">🇬🇧 EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Menüyü aç">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span>Blog'a Dön</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>21 Kasım 2026</span>
+          <span><a href="../../hakkimda/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>13 dakika okuma</span>
+        </div>
+
+        <div class="blog-post-body">
+
+          <h1 class="blog-post-title">Dubai'de Maaşlar 2026-27: Yazılım ve Teknoloji Sektörü Ücret Rehberi</h1>
+
+          <div class="blog-seo-tags">
+            <span class="blog-seo-tag">Dubai yazılım maaşı 2026</span>
+            <span class="blog-seo-tag">Dubai developer maaşı</span>
+            <span class="blog-seo-tag">Dubai DevOps maaşı</span>
+            <span class="blog-seo-tag">Dubai data scientist maaşı</span>
+            <span class="blog-seo-tag">Dubai siber güvenlik maaşı</span>
+            <span class="blog-seo-tag">AWS GCP Azure Dubai</span>
+          </div>
+
+          <h2>Dubai'de Yazılım ve Teknoloji Maaşları Ne Kadar?</h2>
+
+          <p>Dubai'de orta seviye yazılım geliştirici 12.000–18.000 AED/ay, kıdemli developer 18.000–28.000 AED/ay, DevOps mühendisi 15.000–22.000 AED/ay ve data scientist 15.000–24.000 AED/ay kazanmaktadır. Tüm rakamlar gelir vergisizdir — Türkiye'de ödenen gelir vergisi, SGK ve damga vergisi kesintileri burada yoktur. AWS, GCP veya Azure sertifikası aynı deneyim düzeyinde maaşı %10–20 artırabilmektedir.</p>
+
+          <div class="blog-summary">
+            <strong>Bu yazıda:</strong> Yazılım geliştirici, DevOps, data scientist, siber güvenlik uzmanı, IT proje yöneticisi, tech lead ve CTO maaş bantları · AWS/GCP/Azure sertifikalarının etkisi · Dubai'deki teknoloji işverenleri · Türkiye ile karşılaştırma · 4 kişilik aile geçim senaryoları
+          </div>
+
+          <p><a href="/blog/dubai-maaslar-2026/" style="color:var(--accent)">Dubai Maaşlar 2026 ana rehberimizde</a> mühendislik ve IT sektörlerine genel bakış yapmıştık. Bu yazı, o serinin derinlemesine devamı: yazılım ve teknoloji sektörünü pozisyon ve kıdem bazında ayrıntılı inceliyoruz. <a href="/blog/yapay-zekaya-direncli-meslekler/" style="color:var(--accent)">Yapay zekaya dirençli meslekler yazımızda</a> da değindiğimiz gibi, teknoloji alanı Dubai'de hem geçiş döneminde hem de kalıcı kariyer için güçlü bir zemin sunuyor.</p>
+
+          <p>Dubai'nin teknoloji sektörü 2026'da hem hacim hem istihdam açısından MENA'nın en hızlı büyüyen pazarlarından biri. DIFC Innovation Hub, Dubai Internet City, Area 2071 ve Abu Dhabi'nin ADGM ekosistemi — Türkiye'de startup, banka teknoloji birimi veya büyük ölçekli platform (Trendyol, Hepsiburada, Getir) deneyimi olan profesyoneller için somut fırsatlar barındırıyor.</p>
+
+          <div class="blog-callout">
+            <strong>Kur notu:</strong> Bu yazıda 1 AED = 13,65 TL kuru kullanılmıştır (Kasım 2026 yaklaşık ortalama). Tüm Dubai maaşları gelir vergisizdir. Maaş bantları LinkedIn, Bayt.com ve GulfTalent iş ilanlarından; Hays UAE ve Michael Page UAE'nin yıllık maaş rehberlerinden derlenmiştir; bireysel teklifler deneyim, firma büyüklüğü ve müzakereye göre farklılaşır.
+          </div>
+
+          <h2>Dubai'de Yazılım Geliştirici (Software Developer) Maaşı Ne Kadar?</h2>
+
+          <p>Yazılım geliştirici, Dubai'nin teknoloji sektöründe en geniş istihdam havuzuna sahip profil. Mobil, web backend, frontend ve tam yığın (full stack) geliştiriciler için kıdeme göre belirgin bir bant yapısı var. Firma ölçeği — global fintech veya FMCG mi, yerel startup mı — bandın içindeki konumlandırmayı önemli ölçüde etkiliyor.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Pozisyon</th>
+                <th>Deneyim</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior Developer</td><td>0–2 yıl</td><td>7.000–11.000</td><td>95.000–150.000</td></tr>
+              <tr><td>Mid-level Developer</td><td>3–5 yıl</td><td>12.000–18.000</td><td>164.000–246.000</td></tr>
+              <tr><td>Senior Developer</td><td>6–10 yıl</td><td>18.000–28.000</td><td>246.000–382.000</td></tr>
+              <tr><td>Lead Developer / Staff Engineer</td><td>8–12 yıl</td><td>25.000–40.000</td><td>341.000–546.000</td></tr>
+              <tr><td>Principal Engineer</td><td>12+ yıl</td><td>35.000–55.000+</td><td>478.000–751.000+</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Frontend / Backend / Full Stack farkı:</strong> Orta seviyede Frontend Developer 10.000–16.000 AED, Backend Developer 11.000–17.000 AED, Full Stack Developer 13.000–20.000 AED bandında seyretmektedir. Full Stack premium kıdemli kademelerde daha belirgin hale gelir; büyük ölçekli sistemlerde backend uzmanlığı genellikle daha yüksek teklif çekiyor.
+          </div>
+
+          <div class="blog-post-cta glass" style="margin:2rem 0">
+            <h3>Dubai'ye taşınmayı düşünüyor musunuz?</h3>
+            <p>Maaş teklifinizi aile bütçenizle ve çocuklarınızın okul seçenekleriyle birlikte değerlendirin.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary" style="display:inline-flex">Ücretsiz Görüşme Planla</a>
+          </div>
+
+          <h2>Dubai'de DevOps ve Cloud Mühendisi Maaşı Ne Kadar?</h2>
+
+          <p>DevOps ve cloud mühendisliği, Dubai'de son üç yılda en hızlı büyüyen teknoloji altkategorisi. Bankacılık, e-ticaret ve lojistik sektörlerinin cloud-native dönüşümü, AWS/GCP/Azure yetkinlikli profillere yoğun talep yarattı. Kubernetes, Terraform ve CI/CD pipeline deneyimi kıdemli rollerde neredeyse zorunluluk haline geldi.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Pozisyon</th>
+                <th>Deneyim</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior DevOps / Cloud Engineer</td><td>1–3 yıl</td><td>9.000–13.000</td><td>123.000–177.000</td></tr>
+              <tr><td>Mid-level DevOps / Cloud Engineer</td><td>3–6 yıl</td><td>15.000–22.000</td><td>205.000–300.000</td></tr>
+              <tr><td>Senior DevOps / SRE</td><td>6–10 yıl</td><td>22.000–35.000</td><td>300.000–478.000</td></tr>
+              <tr><td>Cloud Architect</td><td>8–12 yıl</td><td>28.000–45.000</td><td>382.000–614.000</td></tr>
+              <tr><td>Baş Altyapı / Platform Direktörü</td><td>12+ yıl</td><td>40.000–65.000+</td><td>546.000–887.000+</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Kubernetes &amp; FinOps:</strong> CKA (Certified Kubernetes Administrator) sertifikası orta-kıdemli DevOps rollerinde ayrıştırıcı faktör haline geldi. FinOps sertifikasyonu (cloud maliyet optimizasyonu) ise C-suite'e yakın seniority için giderek talep görüyor; bu ikili kombinasyon 30.000+ AED bandına ulaşmak için güçlü bir katalizör.
+          </div>
+
+          <h2>Dubai'de Veri Bilimi ve Yapay Zeka Uzmanı Maaşı Ne Kadar?</h2>
+
+          <p>Dubai'de yapay zeka ve veri bilimi rolleri, 2024–26 döneminde diğer tüm teknoloji altkategorilerini geride bırakan bir maaş artışı yaşadı. G42 (Abu Dhabi), Emirates NBD'nin yapay zeka birimi ve DIFC'teki fintech girişimleri bu profili aktif olarak işe alıyor. Python, SQL ve büyük veri çerçeveleri (Spark, Databricks) temel; LLM fine-tuning ve MLOps deneyimi kıdemli rollerde premium oluşturuyor.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Pozisyon</th>
+                <th>Deneyim</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Veri Analisti (Data Analyst)</td><td>1–4 yıl</td><td>8.000–14.000</td><td>109.000–191.000</td></tr>
+              <tr><td>Orta Seviye Data Scientist</td><td>3–6 yıl</td><td>15.000–24.000</td><td>205.000–328.000</td></tr>
+              <tr><td>Kıdemli Data Scientist / ML Engineer</td><td>6–10 yıl</td><td>25.000–40.000</td><td>341.000–546.000</td></tr>
+              <tr><td>Baş Veri Bilimcisi / AI Lead</td><td>10+ yıl</td><td>38.000–65.000+</td><td>519.000–887.000+</td></tr>
+              <tr><td>Veri Mühendisi (Data Engineer) Mid</td><td>3–7 yıl</td><td>14.000–22.000</td><td>191.000–300.000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <h2>Dubai'de Siber Güvenlik Uzmanı Maaşı Ne Kadar?</h2>
+
+          <p>Siber güvenlik, Dubai'de hem kamu hem özel sektörde artan düzenleyici baskı (UAE CISO mandate, NESA standartları) nedeniyle yüksek talep gören bir alan. Bankacılık, telekom ve kamu altyapısı en büyük işveren kategorileri. Penetrasyon testi, SOC analizi ve cloud güvenliği uzmanlıkları en çok aranan alt profiller.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Pozisyon</th>
+                <th>Deneyim</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior Siber Güvenlik Analisti</td><td>1–3 yıl</td><td>8.000–13.000</td><td>109.000–177.000</td></tr>
+              <tr><td>Orta Seviye Güvenlik Uzmanı</td><td>3–7 yıl</td><td>14.000–22.000</td><td>191.000–300.000</td></tr>
+              <tr><td>Kıdemli / Pentest Uzmanı</td><td>7–12 yıl</td><td>22.000–38.000</td><td>300.000–519.000</td></tr>
+              <tr><td>Güvenlik Mimarı / CISO</td><td>12+ yıl</td><td>40.000–80.000+</td><td>546.000–1.092.000+</td></tr>
+              <tr><td>SOC Analist (L2/L3)</td><td>3–8 yıl</td><td>12.000–20.000</td><td>164.000–273.000</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong><span class="cert-badge">CISSP</span> ve CEH:</strong> CISSP (Certified Information Systems Security Professional) kıdemli güvenlik rollerinde maaşı <strong>%15–25 artırıyor.</strong> CEH (Certified Ethical Hacker) ise penetrasyon testi rolleri için fiilî standart. Bu iki sertifikayı cloud güvenlik deneyimiyle birleştiren profiller Dubai'de 30.000+ AED bandına kolayca ulaşabiliyor.
+          </div>
+
+          <h2>Dubai'de IT Proje Yöneticisi ve Scrum Master Maaşı Ne Kadar?</h2>
+
+          <p>Teknoloji proje yönetimi Dubai'de hem geleneksel PM hem agile/scrum formatında talep görüyor. Büyük bankalar ve telekom firmaları waterfall tercih ederken, fintech startup'ları ve e-ticaret platformları scrum/agile yöneticisi arıyor. İki metodolojiye de hâkim "hybrid" profil en yüksek bandı çekiyor.</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Pozisyon</th>
+                <th>Deneyim</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Scrum Master / Agile Coach (Junior)</td><td>1–3 yıl</td><td>10.000–15.000</td><td>137.000–205.000</td></tr>
+              <tr><td>IT Proje Yöneticisi (Mid)</td><td>3–7 yıl</td><td>15.000–24.000</td><td>205.000–328.000</td></tr>
+              <tr><td>Kıdemli IT PM / Program Yöneticisi</td><td>7–12 yıl</td><td>22.000–38.000</td><td>300.000–519.000</td></tr>
+              <tr><td>IT Direktörü / Portfolio Manager</td><td>12+ yıl</td><td>35.000–60.000+</td><td>478.000–819.000+</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <div class="blog-callout">
+            <strong><span class="cert-badge">PMP</span> IT sektöründe:</strong> İnşaat sektöründeki kadar zorunlu olmasa da PMP sertifikası IT proje yönetimi rollerinde maaşı %15–25 artırıyor. SAFe (Scaled Agile Framework) sertifikasyonu büyük bankaların dijital dönüşüm ekiplerinde giderek daha çok tercih ediliyor; PMP + SAFe kombinasyonu kıdemli program yöneticisi bandını belirgin şekilde yukarı itiyor.
+          </div>
+
+          <h2>Dubai'de Tech Lead ve CTO Maaşları</h2>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Pozisyon</th>
+                <th>Deneyim</th>
+                <th>Maaş (AED/ay)</th>
+                <th>≈ TL/ay (net)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Tech Lead / Engineering Manager</td><td>8–13 yıl</td><td>25.000–38.000</td><td>341.000–519.000</td></tr>
+              <tr><td>Principal / Distinguished Engineer</td><td>12–17 yıl</td><td>35.000–55.000</td><td>478.000–751.000</td></tr>
+              <tr><td>VP of Engineering</td><td>14+ yıl</td><td>45.000–80.000+</td><td>614.000–1.092.000+</td></tr>
+              <tr><td>CTO (startup–orta ölçek)</td><td>12+ yıl</td><td>35.000–60.000</td><td>478.000–819.000</td></tr>
+              <tr><td>CTO (büyük kurum)</td><td>15+ yıl</td><td>60.000–120.000+</td><td>819.000–1.638.000+</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p style="font-size:.82rem;color:var(--text-muted)">CTO paketleri büyük kurumlarda hisse/RSU opsiyonları ve yıllık ikramiye içerebilir; bu durumda toplam kazanç AED tablolarının üzerine çıkar. Tüm rakamlar baz maaş (base salary) bazındadır.</p>
+
+          <h2>AWS, GCP ve Azure Sertifikaları Dubai Maaşını Ne Kadar Artırıyor?</h2>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Sertifika</th>
+                <th>Alan</th>
+                <th>Maaş Etkisi</th>
+                <th>Değerlendirme</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td><span class="cert-badge">AWS-SA</span> Solutions Architect</td><td>Cloud / DevOps</td><td>%10–20 artış</td><td>En yaygın bulut sertifikası</td></tr>
+              <tr><td><span class="cert-badge">GCP Pro</span> Cloud Professional</td><td>Cloud / AI</td><td>%10–15 artış</td><td>AI/ML projelerinde güçlü</td></tr>
+              <tr><td><span class="cert-badge">Azure SA</span> Solutions Architect</td><td>Cloud / Enterprise</td><td>%8–15 artış</td><td>Kurumsal ortamlarda tercih edilir</td></tr>
+              <tr><td><span class="cert-badge">CKA</span> Kubernetes Admin</td><td>DevOps / Platform</td><td>%8–12 artış</td><td>Container ekosistemi için standart</td></tr>
+              <tr><td><span class="cert-badge">CISSP</span></td><td>Siber Güvenlik</td><td>%15–25 artış</td><td>Kıdemli güvenlik rollerinde fiilî şart</td></tr>
+              <tr><td><span class="cert-badge">CEH</span> Certified Ethical Hacker</td><td>Pentest / Red Team</td><td>%10–18 artış</td><td>Penetrasyon testi rolleri için standart</td></tr>
+              <tr><td><span class="cert-badge">PMP</span></td><td>IT Proje Yönetimi</td><td>%15–25 artış</td><td>Büyük kurum PM rollerinde tercih edilir</td></tr>
+              <tr><td><span class="cert-badge">Databricks</span> / Snowflake</td><td>Data Engineering</td><td>%10–15 artış</td><td>Veri platformu uzmanları için</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p>İnşaat sektörünün MRICS veya PMP sertifikası kadar sert bir ayrım yaratmasa da, bulut sertifikaları artık Dubai teknoloji ilanlarının büyük bölümünde "tercih edilen" değil "beklenen" kriterler arasına girdi. Özellikle AWS + Kubernetes kombinasyonu mid-to-senior DevOps bandında güçlü bir ayrıştırıcı.</p>
+
+          <h2>Dubai'de Teknoloji Sektöründe Kimler İşe Alıyor?</h2>
+
+          <h3>Fintech ve E-Ticaret</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>Careem (Uber iştiraki):</strong> Dubai merkezli süper uygulama; mobil, backend ve data rolleri.</li>
+            <li><strong>Noon.com:</strong> Bölgenin en büyük e-ticaret platformlarından biri; mühendislik kadrosu hızla büyüyor.</li>
+            <li><strong>Talabat (Delivery Hero iştiraki):</strong> Yemek ve teslimat; backend, data ve DevOps rolleri.</li>
+            <li><strong>Property Finder:</strong> MENA'nın en büyük gayrimenkul platformu; ürün ve mühendislik ekibi güçlü.</li>
+          </ul>
+
+          <h3>Bankacılık ve Kurumsal Teknoloji</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>Emirates NBD (dijital bankacılık birimi):</strong> Büyük ölçekli dijital dönüşüm projeleri; Java, cloud, güvenlik.</li>
+            <li><strong>DIFC fintech şirketleri:</strong> 100+ lisanslı fintech girişimi; seed'ten büyüme aşamasına kadar geniş yelpaze.</li>
+            <li><strong>Majid Al Futtaim (perakende teknoloji):</strong> Veri, uygulama geliştirme ve loyalty platformu ekibi.</li>
+          </ul>
+
+          <h3>Yapay Zeka ve Bulut</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>G42 (Abu Dhabi, Dubai varlığı):</strong> UAE'nin en büyük yapay zeka holdingleri; LLM, cloud altyapısı, biyoinformatik.</li>
+            <li><strong>Amazon AWS MENA:</strong> Dubai ofisi; solutions architect ve teknik satış rolleri.</li>
+            <li><strong>Microsoft UAE:</strong> Cloud ve AI iş ortağı ekosistemi rolleri.</li>
+          </ul>
+
+          <h3>Danışmanlık ve Global Firmalar</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>Accenture UAE, PwC Digital, Deloitte Digital:</strong> Dijital dönüşüm projeleri; proje yönetimi, cloud, ERP.</li>
+            <li><strong>IBM UAE:</strong> Kurumsal yazılım ve hibrit cloud; kıdemli mühendislik rolleri.</li>
+          </ul>
+
+          <h2>Dubai ve Türkiye'de Teknoloji Maaşları: Karşılaştırma</h2>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Profil</th>
+                <th>Türkiye (net TL)</th>
+                <th>Dubai (net AED)</th>
+                <th>Dubai ≈ TL</th>
+                <th>Fark (kat)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Junior Developer</td><td>20.000–35.000</td><td>7.000–11.000</td><td>95.000–150.000</td><td>3–5×</td></tr>
+              <tr><td>Mid-level Developer</td><td>50.000–90.000</td><td>12.000–18.000</td><td>164.000–246.000</td><td>2–4×</td></tr>
+              <tr><td>Senior Developer</td><td>90.000–160.000</td><td>18.000–28.000</td><td>246.000–382.000</td><td>2–3×</td></tr>
+              <tr><td>DevOps / Cloud (Mid)</td><td>60.000–110.000</td><td>15.000–22.000</td><td>205.000–300.000</td><td>2–4×</td></tr>
+              <tr><td>Tech Lead</td><td>150.000–280.000</td><td>25.000–38.000</td><td>341.000–519.000</td><td>2–3×</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p style="font-size:.82rem;color:var(--text-muted)">Türkiye verileri yaklaşık net ücretlerdir; sektör ve şirket büyüklüğüne göre önemli ölçüde değişir. Dubai verileri gelir vergisizdir. Kıdemli seviyelerde Türk büyük teknoloji şirketleri (Trendyol, Getir) ile Dubai farkı daralırken, orta seviye ve junior pozisyonlarda Dubai'nin TL avantajı daha belirgin.</p>
+
+          <h2>Bu Maaşla Aile Bütçesi Ne Görünür?</h2>
+
+          <p>Teknoloji maaşlarını <a href="/blog/dubai-yasam-maliyeti-2026/" style="color:var(--accent)">Dubai yaşam maliyeti tablomuza</a> uyguladığımızda:</p>
+
+          <div style="overflow-x:auto">
+          <table class="blog-cost-table">
+            <thead>
+              <tr>
+                <th>Profil</th>
+                <th>Maaş</th>
+                <th>Senaryo (4 kişi)</th>
+                <th>Değerlendirme</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Mid-level Developer (tek maaş)</td><td>15.000 AED</td><td>Ekonomik (JVC, KHDA Good okul)</td><td>Dengede; büyük birikim zor</td></tr>
+              <tr><td>Senior Developer / DevOps</td><td>22.000 AED</td><td>Orta segment (Motor City, Very Good okul)</td><td>Rahat; aylık ~2.000–3.000 AED tasarruf</td></tr>
+              <tr><td>Tech Lead / IT PM (8+ yıl)</td><td>30.000 AED</td><td>Konforlu (Arabian Ranches, Outstanding okul)</td><td>Güçlü; birikim ve okul seçimi esnek</td></tr>
+              <tr><td>Principal Engineer / VP Eng.</td><td>50.000+ AED</td><td>Premium</td><td>Villa, outstanding okul, tasarruf yüksek</td></tr>
+            </tbody>
+          </table>
+          </div>
+
+          <p style="font-size:.82rem;color:var(--text-muted)">Senaryo 2 çocuklu, 4 kişilik aile içindir. <a href="/blog/dubai-okul-ucretleri-2026/" style="color:var(--accent)">Dubai okul ücretleri</a> için ayrı rehberimize bakın; okul seçimi aile bütçesinin en belirleyici kalemi.</p>
+
+          <h2>Dubai'de Teknoloji İşi Nasıl Bulunur?</h2>
+
+          <h3>Genel Platformlar</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>LinkedIn:</strong> Kıdemli ve orta seviye roller için birincil platform; "software engineer Dubai", "DevOps Dubai" aramaları etkili.</li>
+            <li><strong>Bayt.com:</strong> MENA'nın en büyük iş ilanı platformu; teknoloji kategorisi zengin.</li>
+            <li><strong>GulfTalent:</strong> Mühendislik ve teknoloji pozisyonlarında güçlü.</li>
+          </ul>
+
+          <h3>Teknoloji Odaklı Kanallar</h3>
+          <ul style="margin:0 0 1.25rem 1.5rem;line-height:2">
+            <li><strong>DIFC FinTech Hive (fintechhive.ae):</strong> DIFC fintech ekosistemindeki iş ilanları ve ağ kurma etkinlikleri.</li>
+            <li><strong>Area 2071 (area2071.ae):</strong> Dubai gelecek girişimleri platformu; startup kariyer ilanları.</li>
+            <li><strong>GITEX Global (Ekim, Dubai):</strong> Yılın en büyük MENA teknoloji fuarı; ağ kurma ve şirket keşfi için eşsiz ortam.</li>
+            <li><strong>Hays UAE, Michael Page UAE, Robert Half:</strong> Kıdemli teknoloji rolleri için işe alım danışmanlık firmaları.</li>
+            <li><strong>Şirket kariyer sayfaları:</strong> Careem, Noon, Property Finder, Emirates NBD — büyük platformlar kendi kanallarından da iş alıyor.</li>
+          </ul>
+
+          <div class="blog-callout">
+            <strong>Türk teknoloji topluluğu Dubai'de:</strong> Dubai'deki Türk yazılımcı ve teknoloji profesyonellerinin büyük bölümü Dubai Internet City ve DIFC çevresinde yoğunlaşmış durumda. LinkedIn'de "Türk developer Dubai" veya "Turkish tech Dubai" grupları aktif; bu ağlar hem iş ilanı hem de Türkiye-Dubai fiyat karşılaştırması konusunda güncel bilgi sunuyor.
+          </div>
+
+          <div class="blog-verdict" style="background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)">
+            <strong>Sonuç:</strong> Dubai yazılım ve teknoloji sektörü, Türkiye'deki net maaşların 2–5 katı arasında değişen vergi muaf ücretler sunuyor. Orta seviye developer veya DevOps mühendisi için 14.000–22.000 AED bandı, 4 kişilik aile için rahat ama birikime yer açan bir dengeyi mümkün kılıyor. Kıdemli developer, tech lead veya cloud architect bandında ise birikim ve premium okul seçimi paralel ilerleyebilir. AWS ya da GCP sertifikası elinizde varsa kıdemli DevOps bandının üst ucuna (28.000–35.000 AED) ulaşmak hâlihazırda deneyim gerektiriyor ama görünür mesafede — tavan burada çok yüksek. <a href="/blog/dubai-yasam-maliyeti-2026/" style="color:var(--accent)">Detaylı yaşam maliyeti tablosu için tıklayın.</a> Yapay zekanın meslekler üzerindeki etkisini merak ediyorsanız <a href="/blog/yapay-zekaya-direncli-meslekler/" style="color:var(--accent);font-weight:600">Yapay Zekaya Dirençli Meslekler yazımıza</a> da göz atın — Dubai'deki hangi roller uzun vadede güvenceli?
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Maaş teklifinizi birlikte değerlendirelim</h3>
+            <p>Dubai'den aldığınız teknoloji teklifi yeterli mi? Aile bütçenizle ve çocuklarınızın okul seçenekleriyle birlikte hesaplayalım.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary">Ücretsiz Görüşme Planla</a>
+          </div>
+
+        </div>
+
+        <!-- DATA DISCLAIMER -->
+        <div style="margin:2rem 0;padding:1.1rem 1.4rem;background:rgba(11,33,58,.03);border:1px solid rgba(11,33,58,.08);border-radius:var(--radius-sm);font-size:.82rem;line-height:1.75;color:var(--text-muted)">
+          <strong style="color:var(--primary);display:block;margin-bottom:.4rem">Veri Kaynakları ve Uyarı</strong>
+          Maaş aralıkları LinkedIn, Bayt.com ve GulfTalent'taki 2026 iş ilanlarından; Hays UAE, Michael Page UAE ve Robert Half'ın yıllık maaş rehberlerinden; Stack Overflow Developer Survey 2026 MENA sonuçlarından derlenmiştir. Tüm AED/TL çevirimleri Kasım 2026 yaklaşık kuruyla (1 AED ≈ 13,65 TL) hesaplanmıştır. Bu içerik bilgilendirme amaçlıdır; kariyer danışmanlığı yerine geçmez.
+        </div>
+
+        <!-- FAQ -->
+        <div class="blog-faq">
+          <h2>Sık Sorulan Sorular</h2>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Dubai'de yazılım mühendisi maaşı ne kadar?</h3>
+            <p class="faq-a">2026-27'de junior developer 7.000–11.000 AED/ay, orta seviye (3–5 yıl) 12.000–18.000 AED/ay, kıdemli geliştirici (6+ yıl) 18.000–28.000 AED/ay kazanıyor. 1 AED ≈ 13,65 TL ile orta seviye developer 164.000–246.000 TL net gelir elde ediyor — vergisiz. Tech lead bandı 25.000–38.000 AED/ay'a ulaşıyor.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Dubai'de DevOps mühendisi maaşı ne kadar?</h3>
+            <p class="faq-a">Orta seviye DevOps / Cloud mühendisi (3–6 yıl) 15.000–22.000 AED/ay, kıdemli 22.000–35.000 AED/ay kazanıyor. AWS Certified Solutions Architect veya Google Cloud Professional sertifikası kıdemli banda ulaşmak için önemli bir katalizör. Tüm rakamlar gelir vergisizdir.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Dubai'de data scientist maaşı ne kadar?</h3>
+            <p class="faq-a">Orta seviye veri bilimcisi (3–6 yıl) 15.000–24.000 AED/ay, kıdemli veri bilimcisi ve ML mühendisi 25.000–40.000 AED/ay alıyor. G42, Emirates NBD dijital birimi ve DIFC fintech şirketleri bu profil için en çok iş çıkaran kurumlar. Python, SQL ve Databricks/Snowflake deneyimi kıdemli rollerde neredeyse zorunlu.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">AWS sertifikası Dubai maaşını ne kadar artırıyor?</h3>
+            <p class="faq-a">AWS Certified Solutions Architect sertifikası cloud/DevOps rollerinde maaşı %10–20 artırıyor; genellikle 1.500–3.000 AED/ay ek gelir. Google Cloud Professional ve Azure Solutions Architect benzer etki yaratıyor. CISSP ise siber güvenlik rollerinde %15–25 artış sağlayabiliyor.</p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q">Dubai'de Türk yazılımcılar iş bulabilir mi?</h3>
+            <p class="faq-a">Evet. Dubai'nin teknoloji sektörü hızla büyüyor ve İngilizce bilen deneyimli Türk geliştiricilere güçlü talep var. LinkedIn, Bayt.com ve GulfTalent aktif platformlar. Türkiye'de startup veya büyük ölçekli teknoloji şirketlerinde (Trendyol, Hepsiburada, Getir) edinilen ürün geliştirme ve ölçeklenebilir sistem deneyimi Dubai işverenlerince olumlu karşılanıyor.</p>
+          </div>
+        </div>
+
+        <!-- AUTHOR BOX -->
+        <aside class="blog-author-box" style="display:flex;gap:1.1rem;align-items:flex-start;margin:2.5rem 0;padding:1.4rem 1.5rem;border:1px solid var(--border-card,rgba(11,33,58,.08));border-left:3px solid var(--accent,#DBAF2E);border-radius:10px;background:var(--bg-card,rgba(11,33,58,.02))">
+          <picture>
+            <source srcset="/assets/founder-avatar-160.webp" type="image/webp">
+            <img src="/assets/founder-avatar-160.webp" alt="Özlem Çimen" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)">
+          </picture>
+          <div>
+            <p style="margin:0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Yazar</p>
+            <p style="margin:.15rem 0 .4rem;font-size:1.1rem;font-weight:700"><a href="/hakkimda/" style="color:var(--primary,#0b213a);text-decoration:none">Özlem Çimen</a></p>
+            <p style="margin:0;font-size:.95rem;line-height:1.7">Uluslararası eğitim danışmanı ve Edualist'in kurucusu. 20 yılı aşkın süre TED İstanbul Koleji, ENKA Okulları ve IICS'te öğretmen, bölüm başkanı ve yönetici olarak çalıştı; çocuklarını 5 ülkede uluslararası okullarda büyüttü.</p>
+            <p style="margin:.5rem 0 0;font-size:.9rem"><a href="/hakkimda/" style="color:var(--accent-hover,#b8921f);font-weight:600">Özlem Çimen hakkında →</a></p>
+          </div>
+        </aside>
+
+        <!-- CLUSTER BOX -->
+        <aside class="blog-cluster-box" style="margin:2rem 0;padding:1.4rem 1.5rem;border-radius:10px;background:var(--bg-warm-secondary,#f3efe8)">
+          <p style="margin:0 0 .8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Bu konudaki tüm rehberler</p>
+          <p style="margin:0 0 .9rem;font-size:1.15rem;font-weight:700;color:var(--primary,#0b213a)">Dubai'de Yaşam ve Maaşlar</p>
+          <ul style="margin:0;padding-left:1.1rem;columns:2 260px;column-gap:2rem;line-height:1.6">
+            <li style="break-inside:avoid"><a href="/blog/dubai-maaslar-2026/" style="color:var(--primary,#0b213a)">Dubai'de Maaşlar 2026: Mühendislik ve IT Rehberi</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-maaslar-yazilim-teknoloji/" style="color:var(--primary,#0b213a)">Dubai Maaşlar: Yazılım ve Teknoloji Sektörü</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-maaslar-finans-muhasebe-hukuk/" style="color:var(--primary,#0b213a)">Dubai Maaşlar: Finans, Muhasebe ve Hukuk</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-maaslar-otelcilik-turizm-havayollari/" style="color:var(--primary,#0b213a)">Dubai Maaşlar: Otelcilik, Turizm ve Havacılık</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-maaslar-saglik/" style="color:var(--primary,#0b213a)">Dubai Maaşlar: Sağlık Sektörü</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-maaslar-insaat-mimarlik/" style="color:var(--primary,#0b213a)">Dubai Maaşlar: İnşaat ve Mimarlık</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-yasam-maliyeti-2026/" style="color:var(--primary,#0b213a)">Dubai'de Yaşam Maliyeti 2026: Gerçek Rakamlar</a></li>
+            <li style="break-inside:avoid"><a href="/blog/dubai-okul-ucretleri-2026/" style="color:var(--primary,#0b213a)">Dubai Okul Fiyatları 2026–27: Tam Ücret Tablosu</a></li>
+          </ul>
+        </aside>
+
+      </article>
+    </div>
+    <div class="container" style="padding:0 0 2rem;"></div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>İlgili Yazılar</h2>
+      <div class="blog-related-grid">
+        <a href="../dubai-maaslar-2026/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-maaslar.webp" alt="Dubai Maaşlar 2026 Mühendislik IT" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">Dubai'de Maaşlar 2026: Mühendislik ve IT Sektörü Rehberi</div>
+            <div class="blog-related-card-meta">20 Ekim 2026 · 10 dk</div>
+          </div>
+        </a>
+        <a href="../yapay-zekaya-direncli-meslekler/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-maaslar.webp" alt="Yapay Zekaya Dirençli Meslekler Dubai" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">Yapay Zekaya Dirençli Meslekler: Dubai'de Uzun Vadeli Kariyer</div>
+            <div class="blog-related-card-meta">Ekim 2026 · 11 dk</div>
+          </div>
+        </a>
+        <a href="../dubai-yasam-maliyeti-2026/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-maaslar.webp" alt="Dubai Yaşam Maliyeti 2026" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">Dubai'de Yaşam Maliyeti 2026: Kira, Okul ve Gerçek Rakamlar</div>
+            <div class="blog-related-card-meta">25 Haziran 2026 · 12 dk</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi, müfredat değerlendirme ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="/neden-biz/">Neden Biz?</a></li>
+            <li><a href="/tr/#services">Hizmetler</a></li>
+            <li><a href="/blog/">Blog <span class="nav-count-badge">114</span></a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/">Görüşme Planla</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>İletişim</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, Birleşik Arap Emirlikleri</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener noreferrer">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
+        <div><a href="/gizlilik-politikasi/" style="color:inherit;opacity:0.7">Gizlilik Politikası</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WHATSAPP STICKY -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Merhaba,%20Daha%20fazla%20bilgi%20almak%20istiyorum" class="whatsapp-sticky" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp ile yazın" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- AI Chatbot Button -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="AI Asistan">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+    <span class="chatbot-btn-label">AI Asistan</span>
+  </button>
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>Edualist AI Asistan</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Kapat">✕</button>
+    </div>
+    <iframe class="chatbot-iframe" src="https://eduentry.com/tr/chat-widget" title="Edualist AI Asistan" loading="lazy"></iframe>
+  </div>
+
+  <script>
+    const nav = document.getElementById('mainNav');
+    window.addEventListener('scroll', () => { nav.classList.toggle('header-scrolled', window.scrollY > 50); }, { passive: true });
+    document.getElementById('menuToggle').addEventListener('click', function() {
+      this.classList.toggle('active');
+      document.getElementById('navLinks').classList.toggle('open');
+    });
+    const chatBtn = document.getElementById('chatbot-btn');
+    const chatPopup = document.getElementById('chatbot-popup');
+    const chatClose = document.getElementById('chatbot-close');
+    if (chatBtn && chatPopup) {
+      chatBtn.addEventListener('click', () => { chatPopup.hidden = !chatPopup.hidden; });
+      chatClose.addEventListener('click', () => { chatPopup.hidden = true; });
+    }
+  </script>
+
+</body>
+</html>

@@ -433,6 +433,21 @@
       "updatedAt": "2026-11-14T00:00:00Z"
     },
     {
+      "identifier": "urn:air:edualist.com:content:dubai-maaslar-yazilim-teknoloji",
+      "displayName": "Dubai Yazılım ve Teknoloji Maaşları 2026-27 (TR)",
+      "description": "Dubai'de yazılım ve teknoloji maaşları 2026-27: junior developer 7.000–11.000 AED/ay, senior developer 18.000–28.000 AED, DevOps mühendisi 15.000–35.000 AED, data scientist 15.000–40.000 AED, siber güvenlik uzmanı 14.000–38.000 AED. AWS/GCP/Azure sertifika etkileri ve Türkiye karşılaştırması.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/blog/dubai-maaslar-yazilim-teknoloji/",
+      "tags": ["dubai", "salaries", "software", "technology", "it", "tr"],
+      "representativeQueries": [
+        "Dubai'de yazılım mühendisi maaşı ne kadar?",
+        "Dubai'de DevOps maaşı ne kadar?",
+        "Dubai'de data scientist maaşı ne kadar?",
+        "AWS sertifikası Dubai maaşını ne kadar artırıyor?"
+      ],
+      "updatedAt": "2026-11-21T00:00:00Z"
+    },
+    {
       "identifier": "urn:air:edualist.com:content:dubai-maaslar-saglik",
       "displayName": "Dubai Sağlık Sektörü Maaşları 2026 (TR)",
       "description": "Dubai'de sağlık sektörü maaşları 2026: pratisyen hekim 18.000–45.000 AED/ay, uzman hekim 35.000–70.000 AED, konsültan 65.000–120.000+ AED, hemşire 5.000–35.000 AED, diş hekimi 15.000–90.000+ AED. DHA lisans süreci ve Türkiye karşılaştırması.",
