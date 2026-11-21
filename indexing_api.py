@@ -31,6 +31,35 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
+    # Kasım 2026 — x-default hreflang fix (111 EN pages) + 4 missing pages added to blog index + internal links
+    "https://www.edualist.com/en/blog/",  # blog index: 4 new cards (construction/healthcare/hospitality/vs-abu-dhabi)
+    # 18 GSC "Discovered not indexed" pages — x-default now points to EN (was pointing to TR)
+    "https://www.edualist.com/en/blog/academic-support-expat-child-dubai/",
+    "https://www.edualist.com/en/blog/cat4-practice-test-sample-questions/",
+    "https://www.edualist.com/en/blog/child-starting-international-school-dubai/",
+    "https://www.edualist.com/en/blog/dubai-construction-architecture-salaries/",
+    "https://www.edualist.com/en/blog/dubai-finance-accounting-legal-salaries/",
+    "https://www.edualist.com/en/blog/dubai-healthcare-salaries/",
+    "https://www.edualist.com/en/blog/dubai-hospitality-tourism-aviation-salaries/",
+    "https://www.edualist.com/en/blog/dubai-ib-school-selection/",
+    "https://www.edualist.com/en/blog/dubai-school-application-timeline-2027/",
+    "https://www.edualist.com/en/blog/dubai-school-comparison/",
+    "https://www.edualist.com/en/blog/dubai-school-hidden-costs/",
+    "https://www.edualist.com/en/blog/dubai-school-selection-mistakes/",
+    "https://www.edualist.com/en/blog/dubai-school-year-groups/",
+    "https://www.edualist.com/en/blog/dubai-secondary-school-guide/",
+    "https://www.edualist.com/en/blog/dubai-vs-abu-dhabi-cost-of-living/",
+    "https://www.edualist.com/en/blog/gems-founders-school-dubai-review/",
+    "https://www.edualist.com/en/blog/searching-for-turkish-school-dubai/",
+    "https://www.edualist.com/en/blog/year-6-to-year-7-transition-dubai/",
+    # Pages that got new inbound internal links
+    "https://www.edualist.com/en/blog/best-ap-schools-dubai/",
+    "https://www.edualist.com/en/blog/turkish-families-dubai-school-guide/",
+    "https://www.edualist.com/en/blog/turkish-school-in-dubai/",
+    "https://www.edualist.com/en/blog/turkey-to-dubai-international-school/",
+    "https://www.edualist.com/en/blog/uae-international-school-guide/",
+    "https://www.edualist.com/en/blog/dubai-neighbourhood-school-guide/",
+    "https://www.edualist.com/en/blog/dubai-school-registration/",
     # Kasım 2026 — TR yapay-zekaya-direncli-meslekler: tam 65 meslek tablosu eklendi
     "https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/",
     # Kasım 2026 — 7 EN çevirisi
