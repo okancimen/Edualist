@@ -448,6 +448,21 @@
       "updatedAt": "2026-11-21T00:00:00Z"
     },
     {
+      "identifier": "urn:air:edualist.com:content:dubai-software-technology-salaries",
+      "displayName": "Dubai Software & Technology Salaries 2026-27 (EN)",
+      "description": "Complete guide to software and technology salaries in Dubai 2026-27: mid-level developer 12,000–18,000 AED/month, senior developer 18,000–28,000 AED, DevOps engineer 15,000–22,000 AED, data scientist 15,000–24,000 AED, cybersecurity specialist 14,000–38,000 AED. AWS/GCP/Azure/CISSP certification premiums and Turkey salary comparison.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-software-technology-salaries/",
+      "tags": ["dubai", "salaries", "software", "technology", "it", "en"],
+      "representativeQueries": [
+        "How much does a software engineer earn in Dubai?",
+        "Dubai DevOps engineer salary 2026",
+        "Dubai data scientist salary",
+        "Does AWS certification increase salary in Dubai?"
+      ],
+      "updatedAt": "2026-11-21T00:00:00Z"
+    },
+    {
       "identifier": "urn:air:edualist.com:content:dubai-maaslar-saglik",
       "displayName": "Dubai Sağlık Sektörü Maaşları 2026 (TR)",
       "description": "Dubai'de sağlık sektörü maaşları 2026: pratisyen hekim 18.000–45.000 AED/ay, uzman hekim 35.000–70.000 AED, konsültan 65.000–120.000+ AED, hemşire 5.000–35.000 AED, diş hekimi 15.000–90.000+ AED. DHA lisans süreci ve Türkiye karşılaştırması.",

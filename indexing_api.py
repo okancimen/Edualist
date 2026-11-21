@@ -74,6 +74,10 @@ URLS = [
     # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
     # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
 
+    # Kasım 2026 — YENİ: dubai-software-technology-salaries (EN version of IT salary guide)
+    "https://www.edualist.com/en/blog/dubai-software-technology-salaries/",
+    # Kasım 2026 — dubai-salaries-2026 EN: cluster box updated with software-technology link
+    "https://www.edualist.com/en/blog/dubai-salaries-2026/",
     # Kasım 2026 — YENİ: dubai-maaslar-yazilim-teknoloji (developer/DevOps/data/siber güvenlik maaş rehberi)
     "https://www.edualist.com/blog/dubai-maaslar-yazilim-teknoloji/",
     # Kasım 2026 — repton: JSON-LD headline yıl düzeltmesi (2026→2027), dateModified güncellendi
