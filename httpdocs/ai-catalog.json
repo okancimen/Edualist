@@ -433,6 +433,21 @@
       "updatedAt": "2026-11-14T00:00:00Z"
     },
     {
+      "identifier": "urn:air:edualist.com:content:cocugum-ib-ye-hazir-mi",
+      "displayName": "Çocuğum IB'ye Hazır mı? 8 Soruda Değerlendirme (TR)",
+      "description": "IB MYP ve DP geçişi öncesinde çocuğun duygusal dayanıklılığını ve organizasyon becerilerini ölçen 8 soruluk puanlı değerlendirme. Türk aileler için.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/blog/cocugum-ib-ye-hazir-mi/",
+      "tags": ["ib", "academic-coaching", "ib-myp", "ib-dp", "tr"],
+      "representativeQueries": [
+        "çocuğum IB'ye hazır mı",
+        "IB hazırlık değerlendirme",
+        "IB MYP geçiş hazırlığı",
+        "IB DP başlamadan önce"
+      ],
+      "updatedAt": "2026-11-22T00:00:00Z"
+    },
+    {
       "identifier": "urn:air:edualist.com:content:dubai-tasima-takvimi-2027",
       "displayName": "Dubai'ye Taşınma Takvimi 2027 (TR)",
       "description": "Eylül 2027 için Dubai'ye taşınan Türk aileler için okul merkezli adım adım taşınma takvimi. KHDA Outstanding okullar Ocak-Şubat'ta doluyor; vize, apostil, konut, Emirates ID süreçleri.",
