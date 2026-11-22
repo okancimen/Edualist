@@ -31,95 +31,54 @@ INDEXNOW_ENDPOINTS = [
 ]
 
 URLS = [
-    # Kasım 2026 — x-default hreflang fix (111 EN pages) + 4 missing pages added to blog index + internal links
-    "https://www.edualist.com/en/blog/",  # blog index: 4 new cards (construction/healthcare/hospitality/vs-abu-dhabi)
-    # 18 GSC "Discovered not indexed" pages — x-default now points to EN (was pointing to TR)
-    "https://www.edualist.com/en/blog/academic-support-expat-child-dubai/",
-    "https://www.edualist.com/en/blog/cat4-practice-test-sample-questions/",
-    "https://www.edualist.com/en/blog/child-starting-international-school-dubai/",
-    "https://www.edualist.com/en/blog/dubai-construction-architecture-salaries/",
-    "https://www.edualist.com/en/blog/dubai-finance-accounting-legal-salaries/",
-    "https://www.edualist.com/en/blog/dubai-healthcare-salaries/",
-    "https://www.edualist.com/en/blog/dubai-hospitality-tourism-aviation-salaries/",
-    "https://www.edualist.com/en/blog/dubai-ib-school-selection/",
-    "https://www.edualist.com/en/blog/dubai-school-application-timeline-2027/",
-    "https://www.edualist.com/en/blog/dubai-school-comparison/",
-    "https://www.edualist.com/en/blog/dubai-school-hidden-costs/",
-    "https://www.edualist.com/en/blog/dubai-school-selection-mistakes/",
-    "https://www.edualist.com/en/blog/dubai-school-year-groups/",
-    "https://www.edualist.com/en/blog/dubai-secondary-school-guide/",
-    "https://www.edualist.com/en/blog/dubai-vs-abu-dhabi-cost-of-living/",
-    "https://www.edualist.com/en/blog/gems-founders-school-dubai-review/",
-    "https://www.edualist.com/en/blog/searching-for-turkish-school-dubai/",
-    "https://www.edualist.com/en/blog/year-6-to-year-7-transition-dubai/",
-    # Pages that got new inbound internal links
-    "https://www.edualist.com/en/blog/best-ap-schools-dubai/",
-    "https://www.edualist.com/en/blog/turkish-families-dubai-school-guide/",
-    "https://www.edualist.com/en/blog/turkish-school-in-dubai/",
-    "https://www.edualist.com/en/blog/turkey-to-dubai-international-school/",
-    "https://www.edualist.com/en/blog/uae-international-school-guide/",
-    "https://www.edualist.com/en/blog/dubai-neighbourhood-school-guide/",
-    "https://www.edualist.com/en/blog/dubai-school-registration/",
-    # Kasım 2026 — TR yapay-zekaya-direncli-meslekler: tam 65 meslek tablosu eklendi
-    "https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/",
-    # Kasım 2026 — 7 EN çevirisi
-    "https://www.edualist.com/en/blog/my-child-cant-learn-english/",
-    "https://www.edualist.com/en/blog/my-child-is-changing-schools/",
-    "https://www.edualist.com/en/blog/is-your-child-ready-for-international-school/",
-    "https://www.edualist.com/en/blog/turkish-families-dubai-school-guide/",
-    "https://www.edualist.com/en/blog/my-sons-english-was-good-enough/",
-    "https://www.edualist.com/en/blog/extracurricular-activities-university-application/",
-    "https://www.edualist.com/en/blog/international-university-preparation-high-school/",
-    # ── Yeni eklenen / son değişenler — BURAYA EKLE, en fazla ~150 URL ──────────
-    # Kural: yeni veya güncellenen sayfaları üste ekle; eski sabit sayfaları silme.
-    # Quota: 200/gün — bu listenin her zaman 150'nin altında kalmasını sağla.
+    # 🔝 En son değişen sayfalar — daima en üste ekle (quota önceliği: ilk işlenenler önce gönderilir)
+    # Kural: yeni veya güncellenen URL'leri bu satırın hemen altına ekle; eski girdileri silme.
+    # Quota: 200/gün — liste 200'ü geçerse alt satırlardaki eski girdiler o gün gönderilemez.
 
-    # Kasım 2026 — YENİ: dubai-software-technology-salaries (EN version of IT salary guide)
+    # 21 Kasım 2026 — YENİ EN: dubai-software-technology-salaries + TR hreflang/og/thumbnail güncellendi
     "https://www.edualist.com/en/blog/dubai-software-technology-salaries/",
-    # Kasım 2026 — dubai-salaries-2026 EN: cluster box updated with software-technology link
+    # 21 Kasım 2026 — dubai-salaries-2026 EN: cluster box updated with software-technology link
     "https://www.edualist.com/en/blog/dubai-salaries-2026/",
-    # Kasım 2026 — YENİ: dubai-maaslar-yazilim-teknoloji (developer/DevOps/data/siber güvenlik maaş rehberi)
+    # 21 Kasım 2026 — YENİ TR: dubai-maaslar-yazilim-teknoloji (developer/DevOps/data/siber güvenlik)
     "https://www.edualist.com/blog/dubai-maaslar-yazilim-teknoloji/",
-    # Kasım 2026 — repton: JSON-LD headline yıl düzeltmesi (2026→2027), dateModified güncellendi
+    # 21 Kasım 2026 — repton: JSON-LD headline yıl düzeltmesi (2026→2027), dateModified güncellendi
     "https://www.edualist.com/blog/repton-school-dubai-incelemesi/",
-    # Kasım 2026 — dubai-egitim-sistemi: truncated meta açıklaması düzeltildi
+    # 21 Kasım 2026 — dubai-egitim-sistemi: truncated meta açıklaması düzeltildi
     "https://www.edualist.com/blog/dubai-egitim-sistemi/",
-    # Kasım 2026 — dubai-school-holidays: JSON-LD yıl düzeltmesi (2027-28→2026-27), meta desc güncellendi
+    # 21 Kasım 2026 — dubai-school-holidays: JSON-LD yıl düzeltmesi (2027-28→2026-27)
     "https://www.edualist.com/en/blog/dubai-school-holidays/",
 
-    # Kasım 2026 — Page 3 iç link yapısı: 3 hedef sayfaya 9 inline body link eklendi
+    # 19 Kasım 2026 — Page 3 iç link yapısı: 3 hedef sayfaya 9 inline body link eklendi
     "https://www.edualist.com/en/blog/dubai-top-schools/",
     "https://www.edualist.com/en/blog/dubai-khda-outstanding-schools/",
     "https://www.edualist.com/en/blog/dubai-school-scholarships/",
     "https://www.edualist.com/en/blog/cat4-test-dubai/",
     "https://www.edualist.com/en/blog/international-school-interview-questions/",
 
-    # Kasım 2026 — Medium-term SERP: title 2026→2026-27, meta desc güncellendi (3 EN sayfa)
+    # 19 Kasım 2026 — Medium-term SERP: title 2026→2026-27, meta desc güncellendi (3 EN sayfa)
     "https://www.edualist.com/en/blog/dubai-british-schools-a-level/",
     "https://www.edualist.com/en/blog/ib-diploma-university-requirements/",
     "https://www.edualist.com/en/blog/what-is-eal/",
 
-    # Kasım 2026 — GA bounce fix: EN ana sayfa header güncellendi + 6 sayfaya iç link eklendi
+    # 19 Kasım 2026 — GA bounce fix: EN ana sayfa header güncellendi + 6 sayfaya iç link eklendi
     "https://www.edualist.com/en/",
-    "https://www.edualist.com/en/blog/dubai-khda-outstanding-schools/",
     "https://www.edualist.com/en/blog/my-childs-character-strengths/",
     "https://www.edualist.com/en/blog/dubai-education-system/",
     "https://www.edualist.com/en/blog/international-education-cost/",
     "https://www.edualist.com/blog/anxious-generation-oyun-temelli-cocukluk/",
-    "https://www.edualist.com/en/blog/dubai-top-schools/",
 
-    # Kasım 2026 — İç link eklendi: dubai-gcse-nedir + fransa bounce fix (3 inline link)
+    # 19 Kasım 2026 — İç link eklendi: dubai-gcse-nedir + fransa bounce fix
     "https://www.edualist.com/blog/dubai-gcse-nedir/",
     "https://www.edualist.com/blog/dubai-ingiliz-okullari-a-level/",
     "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
     "https://www.edualist.com/blog/dubai-top-10-okullari/",
     "https://www.edualist.com/blog/fransa-okul-kayit-rehberi/",
 
-    # Kasım 2026 — Yeni post: Dubai okul kaydı belgeleri rehberi (apostil, TC, Emirates ID, KHDA sözleşmesi)
+    # 19 Kasım 2026 — YENİ: Dubai okul kaydı belgeleri rehberi (apostil, TC, Emirates ID, KHDA)
     "https://www.edualist.com/blog/dubai-okul-kaydi-apostil-rehberi/",
     "https://www.edualist.com/en/blog/dubai-school-enrollment-documents-guide/",
 
-    # Kasım 2026 — 6 yeni okul incelemesi (DESS/DESC, GEMS World Academy, Raffles World Academy)
+    # 14-18 Kasım 2026 — 6 yeni okul incelemesi (DESS/DESC, GEMS World Academy, Raffles World Academy)
     "https://www.edualist.com/blog/dess-desc-dubai-incelemesi/",
     "https://www.edualist.com/en/blog/dess-desc-dubai-review/",
     "https://www.edualist.com/blog/gems-world-academy-dubai-incelemesi/",
@@ -161,7 +120,7 @@ URLS = [
     "https://www.edualist.com/blog/cocugum-uluslararasi-okula-geciyor/",
     "https://www.edualist.com/blog/dubai-international-academy-incelemesi/",
 
-    # Nov 2026 — New post: Abu Dhabi okul ücretleri 2026-2027 (Top 15 ADEK guide)
+    # Nov 2026 — Yeni post: Abu Dhabi okul ücretleri 2026-2027 (Top 15 ADEK guide)
     "https://www.edualist.com/blog/abu-dhabi-okul-ucretleri-2026-2027/",
 
     # Nov 2026 — CTR fix: 5 blog title/meta/OG update (GSC CTR 0% despite impressions)
@@ -176,14 +135,12 @@ URLS = [
     "https://www.edualist.com/en/blog/ib-vs-a-level-vs-ap/",
 
     # Nov 2026 — Internal linking: related-section cluster fix + 96 pages with new in-text links
-    # CAT4 + child academic support cluster (related sections restructured)
     "https://www.edualist.com/blog/cat4-sinavi-nedir/",
     "https://www.edualist.com/blog/cat4-ornek-sorular/",
     "https://www.edualist.com/blog/cocugum-sinav-kaygisi-yasiyor/",
     "https://www.edualist.com/blog/dubai-expat-cocuk-akademik-destek/",
     "https://www.edualist.com/blog/cocugum-ingilizce-ogrenemiyor/",
     "https://www.edualist.com/blog/oglumun-ingilizcesi-iyiydi/",
-    # High-traffic pages that gained new in-text links
     "https://www.edualist.com/blog/dubai-top-10-okullari/",
     "https://www.edualist.com/blog/dubai-ib-okullari-mezun-basarisi/",
     "https://www.edualist.com/blog/dubai-en-iyi-uluslararasi-okullar/",
@@ -194,6 +151,44 @@ URLS = [
     "https://www.edualist.com/blog/dubai-turk-aileler-okul-rehberi/",
     "https://www.edualist.com/blog/international-school-nedir/",
     "https://www.edualist.com/blog/eal-nedir/",
+
+    # Kasım 2026 — x-default hreflang fix (111 EN pages) + 4 missing pages + internal links
+    "https://www.edualist.com/en/blog/",
+    "https://www.edualist.com/en/blog/academic-support-expat-child-dubai/",
+    "https://www.edualist.com/en/blog/cat4-practice-test-sample-questions/",
+    "https://www.edualist.com/en/blog/child-starting-international-school-dubai/",
+    "https://www.edualist.com/en/blog/dubai-construction-architecture-salaries/",
+    "https://www.edualist.com/en/blog/dubai-finance-accounting-legal-salaries/",
+    "https://www.edualist.com/en/blog/dubai-healthcare-salaries/",
+    "https://www.edualist.com/en/blog/dubai-hospitality-tourism-aviation-salaries/",
+    "https://www.edualist.com/en/blog/dubai-ib-school-selection/",
+    "https://www.edualist.com/en/blog/dubai-school-application-timeline-2027/",
+    "https://www.edualist.com/en/blog/dubai-school-comparison/",
+    "https://www.edualist.com/en/blog/dubai-school-hidden-costs/",
+    "https://www.edualist.com/en/blog/dubai-school-selection-mistakes/",
+    "https://www.edualist.com/en/blog/dubai-school-year-groups/",
+    "https://www.edualist.com/en/blog/dubai-secondary-school-guide/",
+    "https://www.edualist.com/en/blog/dubai-vs-abu-dhabi-cost-of-living/",
+    "https://www.edualist.com/en/blog/gems-founders-school-dubai-review/",
+    "https://www.edualist.com/en/blog/searching-for-turkish-school-dubai/",
+    "https://www.edualist.com/en/blog/year-6-to-year-7-transition-dubai/",
+    "https://www.edualist.com/en/blog/best-ap-schools-dubai/",
+    "https://www.edualist.com/en/blog/turkish-families-dubai-school-guide/",
+    "https://www.edualist.com/en/blog/turkish-school-in-dubai/",
+    "https://www.edualist.com/en/blog/turkey-to-dubai-international-school/",
+    "https://www.edualist.com/en/blog/uae-international-school-guide/",
+    "https://www.edualist.com/en/blog/dubai-neighbourhood-school-guide/",
+    "https://www.edualist.com/en/blog/dubai-school-registration/",
+    # Kasım 2026 — TR yapay-zekaya-direncli-meslekler: tam 65 meslek tablosu eklendi
+    "https://www.edualist.com/blog/yapay-zekaya-direncli-meslekler/",
+    # Kasım 2026 — 7 EN çevirisi
+    "https://www.edualist.com/en/blog/my-child-cant-learn-english/",
+    "https://www.edualist.com/en/blog/my-child-is-changing-schools/",
+    "https://www.edualist.com/en/blog/is-your-child-ready-for-international-school/",
+    "https://www.edualist.com/en/blog/turkish-families-dubai-school-guide/",
+    "https://www.edualist.com/en/blog/my-sons-english-was-good-enough/",
+    "https://www.edualist.com/en/blog/extracurricular-activities-university-application/",
+    "https://www.edualist.com/en/blog/international-university-preparation-high-school/",
 
     # Nov 2026 — GSC 404 fix destinations (re-crawl after redirect rules deployed)
     "https://www.edualist.com/blog/ingilizcesi-yetersiz-cocuk-dubai-okulu-uyum/",
