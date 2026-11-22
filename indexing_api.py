@@ -35,6 +35,11 @@ URLS = [
     # Kural: yeni veya güncellenen URL'leri bu satırın hemen altına ekle; eski girdileri silme.
     # Quota: 200/gün — liste 200'ü geçerse alt satırlardaki eski girdiler o gün gönderilemez.
 
+    # 22 Kasım 2026 — YENİ EN: dubai-relocation-timeline-2027 (7-step school-centred relocation guide)
+    "https://www.edualist.com/en/blog/dubai-relocation-timeline-2027/",
+    # 22 Kasım 2026 — YENİ TR: dubai-tasima-takvimi-2027 (taşınma takvimi, okul merkezli)
+    "https://www.edualist.com/blog/dubai-tasima-takvimi-2027/",
+
     # 21 Kasım 2026 — YENİ EN: dubai-software-technology-salaries + TR hreflang/og/thumbnail güncellendi
     "https://www.edualist.com/en/blog/dubai-software-technology-salaries/",
     # 21 Kasım 2026 — dubai-salaries-2026 EN: cluster box updated with software-technology link

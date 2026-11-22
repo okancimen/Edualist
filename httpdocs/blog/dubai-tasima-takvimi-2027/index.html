@@ -1,0 +1,698 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <!-- Google Analytics -->
+  <script>
+    (function(){var l=false;function g(){if(l)return;l=true;var s=document.createElement('script');s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KG3GY4CNJ';document.head.appendChild(s);window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments);};gtag('js',new Date());gtag('config','G-5KG3GY4CNJ');gtag('config','AW-18221941570');}['click','touchstart','mousemove','scroll','keydown'].forEach(function(e){document.addEventListener(e,g,{once:true,passive:true});});})();
+  </script>
+  <meta charset="UTF-8">
+  <link rel="preload" href="/assets/fonts/outfit-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-var-tr.woff2" as="font" type="font/woff2" crossorigin>
+  <style id="fonts">@font-face{font-family:'Outfit';font-style:normal;font-weight:400 800;font-display:optional;src:url(/assets/fonts/outfit-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:normal;font-weight:400 600;font-display:optional;src:url(/assets/fonts/cormorant-garamond-var-tr.woff2) format('woff2')}@font-face{font-family:'Cormorant Garamond';font-style:italic;font-weight:400;font-display:optional;src:url(/assets/fonts/cormorant-garamond-italic-tr.woff2) format('woff2')}</style>
+  <style>:root{--primary:hsl(212, 66%, 13%);--primary-light:hsl(212, 66%, 22%);--primary-rgb:11,33,58;--accent:hsl(43, 60%, 52%);--accent-hover:hsl(43, 60%, 44%);--accent-rgb:219,175,46;--bg-warm:hsl(35, 40%, 98%);--bg-warm-secondary:hsl(35, 30%, 94%);--bg-card:hsla(212, 66%, 13%, 0.02);--border-card:hsla(212, 66%, 13%, 0.08);--text-dark:hsl(215, 25%, 15%);--text-muted:hsl(215, 15%, 20%);--text-light:hsl(35, 40%, 98%);--font-serif:'Cormorant Garamond',Georgia,serif;--font-sans:'Outfit',-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;--shadow-sm:0 4px 12px hsla(212, 66%, 13%, 0.03);--shadow-md:0 12px 32px hsla(212, 66%, 13%, 0.06);--shadow-lg:0 20px 48px hsla(212, 66%, 13%, 0.1);--radius-sm:6px;--radius-md:12px;--radius-lg:24px;--transition-smooth:color .4s cubic-bezier(.25,1,.5,1),background-color .4s cubic-bezier(.25,1,.5,1),opacity .4s cubic-bezier(.25,1,.5,1),transform .4s cubic-bezier(.25,1,.5,1),box-shadow .4s cubic-bezier(.25,1,.5,1),border-color .4s cubic-bezier(.25,1,.5,1);--transition-fast:color .2s ease,background-color .2s ease,opacity .2s ease,transform .2s ease,box-shadow .2s ease;scroll-behavior:smooth}*,::after,::before{box-sizing:border-box;margin:0;padding:0}html{overflow-x:hidden}body{font-family:var(--font-sans);background-color:var(--bg-warm);color:var(--text-dark);line-height:1.6;font-size:1rem;-webkit-font-smoothing:antialiased}h1,h2,h3,h4,h5,h6{font-family:var(--font-serif);color:var(--primary);font-weight:600;line-height:1.2}a{text-decoration:none;color:inherit;transition:var(--transition-fast)}button,input,select,textarea{font-family:inherit;font-size:inherit}::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:var(--bg-warm)}::-webkit-scrollbar-thumb{background:#bccadb;border-radius:var(--radius-sm);border:2px solid var(--bg-warm)}::-webkit-scrollbar-thumb:hover{background:var(--primary-light)}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.container{width:100%;max-width:1200px;margin:0 auto;padding:0 1.5rem}.section{padding:4rem 0;position:relative}.glass{background:rgba(255,255,255,.7);backdrop-filter:blur(16px) saturate(120%);-webkit-backdrop-filter:blur(16px) saturate(120%);border:1px solid rgba(255,255,255,.4);box-shadow:var(--shadow-sm)}.btn{display:inline-flex;align-items:center;justify-content:center;padding:.85rem 2rem;font-weight:500;border-radius:var(--radius-md);border:1px solid transparent;cursor:pointer;letter-spacing:.03em;transition:var(--transition-smooth);gap:.5rem}.btn-primary{background-color:var(--primary);color:var(--text-light);box-shadow:var(--shadow-sm)}.btn-primary:hover{background-color:var(--primary-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-accent{background-color:var(--accent);color:var(--primary);box-shadow:var(--shadow-sm);font-weight:600}.btn-accent:hover{background-color:var(--accent-hover);color:var(--text-light);transform:translateY(-2px);box-shadow:var(--shadow-md)}.btn-outline{background-color:transparent;color:var(--primary);border-color:var(--primary)}.btn-outline:hover{background-color:var(--primary);color:var(--text-light);transform:translateY(-2px)}.header-nav{position:fixed;top:0;left:0;width:100%;height:100px;z-index:1000;transition:var(--transition-smooth)}.nav-container{display:flex;align-items:center;justify-content:space-between;height:100%;padding:0 2rem;border-bottom:1px solid rgba(255,255,255,.2)}.logo{display:flex;align-items:center;gap:.75rem}.logo-icon{width:40px;height:40px;border-radius:var(--radius-sm);background-color:var(--primary);color:var(--accent);display:flex;align-items:center;justify-content:center;font-size:1.4rem;font-family:var(--font-serif);font-weight:700;box-shadow:var(--shadow-sm)}.logo-text{font-family:var(--font-serif);font-size:1.8rem;font-weight:700;letter-spacing:.05em;color:var(--primary)}.nav-links{display:flex;align-items:center;gap:2.5rem;list-style:none}.nav-links a{font-size:1rem;font-weight:500;color:var(--primary);opacity:.85;letter-spacing:.02em;padding:.5rem 0;position:relative}.nav-links a.active,.nav-links a:hover{opacity:1;color:var(--accent-hover)}.nav-links a::after{content:'';position:absolute;bottom:0;left:0;width:100%;height:2px;background-color:var(--accent);transform:scaleX(0);transition:transform .3s ease}.nav-links a.active::after,.nav-links a:hover::after{transform:scaleX(1)}.nav-links a.nav-blog-highlight{color:var(--accent);font-weight:600;background:rgba(219,175,46,.1);padding:.3rem .85rem;border-radius:999px;border:1px solid rgba(219,175,46,.3)}.nav-links a.nav-blog-highlight:hover{background:rgba(219,175,46,.2)}.nav-links a.nav-blog-highlight::after{display:none}.nav-controls{display:flex;align-items:center;gap:1.5rem}.lang-toggle{display:flex}.lang-btn{background:transparent;border:1px solid rgba(11,33,58,.15);padding:5px 11px;font-size:.9rem;font-weight:600;color:var(--primary);cursor:pointer;border-radius:var(--radius-sm);transition:var(--transition-fast);display:flex;align-items:center;gap:4px}.lang-btn:hover{background:rgba(11,33,58,.07);border-color:rgba(11,33,58,.3)}html[lang=tr] .lang-btn[data-lang=tr]{display:none!important}html[lang=en] .lang-btn[data-lang=en]{display:none!important}.header-scrolled{background-color:rgba(255,255,255,.92);box-shadow:var(--shadow-sm);border-bottom:1px solid rgba(11,33,58,.06)}.menu-toggle{display:none;flex-direction:column;justify-content:space-between;width:24px;height:18px;background:0 0;border:none;cursor:pointer;z-index:1001}.menu-toggle span{width:100%;height:2px;background-color:var(--primary);border-radius:2px;transition:var(--transition-fast)}.menu-toggle.active span:first-child{transform:translateY(8px) rotate(45deg)}.menu-toggle.active span:nth-child(2){opacity:0;transform:scaleX(0)}.menu-toggle.active span:nth-child(3){transform:translateY(-8px) rotate(-45deg)}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('/assets/hero-bg.webp') no-repeat center center/cover}.blog-back-link{display:inline-flex;align-items:center;gap:.4rem;color:var(--accent);font-size:.875rem;font-weight:600;text-decoration:none;margin-bottom:2rem}.blog-post-main{padding:3.5rem 0 1.5rem}.blog-post-article{max-width:760px;margin:0 auto}.blog-post-meta{display:flex;flex-wrap:wrap;gap:1rem;font-size:.82rem;color:var(--text-muted);margin-bottom:1rem}.blog-post-title{font-family:'Cormorant Garamond',Georgia,serif;font-size:clamp(2rem, 4vw, 2.8rem);font-weight:700;color:var(--primary);line-height:1.25;margin-bottom:2.5rem}.blog-post-body{font-size:1.05rem;line-height:1.85;color:var(--text-dark)}.blog-summary{background:rgba(11,33,58,.04);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1rem 1.25rem;margin:1.25rem 0 1.75rem;font-size:.95rem;line-height:1.65;color:var(--text-dark)}.blog-callout{background:hsla(43,60%,95%,.85);border-left:3px solid var(--accent);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:1.1rem 1.4rem;margin:1.75rem 0;font-size:.95rem;line-height:1.7;color:var(--text-dark)}.blog-post-body p{margin-bottom:1.25rem}.blog-post-body h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 .9rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-post-body h3{font-size:1.15rem;font-weight:600;color:var(--primary);margin:1.75rem 0 .6rem}.blog-seo-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin-bottom:1.75rem}.blog-seo-tag{background:hsla(43,60%,52%,.1);color:var(--primary);font-size:.78rem;font-weight:500;padding:.25rem .7rem;border-radius:50px;border:1px solid hsla(43,60%,52%,.2)}.blog-post-cta{padding:2rem 2.5rem;border-radius:var(--radius-lg);margin:2.5rem 0}.blog-post-cta h3{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.5rem;font-weight:700;color:var(--primary);margin-bottom:.6rem}.blog-post-cta p{color:var(--text-muted);margin-bottom:1.25rem;font-size:.97rem}.blog-faq{margin:2.5rem 0}.faq-item{margin-bottom:1.25rem;padding:1.5rem 1.75rem;background:var(--bg-warm-secondary);border-radius:var(--radius-md)}.faq-q{font-size:1.05rem;font-weight:700;color:var(--primary);margin-bottom:.5rem}.faq-a{font-size:.95rem;line-height:1.75;color:var(--text-dark)}.blog-faq h2{font-family:'Cormorant Garamond',Georgia,serif;font-size:1.65rem;font-weight:700;color:var(--primary);margin:2.5rem 0 1.25rem;padding-bottom:.4rem;border-bottom:2px solid hsla(43,60%,52%,.25)}.blog-related-section{padding:3rem 0;background:var(--bg-warm-secondary)}.blog-related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;margin-top:1.5rem}.blog-related-card{border-radius:var(--radius-md);overflow:hidden;background:#fff;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;text-decoration:none;color:inherit;transition:var(--transition-fast)}.blog-related-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md)}.blog-related-card img{width:100%;aspect-ratio:16/9;object-fit:cover}.blog-related-card-body{padding:1rem 1.25rem}.blog-related-card-title{font-weight:600;font-size:.95rem;color:var(--primary);margin-bottom:.3rem}.blog-related-card-meta{font-size:.8rem;color:var(--text-muted)}.footer{padding:4rem 0 2rem;background:var(--primary);color:var(--text-light)}.footer h3,.footer h4{color:var(--text-light)}.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:3rem;margin-bottom:3rem}.footer-bio-text{font-size:.9rem;opacity:.75;line-height:1.7;margin-top:.5rem}.footer-links{list-style:none;display:flex;flex-direction:column;gap:.6rem;margin-top:.5rem}.footer-links a{font-size:.9rem;opacity:.75;transition:opacity .2s}.footer-links a:hover{opacity:1}.footer-contact-list{list-style:none;display:flex;flex-direction:column;gap:.75rem;margin-top:.5rem}.footer-contact-item{display:flex;align-items:flex-start;gap:.75rem;font-size:.9rem;opacity:.75}.footer-contact-item a{color:inherit;transition:opacity .2s}.footer-contact-item a:hover{opacity:1}.footer-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:1.5rem;display:flex;justify-content:space-between;align-items:center;font-size:.85rem;opacity:.6;flex-wrap:wrap;gap:.5rem}.whatsapp-sticky{position:fixed;bottom:1.75rem;right:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:#25d366;color:#fff;text-decoration:none;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(37,211,102,.45);font-size:.95rem;font-weight:600;transition:transform .2s ease,box-shadow .2s ease}.whatsapp-sticky svg{flex-shrink:0}.chatbot-btn{position:fixed;bottom:1.75rem;left:1.75rem;z-index:9999;display:flex;align-items:center;gap:.6rem;background:var(--primary);color:#fff;border:none;cursor:pointer;padding:.75rem 1.25rem .75rem 1rem;border-radius:50px;box-shadow:0 4px 20px rgba(11,33,58,.4);font-size:.95rem;font-weight:600;font-family:inherit;transition:transform .2s ease,box-shadow .2s ease}.chatbot-btn svg{flex-shrink:0}.chatbot-popup{position:fixed;bottom:5.5rem;left:1.75rem;z-index:9998;width:418px;height:540px;background:#fff;border-radius:16px;box-shadow:0 12px 48px rgba(11,33,58,.25);display:flex;flex-direction:column;overflow:hidden}.chatbot-popup[hidden]{display:none!important}.chatbot-popup-header{display:flex;align-items:center;justify-content:space-between;padding:.85rem 1rem;background:var(--primary);color:#fff;font-weight:600;font-size:.9rem;flex-shrink:0}.chatbot-popup-close{background:0 0;border:none;color:#fff;cursor:pointer;font-size:1.1rem;padding:.1rem .35rem;line-height:1;border-radius:4px;opacity:.75}.chatbot-iframe{flex:1;width:100%;border:none}@media(max-width:480px){.whatsapp-sticky{padding:.85rem;border-radius:50%}.whatsapp-sticky-label{display:none}.chatbot-btn{padding:.85rem;border-radius:50%}.chatbot-btn-label{display:none}.chatbot-popup{left:.75rem;right:.75rem;width:auto;bottom:5rem;height:72vh}}@media(max-width:768px){.blog-related-grid{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr;gap:2rem}}</style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dubai'ye Taşınma Takvimi 2027: Türk Ailelerin Aylar Öncesinden Başlaması Gereken 7 Adım</title>
+  <meta name="description" content="Eylül 2027'de Dubai'ye taşınmayı planlıyorsanız Kasım 2026'da okul başvurusu yapmanız gerekiyor. KHDA Outstanding okullar Ocak-Şubat'ta doluyor. Vize, belge, konut ve okul süreçleri için 7 adımlı taşınma takvimi.">
+  <meta name="keywords" content="Dubai taşınma takvimi, Dubai'ye nasıl taşınılır, Türkiye'den Dubai'ye taşınma, Dubai vize, Dubai okul başvurusu, Dubai aile taşınma, Dubai 2027, Türk aileler Dubai">
+  <meta name="author" content="Özlem Çimen – Edualist">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://www.edualist.com/blog/dubai-tasima-takvimi-2027/">
+  <link rel="alternate" hreflang="tr" href="https://www.edualist.com/blog/dubai-tasima-takvimi-2027/">
+  <link rel="alternate" hreflang="en" href="https://www.edualist.com/en/blog/dubai-relocation-timeline-2027/">
+  <link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-relocation-timeline-2027/">
+  <link rel="alternate" type="text/plain" href="/llms.txt" title="LLMs content index">
+  <link rel="ai-catalog" type="application/json" href="/ai-catalog.json" title="AI Resource Catalog">
+  <link rel="icon" href="../../assets/favicon.svg" type="image/svg+xml">
+
+  <meta property="og:type"        content="article">
+  <meta property="og:locale"       content="tr_TR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title"       content="Dubai'ye Taşınma Takvimi 2027: Türk Ailelerin Aylar Öncesinden Başlaması Gereken 7 Adım">
+  <meta property="og:description" content="Eylül 2027'de Dubai'ye taşınmayı planlıyorsanız Kasım 2026'da okul başvurusu yapmanız gerekiyor. KHDA Outstanding okullar Ocak-Şubat'ta doluyor.">
+  <meta property="og:url"         content="https://www.edualist.com/blog/dubai-tasima-takvimi-2027/">
+  <meta property="og:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-tasima-takvimi.webp">
+  <meta property="article:published_time" content="2026-11-22">
+  <meta property="article:author" content="Özlem Çimen">
+  <meta name="twitter:card"        content="summary_large_image">
+  <meta name="twitter:title"       content="Dubai'ye Taşınma Takvimi 2027: Türk Ailelerin Aylar Öncesinden Başlaması Gereken 7 Adım">
+  <meta name="twitter:description" content="Eylül 2027'de Dubai'ye taşınmayı planlıyorsanız Kasım 2026'da okul başvurusu yapmanız gerekiyor. KHDA Outstanding okullar Ocak-Şubat'ta doluyor.">
+  <meta name="twitter:image"       content="https://www.edualist.com/assets/blog/thumb-dubai-tasima-takvimi.webp">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    "headline": "Dubai'ye Taşınma Takvimi 2027: Türk Ailelerin Aylar Öncesinden Başlaması Gereken 7 Adım",
+    "description": "Eylül 2027'de Dubai'ye taşınmayı planlayan Türk aileler için okul merkezli adım adım taşınma takvimi. Vize, belge, konut ve okul başvurusu süreçleri.",
+    "author": {
+      "@type": "Person",
+      "name": "Özlem Çimen", "jobTitle": "Uluslararası Eğitim Danışmanı",
+      "url": "https://www.edualist.com/hakkimda/"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Edualist",
+      "url": "https://www.edualist.com", "logo": {"@type": "ImageObject", "url": "https://www.edualist.com/assets/favicon.svg"}
+    },
+    "datePublished": "2026-11-22T00:00:00+00:00",
+    "dateModified": "2026-11-22T00:00:00+00:00",
+    "wordCount": 2800,
+    "inLanguage": "tr",
+    "url": "https://www.edualist.com/blog/dubai-tasima-takvimi-2027/",
+    "image": "https://www.edualist.com/assets/blog/thumb-dubai-tasima-takvimi.webp",
+    "speakable": {
+      "@type": "SpeakableSpecification",
+      "cssSelector": [".blog-summary", ".blog-post-title"]
+    }
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Ana Sayfa", "item": "https://www.edualist.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.edualist.com/blog/" },
+      { "@type": "ListItem", "position": 3, "name": "Dubai'ye Taşınma Takvimi 2027: 7 Adım", "item": "https://www.edualist.com/blog/dubai-tasima-takvimi-2027/" }
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": "Dubai'ye Türk Aile Olarak Nasıl Taşınılır?",
+    "description": "Eylül 2027 için Dubai'ye taşınma sürecini okul merkezli olarak adım adım planlayan rehber.",
+    "author": {"@type": "Person", "name": "Özlem Çimen", "url": "https://www.edualist.com/hakkimda/"},
+    "step": [
+      {"@type": "HowToStep", "position": 1, "name": "Araştırın ve kararı netleştirin (9–12 ay önce)", "text": "Dubai mi Abu Dhabi mi, hangi semt, hangi müfredat sorularını yanıtlayın. Maaş ve yaşam maliyeti araştırması yapın."},
+      {"@type": "HowToStep", "position": 2, "name": "Okul başvurusu yapın (8–10 ay önce)", "text": "KHDA Outstanding okullar Ocak-Şubat'ta doluyor. En az 3 okula eş zamanlı başvurun."},
+      {"@type": "HowToStep", "position": 3, "name": "Türkiye'den belgeleri toplayın (6–8 ay önce)", "text": "Diploma-transkript-apostil-BAE konsolosluğu zinciri 6-8 hafta sürüyor."},
+      {"@type": "HowToStep", "position": 4, "name": "İş teklifi ve vize süreçleri (4–6 ay önce)", "text": "Employment visa ve aile vizesi başvuruları 4-6 hafta sürüyor."},
+      {"@type": "HowToStep", "position": 5, "name": "Konuta karar verin (3–4 ay önce)", "text": "Okul catchment area'ya göre semt seçin. Yıllık kira cheque politikasına hazırlıklı olun."},
+      {"@type": "HowToStep", "position": 6, "name": "Dijital altyapıyı kurun (1–2 ay önce)", "text": "Emirates ID, zorunlu sağlık sigortası, banka hesabı ve çocuğun aşı takvimine bakın."},
+      {"@type": "HowToStep", "position": 7, "name": "Okul oryantasyonu ve adaptasyon (Varış sonrası)", "text": "EAL desteği planı, ilk gün hazırlığı ve çocuğun psikolojik uyum sürecini ele alın."}
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Dubai'ye taşınmak için en az ne kadar öncesinden planlama başlamalı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Eylül intake için en az 9-12 ay öncesinden, yani en geç Eylül-Ekim aylarında planlamaya başlamanız gerekiyor. KHDA Outstanding okullarına başvuru için Kasım-Ocak penceresi kritik. Belge hazırlığı (apostil zinciri) 6-8 hafta, vize işlemleri ise 4-6 hafta sürebiliyor."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'de okul başvurusu taşınmadan önce yapılabilir mi?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Evet, mutlaka önceden yapılmalı. Dubai uluslararası okulları, henüz ülkede oturma izni olmayan ailelerden başvuru kabul ediyor. Ancak kesin kayıt için çocuğun Emirates ID ve residence visa'sı gerekiyor. Okul yeri ayırtmak için taşınmadan önce başvurmanız şart."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Türkiye'den okul belgelerinin hazırlanması ne kadar sürer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Okul transkripti ve diploma için Türkiye'deki süreç şöyle işliyor: okul/MEB onayı (1-2 hafta) → noter onaylı yeminli çeviri (3-5 gün) → Dışişleri Bakanlığı apostil onayı (3-7 gün) → BAE Konsolosluğu tasdiki (1-2 hafta). Toplam 6-8 hafta hesaplamak güvenli."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'ye taşınmanın bir defaya mahsus maliyeti ne kadar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ortalama Türk aile için tek seferlik taşınma maliyetleri: vize işlemleri 1.500-3.000 AED, okul başvuru ücretleri (3 okul) 1.500-4.500 AED, konut deposito ve ajans komisyonu (aylık kiranın %5-10'u), eşya taşıma 5.000-15.000 AED, ilk kurulum (mobilya, elektrik, internet) 10.000-25.000 AED. Toplamda ilk ay bütçesi olarak 60.000-100.000 AED (yaklaşık 820.000-1.370.000 TL) hazırlamak önerilir."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Dubai'ye taşınmadan önce iş bulmuş olmak şart mı?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Teknik olarak şart değil — turist vizesiyle gelip iş arayabilirsiniz. Ancak okul kaydı için çocuğun residence visa'ya ihtiyacı var ve bu da genellikle ebeveynin employer sponsored visa'sına bağlı. Bu nedenle pratikte Dubai'ye taşımadan önce iş teklifi almış olmak hem okul hem vize süreçlerini çok kolaylaştırıyor."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Microsoft Clarity -->
+  <script type="text/javascript">
+    window.addEventListener("load",function(){setTimeout(function(){(function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "yf8tc516c9");},5000);});
+  </script>
+  <style id="nav-breakpoint">@media (max-width:1100px){.menu-toggle{display:flex}.nav-controls .btn{display:none}.nav-links{position:fixed;top:100px;left:0;width:100%;background-color:var(--bg-warm);border-bottom:1px solid rgba(11,33,58,.08);flex-direction:column;padding:2rem 0;gap:1.5rem;box-shadow:var(--shadow-md);transform:translateY(-120%);opacity:0;transition:var(--transition-smooth);z-index:999}.nav-links.open{transform:translateY(0);opacity:1}.header-scrolled .nav-links{top:70px}}</style>
+  <link rel="preload" as="image" href="../../assets/hero-bg.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="style" href="../../styles.css?v=16">
+  <link rel="stylesheet" href="../../styles.css?v=16" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="../../styles.css?v=16"></noscript>
+  <style>body{background:hsl(35,40%,98%);margin:0}html[lang=tr] .en-only{display:none!important}html[lang=en] .tr-only{display:none!important}.blog-post-hero{padding:120px 0 50px;background:radial-gradient(circle at 10% 20%,hsla(35,40%,98%,.85) 0,hsla(35,20%,96%,.95) 100%),url('../../assets/hero-bg.webp') no-repeat center center/cover}</style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="header-nav" id="mainNav">
+    <div class="nav-container">
+      <a href="/tr/" class="logo">
+        <div class="logo-icon">E</div>
+        <span class="logo-text">Edualist</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="/dubai/">Dubai'de Okul</a></li>
+        <li><a href="/uluslararasi-okul-danismanligi/">Danışmanlık</a></li>
+        <li><a href="/uluslararasi-akademik-kocluk/">Akademik Koçluk</a></li>
+        <li><a href="/blog/" class="nav-blog-highlight">Blog <span class="nav-count-badge">116</span></a></li>
+        <li><a href="/neden-biz/">Hakkımızda</a></li>
+      </ul>
+      <div class="nav-controls">
+        <div class="lang-toggle" role="group">
+          <button class="lang-btn" data-lang="tr" id="langTR" onclick="location.href='/blog/dubai-tasima-takvimi-2027/'">🇹🇷 TR</button>
+          <button class="lang-btn" data-lang="en" id="langEN" onclick="location.href='/en/blog/dubai-relocation-timeline-2027/'">🇬🇧 EN</button>
+        </div>
+        <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Menüyü aç">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- POST HERO -->
+  <section class="blog-post-hero">
+    <div class="container">
+      <a href="/blog/" class="blog-back-link">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
+        <span>Blog'a Dön</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- POST CONTENT -->
+  <main class="blog-post-main">
+    <div class="container">
+      <article class="blog-post-article">
+
+        <div class="blog-post-meta">
+          <span>22 Kasım 2026</span>
+          <span><a href="../../hakkimda/" style="color:inherit;text-decoration:none;border-bottom:1px solid rgba(219,175,46,0.4)">Özlem Çimen</a></span>
+          <span>12 dakika okuma</span>
+        </div>
+
+        <div class="blog-summary">
+          <strong>Özet</strong>
+          <p>Eylül 2027 için Dubai'ye taşınmayı planlayan Türk aileler için gerçek zamanlı taşınma takvimi. <strong>Kasım 2026'dasınız</strong> — KHDA Outstanding okullarının bir kısmı Ocak'ta başvuruyu kapayacak. Okul başvurusundan vizeye, apostil belgelerinden konut seçimine kadar tüm süreçleri aylar öncesinden senkronize planlayın. 7 adımın her biri için tam ne zaman, ne yapmanız gerektiğini öğrenin.</p>
+        </div>
+
+        <h1 class="blog-post-title">Dubai'ye Taşınma Takvimi 2027: Türk Ailelerin Aylar Öncesinden Başlaması Gereken 7 Adım</h1>
+
+        <div class="blog-seo-tags">
+          <span class="blog-seo-tag">Dubai taşınma takvimi</span>
+          <span class="blog-seo-tag">Dubai'ye nasıl taşınılır</span>
+          <span class="blog-seo-tag">Dubai okul başvurusu</span>
+          <span class="blog-seo-tag">Dubai vize rehberi</span>
+          <span class="blog-seo-tag">Türk aileler Dubai</span>
+          <span class="blog-seo-tag">Dubai 2027</span>
+        </div>
+
+        <div class="blog-post-body">
+
+          <p>Dubai'ye taşınmayı düşünüyorsunuz. Belki bir iş teklifi var, belki sadece fikir aşamasındasınız. Her iki durumda da bu soruyu sormak doğru: <em>"Bu iş ne kadar öncesinden planlanmalı?"</em></p>
+
+          <p>Kısa yanıt: <strong>Düşündüğünüzden çok daha erken.</strong> Eylül 2027'ye hazırlanıyorsanız — ve çocuğunuz okul çağındaysa — Kasım 2026'dasınız ve süre zaten daralıyor. KHDA Outstanding okulların önemli bir kısmı, Ocak-Şubat 2027'de başvuruyu kapayacak.</p>
+
+          <p>Bu rehberde 7 adımlı bir taşınma takvimi var. Her adımın ne zaman yapılması gerektiğini, hangi adımın diğerini tetiklediğini ve en kritik hataları anlattım. Çocuğunuzun okulu bu takvimin merkezinde — çünkü Edualist olarak Dubai'ye taşınan Türk ailelerin en çok zorlandığı konunun bu olduğunu biliyoruz.</p>
+
+          <div class="blog-personal-note">
+            <picture>
+              <source srcset="../../assets/founder-avatar-104.webp" type="image/webp">
+              <img src="../../assets/founder-avatar-104.webp" alt="Özlem Çimen" class="blog-personal-note-img" width="52" height="52" loading="lazy" decoding="async">
+            </picture>
+            <div class="blog-personal-note-body">
+              <span class="blog-personal-note-name">Özlem Çimen — Koçtan not</span>
+              <p>Yıllar içinde yüzlerce Türk aile ile çalıştım. En sık duyduğum şey: "Keşke 6 ay önce başlasaydık." Okul yeri kaçmış, belge zinciri tamamlanmamış, vize hazır ama okul yok — ya da tam tersi. Bu rehber, o hataların yaşanmaması için yazıldı.</p>
+            </div>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Şu an Kasım 2026'dasınız.</strong> Eylül 2027 için taşınma planı yapıyorsanız, 10 ay sonrası geliyor. Kulağa yeterli gibi geliyor — değil. Özellikle KHDA Outstanding okullar için başvuru penceresi Ocak-Şubat 2027'de kapanıyor. Bu demek ki 1. ve 2. adımlar için vakit daralıyor.
+          </div>
+
+          <h2>Adım 1 — 9–12 Ay Önce (Şu An): Araştırın ve Kararı Netleştirin</h2>
+
+          <p><strong>Ne zaman:</strong> Eylül 2026 – Kasım 2026 (Eylül 2027 intakesi için)</p>
+
+          <p>Taşınma kararı henüz netleşmemiş bile olsa, araştırma sürecini başlatmak erken değil. Bu aşamada karar vermeniz gereken temel sorular:</p>
+
+          <div class="blog-verdict">
+            <h3>Bu aşamada yanıtlanması gereken 4 temel soru</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Dubai mi, Abu Dhabi mi?</strong> İki şehir arasındaki farklar — kira maliyeti, okul kalitesi, yaşam temposu — düşündüğünüzden büyük. İkisini de değerlendiriyorsanız <a href="../dubai-mi-abu-dhabi-mi/" style="color:var(--accent)">Dubai mi Abu Dhabi mi?</a> karşılaştırmasına bakın.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Hangi semt?</strong> Çocuğunuzun okula gideceği semt, konut seçiminizi belirleyecek. Çocuklu Türk aileler için öne çıkan semtler: Jumeirah (köklü ve İngilizce okullara yakın), Mirdif (aile dostu, daha uygun fiyatlı), Motor City/JLT (orta segment, ulaşım kolaylığı). Semtleri karşılaştırmak için <a href="../dubai-semt-rehberi/" style="color:var(--accent)">Dubai Semt Rehberi</a>'ne bakın.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Hangi müfredat?</strong> IB, British (GCSE/A-Level), American (AP)? Her birinin farklı avantajları ve Türkiye'deki üniversitelere denklik koşulları var. Türk aileler için en yaygın tercih IB ve British. Karşılaştırma için: <a href="../ib-alevel-amerikan-mufredat-karsilastirma/" style="color:var(--accent)">IB, A-Level ve Amerikan Müfredat Karşılaştırması</a>.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Mali hazırlık:</strong> Maaş teklifini <a href="../dubai-maaslar-2026/" style="color:var(--accent)">Dubai 2026 maaşlarıyla</a> ve <a href="../dubai-yasam-maliyeti-2026/" style="color:var(--accent)">yaşam maliyetiyle</a> karşılaştırın. Okul ücretleri yıllık 25.000–90.000 AED — bu kalemı bütçeye mutlaka ekleyin.</span></div>
+          </div>
+
+          <div class="blog-callout">
+            <strong>Bu adımı atlamayın.</strong> Hangi okulda okuyacağına karar vermeden başvuru yapılamaz; hangi semtte oturacağına karar vermeden ev aranamaz; maaş-maliyet dengesi kurulmadan iş teklifi değerlendirilemez. Adım 1 tüm diğer adımların temelini oluşturuyor.
+          </div>
+
+          <h2>Adım 2 — 8–10 Ay Önce: Okul Başvurusu Yapın (En Kritik Adım)</h2>
+
+          <p><strong>Ne zaman:</strong> Kasım 2026 – Ocak 2027</p>
+
+          <p>Bu, taşınma takviminin en kritik adımı. Ve şu an bu penceredeysiniz.</p>
+
+          <p>Dubai'de <a href="../dubai-okul-kayit-rehberi/" style="color:var(--accent)">uluslararası okul başvurusu</a>, Türkiye'deki okul kayıt sürecinden çok farklı. Popüler KHDA Outstanding okullar — JESS, Repton, Nord Anglia, Kings, GEMS Wellington, Brighton College — için 12–18 aylık bekleme listeleri söz konusu. Yer bulmak için taşınmadan önce başvurmuş olmak şart.</p>
+
+          <div class="blog-verdict">
+            <h3>Okul Türüne Göre Başvuru Takvimi</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>KHDA Outstanding IB okulları (DIA, GEMS World Academy):</strong> Bekleme listesi 18 aya kadar uzayabiliyor. Eylül 2027 için taşınan ailelerin son başvuru tarihi geçmiş bile olabilir — hemen kontrol edin.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>KHDA Outstanding British okulları (JESS, Repton, Kings, Nord Anglia):</strong> Kasım–Ocak arası başvuru penceresi en kritik dönem. Şubat başına kadar kontenjanlar kapanıyor.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>KHDA Very Good British okulları (Brighton College, Safa Community):</strong> Ocak–Mart arası hâlâ başvuru mümkün; Nisan'a kadar kabul dönemi açık olabiliyor.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Yıl ortası başvuru:</strong> KHDA portalından "mid-year vacancies" filtresini kullanarak Ocak intakesi için açık yer olan okulları bulabilirsiniz.</span></div>
+          </div>
+
+          <p>Her okul başvurusunda başvuru ücreti ödeniyor (500–1.500 AED arası, iade yok). Bu nedenle başvurmadan önce okulun genel çerçevesine uyup uymadığını iyice değerlendirin. <strong>En az 3 okula eş zamanlı başvurmanızı tavsiye ediyorum</strong> — tek okula bel bağlamak riskli.</p>
+
+          <div class="blog-callout">
+            <strong>Şu an ne yapmalısınız?</strong> Araştırdığınız okullara e-posta atın ve Eylül 2027 için "Year X için açık kontenjan var mı ve bekleme listesi kaç kişi?" sorusunu sorun. Bu yanıtlar Adım 1'deki semt ve müfredat kararınızı da şekillendirecek.
+          </div>
+
+          <div class="blog-post-cta glass" style="margin:2rem 0">
+            <h3>Hangi okullara, hangi sırayla başvurmanız gerektiğini birlikte planlayalım</h3>
+            <p>Çocuğunuzun profili, tercih ettiğiniz müfredat ve bölge göz önünde tutularak en uygun 3-5 okul listesi hazırlayalım.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary" style="display:inline-flex">Ücretsiz Görüşme Planla</a>
+          </div>
+
+          <h2>Adım 3 — 6–8 Ay Önce: Türkiye'den Belgeleri Toplayın</h2>
+
+          <p><strong>Ne zaman:</strong> Aralık 2026 – Şubat 2027</p>
+
+          <p>Dubai uluslararası okulları, Türkiye'den alınan belgelerin belirli bir onay zincirinden geçmiş olmasını istiyor. Bu zincir şöyle işliyor:</p>
+
+          <ol class="blog-steps">
+            <li>
+              <span class="blog-step-num">1</span>
+              <div><strong>Okul / MEB onayı</strong> — Önceki okuldan transkript ve diploma alınması. Resmi mühür + imza zorunlu. Özel okullarda MEB onayı da gerekebiliyor. Süre: 1-2 hafta.</div>
+            </li>
+            <li>
+              <span class="blog-step-num">2</span>
+              <div><strong>Yeminli tercüme</strong> — Belgelerin noter onaylı yeminli tercümana çevrilmesi. Süre: 3-5 iş günü.</div>
+            </li>
+            <li>
+              <span class="blog-step-num">3</span>
+              <div><strong>Apostil onayı</strong> — Türkiye Dışişleri Bakanlığı veya İl Millî Eğitim Müdürlüğü'nden apostil damgası alınması. Süre: 3-7 iş günü.</div>
+            </li>
+            <li>
+              <span class="blog-step-num">4</span>
+              <div><strong>BAE Konsolosluğu tasdiki</strong> — Ankara veya İstanbul'daki BAE Konsolosluğu'nda belgelerin tasdik ettirilmesi. Süre: 5-10 iş günü.</div>
+            </li>
+          </ol>
+
+          <p>Bu zincirin toplam süresi ortalama <strong>6-8 hafta</strong>. Pasaportunuzun ve çocuğunuzun pasaportunun geçerlilik süresine de bakın: Dubai vizesi için en az 6 ay, okul kayıt süreci için ise en az 2 yıl geçerliliğin kalması öneriliyor. Belge hazırlığının tüm detayları için <a href="../dubai-okul-kaydi-apostil-rehberi/" style="color:var(--accent)">Dubai Okul Kaydı Apostil Rehberi</a>'ni inceleyin.</p>
+
+          <div class="blog-callout">
+            <strong>Pratikte sık yapılan hata:</strong> "Belgeleri Dubai'ye geldikten sonra halledeceğiz" diye düşünmek. Türkiye'deki bu adımlar mutlaka Türkiye'deyken tamamlanmalı — konsolosluğa gidip gelmek ya da tanıdığa yaptırmak zaman ve ek maliyet anlamına geliyor.
+          </div>
+
+          <h2>Adım 4 — 4–6 Ay Önce: İş Teklifi ve Vize Süreçleri</h2>
+
+          <p><strong>Ne zaman:</strong> Şubat – Nisan 2027</p>
+
+          <p>Dubai'de yasal olarak çalışmak ve oturmak için employer-sponsored bir residence visa gerekiyor. Çocukların okul kaydı da, okul dışında birçok resmi işlem de bu residence visa'ya bağlı.</p>
+
+          <div class="blog-verdict">
+            <h3>Dubai Vize Türleri: Türk Profesyoneller İçin</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Employment Visa (İş Vizesi):</strong> En yaygın seçenek. İşvereniniz sizi sponsor ediyor; genellikle 2 yıl geçerli, yenilenebilir. İşlem süresi: 4-6 hafta.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Dependent Visa (Aile Vizesi):</strong> Eşiniz ve çocuklarınız için. Geçerli bir employment visa'nız varsa başvurabilirsiniz. Çocukların okul kaydı için bu viza ve Emirates ID gerekiyor.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Golden Visa (10 Yıl İkamet):</strong> 2 milyon AED yatırım, olağanüstü yetenek kategorisi veya KHDA gibi kurumlar tarafından nomine edilme koşuluyla alınabiliyor. Yüksek maaşlı profesyoneller için sponsor bağımsızlığı sağlıyor.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Freelance / Remote Visa:</strong> Türkiye'de remote çalışacaksanız, Dubai Virtual Work Visa veya freelance lisans seçeneği var. Ancak bazı okullar bu vize türüyle dependent kaydı kabul etmiyor — okulunuzu başvurmadan sorgulayın.</span></div>
+          </div>
+
+          <p>Vize başvurusundan önce gerekli belgeler: pasaport kopyası (6 ay+ geçerli), iş sözleşmesi, polis sabıka kaydı (apostil ile), tıbbi tahlil sonuçları. Tüm aile için Emirates ID başvurusu vize onayı sonrasında yapılıyor.</p>
+
+          <div class="blog-callout">
+            <strong>Önemli:</strong> Çocuğunuzun okul kaydı nihai olarak tamamlanabilmesi için Emirates ID gerekiyor. Bu demek ki okul başvurusu → yer ayırma → vize → Emirates ID → nihai kayıt zinciri var. Zincirdeki her halkayı doğru sırayla tamamlamanız gerekiyor.
+          </div>
+
+          <h2>Adım 5 — 3–4 Ay Önce: Konuta Karar Verin</h2>
+
+          <p><strong>Ne zaman:</strong> Mart – Mayıs 2027</p>
+
+          <p>Dubai'de konut kararı, Türkiye'deki gibi değil. Birkaç farklılığa dikkat etmeniz gerekiyor:</p>
+
+          <p><strong>Okul catchment area önce gelir.</strong> Çocuğunuzun servis güzergahı, okula ulaşım süresi ve zaman zaman okul ücret tarifeleri yaşadığınız bölgeye göre değişebiliyor. Önce okulu kesinleştirin, sonra o okula yakın semtlere bakın. <a href="../dubai-semt-rehberi/" style="color:var(--accent)">Dubai Semt Rehberi</a>'nde okul-semt eşleşmeleri detaylı anlatılıyor.</p>
+
+          <div class="blog-verdict">
+            <h3>Çocuklu Türk Aileler İçin Öne Çıkan Semtler (2027)</h3>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Jumeirah / Al Wasl:</strong> JESS, Repton, Kings'e yakın. Köklü expat topluluğu. Kira ortalaması: 3+1 villa 180.000–280.000 AED/yıl.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Mirdif / Rashidiya:</strong> Aile dostu, yeşil alan, daha uygun fiyatlı. Kira: 3+1 villa 120.000–180.000 AED/yıl.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>Arabian Ranches / Springs:</strong> Sakin, villalar, iyi okullar yakında. Kira: 3+1 villa 150.000–220.000 AED/yıl.</span></div>
+            <div class="blog-verdict-row"><span class="blog-verdict-dot"></span><span><strong>JLT / Motor City:</strong> Orta segment, Metro'ya yakın, daire seçenekleri. Kira: 2+1 daire 90.000–140.000 AED/yıl.</span></div>
+          </div>
+
+          <p><strong>Kira ödeme sistemi farklı.</strong> Dubai'de kira genellikle yıllık olarak ödeniyor ve çek (cheque) yöntemiyle teslim ediliyor. 1, 2 veya 4 cheque — az çek daha ucuz kira anlamına geliyor ama peşin para gerekiyor. Güvenlik depozitosu kira bedelinin %5'i (mobilyalı), %10'u (mobilyasız); iade ediliyor ama çıkışta tartışma olabiliyor. Ajans komisyonu %2-5 oranında bir defaya mahsus.</p>
+
+          <div class="blog-callout">
+            <strong>Uzaktan arama:</strong> Türkiye'den uzaktan ev aramak mümkün ama kolay değil. Güvenilir bir expat emlak danışmanıyla çalışın. Popüler platformlar: Bayut, Property Finder, Dubizzle. İmza öncesi mutlaka sözleşmeyi hukuki açıdan kontrol ettirin.
+          </div>
+
+          <h2>Adım 6 — 1–2 Ay Önce: Dijital Altyapıyı Kurun</h2>
+
+          <p><strong>Ne zaman:</strong> Haziran – Temmuz 2027</p>
+
+          <p>Vize onayı geldikten sonra Dubai'ye girmeden veya girer girmez tamamlamanız gereken resmi işlemler var:</p>
+
+          <ol class="blog-steps">
+            <li>
+              <span class="blog-step-num">1</span>
+              <div><strong>Emirates ID başvurusu</strong> — ICA (Federal Authority for Identity) üzerinden yapılıyor. Biometrics randevusu alıp parmak izi ve fotoğraf verdikten 1-3 hafta içinde kart geliyor. Çocukların okul kaydı için bu kart şart.</div>
+            </li>
+            <li>
+              <span class="blog-step-num">2</span>
+              <div><strong>Zorunlu sağlık sigortası</strong> — Dubai'de tüm çalışanlar ve aileleri için sağlık sigortası zorunlu. İşvereninizin sigorta planı aile üyelerini kapsıyor mu kontrol edin. Kapsamıyorsa ek sigorta planı almanız gerekiyor. DHA (Dubai Health Authority) onaylı sigorta şirketleri ile çalışın.</div>
+            </li>
+            <li>
+              <span class="blog-step-num">3</span>
+              <div><strong>Banka hesabı açma</strong> — Emirates NBD, Mashreq, ADCB veya Abu Dhabi Islamic Bank popüler seçenekler. Genellikle residence visa, Emirates ID ve 3 aylık iş sözleşmesi/ekstre gerekiyor. Hesap açma 1-3 hafta sürebiliyor; daha önce başlayın.</div>
+            </li>
+            <li>
+              <span class="blog-step-num">4</span>
+              <div><strong>Çocuğun aşı takvimi</strong> — Bazı Dubai okulları, Türkiye'de zorunlu olmayan aşıları istiyor (meningitis, varisella/chickenpox). Okulunuzdan aşı listesini isteyin; Türkiye'deyken tamamlayabilirsiniz.</div>
+            </li>
+          </ol>
+
+          <div class="blog-callout">
+            <strong>Planlama tavsiyesi:</strong> Emirates ID ve banka hesabı birbirini tetikliyor (hesap için genellikle Emirates ID gerekiyor). Bu iki işlem arasındaki sıralamanın doğru kurulması zamandan 2-3 hafta kazandırıyor. İşvereninizin İK departmanından tam sıralamayı öğrenin.
+          </div>
+
+          <!-- Service CTA box -->
+          <div style="margin:2rem 0;border:1px solid hsla(212,66%,13%,0.1);border-radius:12px;overflow:hidden">
+            <div style="padding:1.1rem 1.5rem;background:var(--primary,hsl(212,66%,13%));color:#fff">
+              <p style="margin:0;font-size:.8rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent,#DBAF2E);font-weight:700">Hangi durumdasınız?</p>
+              <p style="margin:.25rem 0 0;font-size:1.05rem;font-weight:600">Durumunuza göre doğru paketi seçin</p>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:0">
+              <div style="padding:1.25rem 1.4rem;border-right:1px solid hsla(212,66%,13%,0.1);background:#fff">
+                <p style="margin:0 0 .3rem;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent-hover,#b8921f)">Başlangıç Paketi · 3.500 AED</p>
+                <p style="margin:0 0 .75rem;font-size:.97rem;font-weight:600;color:var(--primary,hsl(212,66%,13%));line-height:1.4">Okulu seçtim, evrak ve başvuru takibinde destek istiyorum</p>
+                <p style="margin:0 0 1rem;font-size:.88rem;color:var(--text-muted,#666);line-height:1.6">Başvuru formları, belge hazırlığı, son tarih takibi — tüm bürokratik iş yükü sizin yerinize.</p>
+                <a href="/uluslararasi-okul-danismanligi/" style="display:inline-flex;align-items:center;gap:.35rem;font-size:.88rem;font-weight:700;color:var(--primary,hsl(212,66%,13%));border:1.5px solid var(--primary,hsl(212,66%,13%));padding:.5rem 1rem;border-radius:6px;text-decoration:none">Başlangıç Paketi →</a>
+              </div>
+              <div style="padding:1.25rem 1.4rem;background:hsla(212,66%,13%,0.03)">
+                <p style="margin:0 0 .3rem;font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--accent-hover,#b8921f)">Kapsamlı Paket · 7.000 AED</p>
+                <p style="margin:0 0 .75rem;font-size:.97rem;font-weight:600;color:var(--primary,hsl(212,66%,13%));line-height:1.4">Türkiye'den taşınıyorum — vize, okul ve tüm evraklar tek elde</p>
+                <p style="margin:0 0 1rem;font-size:.88rem;color:var(--text-muted,#666);line-height:1.6">Vize, Emirates ID, ikamet izni ve okul kayıt süreçleri senkronize yönetilir. Ülke değiştirenler için tasarlandı.</p>
+                <a href="/uluslararasi-okul-danismanligi/" style="display:inline-flex;align-items:center;gap:.35rem;font-size:.88rem;font-weight:700;color:#fff;background:var(--primary,hsl(212,66%,13%));padding:.5rem 1rem;border-radius:6px;text-decoration:none">Kapsamlı Paket →</a>
+              </div>
+            </div>
+          </div>
+
+          <h2>Adım 7 — Varış Sonrası (Ağustos 2027): Okul Oryantasyonu ve Adaptasyon</h2>
+
+          <p><strong>Ne zaman:</strong> Ağustos – Eylül 2027</p>
+
+          <p>Fiziksel taşınma tamamlandı, ama süreç bitmedi. Bu aşama genellikle en çok göz ardı edilen kısım.</p>
+
+          <p><strong>Okul oryantasyonu:</strong> Dubai uluslararası okullarının büyük çoğunluğu Ağustos sonunda veliler ve öğrenciler için oryantasyon programı yapıyor. Mümkünse bu programlara katılın. Öğretmen beklentileri, günlük rutin, servis güzergahları, kafeterya sistemi — bunların hepsini ilk gün karışıklık yaşamadan öğrenmek çok değerli.</p>
+
+          <p><strong>EAL desteği:</strong> Çocuğunuzun İngilizcesi güçlü olmayabilir — bu tamamen normal. Dubai uluslararası okullarının büyük çoğunluğu EAL (English as an Additional Language) programı sunuyor. Bu program, sınıf içi ek destek veya bireysel oturumlarla çocuğun dil gelişimini destekliyor. <a href="../eal-nedir/" style="color:var(--accent)">EAL nedir, nasıl işliyor?</a> rehberimizde detaylar var.</p>
+
+          <p><strong>Üçüncü Kültür Çocuğu (TCK) uyumu:</strong> Yurt dışına taşınan çocuklar ne tam Türk ne de tam Dubaili — iki kültür arasında büyüyorlar. Bu durumun kendi zorluklarını ve avantajlarını anlattığımız <a href="../ucuncu-kultur-cocugu-tck-rehberi/" style="color:var(--accent)">Üçüncü Kültür Çocuğu Rehberi</a>'ni okuyun. Adaptasyon 3-6 ay sürüyor; sabrın ve iletişimin önemi bu dönemde çok büyük.</p>
+
+          <div class="blog-callout">
+            <strong>Türkçeyi koruyun:</strong> Dubai'deki Türk ailelerden aldığım en önemli geri bildirimlerden biri: çocukların Türkçesi birkaç yıl içinde zayıflıyor. Türkçe kitap okumak, Türk topluluk etkinliklerine katılmak, haftada en az 2-3 gün Türkçe konuşmak için bilinçli çaba gösterin.
+          </div>
+
+          <h2>Taşınma Takvimi: Özet Görünüm</h2>
+
+          <div class="blog-timeline">
+            <div class="blog-tl-item active">
+              <div class="blog-tl-month">Kas–Ara 2026</div>
+              <div class="blog-tl-label">Araştırma + okul başvurusu (ŞİMDİ)</div>
+            </div>
+            <div class="blog-tl-item">
+              <div class="blog-tl-month">Ara 2026–Şub 2027</div>
+              <div class="blog-tl-label">Türkiye'den belgeler</div>
+            </div>
+            <div class="blog-tl-item">
+              <div class="blog-tl-month">Şub–Nis 2027</div>
+              <div class="blog-tl-label">İş teklifi + vize</div>
+            </div>
+            <div class="blog-tl-item">
+              <div class="blog-tl-month">Mar–May 2027</div>
+              <div class="blog-tl-label">Konut kararı</div>
+            </div>
+            <div class="blog-tl-item">
+              <div class="blog-tl-month">Haz–Tem 2027</div>
+              <div class="blog-tl-label">Emirates ID + sigorta + banka</div>
+            </div>
+            <div class="blog-tl-item">
+              <div class="blog-tl-month">Ağu–Eyl 2027</div>
+              <div class="blog-tl-label">Varış + okul başlangıcı</div>
+            </div>
+          </div>
+
+          <h2>Neden Bu Kadar Erken Başlamak Gerekiyor?</h2>
+
+          <p>Taşınma sürecindeki her adım bir sonrakinin ön koşulu. Okul başvurusu yapılmadan yer ayrılmıyor; yer ayrılmadan belge hazırlığına öncelik verilmiyor; vize başvurusu yapılmadan Emirates ID çıkmıyor; Emirates ID olmadan okul kaydı tamamlanmıyor. Bu zincirleme bağımlılık, süreçlere paralel değil sıralı yaklaşmanızı gerektiriyor.</p>
+
+          <p>Üstelik her adımda beklenmedik gecikmeler olabiliyor: pasaport yenileme, Türkiye'deki resmi tatiller, okulun yavaş yanıt vermesi, konut pazarında uygun yer bulamamak. <strong>10 ay yeterli görünüyor ama bekleme listeleri, belge zincirleri ve Türkiye'deki bürokratik süreçler bunu kolayca 12+ aya dönüştürebiliyor.</strong></p>
+
+          <div class="blog-callout">
+            <strong>En büyük risk:</strong> Okul başvurusunu geciktirmek. Vize gecikmesi çözülebilir, konut değiştirilebilir ama istediğiniz okul için yer kalmamışsa seçenekleriniz çok kısıtlıyor. Kaliteli bir okul, Dubai taşınmasının getirisi açısından belirleyici faktör.
+          </div>
+
+          <!-- WhatsApp CTA -->
+          <div style="margin:2rem 0;padding:1.25rem 1.5rem;border-radius:10px;background:hsla(142,50%,96%,0.8);border:1px solid hsla(142,40%,75%,0.5);display:flex;align-items:center;gap:1.25rem;flex-wrap:wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="32" height="32" fill="#25D366" style="flex-shrink:0"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            <div style="flex:1;min-width:200px">
+              <p style="margin:0 0 .2rem;font-weight:700;font-size:.95rem;color:var(--primary,#0b213a)">Dubai taşınma güncellemelerini WhatsApp'tan takip edin</p>
+              <p style="margin:0;font-size:.85rem;color:var(--text-muted)">Yeni okul incelemeleri, kayıt tarihleri, vize değişiklikleri — doğrudan WhatsApp'ınıza gelsin.</p>
+            </div>
+            <a href="https://api.whatsapp.com/send?phone=971502709379&amp;text=Merhaba%2C%20Dubai%20ta%C5%9F%C4%B1nma%20g%C3%BCncellemelerini%20almak%20istiyorum" target="_blank" rel="noopener noreferrer" style="display:inline-flex;align-items:center;gap:.5rem;padding:.65rem 1.25rem;background:#25D366;color:#fff;font-weight:600;font-size:.88rem;border-radius:8px;text-decoration:none;flex-shrink:0">Abone Ol →</a>
+          </div>
+
+          <aside class="blog-author-box" style="display:flex;gap:1.1rem;align-items:flex-start;margin:2.5rem 0;padding:1.4rem 1.5rem;border:1px solid var(--border-card,rgba(11,33,58,.08));border-left:3px solid var(--accent,#DBAF2E);border-radius:10px;background:var(--bg-card,rgba(11,33,58,.02))">
+            <picture>
+              <source srcset="/assets/founder-avatar-160.webp" type="image/webp">
+              <img src="/assets/founder-avatar-160.webp" alt="Özlem Çimen" width="72" height="72" loading="lazy" decoding="async" style="width:72px;height:72px;border-radius:50%;object-fit:cover;object-position:top;flex-shrink:0;border:2px solid var(--accent,#DBAF2E)">
+            </picture>
+            <div>
+              <p style="margin:0;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Yazar</p>
+              <p style="margin:.15rem 0 .4rem;font-size:1.1rem;font-weight:700"><a href="/hakkimda/" style="color:var(--primary,#0b213a);text-decoration:none">Özlem Çimen</a></p>
+              <p style="margin:0;font-size:.95rem;line-height:1.7">Uluslararası eğitim danışmanı ve Edualist'in kurucusu. 20 yılı aşkın süre TED İstanbul Koleji, ENKA Okulları ve IICS'te öğretmen, bölüm başkanı ve yönetici olarak çalıştı; çocuklarını 5 ülkede uluslararası okullarda büyüttü.</p>
+              <p style="margin:.5rem 0 0;font-size:.9rem"><a href="/hakkimda/" style="color:var(--accent-hover,#b8921f);font-weight:600">Özlem Çimen hakkında →</a></p>
+            </div>
+          </aside>
+
+          <aside class="blog-cluster-box" style="margin:2rem 0;padding:1.4rem 1.5rem;border-radius:10px;background:var(--bg-warm-secondary,#f3efe8)">
+            <p style="margin:0 0 .8rem;font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent-hover,#b8921f);font-weight:700">Bu konudaki tüm rehberler</p>
+            <p style="margin:0 0 .9rem;font-size:1.15rem;font-weight:700;color:var(--primary,#0b213a)">Dubai'ye Taşınma Rehberleri</p>
+            <ul style="margin:0;padding-left:1.1rem;columns:2 260px;column-gap:2rem;line-height:1.6">
+              <li style="break-inside:avoid"><a href="/blog/dubai-gelmeden-once-bilmeniz-gerekenler/" style="color:var(--primary,#0b213a)">Dubai'ye Taşınmadan Önce Bilmeniz Gerekenler</a></li>
+              <li style="break-inside:avoid"><a href="/blog/turkiyeden-dubaya-tasima-cocuk-okul/" style="color:var(--primary,#0b213a)">Türkiye'den Dubai'ye Taşınma: Çocuğun Okul Geçişi</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-okul-kayit-rehberi/" style="color:var(--primary,#0b213a)">Dubai'de Okul Kayıt Süreci: Adım Adım Rehber</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-okul-bekleme-listesi/" style="color:var(--primary,#0b213a)">Dubai Okul Bekleme Listesi: Ne Zaman Başvurulur?</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-okul-basvuru-takvimi-2027/" style="color:var(--primary,#0b213a)">Dubai 2027-28 Okul Başvuru Takvimi</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-okul-kaydi-apostil-rehberi/" style="color:var(--primary,#0b213a)">Dubai Okul Kaydı Apostil Belgeleri Rehberi</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-semt-rehberi/" style="color:var(--primary,#0b213a)">Dubai Semt Rehberi: Hangi Semtte Oturmalı?</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-yasam-maliyeti-2026/" style="color:var(--primary,#0b213a)">Dubai'de Yaşam Maliyeti 2026: Aile Bütçesi</a></li>
+              <li style="break-inside:avoid"><a href="/blog/eal-nedir/" style="color:var(--primary,#0b213a)">EAL Nedir? Dubai Okullarında Dil Desteği</a></li>
+              <li style="break-inside:avoid"><a href="/blog/ucuncu-kultur-cocugu-tck-rehberi/" style="color:var(--primary,#0b213a)">Üçüncü Kültür Çocuğu (TCK) Rehberi</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-mi-abu-dhabi-mi/" style="color:var(--primary,#0b213a)">Dubai mi, Abu Dhabi mi? Aile Karşılaştırması</a></li>
+              <li style="break-inside:avoid"><a href="/blog/dubai-okul-seciminde-5-hata/" style="color:var(--primary,#0b213a)">Dubai Okul Seçiminde Yapılan 5 Kritik Hata</a></li>
+            </ul>
+          </aside>
+
+          <div class="blog-faq">
+            <h2>Türk Ailelerin En Çok Sorduğu Sorular</h2>
+
+            <div class="faq-item">
+              <h3 class="faq-q">Dubai'ye taşınmak için en az ne kadar öncesinden planlama başlamalı?</h3>
+              <p class="faq-a">Eylül intake için en az 9-12 ay öncesinden, yani en geç Eylül-Ekim aylarında planlamaya başlamanız gerekiyor. KHDA Outstanding okullarına başvuru için Kasım-Ocak penceresi kritik. Belge hazırlığı (apostil zinciri) 6-8 hafta, vize işlemleri ise 4-6 hafta sürebiliyor.</p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-q">Dubai'de okul başvurusu taşınmadan önce yapılabilir mi?</h3>
+              <p class="faq-a">Evet, mutlaka önceden yapılmalı. Dubai uluslararası okulları, henüz ülkede oturma izni olmayan ailelerden başvuru kabul ediyor. Ancak kesin kayıt için çocuğun Emirates ID ve residence visa'sı gerekiyor. Okul yeri ayırtmak için taşınmadan önce başvurmanız şart.</p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-q">Türkiye'den okul belgelerinin hazırlanması ne kadar sürer?</h3>
+              <p class="faq-a">Okul/MEB onayı (1-2 hafta) + noter onaylı yeminli çeviri (3-5 gün) + Dışişleri Bakanlığı apostil onayı (3-7 gün) + BAE Konsolosluğu tasdiki (1-2 hafta). Toplam 6-8 hafta hesaplamak güvenli; Türkiye'deki resmi tatilleri ve yoğun dönemleri de göz önünde bulundurun.</p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-q">Dubai'ye taşınmanın bir defaya mahsus maliyeti ne kadar?</h3>
+              <p class="faq-a">Ortalama Türk aile için tek seferlik taşınma maliyetleri: vize işlemleri 1.500-3.000 AED, okul başvuru ücretleri (3 okul) 1.500-4.500 AED, konut deposito ve ajans komisyonu (aylık kiranın %5-10'u kadar), eşya taşıma 5.000-15.000 AED, ilk kurulum 10.000-25.000 AED. Toplamda ilk ay bütçesi olarak 60.000-100.000 AED hazırlamak önerilir.</p>
+            </div>
+            <div class="faq-item">
+              <h3 class="faq-q">Dubai'ye taşınmadan önce iş bulmuş olmak şart mı?</h3>
+              <p class="faq-a">Teknik olarak şart değil — turist vizesiyle gelip iş arayabilirsiniz. Ancak çocukların okul kaydı için residence visa gerekiyor ve bu genellikle ebeveynin employer sponsored visa'sına bağlı. Pratikte, iş teklifi almadan taşınmak hem okul kaydını hem de yaşam kalitesini ciddi ölçüde zorlaştırıyor.</p>
+            </div>
+          </div>
+
+          <div class="blog-post-cta glass">
+            <h3>Taşınma takviminizi birlikte planlayalım</h3>
+            <p>Çocuğunuzun okul başvurusu, belge hazırlığı ve vize süreçlerini senkronize yönetmek için Özlem Çimen ile ücretsiz bir görüşme planlayın.</p>
+            <a href="/uluslararasi-okul-danismanligi/" class="btn btn-primary" style="display:inline-flex">Ücretsiz Görüşme Planla</a>
+            <a href="/dubai/" class="btn btn-secondary" style="margin-top:0.5rem;">Dubai Danışmanlık Sayfamız →</a>
+          </div>
+
+        </div>
+      </article>
+    </div>
+
+    <div class="container" style="padding:0 0 2rem;">
+      <p style="margin:0;padding:1rem 1.25rem;background:hsla(43,60%,92%,0.7);border-left:3px solid var(--accent,#DBAF2E);border-radius:0 6px 6px 0;font-size:0.95rem;line-height:1.8;">
+        <strong>İlgili Rehberler:</strong><br>
+        <a href="/blog/dubai-okul-kayit-rehberi/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai'de Okul Kayıt Süreci: Türk Aileler İçin Adım Adım Rehber</a> ·
+        <a href="/blog/dubai-okul-bekleme-listesi/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai Okul Bekleme Listesi: Ne Zaman Başvurulur?</a> ·
+        <a href="/blog/dubai-gelmeden-once-bilmeniz-gerekenler/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai'ye Taşınmadan Önce Bilmeniz Gerekenler</a> ·
+        <a href="/blog/dubai-okul-basvuru-takvimi-2027/" style="color:var(--accent,#DBAF2E);font-weight:500;">Dubai 2027-28 Okul Başvuru Takvimi</a>
+      </p>
+    </div>
+  </main>
+
+  <!-- RELATED POSTS -->
+  <section class="blog-related-section">
+    <div class="container">
+      <h2>İlgili Yazılar</h2>
+      <div class="blog-related-grid">
+        <a href="../turkiyeden-dubaya-tasima-cocuk-okul/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-turkiyeden-dubaya-tasima-cocuk-okul.webp" alt="Türkiye'den Dubai'ye taşınma çocuk okul" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">Türkiye'den Dubai'ye Taşınma: Çocuğun Okul Geçişi</div>
+            <div class="blog-related-card-meta">8 Ekim 2026 · 12 dk</div>
+          </div>
+        </a>
+        <a href="../dubai-okul-bekleme-listesi/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai-okul.webp" alt="Dubai okul bekleme listesi" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">Dubai Okul Bekleme Listesi: Ne Zaman Başvurulur?</div>
+            <div class="blog-related-card-meta">7 Haziran 2026 · 9 dk</div>
+          </div>
+        </a>
+        <a href="../dubai-gelmeden-once-bilmeniz-gerekenler/" class="blog-related-card">
+          <img src="../../assets/blog/thumb-dubai.webp" alt="Dubai'ye taşınmadan önce bilinmesi gerekenler" loading="lazy" decoding="async" width="800" height="450">
+          <div class="blog-related-card-body">
+            <div class="blog-related-card-title">Dubai'ye Taşınmadan Önce Bilmeniz Gerekenler</div>
+            <div class="blog-related-card-meta">7 Haziran 2026 · 10 dk</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-bio-col">
+          <h3>Edualist</h3>
+          <p class="footer-bio-text">Özlem Çimen, 20 yılı aşkın eğitim deneyimiyle uluslararası okul seçimi, müfredat değerlendirme ve adaptasyon süreçlerinde ailelere rehberlik etmektedir.</p>
+        </div>
+        <div class="footer-links-col">
+          <h4>Hızlı Linkler</h4>
+          <ul class="footer-links">
+            <li><a href="/neden-biz/">Neden Biz?</a></li>
+            <li><a href="/tr/#services">Hizmetler</a></li>
+            <li><a href="/blog/">Blog <span class="nav-count-badge">116</span></a></li>
+            <li><a href="/uluslararasi-okul-danismanligi/">Görüşme Planla</a></li>
+          </ul>
+        </div>
+        <div class="footer-contact-col">
+          <h4>İletişim</h4>
+          <ul class="footer-contact-list">
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+              <div><a href="mailto:ozlem@edualist.com">ozlem@edualist.com</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <div><span>Dubai, Birleşik Arap Emirlikleri</span></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+              <div><a href="https://www.linkedin.com/company/myedualist/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              <div><a href="https://www.instagram.com/myedualist" target="_blank" rel="noopener noreferrer">Instagram</a></div>
+            </li>
+            <li class="footer-contact-item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.744l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.91-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <div><a href="https://x.com/OzlemGunayCimen" target="_blank" rel="noopener noreferrer">X / Twitter</a></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Edualist. Tüm hakları saklıdır. / All Rights Reserved.</div>
+        <div><a href="/gizlilik-politikasi/" style="color:inherit;opacity:0.7">Gizlilik Politikası</a></div>
+        <div>Designed for Excellence.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Sticky WhatsApp -->
+  <a href="https://api.whatsapp.com/send?phone=971502709379&text=Merhaba,%20Daha%20fazla%20bilgi%20almak%20istiyorum" target="_blank" rel="noopener noreferrer"
+     class="whatsapp-sticky" aria-label="Chat on WhatsApp" onclick="if(typeof gtag==='function'){gtag('event','whatsapp_click',{event_category:'engagement',event_label:'WhatsApp Sticky'});gtag('event','conversion',{send_to:'AW-18221941570/UASSCN7p18QcEMKG8_BD'});}">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+      <path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.553 4.122 1.523 5.854L.057 23.57a.5.5 0 0 0 .611.611l5.718-1.466A11.95 11.95 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.9a9.9 9.9 0 0 1-5.042-1.377l-.361-.214-3.741.98.999-3.648-.235-.374A9.86 9.86 0 0 1 2.1 12C2.1 6.533 6.533 2.1 12 2.1S21.9 6.533 21.9 12 17.467 21.9 12 21.9z"/>
+    </svg>
+    <span class="whatsapp-sticky-label">WhatsApp</span>
+  </a>
+
+  <!-- EduBot -->
+  <button class="chatbot-btn" id="chatbot-btn" aria-label="EduBot">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="26" height="26">
+      <path d="M20 2H4C2.9 2 2 2.9 2 4v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM9 11H7V9h2v2zm4 0h-2V9h2v2zm4 0h-2V9h2v2z"/>
+    </svg>
+    <span class="chatbot-btn-label">EduBot</span>
+  </button>
+
+  <div class="chatbot-popup" id="chatbot-popup" hidden>
+    <div class="chatbot-popup-header">
+      <span>EduBot</span>
+      <button class="chatbot-popup-close" id="chatbot-close" aria-label="Close">✕</button>
+    </div>
+    <iframe data-src="https://ai-edualist-com.vercel.app/" class="chatbot-iframe" title="EduBot"></iframe>
+  </div>
+
+  <script>
+    const toggle = document.getElementById('menuToggle');
+    const navLinks = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = navLinks.classList.toggle('open');
+      toggle.classList.toggle('active', open);
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+  <script>
+    window.setLang = function (l) {
+      if (l === document.documentElement.lang) return;
+      try { localStorage.setItem('edualist_lang', l); } catch (e) {}
+      document.cookie = 'edualist_lang=' + l + ';path=/;max-age=31536000;samesite=lax';
+      var alt = document.querySelector('link[rel="alternate"][hreflang="' + l + '"]');
+      location.href = alt ? new URL(alt.getAttribute('href'), location.href).pathname : '/' + l + '/';
+    };
+    document.querySelectorAll('.lang-btn').forEach(function (b) {
+      var l = b.getAttribute('data-lang') || (b.id === 'langEN' ? 'en' : b.id === 'langTR' ? 'tr' : '');
+      b.classList.toggle('active', l === document.documentElement.lang);
+      if (b.hasAttribute('data-lang')) b.addEventListener('click', function () { setLang(l); });
+    });
+  </script>
+</body>
+</html>
