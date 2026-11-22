@@ -433,6 +433,36 @@
       "updatedAt": "2026-11-14T00:00:00Z"
     },
     {
+      "identifier": "urn:air:edualist.com:content:dubai-ozel-egitim-sen-rehberi",
+      "displayName": "Dubai'de Özel Eğitim: Disleksi, ADHD, Otizm ve Üstün Zekâ Rehberi (TR)",
+      "description": "KHDA kapsayıcı eğitim politikası kapsamında disleksi, ADHD, otizm ve gifted kategorilerinde Dubai okul seçimi, destek seçenekleri, Türkiye tanı belgesi geçerliliği ve learning support maliyetleri.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/blog/dubai-ozel-egitim-sen-rehberi/",
+      "tags": ["dubai", "sen", "special-education", "adhd", "dyslexia", "autism", "gifted", "tr"],
+      "representativeQueries": [
+        "Dubai'de disleksi olan çocuk için okul",
+        "Dubai ADHD okul desteği",
+        "Dubai'de otizmli çocuk okul kaydı",
+        "KHDA özel eğitim ihtiyacı hakları"
+      ],
+      "updatedAt": "2026-11-22T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-okul-universite-yerlesim",
+      "displayName": "Dubai'de Hangi Okul Hangi Üniversiteye Gönderiyor? (TR)",
+      "description": "IB, A-Level ve Amerikan müfredatının üniversite kapıları karşılaştırması; hedef ülkeye göre müfredat seçim rehberi ve YÖK denklik süreci. Dubai okulları ve mezun üniversite profilleri.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/blog/dubai-okul-universite-yerlesim/",
+      "tags": ["dubai", "university", "ib", "a-level", "american-curriculum", "yok", "tr"],
+      "representativeQueries": [
+        "Dubai'de hangi okul hangi üniversiteye gönderiyor",
+        "IB mi A-Level mi üniversite için",
+        "Dubai okul müfredat üniversite karşılaştırması",
+        "YÖK denklik IB A-Level"
+      ],
+      "updatedAt": "2026-11-22T00:00:00Z"
+    },
+    {
       "identifier": "urn:air:edualist.com:content:cocugum-ib-ye-hazir-mi",
       "displayName": "Çocuğum IB'ye Hazır mı? 8 Soruda Değerlendirme (TR)",
       "description": "IB MYP ve DP geçişi öncesinde çocuğun duygusal dayanıklılığını ve organizasyon becerilerini ölçen 8 soruluk puanlı değerlendirme. Türk aileler için.",
