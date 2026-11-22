@@ -3,9 +3,30 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>https://www.edualist.com/en/blog/dubai-special-education-sen-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/dubai-special-education-sen-guide/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-ozel-egitim-sen-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-special-education-sen-guide/"/>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
     <loc>https://www.edualist.com/blog/dubai-ozel-egitim-sen-rehberi/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-ozel-egitim-sen-rehberi/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-ozel-egitim-sen-rehberi/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/dubai-special-education-sen-guide/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-special-education-sen-guide/"/>
+    <lastmod>2026-11-22</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://www.edualist.com/en/blog/dubai-school-university-destinations/</loc>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/dubai-school-university-destinations/"/>
+    <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-okul-universite-yerlesim/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-school-university-destinations/"/>
     <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -14,7 +35,8 @@
   <url>
     <loc>https://www.edualist.com/blog/dubai-okul-universite-yerlesim/</loc>
     <xhtml:link rel="alternate" hreflang="tr"        href="https://www.edualist.com/blog/dubai-okul-universite-yerlesim/"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/blog/dubai-okul-universite-yerlesim/"/>
+    <xhtml:link rel="alternate" hreflang="en"        href="https://www.edualist.com/en/blog/dubai-school-university-destinations/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.edualist.com/en/blog/dubai-school-university-destinations/"/>
     <lastmod>2026-11-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

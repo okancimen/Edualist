@@ -433,6 +433,36 @@
       "updatedAt": "2026-11-14T00:00:00Z"
     },
     {
+      "identifier": "urn:air:edualist.com:content:dubai-special-education-sen-guide",
+      "displayName": "Dubai Special Education Guide: Dyslexia, ADHD, Autism and Gifted (EN)",
+      "description": "KHDA inclusive education obligations, school selection by SEN category, overseas diagnosis document handling, disclosure timing strategy, and learning support costs in Dubai private schools.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-special-education-sen-guide/",
+      "tags": ["dubai", "sen", "special-education", "adhd", "dyslexia", "autism", "gifted", "en"],
+      "representativeQueries": [
+        "Dubai special education guide",
+        "Dubai SEN school support",
+        "KHDA inclusive education requirements",
+        "Dubai dyslexia ADHD autism school"
+      ],
+      "updatedAt": "2026-11-22T00:00:00Z"
+    },
+    {
+      "identifier": "urn:air:edualist.com:content:dubai-school-university-destinations",
+      "displayName": "Which Dubai School Leads to Which University? (EN)",
+      "description": "IB, A-Level and American AP/SAT curriculum mapped to university destinations — UK Russell Group, US Ivy League, Canada and Australia — with top Dubai school profiles and guidance for undecided families.",
+      "type": "text/html",
+      "url": "https://www.edualist.com/en/blog/dubai-school-university-destinations/",
+      "tags": ["dubai", "university", "ib", "a-level", "american-curriculum", "curriculum", "en"],
+      "representativeQueries": [
+        "which Dubai school leads to which university",
+        "IB vs A-Level for university",
+        "Dubai curriculum university comparison",
+        "best Dubai school for UK university"
+      ],
+      "updatedAt": "2026-11-22T00:00:00Z"
+    },
+    {
       "identifier": "urn:air:edualist.com:content:dubai-ozel-egitim-sen-rehberi",
       "displayName": "Dubai'de Özel Eğitim: Disleksi, ADHD, Otizm ve Üstün Zekâ Rehberi (TR)",
       "description": "KHDA kapsayıcı eğitim politikası kapsamında disleksi, ADHD, otizm ve gifted kategorilerinde Dubai okul seçimi, destek seçenekleri, Türkiye tanı belgesi geçerliliği ve learning support maliyetleri.",

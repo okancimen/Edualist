@@ -35,9 +35,13 @@ URLS = [
     # Kural: yeni veya güncellenen URL'leri bu satırın hemen altına ekle; eski girdileri silme.
     # Quota: 200/gün — liste 200'ü geçerse alt satırlardaki eski girdiler o gün gönderilemez.
 
-    # 22 Kasım 2026 — YENİ TR: dubai-ozel-egitim-sen-rehberi (disleksi, ADHD, otizm, gifted rehberi)
+    # 22 Kasım 2026 — YENİ EN: dubai-special-education-sen-guide (SEN guide: dyslexia, ADHD, autism, gifted)
+    "https://www.edualist.com/en/blog/dubai-special-education-sen-guide/",
+    # 22 Kasım 2026 — YENİ EN: dubai-school-university-destinations (IB/A-Level/American → university)
+    "https://www.edualist.com/en/blog/dubai-school-university-destinations/",
+    # 22 Kasım 2026 — YENİ TR: dubai-ozel-egitim-sen-rehberi (disleksi, ADHD, otizm, gifted rehberi) + hreflang güncellendi
     "https://www.edualist.com/blog/dubai-ozel-egitim-sen-rehberi/",
-    # 22 Kasım 2026 — YENİ TR: dubai-okul-universite-yerlesim (IB/A-Level/Amerikan → üniversite)
+    # 22 Kasım 2026 — YENİ TR: dubai-okul-universite-yerlesim (IB/A-Level/Amerikan → üniversite) + hreflang güncellendi
     "https://www.edualist.com/blog/dubai-okul-universite-yerlesim/",
     # 22 Kasım 2026 — YENİ TR: cocugum-ib-ye-hazir-mi (8 soruda IB hazırlık değerlendirme)
     "https://www.edualist.com/blog/cocugum-ib-ye-hazir-mi/",
